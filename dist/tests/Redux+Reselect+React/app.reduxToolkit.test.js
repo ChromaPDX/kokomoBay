@@ -100,15 +100,15 @@ var AppReduxToolkitTesteranto = ReduxToolkitTesteranto(
       }
     },
     Whens: {
-      TheLoginIsSubmitted: () => [loginApp.actions.signIn],
-      TheEmailIsSetTo: (email) => [loginApp.actions.setEmail, email],
-      ThePasswordIsSetTo: (password) => [loginApp.actions.setPassword, password]
+      TheLoginIsSubmitted: loginApp.actions.signIn,
+      TheEmailIsSetTo: loginApp.actions.setEmail,
+      ThePasswordIsSetTo: loginApp.actions.setPassword
     },
     Thens: {
-      TheEmailIs: (email) => (selection) => [assert.equal, selection.email, email, "a nice message"],
-      TheEmailIsNot: (email) => (selection) => [assert.notEqual, selection.email, email],
-      ThePasswordIs: (password) => (selection) => [assert.equal, selection.password, password],
-      ThePasswordIsNot: (password) => (selection) => [assert.notEqual, selection.password, password]
+      TheEmailIs: (selection) => [assert.equal, selection.email, "a nice message"],
+      TheEmailIsNot: (selection) => [assert.notEqual, selection.email],
+      ThePasswordIs: (selection) => [assert.equal, selection.password],
+      ThePasswordIsNot: (selection) => [assert.notEqual, selection.password]
     },
     Checks: {
       AnEmptyState: () => loginApp.getInitialState()

@@ -1,13 +1,13 @@
 {
   "hello": [
     {
-      "testKey": "AnEmptyState",
-      "name": "Testing the Redux store",
+      "testKey": "default",
+      "name": "Testing the LoginPage as react",
       "whens": [
-        "TheEmailIsSetTo: hey there"
+        "TheEmailIsSetTo: adam@email.com"
       ],
       "thens": [
-        "TheEmailIs: hey there"
+        "TheEmailIs: adam@email.com"
       ]
     },
     {
@@ -23,13 +23,13 @@
       ]
     },
     {
-      "testKey": "default",
-      "name": "Testing the LoginPage as react",
+      "testKey": "AnEmptyState",
+      "name": "Testing the Redux store",
       "whens": [
-        "TheEmailIsSetTo: adam@email.com"
+        "TheEmailIsSetTo: hey there"
       ],
       "thens": [
-        "TheEmailIs: adam@email.com"
+        "TheEmailIs: hey there"
       ]
     },
     {

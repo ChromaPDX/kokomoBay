@@ -1,6 +1,6 @@
 {
+  "botEmail": "testeranto.kokomobay@gmail.com",
   "outdir": "docs",
-  "features": "/Users/adam/Code/kokomoBay/features.test.mts",
   "tests": [
     [
       "./src/LoginPage/react-test-renderer/web.test.tsx",

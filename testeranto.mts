@@ -1,11 +1,12 @@
+import fs from "fs";
 import { ITProject } from "testeranto/src/Project";
 
 import { solidityEsBuildConfig } from "./subPackages/solidity/index.js";
 
-export default new ITProject({
+export default {
   botEmail: "testeranto.kokomobay@gmail.com",
   outdir: "docs",
-  features: "/Users/adam/Code/kokomoBay/features.test.mts",
+
   tests: [
     // Don't use these tests.
     // Testing react components with the react package is not useful
@@ -104,4 +105,4 @@ export default new ITProject({
     //   },
     // },
   ],
-});
+};

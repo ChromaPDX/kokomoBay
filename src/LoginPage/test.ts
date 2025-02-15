@@ -1,9 +1,6 @@
 import { ITestSpecification } from "testeranto/src/Types";
 
-import { IFeatures } from "../../features.test.mjs";
-
 export type ILoginPageSpecs = {
-  features: IFeatures;
   iinput: any;
   isubject: any;
   istore: any;

@@ -12,7 +12,6 @@
 import { assert } from "chai";
 
 import { ClassicalComponent } from "..";
-import { features } from "../../../features.test.mts";
 import test from "node:test";
 import { renderToStaticMarkup } from "react-dom/server";
 // import { ITestSpecification } from "testeranto/src/lib/core";

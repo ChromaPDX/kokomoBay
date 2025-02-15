@@ -2,11 +2,14 @@
   "name": "kokomo-bay",
   "description": "",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": "git@github.com:ChromaPDX/kokomoBay.git",
   "homepage": "https://github.com/ChromaPDX/kokomoBay",
   "author": "adam wong <adamwong246@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "18.18.0"
+  },
   "keywords": [
     "typescript",
     "test",
@@ -22,11 +25,21 @@
     ]
   },
   "scripts": {
-    "testeranto-clean": "rm -rf docs && mkdir docs",
     "testeranto-esbuild": "ts-node-esm testeranto.mts",
     "testeranto-esbuild-dev": "ts-node-esm testeranto.mts -dev",
     "testeranto-testrun": "ts-node-esm node_modules/testeranto/dist/module/Puppeteer.js",
-    "testeranto-taskman": "mongod --dbpath data/db & ts-node-esm node_modules/testeranto/dist/prebuild/TaskManBackEnd.mjs"
+    "testeranto-taskman": "mongod --dbpath data/db & ts-node-esm node_modules/testeranto/dist/prebuild/TaskManBackEnd.mjs",
+    "start": "ts-node-esm node_modules/testeranto/dist/prebuild/TaskManBackEnd.mjs",
+    "docker-taskman": "docker build -f ./node_modules/testeranto/TaskMan1.Dockerfile -t taskman . && docker run -p 3000:3000 taskman",
+    "clean": "rm -rf docs && mkdir docs",
+    "init": "ts-node-esm init.mts",
+    "bundle": "ts-node-esm bundle.mts",
+    "dev": "ts-node-esm bundle.mts -dev",
+    "test": "ts-node-esm test.mts",
+    "report": "ts-node-esm report.mts -dev",
+    "build-report": "docker build --platform linux/amd64 -f ./node_modules/testeranto/Report.Dockerfile -t report .",
+    "build-bundle": "docker build -f ./node_modules/testeranto/Bundle.Dockerfile -t testeranto .",
+    "deploy-report": "docker tag report us-west1-docker.pkg.dev/dev-trail-450920-p2/testeranto-docker/report:latest && docker push us-west1-docker.pkg.dev/dev-trail-450920-p2/testeranto-docker/report:latest && gcloud run deploy report --image us-west1-docker.pkg.dev/dev-trail-450920-p2/testeranto-docker/report:latest"
   },
   "types": "index.d.ts",
   "dependencies": {
@@ -72,7 +85,7 @@
     "ignore-loader": "^0.1.2",
     "nodemon": "^2.0.20",
     "react-test-renderer": "18.2.0",
-    "testeranto": "0.79.3",
+    "testeranto": "0.79.66",
     "truffle": "^5.7.3",
     "ts-loader": "^9.3.1",
     "tsconfig-paths": "^4.2.0",

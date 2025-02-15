@@ -2,7 +2,6 @@ import { ITestImplementation } from "testeranto/src/Types";
 
 import { assert } from "chai";
 
-import { features } from "../features.test.mjs";
 import Testeranto, {
 } from "../subPackages/solidity/react.testeranto";
 
@@ -55,7 +54,7 @@ export default Testeranto(
     return [
       Suite.Default(
         "Test a react app backed by a solidity contract, separated by a RPC channel",
-        commonGivens(Given, When, Then, features),
+        commonGivens(Given, When, Then),
         [
           // Check.AnEmptyState(
           //   "imperative style",

@@ -1,8 +1,6 @@
 import { IProps, IState } from ".";
-import { IFeatures } from "../../features.test.mts";
 
 export type IClassicalComponentSpec = {
-  features: IFeatures;
   iinput: void;
   isubject: void;
   istore: void;

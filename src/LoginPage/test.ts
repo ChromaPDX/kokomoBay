@@ -48,7 +48,7 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
         test0: Given.default(
           ["0"],
           [When.TheEmailIsSetTo("adam@email.com")],
-          [Then.TheEmailIs("adam@email.co")]
+          [Then.TheEmailIs("adam@email.com")]
         ),
         test1: Given.default(
           [`0`],

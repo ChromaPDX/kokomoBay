@@ -28,12 +28,9 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
 
       const page = (await utils.browser.pages()).filter((p) => {
         const parsedUrl = new URL(p.url());
-
-        console.log("beforeAll parsedUrl", parsedUrl);
-
         parsedUrl.search = "";
         const strippedUrl = parsedUrl.toString();
-        console.log("mark3", strippedUrl);
+
         return (
           strippedUrl ===
           "file:///Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/test.html"

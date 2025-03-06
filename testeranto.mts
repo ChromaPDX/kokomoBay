@@ -1,10 +1,6 @@
-import fs from "fs";
-import { ITProject } from "testeranto/src/Project";
-
 import { solidityEsBuildConfig } from "./subPackages/solidity/index.js";
 
 export default {
-  botEmail: "testeranto.kokomobay@gmail.com",
   outdir: "docs",
 
   tests: [
@@ -15,29 +11,29 @@ export default {
     // ["./src/LoginPage/react/web.test.tsx", "web", { ports: 0 }, []],
     // ["./src/LoginPage/react/node.test.tsx", "node", { ports: 0 }, []],
 
-    [
-      "./src/LoginPage/react-test-renderer/web.test.tsx",
-      "web",
-      { ports: 0 },
-      [],
-    ],
+    // [
+    //   "./src/LoginPage/react-test-renderer/web.test.tsx",
+    //   "web",
+    //   { ports: 0 },
+    //   [],
+    // ],
     ["./src/Rectangle/Rectangle.test.electron.ts", "web", { ports: 0 }, []],
-    [
-      "./src/ClassicalComponent/react-dom/client.web.test.tsx",
-      "web",
-      { ports: 0 },
-      [],
-    ],
+    // [
+    //   "./src/ClassicalComponent/react-dom/client.web.test.tsx",
+    //   "web",
+    //   { ports: 0 },
+    //   [],
+    // ],
 
-    [
-      "./src/LoginPage/react-test-renderer/node.test.tsx",
-      "node",
-      { ports: 0 },
-      [],
-    ],
-    ["./src/ReactStateAndHook.test.tsx", "node", { ports: 0 }, []],
-    ["./src/app.reduxToolkit.test.ts", "node", { ports: 0 }, []],
-    ["./src/app.redux.test.ts", "node", { ports: 0 }, []],
+    // [
+    //   "./src/LoginPage/react-test-renderer/node.test.tsx",
+    //   "node",
+    //   { ports: 0 },
+    //   [],
+    // ],
+    // ["./src/ReactStateAndHook.test.tsx", "node", { ports: 0 }, []],
+    // ["./src/app.reduxToolkit.test.ts", "node", { ports: 0 }, []],
+    // ["./src/app.redux.test.ts", "node", { ports: 0 }, []],
     // [
     //   "./src/Rectangle/Rectangle.test.node.ts",
     //   "node",

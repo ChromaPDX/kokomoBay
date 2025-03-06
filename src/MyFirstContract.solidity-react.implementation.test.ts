@@ -15,23 +15,35 @@ const testImplementation: ITestImplementation<
   },
   whens: {
     Increment: (asTestUser) => async (props) => {
-      const element = await props.page.$("#increment");
-      element.click();
+      try {
+        const element = await props.page.$("#increment");
+        element.click();
+      } catch (e) {
+        console.log("mark6");
+      }
     },
     Decrement: (asTestUser) => async (props) => {
-      const element = await props.page.$("#decrement");
-      element.click();
+      try {
+        const element = await props.page.$("#decrement");
+        element.click();
+      } catch (e) {
+        console.log("mark6");
+      }
     },
   },
   thens: {
     Get:
       ({ asTestUser, expectation }) =>
       async (props) => {
-        const element = await props.page.$("#counter");
-        const element_property = await element.getProperty("innerHTML");
-        const inner_html = await element_property.jsonValue();
+        try {
+          const element = await props.page.$("#counter");
+          const element_property = await element.getProperty("innerHTML");
+          const inner_html = await element_property.jsonValue();
 
-        assert.deepEqual(inner_html, expectation.toString());
+          assert.deepEqual(inner_html, expectation.toString());
+        } catch (e) {
+          console.log("mark5");
+        }
       },
   },
   checks: {

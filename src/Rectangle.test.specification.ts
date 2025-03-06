@@ -12,7 +12,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
         test0: Given.Default(
           ["hello"],
           [When.setWidth(4), When.setHeight(9)],
-          [Then.getWidth(4), Then.getHeight(99)]
+          [Then.getWidth(4), Then.getHeight(9)]
         ),
         test1: Given.Default(
           [`0`],
@@ -27,18 +27,18 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
         test2: Given.Default(
           [`0`],
           [When.setHeight(4), When.setWidth(33)],
-          [Then.area(12)]
+          [Then.area(132)]
         ),
         test3: Given.Default(
           [`0`],
           [When.setHeight(5), When.setWidth(5)],
-          [Then.area(5)]
+          [Then.area(25)]
         ),
 
         test4: Given.Default(
           [`0`],
           [When.setHeight(6), When.setWidth(6)],
-          [Then.area(37)]
+          [Then.area(36)]
         ),
       },
       []

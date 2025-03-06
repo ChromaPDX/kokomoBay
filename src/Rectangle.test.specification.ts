@@ -38,7 +38,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
         test4: Given.Default(
           [`0`],
           [When.setHeight(6), When.setWidth(6)],
-          [Then.area(36)]
+          [Then.area(365)]
         ),
       },
       []

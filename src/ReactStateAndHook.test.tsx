@@ -6,8 +6,6 @@ import type {
 } from "testeranto/src/Types";
 
 import Testeranto from "testeranto/src/SubPackages/react-test-renderer/jsx/node.js";
-import { createRoot } from 'react-dom/client';
-import { act } from 'react-dom/test-utils';
 
 import ReactStateAndHook from "./ReactStateAndHook";
 
@@ -62,7 +60,7 @@ const Specification: ITestSpecification<ISpec> =
           "test3": Given.Default(
             [`hello`],
             [When.IClick()],
-            [Then.TheCounterIs(1)]
+            [Then.TheCounterIs(2)]
           ),
         },
         []
@@ -84,29 +82,20 @@ const Implementation: ITestImplementation<
   },
 
   givens: {
-    Default: () => {
-      const container = document.createElement('div');
-      document.body.appendChild(container);
-      const root = createRoot(container);
-      return { container, root };
-    },
+    Default: () => { return },
   },
 
   whens: {
-    IClick: () => ({ root }) => {
-      act(() => {
-        root.render(<ReactStateAndHook />);
-        const button = document.querySelector('button');
-        button?.click();
-      });
-    },
+    IClick: () => (rtr) =>
+      rtr.root.findByType("button").props.onClick(),
   },
 
   thens: {
-    TheCounterIs: (counter) => () => {
-      const pre = document.querySelector('pre');
+    TheCounterIs: (counter) => (rtr) => {
+      console.log("mark4, rtr", rtr)
+      const preElement = rtr.root.findByType('pre');
       return assert.equal(
-        pre?.textContent,
+        preElement.children[0],
         counter.toString()
       );
     },

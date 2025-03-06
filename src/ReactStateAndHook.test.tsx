@@ -60,7 +60,7 @@ const Specification: ITestSpecification<ISpec> =
           "test3": Given.Default(
             [`hello`],
             [When.IClick(), When.IClick()],
-            [Then.TheCounterIs(22)]
+            [Then.TheCounterIs(2)]
           ),
         },
         []
@@ -87,12 +87,12 @@ const Implementation: ITestImplementation<
 
   whens: {
     IClick: () => (rtr) =>
-      rtr.root.findByType("button").props.onClick(),
+      rtr.root.findByProps({"data-testid": "increment-button"}).props.onClick(),
   },
 
   thens: {
     TheCounterIs: (counter) => (rtr) => {
-      const preElement = rtr.root.findByType('pre');
+      const preElement = rtr.root.findByProps({"data-testid": "counter"});
       return assert.equal(
         preElement.children[0],
         counter.toString()

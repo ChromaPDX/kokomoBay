@@ -12,8 +12,13 @@ function ReactStateAndHook<IProps, IState>(): React.JSX.Element {
 
   return (
     <div>
-      <pre>{count}</pre>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <pre data-testid="counter">{count}</pre>
+      <button 
+        onClick={() => setCount(prev => prev + 1)}
+        data-testid="increment-button"
+      >
+        Click me
+      </button>
     </div>
   );
 }

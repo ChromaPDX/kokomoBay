@@ -60,7 +60,7 @@ const Specification: ITestSpecification<ISpec> =
           "test3": Given.Default(
             [`hello`],
             [When.IClick(), When.IClick()],
-            [Then.TheCounterIs(2)]
+            [Then.TheCounterIs(22)]
           ),
         },
         []

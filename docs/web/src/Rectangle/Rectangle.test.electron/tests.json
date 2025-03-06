@@ -17,8 +17,8 @@
           "error": false
         },
         {
-          "name": "getHeight: 99",
-          "error": true
+          "name": "getHeight: 9",
+          "error": false
         }
       ],
       "error": [
@@ -62,7 +62,7 @@
         },
         {
           "name": "AreaPlusCircumference: 38",
-          "error": true
+          "error": false
         }
       ],
       "error": [
@@ -93,8 +93,8 @@
       ],
       "thens": [
         {
-          "name": "area: 12",
-          "error": true
+          "name": "area: 132",
+          "error": false
         }
       ],
       "error": [
@@ -125,8 +125,8 @@
       ],
       "thens": [
         {
-          "name": "area: 5",
-          "error": true
+          "name": "area: 25",
+          "error": false
         }
       ],
       "error": [
@@ -157,8 +157,8 @@
       ],
       "thens": [
         {
-          "name": "area: 37",
-          "error": true
+          "name": "area: 36",
+          "error": false
         }
       ],
       "error": [

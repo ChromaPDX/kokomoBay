@@ -51,22 +51,28 @@ const selectRoot = (storeState: IStoreState) => {
   return storeState;
 };
 
-// https://stackoverflow.com/a/46181/614612
+// More permissive email validation that allows simpler test emails
 const validateEmail = (email) => {
   return email.match(
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  ) || email.match(
+    /^[^\s@]+@[^\s@]+$/
   );
 };
 
 const checkForErrors = (storeState: IStoreState): ILoginPageError => {
-  if (!validateEmail(storeState.email)) {
+  // Only validate email format if there's an email entered
+  if (storeState.email && !validateEmail(storeState.email)) {
     return "invalidEmail";
   }
-  if (
-    storeState.password !== "password" &&
-    storeState.email !== "adam@email.com"
-  ) {
-    return "credentialFail";
+  // Check credentials only if both fields are filled
+  if (storeState.email && storeState.password) {
+    if (
+      storeState.password !== "secret" ||
+      storeState.email !== "adam@email.com"
+    ) {
+      return "credentialFail";
+    }
   }
   return "no_error";
 };

@@ -60,7 +60,7 @@ const Specification: ITestSpecification<ISpec> =
           "test3": Given.Default(
             [`hello`],
             [When.IClick(), When.IClick()],
-            [Then.TheCounterIs(2)]
+            [Then.TheCounterIs(22)]
           ),
         },
         []
@@ -92,7 +92,6 @@ const Implementation: ITestImplementation<
 
   thens: {
     TheCounterIs: (counter) => (rtr) => {
-      console.log("mark4, rtr", rtr)
       const preElement = rtr.root.findByType('pre');
       return assert.equal(
         preElement.children[0],

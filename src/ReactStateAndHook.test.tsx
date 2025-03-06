@@ -6,6 +6,8 @@ import type {
 } from "testeranto/src/Types";
 
 import Testeranto from "testeranto/src/SubPackages/react-test-renderer/jsx/node.js";
+import { createRoot } from 'react-dom/client';
+import { act } from 'react-dom/test-utils';
 
 import ReactStateAndHook from "./ReactStateAndHook";
 
@@ -82,19 +84,29 @@ const Implementation: ITestImplementation<
   },
 
   givens: {
-    Default: () => { return },
+    Default: () => {
+      const container = document.createElement('div');
+      document.body.appendChild(container);
+      const root = createRoot(container);
+      return { container, root };
+    },
   },
 
   whens: {
-    IClick: () => (rtr) =>
-      rtr.root.findByType("button").props.onClick(),
+    IClick: () => ({ root }) => {
+      act(() => {
+        root.render(<ReactStateAndHook />);
+        const button = document.querySelector('button');
+        button?.click();
+      });
+    },
   },
 
   thens: {
-    TheCounterIs: (counter) => (rtr) => {
-      const preElement = rtr.root.findByType('pre');
+    TheCounterIs: (counter) => () => {
+      const pre = document.querySelector('pre');
       return assert.equal(
-        preElement.children[0],
+        pre?.textContent,
         counter.toString()
       );
     },

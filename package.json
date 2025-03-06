@@ -30,7 +30,8 @@
     "ai": "node --experimental-specifier-resolution=node --loader ts-node/esm  node_modules/testeranto/dist/module/src/Aider.js",
     "build-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm build-tests.ts",
     "run-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm  run-tests.ts",
-    "init-docs": "node --experimental-specifier-resolution=node --loader ts-node/esm  ./init-docs.mts"
+    "init-docs": "node --experimental-specifier-resolution=node --loader ts-node/esm  ./init-docs.mts",
+    "test": "yarn build-tests && yarn run-tests"
   },
   "types": "index.d.ts",
   "dependencies": {

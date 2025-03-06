@@ -21,18 +21,7 @@
           "error": false
         }
       ],
-      "error": [
-        {
-          "name": "AssertionError",
-          "message": "expected 9 to equal 99",
-          "showDiff": true,
-          "actual": 9,
-          "expected": 99,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 9 to equal 99\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13311:51\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-        },
-        "AssertionError: expected 9 to equal 99\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13311:51\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-      ],
+      "error": null,
       "features": [
         "hello"
       ]
@@ -65,18 +54,7 @@
           "error": false
         }
       ],
-      "error": [
-        {
-          "name": "AssertionError",
-          "message": "expected 43 to equal 38",
-          "showDiff": true,
-          "actual": 43,
-          "expected": 38,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 43 to equal 38\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13308:15\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-        },
-        "AssertionError: expected 43 to equal 38\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13308:15\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-      ],
+      "error": null,
       "features": [
         "0"
       ]
@@ -97,18 +75,7 @@
           "error": false
         }
       ],
-      "error": [
-        {
-          "name": "AssertionError",
-          "message": "expected 132 to equal 12",
-          "showDiff": true,
-          "actual": 132,
-          "expected": 12,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 132 to equal 12\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-        },
-        "AssertionError: expected 132 to equal 12\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-      ],
+      "error": null,
       "features": [
         "0"
       ]
@@ -129,18 +96,7 @@
           "error": false
         }
       ],
-      "error": [
-        {
-          "name": "AssertionError",
-          "message": "expected 25 to equal 5",
-          "showDiff": true,
-          "actual": 25,
-          "expected": 5,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 25 to equal 5\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-        },
-        "AssertionError: expected 25 to equal 5\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-      ],
+      "error": null,
       "features": [
         "0"
       ]
@@ -161,18 +117,7 @@
           "error": false
         }
       ],
-      "error": [
-        {
-          "name": "AssertionError",
-          "message": "expected 36 to equal 37",
-          "showDiff": true,
-          "actual": 36,
-          "expected": 37,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 36 to equal 37\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-        },
-        "AssertionError: expected 36 to equal 37\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13312:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12351:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13115:36)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12790:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12571:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12450:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12886:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:12914:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.mjs:13177:47)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fmodule%2Fsrc%2FPM%2Fmain.js%3A463%3A22:6:9"
-      ],
+      "error": null,
       "features": [
         "0"
       ]

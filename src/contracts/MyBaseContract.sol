@@ -11,7 +11,7 @@ contract MyBaseContract {
 
   // Function to increment count by 1
   function inc() public {
-    count += 11;
+    count += 1;
   }
 
   // Function to decrement count by 1

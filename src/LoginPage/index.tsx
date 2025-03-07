@@ -40,7 +40,8 @@ export function LoginPage(): React.JSX.Element {
         onChange={(e) => {
           const email = e.target.value;
           store.dispatch(actions.setEmail(email));
-          // Only validate email when submitting
+          const isValid = validateEmail(email);
+          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
         }} 
       />
 

@@ -39,9 +39,8 @@ export function LoginPage(): React.JSX.Element {
         value={selection.email} 
         onChange={(e) => {
           const email = e.target.value;
-          const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
           store.dispatch(actions.setEmail(email));
-          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+          // Only validate email when submitting
         }} 
       />
 

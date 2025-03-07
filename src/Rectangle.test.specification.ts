@@ -10,7 +10,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
       "Testing the Rectangle class",
       {
         test0: Given.Default(
-          ["hello"],
+          ["https://api.github.com/repos/adamwong246/testeranto/issues/8"],
           [When.setWidth(4), When.setHeight(9)],
           [Then.getWidth(4), Then.getHeight(9)]
         ),
@@ -38,7 +38,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
         test4: Given.Default(
           [`0`],
           [When.setHeight(6), When.setWidth(6)],
-          [Then.area(365)]
+          [Then.area(36)]
         ),
       },
       []

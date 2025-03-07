@@ -23,7 +23,7 @@
       ],
       "error": null,
       "features": [
-        "hello"
+        "https://api.github.com/repos/adamwong246/testeranto/issues/8"
       ]
     },
     {
@@ -123,5 +123,9 @@
       ]
     }
   ],
-  "fails": []
+  "fails": [],
+  "features": {
+    "0": "0",
+    "https://api.github.com/repos/adamwong246/testeranto/issues/8": "https://api.github.com/repos/adamwong246/testeranto/issues/8"
+  }
 }

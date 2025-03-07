@@ -1,6 +1,7 @@
+import { IBaseConfig } from "testeranto/src/lib/types.js";
 import { solidityEsBuildConfig } from "./subPackages/solidity/index.js";
 
-export default {
+const config: IBaseConfig = {
   outdir: "docs",
 
   tests: [
@@ -10,13 +11,12 @@ export default {
     // these test might be useful if you are testing react itself, rather than a react component
     // ["./src/LoginPage/react/web.test.tsx", "web", { ports: 0 }, []],
     // ["./src/LoginPage/react/node.test.tsx", "node", { ports: 0 }, []],
-
-    // [
-    //   "./src/LoginPage/react-test-renderer/web.test.tsx",
-    //   "web",
-    //   { ports: 0 },
-    //   [],
-    // ],
+    [
+      "./src/LoginPage/react-test-renderer/web.test.tsx",
+      "web",
+      { ports: 0 },
+      [],
+    ],
     ["./src/Rectangle/Rectangle.test.electron.ts", "web", { ports: 0 }, []],
     // [
     //   "./src/ClassicalComponent/react-dom/client.web.test.tsx",
@@ -24,25 +24,23 @@ export default {
     //   { ports: 0 },
     //   [],
     // ],
-
-    // [
-    //   "./src/LoginPage/react-test-renderer/node.test.tsx",
-    //   "node",
-    //   { ports: 0 },
-    //   [],
-    // ],
-    // ["./src/ReactStateAndHook.test.tsx", "node", { ports: 0 }, []],
-    // ["./src/app.reduxToolkit.test.ts", "node", { ports: 0 }, []],
-    // ["./src/app.redux.test.ts", "node", { ports: 0 }, []],
-    // [
-    //   "./src/Rectangle/Rectangle.test.node.ts",
-    //   "node",
-    //   { ports: 0 },
-    //   [["./src/ClassicalComponent/test.ts", "web", { ports: 0 }, []]],
-    // ],
-    // ["./src/MyFirstContract.basic.test.ts", "node", { ports: 0 }, []],
-    // ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
-
+    [
+      "./src/LoginPage/react-test-renderer/node.test.tsx",
+      "node",
+      { ports: 0 },
+      [],
+    ],
+    ["./src/ReactStateAndHook.test.tsx", "node", { ports: 0 }, []],
+    ["./src/app.reduxToolkit.test.ts", "node", { ports: 0 }, []],
+    ["./src/app.redux.test.ts", "node", { ports: 0 }, []],
+    [
+      "./src/Rectangle/Rectangle.test.node.ts",
+      "node",
+      { ports: 0 },
+      [["./src/ClassicalComponent/test.ts", "web", { ports: 0 }, []]],
+    ],
+    ["./src/MyFirstContract.basic.test.ts", "node", { ports: 0 }, []],
+    ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
     // [
     //   "./src/MyFirstContract.solidity-react.testeranto.ts",
     //   "node",
@@ -53,7 +51,7 @@ export default {
 
   debugger: true,
   clearScreen: false,
-  devMode: true,
+  devMode: false,
   minify: false,
   outbase: ".",
   externals: ["ganache", "stream"],
@@ -66,7 +64,6 @@ export default {
       name: "ganache-shim",
       setup(build) {
         build.onResolve({ filter: /.*/ }, (args) => {
-          // console.log("mark4", args.path);
           // return ({
           //   path: "MyFirstContract",
           //   namespace: 'ganache-shim',
@@ -101,4 +98,15 @@ export default {
     //   },
     // },
   ],
+  featureIngestor: async function (s: string): Promise<string> {
+    return new Promise(async (res, rej) => {
+      try {
+        res((await (await fetch(new URL(s).href)).json()).body);
+      } catch (err) {
+        res(s);
+      }
+    });
+  },
 };
+
+export default config;

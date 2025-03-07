@@ -43,12 +43,12 @@ const Specification: ITestSpecification<ISpec> =
         "Testing the ReactStateAndHook element",
         {
           "test0": Given.Default(
-            [`hello`],
+            [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
             [],
             [Then.TheCounterIs(0)]
           ),
           "test1": Given.Default(
-            [`hello`],
+            [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
             [When.IClick()],
             [Then.TheCounterIs(1)]
           ),
@@ -87,12 +87,12 @@ const Implementation: ITestImplementation<
 
   whens: {
     IClick: () => (rtr) =>
-      rtr.root.findByProps({"data-testid": "increment-button"}).props.onClick(),
+      rtr.root.findByProps({ "data-testid": "increment-button" }).props.onClick(),
   },
 
   thens: {
     TheCounterIs: (counter) => (rtr) => {
-      const preElement = rtr.root.findByProps({"data-testid": "counter"});
+      const preElement = rtr.root.findByProps({ "data-testid": "counter" });
       return assert.equal(
         preElement.children[0],
         counter.toString()

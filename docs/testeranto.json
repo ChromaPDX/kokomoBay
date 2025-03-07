@@ -102,17 +102,10 @@
     "3007"
   ],
   "webPlugins": [
-    {
-      "name": "solidity"
-    }
+    null
   ],
   "nodePlugins": [
-    {
-      "name": "ganache-shim"
-    },
-    {
-      "name": "solidity"
-    }
+    null
   ],
   "buildDir": "/Users/adam/Code/kokomoBay/docs"
 }

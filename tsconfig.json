@@ -3,7 +3,7 @@
     "testeranto.mts",
   ],
   "include": [
-    "subPackages/solidity/index.d.ts",
+    "src/subPackages/solidity/index.d.ts",
     "build-tests.ts",
     "run-test.ts",
   ],

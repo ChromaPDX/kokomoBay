@@ -4,7 +4,7 @@ import {
   MyFirstContract_default,
   commonGivens,
   require_lib15 as require_lib
-} from "../chunk-DHKDVW5J.mjs";
+} from "../chunk-FJJHIQQ5.mjs";
 import {
   Node_default
 } from "../chunk-ORJV2YNZ.mjs";
@@ -21,7 +21,7 @@ import {
   __toESM
 } from "../chunk-PM7MAOUR.mjs";
 
-// subPackages/solidity/Contract.testeranto.test.ts
+// src/subPackages/solidity/Contract.testeranto.test.ts
 var import_web3 = __toESM(require_lib(), 1);
 import Ganache from "ganache";
 var Contract_testeranto_test_default = (testImplementations, testSpecifications, testInput) => {

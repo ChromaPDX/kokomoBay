@@ -1,5 +1,8 @@
 
 /add src/app.redux.test.ts
+/add src/app.ts
+/add src/app.test.ts
+/add src/subPackages/redux.testeranto.test.ts
 /read docs/node/src/app.redux.test/tests.json
 /read docs/node/src/app.redux.test/features.json
 /code fix the failing tests described in docs/node/src/app.redux.test/tests.json.

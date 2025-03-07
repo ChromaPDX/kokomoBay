@@ -7,7 +7,7 @@ import {
   IImplementation,
 } from "./app.test.js";
 
-import { ReduxTesteranto } from "../subPackages/redux.testeranto.test.js";
+import { ReduxTesteranto } from "./subPackages/redux.testeranto.test.js";
 
 // const implementations: IImplementation = {
 const implementations: any = {

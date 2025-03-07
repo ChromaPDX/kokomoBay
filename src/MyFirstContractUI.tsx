@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import "@ethersproject/shims"
 
-import MyFirstContract from "../contracts/MyFirstContract.sol";
+import MyFirstContract from "./contracts/MyFirstContract.sol";
 
 export const noError = 'no_error';
 

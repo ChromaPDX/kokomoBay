@@ -19,7 +19,7 @@ import {
   require_lib8,
   require_lib9,
   require_scrypt
-} from "../chunk-DHKDVW5J.mjs";
+} from "../chunk-FJJHIQQ5.mjs";
 import {
   Node_default
 } from "../chunk-ORJV2YNZ.mjs";
@@ -17356,7 +17356,7 @@ var require_lib32 = __commonJS({
   }
 });
 
-// subPackages/solidity/Contract-rpc.testeranto.test.ts
+// src/subPackages/solidity/Contract-rpc.testeranto.test.ts
 var import_web3 = __toESM(require_lib15(), 1);
 var import_ethers = __toESM(require_lib32(), 1);
 import Ganache from "ganache";

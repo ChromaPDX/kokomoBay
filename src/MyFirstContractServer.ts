@@ -1,13 +1,8 @@
-// export default async () => {
-//   console.log("hello MyFurstContractServer");
-//   return true;
-// };
-
 import { ethers } from "ethers";
 import Ganache from "ganache";
 import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import Web3 from "web3";
-import MyFirstContract from "../contracts/MyFirstContract.sol";
+import MyFirstContract from "./contracts/MyFirstContract.sol";
 
 console.log("hello contract server");
 

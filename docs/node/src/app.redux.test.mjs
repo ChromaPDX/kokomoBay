@@ -22,7 +22,7 @@ import {
   __toESM
 } from "../chunk-PM7MAOUR.mjs";
 
-// subPackages/redux.testeranto.test.ts
+// src/subPackages/redux.testeranto.test.ts
 var import_redux = __toESM(require_redux(), 1);
 var ReduxTesteranto = (testInput, testSpecifications, testImplementations) => {
   const testInterface = {

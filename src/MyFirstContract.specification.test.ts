@@ -1,6 +1,6 @@
 import { BaseGiven } from "../../testeranto/src/lib/abstractBase";
 
-import MyFirstContract from "../contracts/MyFirstContract.sol";
+import MyFirstContract from "./contracts/MyFirstContract.sol";
 import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";
 
 export const MyFirstContractTestInput = MyFirstContract.contracts.find(

@@ -7,7 +7,7 @@ import {
   ActionCreatorWithoutPayload,
 } from "@reduxjs/toolkit";
 
-import { ReduxToolkitTesteranto } from "../subPackages/reduxToolkit.testeranto.test";
+import { ReduxToolkitTesteranto } from "./subPackages/reduxToolkit.testeranto.test";
 
 import { AppSpecification, IAppSpecification } from "./app.test";
 import app, { IStoreState, loginApp } from "./app";

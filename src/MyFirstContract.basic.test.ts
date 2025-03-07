@@ -4,8 +4,8 @@ import { assert } from "chai";
 
 import Testeranto, {
   IInput,
-} from "../subPackages/solidity/Contract.testeranto.test";
-import MyFirstContract from "../contracts/MyFirstContract.sol";
+} from "./subPackages/solidity/Contract.testeranto.test";
+import MyFirstContract from "./contracts/MyFirstContract.sol";
 
 import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";
 import {

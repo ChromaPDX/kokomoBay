@@ -1,5 +1,7 @@
 
 /add src/MyFirstContract.rpc.test.ts
+/add src/subPackages/solidity/Contract-rpc.testeranto.test.ts
+/add src/MyFirstContract.specification.test.ts
 /read docs/node/src/MyFirstContract.rpc.test/tests.json
 /read docs/node/src/MyFirstContract.rpc.test/features.json
 /code fix the failing tests described in docs/node/src/MyFirstContract.rpc.test/tests.json.

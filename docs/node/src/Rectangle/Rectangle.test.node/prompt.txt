@@ -1,9 +1,8 @@
 
-/add src/Rectangle.ts
+/add src/Rectangle/Rectangle.test.node.ts
 /add src/Rectangle.test.ts
 /add src/Rectangle.test.implementation.ts
 /add src/Rectangle.test.specification.ts
-/add src/Rectangle/Rectangle.test.node.ts
 /read docs/node/src/Rectangle/Rectangle.test.node/tests.json
 /read docs/node/src/Rectangle/Rectangle.test.node/features.json
 /code fix the failing tests described in docs/node/src/Rectangle/Rectangle.test.node/tests.json.

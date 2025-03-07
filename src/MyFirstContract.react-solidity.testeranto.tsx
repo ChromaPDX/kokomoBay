@@ -3,7 +3,7 @@ import { ITestImplementation } from "testeranto/src/Types";
 import { assert } from "chai";
 
 import Testeranto, {
-} from "../subPackages/solidity/react.testeranto";
+} from "./subPackages/solidity/react.testeranto";
 
 import { MyFirstContractUI } from "./MyFirstContractUI";
 import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";

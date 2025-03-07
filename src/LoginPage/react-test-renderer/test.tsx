@@ -86,8 +86,7 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
     },
     ThereIsNotAnEmailError: () => (component: renderer.ReactTestRenderer) => {
       const errorField = component.root.findByProps({ id: "invalid-email-warning" })
-      console.log(errorField.children)
-      assert.isEmpty(errorField.children)
+      assert.equal(errorField.children.length, 0)
     }
 
   },

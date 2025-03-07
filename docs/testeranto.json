@@ -1,6 +1,5 @@
 {
   "outdir": "docs",
-  "features": "/Users/adam/Code/kokomoBay/features.test.mts",
   "tests": [
     [
       "./src/LoginPage/react-test-renderer/web.test.tsx",
@@ -12,14 +11,6 @@
     ],
     [
       "./src/Rectangle/Rectangle.test.electron.ts",
-      "web",
-      {
-        "ports": 0
-      },
-      []
-    ],
-    [
-      "./src/ClassicalComponent/react-dom/client.web.test.tsx",
       "web",
       {
         "ports": 0
@@ -57,11 +48,44 @@
         "ports": 0
       },
       []
+    ],
+    [
+      "./src/Rectangle/Rectangle.test.node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      [
+        [
+          "./src/ClassicalComponent/test.ts",
+          "web",
+          {
+            "ports": 0
+          },
+          []
+        ]
+      ]
+    ],
+    [
+      "./src/MyFirstContract.basic.test.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/MyFirstContract.rpc.test.ts",
+      "node",
+      {
+        "ports": 1
+      },
+      []
     ]
   ],
   "debugger": true,
   "clearScreen": false,
-  "devMode": true,
+  "devMode": false,
   "minify": false,
   "outbase": ".",
   "externals": [

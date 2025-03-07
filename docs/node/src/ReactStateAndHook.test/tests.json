@@ -10,12 +10,9 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.\n    at Object.throwInvalidHookError (file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test.mjs?cacheBust=1739475807949:41504:17)\n    at useState (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:22788:29)\n    at ReactStateAndHook (file:///Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test.mjs?cacheBust=1739475807949:26:56)\n    at renderWithHooks (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:12990:26)\n    at mountIndeterminateComponent (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:15555:21)\n    at beginWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:16504:22)\n    at performUnitOfWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19396:20)\n    at workLoopSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19351:13)\n    at renderRootSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19333:15)\n    at performSyncWorkOnRoot (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19132:28)"
-      ],
+      "error": null,
       "features": [
-        "hello"
+        "https://api.github.com/repos/adamwong246/testeranto/issues/7"
       ]
     },
     {
@@ -31,12 +28,9 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.\n    at Object.throwInvalidHookError (file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test.mjs?cacheBust=1739475807949:41504:17)\n    at useState (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:22788:29)\n    at ReactStateAndHook (file:///Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test.mjs?cacheBust=1739475807949:26:56)\n    at renderWithHooks (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:12990:26)\n    at mountIndeterminateComponent (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:15555:21)\n    at beginWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:16504:22)\n    at performUnitOfWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19396:20)\n    at workLoopSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19351:13)\n    at renderRootSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19333:15)\n    at performSyncWorkOnRoot (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19132:28)"
-      ],
+      "error": null,
       "features": [
-        "hello"
+        "https://api.github.com/repos/adamwong246/testeranto/issues/7"
       ]
     },
     {
@@ -58,10 +52,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.\n    at Object.throwInvalidHookError (file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test.mjs?cacheBust=1739475807949:41504:17)\n    at useState (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:22788:29)\n    at ReactStateAndHook (file:///Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test.mjs?cacheBust=1739475807949:26:56)\n    at renderWithHooks (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:12990:26)\n    at mountIndeterminateComponent (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:15555:21)\n    at beginWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:16504:22)\n    at performUnitOfWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19396:20)\n    at workLoopSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19351:13)\n    at renderRootSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19333:15)\n    at performSyncWorkOnRoot (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19132:28)"
-      ],
+      "error": null,
       "features": [
         "hello"
       ]
@@ -71,22 +62,26 @@
       "whens": [
         {
           "name": "IClick: undefined"
+        },
+        {
+          "name": "IClick: undefined"
         }
       ],
       "thens": [
         {
-          "name": "TheCounterIs: 1",
+          "name": "TheCounterIs: 2",
           "error": false
         }
       ],
-      "error": [
-        {},
-        "Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.\n    at Object.throwInvalidHookError (file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test.mjs?cacheBust=1739475807949:41504:17)\n    at useState (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:22788:29)\n    at ReactStateAndHook (file:///Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test.mjs?cacheBust=1739475807949:26:56)\n    at renderWithHooks (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:12990:26)\n    at mountIndeterminateComponent (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:15555:21)\n    at beginWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:16504:22)\n    at performUnitOfWork (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19396:20)\n    at workLoopSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19351:13)\n    at renderRootSync (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19333:15)\n    at performSyncWorkOnRoot (file:///Users/adam/Code/kokomoBay/docs/node/chunk-RABYUY7O.mjs:19132:28)"
-      ],
+      "error": null,
       "features": [
         "hello"
       ]
     }
   ],
-  "fails": []
+  "fails": [],
+  "features": {
+    "https://api.github.com/repos/adamwong246/testeranto/issues/7": "https://api.github.com/repos/adamwong246/testeranto/issues/7",
+    "hello": "hello"
+  }
 }

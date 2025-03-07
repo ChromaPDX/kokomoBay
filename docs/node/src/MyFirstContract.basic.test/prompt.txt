@@ -1,0 +1,5 @@
+
+/add src/MyFirstContract.basic.test.ts
+/read docs/node/src/MyFirstContract.basic.test/tests.json
+/read docs/node/src/MyFirstContract.basic.test/features.json
+/code fix the failing tests described in docs/node/src/MyFirstContract.basic.test/tests.json.

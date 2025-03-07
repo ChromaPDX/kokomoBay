@@ -1,7 +1,5 @@
 import Testeranto from "testeranto/src/Web";
 
-import { features } from "../../features.test.mts";
-
 import Rectangle from "../Rectangle";
 import { RectangleTesterantoBaseTestSpecification } from "../Rectangle.test.specification";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";
@@ -85,8 +83,7 @@ export default Testeranto(
   },
   {
     ports: 0,
-  },
-  features
+  }
 );
 
 export {};

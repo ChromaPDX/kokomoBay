@@ -2,28 +2,28 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   node_default,
   require_react
-} from "../../../chunk-RABYUY7O.mjs";
+} from "../../../chunk-DUG2EPO4.mjs";
 import {
-  app_default,
+  app_default
+} from "../../../chunk-EUREPPNS.mjs";
+import {
   assert
-} from "../../../chunk-DDPARXEP.mjs";
-import "../../../chunk-K5DK65GD.mjs";
-import "../../../chunk-FLSG3ZVV.mjs";
-import "../../../chunk-CTKBT5JH.mjs";
-import "../../../chunk-RBWPBMY4.mjs";
-import "../../../chunk-PJC2V65J.mjs";
-import "../../../chunk-VDOS7AVZ.mjs";
+} from "../../../chunk-BACB6GDH.mjs";
+import "../../../chunk-XWE4N4UG.mjs";
+import "../../../chunk-ZTDVYA3Q.mjs";
+import "../../../chunk-OI5YMCUL.mjs";
+import "../../../chunk-6D4LK6R2.mjs";
+import "../../../chunk-JWYWNN27.mjs";
+import "../../../chunk-KNOLJKC2.mjs";
 import {
   __commonJS,
-  __toESM,
-  init_cjs_shim
-} from "../../../chunk-THMF2HPO.mjs";
+  __toESM
+} from "../../../chunk-PM7MAOUR.mjs";
 
 // node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js
 var require_use_sync_external_store_shim_production = __commonJS({
   "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var React2 = require_react();
     function is(x, y) {
       return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
@@ -77,7 +77,6 @@ var require_use_sync_external_store_shim_production = __commonJS({
 var require_use_sync_external_store_shim_development = __commonJS({
   "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     "production" !== process.env.NODE_ENV && function() {
       function is(x, y) {
         return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
@@ -142,7 +141,6 @@ var require_use_sync_external_store_shim_development = __commonJS({
 var require_shim = __commonJS({
   "node_modules/use-sync-external-store/shim/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_use_sync_external_store_shim_production();
     } else {
@@ -155,7 +153,6 @@ var require_shim = __commonJS({
 var require_with_selector_production = __commonJS({
   "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var React2 = require_react();
     var shim = require_shim();
     function is(x, y) {
@@ -227,7 +224,6 @@ var require_with_selector_production = __commonJS({
 var require_with_selector_development = __commonJS({
   "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     "production" !== process.env.NODE_ENV && function() {
       function is(x, y) {
         return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
@@ -296,7 +292,6 @@ var require_with_selector_development = __commonJS({
 var require_with_selector = __commonJS({
   "node_modules/use-sync-external-store/shim/with-selector.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_with_selector_production();
     } else {
@@ -309,7 +304,6 @@ var require_with_selector = __commonJS({
 var require_scheduler_production_min = __commonJS({
   "node_modules/scheduler/cjs/scheduler.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     function f(a, b) {
       var c = a.length;
       a.push(b);
@@ -581,7 +575,6 @@ var require_scheduler_production_min = __commonJS({
 var require_scheduler_development = __commonJS({
   "node_modules/scheduler/cjs/scheduler.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -1032,7 +1025,6 @@ var require_scheduler_development = __commonJS({
 var require_scheduler = __commonJS({
   "node_modules/scheduler/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_scheduler_production_min();
     } else {
@@ -1045,7 +1037,6 @@ var require_scheduler = __commonJS({
 var require_react_dom_production_min = __commonJS({
   "node_modules/react-dom/cjs/react-dom.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var aa = require_react();
     var ca = require_scheduler();
     function p(a) {
@@ -8188,7 +8179,6 @@ var require_react_dom_production_min = __commonJS({
 var require_react_dom_development = __commonJS({
   "node_modules/react-dom/cjs/react-dom.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -29280,7 +29270,6 @@ var require_react_dom_development = __commonJS({
 var require_react_dom = __commonJS({
   "node_modules/react-dom/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     function checkDCE() {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") {
         return;
@@ -29307,7 +29296,6 @@ var require_react_dom = __commonJS({
 var require_reactBatchedUpdates = __commonJS({
   "node_modules/react-redux/lib/utils/reactBatchedUpdates.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     Object.defineProperty(exports, "unstable_batchedUpdates", {
       enumerable: true,
@@ -29323,7 +29311,6 @@ var require_reactBatchedUpdates = __commonJS({
 var require_batch = __commonJS({
   "node_modules/react-redux/lib/utils/batch.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.getBatch = exports.setBatch = void 0;
     function defaultNoopBatch(callback) {
@@ -29341,7 +29328,6 @@ var require_batch = __commonJS({
 var require_Context = __commonJS({
   "node_modules/react-redux/lib/components/Context.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = exports.ReactReduxContext = void 0;
     var React2 = _interopRequireWildcard(require_react());
@@ -29414,7 +29400,6 @@ var require_Context = __commonJS({
 var require_useReduxContext = __commonJS({
   "node_modules/react-redux/lib/hooks/useReduxContext.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createReduxContextHook = createReduxContextHook;
     exports.useReduxContext = void 0;
@@ -29438,7 +29423,6 @@ var require_useReduxContext = __commonJS({
 var require_useSyncExternalStore = __commonJS({
   "node_modules/react-redux/lib/utils/useSyncExternalStore.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.notInitialized = void 0;
     var notInitialized = () => {
@@ -29452,7 +29436,6 @@ var require_useSyncExternalStore = __commonJS({
 var require_useSelector = __commonJS({
   "node_modules/react-redux/lib/hooks/useSelector.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createSelectorHook = createSelectorHook;
     exports.useSelector = exports.initializeUseSelector = void 0;
@@ -29556,7 +29539,6 @@ var require_useSelector = __commonJS({
 // node_modules/@babel/runtime/helpers/interopRequireDefault.js
 var require_interopRequireDefault = __commonJS({
   "node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module) {
-    init_cjs_shim();
     function _interopRequireDefault(e) {
       return e && e.__esModule ? e : {
         "default": e
@@ -29569,7 +29551,6 @@ var require_interopRequireDefault = __commonJS({
 // node_modules/@babel/runtime/helpers/extends.js
 var require_extends = __commonJS({
   "node_modules/@babel/runtime/helpers/extends.js"(exports, module) {
-    init_cjs_shim();
     function _extends() {
       return module.exports = _extends = Object.assign ? Object.assign.bind() : function(n) {
         for (var e = 1; e < arguments.length; e++) {
@@ -29587,7 +29568,6 @@ var require_extends = __commonJS({
 // node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js
 var require_objectWithoutPropertiesLoose = __commonJS({
   "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"(exports, module) {
-    init_cjs_shim();
     function _objectWithoutPropertiesLoose(r, e) {
       if (null == r)
         return {};
@@ -29608,7 +29588,6 @@ var require_objectWithoutPropertiesLoose = __commonJS({
 var require_react_is_production_min = __commonJS({
   "node_modules/react-is/cjs/react-is.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var b = "function" === typeof Symbol && Symbol.for;
     var c = b ? Symbol.for("react.element") : 60103;
     var d = b ? Symbol.for("react.portal") : 60106;
@@ -29722,7 +29701,6 @@ var require_react_is_production_min = __commonJS({
 var require_react_is_development = __commonJS({
   "node_modules/react-is/cjs/react-is.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -29878,7 +29856,6 @@ var require_react_is_development = __commonJS({
 var require_react_is = __commonJS({
   "node_modules/react-is/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_is_production_min();
     } else {
@@ -29891,7 +29868,6 @@ var require_react_is = __commonJS({
 var require_hoist_non_react_statics_cjs = __commonJS({
   "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     var reactIs = require_react_is();
     var REACT_STATICS = {
       childContextTypes: true,
@@ -29980,7 +29956,6 @@ var require_hoist_non_react_statics_cjs = __commonJS({
 var require_react_is_production_min2 = __commonJS({
   "node_modules/react-redux/node_modules/react-is/cjs/react-is.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var b = Symbol.for("react.element");
     var c = Symbol.for("react.portal");
     var d = Symbol.for("react.fragment");
@@ -30092,7 +30067,6 @@ var require_react_is_production_min2 = __commonJS({
 var require_react_is_development2 = __commonJS({
   "node_modules/react-redux/node_modules/react-is/cjs/react-is.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -30275,7 +30249,6 @@ var require_react_is_development2 = __commonJS({
 var require_react_is2 = __commonJS({
   "node_modules/react-redux/node_modules/react-is/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_is_production_min2();
     } else {
@@ -30288,7 +30261,6 @@ var require_react_is2 = __commonJS({
 var require_warning = __commonJS({
   "node_modules/react-redux/lib/utils/warning.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = warning;
     function warning(message) {
@@ -30307,7 +30279,6 @@ var require_warning = __commonJS({
 var require_verifySubselectors = __commonJS({
   "node_modules/react-redux/lib/connect/verifySubselectors.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.default = verifySubselectors;
@@ -30333,7 +30304,6 @@ var require_verifySubselectors = __commonJS({
 var require_selectorFactory = __commonJS({
   "node_modules/react-redux/lib/connect/selectorFactory.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.pureFinalPropsSelectorFactory = pureFinalPropsSelectorFactory;
@@ -30422,7 +30392,6 @@ var require_selectorFactory = __commonJS({
 var require_bindActionCreators = __commonJS({
   "node_modules/react-redux/lib/utils/bindActionCreators.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = bindActionCreators;
     function bindActionCreators(actionCreators, dispatch) {
@@ -30442,7 +30411,6 @@ var require_bindActionCreators = __commonJS({
 var require_isPlainObject = __commonJS({
   "node_modules/react-redux/lib/utils/isPlainObject.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = isPlainObject;
     function isPlainObject(obj) {
@@ -30464,7 +30432,6 @@ var require_isPlainObject = __commonJS({
 var require_verifyPlainObject = __commonJS({
   "node_modules/react-redux/lib/utils/verifyPlainObject.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.default = verifyPlainObject;
@@ -30482,7 +30449,6 @@ var require_verifyPlainObject = __commonJS({
 var require_wrapMapToProps = __commonJS({
   "node_modules/react-redux/lib/connect/wrapMapToProps.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.wrapMapToPropsConstant = wrapMapToPropsConstant;
@@ -30533,7 +30499,6 @@ var require_wrapMapToProps = __commonJS({
 var require_invalidArgFactory = __commonJS({
   "node_modules/react-redux/lib/connect/invalidArgFactory.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createInvalidArgFactory = createInvalidArgFactory;
     function createInvalidArgFactory(arg, name) {
@@ -30548,7 +30513,6 @@ var require_invalidArgFactory = __commonJS({
 var require_mapDispatchToProps = __commonJS({
   "node_modules/react-redux/lib/connect/mapDispatchToProps.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.mapDispatchToPropsFactory = mapDispatchToPropsFactory;
@@ -30573,7 +30537,6 @@ var require_mapDispatchToProps = __commonJS({
 var require_mapStateToProps = __commonJS({
   "node_modules/react-redux/lib/connect/mapStateToProps.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.mapStateToPropsFactory = mapStateToPropsFactory;
     var _wrapMapToProps = require_wrapMapToProps();
@@ -30591,7 +30554,6 @@ var require_mapStateToProps = __commonJS({
 var require_mergeProps = __commonJS({
   "node_modules/react-redux/lib/connect/mergeProps.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.defaultMergeProps = defaultMergeProps;
@@ -30635,7 +30597,6 @@ var require_mergeProps = __commonJS({
 var require_Subscription = __commonJS({
   "node_modules/react-redux/lib/utils/Subscription.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createSubscription = createSubscription;
     var _batch = require_batch();
@@ -30775,7 +30736,6 @@ var require_Subscription = __commonJS({
 var require_useIsomorphicLayoutEffect = __commonJS({
   "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.useIsomorphicLayoutEffect = exports.canUseDOM = void 0;
     var React2 = _interopRequireWildcard(require_react());
@@ -30828,7 +30788,6 @@ var require_useIsomorphicLayoutEffect = __commonJS({
 var require_shallowEqual = __commonJS({
   "node_modules/react-redux/lib/utils/shallowEqual.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = shallowEqual;
     function is(x, y) {
@@ -30862,7 +30821,6 @@ var require_shallowEqual = __commonJS({
 var require_connect = __commonJS({
   "node_modules/react-redux/lib/components/connect.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     exports.default = exports.initializeConnect = void 0;
@@ -31193,7 +31151,6 @@ ${latestSubscriptionCallbackError.current.stack}
 var require_Provider = __commonJS({
   "node_modules/react-redux/lib/components/Provider.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.default = void 0;
     var React2 = _interopRequireWildcard(require_react());
@@ -31285,7 +31242,6 @@ var require_Provider = __commonJS({
 var require_useStore = __commonJS({
   "node_modules/react-redux/lib/hooks/useStore.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createStoreHook = createStoreHook;
     exports.useStore = void 0;
@@ -31315,7 +31271,6 @@ var require_useStore = __commonJS({
 var require_useDispatch = __commonJS({
   "node_modules/react-redux/lib/hooks/useDispatch.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     exports.createDispatchHook = createDispatchHook;
     exports.useDispatch = void 0;
@@ -31340,7 +31295,6 @@ var require_useDispatch = __commonJS({
 var require_types = __commonJS({
   "node_modules/react-redux/lib/types.js"() {
     "use strict";
-    init_cjs_shim();
   }
 });
 
@@ -31348,7 +31302,6 @@ var require_types = __commonJS({
 var require_exports = __commonJS({
   "node_modules/react-redux/lib/exports.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var _interopRequireDefault = require_interopRequireDefault();
     exports.__esModule = true;
     var _exportNames = {
@@ -31452,7 +31405,6 @@ var require_exports = __commonJS({
 var require_lib = __commonJS({
   "node_modules/react-redux/lib/index.js"(exports) {
     "use strict";
-    init_cjs_shim();
     exports.__esModule = true;
     var _exportNames = {
       batch: true
@@ -31494,7 +31446,6 @@ var require_lib = __commonJS({
 var require_scheduler_unstable_mock_production_min = __commonJS({
   "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     function f(a, b) {
       var c = a.length;
       a.push(b);
@@ -31824,7 +31775,6 @@ var require_scheduler_unstable_mock_production_min = __commonJS({
 var require_scheduler_unstable_mock_development = __commonJS({
   "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -32361,7 +32311,6 @@ var require_scheduler_unstable_mock_development = __commonJS({
 var require_unstable_mock = __commonJS({
   "node_modules/scheduler/unstable_mock.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_scheduler_unstable_mock_production_min();
     } else {
@@ -32374,7 +32323,6 @@ var require_unstable_mock = __commonJS({
 var require_react_test_renderer_production_min = __commonJS({
   "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js"(exports) {
     "use strict";
-    init_cjs_shim();
     var aa = require_react();
     var ba = require_unstable_mock();
     var ca = require_scheduler();
@@ -36960,7 +36908,6 @@ var require_react_test_renderer_production_min = __commonJS({
 var require_react_test_renderer_development = __commonJS({
   "node_modules/react-test-renderer/cjs/react-test-renderer.development.js"(exports) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -49977,7 +49924,6 @@ var require_react_test_renderer_development = __commonJS({
 var require_react_test_renderer = __commonJS({
   "node_modules/react-test-renderer/index.js"(exports, module) {
     "use strict";
-    init_cjs_shim();
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_test_renderer_production_min();
     } else {
@@ -49986,23 +49932,19 @@ var require_react_test_renderer = __commonJS({
   }
 });
 
-// src/LoginPage/react-test-renderer/node.test.tsx
-init_cjs_shim();
-
 // src/LoginPage/test.ts
-init_cjs_shim();
 var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
   return [
     Suite.Default(
       "Testing the LoginPage as react",
       {
         test0: Given.default(
-          ["67ae06bac3c5fa5a98a08e32"],
+          ["0"],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.TheEmailIs("adam@email.com")]
         ),
         test1: Given.default(
-          [`67ae06bac3c5fa5a98a08e32`],
+          [`0`],
           [
             When.TheEmailIsSetTo("adam@email.com"),
             When.ThePasswordIsSetTo("secret")
@@ -50015,17 +49957,17 @@ var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
           ]
         ),
         test2: Given.default(
-          [`67ae06bac3c5fa5a98a08e32`],
+          [`0`],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.ThereIsNotAnEmailError()]
         ),
         test3: Given.default(
-          [`67ae06bac3c5fa5a98a08e32`],
+          [`0`],
           [When.TheEmailIsSetTo("bob"), When.TheLoginIsSubmitted()],
           [Then.ThereIsAnEmailError()]
         ),
         test4: Given.default(
-          [`67ae06bac3c5fa5a98a08e32`],
+          [`0`],
           [
             When.TheEmailIsSetTo("adam@mail.com"),
             When.ThePasswordIsSetTo("foso")
@@ -50033,7 +49975,7 @@ var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
           [Then.ThereIsNotAnEmailError()]
         ),
         test5: Given.default(
-          [`67ae44eceef213d8f11c40bb`],
+          [`1`],
           [
             When.TheEmailIsSetTo("adam@mail.com"),
             When.ThePasswordIsSetTo("foso")
@@ -50047,7 +49989,6 @@ var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
 };
 
 // src/LoginPage/index.tsx
-init_cjs_shim();
 var import_react = __toESM(require_react(), 1);
 var import_react_redux = __toESM(require_lib(), 1);
 var core = app_default();
@@ -50057,7 +49998,7 @@ var store = core.store;
 var emailwarning = "Something isn\u2019t right. Please double check your email";
 function LoginPage() {
   const selection = (0, import_react_redux.useSelector)(selector);
-  return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h2", null, "Welcome back!"), /* @__PURE__ */ import_react.default.createElement("form", null, /* @__PURE__ */ import_react.default.createElement("input", { type: "email", value: selection.email, onChange: (e) => store.dispatch(actions.setEmail(e.target.value)) }), /* @__PURE__ */ import_react.default.createElement("p", { id: "invalid-email-warning", className: "warnin" }, selection.error === "invalidEmail" && emailwarning), /* @__PURE__ */ import_react.default.createElement("br", null), /* @__PURE__ */ import_react.default.createElement("input", { type: "password", value: selection.password, onChange: (e) => store.dispatch(actions.setPassword(e.target.value)) }), /* @__PURE__ */ import_react.default.createElement("p", { id: "error" }, selection.error === "credentialFail" && "You entered an incorrect email, password, or both."), /* @__PURE__ */ import_react.default.createElement("br", null), /* @__PURE__ */ import_react.default.createElement("button", { disabled: selection.disableSubmit, onClick: (event) => {
+  return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h2", null, "Welcome back!"), /* @__PURE__ */ import_react.default.createElement("form", null, /* @__PURE__ */ import_react.default.createElement("input", { type: "email", value: selection.email, onChange: (e) => store.dispatch(actions.setEmail(e.target.value)) }), /* @__PURE__ */ import_react.default.createElement("p", { id: "invalid-email-warning", className: "warning" }, selection.error === "invalidEmail" && emailwarning), /* @__PURE__ */ import_react.default.createElement("br", null), /* @__PURE__ */ import_react.default.createElement("input", { type: "password", value: selection.password, onChange: (e) => store.dispatch(actions.setPassword(e.target.value)) }), /* @__PURE__ */ import_react.default.createElement("p", { id: "error" }, selection.error === "credentialFail" && "You entered an incorrect email, password, or both."), /* @__PURE__ */ import_react.default.createElement("br", null), /* @__PURE__ */ import_react.default.createElement("button", { disabled: selection.disableSubmit, onClick: (event) => {
     store.dispatch(actions.signIn());
   } }, "Sign In")), /* @__PURE__ */ import_react.default.createElement("pre", null, JSON.stringify(selection, null, 2)));
 }
@@ -50066,7 +50007,6 @@ function LoginPage_default() {
 }
 
 // src/LoginPage/react-test-renderer/test.tsx
-init_cjs_shim();
 var import_react_test_renderer = __toESM(require_react_test_renderer(), 1);
 var LoginPageReactTestRendererTestInterface = {
   butThen: async function(s, thenCB, tr) {
@@ -50130,8 +50070,7 @@ var loginPageImpl = {
     },
     ThereIsNotAnEmailError: () => (component) => {
       const errorField = component.root.findByProps({ id: "invalid-email-warning" });
-      console.log(errorField.children);
-      assert.isEmpty(errorField.children);
+      assert.equal(errorField.children.length, 0);
     }
   },
   checks: {

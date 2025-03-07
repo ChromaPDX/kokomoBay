@@ -1,29 +1,28 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  AppSpecification,
-  Node_default
-} from "../chunk-MZUYZFVU.mjs";
+  AppSpecification
+} from "../chunk-NNKHEK63.mjs";
 import {
-  assert,
   loginApp,
   require_redux
-} from "../chunk-DDPARXEP.mjs";
-import "../chunk-K5DK65GD.mjs";
-import "../chunk-FLSG3ZVV.mjs";
-import "../chunk-CTKBT5JH.mjs";
-import "../chunk-RBWPBMY4.mjs";
-import "../chunk-PJC2V65J.mjs";
-import "../chunk-VDOS7AVZ.mjs";
+} from "../chunk-EUREPPNS.mjs";
 import {
-  __toESM,
-  init_cjs_shim
-} from "../chunk-THMF2HPO.mjs";
-
-// src/app.redux.test.ts
-init_cjs_shim();
+  Node_default
+} from "../chunk-ORJV2YNZ.mjs";
+import {
+  assert
+} from "../chunk-BACB6GDH.mjs";
+import "../chunk-XWE4N4UG.mjs";
+import "../chunk-ZTDVYA3Q.mjs";
+import "../chunk-OI5YMCUL.mjs";
+import "../chunk-6D4LK6R2.mjs";
+import "../chunk-JWYWNN27.mjs";
+import "../chunk-KNOLJKC2.mjs";
+import {
+  __toESM
+} from "../chunk-PM7MAOUR.mjs";
 
 // subPackages/redux.testeranto.test.ts
-init_cjs_shim();
 var import_redux = __toESM(require_redux(), 1);
 var ReduxTesteranto = (testInput, testSpecifications, testImplementations) => {
   const testInterface = {

@@ -1,0 +1,9 @@
+
+/add src/LoginPage/test.ts
+/add src/LoginPage/index.tsx
+/add src/app.ts
+/add src/LoginPage/react-test-renderer/test.tsx
+/add src/LoginPage/react-test-renderer/web.test.tsx
+/read docs/web/src/LoginPage/react-test-renderer/web.test/tests.json
+/read docs/web/src/LoginPage/react-test-renderer/web.test/features.json
+/code fix the failing tests described in docs/web/src/LoginPage/react-test-renderer/web.test/tests.json.

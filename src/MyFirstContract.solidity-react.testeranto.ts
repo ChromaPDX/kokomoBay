@@ -1,6 +1,3 @@
-// import { assert } from "chai";
-// import fs from "fs";
-import { features } from "../features.test.mjs";
 import Web3 from "web3";
 import Testeranto from "testeranto/src/Node";
 
@@ -30,7 +27,7 @@ export default Testeranto<IMyFirstContractTest<IMyFirstContractTest<IInput>>>(
     return [
       Suite.Default(
         "Testing a very simple smart contract over RPC",
-        commonGivens(Given, When, Then, features),
+        commonGivens(Given, When, Then),
         [
           // Check.AnEmptyState(
           //   "imperative style",

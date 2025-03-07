@@ -1,5 +1,3 @@
-import { IBaseTest } from "testeranto/src/Types";
-
 import { BaseGiven } from "../../testeranto/src/lib/abstractBase";
 
 import MyFirstContract from "../contracts/MyFirstContract.sol";
@@ -12,8 +10,7 @@ export const MyFirstContractTestInput = MyFirstContract.contracts.find(
 export const commonGivens = (
   Given,
   When,
-  Then,
-  features
+  Then
 ): Record<string, BaseGiven<IMyFirstContractTest<any>>> => {
   return {
     test0: Given.Default(

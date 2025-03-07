@@ -2,32 +2,35 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   node_default,
   require_react
-} from "../chunk-RABYUY7O.mjs";
-import "../chunk-K5DK65GD.mjs";
-import "../chunk-FLSG3ZVV.mjs";
-import "../chunk-CTKBT5JH.mjs";
-import "../chunk-RBWPBMY4.mjs";
-import "../chunk-PJC2V65J.mjs";
-import "../chunk-VDOS7AVZ.mjs";
+} from "../chunk-DUG2EPO4.mjs";
+import "../chunk-XWE4N4UG.mjs";
+import "../chunk-ZTDVYA3Q.mjs";
+import "../chunk-OI5YMCUL.mjs";
+import "../chunk-6D4LK6R2.mjs";
+import "../chunk-JWYWNN27.mjs";
+import "../chunk-KNOLJKC2.mjs";
 import {
-  __toESM,
-  init_cjs_shim
-} from "../chunk-THMF2HPO.mjs";
+  __toESM
+} from "../chunk-PM7MAOUR.mjs";
 
 // src/ReactStateAndHook.test.tsx
-init_cjs_shim();
 import assert from "assert";
 
 // src/ReactStateAndHook.tsx
-init_cjs_shim();
 var import_react = __toESM(require_react(), 1);
-var import_react2 = __toESM(require_react(), 1);
 function ReactStateAndHook() {
-  const [count, setCount] = (0, import_react2.useState)(0);
-  (0, import_react2.useEffect)(() => {
+  const [count, setCount] = (0, import_react.useState)(0);
+  (0, import_react.useEffect)(() => {
     console.log(`You have clicked the first button ${count} times`);
   }, [count]);
-  return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("pre", null, count), /* @__PURE__ */ import_react.default.createElement("button", { onClick: () => setCount(count + 1) }, "Click me"));
+  return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("pre", { "data-testid": "counter" }, count), /* @__PURE__ */ import_react.default.createElement(
+    "button",
+    {
+      onClick: () => setCount((prev) => prev + 1),
+      "data-testid": "increment-button"
+    },
+    "Click me"
+  ));
 }
 var ReactStateAndHook_default = ReactStateAndHook;
 
@@ -38,12 +41,12 @@ var Specification = (Suite, Given, When, Then, Check) => {
       "Testing the ReactStateAndHook element",
       {
         "test0": Given.Default(
-          [`hello`],
+          [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
           [],
           [Then.TheCounterIs(0)]
         ),
         "test1": Given.Default(
-          [`hello`],
+          [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
           [When.IClick()],
           [Then.TheCounterIs(1)]
         ),
@@ -54,8 +57,8 @@ var Specification = (Suite, Given, When, Then, Check) => {
         ),
         "test3": Given.Default(
           [`hello`],
-          [When.IClick()],
-          [Then.TheCounterIs(1)]
+          [When.IClick(), When.IClick()],
+          [Then.TheCounterIs(2)]
         )
       },
       []
@@ -72,20 +75,14 @@ var Implementation = {
     }
   },
   whens: {
-    IClick: () => (rtr) => rtr.root.findByType("button").props.onClick()
+    IClick: () => (rtr) => rtr.root.findByProps({ "data-testid": "increment-button" }).props.onClick()
   },
   thens: {
     TheCounterIs: (counter) => (rtr) => {
-      console.log("hello state and hook");
-      return assert.deepEqual(
-        rtr.toJSON().children[0],
-        {
-          type: "pre",
-          props: {},
-          children: [
-            JSON.stringify(counter)
-          ]
-        }
+      const preElement = rtr.root.findByProps({ "data-testid": "counter" });
+      return assert.equal(
+        preElement.children[0],
+        counter.toString()
       );
     }
   },

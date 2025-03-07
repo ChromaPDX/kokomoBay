@@ -2,7 +2,6 @@ import { ITestImplementation } from "testeranto/src/Types";
 
 import { assert } from "chai";
 
-import { features } from "../features.test.mjs";
 import Testeranto, {
   IInput,
 } from "../subPackages/solidity/Contract-rpc.testeranto.test";
@@ -57,7 +56,7 @@ export default Testeranto<IMyFirstContractTest<IMyFirstContractTest<IInput>>>(
     return [
       Suite.Default(
         "Testing a very simple smart contract over RPC",
-        commonGivens(Given, When, Then, features),
+        commonGivens(Given, When, Then),
         [
           // Check.AnEmptyState(
           //   "imperative style",

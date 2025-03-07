@@ -4,7 +4,8 @@
   ],
   "include": [
     "subPackages/solidity/index.d.ts",
-    "project.test.ts"
+    "build-tests.ts",
+    "run-test.ts",
   ],
   "ts-node": {
     "esm": true,

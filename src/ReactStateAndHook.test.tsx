@@ -43,12 +43,12 @@ const Specification: ITestSpecification<ISpec> =
         "Testing the ReactStateAndHook element",
         {
           "test0": Given.Default(
-            [`hello`],
+            [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
             [],
             [Then.TheCounterIs(0)]
           ),
           "test1": Given.Default(
-            [`hello`],
+            [`https://api.github.com/repos/adamwong246/testeranto/issues/7`],
             [When.IClick()],
             [Then.TheCounterIs(1)]
           ),
@@ -59,8 +59,8 @@ const Specification: ITestSpecification<ISpec> =
           ),
           "test3": Given.Default(
             [`hello`],
-            [When.IClick()],
-            [Then.TheCounterIs(1)]
+            [When.IClick(), When.IClick()],
+            [Then.TheCounterIs(2)]
           ),
         },
         []
@@ -87,22 +87,16 @@ const Implementation: ITestImplementation<
 
   whens: {
     IClick: () => (rtr) =>
-      rtr.root.findByType("button").props.onClick(),
+      rtr.root.findByProps({ "data-testid": "increment-button" }).props.onClick(),
   },
 
   thens: {
     TheCounterIs: (counter) => (rtr) => {
-      console.log("hello state and hook")
-      return assert.deepEqual(
-        (rtr.toJSON() as { children: object[] }).children[0],
-        {
-          type: 'pre',
-          props: {},
-          children: [
-            JSON.stringify(counter)
-          ]
-        }
-      )
+      const preElement = rtr.root.findByProps({ "data-testid": "counter" });
+      return assert.equal(
+        preElement.children[0],
+        counter.toString()
+      );
     },
   },
 

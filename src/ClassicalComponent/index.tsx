@@ -21,7 +21,7 @@ export class ClassicalComponent extends React.Component<IProps, IState> {
         <pre id="theStat">{JSON.stringify(this.state)}</pre>
         <p>count: {this.state.count} times</p>
         <button id="theButton" onClick={async () => {
-          this.setState({ count: this.state.count + 1 })
+          this.setState({ count: this.state.count + 11 })
         }}>
           Click
         </button>

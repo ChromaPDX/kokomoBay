@@ -6,7 +6,6 @@ import { assert } from "chai";
 
 import { ClassicalComponent } from "..";
 import { ClassicalComponentSpec } from "../test.specification";
-import { features } from "../../../features.test.mts";
 
 type IStore = {
   htmlElement: HTMLElement;

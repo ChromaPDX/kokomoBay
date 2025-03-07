@@ -28,7 +28,7 @@ class Rectangle {
   }
 
   circumference(): number {
-    return this.width * 2 + this.height * 2;
+    return 2 * (this.width + this.height);
   }
 }
 

@@ -59,8 +59,12 @@ export function LoginPage(): React.JSX.Element {
       <br />
 
       <button disabled={selection.disableSubmit} onClick={(event) => {
-        store.dispatch(actions.signIn());
-
+        event.preventDefault();
+        const isValid = validateEmail(selection.email);
+        store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        if (isValid) {
+          store.dispatch(actions.signIn());
+        }
       }} >Sign In</button>
 
     </form>

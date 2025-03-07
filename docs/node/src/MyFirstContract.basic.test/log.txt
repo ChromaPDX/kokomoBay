@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.basic.test.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.basic.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f378820f-5e39-47f8-9a3d-af190b4548b5"}
+test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.basic.test.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.basic.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/46ebd79e-8acb-4a8d-9834-884c3b824e40"}
 
 Suite:,0,Testing a very simple smart contract ephemerally
 
@@ -9,11 +9,21 @@ Suite:,0,Testing a very simple smart contract ephemerally
  When:,Increment: 1
  When:,Increment: 1
  Then:,Get: [object Object]
-AssertionError: expected 2 to equal 22
-    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.basic.test.mjs?cacheBust=1741373971475:77:84
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:262:19)
-    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:131:22)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:587:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:615:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:1001:57)
+
+ Given: Default
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ Then:,Get: [object Object]
+
+ Given: Default
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Decrement: 1
+ When:,Decrement: 1
+ When:,Decrement: 1
+ When:,Decrement: 1
+ Then:,Get: [object Object]

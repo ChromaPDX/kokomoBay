@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/LoginPage/react-test-renderer/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f378820f-5e39-47f8-9a3d-af190b4548b5"}
+test resources: ,{"scheduled":true,"name":"./src/LoginPage/react-test-renderer/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react-test-renderer/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/46ebd79e-8acb-4a8d-9834-884c3b824e40"}
 
 Suite:,0,Testing the LoginPage as react
 

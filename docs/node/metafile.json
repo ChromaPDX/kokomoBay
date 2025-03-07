@@ -26158,11 +26158,11 @@
         "format": "esm"
       },
       "solidity:MyFirstContract": {
-        "bytes": 61541,
+        "bytes": 61523,
         "imports": []
       },
       "src/MyFirstContract.specification.test.ts": {
-        "bytes": 1765,
+        "bytes": 2096,
         "imports": [
           {
             "path": "../../testeranto/src/lib/abstractBase",
@@ -29524,7 +29524,7 @@
       "docs/node/src/MyFirstContract.basic.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-FJJHIQQ5.mjs",
+            "path": "docs/node/chunk-WW4P7DCW.mjs",
             "kind": "import-statement"
           },
           {
@@ -29586,7 +29586,7 @@
       "docs/node/src/MyFirstContract.rpc.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-FJJHIQQ5.mjs",
+            "path": "docs/node/chunk-WW4P7DCW.mjs",
             "kind": "import-statement"
           },
           {
@@ -30010,7 +30010,7 @@
         },
         "bytes": 794772
       },
-      "docs/node/chunk-FJJHIQQ5.mjs": {
+      "docs/node/chunk-WW4P7DCW.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-6D4LK6R2.mjs",
@@ -33415,13 +33415,13 @@
             "bytesInOutput": 1170
           },
           "solidity:MyFirstContract": {
-            "bytesInOutput": 61537
+            "bytesInOutput": 61519
           },
           "src/MyFirstContract.specification.test.ts": {
-            "bytesInOutput": 1433
+            "bytesInOutput": 1760
           }
         },
-        "bytes": 5244164
+        "bytes": 5244473
       },
       "docs/node/chunk-ORJV2YNZ.mjs": {
         "imports": [

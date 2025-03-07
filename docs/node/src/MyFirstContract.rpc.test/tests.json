@@ -26,21 +26,76 @@
       "thens": [
         {
           "name": "Get: [object Object]",
-          "error": true
+          "error": false
         }
       ],
-      "error": [
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "name": "Default",
+      "whens": [
         {
-          "name": "AssertionError",
-          "message": "expected 2 to equal 22",
-          "showDiff": true,
-          "actual": 2,
-          "expected": 22,
-          "operator": "strictEqual",
-          "stack": "AssertionError: expected 2 to equal 22\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741373971475:17443:91\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:262:19)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:131:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:587:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:615:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:1001:57)"
+          "name": "Increment: 1"
         },
-        "AssertionError: expected 2 to equal 22\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741373971475:17443:91\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:262:19)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:131:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:587:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:615:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-ORJV2YNZ.mjs:1001:57)"
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        }
       ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
       "features": [
         "hello"
       ]

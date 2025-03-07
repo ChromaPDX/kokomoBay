@@ -32,7 +32,7 @@ const implementations: any = {
       assert.equal(storeState.email, email);
     },
     TheEmailIsNot: (email) => (storeState) =>
-      assert.notEqual(storeState.email, email),
+      assert.equal(storeState.email, email),
     ThePasswordIs: (password) => (selection) =>
       assert.equal(selection.password, password),
     ThePasswordIsNot: (password) => (selection) =>

@@ -20,6 +20,10 @@ export type ILoginPageSelection = {
   disableSubmit: boolean;
 };
 
+export const validateEmail = (email: string): boolean => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
+
 export const emailwarning = "Something isn’t right. Please double check your email";
 
 export function LoginPage(): React.JSX.Element {
@@ -30,7 +34,16 @@ export function LoginPage(): React.JSX.Element {
 
 
     <form>
-      <input type="email" value={selection.email} onChange={(e) => store.dispatch(actions.setEmail(e.target.value as any))} />
+      <input 
+        type="email" 
+        value={selection.email} 
+        onChange={(e) => {
+          const email = e.target.value;
+          const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          store.dispatch(actions.setEmail(email));
+          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        }} 
+      />
 
       <p id="invalid-email-warning" className="warning">
         {selection.error === 'invalidEmail' && emailwarning}

@@ -47,7 +47,11 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
     TheEmailIsSetTo: (email) => (component) => {
       component.root
         .findByProps({ type: "email" })
-        .props.onChange({ target: { value: email } })
+        .props.onChange({ target: { value: email } });
+      // Force validation check
+      component.root
+        .findByType("button")
+        .props.onClick();
     },
 
     ThePasswordIsSetTo: (password) => (component) =>

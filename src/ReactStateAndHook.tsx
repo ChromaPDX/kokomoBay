@@ -14,7 +14,7 @@ function ReactStateAndHook<IProps, IState>(): React.JSX.Element {
     <div>
       <pre data-testid="counter">{count}</pre>
       <button
-        onClick={() => setCount(prev => prev + 11)}
+        onClick={() => setCount(prev => prev + 1)}
         data-testid="increment-button"
       >
         Click me

@@ -29,10 +29,19 @@ const implementations: any = {
   },
   thens: {
     TheEmailIs: (email) => (storeState) => {
-      assert.equal(storeState.email, email);
+      if (typeof storeState === 'object' && storeState !== null) {
+        assert.equal(storeState.email, email);
+      } else {
+        assert.equal(storeState, email);
+      }
     },
-    TheEmailIsNot: (email) => (storeState) =>
-      assert.notEqual(storeState.email, email),
+    TheEmailIsNot: (email) => (storeState) => {
+      if (typeof storeState === 'object' && storeState !== null) {
+        assert.notEqual(storeState.email, email);
+      } else {
+        assert.notEqual(storeState, email);
+      }
+    },
     ThePasswordIs: (password) => (selection) =>
       assert.equal(selection.password, password),
     ThePasswordIsNot: (password) => (selection) =>

@@ -15,33 +15,13 @@ export const commonGivens = (
   return {
     test0: Given.Default(
       "my first contract",
-      [
-        // When.Increment(1), When.Increment(1), When.Increment(1)
-      ],
+      [],
       [Then.Get({ asTestUser: 1, expectation: 0 })]
-      // "my first contract"
     ),
 
     test1: Given.Default(
       [`hello`],
-      [
-        When.Increment(1),
-        When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-        // When.Increment(1),
-      ],
+      [When.Increment(1), When.Increment(1)],
       [Then.Get({ asTestUser: 1, expectation: 2 })],
       "my first contract"
     ),
@@ -53,11 +33,6 @@ export const commonGivens = (
         When.Increment(1),
         When.Increment(1),
         When.Increment(1),
-
-        // When.Decrement(1),
-        // When.Decrement(1),
-        // When.Decrement(1),
-        // When.Decrement(1),
       ],
       [Then.Get({ asTestUser: 1, expectation: 4 })],
       "my first contract"
@@ -74,7 +49,6 @@ export const commonGivens = (
         When.Decrement(1),
         When.Decrement(1),
         When.Decrement(1),
-        // When.Decrement(1),
       ],
       [Then.Get({ asTestUser: 1, expectation: 1 })],
       "my first contract"

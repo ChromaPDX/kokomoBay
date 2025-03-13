@@ -1,0 +1,5 @@
+yarn run v1.22.19
+$ /Users/adam/Code/kokomoBay/node_modules/.bin/tsc -noEmit -n -2
+error TS5023: Unknown compiler option '-n'.
+error TS5023: Unknown compiler option '-2'.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

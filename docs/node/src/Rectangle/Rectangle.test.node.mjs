@@ -1,17 +1,8 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  Node_default
-} from "../../chunk-ORJV2YNZ.mjs";
-import {
+  Node_default,
   assert
-} from "../../chunk-BACB6GDH.mjs";
-import "../../chunk-XWE4N4UG.mjs";
-import "../../chunk-ZTDVYA3Q.mjs";
-import "../../chunk-OI5YMCUL.mjs";
-import "../../chunk-6D4LK6R2.mjs";
-import "../../chunk-JWYWNN27.mjs";
-import "../../chunk-KNOLJKC2.mjs";
-import "../../chunk-PM7MAOUR.mjs";
+} from "../../chunk-I3OOR3WT.mjs";
 
 // src/Rectangle.ts
 var Rectangle = class {
@@ -141,13 +132,7 @@ var testInterface = {
   beforeAll(input, testResource, artificer, utils) {
     return new Promise(async (res, rej) => {
       const x = Object.create(input);
-      const page = (await utils.browser.pages()).filter((p) => {
-        const parsedUrl = new URL(p.url());
-        parsedUrl.search = "";
-        const strippedUrl = parsedUrl.toString();
-        return strippedUrl === "file:///Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/test.html";
-      })[0];
-      await page.screenshot({
+      await utils.customScreenShot({
         path: "rectangle-beforeAll.jpg"
       });
       res(input);

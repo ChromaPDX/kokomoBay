@@ -1,8 +1,0 @@
-import { createRequire } from 'module';const require = createRequire(import.meta.url);
-
-// node_modules/testeranto/node_modules/puppeteer-core/lib/esm/puppeteer/generated/version.js
-var packageVersion = "23.9.0";
-
-export {
-  packageVersion
-};

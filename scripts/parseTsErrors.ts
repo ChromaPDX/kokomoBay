@@ -1,51 +1,79 @@
-import fs from 'fs';
-import path from 'path';
-
-interface TsError {
-  file?: string;
-  line?: number;
-  column?: number;
-  code: string;
-  message: string;
-}
+import fs from "fs";
+import path from "path";
 
 function parseTsErrors(logPath: string): void {
   try {
-    const logContent = fs.readFileSync(logPath, 'utf-8');
-    const errorRegex = /^(.*?):(\d+):(\d+) - (error TS\d+): (.*)$/gm;
-    const errors: TsError[] = [];
-    const uniqueFiles = new Set<string>();
+    const logContent = fs.readFileSync(logPath, "utf-8").split("\n");
+    const regex = /(^src(.*?))\(\d*,\d*\): error/gm;
+    const brokenFilesToLines: Record<string, Set<number>> = {};
 
-    let match: RegExpExecArray | null;
-    while ((match = errorRegex.exec(logContent)) {
-      const [, file, line, column, code, message] = match;
-      errors.push({
-        file,
-        line: parseInt(line),
-        column: parseInt(column),
-        code,
-        message
-      });
-      uniqueFiles.add(file);
+    for (let i = 0; i < logContent.length - 1; i++) {
+      let m;
+
+      while ((m = regex.exec(logContent[i])) !== null) {
+        // This is necessary to avoid infinite loops with zero-width matches
+        if (m.index === regex.lastIndex) {
+          regex.lastIndex++;
+        }
+        if (!brokenFilesToLines[m[1]]) {
+          brokenFilesToLines[m[1]] = new Set<number>();
+        }
+        brokenFilesToLines[m[1]].add(i);
+      }
     }
 
-    // Print results
-    console.log('TypeScript Errors:');
-    errors.forEach((err, i) => {
-      console.log(`${i + 1}. ${err.code} in ${err.file}:${err.line}:${err.column}`);
-      console.log(`   ${err.message}\n`);
+    const final = Object.keys(brokenFilesToLines).reduce((mm, lm, ndx) => {
+      mm[lm] = Array.from(brokenFilesToLines[lm]).map((l, ndx3) => {
+        const a = Array.from(brokenFilesToLines[lm]);
+
+        return Object.keys(a).reduce((mm2, lm2, ndx2) => {
+          const acc: string[] = [];
+
+          let j = a[lm2] + 1;
+
+          let working = true;
+          while (j < logContent.length - 1 && working) {
+            if (
+              !logContent[j].match(regex) &&
+              working &&
+              !logContent[j].match(/^..\/(.*?)\(\d*,\d*\)/)
+            ) {
+              acc.push(logContent[j]);
+            } else {
+              working = false;
+            }
+
+            j++;
+          }
+
+          mm2[lm] = [logContent[l], ...acc];
+
+          return mm2;
+        }, {} as any)[lm];
+      });
+      return mm;
+    }, {});
+
+    fs.writeFileSync(
+      `./docs/ts/type_errors.json`,
+      JSON.stringify(final, null, 2)
+    );
+
+    Object.keys(final).forEach((k) => {
+      fs.mkdirSync(`./docs/ts/${k.split("/").slice(0, -1).join("/")}`, {
+        recursive: true,
+      });
+      fs.writeFileSync(
+        `./docs/ts/${k}.type_errors.txt`,
+        final[k].flat().flat().join("\r\n")
+      );
     });
-
-    console.log('\nAffected Files:');
-    uniqueFiles.forEach(file => console.log(`- ${file}`));
-
-    console.log(`\nTotal Errors Found: ${errors.length}`);
   } catch (error) {
-    console.error('Error reading or parsing the log file:', error);
+    console.error("Error reading or parsing the log file:", error);
     process.exit(1);
   }
 }
 
-// Get log file path from command line or use default
-const logPath = process.argv[2] || path.join(__dirname, '../docs/type_errors.log');
-parseTsErrors(logPath);
+parseTsErrors(
+  process.argv[2] || path.join(process.cwd(), "./docs/type_errors.log")
+);

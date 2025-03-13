@@ -1,8 +1,15 @@
 
 /add src/Rectangle/Rectangle.test.electron.ts
+/add ../testeranto/src/Web.ts
 /add src/Rectangle.test.specification.ts
 /add src/Rectangle.test.implementation.ts
 /add src/Rectangle.test.ts
+  
+                    /read docs/ts/docs/ts/src/Rectangle/Rectangle.test.electron.ts.type_errors.txt
+
+
+
+
 /read docs/web/src/Rectangle/Rectangle.test.electron/tests.json
 /read docs/web/src/Rectangle/Rectangle.test.electron/features.json
 /code fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json.

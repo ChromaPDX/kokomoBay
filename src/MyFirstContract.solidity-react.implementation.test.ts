@@ -18,17 +18,13 @@ const testImplementation: ITestImplementation<
       try {
         const element = await props.page.$("#increment");
         element.click();
-      } catch (e) {
-        console.log("mark6");
-      }
+      } catch (e) {}
     },
     Decrement: (asTestUser) => async (props) => {
       try {
         const element = await props.page.$("#decrement");
         element.click();
-      } catch (e) {
-        console.log("mark6");
-      }
+      } catch (e) {}
     },
   },
   thens: {
@@ -41,9 +37,7 @@ const testImplementation: ITestImplementation<
           const inner_html = await element_property.jsonValue();
 
           assert.deepEqual(inner_html, expectation.toString());
-        } catch (e) {
-          console.log("mark5");
-        }
+        } catch (e) {}
       },
   },
   checks: {

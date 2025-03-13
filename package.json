@@ -31,7 +31,10 @@
     "build-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm build-tests.ts",
     "run-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm  run-tests.ts",
     "init-docs": "node --experimental-specifier-resolution=node --loader ts-node/esm  ./init-docs.mts",
-    "test": "yarn build-tests && yarn run-tests"
+    "test": "yarn build-tests && env DEBUG='puppeteer:*' yarn run-tests",
+    "typecheck": "yarn  tsc -noEmit > docs/type_errors.log; yarn node --experimental-specifier-resolution=node --loader ts-node/esm scripts/parseTsErrors.ts",
+    "aider": "aider --model deepseek --load prompts/createTscBashScript.txt",
+    "aider2": "aider --model deepseek --load prompts/createTscBashScript.txt"
   },
   "types": "index.d.ts",
   "dependencies": {

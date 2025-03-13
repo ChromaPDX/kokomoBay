@@ -1,4 +1,4 @@
-import renderer, { act } from "react-test-renderer";
+import renderer, { act, ReactTestRenderer } from "react-test-renderer";
 import { assert } from "chai";
 
 import { ILoginPageSpecs } from "../test.js";
@@ -41,8 +41,9 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
     },
   },
   whens: {
-    TheLoginIsSubmitted: () => (component) =>
-      component.root.findByType("button").props.onClick(),
+    TheLoginIsSubmitted: () => (component) => {
+      component.root.findByType("button").props.onClick()
+    },
 
     TheEmailIsSetTo: (email) => (component) => {
       component.root
@@ -51,10 +52,10 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
       return component;
     },
 
-    ThePasswordIsSetTo: (password) => (component) =>
-      component.root
-        .findByProps({ type: "password" })
-        .props.onChange({ target: { value: password } }),
+    ThePasswordIsSetTo: (password) => (component) => component.root
+      .findByProps({ type: "password" })
+      .props.onChange({ target: { value: password } }),
+
   },
 
   thens: {
@@ -79,7 +80,7 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
         component.root.findByProps({ type: "password" }).props.value,
         password
       ),
-    ThereIsAnEmailError: () => (component) => {
+    ThereIsAnEmailError: () => (component: ReactTestRenderer) => {
       assert.equal(
         component.root.findByProps({ id: "invalid-email-warning" }).children[0],
         emailwarning
@@ -87,7 +88,7 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
     },
     ThereIsNotAnEmailError: () => (component: renderer.ReactTestRenderer) => {
       const errorField = component.root.findByProps({ id: "invalid-email-warning" })
-      assert.equal(errorField.children.length, 0)
+      assert.equal(errorField.children[0].valueOf(), "no_error")
     }
 
   },

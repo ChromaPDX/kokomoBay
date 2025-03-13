@@ -10,7 +10,6 @@ const tInterface: IPartialNodeInterface<any> = {
   //   ),
 
   beforeEach: (contract, i, artificer, testResource, iv, pm) => {
-    console.log("BEFORE EACH");
     return new Promise((res) => {
       const options = {};
       const port = testResource.ports[0];
@@ -74,7 +73,6 @@ const tInterface: IPartialNodeInterface<any> = {
   },
 
   afterEach: async (store, k, a, pm) => {
-    console.log("AFTER EACH");
     let semaphore = false;
     const page = (await pm.browser.pages()).filter((x) => {
       const parsedUrl = new URL(x.url());
@@ -131,7 +129,6 @@ const tInterface: IPartialNodeInterface<any> = {
   andWhen: async (props, callback: any, tr, pm) => {
     props.step = props.step + 1;
 
-    console.log("AND WHEN", props.step);
     let semaphore = -1;
 
     const page = (await pm.browser.pages()).filter((x) => {

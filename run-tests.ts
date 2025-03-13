@@ -1,5 +1,5 @@
-import Puppeteer from "testeranto/src/Puppeteer";
+import Puppeteer from "testeranto/Puppeteer";
 
-import Project from "./testeranto.mjs";
+import config from "./testeranto.mjs";
 
-export default Puppeteer(Project as any);
+export default Puppeteer(config);

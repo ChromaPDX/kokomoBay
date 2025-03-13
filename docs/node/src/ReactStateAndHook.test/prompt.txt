@@ -1,6 +1,0 @@
-
-/add src/ReactStateAndHook.test.tsx
-/add src/ReactStateAndHook.tsx
-/read docs/node/src/ReactStateAndHook.test/tests.json
-/read docs/node/src/ReactStateAndHook.test/features.json
-/code fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json.

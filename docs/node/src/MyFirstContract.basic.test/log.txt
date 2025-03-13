@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.basic.test.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.basic.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/46ebd79e-8acb-4a8d-9834-884c3b824e40"}
+test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.basic.test.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.basic.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/8f58be23-be50-4681-93ea-59adaccaa5fe"}
 
 Suite:,0,Testing a very simple smart contract ephemerally
 
@@ -24,6 +24,3 @@ Suite:,0,Testing a very simple smart contract ephemerally
  When:,Increment: 1
  When:,Decrement: 1
  When:,Decrement: 1
- When:,Decrement: 1
- When:,Decrement: 1
- Then:,Get: [object Object]

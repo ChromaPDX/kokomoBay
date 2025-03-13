@@ -10,7 +10,10 @@
           "error": false
         }
       ],
-      "error": null,
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'ports')\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18400:35\n    at new Promise (<anonymous>)\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18398:14)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4702:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4295:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+      ],
       "features": "my first contract"
     },
     {
@@ -29,7 +32,10 @@
           "error": false
         }
       ],
-      "error": null,
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading '0')\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18400:40\n    at new Promise (<anonymous>)\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18398:14)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4702:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4295:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+      ],
       "features": [
         "hello"
       ]
@@ -56,7 +62,10 @@
           "error": false
         }
       ],
-      "error": null,
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading '0')\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18400:40\n    at new Promise (<anonymous>)\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18398:14)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4702:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4295:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+      ],
       "features": [
         "hello"
       ]
@@ -84,9 +93,6 @@
         },
         {
           "name": "Decrement: 1"
-        },
-        {
-          "name": "Decrement: 1"
         }
       ],
       "thens": [
@@ -95,7 +101,10 @@
           "error": false
         }
       ],
-      "error": null,
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading '0')\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18400:40\n    at new Promise (<anonymous>)\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1741908999952:18398:14)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4702:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4295:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+      ],
       "features": [
         "hello"
       ]

@@ -1,0 +1,2 @@
+src/subPackages/solidity/Contract.testeranto.test.ts(1,23): error TS2688: Cannot find type definition file for './index.d.ts'.
+src/subPackages/solidity/Contract.testeranto.test.ts(32,28): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).

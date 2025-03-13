@@ -2,8 +2,6 @@ import { createSelector, createSlice, createStore } from "@reduxjs/toolkit";
 // import pkg from "@reduxjs/toolkit";
 // const { createSelector, createSlice, createStore } = pkg;
 
-console.log("hello world");
-
 import { ILoginPageError, ILoginPageSelection } from "./LoginPage";
 
 export type IStoreState = {
@@ -53,14 +51,14 @@ const selectRoot = (storeState: IStoreState) => {
 
 // More permissive email validation that allows simpler test emails
 const validateEmail = (email) => {
-  return email.match(
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  ) || email.match(
-    /^[^\s@]+@[^\s@]+$/
+  return (
+    email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) ||
+    email.match(/^[^\s@]+@[^\s@]+$/)
   );
 };
 
 const checkForErrors = (storeState: IStoreState): ILoginPageError => {
+  console.log("mark1", storeState, !validateEmail(storeState.email));
   // Only validate email format if there's an email entered
   if (storeState.email && !validateEmail(storeState.email)) {
     return "invalidEmail";

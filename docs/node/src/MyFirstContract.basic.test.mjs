@@ -4,22 +4,12 @@ import {
   MyFirstContract_default,
   commonGivens,
   require_lib15 as require_lib
-} from "../chunk-WW4P7DCW.mjs";
+} from "../chunk-SFXEDBVT.mjs";
 import {
-  Node_default
-} from "../chunk-ORJV2YNZ.mjs";
-import {
+  Node_default,
+  __toESM,
   assert
-} from "../chunk-BACB6GDH.mjs";
-import "../chunk-XWE4N4UG.mjs";
-import "../chunk-ZTDVYA3Q.mjs";
-import "../chunk-OI5YMCUL.mjs";
-import "../chunk-6D4LK6R2.mjs";
-import "../chunk-JWYWNN27.mjs";
-import "../chunk-KNOLJKC2.mjs";
-import {
-  __toESM
-} from "../chunk-PM7MAOUR.mjs";
+} from "../chunk-I3OOR3WT.mjs";
 
 // src/subPackages/solidity/Contract.testeranto.test.ts
 var import_web3 = __toESM(require_lib(), 1);

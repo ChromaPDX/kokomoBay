@@ -25,6 +25,11 @@ export const validateEmail = (email: string): boolean => {
 };
 
 export const emailwarning = "Something isn’t right. Please double check your email";
+export const credentialFailWarning = "You entered an incorrect email, password, or both.";
+
+export const loginInputId = "login"
+export const emailInputId = "email"
+export const passwordInputId = "password"
 
 export function LoginPage(): React.JSX.Element {
   const selection = useSelector(selector);
@@ -34,38 +39,44 @@ export function LoginPage(): React.JSX.Element {
 
 
     <form>
-      <input 
-        type="email" 
-        value={selection.email} 
+      <input
+        type="email"
+        id={emailInputId}
+        value={selection.email}
         onChange={(e) => {
-          const email = e.target.value;
+          const email = e.target.value as string;
           store.dispatch(actions.setEmail(email));
-          const isValid = validateEmail(email);
-          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
-        }} 
+          // const isValid = validateEmail(email);
+          // store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        }}
       />
 
       <p id="invalid-email-warning" className="warning">
-        {selection.error === 'invalidEmail' && emailwarning}
+        {selection.error}
+        {/* {selection.error === 'invalidEmail' && emailwarning} */}
       </p>
 
       <br />
 
-      <input type="password" value={selection.password} onChange={(e) => store.dispatch(actions.setPassword(e.target.value as any))} />
+      <input
+        id={passwordInputId}
+        type="password"
+        value={selection.password} onChange={(e) => store.dispatch(actions.setPassword(e.target.value as any))} />
 
       <p id="error">
-        {selection.error === 'credentialFail' && "You entered an incorrect email, password, or both."}
+        {selection.error === 'credentialFail' && credentialFailWarning}
       </p>
 
       <br />
 
-      <button disabled={selection.disableSubmit} onClick={(event) => {
+      <button id={loginInputId} disabled={selection.disableSubmit} onClick={(event) => {
         event.preventDefault();
-        const isValid = validateEmail(selection.email);
-        store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
-        if (isValid) {
-          store.dispatch(actions.signIn());
-        }
+        // const isValid = validateEmail(selection.email);
+        // store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        // if (isValid) {
+        //   store.dispatch(actions.signIn());
+        // }
+        store.dispatch(actions.signIn())
       }} >Sign In</button>
 
     </form>

@@ -1,0 +1,2 @@
+/read docs/type_errors.log
+/code create a bash script that can parse docs/type_errors.log 

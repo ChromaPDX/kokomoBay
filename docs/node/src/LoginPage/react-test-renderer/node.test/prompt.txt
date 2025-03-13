@@ -1,8 +1,0 @@
-
-/add src/LoginPage/react-test-renderer/node.test.tsx
-/add src/LoginPage/test.ts
-/add src/LoginPage/index.tsx
-/add src/LoginPage/react-test-renderer/test.tsx
-/read docs/node/src/LoginPage/react-test-renderer/node.test/tests.json
-/read docs/node/src/LoginPage/react-test-renderer/node.test/features.json
-/code fix the failing tests described in docs/node/src/LoginPage/react-test-renderer/node.test/tests.json.

@@ -1,0 +1,15 @@
+
+/add src/LoginPage/react-dom/web.test.tsx
+/add ../testeranto/src/Web.ts
+/add src/LoginPage/test.ts
+/add src/LoginPage/index.tsx
+/add src/LoginPage/react-dom/test.tsx
+  
+                    /read docs/ts/docs/ts/src/LoginPage/react-dom/web.test.tsx.type_errors.txt
+
+
+/read docs/ts/docs/ts/src/LoginPage/index.tsx.type_errors.txt
+
+/read docs/web/src/LoginPage/react-dom/web.test/tests.json
+/read docs/web/src/LoginPage/react-dom/web.test/features.json
+/code fix the failing tests described in docs/web/src/LoginPage/react-dom/web.test/tests.json.

@@ -26,19 +26,19 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
     return new Promise(async (res, rej) => {
       const x = Object.create(input);
 
-      const page = (await utils.browser.pages()).filter((p) => {
-        const parsedUrl = new URL(p.url());
-        parsedUrl.search = "";
-        const strippedUrl = parsedUrl.toString();
+      // const page = (await utils.browser.pages()).filter((p) => {
+      //   const parsedUrl = new URL(p.url());
+      //   parsedUrl.search = "";
+      //   const strippedUrl = parsedUrl.toString();
 
-        return (
-          strippedUrl ===
-          "file:///Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/test.html"
-        );
-      })[0];
+      //   return (
+      //     strippedUrl ===
+      //     "file:///Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/test.html"
+      //   );
+      // })[0];
 
       // console.log("mark-pages", await utils.browser.pages());
-      await page.screenshot({
+      await utils.customScreenShot({
         path: "rectangle-beforeAll.jpg",
       });
       res(input);

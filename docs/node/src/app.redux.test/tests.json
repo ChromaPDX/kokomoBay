@@ -29,10 +29,30 @@
         },
         {
           "name": "TheEmailIs: bob@mail.com",
-          "error": false
+          "error": true
         }
       ],
-      "error": null,
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected PM_Node{ server: {}, …(1) } to equal 'bob@mail.com'",
+          "showDiff": true,
+          "actual": {
+            "server": {},
+            "testResourceConfiguration": {
+              "scheduled": true,
+              "name": "./src/app.redux.test.ts",
+              "ports": [],
+              "fs": "/Users/adam/Code/kokomoBay/docs/node/src/app.redux.test",
+              "browserWSEndpoint": "ws://127.0.0.1:3234/devtools/browser/8f58be23-be50-4681-93ea-59adaccaa5fe"
+            }
+          },
+          "expected": "bob@mail.com",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected PM_Node{ server: {}, …(1) } to equal 'bob@mail.com'\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/app.redux.test.mjs?cacheBust=1741908999952:61:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/app.redux.test.mjs?cacheBust=1741908999952:30:14)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4742:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4425:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4312:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+        },
+        "AssertionError: expected PM_Node{ server: {}, …(1) } to equal 'bob@mail.com'\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/app.redux.test.mjs?cacheBust=1741908999952:61:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/app.redux.test.mjs?cacheBust=1741908999952:30:14)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4742:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4425:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4312:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4219:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4514:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4542:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-I3OOR3WT.mjs:4933:57)"
+      ],
       "features": [
         "hello"
       ]

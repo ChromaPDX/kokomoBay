@@ -2,14 +2,21 @@
   "files": [
     "testeranto.mts",
   ],
+  "exclude": [
+    "../testeranto/"
+  ],
   "include": [
     "src/subPackages/solidity/index.d.ts",
     "build-tests.ts",
     "run-test.ts",
+    "src",
   ],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
+    // "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    // "esm": true,
   },
   "compilerOptions": {
     // "allowSyntheticDefaultImports": true,

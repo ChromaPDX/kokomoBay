@@ -20,14 +20,16 @@ import {
   require_lib9,
   require_node_gyp_build,
   require_scrypt
-} from "../chunk-SFXEDBVT.mjs";
+} from "../chunk-KCAORU4T.mjs";
 import {
   Node_default,
+  assert
+} from "../chunk-XPHEY5WE.mjs";
+import {
   __commonJS,
   __require,
-  __toESM,
-  assert
-} from "../chunk-I3OOR3WT.mjs";
+  __toESM
+} from "../chunk-M7BKJ4RF.mjs";
 
 // node_modules/@ethersproject/abstract-provider/lib/_version.js
 var require_version = __commonJS({

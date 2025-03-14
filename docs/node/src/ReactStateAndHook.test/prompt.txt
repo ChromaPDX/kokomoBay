@@ -1,0 +1,10 @@
+
+/add src/ReactStateAndHook.test.tsx
+/add ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
+/add src/ReactStateAndHook.tsx
+/read docs/ts/src/ReactStateAndHook.test.tsx.type_errors.txt
+
+
+/read docs/node/src/ReactStateAndHook.test/tests.json
+/read docs/node/src/ReactStateAndHook.test/features.json
+/code Fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json as well as any incorrect type signatures.

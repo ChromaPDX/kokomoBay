@@ -1,0 +1,14 @@
+
+/add src/LoginPage/react-test-renderer/web.test.tsx
+/add ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/web.js
+/add src/LoginPage/test.ts
+/add src/LoginPage/index.tsx
+/add src/LoginPage/react-test-renderer/test.tsx
+
+
+
+/read docs/ts/src/LoginPage/index.tsx.type_errors.txt
+/read docs/ts/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt
+/read docs/web/src/LoginPage/react-test-renderer/web.test/tests.json
+/read docs/web/src/LoginPage/react-test-renderer/web.test/features.json
+/code Fix the failing tests described in docs/web/src/LoginPage/react-test-renderer/web.test/tests.json as well as any incorrect type signatures.

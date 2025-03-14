@@ -4,12 +4,11 @@
 /add src/contracts/MyBaseContract.sol
 /add src/contracts/MyFirstContract.sol
 /add src/MyFirstContract.specification.test.ts
-  
-                    /read docs/ts/docs/ts/src/MyFirstContract.basic.test.ts.type_errors.txt
-/read docs/ts/docs/ts/src/subPackages/solidity/Contract.testeranto.test.ts.type_errors.txt
+/read docs/ts/src/MyFirstContract.basic.test.ts.type_errors.txt
+/read docs/ts/src/subPackages/solidity/Contract.testeranto.test.ts.type_errors.txt
 
 
-/read docs/ts/docs/ts/src/MyFirstContract.specification.test.ts.type_errors.txt
+/read docs/ts/src/MyFirstContract.specification.test.ts.type_errors.txt
 /read docs/node/src/MyFirstContract.basic.test/tests.json
 /read docs/node/src/MyFirstContract.basic.test/features.json
-/code fix the failing tests described in docs/node/src/MyFirstContract.basic.test/tests.json.
+/code Fix the failing tests described in docs/node/src/MyFirstContract.basic.test/tests.json as well as any incorrect type signatures.

@@ -18,21 +18,21 @@ export default Testeranto(
       return new Promise(async (res, rej) => {
         console.log("afterAll", utils);
         utils.writeFileSync("afterAllLog", "bar");
-        const page = (await utils.browser.pages()).filter((x) => {
-          const parsedUrl = new URL(x.url());
-          parsedUrl.search = "";
-          const strippedUrl = parsedUrl.toString();
+        // const page = (await utils.browser.pages()).filter((x) => {
+        //   const parsedUrl = new URL(x.url());
+        //   parsedUrl.search = "";
+        //   const strippedUrl = parsedUrl.toString();
 
-          return (
-            strippedUrl ===
-            "file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.html"
-          );
-          // return true;
-        })[0];
+        //   return (
+        //     strippedUrl ===
+        //     "file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.html"
+        //   );
+        //   // return true;
+        // })[0];
 
-        page.screenshot({
-          path: "afterAllLog.jpg",
-        });
+        // page.screenshot({
+        //   path: "afterAllLog.jpg",
+        // });
 
         // const x = await utils.writeFileSync("aloha", "world");
         // console.log("x", x);

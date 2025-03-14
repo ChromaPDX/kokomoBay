@@ -1,8 +1,9 @@
 import {
-  Web_default,
+  Web_default
+} from "../../chunk-PD25TX33.mjs";
+import {
   assert
-} from "../../chunk-B62KLI2N.mjs";
-import "../../chunk-TTFRSOOU.mjs";
+} from "../../chunk-SZDDWZIA.mjs";
 
 // src/Rectangle.test.specification.ts
 var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check) => {
@@ -141,15 +142,6 @@ var Rectangle_test_electron_default = Web_default(
       return new Promise(async (res, rej) => {
         console.log("afterAll", utils);
         utils.writeFileSync("afterAllLog", "bar");
-        const page = (await utils.browser.pages()).filter((x) => {
-          const parsedUrl = new URL(x.url());
-          parsedUrl.search = "";
-          const strippedUrl = parsedUrl.toString();
-          return strippedUrl === "file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron.html";
-        })[0];
-        page.screenshot({
-          path: "afterAllLog.jpg"
-        });
         res(store);
       });
     },

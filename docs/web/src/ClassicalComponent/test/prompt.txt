@@ -1,9 +1,0 @@
-
-/add src/ClassicalComponent/test.ts
-/add src/ClassicalComponent/index.tsx
-  
-                    
-
-/read docs/web/src/ClassicalComponent/test/tests.json
-/read docs/web/src/ClassicalComponent/test/features.json
-/code fix the failing tests described in docs/web/src/ClassicalComponent/test/tests.json.

@@ -74,38 +74,38 @@ const tInterface: IPartialNodeInterface<any> = {
 
   afterEach: async (store, k, a, pm) => {
     let semaphore = false;
-    const page = (await pm.browser.pages()).filter((x) => {
-      const parsedUrl = new URL(x.url());
-      parsedUrl.search = "";
-      const strippedUrl = parsedUrl.toString();
+    // const page = (await pm.browser.pages()).filter((x) => {
+    //   const parsedUrl = new URL(x.url());
+    //   parsedUrl.search = "";
+    //   const strippedUrl = parsedUrl.toString();
 
-      return (
-        strippedUrl ===
-        "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
-      );
-      // return true;
-    })[0];
+    //   return (
+    //     strippedUrl ===
+    //     "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
+    //   );
+    //   // return true;
+    // })[0];
 
-    // await page.exposeFunction("readyForNext", (text) => {
-    //   console.log("readyForNext afterEach", p);
-    //   semaphore = true;
-    //   process.exit(-1);
+    // // await page.exposeFunction("readyForNext", (text) => {
+    // //   console.log("readyForNext afterEach", p);
+    // //   semaphore = true;
+    // //   process.exit(-1);
+    // // });
+
+    // // const p = new Promise((res, rej) => {
+    // //   const interval = setInterval(() => {
+    // //     console.log("check afterEach", semaphore);
+    // //     if (semaphore === true) {
+    // //       clearInterval(interval);
+    // //       res(true);
+    // //     } else {
+    // //     }
+    // //   }, 1000);
+    // // });
+    // // const x = thenCB(store);
+    // page.screenshot({
+    //   path: "afterEach.jpg",
     // });
-
-    // const p = new Promise((res, rej) => {
-    //   const interval = setInterval(() => {
-    //     console.log("check afterEach", semaphore);
-    //     if (semaphore === true) {
-    //       clearInterval(interval);
-    //       res(true);
-    //     } else {
-    //     }
-    //   }, 1000);
-    // });
-    // const x = thenCB(store);
-    page.screenshot({
-      path: "afterEach.jpg",
-    });
     await store.server.close();
     // console.log("halt");
     // await p;

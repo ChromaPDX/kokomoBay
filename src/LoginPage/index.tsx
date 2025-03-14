@@ -46,14 +46,13 @@ export function LoginPage(): React.JSX.Element {
         onChange={(e) => {
           const email = e.target.value as string;
           store.dispatch(actions.setEmail(email));
-          // const isValid = validateEmail(email);
-          // store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+          const isValid = validateEmail(email);
+          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
         }}
       />
 
       <p id="invalid-email-warning" className="warning">
-        {selection.error}
-        {/* {selection.error === 'invalidEmail' && emailwarning} */}
+        {selection.error === 'invalidEmail' && emailwarning}
       </p>
 
       <br />
@@ -71,12 +70,11 @@ export function LoginPage(): React.JSX.Element {
 
       <button id={loginInputId} disabled={selection.disableSubmit} onClick={(event) => {
         event.preventDefault();
-        // const isValid = validateEmail(selection.email);
-        // store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
-        // if (isValid) {
-        //   store.dispatch(actions.signIn());
-        // }
-        store.dispatch(actions.signIn())
+        const isValid = validateEmail(selection.email);
+        store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        if (isValid) {
+          store.dispatch(actions.signIn());
+        }
       }} >Sign In</button>
 
     </form>

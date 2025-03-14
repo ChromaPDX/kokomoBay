@@ -54,26 +54,34 @@ const implementations: IImpl = {
     }
   },
   thens: {
-    TheEmailIs: (email) => (reactElem) => {
+    TheEmailIs: (email: string) => async (reactElem: any, utils: PM) => {
       assert.equal(reactElem.props.store.getState().email, email);
+      return reactElem;
     },
-    TheEmailIsNot: (email) => (reactElem) => {
+    TheEmailIsNot: (email: string) => async (reactElem: any, utils: PM) => {
       assert.notEqual(reactElem.props.store.getState().email, email);
+      return reactElem;
     },
-    ThePasswordIs: (password) => (reactElem) => {
+    ThePasswordIs: (password: string) => async (reactElem: any, utils: PM) => {
       assert.equal(reactElem.props.store.getState().password, password);
+      return reactElem;
     },
-    ThePasswordIsNot: (password) => (reactElem) => {
+    ThePasswordIsNot: (password: string) => async (reactElem: any, utils: PM) => {
       assert.notEqual(reactElem.props.store.getState().password, password);
+      return reactElem;
     },
-    ThereIsAnEmailError: () => (reactElem) => {
+    ThereIsAnEmailError: () => async (reactElem: any, utils: PM) => {
       assert.notEqual(reactElem.props.store.getState().error, "no_error");
+      return reactElem;
     },
-    ThereIsNotAnEmailError: () => (reactElem) => {
+    ThereIsNotAnEmailError: () => async (reactElem: any, utils: PM) => {
       assert.equal(reactElem.props.store.getState().error, "no_error");
+      return reactElem;
     },
-    ThereIsACredentialError: () => (reactElem: any, utils: PM) => {
-      assert.equal(reactElem.props.store.getState().error, 'credentialFail');
+    ThereIsACredentialError: () => async (reactElem: any, utils: PM) => {
+      const state = reactElem.props.store.getState();
+      assert.equal(state.error, 'credentialFail');
+      assert.isTrue(state.disableSubmit);
       return reactElem;
     },
     TheSubmitButtonIsActive: () => (reactElem: any, utils: PM) => {

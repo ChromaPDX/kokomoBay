@@ -48,20 +48,19 @@ export const ReduxTesteranto = <IStoreShape, ITestShape extends IBaseTest>(
   >
 ) => {
   const testInterface: IPartialInterface<ITestShape> = {
-    beforeEach: function (subject, initializer, art, tr, initialValues) {
+    beforeEach: function (subject, initializer, art, tr, initialValues, pm) {
       return createStore<IStoreShape, any, any, any>(
         subject,
         initializer()(initialValues)
       );
     },
-    andWhen: async function (store, whenCB) {
+    andWhen: async function (store, whenCB, tr, pm) {
       const a = whenCB;
       store.dispatch(a[0](a[1]));
       return store;
     },
-    butThen: async function (store, actioner, tr) {
-      console.log("store", store);
-      return actioner(store.getState());
+    butThen: async function (store, actioner, pm) {
+      return actioner(store.getState(), pm);
     },
   };
 

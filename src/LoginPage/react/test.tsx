@@ -40,14 +40,17 @@ const implementations: IImpl = {
   },
 
   whens: {
-    TheLoginIsSubmitted: () => async (reactElem) => {
+    TheLoginIsSubmitted: () => async (reactElem: any, utils: PM) => {
       reactElem.props.store.dispatch(actions.signIn());
+      return reactElem;
     },
-    TheEmailIsSetTo: (email) => async (reactElem) => {
-      reactElem.props.store.dispatch(actions.setEmail(email as never));
+    TheEmailIsSetTo: (email: string) => async (reactElem: any, utils: PM) => {
+      reactElem.props.store.dispatch(actions.setEmail(email));
+      return reactElem;
     },
-    ThePasswordIsSetTo: (password) => async (reactElem) => {
-      reactElem.props.store.dispatch(actions.setPassword(password as never));
+    ThePasswordIsSetTo: (password: string) => async (reactElem: any, utils: PM) => {
+      reactElem.props.store.dispatch(actions.setPassword(password));
+      return reactElem;
     }
   },
   thens: {
@@ -69,14 +72,17 @@ const implementations: IImpl = {
     ThereIsNotAnEmailError: () => (reactElem) => {
       assert.equal(reactElem.props.store.getState().error, "no_error");
     },
-    ThereIsACredentialError: function (): (ssel: any, utils: PM) => unknown {
-      throw new Error("Function not implemented.");
+    ThereIsACredentialError: () => (reactElem: any, utils: PM) => {
+      assert.equal(reactElem.props.store.getState().error, 'credentialFail');
+      return reactElem;
     },
-    TheSubmitButtonIsActive: function (): (ssel: any, utils: PM) => unknown {
-      throw new Error("Function not implemented.");
+    TheSubmitButtonIsActive: () => (reactElem: any, utils: PM) => {
+      assert.isFalse(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
     },
-    TheSubmitButtonIsNotActive: function (): (ssel: any, utils: PM) => unknown {
-      throw new Error("Function not implemented.");
+    TheSubmitButtonIsNotActive: () => (reactElem: any, utils: PM) => {
+      assert.isTrue(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
     }
   },
 

@@ -1,7 +1,6 @@
 import { assert } from "chai";
 
 import { ITestImplementation } from "testeranto/src/Types";
-
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
@@ -9,14 +8,15 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
   IRectangleTestShape,
   {
     givens: {
-      [K in keyof IRectangleTestShape["givens"]]: (
-        ...Iw: IRectangleTestShape["givens"][K]
-      ) => Rectangle;
+      Default: () => Rectangle;
+      WidthOfOneAndHeightOfOne: () => Rectangle;
+      WidthAndHeightOf: (width: number, height: number) => Rectangle;
     };
     whens: {
-      [K in keyof IRectangleTestShape["whens"]]: (
-        ...Iw: IRectangleTestShape["whens"][K]
-      ) => IRectangleTestShape["when"];
+      HeightIsPubliclySetTo: (height: number) => (rectangle: Rectangle) => void;
+      WidthIsPubliclySetTo: (width: number) => (rectangle: Rectangle) => void;
+      setWidth: (width: number) => (rectangle: Rectangle) => void;
+      setHeight: (height: number) => (rectangle: Rectangle) => void;
     };
   }
 > = {
@@ -42,10 +42,10 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
     AreaPlusCircumference: (combined) => (rectangle) => {
       assert.equal(rectangle.area() + rectangle.circumference(), combined);
     },
-    getWidth: (width) => (rectangle) => assert.equal(rectangle.width, width),
+    getWidth: (width) => (rectangle) => assert.equal(rectangle.getWidth(), width),
 
     getHeight: (height) => (rectangle) =>
-      assert.equal(rectangle.height, height),
+      assert.equal(rectangle.getHeight(), height),
 
     area: (area) => (rectangle) => assert.equal(rectangle.area(), area),
 

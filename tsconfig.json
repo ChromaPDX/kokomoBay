@@ -19,13 +19,19 @@
     // "esm": true,
   },
   "compilerOptions": {
-    // "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "react": [
         "./node_modules/@types/react"
+      ],
+      "react-dom": [
+        "./node_modules/@types/react-dom"
+      ],
+      "react-test-renderer": [
+        "./node_modules/@types/react-test-renderer"
       ]
     },
-    "jsx": "react",
+    "jsx": "react-jsx",
     "resolveJsonModule": true,
     /* Visit https://aka.ms/tsconfig to read more about this file */
     // "jsx": "react-jsx",

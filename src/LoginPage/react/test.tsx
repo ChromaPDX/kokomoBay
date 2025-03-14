@@ -84,6 +84,14 @@ const implementations: IImpl = {
       assert.isTrue(state.disableSubmit);
       return reactElem;
     },
+    TheSubmitButtonIsActive: () => async (reactElem: any, utils: PM) => {
+      assert.isFalse(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
+    },
+    TheSubmitButtonIsNotActive: () => async (reactElem: any, utils: PM) => {
+      assert.isTrue(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
+    }
     TheSubmitButtonIsActive: () => (reactElem: any, utils: PM) => {
       assert.isFalse(reactElem.props.store.getState().disableSubmit);
       return reactElem;

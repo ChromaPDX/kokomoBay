@@ -11,7 +11,7 @@ export const store = core.store;
 
 export const noError = 'no_error';
 
-export type ILoginPageError = 'invalidEmail' | `credentialFail` | typeof noError;
+export type ILoginPageError = 'invalidEmail' | 'credentialFail' | typeof noError;
 
 export type ILoginPageSelection = {
   password: string;
@@ -73,7 +73,13 @@ export function LoginPage(): React.JSX.Element {
         const isValid = validateEmail(selection.email);
         store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
         if (isValid) {
-          store.dispatch(actions.signIn());
+          // Simulate credential check
+          const isCredentialValid = selection.email === 'larry@email.com' && selection.password === 'secret';
+          store.dispatch(actions.setError(isCredentialValid ? noError : 'credentialFail'));
+          store.dispatch(actions.setDisableSubmit(!isCredentialValid));
+          if (isCredentialValid) {
+            store.dispatch(actions.signIn());
+          }
         }
       }} >Sign In</button>
 

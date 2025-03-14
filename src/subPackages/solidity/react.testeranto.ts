@@ -25,7 +25,6 @@ export default <ITestShape extends IBaseTest>(
   testSpecifications: ITestSpecification<ITestShape>,
   testInput: IInput
 ) => {
-  console.log("testInput", testInput);
   const TesterantoComponent = function ({
     done,
     innerComp,

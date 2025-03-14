@@ -12,22 +12,12 @@ const loginButton = `#${loginInputId}`;
 
 const assert$ = async (sel: string, utils: PM) => {
   const x = await utils.$(sel);
-  console.log("sel", sel);
-  console.log("x", x);
-
   if (x) {
     assert(true, `'${sel}' evaluated to: ${x}`)
   } else {
-    console.log("The current html is", await utils.$("xpath//*"))
-
+    // console.log("The current html is", await utils.$("xpath//*"))
     assert(x, `Expected ${sel} to evaluate OK, but it evaluated to: ${x}`);
-
-
   }
-
-  // utils.writeFileSync("dump3", await utils.$("xpath//div"))
-
-
 }
 
 export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object> = {

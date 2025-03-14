@@ -4,26 +4,19 @@ import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import Web3 from "web3";
 import MyFirstContract from "./contracts/MyFirstContract.sol";
 
-console.log("hello contract server");
-
 class Server {
-  // constructor(contract) {
-
-  // }
   receiveTestResourceConfig(testResource: ITTestResourceConfiguration) {
     console.log(
       "hello contract server receiveTestResourceConfig",
       testResource
     );
-    // const testResource = JSON.parse(testResourceString);
+
     const contract = MyFirstContract.contracts.find(
       (c) => c.contractName === "MyFirstContract"
     ) as { contractName: string; abi: any; bytecode: any };
 
     const options = {};
     const port = testResource.ports[0];
-
-    // console.log("mark0", testResource);
 
     // https://github.com/trufflesuite/ganache#programmatic-use
     const server = Ganache.server(options);

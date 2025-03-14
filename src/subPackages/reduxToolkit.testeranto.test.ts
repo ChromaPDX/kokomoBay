@@ -5,16 +5,15 @@ import {
   IBaseTest,
   IPartialInterface,
 } from "testeranto/src/Types";
-
 import {
   ActionCreatorWithNonInferrablePayload,
   ActionCreatorWithoutPayload,
   Reducer,
 } from "@reduxjs/toolkit";
-import { createStore, AnyAction } from "redux";
 
-import { IStoreState } from "../src/app";
-import { IAppSpecification } from "../src/app.test";
+import { createStore, AnyAction } from "redux";
+import { IStoreState } from "../app";
+import { IAppSpecification } from "../app.test";
 
 type WhenShape = [
   (
@@ -73,7 +72,6 @@ export const ReduxToolkitTesteranto = <
       return store;
     },
     butThen: async function (store, actioner, tr) {
-      console.log("args", arguments);
       return actioner(store.getState());
     },
   };

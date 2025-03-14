@@ -3,7 +3,7 @@ import {
   AppSpecification,
   loginApp,
   require_redux
-} from "../chunk-Z6KQ5F5A.mjs";
+} from "../chunk-CORLEDAB.mjs";
 import {
   Node_default,
   assert

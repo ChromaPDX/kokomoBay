@@ -1051,7 +1051,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 2428,
+        "bytes": 2258,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -1089,7 +1089,7 @@
         "format": "cjs"
       },
       "src/LoginPage/index.tsx": {
-        "bytes": 2611,
+        "bytes": 2876,
         "imports": [
           {
             "path": "react",
@@ -1115,7 +1115,7 @@
         "format": "esm"
       },
       "src/LoginPage/test.ts": {
-        "bytes": 3996,
+        "bytes": 3756,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1785,18 +1785,8 @@
         "format": "esm"
       },
       "src/LoginPage/react/test.tsx": {
-        "bytes": 2747,
+        "bytes": 2770,
         "imports": [
-          {
-            "path": "../test.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
           {
             "path": "node_modules/chai/index.mjs",
             "kind": "import-statement",
@@ -1811,6 +1801,16 @@
             "path": "testeranto/src/PM/index.js",
             "kind": "import-statement",
             "external": true
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
           }
         ],
         "format": "esm"
@@ -2236,7 +2236,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/test.tsx": {
-        "bytes": 7265,
+        "bytes": 7148,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2272,7 +2272,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/web.test.tsx": {
-        "bytes": 4678,
+        "bytes": 4616,
         "imports": [
           {
             "path": "../testeranto/src/Web.ts",
@@ -2365,7 +2365,7 @@
       "docs/web/src/LoginPage/react/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-2HSWBUAX.mjs",
+            "path": "docs/web/chunk-3TSHC3QJ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2397,18 +2397,18 @@
             "bytesInOutput": 246
           },
           "src/LoginPage/react/test.tsx": {
-            "bytesInOutput": 1727
+            "bytesInOutput": 2313
           },
           "src/LoginPage/react/web.test.tsx": {
             "bytesInOutput": 1220
           }
         },
-        "bytes": 4327
+        "bytes": 4913
       },
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-2HSWBUAX.mjs",
+            "path": "docs/web/chunk-3TSHC3QJ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2539,7 +2539,7 @@
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-2HSWBUAX.mjs",
+            "path": "docs/web/chunk-3TSHC3QJ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2565,15 +2565,15 @@
         "entryPoint": "src/LoginPage/react-dom/web.test.tsx",
         "inputs": {
           "src/LoginPage/react-dom/web.test.tsx": {
-            "bytesInOutput": 2484
+            "bytesInOutput": 2438
           },
           "src/LoginPage/react-dom/test.tsx": {
-            "bytesInOutput": 2868
+            "bytesInOutput": 2751
           }
         },
-        "bytes": 5943
+        "bytes": 5780
       },
-      "docs/web/chunk-2HSWBUAX.mjs": {
+      "docs/web/chunk-3TSHC3QJ.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-N5FE2MLL.mjs",
@@ -2674,16 +2674,16 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 1476
+            "bytesInOutput": 1406
           },
           "src/LoginPage/index.tsx": {
-            "bytesInOutput": 2292
+            "bytesInOutput": 3066
           },
           "src/LoginPage/test.ts": {
-            "bytesInOutput": 3206
+            "bytesInOutput": 2959
           }
         },
-        "bytes": 104345
+        "bytes": 104802
       },
       "docs/web/chunk-PD25TX33.mjs": {
         "imports": [],

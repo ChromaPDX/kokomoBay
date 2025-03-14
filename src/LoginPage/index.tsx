@@ -74,7 +74,7 @@ export function LoginPage(): React.JSX.Element {
         store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
         if (isValid) {
           // Simulate credential check
-          const isCredentialValid = selection.email === 'larry@email.com' && selection.password === 'secret';
+          const isCredentialValid = selection.email === 'adam@email.com' && selection.password === 'secret';
           store.dispatch(actions.setError(isCredentialValid ? noError : 'credentialFail'));
           store.dispatch(actions.setDisableSubmit(!isCredentialValid));
           if (isCredentialValid) {

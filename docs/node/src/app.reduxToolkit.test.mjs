@@ -4,7 +4,7 @@ import {
   app_default,
   loginApp,
   require_redux
-} from "../chunk-Z6KQ5F5A.mjs";
+} from "../chunk-CORLEDAB.mjs";
 import {
   Node_default,
   assert
@@ -32,7 +32,6 @@ var ReduxToolkitTesteranto = (testImplementations, testSpecifications, testInput
       return store;
     },
     butThen: async function(store, actioner, tr) {
-      console.log("args", arguments);
       return actioner(store.getState());
     }
   };

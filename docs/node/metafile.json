@@ -1239,7 +1239,7 @@
         "format": "cjs"
       },
       "src/subPackages/reduxToolkit.testeranto.test.ts": {
-        "bytes": 2088,
+        "bytes": 2041,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -1262,12 +1262,12 @@
             "original": "redux"
           },
           {
-            "path": "../src/app",
+            "path": "../app",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "../src/app.test",
+            "path": "../app.test",
             "kind": "import-statement",
             "external": true
           }
@@ -1491,7 +1491,7 @@
         "format": "cjs"
       },
       "src/app.ts": {
-        "bytes": 2428,
+        "bytes": 2258,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -1668,7 +1668,7 @@
         "format": "esm"
       },
       "src/Rectangle/Rectangle.test.node.ts": {
-        "bytes": 1655,
+        "bytes": 1604,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -16032,7 +16032,7 @@
         "format": "cjs"
       },
       "src/subPackages/solidity/Contract-rpc.testeranto.test.ts": {
-        "bytes": 3456,
+        "bytes": 3269,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -16231,7 +16231,7 @@
       "docs/node/src/app.reduxToolkit.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-Z6KQ5F5A.mjs",
+            "path": "docs/node/chunk-CORLEDAB.mjs",
             "kind": "import-statement"
           },
           {
@@ -16249,18 +16249,18 @@
         "entryPoint": "src/app.reduxToolkit.test.ts",
         "inputs": {
           "src/subPackages/reduxToolkit.testeranto.test.ts": {
-            "bytesInOutput": 805
+            "bytesInOutput": 767
           },
           "src/app.reduxToolkit.test.ts": {
             "bytesInOutput": 1190
           }
         },
-        "bytes": 2443
+        "bytes": 2405
       },
       "docs/node/src/app.redux.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-Z6KQ5F5A.mjs",
+            "path": "docs/node/chunk-CORLEDAB.mjs",
             "kind": "import-statement"
           },
           {
@@ -16286,7 +16286,7 @@
         },
         "bytes": 2467
       },
-      "docs/node/chunk-Z6KQ5F5A.mjs": {
+      "docs/node/chunk-CORLEDAB.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-M7BKJ4RF.mjs",
@@ -16349,10 +16349,10 @@
             "bytesInOutput": 1564
           },
           "src/app.ts": {
-            "bytesInOutput": 1577
+            "bytesInOutput": 1507
           }
         },
-        "bytes": 254286
+        "bytes": 254216
       },
       "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
         "imports": [

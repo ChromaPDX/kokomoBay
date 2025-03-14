@@ -2,7 +2,7 @@ import {
   LoginPageSpecs,
   LoginPage_default,
   actions
-} from "../../../chunk-2HSWBUAX.mjs";
+} from "../../../chunk-3TSHC3QJ.mjs";
 import {
   Web_default
 } from "../../../chunk-PD25TX33.mjs";
@@ -61,43 +61,57 @@ var implementations = {
     }
   },
   whens: {
-    TheLoginIsSubmitted: () => async (reactElem) => {
+    TheLoginIsSubmitted: () => async (reactElem, utils) => {
       reactElem.props.store.dispatch(actions.signIn());
+      return reactElem;
     },
-    TheEmailIsSetTo: (email) => async (reactElem) => {
+    TheEmailIsSetTo: (email) => async (reactElem, utils) => {
       reactElem.props.store.dispatch(actions.setEmail(email));
+      return reactElem;
     },
-    ThePasswordIsSetTo: (password) => async (reactElem) => {
+    ThePasswordIsSetTo: (password) => async (reactElem, utils) => {
       reactElem.props.store.dispatch(actions.setPassword(password));
+      return reactElem;
     }
   },
   thens: {
-    TheEmailIs: (email) => (reactElem) => {
+    TheEmailIs: (email) => async (reactElem, utils) => {
       assert.equal(reactElem.props.store.getState().email, email);
+      return reactElem;
     },
-    TheEmailIsNot: (email) => (reactElem) => {
+    TheEmailIsNot: (email) => async (reactElem, utils) => {
       assert.notEqual(reactElem.props.store.getState().email, email);
+      return reactElem;
     },
-    ThePasswordIs: (password) => (reactElem) => {
+    ThePasswordIs: (password) => async (reactElem, utils) => {
       assert.equal(reactElem.props.store.getState().password, password);
+      return reactElem;
     },
-    ThePasswordIsNot: (password) => (reactElem) => {
+    ThePasswordIsNot: (password) => async (reactElem, utils) => {
       assert.notEqual(reactElem.props.store.getState().password, password);
+      return reactElem;
     },
-    ThereIsAnEmailError: () => (reactElem) => {
+    ThereIsAnEmailError: () => async (reactElem, utils) => {
       assert.notEqual(reactElem.props.store.getState().error, "no_error");
+      return reactElem;
     },
-    ThereIsNotAnEmailError: () => (reactElem) => {
+    ThereIsNotAnEmailError: () => async (reactElem, utils) => {
       assert.equal(reactElem.props.store.getState().error, "no_error");
+      return reactElem;
     },
-    ThereIsACredentialError: function() {
-      throw new Error("Function not implemented.");
+    ThereIsACredentialError: () => async (reactElem, utils) => {
+      const state = reactElem.props.store.getState();
+      assert.equal(state.error, "credentialFail");
+      assert.isTrue(state.disableSubmit);
+      return reactElem;
     },
-    TheSubmitButtonIsActive: function() {
-      throw new Error("Function not implemented.");
+    TheSubmitButtonIsActive: () => async (reactElem, utils) => {
+      assert.isFalse(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
     },
-    TheSubmitButtonIsNotActive: function() {
-      throw new Error("Function not implemented.");
+    TheSubmitButtonIsNotActive: () => async (reactElem, utils) => {
+      assert.isTrue(reactElem.props.store.getState().disableSubmit);
+      return reactElem;
     }
   },
   checks: {

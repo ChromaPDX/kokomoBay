@@ -6,7 +6,7 @@ import {
   emailInputId,
   loginInputId,
   passwordInputId
-} from "../../../chunk-2HSWBUAX.mjs";
+} from "../../../chunk-3TSHC3QJ.mjs";
 import {
   Web_default
 } from "../../../chunk-PD25TX33.mjs";
@@ -32,12 +32,9 @@ var passwordInput = `#${passwordInputId}`;
 var loginButton = `#${loginInputId}`;
 var assert$ = async (sel, utils) => {
   const x = await utils.$(sel);
-  console.log("sel", sel);
-  console.log("x", x);
   if (x) {
     assert(true, `'${sel}' evaluated to: ${x}`);
   } else {
-    console.log("The current html is", await utils.$("xpath//*"));
     assert(x, `Expected ${sel} to evaluate OK, but it evaluated to: ${x}`);
   }
 };
@@ -147,7 +144,6 @@ var web_test_default = Web_default(
       });
     },
     beforeEach: async ({ htmlElement, reactElement, domRoot }, initializer, artificer, testResource, utils) => {
-      console.log("beforEach", reactElement);
       return new Promise((resolve, rej) => {
         const r = reactElement();
         const component = (0, import_react2.createElement)(

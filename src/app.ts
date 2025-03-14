@@ -1,6 +1,4 @@
 import { createSelector, createSlice, createStore } from "@reduxjs/toolkit";
-// import pkg from "@reduxjs/toolkit";
-// const { createSelector, createSlice, createStore } = pkg;
 
 import { ILoginPageError, ILoginPageSelection } from "./LoginPage";
 
@@ -58,7 +56,6 @@ const validateEmail = (email) => {
 };
 
 const checkForErrors = (storeState: IStoreState): ILoginPageError => {
-  console.log("mark1", storeState, !validateEmail(storeState.email));
   // Only validate email format if there's an email entered
   if (storeState.email && !validateEmail(storeState.email)) {
     return "invalidEmail";

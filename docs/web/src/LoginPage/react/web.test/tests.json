@@ -1,0 +1,342 @@
+{
+  "name": "Testing the LoginPage as react",
+  "givens": [
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": true
+        },
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:79:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [],
+      "thens": [
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": true
+        },
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:113:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        },
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: larry@email.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheSubmitButtonIsActive: undefined",
+          "error": true
+        },
+        {
+          "name": "TheEmailIs: larry@email.com",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:109:44\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: curly@email.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret",
+          "error": true
+        },
+        {
+          "name": "TheLoginIsSubmitted: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: curly@email.com",
+          "error": true
+        },
+        {
+          "name": "ThereIsACredentialError: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:79:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "Curly cannot login, even if he knows the password"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: BAD EMAIL",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret",
+          "error": true
+        },
+        {
+          "name": "TheLoginIsSubmitted: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIsNot: wade@rpc",
+          "error": true
+        },
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": false
+        },
+        {
+          "name": "ThePasswordIs: secret",
+          "error": false
+        },
+        {
+          "name": "ThePasswordIsNot: idk",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:83:45\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: bob",
+          "error": true
+        },
+        {
+          "name": "TheLoginIsSubmitted: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: bob",
+          "error": true
+        },
+        {
+          "name": "ThereIsAnEmailError: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:79:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: bob",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@mail.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: foso",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@mail.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: fosz",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'getState')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react/web.test.mjs:99:42\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:157:37)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:763:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:445:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:332:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:239:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:534:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:562:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-PD25TX33.mjs:825:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "1"
+      ]
+    }
+  ],
+  "fails": [],
+  "features": {
+    "0": "0",
+    "1": "1",
+    "Curly cannot login, even if he knows the password": "Curly cannot login, even if he knows the password"
+  }
+}

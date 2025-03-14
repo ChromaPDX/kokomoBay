@@ -6730,7 +6730,6 @@ var validateEmail = (email) => {
   return email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) || email.match(/^[^\s@]+@[^\s@]+$/);
 };
 var checkForErrors = (storeState) => {
-  console.log("mark1", storeState, !validateEmail(storeState.email));
   if (storeState.email && !validateEmail(storeState.email)) {
     return "invalidEmail";
   }

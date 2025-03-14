@@ -5,7 +5,115 @@
       "name": "default",
       "whens": [
         {
-          "name": "TheEmailIsSetTo: curly@email.com"
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": true
+        },
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected '' to equal 'adam@email.com'",
+          "showDiff": true,
+          "actual": "",
+          "expected": "adam@email.com",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected '' to equal 'adam@email.com'\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28270:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+        },
+        "AssertionError: expected '' to equal 'adam@email.com'\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28270:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [],
+      "thens": [
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        },
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        },
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: larry@email.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheSubmitButtonIsActive: undefined",
+          "error": false
+        },
+        {
+          "name": "TheEmailIs: larry@email.com",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: curly@email.com",
+          "error": true
         },
         {
           "name": "ThePasswordIsSetTo: secret"
@@ -40,10 +148,207 @@
       "features": [
         "Curly cannot login, even if he knows the password"
       ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: BAD EMAIL",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret"
+        },
+        {
+          "name": "TheLoginIsSubmitted: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: secret"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIsNot: wade@rpc",
+          "error": false
+        },
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": false
+        },
+        {
+          "name": "ThePasswordIs: secret",
+          "error": false
+        },
+        {
+          "name": "ThePasswordIsNot: idk",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: bob",
+          "error": true
+        },
+        {
+          "name": "TheLoginIsSubmitted: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: bob",
+          "error": true
+        },
+        {
+          "name": "ThereIsAnEmailError: undefined",
+          "error": false
+        }
+      ],
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected '' to equal 'bob'",
+          "showDiff": true,
+          "actual": "",
+          "expected": "bob",
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected '' to equal 'bob'\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28270:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+        },
+        "AssertionError: expected '' to equal 'bob'\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28270:14\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: bob",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@mail.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: foso"
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@mail.com",
+          "error": true
+        },
+        {
+          "name": "ThePasswordIsSetTo: fosz"
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThereIsNotAnEmailError: undefined",
+          "error": true
+        }
+      ],
+      "error": [
+        {},
+        "TypeError: Cannot read properties of undefined (reading 'valueOf')\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28295:43\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)\n    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16"
+      ],
+      "features": [
+        "1"
+      ]
     }
   ],
   "fails": [],
   "features": {
+    "0": "0",
+    "1": "1",
     "Curly cannot login, even if he knows the password": "Curly cannot login, even if he knows the password"
   }
 }

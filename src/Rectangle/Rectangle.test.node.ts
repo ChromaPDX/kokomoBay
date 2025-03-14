@@ -25,7 +25,6 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
   //   });
   // },
   andWhen: async function (s: Rectangle, whenCB): Promise<Rectangle> {
-    // console.log("gamma", s, whenCB.toString());
     return whenCB(s);
   },
 

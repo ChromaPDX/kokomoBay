@@ -23,13 +23,11 @@ const ClassicalComponentReactDomImplementation = {
   whens: {
     IClickTheHeader: () =>
       async ({ htmlElement }) => {
-        console.log("IClickTheHeader", htmlElement)
         htmlElement.querySelector("#theHeader").click()
       },
     IClickTheButton:
       () =>
         async ({ htmlElement }) => {
-          console.log("IClickTheButton", htmlElement)
           htmlElement.querySelector("#theButton").click()
         }
 
@@ -38,7 +36,6 @@ const ClassicalComponentReactDomImplementation = {
     ThePropsIs:
       (expectation) =>
         async ({ htmlElement, reactElement }) => {
-          console.log("ThePropsIs", htmlElement, expectation)
           const elem = htmlElement.querySelector("#theProps")
           const found = elem.innerHTML;
           assert.deepEqual(
@@ -50,8 +47,6 @@ const ClassicalComponentReactDomImplementation = {
     TheStatusIs:
       (expectation) =>
         async ({ htmlElement }) => {
-          console.log("TheStatusIs", htmlElement)
-
           const elem = htmlElement.querySelector("#theStat")
           const found = elem.innerHTML;
           assert.deepEqual(

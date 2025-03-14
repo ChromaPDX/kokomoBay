@@ -81,8 +81,7 @@ export default Testeranto<IThenShape>(
       testResource,
       utils
     ): Promise<IStore> => {
-      console.log("beforEach", reactElement)
-      // debugger
+
       return new Promise((resolve, rej) => {
 
         // createPortal(

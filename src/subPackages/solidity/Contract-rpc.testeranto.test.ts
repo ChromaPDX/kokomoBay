@@ -41,8 +41,6 @@ export default <IT extends IBaseTest>(
         const options = {};
         const port = testResource.ports[0];
 
-        // console.log("mark0", testResource);
-
         // https://github.com/trufflesuite/ganache#programmatic-use
         const server = Ganache.server(options);
 
@@ -72,7 +70,7 @@ export default <IT extends IBaseTest>(
           const web3FarSideProvider = new ethers.providers.JsonRpcProvider(
             `http://localhost:${port}`
           );
-          // web3FarSideProvider.
+
           // create a test wallet from a ganache account
           const web3FarSideSigner = new ethers.Wallet(
             providerFarSide.getInitialAccounts()[accounts[1]].secretKey,
@@ -86,8 +84,6 @@ export default <IT extends IBaseTest>(
             web3FarSideSigner
           );
 
-          // console.log("server", server);
-          // server.
           res({
             contractNearSide,
             contractFarSide,
@@ -107,7 +103,6 @@ export default <IT extends IBaseTest>(
       callback({ contractFarSide, accounts }),
 
     afterAll: ({ server }) => {
-      // console.log("serve!r", server);
       // server.close();
     },
   };

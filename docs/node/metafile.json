@@ -246,6 +246,11 @@
             "path": "react",
             "kind": "import-statement",
             "external": true
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
           }
         ],
         "format": "esm"
@@ -1595,6 +1600,115 @@
             "path": "src/subPackages/redux.testeranto.test.ts",
             "kind": "import-statement",
             "original": "./subPackages/redux.testeranto.test.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.ts": {
+        "bytes": 519,
+        "imports": [],
+        "format": "esm"
+      },
+      "src/Rectangle.test.ts": {
+        "bytes": 596,
+        "imports": [
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.test.implementation.ts": {
+        "bytes": 1840,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.test.specification.ts": {
+        "bytes": 1753,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle/Rectangle.test.node.ts": {
+        "bytes": 1655,
+        "imports": [
+          {
+            "path": "../testeranto/src/Node.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/Node"
+          },
+          {
+            "path": "../../../testeranto/src/lib/types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Rectangle",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.test.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test"
+          },
+          {
+            "path": "src/Rectangle.test.implementation.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.implementation"
+          },
+          {
+            "path": "../Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.test.specification.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.specification"
           }
         ],
         "format": "esm"
@@ -16036,6 +16150,11 @@
             "path": "react",
             "kind": "import-statement",
             "external": true
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
           }
         ],
         "exports": [
@@ -16104,10 +16223,10 @@
             "bytesInOutput": 203
           },
           "src/ReactStateAndHook.tsx": {
-            "bytesInOutput": 600
+            "bytesInOutput": 647
           }
         },
-        "bytes": 796259
+        "bytes": 796306
       },
       "docs/node/src/app.reduxToolkit.test.mjs": {
         "imports": [
@@ -16234,6 +16353,40 @@
           }
         },
         "bytes": 254286
+      },
+      "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-XPHEY5WE.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/Rectangle/Rectangle.test.node.ts",
+        "inputs": {
+          "src/Rectangle.ts": {
+            "bytesInOutput": 479
+          },
+          "src/Rectangle.test.ts": {
+            "bytesInOutput": 68
+          },
+          "src/Rectangle.test.implementation.ts": {
+            "bytesInOutput": 1270
+          },
+          "src/Rectangle.test.specification.ts": {
+            "bytesInOutput": 1572
+          },
+          "src/Rectangle/Rectangle.test.node.ts": {
+            "bytesInOutput": 730
+          }
+        },
+        "bytes": 4532
       },
       "docs/node/src/MyFirstContract.basic.test.mjs": {
         "imports": [

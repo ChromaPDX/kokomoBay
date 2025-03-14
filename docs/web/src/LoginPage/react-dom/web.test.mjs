@@ -5,17 +5,21 @@ import {
   credentialFailWarning,
   emailInputId,
   loginInputId,
-  passwordInputId,
-  require_react,
-  require_react_dom
-} from "../../../chunk-OE46JJPW.mjs";
+  passwordInputId
+} from "../../../chunk-2HSWBUAX.mjs";
 import {
   Web_default
 } from "../../../chunk-PD25TX33.mjs";
 import {
-  __toESM,
   assert
-} from "../../../chunk-SZDDWZIA.mjs";
+} from "../../../chunk-GI23F5DQ.mjs";
+import {
+  require_react,
+  require_react_dom
+} from "../../../chunk-N5FE2MLL.mjs";
+import {
+  __toESM
+} from "../../../chunk-TTFRSOOU.mjs";
 
 // src/LoginPage/react-dom/web.test.tsx
 var import_react = __toESM(require_react(), 1);

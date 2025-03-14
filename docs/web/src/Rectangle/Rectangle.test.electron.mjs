@@ -3,7 +3,8 @@ import {
 } from "../../chunk-PD25TX33.mjs";
 import {
   assert
-} from "../../chunk-SZDDWZIA.mjs";
+} from "../../chunk-GI23F5DQ.mjs";
+import "../../chunk-TTFRSOOU.mjs";
 
 // src/Rectangle.test.specification.ts
 var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check) => {
@@ -140,13 +141,10 @@ var Rectangle_test_electron_default = Web_default(
     },
     afterAll: async (store, artificer, utils) => {
       return new Promise(async (res, rej) => {
-        console.log("afterAll", utils);
-        utils.writeFileSync("afterAllLog", "bar");
         res(store);
       });
     },
     andWhen: async function(s, whenCB, tr, utils) {
-      utils.writeFileSync("andWhenLog", "icecream");
       return whenCB(s);
     }
   },

@@ -7,4 +7,4 @@
 /read docs/ts/src/MyFirstContract.specification.test.ts.type_errors.txt
 /read docs/node/src/MyFirstContract.rpc.test/tests.json
 /read docs/node/src/MyFirstContract.rpc.test/features.json
-/code Fix the failing tests described in docs/node/src/MyFirstContract.rpc.test/tests.json as well as any incorrect type signatures.
+/code Fix the failing tests described in docs/node/src/MyFirstContract.rpc.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

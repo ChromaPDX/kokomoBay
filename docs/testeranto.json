@@ -58,6 +58,23 @@
       []
     ],
     [
+      "./src/Rectangle/Rectangle.test.node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      [
+        [
+          "./src/ClassicalComponent/test.ts",
+          "web",
+          {
+            "ports": 0
+          },
+          []
+        ]
+      ]
+    ],
+    [
       "./src/MyFirstContract.basic.test.ts",
       "node",
       {

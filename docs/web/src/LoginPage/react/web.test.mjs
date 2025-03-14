@@ -1,16 +1,20 @@
 import {
   LoginPageSpecs,
   LoginPage_default,
-  actions,
-  require_react
-} from "../../../chunk-OE46JJPW.mjs";
+  actions
+} from "../../../chunk-2HSWBUAX.mjs";
 import {
   Web_default
 } from "../../../chunk-PD25TX33.mjs";
 import {
-  __toESM,
   assert
-} from "../../../chunk-SZDDWZIA.mjs";
+} from "../../../chunk-GI23F5DQ.mjs";
+import {
+  require_react
+} from "../../../chunk-N5FE2MLL.mjs";
+import {
+  __toESM
+} from "../../../chunk-TTFRSOOU.mjs";
 
 // ../testeranto/src/SubPackages/react/jsx/index.ts
 var import_react = __toESM(require_react(), 1);
@@ -57,14 +61,13 @@ var implementations = {
     }
   },
   whens: {
-    TheLoginIsSubmitted: () => (reactElem) => {
+    TheLoginIsSubmitted: () => async (reactElem) => {
       reactElem.props.store.dispatch(actions.signIn());
     },
-    TheEmailIsSetTo: (email) => (reactElem) => {
-      console.log("TheEmailIsSetTo", email, reactElem);
+    TheEmailIsSetTo: (email) => async (reactElem) => {
       reactElem.props.store.dispatch(actions.setEmail(email));
     },
-    ThePasswordIsSetTo: (password) => (reactElem) => {
+    ThePasswordIsSetTo: (password) => async (reactElem) => {
       reactElem.props.store.dispatch(actions.setPassword(password));
     }
   },
@@ -85,8 +88,16 @@ var implementations = {
       assert.notEqual(reactElem.props.store.getState().error, "no_error");
     },
     ThereIsNotAnEmailError: () => (reactElem) => {
-      console.log("hello");
       assert.equal(reactElem.props.store.getState().error, "no_error");
+    },
+    ThereIsACredentialError: function() {
+      throw new Error("Function not implemented.");
+    },
+    TheSubmitButtonIsActive: function() {
+      throw new Error("Function not implemented.");
+    },
+    TheSubmitButtonIsNotActive: function() {
+      throw new Error("Function not implemented.");
     }
   },
   checks: {

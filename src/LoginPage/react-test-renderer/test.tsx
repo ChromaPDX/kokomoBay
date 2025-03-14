@@ -4,6 +4,7 @@ import { assert } from "chai";
 import { ILoginPageSpecs } from "../test.js";
 import { actions, emailwarning } from "../index.js";
 import { ITestImplementation } from "testeranto/src/Types";
+import { PM } from "testeranto/src/PM/index.js";
 
 export const LoginPageReactTestRendererTestInterface = {
 
@@ -63,34 +64,40 @@ export const loginPageImpl: ITestImplementation<ILoginPageSpecs, object> = {
       assert.equal(
         component.root.findByProps({ type: "email" }).props.value,
         email
-      )
+      );
     },
-    TheEmailIsNot: (email) => (component) =>
-      assert.notEqual(
-        component.root.findByProps({ type: "email" }).props.value,
-        email
-      ),
-    ThePasswordIs: (password) => (component) =>
-      assert.equal(
-        component.root.findByProps({ type: "password" }).props.value,
-        password
-      ),
-    ThePasswordIsNot: (password) => (component) =>
-      assert.notEqual(
-        component.root.findByProps({ type: "password" }).props.value,
-        password
-      ),
+    TheEmailIsNot: (email) => (component) => assert.notEqual(
+      component.root.findByProps({ type: "email" }).props.value,
+      email
+    ),
+    ThePasswordIs: (password) => (component) => assert.equal(
+      component.root.findByProps({ type: "password" }).props.value,
+      password
+    ),
+    ThePasswordIsNot: (password) => (component) => assert.notEqual(
+      component.root.findByProps({ type: "password" }).props.value,
+      password
+    ),
     ThereIsAnEmailError: () => (component: ReactTestRenderer) => {
       assert.equal(
         component.root.findByProps({ id: "invalid-email-warning" }).children[0],
         emailwarning
-      )
+      );
     },
     ThereIsNotAnEmailError: () => (component: renderer.ReactTestRenderer) => {
-      const errorField = component.root.findByProps({ id: "invalid-email-warning" })
-      assert.equal(errorField.children[0].valueOf(), "no_error")
+      const errorField = component.root.findByProps({ id: "invalid-email-warning" });
+      assert.equal(errorField.children[0].valueOf(), "no_error");
+    },
+    ThereIsACredentialError: () => (component: ReactTestRenderer) => {
+      const errorField = component.root.findByProps({ id: "error" });
+      assert.isTrue(errorField.children.length > 0);
+    },
+    TheSubmitButtonIsActive: () => (component: ReactTestRenderer) => {
+      assert.isFalse(component.root.findByType("button").props.disabled);
+    },
+    TheSubmitButtonIsNotActive: () => (component: ReactTestRenderer) => {
+      assert.isTrue(component.root.findByType("button").props.disabled);
     }
-
   },
 
   checks: {

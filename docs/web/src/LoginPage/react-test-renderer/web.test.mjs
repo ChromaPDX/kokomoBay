@@ -2,15 +2,19 @@ import {
   LoginPageSpecs,
   LoginPage_default,
   actions,
-  emailwarning,
+  emailwarning
+} from "../../../chunk-2HSWBUAX.mjs";
+import {
+  assert
+} from "../../../chunk-GI23F5DQ.mjs";
+import {
   require_react,
   require_scheduler
-} from "../../../chunk-OE46JJPW.mjs";
+} from "../../../chunk-N5FE2MLL.mjs";
 import {
   __commonJS,
-  __toESM,
-  assert
-} from "../../../chunk-SZDDWZIA.mjs";
+  __toESM
+} from "../../../chunk-TTFRSOOU.mjs";
 
 // ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js
 var require_scheduler_unstable_mock_development = __commonJS({
@@ -28289,6 +28293,16 @@ var loginPageImpl = {
     ThereIsNotAnEmailError: () => (component) => {
       const errorField = component.root.findByProps({ id: "invalid-email-warning" });
       assert.equal(errorField.children[0].valueOf(), "no_error");
+    },
+    ThereIsACredentialError: () => (component) => {
+      const errorField = component.root.findByProps({ id: "error" });
+      assert.isTrue(errorField.children.length > 0);
+    },
+    TheSubmitButtonIsActive: () => (component) => {
+      assert.isFalse(component.root.findByType("button").props.disabled);
+    },
+    TheSubmitButtonIsNotActive: () => (component) => {
+      assert.isTrue(component.root.findByType("button").props.disabled);
     }
   },
   checks: {

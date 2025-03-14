@@ -28,7 +28,7 @@
     "clean": "rm -rf docs && mkdir docs",
     "build-bundle": "docker build -f ./node_modules/testeranto/Bundle.Dockerfile -t testeranto .",
     "ai": "node --experimental-specifier-resolution=node --loader ts-node/esm  node_modules/testeranto/dist/module/src/Aider.js",
-    "build-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm build-tests.ts",
+    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; node --experimental-specifier-resolution=node --loader ts-node/esm build-tests.ts",
     "run-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm  run-tests.ts",
     "init-docs": "node --experimental-specifier-resolution=node --loader ts-node/esm  ./init-docs.mts",
     "test": "yarn build-tests && env DEBUG='puppeteer:*' yarn run-tests",

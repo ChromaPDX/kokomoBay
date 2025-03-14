@@ -1,0 +1,14 @@
+
+/add src/Rectangle/Rectangle.test.node.ts
+/add ../testeranto/src/Node.ts
+/add src/Rectangle.test.ts
+/add src/Rectangle.test.implementation.ts
+/add src/Rectangle.test.specification.ts
+/read docs/ts/src/Rectangle/Rectangle.test.node.ts.type_errors.txt
+
+
+
+
+/read docs/node/src/Rectangle/Rectangle.test.node/tests.json
+/read docs/node/src/Rectangle/Rectangle.test.node/features.json
+/code Fix the failing tests described in docs/node/src/Rectangle/Rectangle.test.node/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

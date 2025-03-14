@@ -11,4 +11,4 @@
 
 /read docs/web/src/LoginPage/react-dom/web.test/tests.json
 /read docs/web/src/LoginPage/react-dom/web.test/features.json
-/code Fix the failing tests described in docs/web/src/LoginPage/react-dom/web.test/tests.json as well as any incorrect type signatures.
+/code Fix the failing tests described in docs/web/src/LoginPage/react-dom/web.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

@@ -19862,20 +19862,24 @@ var node_default = (testImplementations, testSpecifications, testInput, testInte
 };
 
 // src/ReactStateAndHook.tsx
-import React2, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 function ReactStateAndHook() {
   const [count, setCount] = useState(0);
   useEffect(() => {
     console.log(`You have clicked the first button ${count} times`);
   }, [count]);
-  return /* @__PURE__ */ React2.createElement("div", null, /* @__PURE__ */ React2.createElement("pre", { "data-testid": "counter" }, count), /* @__PURE__ */ React2.createElement(
-    "button",
-    {
-      onClick: () => setCount((prev) => prev + 1),
-      "data-testid": "increment-button"
-    },
-    "Click me"
-  ));
+  return /* @__PURE__ */ jsxs("div", { children: [
+    /* @__PURE__ */ jsx("pre", { "data-testid": "counter", children: count }),
+    /* @__PURE__ */ jsx(
+      "button",
+      {
+        onClick: () => setCount((prev) => prev + 1),
+        "data-testid": "increment-button",
+        children: "Click me"
+      }
+    )
+  ] });
 }
 var ReactStateAndHook_default = ReactStateAndHook;
 

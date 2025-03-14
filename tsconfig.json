@@ -19,7 +19,6 @@
     // "esm": true,
   },
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "paths": {
       "react": [
         "./node_modules/@types/react"

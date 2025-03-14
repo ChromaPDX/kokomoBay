@@ -1,0 +1,21 @@
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/1764694d-a46f-40a7-a70f-46b61401b0d7"}
+
+Suite:,0,Testing the LoginPage as react
+
+ Given: default
+ When:,TheEmailIsSetTo: curly@email.com
+ When:,ThePasswordIsSetTo: secret
+ When:,TheLoginIsSubmitted: undefined
+ Then:,TheEmailIs: curly@email.com
+ Then:,ThereIsACredentialError: undefined
+AssertionError: expected false to be true
+    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28299:14
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28232:12)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28153:42)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27943:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27853:34)
+    at async Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:27785:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28003:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28022:29)
+    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs:28190:57)
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80638%3A20:6:16

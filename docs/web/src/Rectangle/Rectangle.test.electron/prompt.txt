@@ -11,4 +11,4 @@
 
 /read docs/web/src/Rectangle/Rectangle.test.electron/tests.json
 /read docs/web/src/Rectangle/Rectangle.test.electron/features.json
-/code Fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json as well as any incorrect type signatures.
+/code Fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

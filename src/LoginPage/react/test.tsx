@@ -3,6 +3,7 @@ import { actions } from "../index.js";
 import { assert } from "chai";
 // import type { IStore, ISelection } from "testeranto/dist/types/SubPackages/react/jsx/index";
 import { ITestImplementation } from "testeranto/src/Types";
+import { PM } from "testeranto/src/PM/index.js";
 
 // export const LoginPageReactTestInterface = (testInput) => {
 //   return {
@@ -39,19 +40,16 @@ const implementations: IImpl = {
   },
 
   whens: {
-    TheLoginIsSubmitted: () => (reactElem) => {
+    TheLoginIsSubmitted: () => async (reactElem) => {
       reactElem.props.store.dispatch(actions.signIn());
     },
-    TheEmailIsSetTo: (email) => (reactElem) => {
-      console.log("TheEmailIsSetTo", email, reactElem);
+    TheEmailIsSetTo: (email) => async (reactElem) => {
       reactElem.props.store.dispatch(actions.setEmail(email as never));
     },
-
-    ThePasswordIsSetTo: (password) => (reactElem) => {
+    ThePasswordIsSetTo: (password) => async (reactElem) => {
       reactElem.props.store.dispatch(actions.setPassword(password as never));
     }
   },
-
   thens: {
     TheEmailIs: (email) => (reactElem) => {
       assert.equal(reactElem.props.store.getState().email, email);
@@ -69,9 +67,17 @@ const implementations: IImpl = {
       assert.notEqual(reactElem.props.store.getState().error, "no_error");
     },
     ThereIsNotAnEmailError: () => (reactElem) => {
-      console.log("hello")
       assert.equal(reactElem.props.store.getState().error, "no_error");
     },
+    ThereIsACredentialError: function (): (ssel: any, utils: PM) => unknown {
+      throw new Error("Function not implemented.");
+    },
+    TheSubmitButtonIsActive: function (): (ssel: any, utils: PM) => unknown {
+      throw new Error("Function not implemented.");
+    },
+    TheSubmitButtonIsNotActive: function (): (ssel: any, utils: PM) => unknown {
+      throw new Error("Function not implemented.");
+    }
   },
 
   checks: {

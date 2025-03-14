@@ -1066,13 +1066,35 @@
         ],
         "format": "esm"
       },
+      "node_modules/react/cjs/react-jsx-runtime.development.js": {
+        "bytes": 41746,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react/jsx-runtime.js": {
+        "bytes": 214,
+        "imports": [
+          {
+            "path": "node_modules/react/cjs/react-jsx-runtime.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-jsx-runtime.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
       "src/LoginPage/index.tsx": {
         "bytes": 2611,
         "imports": [
           {
-            "path": "node_modules/react/index.js",
+            "path": "react",
             "kind": "import-statement",
-            "original": "react"
+            "external": true
           },
           {
             "path": "node_modules/react-redux/es/index.js",
@@ -1083,6 +1105,11 @@
             "path": "src/app.ts",
             "kind": "import-statement",
             "original": "../app.js"
+          },
+          {
+            "path": "node_modules/react/jsx-runtime.js",
+            "kind": "import-statement",
+            "original": "react/jsx-runtime"
           }
         ],
         "format": "esm"
@@ -1758,7 +1785,7 @@
         "format": "esm"
       },
       "src/LoginPage/react/test.tsx": {
-        "bytes": 2352,
+        "bytes": 2747,
         "imports": [
           {
             "path": "../test.js",
@@ -1777,6 +1804,11 @@
           },
           {
             "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
             "kind": "import-statement",
             "external": true
           }
@@ -2038,7 +2070,7 @@
         "format": "cjs"
       },
       "src/LoginPage/react-test-renderer/test.tsx": {
-        "bytes": 2751,
+        "bytes": 3274,
         "imports": [
           {
             "path": "node_modules/react-test-renderer/index.js",
@@ -2062,6 +2094,11 @@
           },
           {
             "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
             "kind": "import-statement",
             "external": true
           }
@@ -2158,12 +2195,22 @@
         "format": "esm"
       },
       "src/Rectangle/Rectangle.test.electron.ts": {
-        "bytes": 2846,
+        "bytes": 1168,
         "imports": [
           {
             "path": "../testeranto/src/Web.ts",
             "kind": "import-statement",
             "original": "testeranto/src/Web"
+          },
+          {
+            "path": "testeranto/src/PM/web",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/lib",
+            "kind": "import-statement",
+            "external": true
           },
           {
             "path": "../Rectangle",
@@ -2264,13 +2311,61 @@
           }
         ],
         "format": "esm"
+      },
+      "node_modules/react-dom/client.js": {
+        "bytes": 619,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/index.js",
+            "kind": "require-call",
+            "original": "react-dom"
+          }
+        ],
+        "format": "cjs"
+      },
+      "src/ClassicalComponent/index.tsx": {
+        "bytes": 789,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react/jsx-runtime.js",
+            "kind": "import-statement",
+            "original": "react/jsx-runtime"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/test.ts": {
+        "bytes": 327,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/client.js",
+            "kind": "import-statement",
+            "original": "react-dom/client"
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "src/ClassicalComponent/index.tsx",
+            "kind": "import-statement",
+            "original": "./index"
+          }
+        ],
+        "format": "esm"
       }
     },
     "outputs": {
       "docs/web/src/LoginPage/react/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-OE46JJPW.mjs",
+            "path": "docs/web/chunk-2HSWBUAX.mjs",
             "kind": "import-statement"
           },
           {
@@ -2278,7 +2373,15 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-N5FE2MLL.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2294,22 +2397,30 @@
             "bytesInOutput": 246
           },
           "src/LoginPage/react/test.tsx": {
-            "bytesInOutput": 1487
+            "bytesInOutput": 1727
           },
           "src/LoginPage/react/web.test.tsx": {
             "bytesInOutput": 1220
           }
         },
-        "bytes": 3995
+        "bytes": 4327
       },
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-OE46JJPW.mjs",
+            "path": "docs/web/chunk-2HSWBUAX.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-N5FE2MLL.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2379,13 +2490,13 @@
             "bytesInOutput": 201
           },
           "src/LoginPage/react-test-renderer/test.tsx": {
-            "bytesInOutput": 2375
+            "bytesInOutput": 2825
           },
           "src/LoginPage/react-test-renderer/web.test.tsx": {
             "bytesInOutput": 137
           }
         },
-        "bytes": 1214149
+        "bytes": 1214691
       },
       "docs/web/src/Rectangle/Rectangle.test.electron.mjs": {
         "imports": [
@@ -2394,7 +2505,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2416,15 +2531,15 @@
             "bytesInOutput": 68
           },
           "src/Rectangle/Rectangle.test.electron.ts": {
-            "bytesInOutput": 726
+            "bytesInOutput": 582
           }
         },
-        "bytes": 4456
+        "bytes": 4347
       },
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-OE46JJPW.mjs",
+            "path": "docs/web/chunk-2HSWBUAX.mjs",
             "kind": "import-statement"
           },
           {
@@ -2432,7 +2547,15 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-N5FE2MLL.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2448,12 +2571,16 @@
             "bytesInOutput": 2868
           }
         },
-        "bytes": 5851
+        "bytes": 5943
       },
-      "docs/web/chunk-OE46JJPW.mjs": {
+      "docs/web/chunk-2HSWBUAX.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "path": "docs/web/chunk-N5FE2MLL.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2465,30 +2592,9 @@
           "emailInputId",
           "emailwarning",
           "loginInputId",
-          "passwordInputId",
-          "require_react",
-          "require_react_dom",
-          "require_scheduler"
+          "passwordInputId"
         ],
         "inputs": {
-          "node_modules/react/cjs/react.development.js": {
-            "bytesInOutput": 77147
-          },
-          "node_modules/react/index.js": {
-            "bytesInOutput": 227
-          },
-          "node_modules/scheduler/cjs/scheduler.development.js": {
-            "bytesInOutput": 16903
-          },
-          "node_modules/scheduler/index.js": {
-            "bytesInOutput": 239
-          },
-          "node_modules/react-dom/cjs/react-dom.development.js": {
-            "bytesInOutput": 906896
-          },
-          "node_modules/react-dom/index.js": {
-            "bytesInOutput": 257
-          },
           "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
             "bytesInOutput": 3238
           },
@@ -2515,9 +2621,6 @@
           },
           "node_modules/react-is/index.js": {
             "bytesInOutput": 238
-          },
-          "src/LoginPage/index.tsx": {
-            "bytesInOutput": 2161
           },
           "node_modules/react-redux/es/index.js": {
             "bytesInOutput": 287
@@ -2573,11 +2676,14 @@
           "src/app.ts": {
             "bytesInOutput": 1476
           },
+          "src/LoginPage/index.tsx": {
+            "bytesInOutput": 2292
+          },
           "src/LoginPage/test.ts": {
             "bytesInOutput": 3206
           }
         },
-        "bytes": 1107457
+        "bytes": 104345
       },
       "docs/web/chunk-PD25TX33.mjs": {
         "imports": [],
@@ -2612,8 +2718,12 @@
         },
         "bytes": 24087
       },
-      "docs/web/chunk-SZDDWZIA.mjs": {
+      "docs/web/chunk-GI23F5DQ.mjs": {
         "imports": [
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          },
           {
             "path": "util",
             "kind": "require-call",
@@ -2621,8 +2731,6 @@
           }
         ],
         "exports": [
-          "__commonJS",
-          "__toESM",
           "assert"
         ],
         "inputs": {
@@ -2747,7 +2855,84 @@
             "bytesInOutput": 478
           }
         },
-        "bytes": 177369
+        "bytes": 175727
+      },
+      "docs/web/src/ClassicalComponent/test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-N5FE2MLL.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [],
+        "entryPoint": "src/ClassicalComponent/test.ts",
+        "inputs": {
+          "node_modules/react-dom/client.js": {
+            "bytesInOutput": 778
+          },
+          "src/ClassicalComponent/test.ts": {
+            "bytesInOutput": 340
+          },
+          "src/ClassicalComponent/index.tsx": {
+            "bytesInOutput": 1201
+          }
+        },
+        "bytes": 2635
+      },
+      "docs/web/chunk-N5FE2MLL.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "require_jsx_runtime",
+          "require_react",
+          "require_react_dom",
+          "require_scheduler"
+        ],
+        "inputs": {
+          "node_modules/react/cjs/react.development.js": {
+            "bytesInOutput": 77023
+          },
+          "node_modules/react/index.js": {
+            "bytesInOutput": 227
+          },
+          "node_modules/scheduler/cjs/scheduler.development.js": {
+            "bytesInOutput": 16890
+          },
+          "node_modules/scheduler/index.js": {
+            "bytesInOutput": 239
+          },
+          "node_modules/react-dom/cjs/react-dom.development.js": {
+            "bytesInOutput": 906463
+          },
+          "node_modules/react-dom/index.js": {
+            "bytesInOutput": 257
+          },
+          "node_modules/react/cjs/react-jsx-runtime.development.js": {
+            "bytesInOutput": 35395
+          },
+          "node_modules/react/jsx-runtime.js": {
+            "bytesInOutput": 251
+          }
+        },
+        "bytes": 1038922
+      },
+      "docs/web/chunk-TTFRSOOU.mjs": {
+        "imports": [],
+        "exports": [
+          "__commonJS",
+          "__require",
+          "__toESM"
+        ],
+        "inputs": {},
+        "bytes": 1744
       }
     }
   }

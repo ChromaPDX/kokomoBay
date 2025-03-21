@@ -24,11 +24,11 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRec
       rectangle.width = width;
       return rectangle;
     },
-    setWidth: (width: number) => (rectangle: Rectangle) => {
+    setWidth: (width: number) => async (rectangle: Rectangle, utils: PM) => {
       rectangle.setWidth(width);
       return rectangle;
     },
-    setHeight: (height: number) => (rectangle: Rectangle) => {
+    setHeight: (height: number) => async (rectangle: Rectangle, utils: PM) => {
       rectangle.setHeight(height);
       return rectangle;
     },

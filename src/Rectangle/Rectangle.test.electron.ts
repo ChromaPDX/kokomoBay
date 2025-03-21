@@ -14,12 +14,12 @@ export default Testeranto(
   {
     beforeEach: async (
       rectangleProto: Rectangle,
-      init: (c?: any) => (x: any) => (y: any) => unknown,
+      init: (c?: any) => (x: any) => (y: any) => Rectangle,
       artificer: ITestArtificer,
       tr: ITTestResourceConfiguration,
       initialValues: any,
       pm: PM_Web
-    ) => {
+    ): Promise<Rectangle> => {
       pm.writeFileSync("beforeEachLog", "bar");
       return rectangleProto;
     },
@@ -30,7 +30,7 @@ export default Testeranto(
     },
     andWhen: async function (
       s: Rectangle,
-      whenCB: (s: Rectangle) => Rectangle,
+      whenCB: (s: Rectangle) => Promise<Rectangle>,
       tr: ITTestResourceConfiguration,
       utils: PM_Web
     ): Promise<Rectangle> {

@@ -5,21 +5,7 @@ import { ITestImplementation } from "testeranto/src/Types";
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
-  IRectangleTestShape,
-  {
-    givens: {
-      [K in keyof IRectangleTestShape["givens"]]: (
-        ...Iw: IRectangleTestShape["givens"][K]
-      ) => Rectangle;
-    };
-    whens: {
-      [K in keyof IRectangleTestShape["whens"]]: (
-        ...Iw: IRectangleTestShape["whens"][K]
-      ) => IRectangleTestShape["when"];
-    };
-  }
-> = {
+export const RectangleTesterantoBaseTestImplementation = {
   suites: {
     Default: "a default suite",
   },
@@ -42,14 +28,17 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
     AreaPlusCircumference: (combined) => (rectangle) => {
       assert.equal(rectangle.area() + rectangle.circumference(), combined);
     },
-    getWidth: (width) => (rectangle) => assert.equal(rectangle.width, width),
+    getWidth: (expectedWidth) => (rectangle) => 
+      assert.equal(rectangle.getWidth(), expectedWidth),
 
-    getHeight: (height) => (rectangle) =>
-      assert.equal(rectangle.height, height),
+    getHeight: (expectedHeight) => (rectangle) =>
+      assert.equal(rectangle.getHeight(), expectedHeight),
 
     area: (area) => (rectangle) => assert.equal(rectangle.area(), area),
 
-    prototype: (name) => (rectangle) => assert.equal(1, 1),
+    prototype: (name) => (rectangle) => {
+      assert.equal(Object.getPrototypeOf(rectangle), Rectangle.prototype);
+    },
 
     circumference: (circumference) => (rectangle) =>
       assert.equal(rectangle.circumference(), circumference),

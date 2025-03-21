@@ -5107,10 +5107,12 @@ var RectangleTesterantoBaseTestImplementation = {
     AreaPlusCircumference: (combined) => (rectangle) => {
       assert.equal(rectangle.area() + rectangle.circumference(), combined);
     },
-    getWidth: (width) => (rectangle) => assert.equal(rectangle.width, width),
-    getHeight: (height) => (rectangle) => assert.equal(rectangle.height, height),
+    getWidth: (expectedWidth) => (rectangle) => assert.equal(rectangle.getWidth(), expectedWidth),
+    getHeight: (expectedHeight) => (rectangle) => assert.equal(rectangle.getHeight(), expectedHeight),
     area: (area) => (rectangle) => assert.equal(rectangle.area(), area),
-    prototype: (name) => (rectangle) => assert.equal(1, 1),
+    prototype: (name) => (rectangle) => {
+      assert.equal(Object.getPrototypeOf(rectangle), Rectangle_default.prototype);
+    },
     circumference: (circumference) => (rectangle) => assert.equal(rectangle.circumference(), circumference)
   },
   checks: {

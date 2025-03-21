@@ -916,7 +916,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.implementation.ts": {
-        "bytes": 1840,
+        "bytes": 1597,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -1167,7 +1167,7 @@
             "bytesInOutput": 479
           },
           "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1270
+            "bytesInOutput": 1384
           },
           "src/Rectangle.test.ts": {
             "bytesInOutput": 68
@@ -1176,7 +1176,7 @@
             "bytesInOutput": 582
           }
         },
-        "bytes": 206402
+        "bytes": 206516
       }
     }
   }

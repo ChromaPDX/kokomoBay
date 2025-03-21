@@ -1,8 +1,8 @@
 
 /add src/ReactStateAndHook.test.tsx
 /add src/ReactStateAndHook.tsx
-
-
+/read docs/types/src/ReactStateAndHook.test.tsx.type_errors.txt
+/read docs/types/src/ReactStateAndHook.tsx.type_errors.txt
 /read docs/node/src/ReactStateAndHook.test/tests.json
 /load docs/node/src/ReactStateAndHook.test/featurePrompt.txt
 /code Fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

@@ -3,10 +3,10 @@
 /add src/app.ts
 /add src/app.test.ts
 /add src/subPackages/redux.testeranto.test.ts
-
-
-
-
+/read docs/types/src/app.redux.test.ts.type_errors.txt
+/read docs/types/src/app.ts.type_errors.txt
+/read docs/types/src/app.test.ts.type_errors.txt
+/read docs/types/src/subPackages/redux.testeranto.test.ts.type_errors.txt
 /read docs/node/src/app.redux.test/tests.json
 /load docs/node/src/app.redux.test/featurePrompt.txt
 /code Fix the failing tests described in docs/node/src/app.redux.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

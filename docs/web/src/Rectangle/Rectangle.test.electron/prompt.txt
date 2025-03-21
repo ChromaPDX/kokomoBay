@@ -3,10 +3,10 @@
 /add src/Rectangle.test.specification.ts
 /add src/Rectangle.test.implementation.ts
 /add src/Rectangle.test.ts
-
-
-
-
+/read docs/types/src/Rectangle/Rectangle.test.electron.ts.type_errors.txt
+/read docs/types/src/Rectangle.test.specification.ts.type_errors.txt
+/read docs/types/src/Rectangle.test.implementation.ts.type_errors.txt
+/read docs/types/src/Rectangle.test.ts.type_errors.txt
 /read docs/web/src/Rectangle/Rectangle.test.electron/tests.json
 /load docs/web/src/Rectangle/Rectangle.test.electron/featurePrompt.txt
 /code Fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

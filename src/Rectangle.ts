@@ -1,8 +1,8 @@
 class Rectangle {
-  height: string;
+  height: number;
   width: number;
 
-  constructor(height = 2, width = 2) {
+  constructor(height: number = 2, width: number = 2) {
     this.height = height;
     this.width = width;
   }
@@ -15,11 +15,11 @@ class Rectangle {
     return this.width;
   }
 
-  setHeight(height: number) {
+  setHeight(height: number): void {
     this.height = height;
   }
 
-  setWidth(width: number) {
+  setWidth(width: number): void {
     this.width = width;
   }
 

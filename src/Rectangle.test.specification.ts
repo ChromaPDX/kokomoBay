@@ -2,6 +2,8 @@ import { ITestSpecification } from "testeranto/src/Types";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 import Rectangle from "./Rectangle";
 
+import someFeature from "./Rectangle/rectangle.md";
+
 export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
   IRectangleTestShape,
   Rectangle
@@ -31,7 +33,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
           [Then.area(132)]
         ),
         test3: Given.Default(
-          [f],
+          [someFeature],
           [When.setHeight(5), When.setWidth(5)],
           [Then.area(25)]
         ),

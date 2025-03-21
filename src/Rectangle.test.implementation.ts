@@ -3,7 +3,7 @@ import { ITestImplementation } from "testeranto/src/Types";
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRectangleTestShape, {}> = {
+export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRectangleTestShape, Rectangle> = {
   suites: {
     Default: "a default suite",
   },

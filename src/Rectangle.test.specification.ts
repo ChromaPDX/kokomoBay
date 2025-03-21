@@ -1,11 +1,10 @@
 import { ITestSpecification } from "testeranto/src/Types";
-
 import { IRectangleTestShape } from "./Rectangle.test.shape";
-
 import f from "./Rectangle/rectangle.md";
 
 export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
-  IRectangleTestShape
+  IRectangleTestShape,
+  Rectangle
 > = (Suite, Given, When, Then, Check) => {
   return [
     Suite.Default(

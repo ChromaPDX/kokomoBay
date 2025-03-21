@@ -1,9 +1,8 @@
 import type { IPartialInterface } from "testeranto/src/Types";
-
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape> =
+export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape, Rectangle> =
   {
     beforeEach: async (subject, initializer, art, tr, initialValues) => {
       return subject;

@@ -1,47 +1,63 @@
 import { assert } from "chai";
-
 import { ITestImplementation } from "testeranto/src/Types";
-
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseTestImplementation = {
+export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRectangleTestShape, {}> = {
   suites: {
     Default: "a default suite",
   },
 
   givens: {
-    Default: () => new Rectangle(),
+    Default: () => new Rectangle(2, 2),
     WidthOfOneAndHeightOfOne: () => new Rectangle(1, 1),
-    WidthAndHeightOf: (width, height) => new Rectangle(width, height),
+    WidthAndHeightOf: (width: number, height: number) => new Rectangle(width, height),
   },
 
   whens: {
-    HeightIsPubliclySetTo: (height) => (rectangle) =>
-      (rectangle.height = height),
-    WidthIsPubliclySetTo: (width) => (rectangle) => (rectangle.width = width),
-    setWidth: (width) => (rectangle) => rectangle.setWidth(width),
-    setHeight: (height) => (rectangle) => rectangle.setHeight(height),
+    HeightIsPubliclySetTo: (height: number) => (rectangle: Rectangle) => {
+      rectangle.height = height;
+      return rectangle;
+    },
+    WidthIsPubliclySetTo: (width: number) => (rectangle: Rectangle) => {
+      rectangle.width = width;
+      return rectangle;
+    },
+    setWidth: (width: number) => (rectangle: Rectangle) => {
+      rectangle.setWidth(width);
+      return rectangle;
+    },
+    setHeight: (height: number) => (rectangle: Rectangle) => {
+      rectangle.setHeight(height);
+      return rectangle;
+    },
   },
 
   thens: {
-    AreaPlusCircumference: (combined) => (rectangle) => {
+    AreaPlusCircumference: (combined: number) => (rectangle: Rectangle) => {
       assert.equal(rectangle.area() + rectangle.circumference(), combined);
+      return rectangle;
     },
-    getWidth: (expectedWidth) => (rectangle) => 
-      assert.equal(rectangle.getWidth(), expectedWidth),
-
-    getHeight: (expectedHeight) => (rectangle) =>
-      assert.equal(rectangle.getHeight(), expectedHeight),
-
-    area: (area) => (rectangle) => assert.equal(rectangle.area(), area),
-
-    prototype: (name) => (rectangle) => {
+    getWidth: (expectedWidth: number) => (rectangle: Rectangle) => {
+      assert.equal(rectangle.getWidth(), expectedWidth);
+      return rectangle;
+    },
+    getHeight: (expectedHeight: number) => (rectangle: Rectangle) => {
+      assert.equal(rectangle.getHeight(), expectedHeight);
+      return rectangle;
+    },
+    area: (area: number) => (rectangle: Rectangle) => {
+      assert.equal(rectangle.area(), area);
+      return rectangle;
+    },
+    prototype: (name: string) => (rectangle: Rectangle) => {
       assert.equal(Object.getPrototypeOf(rectangle), Rectangle.prototype);
+      return rectangle;
     },
-
-    circumference: (circumference) => (rectangle) =>
-      assert.equal(rectangle.circumference(), circumference),
+    circumference: (circumference: number) => (rectangle: Rectangle) => {
+      assert.equal(rectangle.circumference(), circumference);
+      return rectangle;
+    },
   },
 
   checks: {

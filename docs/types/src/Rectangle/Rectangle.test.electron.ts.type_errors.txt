@@ -1,5 +1,7 @@
-src/Rectangle/Rectangle.test.electron.ts(13,3): error TS2345: Argument of type '{ suites: { Default: string; }; givens: { Default: () => Rectangle; WidthOfOneAndHeightOfOne: () => Rectangle; WidthAndHeightOf: (width: any, height: any) => Rectangle; }; whens: { ...; }; thens: { ...; }; checks: { ...; }; }' is not assignable to parameter of type 'ITestImplementation<IRectangleTestShape, object>'.
-  Type '{ suites: { Default: string; }; givens: { Default: () => Rectangle; WidthOfOneAndHeightOfOne: () => Rectangle; WidthAndHeightOf: (width: any, height: any) => Rectangle; }; whens: { ...; }; thens: { ...; }; checks: { ...; }; }' is not assignable to type 'Omit<{ suites: { Default: string; }; givens: { Default: (...Ig: any) => (x: any) => (y: any) => unknown; WidthOfOneAndHeightOfOne: (...Ig: any) => (x: any) => (y: any) => unknown; WidthAndHeightOf: (Ig_0: number, Ig_1: number) => (x: any) => (y: any) => unknown; }; whens: { ...; }; thens: { ...; }; checks: { ...; };...'.
-    The types returned by 'givens.Default(...)' are incompatible between these types.
-      Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => unknown'.
-        Type 'Rectangle' provides no match for the signature '(x: any): (y: any) => unknown'.
+src/Rectangle/Rectangle.test.electron.ts(15,5): error TS2328: Types of parameters 'init' and 'initializer' are incompatible.
+  Types of parameters 'utils' and 'utils' are incompatible.
+    Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.
+
+src/Rectangle/Rectangle.test.electron.ts(31,5): error TS2322: Type '(s: Rectangle, whenCB: (s: Rectangle) => Promise<Rectangle>, tr: ITTestResourceConfiguration, utils: PM_Web) => Promise<...>' is not assignable to type '(store: Rectangle, whenCB: (rectangle: Rectangle) => any, testResource: ITTestResourceConfiguration, utils: PM) => Promise<...>'.
+  Types of parameters 'utils' and 'utils' are incompatible.
+    Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.

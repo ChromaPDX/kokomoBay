@@ -1,12 +1,20 @@
 
 /add src/app.reduxToolkit.test.ts
-/add src/subPackages/reduxToolkit.testeranto.test.ts
-/add src/app.test.ts
-/add src/app.ts
+/add /Users/adam/Code/kokomoBay/testeranto/src/Types
+/add /Users/adam/Code/kokomoBay/node_modules/chai/index.mjs
+/add /Users/adam/Code/kokomoBay/@reduxjs/toolkit
+/add /Users/adam/Code/kokomoBay/src/subPackages/reduxToolkit.testeranto.test.ts
+/add /Users/adam/Code/kokomoBay/src/app.test.ts
+/add /Users/adam/Code/kokomoBay/src/app.ts
+/add /Users/adam/Code/kokomoBay/LoginPage
 /read docs/types/src/app.reduxToolkit.test.ts.type_errors.txt
-/read docs/types/src/subPackages/reduxToolkit.testeranto.test.ts.type_errors.txt
-/read docs/types/src/app.test.ts.type_errors.txt
-/read docs/types/src/app.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/testeranto/src/Types.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/node_modules/chai/index.mjs.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/@reduxjs/toolkit.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/subPackages/reduxToolkit.testeranto.test.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/app.test.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/app.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/LoginPage.type_errors.txt
 /read docs/node/src/app.reduxToolkit.test/tests.json
 /load docs/node/src/app.reduxToolkit.test/featurePrompt.txt
-/code Fix the failing tests described in docs/node/src/app.reduxToolkit.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/node/src/app.reduxToolkit.test/tests.json. Correct any type signature errors described in the files [docs/types/src/app.reduxToolkit.test.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/testeranto/src/Types.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/node_modules/chai/index.mjs.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/@reduxjs/toolkit.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/subPackages/reduxToolkit.testeranto.test.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/app.test.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/app.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/LoginPage.type_errors.txt]. Implement any method which throws "Function not implemented."

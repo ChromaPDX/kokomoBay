@@ -1,8 +1,12 @@
 
 /add src/ReactStateAndHook.test.tsx
-/add src/ReactStateAndHook.tsx
+/add /Users/adam/Code/kokomoBay/assert
+/add /Users/adam/Code/kokomoBay/node_modules/testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
+/add /Users/adam/Code/kokomoBay/src/ReactStateAndHook.tsx
 /read docs/types/src/ReactStateAndHook.test.tsx.type_errors.txt
-/read docs/types/src/ReactStateAndHook.tsx.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/assert.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/node_modules/testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/ReactStateAndHook.tsx.type_errors.txt
 /read docs/node/src/ReactStateAndHook.test/tests.json
 /load docs/node/src/ReactStateAndHook.test/featurePrompt.txt
-/code Fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json. Correct any type signature errors described in the files [docs/types/src/ReactStateAndHook.test.tsx.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/assert.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/node_modules/testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/ReactStateAndHook.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."

@@ -231,7 +231,7 @@
         "imports": []
       },
       "src/Rectangle.test.specification.ts": {
-        "bytes": 1863,
+        "bytes": 2028,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -240,6 +240,11 @@
           },
           {
             "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle",
             "kind": "import-statement",
             "external": true
           },
@@ -911,12 +916,12 @@
         "format": "esm"
       },
       "src/Rectangle.ts": {
-        "bytes": 519,
+        "bytes": 547,
         "imports": [],
         "format": "esm"
       },
       "src/Rectangle.test.implementation.ts": {
-        "bytes": 1597,
+        "bytes": 2298,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -942,7 +947,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.ts": {
-        "bytes": 596,
+        "bytes": 700,
         "imports": [
           {
             "path": "src/Rectangle.ts",
@@ -958,7 +963,7 @@
         "format": "esm"
       },
       "src/Rectangle/Rectangle.test.electron.ts": {
-        "bytes": 1168,
+        "bytes": 1371,
         "imports": [
           {
             "path": "node_modules/testeranto/src/Web.ts",
@@ -1167,16 +1172,16 @@
             "bytesInOutput": 479
           },
           "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1384
+            "bytesInOutput": 1800
           },
           "src/Rectangle.test.ts": {
             "bytesInOutput": 68
           },
           "src/Rectangle/Rectangle.test.electron.ts": {
-            "bytesInOutput": 582
+            "bytesInOutput": 594
           }
         },
-        "bytes": 206516
+        "bytes": 206944
       }
     }
   }

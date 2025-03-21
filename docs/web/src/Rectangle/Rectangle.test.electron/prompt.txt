@@ -1,12 +1,20 @@
 
 /add src/Rectangle/Rectangle.test.electron.ts
-/add src/Rectangle.test.specification.ts
-/add src/Rectangle.test.implementation.ts
-/add src/Rectangle.test.ts
+/add /Users/adam/Code/kokomoBay/node_modules/testeranto/src/Web.ts
+/add /Users/adam/Code/kokomoBay/testeranto/src/PM/web
+/add /Users/adam/Code/kokomoBay/testeranto/src/lib
+/add /Users/adam/Code/Rectangle
+/add /Users/adam/Code/kokomoBay/src/Rectangle.test.specification.ts
+/add /Users/adam/Code/kokomoBay/src/Rectangle.test.implementation.ts
+/add /Users/adam/Code/kokomoBay/src/Rectangle.test.ts
 /read docs/types/src/Rectangle/Rectangle.test.electron.ts.type_errors.txt
-/read docs/types/src/Rectangle.test.specification.ts.type_errors.txt
-/read docs/types/src/Rectangle.test.implementation.ts.type_errors.txt
-/read docs/types/src/Rectangle.test.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/node_modules/testeranto/src/Web.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/testeranto/src/PM/web.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/testeranto/src/lib.type_errors.txt
+/read docs/types//Users/adam/Code/Rectangle.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.specification.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.implementation.ts.type_errors.txt
+/read docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.ts.type_errors.txt
 /read docs/web/src/Rectangle/Rectangle.test.electron/tests.json
 /load docs/web/src/Rectangle/Rectangle.test.electron/featurePrompt.txt
-/code Fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/web/src/Rectangle/Rectangle.test.electron/tests.json. Correct any type signature errors described in the files [docs/types/src/Rectangle/Rectangle.test.electron.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/node_modules/testeranto/src/Web.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/testeranto/src/PM/web.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/testeranto/src/lib.type_errors.txt, docs/types//Users/adam/Code/Rectangle.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.specification.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.implementation.ts.type_errors.txt, docs/types//Users/adam/Code/kokomoBay/src/Rectangle.test.ts.type_errors.txt]. Implement any method which throws "Function not implemented."

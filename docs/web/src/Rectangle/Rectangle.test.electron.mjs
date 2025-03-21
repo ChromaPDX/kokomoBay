@@ -5093,27 +5093,53 @@ var RectangleTesterantoBaseTestImplementation = {
     Default: "a default suite"
   },
   givens: {
-    Default: () => new Rectangle_default(),
+    Default: () => new Rectangle_default(2, 2),
     WidthOfOneAndHeightOfOne: () => new Rectangle_default(1, 1),
     WidthAndHeightOf: (width, height) => new Rectangle_default(width, height)
   },
   whens: {
-    HeightIsPubliclySetTo: (height) => (rectangle) => rectangle.height = height,
-    WidthIsPubliclySetTo: (width) => (rectangle) => rectangle.width = width,
-    setWidth: (width) => (rectangle) => rectangle.setWidth(width),
-    setHeight: (height) => (rectangle) => rectangle.setHeight(height)
+    HeightIsPubliclySetTo: (height) => async (rectangle, utils) => {
+      rectangle.height = height;
+      return rectangle;
+    },
+    WidthIsPubliclySetTo: (width) => async (rectangle, utils) => {
+      rectangle.width = width;
+      return rectangle;
+    },
+    setWidth: (width) => async (rectangle, utils) => {
+      rectangle.setWidth(width);
+      return rectangle;
+    },
+    setHeight: (height) => async (rectangle, utils) => {
+      rectangle.setHeight(height);
+      return rectangle;
+    }
   },
   thens: {
     AreaPlusCircumference: (combined) => (rectangle) => {
       assert.equal(rectangle.area() + rectangle.circumference(), combined);
+      return rectangle;
     },
-    getWidth: (expectedWidth) => (rectangle) => assert.equal(rectangle.getWidth(), expectedWidth),
-    getHeight: (expectedHeight) => (rectangle) => assert.equal(rectangle.getHeight(), expectedHeight),
-    area: (area) => (rectangle) => assert.equal(rectangle.area(), area),
+    getWidth: (expectedWidth) => (rectangle) => {
+      assert.equal(rectangle.getWidth(), expectedWidth);
+      return rectangle;
+    },
+    getHeight: (expectedHeight) => (rectangle) => {
+      assert.equal(rectangle.getHeight(), expectedHeight);
+      return rectangle;
+    },
+    area: (area) => (rectangle) => {
+      assert.equal(rectangle.area(), area);
+      return rectangle;
+    },
     prototype: (name) => (rectangle) => {
       assert.equal(Object.getPrototypeOf(rectangle), Rectangle_default.prototype);
+      return rectangle;
     },
-    circumference: (circumference) => (rectangle) => assert.equal(rectangle.circumference(), circumference)
+    circumference: (circumference) => (rectangle) => {
+      assert.equal(rectangle.circumference(), circumference);
+      return rectangle;
+    }
   },
   checks: {
     /* @ts-ignore:next-line */
@@ -5132,7 +5158,7 @@ var Rectangle_test_electron_default = Web_default(
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   {
-    beforeEach: async (rectangleProto, init, artificer, tr, x, pm) => {
+    beforeEach: async (rectangleProto, init, artificer, tr, initialValues, pm) => {
       pm.writeFileSync("beforeEachLog", "bar");
       return rectangleProto;
     },

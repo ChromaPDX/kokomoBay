@@ -1,0 +1,5 @@
+src/Rectangle.test.ts(1,34): error TS2305: Module '"testeranto/src/Types"' has no exported member 'ITestArtificer'.
+
+src/Rectangle.test.ts(1,50): error TS2305: Module '"testeranto/src/Types"' has no exported member 'ITTestResourceConfiguration'.
+
+src/Rectangle.test.ts(6,48): error TS2314: Generic type 'IPartialInterface' requires 1 type argument(s).

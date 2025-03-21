@@ -1,1 +1,5 @@
-src/Rectangle.test.specification.ts(5,15): error TS2307: Cannot find module './Rectangle/rectangle.md' or its corresponding type declarations.
+src/Rectangle.test.specification.ts(1,30): error TS2305: Module '"testeranto/src/Types"' has no exported member 'ITestArtificer'.
+
+src/Rectangle.test.specification.ts(1,46): error TS2305: Module '"testeranto/src/Types"' has no exported member 'ITTestResourceConfiguration'.
+
+src/Rectangle.test.specification.ts(8,56): error TS2314: Generic type 'ITestSpecification' requires 1 type argument(s).

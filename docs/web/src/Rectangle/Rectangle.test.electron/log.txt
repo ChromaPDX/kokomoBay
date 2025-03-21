@@ -1,4 +1,4 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/05b3a5f8-1adb-4270-a509-2868ca744063"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.electron","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/22a3f6d9-988e-4aea-a286-893e0601942b"}
 
 Suite:,0,Testing the Rectangle class
 

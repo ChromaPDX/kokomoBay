@@ -80,8 +80,8 @@
     }
   ],
   "fails": [],
-  "features": {
-    "https://api.github.com/repos/adamwong246/testeranto/issues/7": "https://api.github.com/repos/adamwong246/testeranto/issues/7",
-    "hello": "hello"
-  }
+  "features": [
+    "https://api.github.com/repos/adamwong246/testeranto/issues/7",
+    "hello"
+  ]
 }

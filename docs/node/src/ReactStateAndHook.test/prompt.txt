@@ -1,10 +1,8 @@
 
 /add src/ReactStateAndHook.test.tsx
-/add ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
 /add src/ReactStateAndHook.tsx
-/read docs/ts/src/ReactStateAndHook.test.tsx.type_errors.txt
 
 
 /read docs/node/src/ReactStateAndHook.test/tests.json
-/read docs/node/src/ReactStateAndHook.test/features.json
+/load docs/node/src/ReactStateAndHook.test/featurePrompt.txt
 /code Fix the failing tests described in docs/node/src/ReactStateAndHook.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

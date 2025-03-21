@@ -94,8 +94,8 @@
     }
   ],
   "fails": [],
-  "features": {
-    "hello": "hello",
-    "aloha": "aloha"
-  }
+  "features": [
+    "hello",
+    "aloha"
+  ]
 }

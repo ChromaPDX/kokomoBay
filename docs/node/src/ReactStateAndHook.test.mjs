@@ -3,11 +3,11 @@ import {
   __commonJS,
   __require,
   __toESM
-} from "../chunk-M7BKJ4RF.mjs";
+} from "../chunk-DQMVF4HA.mjs";
 
-// ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js
+// node_modules/testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js
 var require_scheduler_unstable_mock_production_min = __commonJS({
-  "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js"(exports) {
+  "node_modules/testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js"(exports) {
     "use strict";
     function f(a, b) {
       var c = a.length;
@@ -334,9 +334,9 @@ var require_scheduler_unstable_mock_production_min = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js
+// node_modules/testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js
 var require_scheduler_unstable_mock_development = __commonJS({
-  "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js"(exports) {
+  "node_modules/testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js"(exports) {
     "use strict";
     if (process.env.NODE_ENV !== "production") {
       (function() {
@@ -870,9 +870,9 @@ var require_scheduler_unstable_mock_development = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/scheduler/unstable_mock.js
+// node_modules/testeranto/node_modules/scheduler/unstable_mock.js
 var require_unstable_mock = __commonJS({
-  "../testeranto/node_modules/scheduler/unstable_mock.js"(exports, module) {
+  "node_modules/testeranto/node_modules/scheduler/unstable_mock.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_scheduler_unstable_mock_production_min();
@@ -882,9 +882,9 @@ var require_unstable_mock = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js
+// node_modules/testeranto/node_modules/scheduler/cjs/scheduler.production.min.js
 var require_scheduler_production_min = __commonJS({
-  "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js"(exports) {
+  "node_modules/testeranto/node_modules/scheduler/cjs/scheduler.production.min.js"(exports) {
     "use strict";
     function f(a, b) {
       var c = a.length;
@@ -1153,9 +1153,9 @@ var require_scheduler_production_min = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/scheduler/cjs/scheduler.development.js
+// node_modules/testeranto/node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
-  "../testeranto/node_modules/scheduler/cjs/scheduler.development.js"(exports) {
+  "node_modules/testeranto/node_modules/scheduler/cjs/scheduler.development.js"(exports) {
     "use strict";
     if (process.env.NODE_ENV !== "production") {
       (function() {
@@ -1603,9 +1603,9 @@ var require_scheduler_development = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/scheduler/index.js
+// node_modules/testeranto/node_modules/scheduler/index.js
 var require_scheduler = __commonJS({
-  "../testeranto/node_modules/scheduler/index.js"(exports, module) {
+  "node_modules/testeranto/node_modules/scheduler/index.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_scheduler_production_min();
@@ -1615,9 +1615,9 @@ var require_scheduler = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js
+// node_modules/testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js
 var require_react_test_renderer_production_min = __commonJS({
-  "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js"(exports) {
+  "node_modules/testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js"(exports) {
     "use strict";
     var aa = __require("react");
     var ba = require_unstable_mock();
@@ -6200,9 +6200,9 @@ var require_react_test_renderer_production_min = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js
+// node_modules/testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js
 var require_react_test_renderer_development = __commonJS({
-  "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js"(exports) {
+  "node_modules/testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js"(exports) {
     "use strict";
     if (process.env.NODE_ENV !== "production") {
       (function() {
@@ -19216,9 +19216,9 @@ var require_react_test_renderer_development = __commonJS({
   }
 });
 
-// ../testeranto/node_modules/react-test-renderer/index.js
+// node_modules/testeranto/node_modules/react-test-renderer/index.js
 var require_react_test_renderer = __commonJS({
-  "../testeranto/node_modules/react-test-renderer/index.js"(exports, module) {
+  "node_modules/testeranto/node_modules/react-test-renderer/index.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_test_renderer_production_min();
@@ -19231,7 +19231,7 @@ var require_react_test_renderer = __commonJS({
 // src/ReactStateAndHook.test.tsx
 import assert from "assert";
 
-// ../testeranto/dist/module/src/lib/index.js
+// node_modules/testeranto/dist/module/src/lib/index.js
 var BaseTestInterface = {
   beforeAll: async (s) => s,
   beforeEach: async function(subject, initialValues, x, testResource, pm) {
@@ -19250,7 +19250,7 @@ var defaultTestResourceRequirement = {
   ports: 0
 };
 
-// ../testeranto/dist/module/src/lib/abstractBase.js
+// node_modules/testeranto/dist/module/src/lib/abstractBase.js
 var BaseSuite = class {
   constructor(name, index, givens = {}, checks = []) {
     this.name = name;
@@ -19262,11 +19262,8 @@ var BaseSuite = class {
   features() {
     const features = Object.keys(this.givens).map((k) => this.givens[k].features).flat().filter((value, index, array) => {
       return array.indexOf(value) === index;
-    }).reduce((mm, lm) => {
-      mm[lm] = lm;
-      return mm;
-    }, {});
-    return features || {};
+    });
+    return features || [];
   }
   toObj() {
     const givens = Object.keys(this.givens).map((k) => this.givens[k].toObj());
@@ -19514,7 +19511,7 @@ var BaseCheck = class {
   }
 };
 
-// ../testeranto/dist/module/src/lib/basebuilder.js
+// node_modules/testeranto/dist/module/src/lib/basebuilder.js
 var BaseBuilder = class {
   constructor(input, suitesOverrides, givenOverides, whenOverides, thenOverides, checkOverides, testResourceRequirement, testSpecification) {
     this.input = input;
@@ -19590,7 +19587,7 @@ var BaseBuilder = class {
   }
 };
 
-// ../testeranto/dist/module/src/lib/classBuilder.js
+// node_modules/testeranto/dist/module/src/lib/classBuilder.js
 var ClassBuilder = class extends BaseBuilder {
   constructor(testImplementation, testSpecification, input, suiteKlasser, givenKlasser, whenKlasser, thenKlasser, checkKlasser, testResourceRequirement) {
     const classySuites = Object.entries(testImplementation.suites).reduce((a, [key], index) => {
@@ -19637,7 +19634,7 @@ var ClassBuilder = class extends BaseBuilder {
   }
 };
 
-// ../testeranto/dist/module/src/lib/core.js
+// node_modules/testeranto/dist/module/src/lib/core.js
 var Testeranto = class extends ClassBuilder {
   constructor(input, testSpecification, testImplementation, testResourceRequirement = defaultTestResourceRequirement, testInterface2) {
     const fullTestInterface = DefaultTestInterface(testInterface2);
@@ -19709,15 +19706,15 @@ var Testeranto = class extends ClassBuilder {
   }
 };
 
-// ../testeranto/dist/module/src/PM/node.js
+// node_modules/testeranto/dist/module/src/PM/node.js
 import fs from "fs";
 import path from "path";
 
-// ../testeranto/dist/module/src/PM/index.js
+// node_modules/testeranto/dist/module/src/PM/index.js
 var PM = class {
 };
 
-// ../testeranto/dist/module/src/PM/node.js
+// node_modules/testeranto/dist/module/src/PM/node.js
 var fPaths = [];
 var PM_Node = class extends PM {
   constructor(t) {
@@ -19817,7 +19814,7 @@ var PM_Node = class extends PM {
   }
 };
 
-// ../testeranto/dist/module/src/Node.js
+// node_modules/testeranto/dist/module/src/Node.js
 var NodeTesteranto = class extends Testeranto {
   constructor(input, testSpecification, testImplementation, testResourceRequirement, testInterface2) {
     super(input, testSpecification, testImplementation, testResourceRequirement, testInterface2);
@@ -19834,7 +19831,7 @@ var Node_default = async (input, testSpecification, testImplementation, testInte
   return new NodeTesteranto(input, testSpecification, testImplementation, testResourceRequirement, testInterface2);
 };
 
-// ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js
+// node_modules/testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js
 var import_react_test_renderer = __toESM(require_react_test_renderer(), 1);
 import React from "react";
 var Context = React.createContext({});
@@ -19856,7 +19853,7 @@ var testInterface = {
   }
 };
 
-// ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
+// node_modules/testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
 var node_default = (testImplementations, testSpecifications, testInput, testInterface2 = testInterface) => {
   return Node_default(testInput, testSpecifications, testImplementations, testInterface2);
 };

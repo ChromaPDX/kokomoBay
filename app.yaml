@@ -1,9 +1,0 @@
-# [START app_yaml]
-
-runtime: nodejs17
-
-entrypoint: ts-node-esm node_modules/testeranto/dist/prebuild/TaskManBackEnd.mjs
-
-# service: node-express-api
-
-# [END app_yaml]

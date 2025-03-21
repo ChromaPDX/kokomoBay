@@ -10,13 +10,12 @@
     "build-tests.ts",
     "run-test.ts",
     "src",
+    "node_modules/funkophile"
   ],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
-    // "experimentalSpecifierResolution": "node",
     "transpileOnly": true,
-    // "esm": true,
   },
   "compilerOptions": {
     "paths": {

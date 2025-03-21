@@ -1,0 +1,1 @@
+src/Rectangle.test.specification.ts(5,15): error TS2307: Cannot find module './Rectangle/rectangle.md' or its corresponding type declarations.

@@ -6,7 +6,7 @@
 
 
 
-/read docs/ts/src/subPackages/redux.testeranto.test.ts.type_errors.txt
+
 /read docs/node/src/app.redux.test/tests.json
-/read docs/node/src/app.redux.test/features.json
+/load docs/node/src/app.redux.test/featurePrompt.txt
 /code Fix the failing tests described in docs/node/src/app.redux.test/tests.json. Correct any type signature errors. Implement any method which throws "Function not implemented."

@@ -90,7 +90,9 @@ export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object>
       });
     },
     ThereIsACredentialError: () => async (ssel: any, utils: PM) => {
-      await assert$(`p[id='error']::-p-text(${credentialFailWarning})`, utils);
+      await assert$(`p[id='error']`, utils);
+      const errorText = await utils.getText(`p[id='error']`);
+      assert.equal(errorText, credentialFailWarning);
     }
   },
 

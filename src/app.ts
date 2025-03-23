@@ -37,6 +37,12 @@ export const loginApp = createSlice<
     setEmail: (state, action) => {
       state.email = action.payload;
     },
+    setError: (state, action) => {
+      state.error = action.payload;
+    },
+    setDisableSubmit: (state, action) => {
+      // This will be handled by the selector
+    },
     signIn: (state) => {
       state.error = checkForErrors(state);
     },

@@ -6,7 +6,11 @@ import app from "../app.js";
 const core = app();
 
 const selector = core.select.loginPageSelection;
-export const actions = core.app.actions;
+export const actions = {
+  ...core.app.actions,
+  setError: (error: ILoginPageError) => core.app.actions.setError(error),
+  setDisableSubmit: (disabled: boolean) => core.app.actions.setDisableSubmit(disabled)
+};
 export const store = core.store;
 
 export const noError = 'no_error';

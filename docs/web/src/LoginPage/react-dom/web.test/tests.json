@@ -1,0 +1,31 @@
+{
+  "name": "Testing the LoginPage as react",
+  "givens": [
+    {
+      "name": "default",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": false
+        },
+        {
+          "name": "TheSubmitButtonIsNotActive: undefined",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "0"
+      ]
+    }
+  ],
+  "fails": [],
+  "features": [
+    "0"
+  ]
+}

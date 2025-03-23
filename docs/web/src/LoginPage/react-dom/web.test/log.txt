@@ -1,6 +1,8 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f2201dd2-46dd-4ca8-a1d2-89de5a43cff0"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/81b61b3c-0392-4107-915e-80cd1e8a3fe9"}
 
 Suite:,0,Testing the LoginPage as react
 
  Given: default
  When:,TheEmailIsSetTo: adam@email.com
+ Then:,TheEmailIs: adam@email.com
+ Then:,TheSubmitButtonIsNotActive: undefined

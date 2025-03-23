@@ -26,9 +26,9 @@
   },
   "scripts": {
     "clean": "rm -rf docs && mkdir docs",
-    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx build-tests.ts testeranto.mts",
-    "run-tests": "tsx run-tests.ts testeranto.mts",
-    "init-docs": "tsx node_modules/testeranto/dist/module/init-docs.js testeranto.mts",
+    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx node_modules/testeranto/dist/prebuild/build-tests.mjs testeranto.mts",
+    "run-tests": "tsx node_modules/testeranto/dist/prebuild/run-tests.mjs testeranto.mts",
+    "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
     "test": "yarn build-tests && yarn run-tests"
   },
   "types": "index.d.ts",

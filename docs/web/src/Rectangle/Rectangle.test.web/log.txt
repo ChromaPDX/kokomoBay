@@ -1,4 +1,4 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f2201dd2-46dd-4ca8-a1d2-89de5a43cff0"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/81b61b3c-0392-4107-915e-80cd1e8a3fe9"}
 
 Suite:,0,Testing the Rectangle class
 
@@ -11,7 +11,7 @@ TypeError: Cannot read properties of undefined (reading 'writeFileSync')
     at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19
     at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)
     at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80657%3A20:6:16
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'writeFileSync')
@@ -22,7 +22,7 @@ TypeError: Cannot read properties of undefined (reading 'writeFileSync')
     at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19
     at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)
     at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80657%3A20:6:16
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'writeFileSync')
@@ -33,7 +33,7 @@ TypeError: Cannot read properties of undefined (reading 'writeFileSync')
     at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19
     at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)
     at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80657%3A20:6:16
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'writeFileSync')
@@ -44,7 +44,7 @@ TypeError: Cannot read properties of undefined (reading 'writeFileSync')
     at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19
     at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)
     at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80657%3A20:6:16
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'writeFileSync')
@@ -55,4 +55,4 @@ TypeError: Cannot read properties of undefined (reading 'writeFileSync')
     at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19
     at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)
     at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2FPuppeteer.mjs%3A80657%3A20:6:16
+    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16

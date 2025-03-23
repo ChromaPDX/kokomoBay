@@ -50,8 +50,8 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
       {
         test0: Given.default(
           ["0"],
-          [When.TheEmailIsSetTo("adam@email.com")],
-          [Then.TheEmailIs("adam@email.com"), Then.TheSubmitButtonIsNotActive()]
+          [When.TheEmailIsSetTo("a")],
+          [Then.TheEmailIs("a"), Then.TheSubmitButtonIsNotActive()]
         ),
         // test0_1: Given.default(
         //   ["0"],

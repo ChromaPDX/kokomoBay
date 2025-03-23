@@ -21,10 +21,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "TypeError: Cannot read properties of undefined (reading 'writeFileSync')\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web.mjs:167:10)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4825:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4418:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4342:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16"
-      ],
+      "error": null,
       "features": [
         "https://api.github.com/repos/adamwong246/testeranto/issues/8"
       ]
@@ -57,10 +54,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "TypeError: Cannot read properties of undefined (reading 'writeFileSync')\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web.mjs:167:10)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4825:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4418:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4342:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16"
-      ],
+      "error": null,
       "features": [
         "Rectangles have width and height"
       ]
@@ -81,10 +75,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "TypeError: Cannot read properties of undefined (reading 'writeFileSync')\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web.mjs:167:10)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4825:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4418:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4342:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16"
-      ],
+      "error": null,
       "features": [
         "Rectangles have area"
       ]
@@ -105,10 +96,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "TypeError: Cannot read properties of undefined (reading 'writeFileSync')\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web.mjs:167:10)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4825:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4418:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4342:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16"
-      ],
+      "error": null,
       "features": [
         "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md"
       ]
@@ -129,10 +117,7 @@
           "error": false
         }
       ],
-      "error": [
-        {},
-        "TypeError: Cannot read properties of undefined (reading 'writeFileSync')\n    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web.mjs:167:10)\n    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4825:36)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4418:31)\n    at Testeranto.givenThat.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4342:34)\n    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4637:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4665:29)\n    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-Q5HGWMEE.mjs:4927:57)\n    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A518%3A20:6:16"
-      ],
+      "error": null,
       "features": [
         "Rectangles have area"
       ]

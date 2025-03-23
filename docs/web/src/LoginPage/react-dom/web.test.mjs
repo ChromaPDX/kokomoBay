@@ -3,7 +3,7 @@ import {
   __commonJS,
   __toESM,
   assert
-} from "../../../chunk-Q5HGWMEE.mjs";
+} from "../../../chunk-YFVC7ICY.mjs";
 
 // node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
@@ -24964,8 +24964,8 @@ var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
       {
         test0: Given.default(
           ["0"],
-          [When.TheEmailIsSetTo("adam@email.com")],
-          [Then.TheEmailIs("adam@email.com"), Then.TheSubmitButtonIsNotActive()]
+          [When.TheEmailIsSetTo("a")],
+          [Then.TheEmailIs("a"), Then.TheSubmitButtonIsNotActive()]
         )
         // test0_1: Given.default(
         //   ["0"],

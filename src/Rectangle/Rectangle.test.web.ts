@@ -15,7 +15,6 @@ export default Testeranto(
     beforeEach: async (
       rectangleProto: Rectangle,
       init: (c?: any) => (x: any) => (y: any) => Rectangle,
-      artificer: ITestArtificer,
       tr: ITTestResourceConfiguration,
       initialValues: any,
       pm: PM_Web

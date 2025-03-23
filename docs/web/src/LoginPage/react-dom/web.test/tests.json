@@ -5,12 +5,12 @@
       "name": "default",
       "whens": [
         {
-          "name": "TheEmailIsSetTo: adam@email.com"
+          "name": "TheEmailIsSetTo: a"
         }
       ],
       "thens": [
         {
-          "name": "TheEmailIs: adam@email.com",
+          "name": "TheEmailIs: a",
           "error": false
         },
         {
@@ -18,7 +18,10 @@
           "error": false
         }
       ],
-      "error": null,
+      "error": [
+        {},
+        "TypeError: actions.setError is not a function\n    at onChange (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27134:36)\n    at HTMLUnknownElement.callCallback2 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5559:22)\n    at Object.invokeGuardedCallbackDev (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5584:24)\n    at invokeGuardedCallback (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5618:39)\n    at invokeGuardedCallbackAndCatchFirstError (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5621:33)\n    at executeDispatch (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8901:11)\n    at processDispatchQueueItemsInOrder (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8921:15)\n    at processDispatchQueue (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8930:13)\n    at dispatchEventsForPlugins (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8938:11)\n    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9062:20"
+      ],
       "features": [
         "0"
       ]

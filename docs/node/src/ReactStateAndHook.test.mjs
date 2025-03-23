@@ -19391,13 +19391,16 @@ var BaseGiven = class {
             return (fp, contents) => target[prop](`suite-${suiteNdx}/given-${key}/when/beforeEach/${fp}`, contents);
           }
           if (prop === "customScreenShot") {
-            return (opts) => target.customScreenShot(Object.assign(Object.assign({}, opts), {
-              // path: `${filepath}/${opts.path}`,
-              path: `suite-${suiteNdx}/given-${key}/when/beforeEach/${opts.path}`
-            }));
+            return (opts) => target.customScreenShot(Object.assign(Object.assign({}, opts), { path: `suite-${suiteNdx}/given-${key}/when/beforeEach/${opts.path}` }));
           }
           return Reflect.get(...arguments);
         }
+      });
+      this.uberCatcher((e) => {
+        console.log("this.uberCatcher", e);
+        console.error(e);
+        this.error = e.error;
+        tLog(e.stack);
       });
       this.store = await this.givenThat(subject, testResourceConfiguration, givenArtifactory, this.givenCB, beforeEachProxy);
       for (const [whenNdx, whenStep] of this.whens.entries()) {
@@ -19663,7 +19666,7 @@ var ClassBuilder = class extends BaseBuilder {
 
 // ../testeranto/dist/module/src/lib/core.js
 var Testeranto = class extends ClassBuilder {
-  constructor(input, testSpecification, testImplementation, testResourceRequirement = defaultTestResourceRequirement, testInterface2) {
+  constructor(input, testSpecification, testImplementation, testResourceRequirement = defaultTestResourceRequirement, testInterface2, uberCatcher) {
     const fullTestInterface = DefaultTestInterface(testInterface2);
     super(
       testImplementation,
@@ -19683,17 +19686,12 @@ var Testeranto = class extends ClassBuilder {
         }
       },
       class Given extends BaseGiven {
+        constructor() {
+          super(...arguments);
+          this.uberCatcher = uberCatcher;
+        }
         async givenThat(subject, testResource, artifactory, initializer, pm) {
-          return fullTestInterface.beforeEach(
-            subject,
-            initializer,
-            // (fPath: string, value: unknown) =>
-            //   // TODO does not work?
-            //   artifactory(`beforeEach/${fPath}`, value),
-            testResource,
-            this.initialValues,
-            pm
-          );
+          return fullTestInterface.beforeEach(subject, initializer, testResource, this.initialValues, pm);
         }
         afterEach(store, key, artifactory, pm) {
           return new Promise((res) => res(fullTestInterface.afterEach(store, key, (fPath, value) => artifactory(`after/${fPath}`, value), pm)));
@@ -19850,7 +19848,8 @@ var PM_Node = class extends PM {
 // ../testeranto/dist/module/src/Node.js
 var NodeTesteranto = class extends Testeranto {
   constructor(input, testSpecification, testImplementation, testResourceRequirement, testInterface2) {
-    super(input, testSpecification, testImplementation, testResourceRequirement, testInterface2);
+    super(input, testSpecification, testImplementation, testResourceRequirement, testInterface2, () => {
+    });
   }
   async receiveTestResourceConfig(partialTestResource) {
     const t = JSON.parse(partialTestResource);

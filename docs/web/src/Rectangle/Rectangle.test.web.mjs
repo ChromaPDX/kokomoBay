@@ -1,7 +1,7 @@
 import {
   Web_default,
   assert
-} from "../../chunk-Q5HGWMEE.mjs";
+} from "../../chunk-YFVC7ICY.mjs";
 
 // feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md
 var rectangle_default = "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md";
@@ -163,7 +163,7 @@ var Rectangle_test_web_default = Web_default(
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   {
-    beforeEach: async (rectangleProto, init, artificer, tr, initialValues, pm) => {
+    beforeEach: async (rectangleProto, init, tr, initialValues, pm) => {
       pm.writeFileSync("beforeEachLog", "bar");
       return rectangleProto;
     },

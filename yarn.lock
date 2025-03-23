@@ -8523,6 +8523,11 @@ react-test-renderer@18.2.0:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.23.0"
 
+react-use-error-boundary@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-use-error-boundary/-/react-use-error-boundary-3.0.0.tgz#c5b44acf9ab376f59a219d740ac372b05aba6240"
+  integrity sha512-5urkfyU3ZzInEMSHe1gxtDzlQAHs0krTt0V6h8H2L5nXhDKq3OYXnCs9lGHDkEkYvLmsphw8ap5g8uYfvrkJng==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -9570,7 +9575,7 @@ tar@^4.0.2:
     safe-buffer "^5.2.1"
     yallist "^3.1.1"
 
-testeranto@0.88.0:
+testeranto@0.85.0:
   version "0.85.0"
   resolved "https://registry.yarnpkg.com/testeranto/-/testeranto-0.85.0.tgz#f754e0fc10ef5d1ebf1a8015e991e6cce8aaa2cf"
   integrity sha512-KWlUrHqZu442UINTR+tyT7Mf8HzG0NbDlH/4iaPuOVFVC3Cp6k3xnlAWtnejCBVTlhKesJtPhWnhAmCsRcfAug==

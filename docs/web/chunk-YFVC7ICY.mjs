@@ -4408,12 +4408,17 @@ var BaseGiven = class {
           if (prop === "customScreenShot") {
             return (opts) => target.customScreenShot({
               ...opts,
-              // path: `${filepath}/${opts.path}`,
               path: `suite-${suiteNdx}/given-${key}/when/beforeEach/${opts.path}`
             });
           }
           return Reflect.get(...arguments);
         }
+      });
+      this.uberCatcher((e) => {
+        console.log("this.uberCatcher", e);
+        console.error(e);
+        this.error = e.error;
+        tLog(e.stack);
       });
       this.store = await this.givenThat(
         subject,
@@ -4797,7 +4802,7 @@ var ClassBuilder = class extends BaseBuilder {
 
 // ../testeranto/src/lib/core.ts
 var Testeranto = class extends ClassBuilder {
-  constructor(input, testSpecification, testImplementation, testResourceRequirement = defaultTestResourceRequirement, testInterface) {
+  constructor(input, testSpecification, testImplementation, testResourceRequirement = defaultTestResourceRequirement, testInterface, uberCatcher) {
     const fullTestInterface = DefaultTestInterface(testInterface);
     super(
       testImplementation,
@@ -4821,13 +4826,14 @@ var Testeranto = class extends ClassBuilder {
         }
       },
       class Given extends BaseGiven {
+        constructor() {
+          super(...arguments);
+          this.uberCatcher = uberCatcher;
+        }
         async givenThat(subject, testResource, artifactory, initializer, pm) {
           return fullTestInterface.beforeEach(
             subject,
             initializer,
-            // (fPath: string, value: unknown) =>
-            //   // TODO does not work?
-            //   artifactory(`beforeEach/${fPath}`, value),
             testResource,
             this.initialValues,
             pm
@@ -4918,7 +4924,20 @@ var WebTesteranto = class extends Testeranto {
       testSpecification,
       testImplementation,
       testResourceRequirement,
-      testInterface
+      testInterface,
+      (cb) => {
+        window.addEventListener("error", (e) => {
+          console.log("error A", e);
+          cb(e);
+        });
+        window.addEventListener(
+          "unhandledrejection",
+          (event) => {
+            console.log("error B", event);
+            cb(event);
+          }
+        );
+      }
     );
   }
   async receiveTestResourceConfig(partialTestResource) {

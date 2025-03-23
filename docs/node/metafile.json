@@ -9,7 +9,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 25535,
+        "bytes": 22757,
         "imports": [],
         "format": "esm"
       },
@@ -30,7 +30,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/core.js": {
-        "bytes": 5411,
+        "bytes": 4581,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/lib/index.js",
@@ -77,7 +77,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/Node.js": {
-        "bytes": 990,
+        "bytes": 1030,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/lib/core.js",
@@ -360,7 +360,7 @@
             "bytesInOutput": 473
           },
           "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 8606
+            "bytesInOutput": 8694
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
             "bytesInOutput": 2616
@@ -369,7 +369,7 @@
             "bytesInOutput": 1862
           },
           "../testeranto/dist/module/src/lib/core.js": {
-            "bytesInOutput": 2996
+            "bytesInOutput": 2894
           },
           "../testeranto/dist/module/src/PM/node.js": {
             "bytesInOutput": 3159
@@ -378,7 +378,7 @@
             "bytesInOutput": 20
           },
           "../testeranto/dist/module/src/Node.js": {
-            "bytesInOutput": 818
+            "bytesInOutput": 833
           },
           "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
             "bytesInOutput": 715
@@ -390,7 +390,7 @@
             "bytesInOutput": 647
           }
         },
-        "bytes": 797954
+        "bytes": 797955
       }
     }
   }

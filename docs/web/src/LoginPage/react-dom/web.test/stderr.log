@@ -1,0 +1,17 @@
+TypeErrorTypeError: actions.setError is not a function
+    at onChange (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:32113:36)
+    at callCallback2 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5585:22)
+    at invokeGuardedCallbackDev (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5610:24)
+    at invokeGuardedCallback (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5644:39)
+    at invokeGuardedCallbackAndCatchFirstError (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5647:33)
+    at executeDispatch (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8927:11)
+    at processDispatchQueueItemsInOrder (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8947:15)
+    at processDispatchQueue (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8956:13)
+    at dispatchEventsForPlugins (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8964:11)
+    at <anonymous> (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9088:20)
+    at batchedUpdates$1 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:20820:20)
+    at batchedUpdates (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5490:20)
+    at dispatchEventForPluginEventSystem (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9087:11)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7389:13)
+    at dispatchEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7383:13)
+    at dispatchDiscreteEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7360:13)actions.setError is not a function

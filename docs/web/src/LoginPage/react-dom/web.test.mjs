@@ -29242,11 +29242,8 @@ var BaseSuite = class {
   features() {
     const features = Object.keys(this.givens).map((k2) => this.givens[k2].features).flat().filter((value, index, array) => {
       return array.indexOf(value) === index;
-    }).reduce((mm, lm) => {
-      mm[lm] = lm;
-      return mm;
-    }, {});
-    return features || {};
+    });
+    return features || [];
   }
   toObj() {
     const givens = Object.keys(this.givens).map((k2) => this.givens[k2].toObj());
@@ -29816,10 +29813,9 @@ var Testeranto = class extends ClassBuilder {
           return fullTestInterface.beforeEach(
             subject,
             initializer,
-            (fPath, value) => (
-              // TODO does not work?
-              artifactory(`beforeEach/${fPath}`, value)
-            ),
+            // (fPath: string, value: unknown) =>
+            //   // TODO does not work?
+            //   artifactory(`beforeEach/${fPath}`, value),
             testResource,
             this.initialValues,
             pm

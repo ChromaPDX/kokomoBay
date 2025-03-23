@@ -20,6 +20,15 @@ const assert$ = async (sel: string, utils: PM) => {
   }
 }
 
+// Add getText method to PM class
+PM.prototype.getText = async function(selector: string) {
+  const element = await this.$(selector);
+  if (!element) {
+    throw new Error(`Element with selector ${selector} not found`);
+  }
+  return element.textContent || '';
+}
+
 export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object> = {
   suites: {
     Default: "a default suite",

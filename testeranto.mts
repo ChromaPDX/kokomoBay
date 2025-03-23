@@ -18,7 +18,7 @@ const config: IBaseConfig = {
     //   { ports: 0 },
     //   [],
     // ],
-    // ["./src/Rectangle/Rectangle.test.electron.ts", "web", { ports: 0 }, []],
+    ["./src/Rectangle/Rectangle.test.web.ts", "web", { ports: 0 }, []],
 
     // broken
     // [

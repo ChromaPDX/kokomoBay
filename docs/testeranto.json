@@ -2,6 +2,14 @@
   "outdir": "docs",
   "tests": [
     [
+      "./src/Rectangle/Rectangle.test.web.ts",
+      "web",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
       "./src/LoginPage/react-dom/web.test.tsx",
       "web",
       {

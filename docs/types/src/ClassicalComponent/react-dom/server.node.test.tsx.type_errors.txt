@@ -1,3 +1,0 @@
-src/ClassicalComponent/react-dom/server.node.test.tsx(80,31): error TS2314: Generic type 'ITestSpecification' requires 1 type argument(s).
-
-src/ClassicalComponent/react-dom/server.node.test.tsx(107,3): error TS2345: Argument of type '{ suites: { Default: string; }; givens: { AnEmptyState: () => () => { props: { foo: string; }; }; }; whens: {}; thens: { renderToStaticMarkup: (expectation: any) => (reactNodes: any) => Promise<void>; renderToStaticNodeStream: (expectation: any) => (reactNodes: any) => Promise<...>; }; checks: { ...; }; }' is not assignable to parameter of type 'string'.

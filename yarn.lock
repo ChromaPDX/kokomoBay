@@ -9570,8 +9570,10 @@ tar@^4.0.2:
     safe-buffer "^5.2.1"
     yallist "^3.1.1"
 
-testeranto@../testeranto:
-  version "0.88.0"
+testeranto@0.88.0:
+  version "0.85.0"
+  resolved "https://registry.yarnpkg.com/testeranto/-/testeranto-0.85.0.tgz#f754e0fc10ef5d1ebf1a8015e991e6cce8aaa2cf"
+  integrity sha512-KWlUrHqZu442UINTR+tyT7Mf8HzG0NbDlH/4iaPuOVFVC3Cp6k3xnlAWtnejCBVTlhKesJtPhWnhAmCsRcfAug==
   dependencies:
     babel-loader "^8.2.5"
     chai "^5.2.0"

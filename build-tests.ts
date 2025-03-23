@@ -1,5 +1,5 @@
-import Project from "./testeranto.mjs";
-
 import { ITProject } from "testeranto/src/Project";
 
-export default new ITProject(Project as any);
+import("./testeranto.mjs").then((module) => {
+  new ITProject(module.default);
+});

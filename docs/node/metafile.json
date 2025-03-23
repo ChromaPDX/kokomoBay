@@ -2,7 +2,396 @@
   "errors": [],
   "warnings": [],
   "metafile": {
-    "inputs": {},
-    "outputs": {}
+    "inputs": {
+      "../testeranto/dist/module/src/lib/index.js": {
+        "bytes": 609,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/abstractBase.js": {
+        "bytes": 25535,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/basebuilder.js": {
+        "bytes": 3904,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/classBuilder.js": {
+        "bytes": 2043,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/lib/basebuilder.js",
+            "kind": "import-statement",
+            "original": "./basebuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/core.js": {
+        "bytes": 5411,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/lib/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/abstractBase.js",
+            "kind": "import-statement",
+            "original": "./abstractBase.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/classBuilder.js",
+            "kind": "import-statement",
+            "original": "./classBuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/PM/index.js": {
+        "bytes": 39,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/PM/node.js": {
+        "bytes": 3883,
+        "imports": [
+          {
+            "path": "fs",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "path",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/dist/module/src/PM/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/Node.js": {
+        "bytes": 990,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/lib/core.js",
+            "kind": "import-statement",
+            "original": "./lib/core.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/index.js",
+            "kind": "import-statement",
+            "original": "./lib/index.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/PM/node.js",
+            "kind": "import-statement",
+            "original": "./PM/node.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
+        "bytes": 4786,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+        "bytes": 17457,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/unstable_mock.js": {
+        "bytes": 226,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler-unstable_mock.production.min.js"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler-unstable_mock.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
+        "bytes": 4235,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+        "bytes": 17497,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/index.js": {
+        "bytes": 198,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.production.min.js"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
+        "bytes": 87323,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
+            "kind": "require-call",
+            "original": "scheduler/unstable_mock"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+        "bytes": 645765,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
+            "kind": "require-call",
+            "original": "scheduler/unstable_mock"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/index.js": {
+        "bytes": 218,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-test-renderer.production.min.js"
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-test-renderer.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
+        "bytes": 1199,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
+        "bytes": 274,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/Node.js",
+            "kind": "import-statement",
+            "original": "../../../Node.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ReactStateAndHook.tsx": {
+        "bytes": 589,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ReactStateAndHook.test.tsx": {
+        "bytes": 2329,
+        "imports": [
+          {
+            "path": "assert",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-test-renderer/jsx/node.js"
+          },
+          {
+            "path": "src/ReactStateAndHook.tsx",
+            "kind": "import-statement",
+            "original": "./ReactStateAndHook"
+          }
+        ],
+        "format": "esm"
+      }
+    },
+    "outputs": {
+      "docs/node/src/ReactStateAndHook.test.mjs": {
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "assert",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "fs",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "path",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/ReactStateAndHook.test.tsx",
+        "inputs": {
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
+            "bytesInOutput": 8301
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19214
+          },
+          "../testeranto/node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 355
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
+            "bytesInOutput": 7026
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+            "bytesInOutput": 16937
+          },
+          "../testeranto/node_modules/scheduler/index.js": {
+            "bytesInOutput": 315
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
+            "bytesInOutput": 150824
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565827
+          },
+          "../testeranto/node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 355
+          },
+          "src/ReactStateAndHook.test.tsx": {
+            "bytesInOutput": 1542
+          },
+          "../testeranto/dist/module/src/lib/index.js": {
+            "bytesInOutput": 473
+          },
+          "../testeranto/dist/module/src/lib/abstractBase.js": {
+            "bytesInOutput": 8606
+          },
+          "../testeranto/dist/module/src/lib/basebuilder.js": {
+            "bytesInOutput": 2616
+          },
+          "../testeranto/dist/module/src/lib/classBuilder.js": {
+            "bytesInOutput": 1862
+          },
+          "../testeranto/dist/module/src/lib/core.js": {
+            "bytesInOutput": 2996
+          },
+          "../testeranto/dist/module/src/PM/node.js": {
+            "bytesInOutput": 3159
+          },
+          "../testeranto/dist/module/src/PM/index.js": {
+            "bytesInOutput": 20
+          },
+          "../testeranto/dist/module/src/Node.js": {
+            "bytesInOutput": 818
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
+            "bytesInOutput": 715
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
+            "bytesInOutput": 203
+          },
+          "src/ReactStateAndHook.tsx": {
+            "bytesInOutput": 647
+          }
+        },
+        "bytes": 797954
+      }
+    }
   }
 }

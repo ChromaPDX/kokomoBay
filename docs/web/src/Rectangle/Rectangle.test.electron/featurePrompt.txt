@@ -1,4 +1,0 @@
-/read /Users/adam/Code/kokomoBay/docs/features/externalapi.github.com/repos/adamwong246/testeranto/issues/8
-/read /Users/adam/Code/kokomoBay/docs/features/plain/3a72e6ca36ca24986cdfdb1cf4bdd2b0028c4397aa131c21ef3f891ea510d014
-/read /Users/adam/Code/kokomoBay/docs/features/plain/60eb8eb636c0a54476a81d6701cc15487a6e5d05622e6a907a55180a22841f4e
-/read /Users/adam/Code/kokomoBay/docs/features/internal/src/Rectangle/rectangle.md

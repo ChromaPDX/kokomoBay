@@ -8,6 +8,14 @@
         "ports": 0
       },
       []
+    ],
+    [
+      "./src/ReactStateAndHook.test.tsx",
+      "node",
+      {
+        "ports": 0
+      },
+      []
     ]
   ],
   "debugger": true,

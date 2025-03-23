@@ -26,9 +26,9 @@
   },
   "scripts": {
     "clean": "rm -rf docs && mkdir docs",
-    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; node --experimental-specifier-resolution=node --loader ts-node/esm build-tests.ts",
-    "run-tests": "node --experimental-specifier-resolution=node --loader ts-node/esm  run-tests.ts",
-    "init-docs": "node --experimental-specifier-resolution=node --loader ts-node/esm  ./init-docs.mts",
+    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx build-tests.ts testeranto.mts",
+    "run-tests": "tsx run-tests.ts testeranto.mts",
+    "init-docs": "tsx node_modules/testeranto/dist/module/init-docs.js testeranto.mts",
     "test": "yarn build-tests && yarn run-tests"
   },
   "types": "index.d.ts",
@@ -75,7 +75,7 @@
     "ignore-loader": "^0.1.2",
     "nodemon": "^2.0.20",
     "react-test-renderer": "18.2.0",
-    "testeranto": "../testeranto",
+    "testeranto": "0.85.0",
     "truffle": "^5.7.3",
     "ts-loader": "^9.3.1",
     "tsconfig-paths": "^4.2.0",

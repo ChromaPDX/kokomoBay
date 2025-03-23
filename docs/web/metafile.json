@@ -3,7 +3,7 @@
   "warnings": [],
   "metafile": {
     "inputs": {
-      "node_modules/testeranto/src/PM/index.ts": {
+      "../testeranto/src/PM/index.ts": {
         "bytes": 1285,
         "imports": [
           {
@@ -19,7 +19,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/PM/web.ts": {
+      "../testeranto/src/PM/web.ts": {
         "bytes": 6466,
         "imports": [
           {
@@ -33,7 +33,7 @@
             "external": true
           },
           {
-            "path": "node_modules/testeranto/src/PM/index.ts",
+            "path": "../testeranto/src/PM/index.ts",
             "kind": "import-statement",
             "original": "./index.js"
           },
@@ -45,7 +45,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/lib/index.ts": {
+      "../testeranto/src/lib/index.ts": {
         "bytes": 4592,
         "imports": [
           {
@@ -71,7 +71,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/lib/abstractBase.ts": {
+      "../testeranto/src/lib/abstractBase.ts": {
         "bytes": 27704,
         "imports": [
           {
@@ -92,7 +92,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/lib/basebuilder.ts": {
+      "../testeranto/src/lib/basebuilder.ts": {
         "bytes": 6170,
         "imports": [
           {
@@ -128,7 +128,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/lib/classBuilder.ts": {
+      "../testeranto/src/lib/classBuilder.ts": {
         "bytes": 3277,
         "imports": [
           {
@@ -137,7 +137,7 @@
             "external": true
           },
           {
-            "path": "node_modules/testeranto/src/lib/basebuilder.ts",
+            "path": "../testeranto/src/lib/basebuilder.ts",
             "kind": "import-statement",
             "original": "./basebuilder.js"
           },
@@ -159,7 +159,7 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/lib/core.ts": {
+      "../testeranto/src/lib/core.ts": {
         "bytes": 7265,
         "imports": [
           {
@@ -178,17 +178,17 @@
             "external": true
           },
           {
-            "path": "node_modules/testeranto/src/lib/index.ts",
+            "path": "../testeranto/src/lib/index.ts",
             "kind": "import-statement",
             "original": "./index.js"
           },
           {
-            "path": "node_modules/testeranto/src/lib/abstractBase.ts",
+            "path": "../testeranto/src/lib/abstractBase.ts",
             "kind": "import-statement",
             "original": "./abstractBase.js"
           },
           {
-            "path": "node_modules/testeranto/src/lib/classBuilder.ts",
+            "path": "../testeranto/src/lib/classBuilder.ts",
             "kind": "import-statement",
             "original": "./classBuilder.js"
           },
@@ -200,21 +200,21 @@
         ],
         "format": "esm"
       },
-      "node_modules/testeranto/src/Web.ts": {
+      "../testeranto/src/Web.ts": {
         "bytes": 2997,
         "imports": [
           {
-            "path": "node_modules/testeranto/src/PM/web.ts",
+            "path": "../testeranto/src/PM/web.ts",
             "kind": "import-statement",
             "original": "./PM/web"
           },
           {
-            "path": "node_modules/testeranto/src/lib/core.ts",
+            "path": "../testeranto/src/lib/core.ts",
             "kind": "import-statement",
             "original": "./lib/core.js"
           },
           {
-            "path": "node_modules/testeranto/src/lib/index.ts",
+            "path": "../testeranto/src/lib/index.ts",
             "kind": "import-statement",
             "original": "./lib/index.js"
           },
@@ -222,6 +222,778 @@
             "path": "./lib/types",
             "kind": "import-statement",
             "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
+        "bytes": 60,
+        "imports": []
+      },
+      "src/Rectangle.test.specification.ts": {
+        "bytes": 1882,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md",
+            "kind": "import-statement",
+            "original": "./Rectangle/rectangle.md"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/assertion-error/index.js": {
+        "bytes": 2429,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/pathval/index.js": {
+        "bytes": 7808,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/flag.js": {
+        "bytes": 812,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/test.js": {
+        "bytes": 540,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/type-detect/type-detect.js": {
+        "bytes": 5728,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/expectTypes.js": {
+        "bytes": 1433,
+        "imports": [
+          {
+            "path": "node_modules/assertion-error/index.js",
+            "kind": "require-call",
+            "original": "assertion-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getActual.js": {
+        "bytes": 467,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/get-func-name/index.js": {
+        "bytes": 1506,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/loupe/loupe.js": {
+        "bytes": 28534,
+        "imports": [
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/config.js": {
+        "bytes": 3794,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/inspect.js": {
+        "bytes": 1152,
+        "imports": [
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          },
+          {
+            "path": "node_modules/loupe/loupe.js",
+            "kind": "require-call",
+            "original": "loupe"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/objDisplay.js": {
+        "bytes": 1266,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getMessage.js": {
+        "bytes": 1370,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getActual.js",
+            "kind": "require-call",
+            "original": "./getActual"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
+            "kind": "require-call",
+            "original": "./objDisplay"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/transferFlags.js": {
+        "bytes": 1361,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/deep-eql/index.js": {
+        "bytes": 16380,
+        "imports": [
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
+        "bytes": 579,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addProperty.js": {
+        "bytes": 2452,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
+        "bytes": 2376,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getProperties.js": {
+        "bytes": 789,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/proxify.js": {
+        "bytes": 5224,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getProperties.js",
+            "kind": "require-call",
+            "original": "./getProperties"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addMethod.js": {
+        "bytes": 2179,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
+        "bytes": 3281,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
+        "bytes": 3100,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
+        "bytes": 5448,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
+        "bytes": 2150,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/compareByInspect.js": {
+        "bytes": 808,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
+        "bytes": 819,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
+        "bytes": 785,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerablePropertySymbols"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/check-error/index.js": {
+        "bytes": 4433,
+        "imports": [
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/isNaN.js": {
+        "bytes": 590,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOperator.js": {
+        "bytes": 1252,
+        "imports": [
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/index.js": {
+        "bytes": 2540,
+        "imports": [
+          {
+            "path": "node_modules/pathval/index.js",
+            "kind": "require-call",
+            "original": "pathval"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/test.js",
+            "kind": "require-call",
+            "original": "./test"
+          },
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/expectTypes.js",
+            "kind": "require-call",
+            "original": "./expectTypes"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getMessage.js",
+            "kind": "require-call",
+            "original": "./getMessage"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getActual.js",
+            "kind": "require-call",
+            "original": "./getActual"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
+            "kind": "require-call",
+            "original": "./objDisplay"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          },
+          {
+            "path": "node_modules/deep-eql/index.js",
+            "kind": "require-call",
+            "original": "deep-eql"
+          },
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addProperty.js",
+            "kind": "require-call",
+            "original": "./addProperty"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addMethod.js",
+            "kind": "require-call",
+            "original": "./addMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteProperty.js",
+            "kind": "require-call",
+            "original": "./overwriteProperty"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteMethod.js",
+            "kind": "require-call",
+            "original": "./overwriteMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addChainableMethod.js",
+            "kind": "require-call",
+            "original": "./addChainableMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js",
+            "kind": "require-call",
+            "original": "./overwriteChainableMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/compareByInspect.js",
+            "kind": "require-call",
+            "original": "./compareByInspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerablePropertySymbols"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerableProperties"
+          },
+          {
+            "path": "node_modules/check-error/index.js",
+            "kind": "require-call",
+            "original": "check-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isNaN.js",
+            "kind": "require-call",
+            "original": "./isNaN"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOperator.js",
+            "kind": "require-call",
+            "original": "./getOperator"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/assertion.js": {
+        "bytes": 6118,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "./config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/core/assertions.js": {
+        "bytes": 134747,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/expect.js": {
+        "bytes": 1142,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/should.js": {
+        "bytes": 6225,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/assert.js": {
+        "bytes": 93320,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai.js": {
+        "bytes": 1258,
+        "imports": [
+          {
+            "path": "node_modules/assertion-error/index.js",
+            "kind": "require-call",
+            "original": "assertion-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/index.js",
+            "kind": "require-call",
+            "original": "./chai/utils"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "./chai/config"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/assertion.js",
+            "kind": "require-call",
+            "original": "./chai/assertion"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/core/assertions.js",
+            "kind": "require-call",
+            "original": "./chai/core/assertions"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/expect.js",
+            "kind": "require-call",
+            "original": "./chai/interface/expect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/should.js",
+            "kind": "require-call",
+            "original": "./chai/interface/should"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/assert.js",
+            "kind": "require-call",
+            "original": "./chai/interface/assert"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/index.js": {
+        "bytes": 40,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "./lib/chai"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/index.mjs": {
+        "bytes": 414,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.ts": {
+        "bytes": 547,
+        "imports": [],
+        "format": "esm"
+      },
+      "src/Rectangle.test.implementation.ts": {
+        "bytes": 2302,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.test.ts": {
+        "bytes": 640,
+        "imports": [
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle/Rectangle.test.web.ts": {
+        "bytes": 1355,
+        "imports": [
+          {
+            "path": "../testeranto/src/Web.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/Web"
+          },
+          {
+            "path": "testeranto/src/PM/web",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/lib",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Rectangle",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.test.specification.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.specification"
+          },
+          {
+            "path": "src/Rectangle.test.implementation.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.implementation"
+          },
+          {
+            "path": "src/Rectangle.test.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test"
           }
         ],
         "format": "esm"
@@ -286,7 +1058,7 @@
         "format": "cjs"
       },
       "src/LoginPage/test.ts": {
-        "bytes": 3756,
+        "bytes": 4008,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1083,665 +1855,6 @@
         ],
         "format": "esm"
       },
-      "node_modules/assertion-error/index.js": {
-        "bytes": 2429,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/pathval/index.js": {
-        "bytes": 7808,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/flag.js": {
-        "bytes": 812,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/test.js": {
-        "bytes": 540,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/type-detect/type-detect.js": {
-        "bytes": 5728,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/expectTypes.js": {
-        "bytes": 1433,
-        "imports": [
-          {
-            "path": "node_modules/assertion-error/index.js",
-            "kind": "require-call",
-            "original": "assertion-error"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/type-detect/type-detect.js",
-            "kind": "require-call",
-            "original": "type-detect"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getActual.js": {
-        "bytes": 467,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/get-func-name/index.js": {
-        "bytes": 1506,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/loupe/loupe.js": {
-        "bytes": 28534,
-        "imports": [
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/config.js": {
-        "bytes": 3794,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/inspect.js": {
-        "bytes": 1152,
-        "imports": [
-          {
-            "path": "node_modules/get-func-name/index.js",
-            "kind": "require-call",
-            "original": "get-func-name"
-          },
-          {
-            "path": "node_modules/loupe/loupe.js",
-            "kind": "require-call",
-            "original": "loupe"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "../config"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/objDisplay.js": {
-        "bytes": 1266,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/inspect.js",
-            "kind": "require-call",
-            "original": "./inspect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "../config"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getMessage.js": {
-        "bytes": 1370,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getActual.js",
-            "kind": "require-call",
-            "original": "./getActual"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
-            "kind": "require-call",
-            "original": "./objDisplay"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/transferFlags.js": {
-        "bytes": 1361,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/deep-eql/index.js": {
-        "bytes": 16380,
-        "imports": [
-          {
-            "path": "node_modules/type-detect/type-detect.js",
-            "kind": "require-call",
-            "original": "type-detect"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
-        "bytes": 579,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "../config"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/addProperty.js": {
-        "bytes": 2452,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
-            "kind": "require-call",
-            "original": "./isProxyEnabled"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
-        "bytes": 2376,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getProperties.js": {
-        "bytes": 789,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/proxify.js": {
-        "bytes": 5224,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "../config"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getProperties.js",
-            "kind": "require-call",
-            "original": "./getProperties"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
-            "kind": "require-call",
-            "original": "./isProxyEnabled"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/addMethod.js": {
-        "bytes": 2179,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
-            "kind": "require-call",
-            "original": "./addLengthGuard"
-          },
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/proxify.js",
-            "kind": "require-call",
-            "original": "./proxify"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
-        "bytes": 3281,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
-            "kind": "require-call",
-            "original": "./isProxyEnabled"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
-        "bytes": 3100,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
-            "kind": "require-call",
-            "original": "./addLengthGuard"
-          },
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/proxify.js",
-            "kind": "require-call",
-            "original": "./proxify"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
-        "bytes": 5448,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
-            "kind": "require-call",
-            "original": "./addLengthGuard"
-          },
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/proxify.js",
-            "kind": "require-call",
-            "original": "./proxify"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
-        "bytes": 2150,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "../../chai"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/compareByInspect.js": {
-        "bytes": 808,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/inspect.js",
-            "kind": "require-call",
-            "original": "./inspect"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
-        "bytes": 819,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
-        "bytes": 785,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
-            "kind": "require-call",
-            "original": "./getOwnEnumerablePropertySymbols"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/check-error/index.js": {
-        "bytes": 4433,
-        "imports": [
-          {
-            "path": "node_modules/get-func-name/index.js",
-            "kind": "require-call",
-            "original": "get-func-name"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/isNaN.js": {
-        "bytes": 590,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/getOperator.js": {
-        "bytes": 1252,
-        "imports": [
-          {
-            "path": "node_modules/type-detect/type-detect.js",
-            "kind": "require-call",
-            "original": "type-detect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/utils/index.js": {
-        "bytes": 2540,
-        "imports": [
-          {
-            "path": "node_modules/pathval/index.js",
-            "kind": "require-call",
-            "original": "pathval"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/test.js",
-            "kind": "require-call",
-            "original": "./test"
-          },
-          {
-            "path": "node_modules/type-detect/type-detect.js",
-            "kind": "require-call",
-            "original": "type-detect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/expectTypes.js",
-            "kind": "require-call",
-            "original": "./expectTypes"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getMessage.js",
-            "kind": "require-call",
-            "original": "./getMessage"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getActual.js",
-            "kind": "require-call",
-            "original": "./getActual"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/inspect.js",
-            "kind": "require-call",
-            "original": "./inspect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
-            "kind": "require-call",
-            "original": "./objDisplay"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/flag.js",
-            "kind": "require-call",
-            "original": "./flag"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
-            "kind": "require-call",
-            "original": "./transferFlags"
-          },
-          {
-            "path": "node_modules/deep-eql/index.js",
-            "kind": "require-call",
-            "original": "deep-eql"
-          },
-          {
-            "path": "node_modules/get-func-name/index.js",
-            "kind": "require-call",
-            "original": "get-func-name"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/addProperty.js",
-            "kind": "require-call",
-            "original": "./addProperty"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/addMethod.js",
-            "kind": "require-call",
-            "original": "./addMethod"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/overwriteProperty.js",
-            "kind": "require-call",
-            "original": "./overwriteProperty"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/overwriteMethod.js",
-            "kind": "require-call",
-            "original": "./overwriteMethod"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/addChainableMethod.js",
-            "kind": "require-call",
-            "original": "./addChainableMethod"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js",
-            "kind": "require-call",
-            "original": "./overwriteChainableMethod"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/compareByInspect.js",
-            "kind": "require-call",
-            "original": "./compareByInspect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
-            "kind": "require-call",
-            "original": "./getOwnEnumerablePropertySymbols"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js",
-            "kind": "require-call",
-            "original": "./getOwnEnumerableProperties"
-          },
-          {
-            "path": "node_modules/check-error/index.js",
-            "kind": "require-call",
-            "original": "check-error"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/proxify.js",
-            "kind": "require-call",
-            "original": "./proxify"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
-            "kind": "require-call",
-            "original": "./addLengthGuard"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
-            "kind": "require-call",
-            "original": "./isProxyEnabled"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/isNaN.js",
-            "kind": "require-call",
-            "original": "./isNaN"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/getOperator.js",
-            "kind": "require-call",
-            "original": "./getOperator"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/assertion.js": {
-        "bytes": 6118,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "./config"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/core/assertions.js": {
-        "bytes": 134747,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/interface/expect.js": {
-        "bytes": 1142,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/interface/should.js": {
-        "bytes": 6225,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai/interface/assert.js": {
-        "bytes": 93320,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/chai/lib/chai.js": {
-        "bytes": 1258,
-        "imports": [
-          {
-            "path": "node_modules/assertion-error/index.js",
-            "kind": "require-call",
-            "original": "assertion-error"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/utils/index.js",
-            "kind": "require-call",
-            "original": "./chai/utils"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/config.js",
-            "kind": "require-call",
-            "original": "./chai/config"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/assertion.js",
-            "kind": "require-call",
-            "original": "./chai/assertion"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/core/assertions.js",
-            "kind": "require-call",
-            "original": "./chai/core/assertions"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/interface/expect.js",
-            "kind": "require-call",
-            "original": "./chai/interface/expect"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/interface/should.js",
-            "kind": "require-call",
-            "original": "./chai/interface/should"
-          },
-          {
-            "path": "node_modules/chai/lib/chai/interface/assert.js",
-            "kind": "require-call",
-            "original": "./chai/interface/assert"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/index.js": {
-        "bytes": 40,
-        "imports": [
-          {
-            "path": "node_modules/chai/lib/chai.js",
-            "kind": "require-call",
-            "original": "./lib/chai"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/chai/index.mjs": {
-        "bytes": 414,
-        "imports": [
-          {
-            "path": "node_modules/chai/index.js",
-            "kind": "import-statement",
-            "original": "./index.js"
-          }
-        ],
-        "format": "esm"
-      },
       "src/LoginPage/react-dom/test.tsx": {
         "bytes": 7148,
         "imports": [
@@ -1782,7 +1895,7 @@
         "bytes": 4616,
         "imports": [
           {
-            "path": "node_modules/testeranto/src/Web.ts",
+            "path": "../testeranto/src/Web.ts",
             "kind": "import-statement",
             "original": "testeranto/src/Web"
           },
@@ -1821,12 +1934,44 @@
       }
     },
     "outputs": {
+      "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-Q5HGWMEE.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/Rectangle/Rectangle.test.web.ts",
+        "inputs": {
+          "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
+            "bytesInOutput": 88
+          },
+          "src/Rectangle.test.specification.ts": {
+            "bytesInOutput": 1655
+          },
+          "src/Rectangle.ts": {
+            "bytesInOutput": 479
+          },
+          "src/Rectangle.test.implementation.ts": {
+            "bytesInOutput": 1804
+          },
+          "src/Rectangle.test.ts": {
+            "bytesInOutput": 68
+          },
+          "src/Rectangle/Rectangle.test.web.ts": {
+            "bytesInOutput": 589
+          }
+        },
+        "bytes": 5046
+      },
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
           {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
+            "path": "docs/web/chunk-Q5HGWMEE.mjs",
+            "kind": "import-statement"
           }
         ],
         "exports": [
@@ -1835,7 +1980,7 @@
         "entryPoint": "src/LoginPage/react-dom/web.test.tsx",
         "inputs": {
           "node_modules/react/cjs/react.development.js": {
-            "bytesInOutput": 77193
+            "bytesInOutput": 77147
           },
           "node_modules/react/index.js": {
             "bytesInOutput": 227
@@ -1847,7 +1992,7 @@
             "bytesInOutput": 239
           },
           "node_modules/react-dom/cjs/react-dom.development.js": {
-            "bytesInOutput": 906901
+            "bytesInOutput": 906898
           },
           "node_modules/react-dom/index.js": {
             "bytesInOutput": 257
@@ -1880,157 +2025,16 @@
             "bytesInOutput": 238
           },
           "node_modules/react/cjs/react-jsx-runtime.development.js": {
-            "bytesInOutput": 35498
+            "bytesInOutput": 35467
           },
           "node_modules/react/jsx-runtime.js": {
             "bytesInOutput": 251
-          },
-          "node_modules/assertion-error/index.js": {
-            "bytesInOutput": 1664
-          },
-          "node_modules/pathval/index.js": {
-            "bytesInOutput": 3177
-          },
-          "node_modules/chai/lib/chai/utils/flag.js": {
-            "bytesInOutput": 365
-          },
-          "node_modules/chai/lib/chai/utils/test.js": {
-            "bytesInOutput": 282
-          },
-          "node_modules/type-detect/type-detect.js": {
-            "bytesInOutput": 5652
-          },
-          "node_modules/chai/lib/chai/utils/expectTypes.js": {
-            "bytesInOutput": 1135
-          },
-          "node_modules/chai/lib/chai/utils/getActual.js": {
-            "bytesInOutput": 225
-          },
-          "node_modules/get-func-name/index.js": {
-            "bytesInOutput": 904
-          },
-          "node_modules/loupe/loupe.js": {
-            "bytesInOutput": 28035
-          },
-          "node_modules/chai/lib/chai/config.js": {
-            "bytesInOutput": 4311
-          },
-          "node_modules/chai/lib/chai/utils/inspect.js": {
-            "bytesInOutput": 562
-          },
-          "node_modules/chai/lib/chai/utils/objDisplay.js": {
-            "bytesInOutput": 946
-          },
-          "node_modules/chai/lib/chai/utils/getMessage.js": {
-            "bytesInOutput": 859
-          },
-          "node_modules/chai/lib/chai/utils/transferFlags.js": {
-            "bytesInOutput": 672
-          },
-          "node_modules/deep-eql/index.js": {
-            "bytesInOutput": 11312
-          },
-          "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
-            "bytesInOutput": 313
-          },
-          "node_modules/chai/lib/chai/utils/addProperty.js": {
-            "bytesInOutput": 957
-          },
-          "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
-            "bytesInOutput": 852
-          },
-          "node_modules/chai/lib/chai/utils/getProperties.js": {
-            "bytesInOutput": 594
-          },
-          "node_modules/chai/lib/chai/utils/proxify.js": {
-            "bytesInOutput": 2832
-          },
-          "node_modules/chai/lib/chai/utils/addMethod.js": {
-            "bytesInOutput": 852
-          },
-          "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
-            "bytesInOutput": 1271
-          },
-          "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
-            "bytesInOutput": 1263
-          },
-          "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
-            "bytesInOutput": 2760
-          },
-          "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
-            "bytesInOutput": 1186
-          },
-          "node_modules/chai/lib/chai/utils/compareByInspect.js": {
-            "bytesInOutput": 278
-          },
-          "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
-            "bytesInOutput": 464
-          },
-          "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
-            "bytesInOutput": 380
-          },
-          "node_modules/check-error/index.js": {
-            "bytesInOutput": 1982
-          },
-          "node_modules/chai/lib/chai/utils/isNaN.js": {
-            "bytesInOutput": 216
-          },
-          "node_modules/chai/lib/chai/utils/getOperator.js": {
-            "bytesInOutput": 1052
-          },
-          "node_modules/chai/lib/chai/utils/index.js": {
-            "bytesInOutput": 1570
-          },
-          "node_modules/chai/lib/chai/assertion.js": {
-            "bytesInOutput": 3512
-          },
-          "node_modules/chai/lib/chai/core/assertions.js": {
-            "bytesInOutput": 48138
-          },
-          "node_modules/chai/lib/chai/interface/expect.js": {
-            "bytesInOutput": 638
-          },
-          "node_modules/chai/lib/chai/interface/should.js": {
-            "bytesInOutput": 2354
-          },
-          "node_modules/chai/lib/chai/interface/assert.js": {
-            "bytesInOutput": 25298
-          },
-          "node_modules/chai/lib/chai.js": {
-            "bytesInOutput": 790
-          },
-          "node_modules/chai/index.js": {
-            "bytesInOutput": 128
-          },
-          "node_modules/testeranto/src/PM/index.ts": {
-            "bytesInOutput": 59
-          },
-          "node_modules/testeranto/src/PM/web.ts": {
-            "bytesInOutput": 4455
-          },
-          "node_modules/testeranto/src/lib/index.ts": {
-            "bytesInOutput": 471
-          },
-          "node_modules/testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 9591
-          },
-          "node_modules/testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 3013
-          },
-          "node_modules/testeranto/src/lib/classBuilder.ts": {
-            "bytesInOutput": 2307
-          },
-          "node_modules/testeranto/src/lib/core.ts": {
-            "bytesInOutput": 3567
-          },
-          "node_modules/testeranto/src/Web.ts": {
-            "bytesInOutput": 907
           },
           "src/LoginPage/react-dom/web.test.tsx": {
             "bytesInOutput": 2459
           },
           "src/LoginPage/test.ts": {
-            "bytesInOutput": 2959
+            "bytesInOutput": 3219
           },
           "node_modules/react-redux/es/index.js": {
             "bytesInOutput": 287
@@ -2075,7 +2079,7 @@
             "bytesInOutput": 8398
           },
           "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js": {
-            "bytesInOutput": 25667
+            "bytesInOutput": 25663
           },
           "node_modules/reselect/es/defaultMemoize.js": {
             "bytesInOutput": 3011
@@ -2089,14 +2093,173 @@
           "src/LoginPage/index.tsx": {
             "bytesInOutput": 3066
           },
-          "node_modules/chai/index.mjs": {
-            "bytesInOutput": 490
-          },
           "src/LoginPage/react-dom/test.tsx": {
             "bytesInOutput": 2760
           }
         },
-        "bytes": 1351682
+        "bytes": 1149603
+      },
+      "docs/web/chunk-Q5HGWMEE.mjs": {
+        "imports": [
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "exports": [
+          "Web_default",
+          "__commonJS",
+          "__toESM",
+          "assert"
+        ],
+        "inputs": {
+          "node_modules/assertion-error/index.js": {
+            "bytesInOutput": 1660
+          },
+          "node_modules/pathval/index.js": {
+            "bytesInOutput": 3166
+          },
+          "node_modules/chai/lib/chai/utils/flag.js": {
+            "bytesInOutput": 365
+          },
+          "node_modules/chai/lib/chai/utils/test.js": {
+            "bytesInOutput": 282
+          },
+          "node_modules/type-detect/type-detect.js": {
+            "bytesInOutput": 5646
+          },
+          "node_modules/chai/lib/chai/utils/expectTypes.js": {
+            "bytesInOutput": 1130
+          },
+          "node_modules/chai/lib/chai/utils/getActual.js": {
+            "bytesInOutput": 225
+          },
+          "node_modules/get-func-name/index.js": {
+            "bytesInOutput": 904
+          },
+          "node_modules/loupe/loupe.js": {
+            "bytesInOutput": 27978
+          },
+          "node_modules/chai/lib/chai/config.js": {
+            "bytesInOutput": 4311
+          },
+          "node_modules/chai/lib/chai/utils/inspect.js": {
+            "bytesInOutput": 562
+          },
+          "node_modules/chai/lib/chai/utils/objDisplay.js": {
+            "bytesInOutput": 946
+          },
+          "node_modules/chai/lib/chai/utils/getMessage.js": {
+            "bytesInOutput": 859
+          },
+          "node_modules/chai/lib/chai/utils/transferFlags.js": {
+            "bytesInOutput": 672
+          },
+          "node_modules/deep-eql/index.js": {
+            "bytesInOutput": 11303
+          },
+          "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
+            "bytesInOutput": 313
+          },
+          "node_modules/chai/lib/chai/utils/addProperty.js": {
+            "bytesInOutput": 957
+          },
+          "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
+            "bytesInOutput": 848
+          },
+          "node_modules/chai/lib/chai/utils/getProperties.js": {
+            "bytesInOutput": 594
+          },
+          "node_modules/chai/lib/chai/utils/proxify.js": {
+            "bytesInOutput": 2791
+          },
+          "node_modules/chai/lib/chai/utils/addMethod.js": {
+            "bytesInOutput": 852
+          },
+          "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
+            "bytesInOutput": 1271
+          },
+          "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
+            "bytesInOutput": 1263
+          },
+          "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
+            "bytesInOutput": 2760
+          },
+          "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
+            "bytesInOutput": 1186
+          },
+          "node_modules/chai/lib/chai/utils/compareByInspect.js": {
+            "bytesInOutput": 274
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
+            "bytesInOutput": 464
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
+            "bytesInOutput": 380
+          },
+          "node_modules/check-error/index.js": {
+            "bytesInOutput": 1982
+          },
+          "node_modules/chai/lib/chai/utils/isNaN.js": {
+            "bytesInOutput": 214
+          },
+          "node_modules/chai/lib/chai/utils/getOperator.js": {
+            "bytesInOutput": 1052
+          },
+          "node_modules/chai/lib/chai/utils/index.js": {
+            "bytesInOutput": 1570
+          },
+          "node_modules/chai/lib/chai/assertion.js": {
+            "bytesInOutput": 3500
+          },
+          "node_modules/chai/lib/chai/core/assertions.js": {
+            "bytesInOutput": 48026
+          },
+          "node_modules/chai/lib/chai/interface/expect.js": {
+            "bytesInOutput": 638
+          },
+          "node_modules/chai/lib/chai/interface/should.js": {
+            "bytesInOutput": 2350
+          },
+          "node_modules/chai/lib/chai/interface/assert.js": {
+            "bytesInOutput": 25268
+          },
+          "node_modules/chai/lib/chai.js": {
+            "bytesInOutput": 786
+          },
+          "node_modules/chai/index.js": {
+            "bytesInOutput": 128
+          },
+          "../testeranto/src/PM/index.ts": {
+            "bytesInOutput": 20
+          },
+          "../testeranto/src/PM/web.ts": {
+            "bytesInOutput": 4431
+          },
+          "../testeranto/src/lib/index.ts": {
+            "bytesInOutput": 459
+          },
+          "../testeranto/src/lib/abstractBase.ts": {
+            "bytesInOutput": 9253
+          },
+          "../testeranto/src/lib/basebuilder.ts": {
+            "bytesInOutput": 2828
+          },
+          "../testeranto/src/lib/classBuilder.ts": {
+            "bytesInOutput": 2290
+          },
+          "../testeranto/src/lib/core.ts": {
+            "bytesInOutput": 3528
+          },
+          "../testeranto/src/Web.ts": {
+            "bytesInOutput": 905
+          },
+          "node_modules/chai/index.mjs": {
+            "bytesInOutput": 489
+          }
+        },
+        "bytes": 201398
       }
     }
   }

@@ -17,11 +17,11 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRec
 
   whens: {
     HeightIsPubliclySetTo: (height: number) => async (rectangle: Rectangle, utils: PM) => {
-      rectangle.height = height;
+      rectangle.setHeight(height);
       return rectangle;
     },
     WidthIsPubliclySetTo: (width: number) => async (rectangle: Rectangle, utils: PM) => {
-      rectangle.width = width;
+      rectangle.setWidth(width);
       return rectangle;
     },
     setWidth: (width: number) => async (rectangle: Rectangle, utils: PM) => {

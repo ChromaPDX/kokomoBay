@@ -1,6 +1,6 @@
 import Testeranto from "testeranto/src/Web";
 import { PM_Web } from "testeranto/src/PM/web";
-import { ITTestResourceConfiguration, ITestArtificer } from "testeranto/src/lib";
+import { ITTestResourceConfiguration } from "testeranto/src/lib";
 
 import Rectangle from "../Rectangle";
 import { RectangleTesterantoBaseTestSpecification } from "../Rectangle.test.specification";

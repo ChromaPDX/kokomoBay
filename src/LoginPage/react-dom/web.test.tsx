@@ -1,7 +1,7 @@
 import Testeranto from "testeranto/src/Web";
 import React, { useEffect, useRef } from "react";
 import { CElement, createElement } from "react";
-import ReactDom, { createPortal } from "react-dom";
+import ReactDom, { createPortal } from "react-dom/client";
 
 import { LoginPageSpecs } from "../test.js";
 import LoginPage, { actions } from "../index.js";

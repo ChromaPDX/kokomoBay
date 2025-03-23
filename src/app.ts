@@ -31,16 +31,16 @@ export const loginApp = createSlice<
       state.email = initialState.email;
       state.error = initialState.error;
     },
-    setPassword: (state, action) => {
+    setPassword: (state, action: {payload: string}) => {
       state.password = action.payload;
     },
-    setEmail: (state, action) => {
+    setEmail: (state, action: {payload: string}) => {
       state.email = action.payload;
     },
-    setError: (state, action) => {
+    setError: (state, action: {payload: ILoginPageError}) => {
       state.error = action.payload;
     },
-    setDisableSubmit: (state, action) => {
+    setDisableSubmit: (state, action: {payload: boolean}) => {
       // This will be handled by the selector
     },
     signIn: (state) => {

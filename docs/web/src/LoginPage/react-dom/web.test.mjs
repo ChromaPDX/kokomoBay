@@ -3,7 +3,7 @@ import {
   __commonJS,
   __toESM,
   assert
-} from "../../../chunk-YFVC7ICY.mjs";
+} from "../../../chunk-7M7AVTJV.mjs";
 
 // node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
@@ -24966,91 +24966,91 @@ var LoginPageSpecs = (Suite, Given, When, Then, Check) => {
           ["0"],
           [When.TheEmailIsSetTo("a")],
           [Then.TheEmailIs("a"), Then.TheSubmitButtonIsNotActive()]
+        ),
+        test0_1: Given.default(
+          ["0"],
+          [],
+          [Then.TheSubmitButtonIsNotActive(), Then.ThereIsNotAnEmailError()]
+        ),
+        test0_2: Given.default(
+          ["0"],
+          [When.TheEmailIsSetTo("adam@email.com")],
+          [Then.ThereIsNotAnEmailError(), Then.TheSubmitButtonIsNotActive()]
+        ),
+        test0_3: Given.default(
+          ["0"],
+          [
+            When.TheEmailIsSetTo("larry@email.com"),
+            When.ThePasswordIsSetTo("secret")
+          ],
+          [
+            Then.TheSubmitButtonIsActive(),
+            Then.TheEmailIs("larry@email.com")
+            // Then.ThereIsNotAnEmailError()
+          ]
+        ),
+        test0_4: Given.default(
+          ["Curly cannot login, even if he knows the password"],
+          [
+            When.TheEmailIsSetTo("curly@email.com"),
+            When.ThePasswordIsSetTo("secret"),
+            When.TheLoginIsSubmitted()
+          ],
+          [Then.TheEmailIs("curly@email.com"), Then.ThereIsACredentialError()]
+        ),
+        test0_5: Given.default(
+          ["0"],
+          [
+            When.TheEmailIsSetTo("BAD EMAIL"),
+            When.ThePasswordIsSetTo("secret"),
+            When.TheLoginIsSubmitted()
+          ],
+          [Then.ThereIsNotAnEmailError()]
+        ),
+        test1: Given.default(
+          [`0`],
+          [
+            When.TheEmailIsSetTo("adam@email.com"),
+            When.ThePasswordIsSetTo("secret")
+          ],
+          [
+            Then.TheEmailIsNot("wade@rpc"),
+            Then.TheEmailIs("adam@email.com"),
+            Then.ThePasswordIs("secret"),
+            Then.ThePasswordIsNot("idk")
+          ]
+        ),
+        test2: Given.default(
+          [`0`],
+          [When.TheEmailIsSetTo("adam@email.com")],
+          [Then.ThereIsNotAnEmailError()]
+        ),
+        test3: Given.default(
+          [`0`],
+          [When.TheEmailIsSetTo("bob"), When.TheLoginIsSubmitted()],
+          [Then.TheEmailIs("bob"), Then.ThereIsAnEmailError()]
+        ),
+        test3_5: Given.default(
+          [`0`],
+          [When.TheEmailIsSetTo("bob")],
+          [Then.ThereIsNotAnEmailError()]
+        ),
+        test4: Given.default(
+          [`0`],
+          [
+            When.TheEmailIsSetTo("adam@mail.com"),
+            When.ThePasswordIsSetTo("foso")
+          ],
+          [Then.ThereIsNotAnEmailError()]
+        ),
+        test5: Given.default(
+          [`1`],
+          [
+            When.TheEmailIsSetTo("adam@mail.com"),
+            When.ThePasswordIsSetTo("fosz")
+          ],
+          [Then.ThereIsNotAnEmailError()]
         )
-        // test0_1: Given.default(
-        //   ["0"],
-        //   [],
-        //   [Then.TheSubmitButtonIsNotActive(), Then.ThereIsNotAnEmailError()]
-        // ),
-        // test0_2: Given.default(
-        //   ["0"],
-        //   [When.TheEmailIsSetTo("adam@email.com")],
-        //   [Then.ThereIsNotAnEmailError(), Then.TheSubmitButtonIsNotActive()]
-        // ),
-        // test0_3: Given.default(
-        //   ["0"],
-        //   [
-        //     When.TheEmailIsSetTo("larry@email.com"),
-        //     When.ThePasswordIsSetTo("secret"),
-        //   ],
-        //   [
-        //     Then.TheSubmitButtonIsActive(),
-        //     Then.TheEmailIs("larry@email.com"),
-        //     // Then.ThereIsNotAnEmailError()
-        //   ]
-        // ),
-        // test0_4: Given.default(
-        //   ["Curly cannot login, even if he knows the password"],
-        //   [
-        //     When.TheEmailIsSetTo("curly@email.com"),
-        //     When.ThePasswordIsSetTo("secret"),
-        //     When.TheLoginIsSubmitted(),
-        //   ],
-        //   [Then.TheEmailIs("curly@email.com"), Then.ThereIsACredentialError()]
-        // ),
-        // test0_5: Given.default(
-        //   ["0"],
-        //   [
-        //     When.TheEmailIsSetTo("BAD EMAIL"),
-        //     When.ThePasswordIsSetTo("secret"),
-        //     When.TheLoginIsSubmitted(),
-        //   ],
-        //   [Then.ThereIsNotAnEmailError()]
-        // ),
-        // test1: Given.default(
-        //   [`0`],
-        //   [
-        //     When.TheEmailIsSetTo("adam@email.com"),
-        //     When.ThePasswordIsSetTo("secret"),
-        //   ],
-        //   [
-        //     Then.TheEmailIsNot("wade@rpc"),
-        //     Then.TheEmailIs("adam@email.com"),
-        //     Then.ThePasswordIs("secret"),
-        //     Then.ThePasswordIsNot("idk"),
-        //   ]
-        // ),
-        // test2: Given.default(
-        //   [`0`],
-        //   [When.TheEmailIsSetTo("adam@email.com")],
-        //   [Then.ThereIsNotAnEmailError()]
-        // ),
-        // test3: Given.default(
-        //   [`0`],
-        //   [When.TheEmailIsSetTo("bob"), When.TheLoginIsSubmitted()],
-        //   [Then.TheEmailIs("bob"), Then.ThereIsAnEmailError()]
-        // ),
-        // test3_5: Given.default(
-        //   [`0`],
-        //   [When.TheEmailIsSetTo("bob")],
-        //   [Then.ThereIsNotAnEmailError()]
-        // ),
-        // test4: Given.default(
-        //   [`0`],
-        //   [
-        //     When.TheEmailIsSetTo("adam@mail.com"),
-        //     When.ThePasswordIsSetTo("foso"),
-        //   ],
-        //   [Then.ThereIsNotAnEmailError()]
-        // ),
-        // test5: Given.default(
-        //   [`1`],
-        //   [
-        //     When.TheEmailIsSetTo("adam@mail.com"),
-        //     When.ThePasswordIsSetTo("fosz"),
-        //   ],
-        //   [Then.ThereIsNotAnEmailError()]
-        // ),
       },
       []
     )
@@ -27062,6 +27062,11 @@ var loginApp = createSlice({
     setEmail: (state, action) => {
       state.email = action.payload;
     },
+    setError: (state, action) => {
+      state.error = action.payload;
+    },
+    setDisableSubmit: (state, action) => {
+    },
     signIn: (state) => {
       state.error = checkForErrors(state);
     }
@@ -27105,7 +27110,11 @@ var app_default = () => {
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 var core = app_default();
 var selector = core.select.loginPageSelection;
-var actions = core.app.actions;
+var actions = {
+  ...core.app.actions,
+  setError: (error) => core.app.actions.setError(error),
+  setDisableSubmit: (disabled) => core.app.actions.setDisableSubmit(disabled)
+};
 var store = core.store;
 var noError = "no_error";
 var validateEmail2 = (email) => {
@@ -27250,7 +27259,9 @@ var loginPageImplreactDom = {
       });
     },
     ThereIsACredentialError: () => async (ssel, utils) => {
-      await assert$(`p[id='error']::-p-text(${credentialFailWarning})`, utils);
+      await assert$(`p[id='error']`, utils);
+      const errorText = await utils.getText(`p[id='error']`);
+      assert.equal(errorText, credentialFailWarning);
     }
   },
   checks: {

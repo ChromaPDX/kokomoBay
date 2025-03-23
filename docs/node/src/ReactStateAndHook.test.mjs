@@ -19397,7 +19397,6 @@ var BaseGiven = class {
         }
       });
       this.uberCatcher((e) => {
-        console.log("this.uberCatcher", e);
         console.error(e);
         this.error = e.error;
         tLog(e.stack);

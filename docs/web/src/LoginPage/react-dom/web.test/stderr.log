@@ -1,33 +1,9 @@
-TypeErrorTypeError: actions.setError is not a function
-    at onChange (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27134:36)
-    at callCallback2 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5559:22)
-    at invokeGuardedCallbackDev (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5584:24)
-    at invokeGuardedCallback (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5618:39)
-    at invokeGuardedCallbackAndCatchFirstError (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5621:33)
-    at executeDispatch (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8901:11)
-    at processDispatchQueueItemsInOrder (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8921:15)
-    at processDispatchQueue (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8930:13)
-    at dispatchEventsForPlugins (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8938:11)
-    at <anonymous> (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9062:20)
-    at batchedUpdates$1 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:20794:20)
-    at batchedUpdates (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5464:20)
-    at dispatchEventForPluginEventSystem (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9061:11)
-    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7363:13)
-    at dispatchEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7357:13)
-    at dispatchDiscreteEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7334:13)actions.setError is not a functionTypeErrorTypeError: actions.setError is not a function
-    at onChange (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27134:36)
-    at callCallback2 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5559:22)
-    at invokeGuardedCallbackDev (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5584:24)
-    at invokeGuardedCallback (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5618:39)
-    at invokeGuardedCallbackAndCatchFirstError (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5621:33)
-    at executeDispatch (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8901:11)
-    at processDispatchQueueItemsInOrder (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8921:15)
-    at processDispatchQueue (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8930:13)
-    at dispatchEventsForPlugins (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:8938:11)
-    at <anonymous> (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9062:20)
-    at batchedUpdates$1 (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:20794:20)
-    at batchedUpdates (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:5464:20)
-    at dispatchEventForPluginEventSystem (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:9061:11)
-    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7363:13)
-    at dispatchEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7357:13)
-    at dispatchDiscreteEvent (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:7334:13)actions.setError is not a function
+AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2AssertionError2AssertionError2: AssertionError2
+    at assert$ (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27190:5)AssertionError2

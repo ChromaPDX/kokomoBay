@@ -4415,7 +4415,6 @@ var BaseGiven = class {
         }
       });
       this.uberCatcher((e) => {
-        console.log("this.uberCatcher", e);
         console.error(e);
         this.error = e.error;
         tLog(e.stack);
@@ -4927,14 +4926,14 @@ var WebTesteranto = class extends Testeranto {
       testInterface,
       (cb) => {
         window.addEventListener("error", (e) => {
-          console.log("error A", e);
+          console.log("window.addEventListener error", e);
           cb(e);
         });
         window.addEventListener(
           "unhandledrejection",
           (event) => {
-            console.log("error B", event);
-            cb(event);
+            console.log("window.addEventListener unhandledrejection", event);
+            cb({ error: event.reason.message });
           }
         );
       }

@@ -1,0 +1,2 @@
+src/server.test.ts(1,36): error TS2307: Cannot find module 'testeranto/src/core' or its corresponding type declarations.
+src/server.test.ts(2,51): error TS2307: Cannot find module '../myTests/http.testeranto.test' or its corresponding type declarations.

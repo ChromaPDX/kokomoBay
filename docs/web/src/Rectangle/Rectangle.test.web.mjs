@@ -1,7 +1,7 @@
 import {
   Web_default,
   assert
-} from "../../chunk-YFVC7ICY.mjs";
+} from "../../chunk-7M7AVTJV.mjs";
 
 // feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md
 var rectangle_default = "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md";

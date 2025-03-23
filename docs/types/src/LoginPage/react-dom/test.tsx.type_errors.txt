@@ -1,0 +1,1 @@
+src/LoginPage/react-dom/test.tsx(94,37): error TS2339: Property 'getText' does not exist on type 'PM'.

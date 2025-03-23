@@ -72,7 +72,7 @@
         "format": "esm"
       },
       "../testeranto/src/lib/abstractBase.ts": {
-        "bytes": 25186,
+        "bytes": 25142,
         "imports": [
           {
             "path": "../Types",
@@ -201,7 +201,7 @@
         "format": "esm"
       },
       "../testeranto/src/Web.ts": {
-        "bytes": 2628,
+        "bytes": 2711,
         "imports": [
           {
             "path": "../testeranto/src/PM/web.ts",
@@ -1058,7 +1058,7 @@
         "format": "cjs"
       },
       "src/LoginPage/test.ts": {
-        "bytes": 3982,
+        "bytes": 3730,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1792,7 +1792,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 2258,
+        "bytes": 2432,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -1830,7 +1830,7 @@
         "format": "cjs"
       },
       "src/LoginPage/index.tsx": {
-        "bytes": 2876,
+        "bytes": 3047,
         "imports": [
           {
             "path": "react",
@@ -1856,7 +1856,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/test.tsx": {
-        "bytes": 7148,
+        "bytes": 7230,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1937,7 +1937,7 @@
       "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-YFVC7ICY.mjs",
+            "path": "docs/web/chunk-7M7AVTJV.mjs",
             "kind": "import-statement"
           }
         ],
@@ -1970,7 +1970,7 @@
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-YFVC7ICY.mjs",
+            "path": "docs/web/chunk-7M7AVTJV.mjs",
             "kind": "import-statement"
           }
         ],
@@ -2034,7 +2034,7 @@
             "bytesInOutput": 2459
           },
           "src/LoginPage/test.ts": {
-            "bytesInOutput": 3193
+            "bytesInOutput": 2933
           },
           "node_modules/react-redux/es/index.js": {
             "bytesInOutput": 287
@@ -2088,18 +2088,18 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 1406
+            "bytesInOutput": 1534
           },
           "src/LoginPage/index.tsx": {
-            "bytesInOutput": 3066
+            "bytesInOutput": 3211
           },
           "src/LoginPage/react-dom/test.tsx": {
-            "bytesInOutput": 2760
+            "bytesInOutput": 2841
           }
         },
-        "bytes": 1149577
+        "bytes": 1149671
       },
-      "docs/web/chunk-YFVC7ICY.mjs": {
+      "docs/web/chunk-7M7AVTJV.mjs": {
         "imports": [
           {
             "path": "util",
@@ -2241,7 +2241,7 @@
             "bytesInOutput": 459
           },
           "../testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 9367
+            "bytesInOutput": 9323
           },
           "../testeranto/src/lib/basebuilder.ts": {
             "bytesInOutput": 2828
@@ -2253,13 +2253,13 @@
             "bytesInOutput": 3498
           },
           "../testeranto/src/Web.ts": {
-            "bytesInOutput": 1223
+            "bytesInOutput": 1306
           },
           "node_modules/chai/index.mjs": {
             "bytesInOutput": 489
           }
         },
-        "bytes": 201800
+        "bytes": 201839
       }
     }
   }

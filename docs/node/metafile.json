@@ -9,7 +9,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 22757,
+        "bytes": 22705,
         "imports": [],
         "format": "esm"
       },
@@ -360,7 +360,7 @@
             "bytesInOutput": 473
           },
           "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 8694
+            "bytesInOutput": 8650
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
             "bytesInOutput": 2616
@@ -390,7 +390,7 @@
             "bytesInOutput": 647
           }
         },
-        "bytes": 797955
+        "bytes": 797911
       }
     }
   }

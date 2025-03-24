@@ -2,6 +2,7 @@
   "name": "Testing the ReactStateAndHook element",
   "givens": [
     {
+      "key": "test0",
       "name": "Default",
       "whens": [],
       "thens": [
@@ -16,6 +17,7 @@
       ]
     },
     {
+      "key": "test1",
       "name": "Default",
       "whens": [
         {
@@ -34,6 +36,7 @@
       ]
     },
     {
+      "key": "test2",
       "name": "Default",
       "whens": [
         {
@@ -58,6 +61,7 @@
       ]
     },
     {
+      "key": "test3",
       "name": "Default",
       "whens": [
         {

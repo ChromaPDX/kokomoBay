@@ -3,10 +3,10 @@ import { ITestSpecification } from "testeranto/src/Types";
 export type ILoginPageSpecs = {
   iinput: any;
   isubject: any;
-  istore: any;
+  istore: { testRenderer: renderer.ReactTestRenderer; coponent: any };
   iselection: any;
 
-  when: void;
+  when: renderer.ReactTestRenderer;
   then: unknown;
   given: (x) => unknown;
 
@@ -28,6 +28,7 @@ export type ILoginPageSpecs = {
     ThePasswordIsNot: [string];
     ThereIsAnEmailError: [];
     ThereIsACredentialError: [];
+    ThereIsNotACredentialError: [];
     ThereIsNotAnEmailError: [];
     TheSubmitButtonIsActive: [];
     TheSubmitButtonIsNotActive: [];
@@ -49,32 +50,51 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
       "Testing the LoginPage as react",
       {
         test0: Given.default(
-          ["0"],
+          ["you can type a bad email and the submit button is still inactive"],
           [When.TheEmailIsSetTo("a")],
           [Then.TheEmailIs("a"), Then.TheSubmitButtonIsNotActive()]
         ),
         test0_1: Given.default(
-          ["0"],
+          [
+            "by default, the submit button is not active and the email field is empty",
+          ],
           [],
           [Then.TheSubmitButtonIsNotActive(), Then.ThereIsNotAnEmailError()]
         ),
         test0_2: Given.default(
-          ["0"],
+          [
+            "Enter a good email. There is no email error, but the submit button is still disabled",
+          ],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.ThereIsNotAnEmailError(), Then.TheSubmitButtonIsNotActive()]
         ),
         test0_3: Given.default(
-          ["0"],
           [
-            When.TheEmailIsSetTo("larry@email.com"),
+            "Enter an email and a password, and the submit button is active. There is no email error nor a credential error",
+          ],
+          [
+            When.TheEmailIsSetTo("moe@email.com"),
             When.ThePasswordIsSetTo("secret"),
           ],
           [
             Then.TheSubmitButtonIsActive(),
-            Then.TheEmailIs("larry@email.com"),
-            // Then.ThereIsNotAnEmailError()
+            Then.TheEmailIs("moe@email.com"),
+            Then.ThereIsNotAnEmailError(),
+            Then.ThereIsNotACredentialError(),
           ]
         ),
+        test0_3_1: Given.default(
+          [
+            "Enter an email and a password, and then click the submit button. There is a credential error",
+          ],
+          [
+            When.TheEmailIsSetTo("larry@email.com"),
+            When.ThePasswordIsSetTo("secret"),
+            When.TheLoginIsSubmitted(),
+          ],
+          [Then.ThereIsNotAnEmailError(), Then.ThereIsACredentialError()]
+        ),
+
         test0_4: Given.default(
           ["Curly cannot login, even if he knows the password"],
           [
@@ -91,7 +111,7 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
             When.ThePasswordIsSetTo("secret"),
             When.TheLoginIsSubmitted(),
           ],
-          [Then.ThereIsNotAnEmailError()]
+          [Then.ThereIsAnEmailError()]
         ),
         test1: Given.default(
           [`0`],
@@ -117,9 +137,9 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
           [Then.TheEmailIs("bob"), Then.ThereIsAnEmailError()]
         ),
         test3_5: Given.default(
-          [`0`],
+          [`if you enter a bad email pattern, there will be an email error`],
           [When.TheEmailIsSetTo("bob")],
-          [Then.ThereIsNotAnEmailError()]
+          [Then.ThereIsAnEmailError()]
         ),
         test4: Given.default(
           [`0`],

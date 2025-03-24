@@ -1,14 +1,11 @@
+import Web3 from "web3";
 import Ganache from "ganache";
 import { IPartialNodeInterface } from "testeranto/src/Types";
+
 import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import { PM } from "../../testeranto/src/PM";
-import Web3 from "web3";
-const tInterface: IPartialNodeInterface<any> = {
-  // beforeAll: async () =>
-  //   (await solCompile(contractName)).contracts.find(
-  //     (c) => c.contractName === contractName
-  //   ),
 
+const tInterface: IPartialNodeInterface<any> = {
   beforeEach: (contract, i, artificer, testResource, iv, pm) => {
     return new Promise((res) => {
       const options = {};
@@ -18,7 +15,6 @@ const tInterface: IPartialNodeInterface<any> = {
 
       // start the ganache chain
       server.listen(port, async (err) => {
-        console.log(`ganache listening on port ${port}...`);
         if (err) throw err;
 
         const providerFarSide = server.provider;
@@ -43,7 +39,7 @@ const tInterface: IPartialNodeInterface<any> = {
 
         await page.setViewport({ width: 0, height: 0 });
         page.on("console", (msg) => {
-          console.log("web myfirstcontract > ", msg.args(), msg.text());
+          // console.log("web myfirstcontract > ", msg.args(), msg.text());
           // for (let i = 0; i < msg._args.length; ++i)
           //   console.log(`${i}: ${msg._args[i]}`);
         });
@@ -144,13 +140,13 @@ const tInterface: IPartialNodeInterface<any> = {
     })[0];
 
     await page.exposeFunction("readyForNext", (blockNumber) => {
-      console.log("readyForNext", blockNumber);
+      // console.log("readyForNext", blockNumber);
       semaphore = Math.trunc(blockNumber);
     });
 
     const p = new Promise((res, rej) => {
       const interval = setInterval(() => {
-        console.log("check andWhen", semaphore, props.step);
+        // console.log("check andWhen", semaphore, props.step);
         if (semaphore === props.step) {
           clearInterval(interval);
           res(true);
@@ -164,9 +160,9 @@ const tInterface: IPartialNodeInterface<any> = {
     await page.screenshot({
       path: "andWhen.jpg",
     });
-    console.log("halt");
+    // console.log("halt");
     await p;
-    console.log("continuing...");
+    // console.log("continuing...");
     await page.removeExposedFunction("readyForNext");
 
     return {
@@ -180,7 +176,6 @@ const tInterface: IPartialNodeInterface<any> = {
     testResource: ITTestResourceConfiguration,
     pm: PM
   ) => {
-    console.log("BUT THEN");
     let semaphore = false;
 
     const page = (await pm.browser.pages()).filter((x) => {
@@ -227,7 +222,6 @@ const tInterface: IPartialNodeInterface<any> = {
   },
 
   afterAll: async (s, a, pm) => {
-    console.log("AFTER ALL");
     const page = (await pm.browser.pages()).filter((x) => {
       const parsedUrl = new URL(x.url());
       parsedUrl.search = "";

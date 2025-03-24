@@ -2,7 +2,7 @@ import { ITestImplementation } from "testeranto/src/Types";
 import { assert } from "chai";
 
 import { ILoginPageSpecs } from "../test.js";
-import { credentialFailWarning, emailInputId, loginInputId, passwordInputId } from "../index.js";
+import { credentialFailWarning, credErrorId, emailInputId, emailwarning, loginInputId, passwordInputId } from "../index.js";
 import { PM_Web } from "../../../../testeranto/src/PM/web.js";
 import { PM } from "../../../../testeranto/src/PM/index.js";
 
@@ -21,7 +21,7 @@ const assert$ = async (sel: string, utils: PM) => {
 }
 
 // Add getText method to PM class
-PM.prototype.getText = async function(selector: string) {
+PM.prototype.getText = async function (selector: string) {
   const element = await this.$(selector);
   if (!element) {
     throw new Error(`Element with selector ${selector} not found`);
@@ -80,11 +80,13 @@ export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object>
       );
     },
     ThereIsAnEmailError: () => async (store, utils) => {
-      assert$("xpath//p[@id='invalid-email-warning' and contains(text(),'invalidEmail')] ", utils);
+      utils.customScreenShot({ path: "ThereIsAnEmailError.jpg" });
+      assert$(`#invalid-email-warning ::-p-text(${emailwarning})`, utils);
 
     },
     ThereIsNotAnEmailError: () => async (store, utils) => {
-      assert$("xpath//p[@id='invalid-email-warning' and contains(text(),'')] ", utils);
+      utils.customScreenShot({ path: "ThereIsNotAnEmailError.jpg" });
+      assert$("#invalid-email-warning ::-p-text()", utils);
     },
     TheSubmitButtonIsActive: () => (component, utils) => {
       return new Promise<void>(async (resolve, rej) => {
@@ -99,9 +101,13 @@ export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object>
       });
     },
     ThereIsACredentialError: () => async (ssel: any, utils: PM) => {
-      await assert$(`p[id='error']`, utils);
-      const errorText = await utils.getText(`p[id='error']`);
-      assert.equal(errorText, credentialFailWarning);
+      utils.customScreenShot({ path: 'ThereIsACredentialError.png' })
+      assert$(`#${credErrorId} ::-p-text(${credentialFailWarning})`, utils);
+    },
+    ThereIsNotACredentialError: () => async (ssel: any, utils: PM) => {
+      utils.customScreenShot({ path: 'ThereIsNotACredentialError.png' })
+      assert$(`#${credErrorId}`, utils);
+      assert.isNull(await utils.$(`#error ::-p-text(${credentialFailWarning})`))
     }
   },
 
@@ -111,133 +117,3 @@ export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object>
     },
   },
 };
-
-// export const LoginPageReactTestRendererTestInterface = {
-
-//   butThen: async function (s: any, thenCB, tr) {
-//     return thenCB(s);
-//   },
-//   beforeEach: async function (CComponent, props) {
-//     let component;
-//     let elem;
-//     await act(async () => {
-//       elem = CComponent()
-//       component = renderer.create(elem);
-//     });
-//     await component.root.props.store.dispatch(actions.reset());
-//     return component;
-//   },
-//   andWhen: async function (
-//     renderer: renderer.ReactTestRenderer,
-//     whenCB: (any) => any
-//   ): Promise<renderer.ReactTestRenderer> {
-//     await act(() => whenCB(renderer));
-
-//     return renderer
-//   }
-
-// }
-
-// export const LoginPageReactDomTestInterface = {
-//   afterEach: async function (store: any, ndx, artificer, utils) {
-//     utils.writeFileSync("aftereachlog", store);
-
-//     const page = (await utils.browser.pages()).filter((x) => {
-//       const parsedUrl = new URL(x.url());
-//       parsedUrl.search = "";
-//       const strippedUrl = parsedUrl.toString();
-
-//       return (
-//         strippedUrl ===
-//         "file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.html"
-//       );
-//       // return true;
-//     })[0];
-
-//     // await page.screenshot({
-//     //   path: "screenshot.jpg",
-//     // });
-
-//     return store;
-//   },
-// };
-
-//   // console.log(await utils.click('#email'))
-//   // const page = (await utils.browser.pages()).filter((x) => {
-//   //   const parsedUrl = new URL(x.url());
-//   //   parsedUrl.search = "";
-//   //   const strippedUrl = parsedUrl.toString();
-//   //   console.log("parsedUrl", parsedUrl)
-
-//   //   return (
-//   //     strippedUrl ===
-//   //     "file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.html"
-//   //   );
-//   //   // return true;
-//   // })[0];
-
-//   // console.log("EVAL ->", page.evaluate)
-//   // console.log("EVAL ->", await page.$('#email', el => console.log("el", el)))
-//   // await page.focus('#email')
-//   // await page.keyboard.type(email)
-//   // await page.keyboard.type('x')
-//   // await page.keyboard.type('c')
-
-//   // await page.$eval('body', el => console.log("el", el));
-//   // console.log("EVAL <-")
-
-//   // await page.screenshot({
-//   //   path: "screenshot2.jpg",
-//   // });
-
-//   // resolve();
-// });
-
-
-// utils.browser.pages().then((pages) => {
-//   (pages).filter(async (page) => {
-//     const parsedUrl = new URL(page.url());
-//     parsedUrl.search = "";
-//     const strippedUrl = parsedUrl.toString();
-
-//     if ((
-//       strippedUrl ===
-//       "file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.html"
-//     )) {
-
-//       console.log("mark666", email, page.$eval.toString())
-//       await page.$eval('#email', el => el.value = email);
-//       console.log("mark667", email, await page.content())
-//       utils.writeFileSync("TheEmailIsSetTo.txt", await page.content())
-//       await page.screenshot({
-//         path: "TheEmailIsSetTo.jpg",
-//       });
-//     }
-//   })[0];
-// })
-// const pp: Promise<any[]> = utils.browser.pages();
-
-// pp.then((pages) => {
-//   (pages).filter(async (page) => {
-//     const parsedUrl = new URL(page.url());
-//     parsedUrl.search = "";
-//     const strippedUrl = parsedUrl.toString();
-
-//     if ((
-//       strippedUrl ===
-//       "file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.html"
-//     )) {
-//       await page.$eval('#email', el => el.value = email);
-//       utils.writeFileSync("TheEmailIsSetTo.txt", await page.content())
-//       await page.screenshot({
-//         path: "TheEmailIsSetTo.jpg",
-//       });
-//     }
-//   })[0];
-// })
-
-
-// component.root
-//   .findByProps({ type: "email" })
-//   .props.onChange({ target: { value: email } });
-// return component;

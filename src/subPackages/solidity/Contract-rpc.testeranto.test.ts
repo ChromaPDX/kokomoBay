@@ -9,7 +9,7 @@ import {
   ITestSpecification,
 } from "testeranto/src/Types";
 
-import Ganache, { Server } from "ganache";
+import Ganache, { Server, ServerOptions } from "ganache";
 import Web3 from "web3";
 import { ethers } from "ethers";
 import { Contract as ContractEthers } from "ethers";
@@ -36,9 +36,19 @@ export default <IT extends IBaseTest>(
     //     (c) => c.contractName === contractName
     //   ),
 
-    beforeEach: (contract, i, artificer, testResource) => {
+    beforeEach: (contract, i, artificer, testResource, iv, util) => {
+      const logHandle = util.createWriteStream("ganache.log");
+
       return new Promise((res) => {
-        const options = {};
+        const options: ServerOptions<any> = {
+          logging: {
+            logger: {
+              log: (message: string) => {
+                util.write(logHandle, message);
+              },
+            },
+          },
+        };
         const port = testResource.ports[0];
 
         // https://github.com/trufflesuite/ganache#programmatic-use
@@ -46,7 +56,6 @@ export default <IT extends IBaseTest>(
 
         // start the ganache chain
         server.listen(port, async (err) => {
-          console.log(`ganache listening on port ${port}...`);
           if (err) throw err;
 
           const providerFarSide = server.provider;

@@ -97,7 +97,6 @@ export const solidityEsBuildConfig: IPlugin = (register): Plugin => {
     name: "solidity",
     setup(build) {
       build.onResolve({ filter: /^.*\.sol$/ }, (args) => {
-        // console.log(args);
         const path = args.path.split("/").slice(-1)[0].split(".")[0];
         return {
           path,
@@ -109,15 +108,12 @@ export const solidityEsBuildConfig: IPlugin = (register): Plugin => {
       });
       build.onLoad({ filter: /.*/, namespace: "solidity" }, async (argz) => {
         const { result, remmapedSources } = await solCompile(argz.path);
-        // console.log(argz, remmapedSources);
         register(argz.pluginData.importer, remmapedSources);
 
         return {
           contents: JSON.stringify(result),
           loader: "json",
           watchDirs: [process.cwd()],
-          // pluginData: "qwe",
-          // remmapedSources,
         };
       });
     },

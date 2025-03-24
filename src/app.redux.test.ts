@@ -9,7 +9,6 @@ import {
 
 import { ReduxTesteranto } from "./subPackages/redux.testeranto.test.js";
 
-// const implementations: IImplementation = {
 const implementations: any = {
   suites: {
     Default: "some default Suite!",
@@ -29,14 +28,14 @@ const implementations: any = {
   },
   thens: {
     TheEmailIs: (email) => (storeState) => {
-      if (typeof storeState === 'object' && storeState !== null) {
+      if (typeof storeState === "object" && storeState !== null) {
         assert.equal(storeState.email, email);
       } else {
         assert.equal(storeState, email);
       }
     },
     TheEmailIsNot: (email) => (storeState) => {
-      if (typeof storeState === 'object' && storeState !== null) {
+      if (typeof storeState === "object" && storeState !== null) {
         assert.notEqual(storeState.email, email);
       } else {
         assert.notEqual(storeState, email);

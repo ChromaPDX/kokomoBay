@@ -1,31 +1,47 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f10a2fc1-d879-486a-9e7f-c85ad08560dc"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/30bd2466-854f-4f9c-8b8d-ae833ab83782"}
 
 Suite:,0,Testing the LoginPage as react
+
+ test0
 
  Given: default
  When:,TheEmailIsSetTo: a
  Then:,TheEmailIs: a
  Then:,TheSubmitButtonIsNotActive: undefined
 
+ test0_1
+
  Given: default
  Then:,TheSubmitButtonIsNotActive: undefined
  Then:,ThereIsNotAnEmailError: undefined
 
-
+ test0_2
 
  Given: default
  When:,TheEmailIsSetTo: adam@email.com
  Then:,ThereIsNotAnEmailError: undefined
  Then:,TheSubmitButtonIsNotActive: undefined
 
+ test0_3
 
+ Given: default
+ When:,TheEmailIsSetTo: moe@email.com
+ When:,ThePasswordIsSetTo: secret
+ Then:,TheSubmitButtonIsActive: undefined
+ Then:,TheEmailIs: moe@email.com
+ Then:,ThereIsNotAnEmailError: undefined
+ Then:,ThereIsNotACredentialError: undefined
 
+ test0_3_1
 
  Given: default
  When:,TheEmailIsSetTo: larry@email.com
  When:,ThePasswordIsSetTo: secret
- Then:,TheSubmitButtonIsActive: undefined
- Then:,TheEmailIs: larry@email.com
+ When:,TheLoginIsSubmitted: undefined
+ Then:,ThereIsNotAnEmailError: undefined
+ Then:,ThereIsACredentialError: undefined
+
+ test0_4
 
  Given: default
  When:,TheEmailIsSetTo: curly@email.com
@@ -33,28 +49,16 @@ Suite:,0,Testing the LoginPage as react
  When:,TheLoginIsSubmitted: undefined
  Then:,TheEmailIs: curly@email.com
  Then:,ThereIsACredentialError: undefined
-TypeError: utils.getText is not a function
-    at file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27263:37
-    at async Object.butThen (file:///Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs:27327:14)
-    at async Then.butThen (file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4870:18)
-    at async Given.give (file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4439:19)
-    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4342:22)
-    at async file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4641:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4669:29)
-    at async WebTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/web/chunk-7M7AVTJV.mjs:4945:57)
-    at async pptr:evaluate;file%3A%2F%2F%2FUsers%2Fadam%2FCode%2Ftesteranto%2Fdist%2Fprebuild%2Frun-tests.mjs%3A516%3A20:6:16
+
+ test0_5
 
  Given: default
  When:,TheEmailIsSetTo: BAD EMAIL
  When:,ThePasswordIsSetTo: secret
  When:,TheLoginIsSubmitted: undefined
- Then:,ThereIsNotAnEmailError: undefined
+ Then:,ThereIsAnEmailError: undefined
 
-
-
-
-
-
+ test1
 
  Given: default
  When:,TheEmailIsSetTo: adam@email.com
@@ -64,17 +68,13 @@ TypeError: utils.getText is not a function
  Then:,ThePasswordIs: secret
  Then:,ThePasswordIsNot: idk
 
+ test2
+
  Given: default
  When:,TheEmailIsSetTo: adam@email.com
  Then:,ThereIsNotAnEmailError: undefined
 
-
-
-
-
-
-
-
+ test3
 
  Given: default
  When:,TheEmailIsSetTo: bob
@@ -82,58 +82,22 @@ TypeError: utils.getText is not a function
  Then:,TheEmailIs: bob
  Then:,ThereIsAnEmailError: undefined
 
-
-
-
-
-
-
-
-
+ test3_5
 
  Given: default
  When:,TheEmailIsSetTo: bob
- Then:,ThereIsNotAnEmailError: undefined
+ Then:,ThereIsAnEmailError: undefined
 
-
-
-
-
-
-
-
-
-
+ test4
 
  Given: default
  When:,TheEmailIsSetTo: adam@mail.com
  When:,ThePasswordIsSetTo: foso
  Then:,ThereIsNotAnEmailError: undefined
 
-
-
-
-
-
-
-
-
-
-
+ test5
 
  Given: default
  When:,TheEmailIsSetTo: adam@mail.com
  When:,ThePasswordIsSetTo: fosz
  Then:,ThereIsNotAnEmailError: undefined
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,16 +1,13 @@
 import { ethers } from "ethers";
 import Ganache from "ganache";
-import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import Web3 from "web3";
+
+import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
+
 import MyFirstContract from "./contracts/MyFirstContract.sol";
 
 class Server {
   receiveTestResourceConfig(testResource: ITTestResourceConfiguration) {
-    console.log(
-      "hello contract server receiveTestResourceConfig",
-      testResource
-    );
-
     const contract = MyFirstContract.contracts.find(
       (c) => c.contractName === "MyFirstContract"
     ) as { contractName: string; abi: any; bytecode: any };
@@ -23,7 +20,6 @@ class Server {
 
     // start the ganache chain
     server.listen(port, async (err) => {
-      console.log(`ganache listening on port ${port}...`);
       if (err) throw err;
 
       const providerFarSide = server.provider;
@@ -72,7 +68,7 @@ class Server {
       // });
     });
     server.on("close", (data) => {
-      console.log("ganache closing");
+      // no-op
     });
   }
 }

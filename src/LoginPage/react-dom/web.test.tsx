@@ -1,7 +1,7 @@
 import Testeranto from "testeranto/src/Web";
 import React, { useEffect, useRef } from "react";
-import { CElement, createElement } from "react";
-import ReactDom, { createPortal } from "react-dom/client";
+import { createElement } from "react";
+import ReactDom from "react-dom/client";
 
 import { LoginPageSpecs } from "../test.js";
 import LoginPage, { actions } from "../index.js";
@@ -26,9 +26,6 @@ const TesterantoComponent = ({
   done: (ref: React.MutableRefObject<any>) => any;
   innerComp: JSX.Element;
 }) => {
-
-  // const i = innerComp();
-
   const myContainer = useRef<any>(null);
   useEffect(() => {
     done(myContainer.current);
@@ -48,26 +45,7 @@ export default Testeranto<IThenShape>(
 
         if (htmlElement) {
           const domRoot = ReactDom.createRoot(htmlElement);
-
-          // domRoot.render(
-          //   createElement(
-          //     TesterantoComponent,
-          //     {
-          //       // ...initialProps,
-          //       innerComp: reactElement,
-          //       done: (reactElement) => {
-          //         resolve({
-          //           htmlElement,
-          //           reactElement,
-          //           domRoot,
-          //         });
-          //       },
-          //     },
-          //     []
-          //   )
-          // );
           await utils.customScreenShot({ path: "prerender.jpg" })
-
           resolve({ htmlElement, reactElement, domRoot });
 
         }
@@ -79,26 +57,11 @@ export default Testeranto<IThenShape>(
       initializer,
       artificer,
       testResource,
+      iv,
       utils
     ): Promise<IStore> => {
-
+      // debugger
       return new Promise((resolve, rej) => {
-
-        // createPortal(
-        //   TesterantoComponent({
-        //     innerComp: () =>
-        //       reactElement({}),
-        //     done: (reactElement: any) => {
-        //       resolve(reactElement);
-        //       // process.nextTick(() => {
-        //       //   resolve(reactElement);
-        //       // });
-        //     },
-        //   }),
-        //   domRoot
-        // );
-
-        // const domRoot = ReactDom.createRoot(htmlElement);
 
         const r = reactElement()
         const component = createElement(
@@ -121,22 +84,6 @@ export default Testeranto<IThenShape>(
 
         domRoot.render(component);
 
-
-
-        // resolve(subject);
-        // const tc = TesterantoComponent({
-        //   innerComp: () =>
-        //     testInput({}),
-        //   done: (reactElement: any) => {
-        //     console.log("mark9");
-        //     resolve(reactElement);
-        //     // process.nextTick(() => {
-        //     //   resolve(reactElement);
-        //     // });
-        //   },
-        // });
-        // console.log("mark9", tc);
-        // createPortal(tc, subject.domRoot);
       });
     },
     andWhen: function (s: IStore, whenCB, tr, utils): Promise<ISelection> {

@@ -1,19 +1,27 @@
-test resources: ,{"scheduled":true,"name":"./src/ReactStateAndHook.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f10a2fc1-d879-486a-9e7f-c85ad08560dc"}
+test resources: ,{"scheduled":true,"name":"./src/ReactStateAndHook.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ReactStateAndHook.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/30bd2466-854f-4f9c-8b8d-ae833ab83782"}
 
 Suite:,0,Testing the ReactStateAndHook element
+
+ test0
 
  Given: Default
  Then:,TheCounterIs: 0
 
+ test1
+
  Given: Default
  When:,IClick: undefined
  Then:,TheCounterIs: 1
+
+ test2
 
  Given: Default
  When:,IClick: undefined
  When:,IClick: undefined
  When:,IClick: undefined
  Then:,TheCounterIs: 3
+
+ test3
 
  Given: Default
  When:,IClick: undefined

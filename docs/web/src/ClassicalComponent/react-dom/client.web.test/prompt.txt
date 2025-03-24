@@ -1,0 +1,14 @@
+
+/add src/ClassicalComponent/test.specification.ts
+/add src/ClassicalComponent/react-dom/client.web.test.tsx
+  
+/read docs/types/src/ClassicalComponent/test.specification.ts.type_errors.txt
+/read docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt
+  
+/read docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json
+/read docs/web/src/ClassicalComponent/react-dom/client.web.test/stdout.log
+/read docs/web/src/ClassicalComponent/react-dom/client.web.test/stderr.log
+
+/load docs/web/src/ClassicalComponent/react-dom/client.web.test/featurePrompt.txt
+
+/code Fix the failing tests described in docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/ClassicalComponent/test.specification.ts.type_errors.txt, docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."

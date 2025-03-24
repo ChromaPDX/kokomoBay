@@ -16,6 +16,7 @@ export default Testeranto(
       rectangleProto: Rectangle,
       init: (c?: any) => (x: any) => (y: any) => Rectangle,
       tr: ITTestResourceConfiguration,
+      i: any,
       initialValues: any,
       pm: PM_Web
     ): Promise<Rectangle> => {

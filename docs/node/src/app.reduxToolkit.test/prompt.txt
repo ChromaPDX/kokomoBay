@@ -1,0 +1,14 @@
+
+/add src/subPackages/reduxToolkit.testeranto.test.ts
+/add src/app.reduxToolkit.test.ts
+  
+/read docs/types/src/subPackages/reduxToolkit.testeranto.test.ts.type_errors.txt
+/read docs/types/src/app.reduxToolkit.test.ts.type_errors.txt
+  
+/read docs/node/src/app.reduxToolkit.test/tests.json
+/read docs/node/src/app.reduxToolkit.test/stdout.log
+/read docs/node/src/app.reduxToolkit.test/stderr.log
+
+/load docs/node/src/app.reduxToolkit.test/featurePrompt.txt
+
+/code Fix the failing tests described in docs/node/src/app.reduxToolkit.test/tests.json. Correct any type signature errors described in the files [docs/types/src/subPackages/reduxToolkit.testeranto.test.ts.type_errors.txt, docs/types/src/app.reduxToolkit.test.ts.type_errors.txt]. Implement any method which throws "Function not implemented."

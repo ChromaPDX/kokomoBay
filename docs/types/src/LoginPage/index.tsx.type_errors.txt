@@ -1,5 +1,0 @@
-src/LoginPage/index.tsx(11,58): error TS2339: Property 'setError' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: any) => void; setEmail: (s: IStoreState, b: any) => void; signIn: (s: IStoreState) => void; }, string>'.
-
-src/LoginPage/index.tsx(12,61): error TS2339: Property 'setDisableSubmit' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: any) => void; setEmail: (s: IStoreState, b: any) => void; signIn: (s: IStoreState) => void; }, string>'.
-
-src/LoginPage/index.tsx(52,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.

@@ -1,1 +1,0 @@
-src/ClassicalComponent/react-test-renderer/test.implementation.ts(7,34): error TS2314: Generic type 'IImpl' requires 1 type argument(s).

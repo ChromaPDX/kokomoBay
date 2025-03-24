@@ -71,6 +71,12 @@ const implementations: IImpl = {
     TheSubmitButtonIsNotActive: () => async (reactElem: any, utils: PM) => {
       assert.isTrue(reactElem.props.store.getState().disableSubmit);
       return reactElem;
+    },
+    ThereIsNotACredentialError: () => async (reactElem: any, utils: PM) => {
+      const state = reactElem.props.store.getState();
+      assert.equal(state.error, '');
+      assert.isFalse(state.disableSubmit);
+      return reactElem;
     }
   },
 

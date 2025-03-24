@@ -1,12 +1,16 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f10a2fc1-d879-486a-9e7f-c85ad08560dc"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/Rectangle/Rectangle.test.web","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/30bd2466-854f-4f9c-8b8d-ae833ab83782"}
 
 Suite:,0,Testing the Rectangle class
+
+ test0
 
  Given: Default
  When:,setWidth: 4
  When:,setHeight: 9
  Then:,getWidth: 4
  Then:,getHeight: 9
+
+ test1
 
  Given: Default
  When:,setWidth: 4
@@ -16,15 +20,21 @@ Suite:,0,Testing the Rectangle class
  Then:,area: 20
  Then:,AreaPlusCircumference: 38
 
+ test2
+
  Given: Default
  When:,setHeight: 4
  When:,setWidth: 33
  Then:,area: 132
 
+ test3
+
  Given: Default
  When:,setHeight: 5
  When:,setWidth: 5
  Then:,area: 25
+
+ test4
 
  Given: Default
  When:,setHeight: 6

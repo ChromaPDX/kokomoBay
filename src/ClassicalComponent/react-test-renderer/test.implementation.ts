@@ -3,8 +3,10 @@ import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-rende
 
 import type { IProps } from "../index";
 import { IClassicalComponentSpec } from "../test.shape";
-
-export const testImplementation: BaseIImple<IClassicalComponentSpec, IProps> = {
+import { PM } from "testeranto/src/PM";
+// import { ReactTestRenderer } from "react-test-renderer";
+import renderer, { act, ReactTestRenderer } from "react-test-renderer";
+export const testImplementation: BaseIImple<IClassicalComponentSpec> = {
   suites: {
     Default: "default",
   },
@@ -14,13 +16,15 @@ export const testImplementation: BaseIImple<IClassicalComponentSpec, IProps> = {
     },
   },
   whens: {
-    IClickTheButton: () => (component) => {
+    IClickTheButton: () => async (component) => {
       component.root.findByType("button").props.onClick();
+    },
+    IClickTheHeader: () => async (component: any, utils: PM) => {
+      component.root.findByType("h1").props.onClick();
     },
   },
   thens: {
     ThePropsIs: (expectation) => (component) => {
-      // console.log("ThePropsIs", (component.toJSON() as { children: object[] }).children[1]);
       return assert.deepEqual(
         (component.toJSON() as { children: object[] }).children[1],
         {
@@ -31,16 +35,17 @@ export const testImplementation: BaseIImple<IClassicalComponentSpec, IProps> = {
       );
     },
 
-    TheStatusIs: (expectation) => (component) => {
-      throw new Error("not yet implemented");
+    TheStatusIs: (expectation) => (component: ReactTestRenderer) => {
+      // component.root.findByProps({ id: "theStat" }).props.onClick();
+      // throw new Error("not yet implemented");
       // console.log(component.toJSON());
-      // return assert.deepEqual((component.toJSON() as { children: object[] }).children[3], {
-      //   type: 'pre',
-      //   props: { id: 'theState' },
-      //   children: [
-      //     JSON.stringify(expectation)
-      //   ]
-      // })
+      return assert.deepEqual(
+        component.root.findByProps({ id: "theStat" }).props,
+        {
+          id: "theStat",
+          children: JSON.stringify(expectation),
+        }
+      );
     },
   },
   checks: {

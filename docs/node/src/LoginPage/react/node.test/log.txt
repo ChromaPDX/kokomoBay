@@ -1,0 +1,221 @@
+test resources: ,{"scheduled":true,"name":"./src/LoginPage/react/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/0f674784-a071-4e3e-9ce1-1a7520aa49bd"}
+
+Suite:,0,Testing the LoginPage as react
+
+ test0
+
+ Given: default
+ When:,TheEmailIsSetTo: a
+ Then:,TheEmailIs: a
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:68:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_1
+
+ Given: default
+ Then:,TheSubmitButtonIsNotActive: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:102:43
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_2
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@email.com
+ Then:,ThereIsNotAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:88:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_3
+
+ Given: default
+ When:,TheEmailIsSetTo: moe@email.com
+ When:,ThePasswordIsSetTo: secret
+ Then:,TheSubmitButtonIsActive: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:98:44
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_3_1
+
+ Given: default
+ When:,TheEmailIsSetTo: larry@email.com
+ When:,ThePasswordIsSetTo: secret
+ When:,TheLoginIsSubmitted: undefined
+ Then:,ThereIsNotAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:88:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_4
+
+ Given: default
+ When:,TheEmailIsSetTo: curly@email.com
+ When:,ThePasswordIsSetTo: secret
+ When:,TheLoginIsSubmitted: undefined
+ Then:,TheEmailIs: curly@email.com
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:68:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test0_5
+
+ Given: default
+ When:,TheEmailIsSetTo: BAD EMAIL
+ When:,ThePasswordIsSetTo: secret
+ When:,TheLoginIsSubmitted: undefined
+ Then:,ThereIsAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:84:45
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test1
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@email.com
+ When:,ThePasswordIsSetTo: secret
+ Then:,TheEmailIsNot: wade@rpc
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:72:45
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test2
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@email.com
+ Then:,ThereIsNotAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:88:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test3
+
+ Given: default
+ When:,TheEmailIsSetTo: bob
+ When:,TheLoginIsSubmitted: undefined
+ Then:,TheEmailIs: bob
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:68:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test3_5
+
+ Given: default
+ When:,TheEmailIsSetTo: bob
+ Then:,ThereIsAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:84:45
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test4
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@mail.com
+ When:,ThePasswordIsSetTo: foso
+ Then:,ThereIsNotAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:88:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+
+ test5
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@mail.com
+ When:,ThePasswordIsSetTo: fosz
+ Then:,ThereIsNotAnEmailError: undefined
+TypeError: Cannot read properties of undefined (reading 'getState')
+    at file:///Users/adam/Code/kokomoBay/docs/node/src/LoginPage/react/node.test.mjs?cacheBust=1742837426618:88:42
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:11:37)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
+    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)

@@ -87,12 +87,12 @@ export const AppSpecification: ITestSpecification<IAppSpecification> = (
       "Testing the Redux store",
       {
         test0: Given.AnEmptyState(
-          ["hello"],
+          ["Set the email, check the email"],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.TheEmailIs("adam@email.com")]
         ),
         test1: Given.AStateWithEmail(
-          ["hello"],
+          ["set the default email and then check"],
           [],
           [
             Then.TheEmailIsNot("adam@email.com"),
@@ -101,17 +101,17 @@ export const AppSpecification: ITestSpecification<IAppSpecification> = (
           "bob@mail.com"
         ),
         test2: Given.AnEmptyState(
-          ["hello"],
+          ["Set the email, set it again, and then check"],
           [When.TheEmailIsSetTo("hello"), When.TheEmailIsSetTo("aloha")],
           [Then.TheEmailIs("aloha")]
         ),
         test3: Given.AnEmptyState(
-          [`aloha`, `hello`],
+          ["the default email is nothing"],
           [],
           [Then.TheEmailIs("")]
         ),
         test4: Given.AnEmptyState(
-          [`aloha`, `hello`],
+          ["Set the email, check the email"],
           [When.TheEmailIsSetTo("hey there")],
           [Then.TheEmailIs("hey there")]
         ),

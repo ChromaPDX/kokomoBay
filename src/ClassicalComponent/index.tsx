@@ -1,6 +1,6 @@
 import React from "react";
 
-export type IProps = any;  //{ foo: string };
+export type IProps = any;
 export type IState = { count: number };
 
 export class ClassicalComponent extends React.Component<IProps, IState> {
@@ -21,7 +21,7 @@ export class ClassicalComponent extends React.Component<IProps, IState> {
         <pre id="theStat">{JSON.stringify(this.state)}</pre>
         <p>count: {this.state.count} times</p>
         <button id="theButton" onClick={async () => {
-          this.setState({ count: this.state.count + 11 })
+          this.setState({ count: this.state.count + 1 })
         }}>
           Click
         </button>

@@ -1,2 +1,0 @@
-src/LoginPage/react-test-renderer/test.tsx(45,32): error TS2322: Type '(component: any) => void' is not assignable to type '(zel: any, utils: PM) => Promise<void>'.
-  Type 'void' is not assignable to type 'Promise<void>'.

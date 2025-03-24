@@ -35,6 +35,7 @@ export const credentialFailWarning = "You entered an incorrect email, password, 
 export const loginInputId = "login"
 export const emailInputId = "email"
 export const passwordInputId = "password"
+export const credErrorId = "cred-error"
 
 export function LoginPage(): React.JSX.Element {
   const selection = useSelector(selector);
@@ -56,7 +57,7 @@ export function LoginPage(): React.JSX.Element {
         }}
       />
 
-      <p id="invalid-email-warning" className="warning" style={{color: 'red'}}>
+      <p id="invalid-email-warning" className="warning" style={{ color: 'red' }}>
         {selection.error === 'invalidEmail' ? emailwarning : ''}
       </p>
 
@@ -67,22 +68,29 @@ export function LoginPage(): React.JSX.Element {
         type="password"
         value={selection.password} onChange={(e) => store.dispatch(actions.setPassword(e.target.value as any))} />
 
-      <p id="error" style={{color: 'red'}}>
+      <p id={credErrorId} style={{ color: 'red' }}>
         {selection.error === 'credentialFail' ? credentialFailWarning : ''}
       </p>
 
       <br />
 
-      <button id={loginInputId} disabled={selection.disableSubmit} onClick={(event) => {
-        event.preventDefault();
+      <button id={loginInputId} disabled={selection.disableSubmit} onClick={(event?) => {
+
+        event && event.preventDefault();
+
         const isValid = validateEmail(selection.email);
+
         store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+
         if (isValid) {
+
           // Simulate credential check
           const isCredentialValid = selection.email === 'adam@email.com' && selection.password === 'secret';
           store.dispatch(actions.setError(isCredentialValid ? noError : 'credentialFail'));
           store.dispatch(actions.setDisableSubmit(!isCredentialValid));
+
           if (isCredentialValid) {
+
             store.dispatch(actions.signIn());
           }
         }

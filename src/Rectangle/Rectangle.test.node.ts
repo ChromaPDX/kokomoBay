@@ -1,7 +1,6 @@
 import Testeranto from "testeranto/src/Node";
-
-import { INodeTestInterface } from "../../../testeranto/src/lib/types";
 import { IPartialNodeInterface } from "testeranto/src/Types";
+
 import Rectangle from "../Rectangle";
 import { RectangleTesterantoBasePrototype } from "../Rectangle.test";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";
@@ -18,24 +17,13 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
       res(input);
     });
   },
-  // beforeEach: async (): Promise<any> => {
-  //   // console.log("beta");
-  //   return new Promise((resolve, rej) => {
-  //     resolve(React.createElement(testInput, {}, []));
-  //   });
-  // },
+
   andWhen: async function (s: Rectangle, whenCB): Promise<Rectangle> {
     return whenCB(s);
   },
 
   assertThis: (x) => {},
-  afterAll: async (store, artificer, utils) => {
-    // const page = (await browser.pages())[0]; //.map((x) => x.url())); // === 'file:///Users/adam/Code/kokomoBay/dist/web/src/ClassicalComponent/test.html'))[0]
-    // utils.ipc.postMessage({
-    //   teardown: guid,
-    // });
-    // console.log("delta!", guid);
-  },
+  afterAll: async (store, artificer, utils) => {},
 };
 
 export default Testeranto(

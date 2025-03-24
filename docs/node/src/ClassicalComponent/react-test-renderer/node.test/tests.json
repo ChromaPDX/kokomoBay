@@ -1,0 +1,184 @@
+{
+  "name": "a classical react component",
+  "givens": [
+    {
+      "key": "test0",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheHeader: undefined",
+          "error": true
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThePropsIs: [object Object]",
+          "error": true
+        },
+        {
+          "name": "TheStatusIs: [object Object]",
+          "error": false
+        }
+      ],
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }",
+          "showDiff": true,
+          "actual": {
+            "type": "pre",
+            "props": {
+              "id": "theProps"
+            },
+            "children": [
+              "{}"
+            ]
+          },
+          "expected": {
+            "type": "pre",
+            "props": {
+              "id": "theProps"
+            },
+            "children": {
+              "children": []
+            }
+          },
+          "operator": "deepStrictEqual",
+          "stack": "AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)"
+        },
+        "AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "key": "test1",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "IClickTheButton: undefined"
+        }
+      ],
+      "thens": [
+        {
+          "name": "ThePropsIs: [object Object]",
+          "error": true
+        },
+        {
+          "name": "TheStatusIs: [object Object]",
+          "error": false
+        }
+      ],
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }",
+          "showDiff": true,
+          "actual": {
+            "type": "pre",
+            "props": {
+              "id": "theProps"
+            },
+            "children": [
+              "{}"
+            ]
+          },
+          "expected": {
+            "type": "pre",
+            "props": {
+              "id": "theProps"
+            },
+            "children": {
+              "children": []
+            }
+          },
+          "operator": "deepStrictEqual",
+          "stack": "AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)"
+        },
+        "AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }\n    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)\n    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)\n    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)"
+      ],
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "key": "test2",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheStatusIs: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "0"
+      ]
+    },
+    {
+      "key": "test3",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "IClickTheButton: undefined"
+        },
+        {
+          "name": "IClickTheButton: undefined"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheStatusIs: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "0"
+      ]
+    }
+  ],
+  "fails": [],
+  "features": [
+    "0"
+  ]
+}

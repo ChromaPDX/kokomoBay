@@ -1,18 +1,18 @@
-// import test, {
-//   Stream,
-//   renderToStaticMarkup,
-//   renderToStaticNodeStream,
-//   ISubject,
-//   IStore,
-//   ISelection,
-//   IThenShape
-// } from "testeranto/src/SubPackages/react-dom/component/node";
+import test, {
+  // Stream,
+  // renderToStaticMarkup,
+  // renderToStaticNodeStream,
+  // ISubject,
+  // IStore,
+  // ISelection,
+  // IThenShape
+} from "testeranto/src/SubPackages/react-dom/component/node";
 // import { ITestSpecification } from "testeranto/src/core";
 
 import { assert } from "chai";
 
 import { ClassicalComponent } from "..";
-import test from "node:test";
+// import test from "node:test";
 import { renderToStaticMarkup } from "react-dom/server";
 // import { ITestSpecification } from "testeranto/src/lib/core";
 import { ISubject, IStore, ISelection, IThenShape } from "../../../../testeranto/src/SubPackages/react-dom/component/node";
@@ -20,6 +20,8 @@ import { ISubject, IStore, ISelection, IThenShape } from "../../../../testeranto
 // import { ClassicalComponentSpec } from "../test.specification";
 
 import { ITestSpecification } from "testeranto/src/Types";
+
+import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
 
 const snapshot = `<div style="border:3px solid green"><h1>Hello Marcus</h1><pre id="theProps">{}</pre><p>foo: </p><pre id="theState">{&quot;count&quot;:0}</pre><p>count: 0 times</p><button id="theButton">Click</button></div>`;
 const readableStream = new ReadableStream({
@@ -103,44 +105,46 @@ const ClassicalComponentSpec: ITestSpecification<
     ];
   }
 
-export default test(
-  {
-    suites: {
-      Default: "some default Suite",
-    },
-    givens: {
-      AnEmptyState: () => () => {
-        return { props: { foo: "bar" } };
-      },
-    },
-    whens: {},
-    thens: {
-      renderToStaticMarkup:
-        (expectation) =>
-          async (reactNodes) => {
-            assert.deepEqual(
-              renderToStaticMarkup(reactNodes),
-              expectation
-            );
-          },
-
-      renderToStaticNodeStream:
-        (expectation) =>
-          async (reactNodes) => {
-            // console.log((renderToStaticNodeStream(reactNodes)))
-            // assert.deepEqual(
-            //   (renderToStaticNodeStream(reactNodes).read().toString()),
-            //   expectation.toString()
-            // );
-
-          }
-    },
-    checks: {
-      AnEmptyState: () => () => {
-        return {};
-      },
+const impl: BaseIImple<IClassicalComponentSpec> = {
+  suites: {
+    Default: "some default Suite",
+  },
+  givens: {
+    AnEmptyState: () => () => {
+      return { props: { foo: "bar" } };
     },
   },
+  whens: {},
+  thens: {
+    renderToStaticMarkup:
+      (expectation) =>
+        async (reactNodes) => {
+          assert.deepEqual(
+            renderToStaticMarkup(reactNodes),
+            expectation
+          );
+        },
+
+    renderToStaticNodeStream:
+      (expectation) =>
+        async (reactNodes) => {
+          // console.log((renderToStaticNodeStream(reactNodes)))
+          // assert.deepEqual(
+          //   (renderToStaticNodeStream(reactNodes).read().toString()),
+          //   expectation.toString()
+          // );
+
+        }
+  },
+  checks: {
+    AnEmptyState: () => () => {
+      return {};
+    },
+  },
+}
+
+export default test(
+  impl,
   ClassicalComponentSpec,
   ClassicalComponent,
 );

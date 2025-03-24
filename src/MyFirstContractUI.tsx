@@ -73,7 +73,6 @@ export function MyFirstContractUI(props: {
         // Listen for new blocks, and retrieve all transactions in each block
         provider.on("block", async (blockNumber) => {
           const block = await provider.getBlock(blockNumber);
-          console.log("New block:", block);
           setNonce(blockNumber)
           const c = (await contract.get({ gasLimit: 150000 })).toString();
           setCounter(c)
@@ -94,19 +93,11 @@ export function MyFirstContractUI(props: {
     <h3 id="nonce">{nonce}</h3>
 
     <button id="increment" onClick={async () => {
-      // setLoading(true)
       await contract.inc({ gasLimit: 150000 })
-      // setCounter((await contract.get({ gasLimit: 150000 })).toString())
-      // setLoading(false)
-      // window['readyForNext'] && window['readyForNext']()
     }} >Increment</button>
 
     <button id="decrement" onClick={async () => {
-      // setLoading(true)
       await contract.dec({ gasLimit: 150000 })
-      // setCounter((await contract.get({ gasLimit: 150000 })).toString())
-      // setLoading(false)
-      // window['readyForNext'] && window['readyForNext']()
     }} >Decrement</button>
 
     <pre id="counter">{counter}</pre>

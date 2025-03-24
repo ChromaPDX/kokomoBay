@@ -1,6 +1,6 @@
 import test from "testeranto/src/SubPackages/react/jsx/web";
 
-import LoginPage from "../index.js";
+import LoginPage, { actions } from "../index.js";
 import {
   LoginPageSpecs
 } from "../test.js";
@@ -11,6 +11,9 @@ export default test(
   LoginPageSpecs,
   LoginPage,
   {
-
+    afterEach: async (x) => {
+      await x().props.store.dispatch(actions.reset())
+      return x;
+    }
   }
 );

@@ -1,16 +1,18 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  LoginPageSpecs,
+  LoginPageSpecs
+} from "../../../chunk-6GJCGFL4.mjs";
+import {
   LoginPage_default,
-  actions
-} from "../../../chunk-VMADFP4S.mjs";
-import "../../../chunk-CLXNHOZW.mjs";
+  actions,
+  store
+} from "../../../chunk-X2TRDJKR.mjs";
 import {
   assert
 } from "../../../chunk-BFDDKUUP.mjs";
 import {
   Node_default
-} from "../../../chunk-MI7ZHO2E.mjs";
+} from "../../../chunk-BMW762LB.mjs";
 import "../../../chunk-M7BKJ4RF.mjs";
 
 // ../testeranto/dist/module/src/SubPackages/react/jsx/index.js
@@ -22,21 +24,37 @@ var testInterface = {
   //   //   resolve(x());
   //   // });
   // },
-  beforeEach: async (subject, initializer, artificer) => {
+  // beforeEach: async (subject, initializer, artificer): Promise<IStore> => {
+  //   return new Promise((resolve, rej) => {
+  //     resolve(React.createElement(subject));
+  //   });
+  // },
+  andWhen: async (s, whenCB) => {
+    await whenCB(s());
     return new Promise((resolve, rej) => {
-      const x = React.createElement(subject);
-      console.log("react-element", x);
-      resolve(x);
+      resolve(React.createElement(s));
     });
   },
-  andWhen: function(s, whenCB) {
-    return whenCB(s);
+  butThen: async (subject, thenCB) => {
+    await thenCB(subject());
+    return new Promise((resolve, rej) => {
+      resolve(React.createElement(subject));
+    });
   }
 };
 
 // ../testeranto/dist/module/src/SubPackages/react/jsx/node.js
-var node_default = (testImplementations, testSpecifications, testInput, testInterface2) => {
-  return Node_default(testInput, testSpecifications, testImplementations, Object.assign(Object.assign({}, testInterface), testInterface2));
+var node_default = (testImplementations, testSpecifications, testInput, testInterface2 = testInterface) => {
+  return Node_default(
+    testInput,
+    testSpecifications,
+    testImplementations,
+    testInterface2
+    // {
+    //   ...baseInterface,
+    //   ...testInterface,
+    // }
+  );
 };
 
 // src/LoginPage/react/test.tsx
@@ -51,15 +69,15 @@ var implementations = {
   },
   whens: {
     TheLoginIsSubmitted: () => async (reactElem, utils) => {
-      reactElem.props.store.dispatch(actions.signIn());
+      store.dispatch(actions.signIn());
       return reactElem;
     },
     TheEmailIsSetTo: (email) => async (reactElem, utils) => {
-      reactElem.props.store.dispatch(actions.setEmail(email));
+      store.dispatch(actions.setEmail(email));
       return reactElem;
     },
     ThePasswordIsSetTo: (password) => async (reactElem, utils) => {
-      reactElem.props.store.dispatch(actions.setPassword(password));
+      store.dispatch(actions.setPassword(password));
       return reactElem;
     }
   },
@@ -81,11 +99,11 @@ var implementations = {
       return reactElem;
     },
     ThereIsAnEmailError: () => async (reactElem, utils) => {
-      assert.notEqual(reactElem.props.store.getState().error, "no_error");
+      assert.equal(reactElem.props.store.getState().error, "invalidEmail");
       return reactElem;
     },
     ThereIsNotAnEmailError: () => async (reactElem, utils) => {
-      assert.equal(reactElem.props.store.getState().error, "no_error");
+      assert.notEqual(reactElem.props.store.getState().error, "invalidEmail");
       return reactElem;
     },
     ThereIsACredentialError: () => async (reactElem, utils) => {
@@ -95,17 +113,15 @@ var implementations = {
       return reactElem;
     },
     TheSubmitButtonIsActive: () => async (reactElem, utils) => {
-      assert.isFalse(reactElem.props.store.getState().disableSubmit);
+      assert.isFalse(reactElem.props.store.getState().disableSubmit, "disableSubmit should be false");
       return reactElem;
     },
     TheSubmitButtonIsNotActive: () => async (reactElem, utils) => {
-      assert.isTrue(reactElem.props.store.getState().disableSubmit);
+      assert.isTrue(reactElem.props.store.getState().disableSubmit, "disableSubmit should be true");
       return reactElem;
     },
     ThereIsNotACredentialError: () => async (reactElem, utils) => {
-      const state = reactElem.props.store.getState();
-      assert.equal(state.error, "");
-      assert.isFalse(state.disableSubmit);
+      assert.notEqual(reactElem.props.store.getState().error, "credentialFail");
       return reactElem;
     }
   },
@@ -123,15 +139,22 @@ var node_test_default = node_default(
   LoginPageSpecs,
   LoginPage_default,
   {
-    // beforeEach: async (proto, init, artificer, tr, x, pm) => {
-    //   // pm.writeFileSync("beforeEachLog", "bar");
-    //   return proto;
-    // },
-    // afterAll: (store, artificer, utils) => {
-    //   // utils.writeFileSync("afterAllLog", "bar");
-    //   return store;
-    // }
+    ...testInterface,
+    afterEach: async (x) => {
+      await x().props.store.dispatch(actions.reset());
+      return x;
+    }
   }
+  // {
+  //   // beforeEach: async (proto, init, artificer, tr, x, pm) => {
+  //   //   // pm.writeFileSync("beforeEachLog", "bar");
+  //   //   return proto;
+  //   // },
+  //   // afterAll: (store, artificer, utils) => {
+  //   //   // utils.writeFileSync("afterAllLog", "bar");
+  //   //   return store;
+  //   // }
+  // }
 );
 export {
   node_test_default as default

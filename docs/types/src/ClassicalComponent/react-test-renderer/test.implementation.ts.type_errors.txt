@@ -1,0 +1,1 @@
+src/ClassicalComponent/react-test-renderer/test.implementation.ts(28,68): error TS2339: Property 'children' does not exist on type 'object'.

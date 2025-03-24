@@ -1,17 +1,19 @@
 import { createSelector, createSlice, createStore } from "@reduxjs/toolkit";
 
-import { ILoginPageError, ILoginPageSelection } from "./LoginPage";
+import { ILoginPageError, ILoginPageSelection, noError } from "./LoginPage";
 
 export type IStoreState = {
   password: string;
   email: string;
   error: ILoginPageError;
+  disableSubmit: boolean;
 };
 
 const initialState: IStoreState = {
   password: "",
   email: "",
   error: "no_error",
+  disableSubmit: true,
 };
 
 export const loginApp = createSlice<
@@ -30,21 +32,39 @@ export const loginApp = createSlice<
       state.password = initialState.password;
       state.email = initialState.email;
       state.error = initialState.error;
+      state.disableSubmit = initialState.disableSubmit;
     },
-    setPassword: (state, action: {payload: string}) => {
+    setPassword: (state, action: { payload: string }) => {
       state.password = action.payload;
+
+      state.disableSubmit = state.password === "";
     },
-    setEmail: (state, action: {payload: string}) => {
+    setEmail: (state, action: { payload: string }) => {
+      const isValid = validateEmail(action.payload);
+      if (!isValid) {
+        state.error = "invalidEmail";
+      } else {
+        state.error = noError;
+      }
+
       state.email = action.payload;
+
+      state.disableSubmit =
+        state.password == "" || state.email == "" || !isValid;
     },
-    setError: (state, action: {payload: ILoginPageError}) => {
+    setError: (state, action: { payload: ILoginPageError }) => {
       state.error = action.payload;
     },
-    setDisableSubmit: (state, action: {payload: boolean}) => {
+    setDisableSubmit: (state, action: { payload: boolean }) => {
       // This will be handled by the selector
     },
     signIn: (state) => {
-      state.error = checkForErrors(state);
+      const e = checkForErrors(state);
+      state.error = e;
+
+      if (e !== "no_error") {
+        state.disableSubmit = true;
+      }
     },
   },
 });
@@ -54,11 +74,12 @@ const selectRoot = (storeState: IStoreState) => {
 };
 
 // More permissive email validation that allows simpler test emails
-const validateEmail = (email) => {
-  return (
-    email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) ||
-    email.match(/^[^\s@]+@[^\s@]+$/)
-  );
+export const validateEmail = (email): boolean => {
+  const r =
+    email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) !== null ||
+    email.match(/^[^\s@]+@[^\s@]+$/) !== null;
+
+  return r;
 };
 
 const checkForErrors = (storeState: IStoreState): ILoginPageError => {
@@ -84,7 +105,9 @@ const loginPageSelection = createSelector<
 >([selectRoot], (root: IStoreState) => {
   return {
     ...root,
-    disableSubmit: root.email == "" || root.password == "",
+    // disableSubmit:
+    //   root.email == "" || root.password == "" || !validateEmail(root.email),
+    // root.email == "" || root.password == "" || !validateEmail(root.email),
   };
 });
 

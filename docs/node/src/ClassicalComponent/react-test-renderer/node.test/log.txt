@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/30bd2466-854f-4f9c-8b8d-ae833ab83782"}
+test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/9daf5a9f-0b54-4993-af5c-3c2e4b3e5953"}
 
 Suite:,0,a classical react component
 
@@ -10,32 +10,14 @@ Suite:,0,a classical react component
  When:,IClickTheButton: undefined
  When:,IClickTheHeader: undefined
  Then:,ThePropsIs: [object Object]
-AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }
-    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21
-    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)
-    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
-    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
-    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+ Then:,TheStatusIs: [object Object]
 
  test1
 
  Given: AnEmptyState
  When:,IClickTheButton: undefined
  Then:,ThePropsIs: [object Object]
-AssertionError: expected { type: 'pre', …(3) } to deeply equal { type: 'pre', …(2) }
-    at file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:126:21
-    at Object.butThen (file:///Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs?cacheBust=1742839203143:45:12)
-    at Then.butThen (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:447:40)
-    at Then.test (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:244:19)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:154:34)
-    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:80:22)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:304:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:323:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-MI7ZHO2E.mjs:589:57)
+ Then:,TheStatusIs: [object Object]
 
  test2
 

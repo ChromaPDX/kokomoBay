@@ -18,7 +18,7 @@ const ClassicalComponentReactDomImplementation = {
     Default: "Classical Component, react-dom, client.web",
   },
   givens: {
-    AnEmptyState: { props: { foo: "bar" } },
+    AnEmptyState: { foo: "bar" },
   },
   whens: {
     IClickTheHeader: () =>

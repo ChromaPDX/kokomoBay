@@ -1,0 +1,10 @@
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(2,23): error TS2688: Cannot find type definition file for './index.d.ts'.
+  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(17,32): error TS2307: Cannot find module '../../../testeranto/src/lib/types' or its corresponding type declarations.
+  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(28,28): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(44,11): error TS2322: Type '{ logging: { logger: { log: (message: string) => void; }; }; }' is not assignable to type 'ServerOptions<any>'.
+  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(97,13): error TS2345: Argument of type '{ contractNearSide: ContractWeb3; contractFarSide: ethers.Contract; accounts: string[]; server: Server<EthereumFlavor>; }' is not assignable to parameter of type 'IT["istore"] | PromiseLike<IT["istore"]>'.
+  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.

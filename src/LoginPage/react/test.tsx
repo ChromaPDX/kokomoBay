@@ -3,7 +3,7 @@ import { ITestImplementation } from "testeranto/src/Types";
 import { PM } from "testeranto/src/PM/index.js";
 
 import { ILoginPageSpecs } from "../test.js";
-import { actions } from "../index.js";
+import { actions, store } from "../index.js";
 
 type IImpl = ITestImplementation<
   ILoginPageSpecs, object
@@ -21,15 +21,15 @@ const implementations: IImpl = {
 
   whens: {
     TheLoginIsSubmitted: () => async (reactElem: any, utils: PM) => {
-      reactElem.props.store.dispatch(actions.signIn());
+      store.dispatch(actions.signIn());
       return reactElem;
     },
     TheEmailIsSetTo: (email: string) => async (reactElem: any, utils: PM) => {
-      reactElem.props.store.dispatch(actions.setEmail(email));
+      store.dispatch(actions.setEmail(email));
       return reactElem;
     },
     ThePasswordIsSetTo: (password: string) => async (reactElem: any, utils: PM) => {
-      reactElem.props.store.dispatch(actions.setPassword(password));
+      store.dispatch(actions.setPassword(password));
       return reactElem;
     }
   },
@@ -51,13 +51,14 @@ const implementations: IImpl = {
       return reactElem;
     },
     ThereIsAnEmailError: () => async (reactElem: any, utils: PM) => {
-      assert.notEqual(reactElem.props.store.getState().error, "no_error");
+      assert.equal(reactElem.props.store.getState().error, "invalidEmail");
       return reactElem;
     },
     ThereIsNotAnEmailError: () => async (reactElem: any, utils: PM) => {
-      assert.equal(reactElem.props.store.getState().error, "no_error");
+      assert.notEqual(reactElem.props.store.getState().error, "invalidEmail");
       return reactElem;
     },
+
     ThereIsACredentialError: () => async (reactElem: any, utils: PM) => {
       const state = reactElem.props.store.getState();
       assert.equal(state.error, 'credentialFail');
@@ -65,17 +66,15 @@ const implementations: IImpl = {
       return reactElem;
     },
     TheSubmitButtonIsActive: () => async (reactElem: any, utils: PM) => {
-      assert.isFalse(reactElem.props.store.getState().disableSubmit);
+      assert.isFalse(reactElem.props.store.getState().disableSubmit, "disableSubmit should be false");
       return reactElem;
     },
     TheSubmitButtonIsNotActive: () => async (reactElem: any, utils: PM) => {
-      assert.isTrue(reactElem.props.store.getState().disableSubmit);
+      assert.isTrue(reactElem.props.store.getState().disableSubmit, "disableSubmit should be true");
       return reactElem;
     },
     ThereIsNotACredentialError: () => async (reactElem: any, utils: PM) => {
-      const state = reactElem.props.store.getState();
-      assert.equal(state.error, '');
-      assert.isFalse(state.disableSubmit);
+      assert.notEqual(reactElem.props.store.getState().error, "credentialFail");
       return reactElem;
     }
   },

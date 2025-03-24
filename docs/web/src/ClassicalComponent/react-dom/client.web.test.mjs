@@ -1,13 +1,16 @@
 import {
-  Web_default,
-  require_scheduler
-} from "../../../chunk-UJ3FMC4I.mjs";
-import {
-  assert
-} from "../../../chunk-GI23F5DQ.mjs";
+  ClassicalComponentSpec
+} from "../../../chunk-T5V3YMXO.mjs";
 import {
   ClassicalComponent
 } from "../../../chunk-W7T5BCPH.mjs";
+import {
+  Web_default,
+  require_scheduler
+} from "../../../chunk-RSRSEH3Q.mjs";
+import {
+  assert
+} from "../../../chunk-GI23F5DQ.mjs";
 import {
   require_react
 } from "../../../chunk-UREIH5IJ.mjs";
@@ -21166,50 +21169,26 @@ var web_default = (testInput, testSpecifications, testImplementations, testInter
     }
   }
   const t = Web_default(testInput, testSpecifications, testImplementations, {
-    beforeAll: async (initialProps, artificer) => {
+    beforeAll: async (subject, artificer) => {
       return await new Promise((resolve, rej) => {
         const htmlElement = document.getElementById("root");
         if (htmlElement) {
           const domRoot = import_client.default.createRoot(htmlElement);
-          domRoot.render((0, import_react.createElement)(TesterantoComponent, Object.assign(Object.assign({}, initialProps), { done: (reactElement) => {
-            resolve({
-              htmlElement,
-              reactElement,
-              domRoot
-            });
-          } }), []));
+          resolve({ domRoot, htmlElement });
         }
       });
     },
-    // beforeEach: async (
-    //   s,
-    //   initializer,
-    //   testResource,
-    //   artificer,
-    //   initialValues
-    // ): Promise<IStore> => {
-    //   return new Promise((resolve, rej) => {
-    //     console.log("beforeEach" + TesterantoComponent);
-    //     // const domRoot = ReactDom.createRoot(htmlElement);
-    //     // // Ignore these type errors
-    //     // domRoot.render(
-    //     //   createElement(
-    //     //     TesterantoComponent,
-    //     //     {
-    //     //       ...initializer,
-    //     //       done: (reactElement) => {
-    //     //         resolve({
-    //     //           htmlElement,
-    //     //           reactElement,
-    //     //           domRoot,
-    //     //         });
-    //     //       },
-    //     //     },
-    //     //     []
-    //     //   )
-    //     // );
-    //   });
-    // },
+    beforeEach: async ({ domRoot, htmlElement }, initialValues, testResource, artificer) => {
+      return new Promise(async (resolve, rej) => {
+        domRoot.render((0, import_react.createElement)(TesterantoComponent, Object.assign(Object.assign({}, initialValues), { done: (reactElement) => {
+          resolve({
+            htmlElement,
+            reactElement,
+            domRoot
+          });
+        } }), []));
+      });
+    },
     andWhen: function(s, whenCB) {
       return whenCB(s);
     },
@@ -21232,61 +21211,13 @@ var web_default = (testInput, testSpecifications, testImplementations, testInter
   return t;
 };
 
-// src/ClassicalComponent/test.specification.ts
-var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
-  return [
-    Suite.Default(
-      "a classical react component",
-      {
-        test0: Given.AnEmptyState(
-          [`0`],
-          [
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheHeader()
-            // When.IClickTheButton(),
-          ],
-          [Then.ThePropsIs({ children: [] }), Then.TheStatusIs({ count: 3 })]
-        ),
-        test1: Given.AnEmptyState(
-          [`0`],
-          [When.IClickTheButton()],
-          [Then.ThePropsIs({ children: [] }), Then.TheStatusIs({ count: 1 })]
-        ),
-        test2: Given.AnEmptyState(
-          [`0`],
-          [
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton(),
-            When.IClickTheButton()
-          ],
-          [Then.TheStatusIs({ count: 9 })]
-        ),
-        test3: Given.AnEmptyState(
-          [`0`],
-          [When.IClickTheButton(), When.IClickTheButton()],
-          [Then.TheStatusIs({ count: 2 })]
-        )
-      },
-      []
-    )
-  ];
-};
-
 // src/ClassicalComponent/react-dom/client.web.test.tsx
 var ClassicalComponentReactDomImplementation = {
   suites: {
     Default: "Classical Component, react-dom, client.web"
   },
   givens: {
-    AnEmptyState: { props: { foo: "bar" } }
+    AnEmptyState: { foo: "bar" }
   },
   whens: {
     IClickTheHeader: () => async ({ htmlElement }) => {

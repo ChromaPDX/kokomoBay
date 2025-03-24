@@ -3,6 +3,259 @@
   "warnings": [],
   "metafile": {
     "inputs": {
+      "../testeranto/src/PM/index.ts": {
+        "bytes": 1285,
+        "imports": [
+          {
+            "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/PM/web.ts": {
+        "bytes": 6466,
+        "imports": [
+          {
+            "path": "stream",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/PM/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "puppeteer-core",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/index.ts": {
+        "bytes": 4592,
+        "imports": [
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./abstractBase.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/abstractBase.ts": {
+        "bytes": 20084,
+        "imports": [
+          {
+            "path": "../Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": ".",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/basebuilder.ts": {
+        "bytes": 5744,
+        "imports": [
+          {
+            "path": "stream",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": ".",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./abstractBase.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/classBuilder.ts": {
+        "bytes": 3274,
+        "imports": [
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/lib/basebuilder.ts",
+            "kind": "import-statement",
+            "original": "./basebuilder.js"
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./index.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/core.ts": {
+        "bytes": 6601,
+        "imports": [
+          {
+            "path": "../SubPackages/react/jsx",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/lib/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "../testeranto/src/lib/abstractBase.ts",
+            "kind": "import-statement",
+            "original": "./abstractBase.js"
+          },
+          {
+            "path": "../testeranto/src/lib/classBuilder.ts",
+            "kind": "import-statement",
+            "original": "./classBuilder.js"
+          },
+          {
+            "path": "../PM/index",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/Web.ts": {
+        "bytes": 3414,
+        "imports": [
+          {
+            "path": "console",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/PM/web.ts",
+            "kind": "import-statement",
+            "original": "./PM/web"
+          },
+          {
+            "path": "../testeranto/src/lib/core.ts",
+            "kind": "import-statement",
+            "original": "./lib/core.js"
+          },
+          {
+            "path": "../testeranto/src/lib/index.ts",
+            "kind": "import-statement",
+            "original": "./lib/index.js"
+          },
+          {
+            "path": "./lib/types",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
+        "bytes": 60,
+        "imports": []
+      },
+      "src/Rectangle.test.specification.ts": {
+        "bytes": 1882,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md",
+            "kind": "import-statement",
+            "original": "./Rectangle/rectangle.md"
+          }
+        ],
+        "format": "esm"
+      },
       "node_modules/assertion-error/index.js": {
         "bytes": 2429,
         "imports": [],
@@ -662,86 +915,90 @@
         ],
         "format": "esm"
       },
-      "../testeranto/dist/module/src/PM/index.js": {
-        "bytes": 39,
+      "src/Rectangle.ts": {
+        "bytes": 547,
         "imports": [],
         "format": "esm"
       },
-      "../testeranto/dist/module/src/PM/web.js": {
-        "bytes": 3766,
+      "src/Rectangle.test.implementation.ts": {
+        "bytes": 2302,
         "imports": [
           {
-            "path": "../testeranto/dist/module/src/PM/index.js",
+            "path": "node_modules/chai/index.mjs",
             "kind": "import-statement",
-            "original": "./index.js"
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
           }
         ],
         "format": "esm"
       },
-      "../testeranto/dist/module/src/lib/index.js": {
-        "bytes": 609,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 16466,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/basebuilder.js": {
-        "bytes": 3421,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/classBuilder.js": {
-        "bytes": 2039,
+      "src/Rectangle.test.ts": {
+        "bytes": 640,
         "imports": [
           {
-            "path": "../testeranto/dist/module/src/lib/basebuilder.js",
+            "path": "src/Rectangle.ts",
             "kind": "import-statement",
-            "original": "./basebuilder.js"
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
           }
         ],
         "format": "esm"
       },
-      "../testeranto/dist/module/src/lib/core.js": {
-        "bytes": 4571,
+      "src/Rectangle/Rectangle.test.web.ts": {
+        "bytes": 1336,
         "imports": [
           {
-            "path": "../testeranto/dist/module/src/lib/index.js",
+            "path": "../testeranto/src/Web.ts",
             "kind": "import-statement",
-            "original": "./index.js"
+            "original": "testeranto/src/Web"
           },
           {
-            "path": "../testeranto/dist/module/src/lib/abstractBase.js",
+            "path": "testeranto/src/PM/web",
             "kind": "import-statement",
-            "original": "./abstractBase.js"
+            "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/lib/classBuilder.js",
+            "path": "testeranto/src/lib",
             "kind": "import-statement",
-            "original": "./classBuilder.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/Web.js": {
-        "bytes": 2143,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/PM/web.js",
-            "kind": "import-statement",
-            "original": "./PM/web"
+            "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/lib/core.js",
+            "path": "../Rectangle",
             "kind": "import-statement",
-            "original": "./lib/core.js"
+            "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/lib/index.js",
+            "path": "src/Rectangle.test.specification.ts",
             "kind": "import-statement",
-            "original": "./lib/index.js"
+            "original": "../Rectangle.test.specification"
+          },
+          {
+            "path": "src/Rectangle.test.implementation.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.implementation"
+          },
+          {
+            "path": "src/Rectangle.test.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test"
           }
         ],
         "format": "esm"
@@ -762,40 +1019,24 @@
         ],
         "format": "cjs"
       },
-      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-        "bytes": 17457,
-        "imports": [],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/unstable_mock.js": {
-        "bytes": 226,
-        "imports": [
-          {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler-unstable_mock.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+      "node_modules/scheduler/cjs/scheduler.development.js": {
         "bytes": 17497,
         "imports": [],
         "format": "cjs"
       },
-      "../testeranto/node_modules/scheduler/index.js": {
+      "node_modules/scheduler/index.js": {
         "bytes": 198,
         "imports": [
           {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.development.js",
+            "path": "node_modules/scheduler/cjs/scheduler.development.js",
             "kind": "require-call",
             "original": "./cjs/scheduler.development.js"
           }
         ],
         "format": "cjs"
       },
-      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-        "bytes": 645765,
+      "node_modules/react-dom/cjs/react-dom.development.js": {
+        "bytes": 1026501,
         "imports": [
           {
             "path": "node_modules/react/index.js",
@@ -803,31 +1044,59 @@
             "original": "react"
           },
           {
-            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
-            "kind": "require-call",
-            "original": "scheduler/unstable_mock"
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/index.js",
+            "path": "node_modules/scheduler/index.js",
             "kind": "require-call",
             "original": "scheduler"
           }
         ],
         "format": "cjs"
       },
-      "../testeranto/node_modules/react-test-renderer/index.js": {
-        "bytes": 218,
+      "node_modules/react-dom/index.js": {
+        "bytes": 1363,
         "imports": [
           {
-            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
+            "path": "node_modules/react-dom/cjs/react-dom.development.js",
             "kind": "require-call",
-            "original": "./cjs/react-test-renderer.development.js"
+            "original": "./cjs/react-dom.development.js"
           }
         ],
         "format": "cjs"
       },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
-        "bytes": 1199,
+      "node_modules/react-dom/client.js": {
+        "bytes": 619,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/index.js",
+            "kind": "require-call",
+            "original": "react-dom"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react/cjs/react-jsx-runtime.development.js": {
+        "bytes": 41746,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react/jsx-runtime.js": {
+        "bytes": 214,
+        "imports": [
+          {
+            "path": "node_modules/react/cjs/react-jsx-runtime.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-jsx-runtime.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "src/ClassicalComponent/index.tsx": {
+        "bytes": 768,
         "imports": [
           {
             "path": "node_modules/react/index.js",
@@ -835,25 +1104,30 @@
             "original": "react"
           },
           {
-            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "path": "node_modules/react/jsx-runtime.js",
             "kind": "import-statement",
-            "original": "react-test-renderer"
+            "original": "react/jsx-runtime"
           }
         ],
         "format": "esm"
       },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/web.js": {
-        "bytes": 273,
+      "src/ClassicalComponent/test.ts": {
+        "bytes": 327,
         "imports": [
           {
-            "path": "../testeranto/dist/module/src/Web.js",
+            "path": "node_modules/react-dom/client.js",
             "kind": "import-statement",
-            "original": "../../../Web.js"
+            "original": "react-dom/client"
           },
           {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js",
+            "path": "node_modules/react/index.js",
             "kind": "import-statement",
-            "original": "./index.js"
+            "original": "react"
+          },
+          {
+            "path": "src/ClassicalComponent/index.tsx",
+            "kind": "import-statement",
+            "original": "./index"
           }
         ],
         "format": "esm"
@@ -914,49 +1188,6 @@
             "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js",
             "kind": "require-call",
             "original": "../cjs/use-sync-external-store-shim/with-selector.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/cjs/scheduler.development.js": {
-        "bytes": 17497,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/index.js": {
-        "bytes": 198,
-        "imports": [
-          {
-            "path": "node_modules/scheduler/cjs/scheduler.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom.development.js": {
-        "bytes": 1026501,
-        "imports": [
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "require-call",
-            "original": "react"
-          },
-          {
-            "path": "node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/index.js": {
-        "bytes": 1363,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/cjs/react-dom.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom.development.js"
           }
         ],
         "format": "cjs"
@@ -1636,7 +1867,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 2518,
+        "bytes": 3210,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -1644,37 +1875,15 @@
             "original": "@reduxjs/toolkit"
           },
           {
-            "path": "./LoginPage",
+            "path": "src/LoginPage/index.tsx",
             "kind": "import-statement",
-            "external": true
+            "original": "./LoginPage"
           }
         ],
         "format": "esm"
       },
-      "node_modules/react/cjs/react-jsx-runtime.development.js": {
-        "bytes": 41746,
-        "imports": [
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "require-call",
-            "original": "react"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react/jsx-runtime.js": {
-        "bytes": 214,
-        "imports": [
-          {
-            "path": "node_modules/react/cjs/react-jsx-runtime.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-jsx-runtime.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
       "src/LoginPage/index.tsx": {
-        "bytes": 3215,
+        "bytes": 2987,
         "imports": [
           {
             "path": "react",
@@ -1695,6 +1904,362 @@
             "path": "node_modules/react/jsx-runtime.js",
             "kind": "import-statement",
             "original": "react/jsx-runtime"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react-dom/test.tsx": {
+        "bytes": 4042,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "../../../../testeranto/src/PM/web.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/PM/index.ts",
+            "kind": "import-statement",
+            "original": "../../../../testeranto/src/PM/index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react-dom/web.test.tsx": {
+        "bytes": 3138,
+        "imports": [
+          {
+            "path": "../testeranto/src/Web.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/Web"
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react-dom/client.js",
+            "kind": "import-statement",
+            "original": "react-dom/client"
+          },
+          {
+            "path": "src/LoginPage/test.ts",
+            "kind": "import-statement",
+            "original": "../test.js"
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/LoginPage/react-dom/test.tsx",
+            "kind": "import-statement",
+            "original": "./test.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/SubPackages/react/jsx/index.ts": {
+        "bytes": 1463,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../../../Types",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/SubPackages/react/jsx/web.ts": {
+        "bytes": 617,
+        "imports": [
+          {
+            "path": "../../../Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/Web.ts",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/src/SubPackages/react/jsx/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react/test.tsx": {
+        "bytes": 2992,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react/web.test.tsx": {
+        "bytes": 389,
+        "imports": [
+          {
+            "path": "../testeranto/src/SubPackages/react/jsx/web.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react/jsx/web"
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/LoginPage/test.ts",
+            "kind": "import-statement",
+            "original": "../test.js"
+          },
+          {
+            "path": "src/LoginPage/react/test.tsx",
+            "kind": "import-statement",
+            "original": "./test.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/PM/index.js": {
+        "bytes": 39,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/PM/web.js": {
+        "bytes": 3766,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/PM/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/index.js": {
+        "bytes": 609,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/abstractBase.js": {
+        "bytes": 16543,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/basebuilder.js": {
+        "bytes": 3421,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/classBuilder.js": {
+        "bytes": 2039,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/lib/basebuilder.js",
+            "kind": "import-statement",
+            "original": "./basebuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/lib/core.js": {
+        "bytes": 4571,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/lib/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/abstractBase.js",
+            "kind": "import-statement",
+            "original": "./abstractBase.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/classBuilder.js",
+            "kind": "import-statement",
+            "original": "./classBuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/Web.js": {
+        "bytes": 2114,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/PM/web.js",
+            "kind": "import-statement",
+            "original": "./PM/web"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/core.js",
+            "kind": "import-statement",
+            "original": "./lib/core.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/lib/index.js",
+            "kind": "import-statement",
+            "original": "./lib/index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+        "bytes": 17457,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/unstable_mock.js": {
+        "bytes": 226,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler-unstable_mock.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+        "bytes": 17497,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/index.js": {
+        "bytes": 198,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+        "bytes": 645765,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
+            "kind": "require-call",
+            "original": "scheduler/unstable_mock"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/index.js": {
+        "bytes": 218,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-test-renderer.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
+        "bytes": 1199,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/web.js": {
+        "bytes": 273,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/Web.js",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
           }
         ],
         "format": "esm"
@@ -1824,472 +2389,6 @@
         ],
         "format": "esm"
       },
-      "../testeranto/src/PM/index.ts": {
-        "bytes": 1285,
-        "imports": [
-          {
-            "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../lib",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/PM/web.ts": {
-        "bytes": 6466,
-        "imports": [
-          {
-            "path": "stream",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../lib",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/src/PM/index.ts",
-            "kind": "import-statement",
-            "original": "./index.js"
-          },
-          {
-            "path": "puppeteer-core",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/lib/index.ts": {
-        "bytes": 4592,
-        "imports": [
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../Types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./abstractBase.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./types.js",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/lib/abstractBase.ts": {
-        "bytes": 19998,
-        "imports": [
-          {
-            "path": "../Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": ".",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/lib/basebuilder.ts": {
-        "bytes": 5744,
-        "imports": [
-          {
-            "path": "stream",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": ".",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../Types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./abstractBase.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/lib/classBuilder.ts": {
-        "bytes": 3274,
-        "imports": [
-          {
-            "path": "../Types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/src/lib/basebuilder.ts",
-            "kind": "import-statement",
-            "original": "./basebuilder.js"
-          },
-          {
-            "path": "./types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./index.js",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/lib/core.ts": {
-        "bytes": 6601,
-        "imports": [
-          {
-            "path": "../SubPackages/react/jsx",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../Types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/src/lib/index.ts",
-            "kind": "import-statement",
-            "original": "./index.js"
-          },
-          {
-            "path": "../testeranto/src/lib/abstractBase.ts",
-            "kind": "import-statement",
-            "original": "./abstractBase.js"
-          },
-          {
-            "path": "../testeranto/src/lib/classBuilder.ts",
-            "kind": "import-statement",
-            "original": "./classBuilder.js"
-          },
-          {
-            "path": "../PM/index",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/src/Web.ts": {
-        "bytes": 3439,
-        "imports": [
-          {
-            "path": "console",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/src/PM/web.ts",
-            "kind": "import-statement",
-            "original": "./PM/web"
-          },
-          {
-            "path": "../testeranto/src/lib/core.ts",
-            "kind": "import-statement",
-            "original": "./lib/core.js"
-          },
-          {
-            "path": "../testeranto/src/lib/index.ts",
-            "kind": "import-statement",
-            "original": "./lib/index.js"
-          },
-          {
-            "path": "./lib/types",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
-        "bytes": 60,
-        "imports": []
-      },
-      "src/Rectangle.test.specification.ts": {
-        "bytes": 1882,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md",
-            "kind": "import-statement",
-            "original": "./Rectangle/rectangle.md"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle.ts": {
-        "bytes": 547,
-        "imports": [],
-        "format": "esm"
-      },
-      "src/Rectangle.test.implementation.ts": {
-        "bytes": 2302,
-        "imports": [
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle.test.ts": {
-        "bytes": 640,
-        "imports": [
-          {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle/Rectangle.test.web.ts": {
-        "bytes": 1336,
-        "imports": [
-          {
-            "path": "../testeranto/src/Web.ts",
-            "kind": "import-statement",
-            "original": "testeranto/src/Web"
-          },
-          {
-            "path": "testeranto/src/PM/web",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/lib",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../Rectangle",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/Rectangle.test.specification.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test.specification"
-          },
-          {
-            "path": "src/Rectangle.test.implementation.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test.implementation"
-          },
-          {
-            "path": "src/Rectangle.test.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test"
-          }
-        ],
-        "format": "esm"
-      },
-      "node_modules/react-dom/client.js": {
-        "bytes": 619,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/index.js",
-            "kind": "require-call",
-            "original": "react-dom"
-          }
-        ],
-        "format": "cjs"
-      },
-      "src/LoginPage/react-dom/test.tsx": {
-        "bytes": 4042,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "../test.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
-          {
-            "path": "../../../../testeranto/src/PM/web.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/src/PM/index.ts",
-            "kind": "import-statement",
-            "original": "../../../../testeranto/src/PM/index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/LoginPage/react-dom/web.test.tsx": {
-        "bytes": 3155,
-        "imports": [
-          {
-            "path": "../testeranto/src/Web.ts",
-            "kind": "import-statement",
-            "original": "testeranto/src/Web"
-          },
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "import-statement",
-            "original": "react"
-          },
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "import-statement",
-            "original": "react"
-          },
-          {
-            "path": "node_modules/react-dom/client.js",
-            "kind": "import-statement",
-            "original": "react-dom/client"
-          },
-          {
-            "path": "src/LoginPage/test.ts",
-            "kind": "import-statement",
-            "original": "../test.js"
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
-          {
-            "path": "src/LoginPage/react-dom/test.tsx",
-            "kind": "import-statement",
-            "original": "./test.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/index.tsx": {
-        "bytes": 768,
-        "imports": [
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "import-statement",
-            "original": "react"
-          },
-          {
-            "path": "node_modules/react/jsx-runtime.js",
-            "kind": "import-statement",
-            "original": "react/jsx-runtime"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/test.ts": {
-        "bytes": 327,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/client.js",
-            "kind": "import-statement",
-            "original": "react-dom/client"
-          },
-          {
-            "path": "node_modules/react/index.js",
-            "kind": "import-statement",
-            "original": "react"
-          },
-          {
-            "path": "src/ClassicalComponent/index.tsx",
-            "kind": "import-statement",
-            "original": "./index"
-          }
-        ],
-        "format": "esm"
-      },
       "../testeranto/node_modules/react-dom/cjs/react-dom.development.js": {
         "bytes": 1026501,
         "imports": [
@@ -2329,7 +2428,7 @@
         "format": "cjs"
       },
       "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js": {
-        "bytes": 3320,
+        "bytes": 2449,
         "imports": [
           {
             "path": "node_modules/react/index.js",
@@ -2350,7 +2449,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/test.specification.ts": {
-        "bytes": 1498,
+        "bytes": 1596,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2366,7 +2465,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-        "bytes": 2431,
+        "bytes": 2420,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js",
@@ -2400,84 +2499,102 @@
           }
         ],
         "format": "esm"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
+        "bytes": 958,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/web.js": {
+        "bytes": 237,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/Web.js",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js",
+            "kind": "import-statement",
+            "original": "./interface"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
+        "bytes": 1484,
+        "imports": [
+          {
+            "path": "react-test-renderer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/SubPackages/react-test-renderer/component/index",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+        "bytes": 357,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/web.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-test-renderer/component/web"
+          },
+          {
+            "path": "src/ClassicalComponent/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/ClassicalComponent/test.specification.ts",
+            "kind": "import-statement",
+            "original": "../test.specification.js"
+          },
+          {
+            "path": "src/ClassicalComponent/react-test-renderer/test.implementation.ts",
+            "kind": "import-statement",
+            "original": "./test.implementation.js"
+          }
+        ],
+        "format": "esm"
       }
     },
     "outputs": {
-      "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/web/chunk-B5PQP7AC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-5MER2HMA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-UJ3FMC4I.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-GI23F5DQ.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-UREIH5IJ.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-TTFRSOOU.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/LoginPage/react-test-renderer/web.test.tsx",
-        "inputs": {
-          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19181
-          },
-          "../testeranto/node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 279
-          },
-          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565771
-          },
-          "../testeranto/node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 283
-          },
-          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19168
-          },
-          "node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 267
-          },
-          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565760
-          },
-          "node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 271
-          },
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
-            "bytesInOutput": 796
-          },
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/web.js": {
-            "bytesInOutput": 201
-          },
-          "src/LoginPage/react-test-renderer/test.tsx": {
-            "bytesInOutput": 881
-          },
-          "src/LoginPage/react-test-renderer/web.test.tsx": {
-            "bytesInOutput": 2983
-          }
-        },
-        "bytes": 1178518
-      },
       "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-AHKLZAOP.mjs",
+            "path": "docs/web/chunk-7IK2BH4N.mjs",
             "kind": "import-statement"
           },
           {
@@ -2515,18 +2632,50 @@
         },
         "bytes": 5116
       },
+      "docs/web/src/ClassicalComponent/test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-UAOWP2LQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-5MER2HMA.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-W7T5BCPH.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [],
+        "entryPoint": "src/ClassicalComponent/test.ts",
+        "inputs": {
+          "src/ClassicalComponent/test.ts": {
+            "bytesInOutput": 338
+          }
+        },
+        "bytes": 648
+      },
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-B5PQP7AC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-AHKLZAOP.mjs",
-            "kind": "import-statement"
-          },
-          {
             "path": "docs/web/chunk-UAOWP2LQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-7IK2BH4N.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TH3YV27U.mjs",
             "kind": "import-statement"
           },
           {
@@ -2560,7 +2709,172 @@
         },
         "bytes": 6533
       },
-      "docs/web/chunk-B5PQP7AC.mjs": {
+      "docs/web/chunk-UAOWP2LQ.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-5MER2HMA.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "require_client"
+        ],
+        "inputs": {
+          "node_modules/react-dom/client.js": {
+            "bytesInOutput": 778
+          }
+        },
+        "bytes": 958
+      },
+      "docs/web/src/LoginPage/react/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-7IK2BH4N.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TH3YV27U.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-5MER2HMA.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react/web.test.tsx",
+        "inputs": {
+          "../testeranto/src/SubPackages/react/jsx/index.ts": {
+            "bytesInOutput": 836
+          },
+          "../testeranto/src/SubPackages/react/jsx/web.ts": {
+            "bytesInOutput": 246
+          },
+          "src/LoginPage/react/test.tsx": {
+            "bytesInOutput": 2518
+          },
+          "src/LoginPage/react/web.test.tsx": {
+            "bytesInOutput": 209
+          }
+        },
+        "bytes": 4405
+      },
+      "docs/web/chunk-7IK2BH4N.mjs": {
+        "imports": [],
+        "exports": [
+          "PM",
+          "Web_default"
+        ],
+        "inputs": {
+          "../testeranto/src/PM/index.ts": {
+            "bytesInOutput": 20
+          },
+          "../testeranto/src/PM/web.ts": {
+            "bytesInOutput": 4431
+          },
+          "../testeranto/src/lib/index.ts": {
+            "bytesInOutput": 459
+          },
+          "../testeranto/src/lib/abstractBase.ts": {
+            "bytesInOutput": 9453
+          },
+          "../testeranto/src/lib/basebuilder.ts": {
+            "bytesInOutput": 2748
+          },
+          "../testeranto/src/lib/classBuilder.ts": {
+            "bytesInOutput": 2284
+          },
+          "../testeranto/src/lib/core.ts": {
+            "bytesInOutput": 3511
+          },
+          "../testeranto/src/Web.ts": {
+            "bytesInOutput": 1835
+          }
+        },
+        "bytes": 25062
+      },
+      "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-TH3YV27U.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-5MER2HMA.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-KTSOQZ7P.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-RSRSEH3Q.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react-test-renderer/web.test.tsx",
+        "inputs": {
+          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19167
+          },
+          "node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 265
+          },
+          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565757
+          },
+          "node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 270
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
+            "bytesInOutput": 796
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/web.js": {
+            "bytesInOutput": 201
+          },
+          "src/LoginPage/react-test-renderer/test.tsx": {
+            "bytesInOutput": 881
+          },
+          "src/LoginPage/react-test-renderer/web.test.tsx": {
+            "bytesInOutput": 2983
+          }
+        },
+        "bytes": 592087
+      },
+      "docs/web/chunk-TH3YV27U.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-5MER2HMA.mjs",
@@ -2584,7 +2898,8 @@
           "emailInputId",
           "emailwarning",
           "loginInputId",
-          "passwordInputId"
+          "passwordInputId",
+          "store"
         ],
         "inputs": {
           "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
@@ -2669,100 +2984,13 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 1534
+            "bytesInOutput": 2162
           },
           "src/LoginPage/index.tsx": {
-            "bytesInOutput": 3317
+            "bytesInOutput": 2568
           }
         },
-        "bytes": 106118
-      },
-      "docs/web/chunk-AHKLZAOP.mjs": {
-        "imports": [],
-        "exports": [
-          "PM",
-          "Web_default"
-        ],
-        "inputs": {
-          "../testeranto/src/PM/index.ts": {
-            "bytesInOutput": 20
-          },
-          "../testeranto/src/PM/web.ts": {
-            "bytesInOutput": 4431
-          },
-          "../testeranto/src/lib/index.ts": {
-            "bytesInOutput": 459
-          },
-          "../testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 9407
-          },
-          "../testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 2748
-          },
-          "../testeranto/src/lib/classBuilder.ts": {
-            "bytesInOutput": 2284
-          },
-          "../testeranto/src/lib/core.ts": {
-            "bytesInOutput": 3511
-          },
-          "../testeranto/src/Web.ts": {
-            "bytesInOutput": 1835
-          }
-        },
-        "bytes": 25016
-      },
-      "docs/web/src/ClassicalComponent/test.mjs": {
-        "imports": [
-          {
-            "path": "docs/web/chunk-UAOWP2LQ.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-5MER2HMA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-W7T5BCPH.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-UREIH5IJ.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-TTFRSOOU.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [],
-        "entryPoint": "src/ClassicalComponent/test.ts",
-        "inputs": {
-          "src/ClassicalComponent/test.ts": {
-            "bytesInOutput": 338
-          }
-        },
-        "bytes": 648
-      },
-      "docs/web/chunk-UAOWP2LQ.mjs": {
-        "imports": [
-          {
-            "path": "docs/web/chunk-5MER2HMA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-TTFRSOOU.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "require_client"
-        ],
-        "inputs": {
-          "node_modules/react-dom/client.js": {
-            "bytesInOutput": 778
-          }
-        },
-        "bytes": 958
+        "bytes": 106006
       },
       "docs/web/chunk-5MER2HMA.mjs": {
         "imports": [
@@ -2798,15 +3026,19 @@
       "docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-UJ3FMC4I.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "path": "docs/web/chunk-T5V3YMXO.mjs",
             "kind": "import-statement"
           },
           {
             "path": "docs/web/chunk-W7T5BCPH.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-RSRSEH3Q.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2833,18 +3065,133 @@
             "bytesInOutput": 792
           },
           "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js": {
-            "bytesInOutput": 2541
-          },
-          "src/ClassicalComponent/test.specification.ts": {
-            "bytesInOutput": 1319
+            "bytesInOutput": 1867
           },
           "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-            "bytesInOutput": 1333
+            "bytesInOutput": 1322
           }
         },
-        "bytes": 914251
+        "bytes": 912270
       },
-      "docs/web/chunk-UJ3FMC4I.mjs": {
+      "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-KTSOQZ7P.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-T5V3YMXO.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-W7T5BCPH.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-RSRSEH3Q.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-GI23F5DQ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/ClassicalComponent/react-test-renderer/web.test.tsx",
+        "inputs": {
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
+            "bytesInOutput": 1000
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/web.js": {
+            "bytesInOutput": 154
+          },
+          "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
+            "bytesInOutput": 1070
+          },
+          "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+            "bytesInOutput": 108
+          }
+        },
+        "bytes": 3130
+      },
+      "docs/web/chunk-KTSOQZ7P.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-RSRSEH3Q.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "require_react_test_renderer"
+        ],
+        "inputs": {
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19181
+          },
+          "../testeranto/node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 279
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565765
+          },
+          "../testeranto/node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 283
+          }
+        },
+        "bytes": 586700
+      },
+      "docs/web/chunk-T5V3YMXO.mjs": {
+        "imports": [],
+        "exports": [
+          "ClassicalComponentSpec"
+        ],
+        "inputs": {
+          "src/ClassicalComponent/test.specification.ts": {
+            "bytesInOutput": 1415
+          }
+        },
+        "bytes": 1501
+      },
+      "docs/web/chunk-W7T5BCPH.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-UREIH5IJ.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-TTFRSOOU.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "ClassicalComponent"
+        ],
+        "inputs": {
+          "src/ClassicalComponent/index.tsx": {
+            "bytesInOutput": 1200
+          }
+        },
+        "bytes": 1400
+      },
+      "docs/web/chunk-RSRSEH3Q.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-TTFRSOOU.mjs",
@@ -2872,7 +3219,7 @@
             "bytesInOutput": 473
           },
           "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 8726
+            "bytesInOutput": 8772
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
             "bytesInOutput": 2536
@@ -2887,7 +3234,7 @@
             "bytesInOutput": 1651
           }
         },
-        "bytes": 37998
+        "bytes": 38044
       },
       "docs/web/chunk-GI23F5DQ.mjs": {
         "imports": [
@@ -3027,27 +3374,6 @@
           }
         },
         "bytes": 175727
-      },
-      "docs/web/chunk-W7T5BCPH.mjs": {
-        "imports": [
-          {
-            "path": "docs/web/chunk-UREIH5IJ.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/web/chunk-TTFRSOOU.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "ClassicalComponent"
-        ],
-        "inputs": {
-          "src/ClassicalComponent/index.tsx": {
-            "bytesInOutput": 1200
-          }
-        },
-        "bytes": 1400
       },
       "docs/web/chunk-UREIH5IJ.mjs": {
         "imports": [

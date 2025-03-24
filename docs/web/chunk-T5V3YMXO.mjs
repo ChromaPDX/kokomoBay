@@ -1,0 +1,57 @@
+// src/ClassicalComponent/test.specification.ts
+var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
+  return [
+    Suite.Default(
+      "a classical react component",
+      {
+        test0: Given.AnEmptyState(
+          [`0`],
+          [
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheHeader()
+            // When.IClickTheButton(),
+          ],
+          [
+            Then.ThePropsIs({ foo: "bar", children: [] }),
+            Then.TheStatusIs({ count: 3 })
+          ]
+        ),
+        test1: Given.AnEmptyState(
+          [`0`],
+          [When.IClickTheButton()],
+          [
+            Then.ThePropsIs({ foo: "bar", children: [] }),
+            Then.TheStatusIs({ count: 1 })
+          ]
+        ),
+        test2: Given.AnEmptyState(
+          [`0`],
+          [
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton(),
+            When.IClickTheButton()
+          ],
+          [Then.TheStatusIs({ count: 9 })]
+        ),
+        test3: Given.AnEmptyState(
+          [`0`],
+          [When.IClickTheButton(), When.IClickTheButton()],
+          [Then.TheStatusIs({ count: 2 })]
+        )
+      },
+      []
+    )
+  ];
+};
+
+export {
+  ClassicalComponentSpec
+};

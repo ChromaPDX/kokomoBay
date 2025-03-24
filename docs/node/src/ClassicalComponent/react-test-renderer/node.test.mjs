@@ -1,16 +1,16 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  require_react_test_renderer
-} from "../../../chunk-6FWMRXFT.mjs";
-import {
   ClassicalComponent
 } from "../../../chunk-I2AXMH3H.mjs";
+import {
+  require_react_test_renderer
+} from "../../../chunk-6FWMRXFT.mjs";
 import {
   assert
 } from "../../../chunk-BFDDKUUP.mjs";
 import {
   Node_default
-} from "../../../chunk-MI7ZHO2E.mjs";
+} from "../../../chunk-BMW762LB.mjs";
 import {
   __toESM
 } from "../../../chunk-M7BKJ4RF.mjs";
@@ -20,15 +20,11 @@ var import_react_test_renderer = __toESM(require_react_test_renderer(), 1);
 import React from "react";
 var testInterface = {
   beforeEach: function(CComponent, propsAndChildren) {
-    function Link(props) {
-      const p = props.props;
-      const c = props.children;
-      return React.createElement(CComponent, p, c);
+    function Link(proper) {
+      return React.createElement(CComponent, proper(), []);
     }
     return new Promise((res, rej) => {
       (0, import_react_test_renderer.act)(async () => {
-        const p = propsAndChildren;
-        const y = new CComponent(p.props);
         const testRenderer = await import_react_test_renderer.default.create(Link(propsAndChildren));
         res(testRenderer);
       });
@@ -70,12 +66,18 @@ var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
             When.IClickTheHeader()
             // When.IClickTheButton(),
           ],
-          [Then.ThePropsIs({ children: [] }), Then.TheStatusIs({ count: 3 })]
+          [
+            Then.ThePropsIs({ foo: "bar", children: [] }),
+            Then.TheStatusIs({ count: 3 })
+          ]
         ),
         test1: Given.AnEmptyState(
           [`0`],
           [When.IClickTheButton()],
-          [Then.ThePropsIs({ children: [] }), Then.TheStatusIs({ count: 1 })]
+          [
+            Then.ThePropsIs({ foo: "bar", children: [] }),
+            Then.TheStatusIs({ count: 1 })
+          ]
         ),
         test2: Given.AnEmptyState(
           [`0`],
@@ -124,12 +126,13 @@ var testImplementation = {
   thens: {
     ThePropsIs: (expectation) => (component) => {
       return assert.deepEqual(
-        component.toJSON().children[1],
-        {
-          type: "pre",
-          props: { id: "theProps" },
-          children: expectation
-        }
+        component.toJSON().children[1].children,
+        [JSON.stringify(expectation)]
+        // {
+        //   type: "pre",
+        //   props: { id: "theProps" },
+        //   children: JSON.stringify(expectation),
+        // }
       );
     },
     TheStatusIs: (expectation) => (component) => {

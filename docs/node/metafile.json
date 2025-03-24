@@ -689,7 +689,7 @@
         "format": "esm"
       },
       "../testeranto/src/lib/abstractBase.ts": {
-        "bytes": 19998,
+        "bytes": 20084,
         "imports": [
           {
             "path": "../Types",
@@ -1217,8 +1217,775 @@
         ],
         "format": "cjs"
       },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js": {
+        "bytes": 1967,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
+        "bytes": 3457,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/shim/index.js": {
+        "bytes": 234,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim.production.js"
+          },
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.js": {
+        "bytes": 2685,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/use-sync-external-store/shim/index.js",
+            "kind": "require-call",
+            "original": "use-sync-external-store/shim"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js": {
+        "bytes": 3526,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/use-sync-external-store/shim/index.js",
+            "kind": "require-call",
+            "original": "use-sync-external-store/shim"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/shim/with-selector.js": {
+        "bytes": 262,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim/with-selector.production.js"
+          },
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim/with-selector.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/cjs/scheduler.production.min.js": {
+        "bytes": 4235,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/cjs/scheduler.development.js": {
+        "bytes": 17497,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/index.js": {
+        "bytes": 198,
+        "imports": [
+          {
+            "path": "node_modules/scheduler/cjs/scheduler.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.production.min.js"
+          },
+          {
+            "path": "node_modules/scheduler/cjs/scheduler.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom.production.min.js": {
+        "bytes": 131737,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom.development.js": {
+        "bytes": 1026501,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/index.js": {
+        "bytes": 1363,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/cjs/react-dom.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom.production.min.js"
+          },
+          {
+            "path": "node_modules/react-dom/cjs/react-dom.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/reactBatchedUpdates.js": {
+        "bytes": 235,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/index.js",
+            "kind": "require-call",
+            "original": "react-dom"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/batch.js": {
+        "bytes": 495,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/components/Context.js": {
+        "bytes": 2151,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/hooks/useReduxContext.js": {
+        "bytes": 1517,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "../components/Context"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/useSyncExternalStore.js": {
+        "bytes": 195,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/hooks/useSelector.js": {
+        "bytes": 5473,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useReduxContext.js",
+            "kind": "require-call",
+            "original": "./useReduxContext"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/useSyncExternalStore.js",
+            "kind": "require-call",
+            "original": "../utils/useSyncExternalStore"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/@babel/runtime/helpers/interopRequireDefault.js": {
+        "bytes": 214,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/@babel/runtime/helpers/extends.js": {
+        "bytes": 504,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js": {
+        "bytes": 343,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js": {
+        "bytes": 2554,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js": {
+        "bytes": 6980,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/node_modules/react-is/index.js": {
+        "bytes": 196,
+        "imports": [
+          {
+            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.production.min.js"
+          },
+          {
+            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": {
+        "bytes": 2743,
+        "imports": [
+          {
+            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/index.js",
+            "kind": "require-call",
+            "original": "react-is"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-is/cjs/react-is.production.min.js": {
+        "bytes": 2265,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-is/cjs/react-is.development.js": {
+        "bytes": 7359,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-is/index.js": {
+        "bytes": 196,
+        "imports": [
+          {
+            "path": "node_modules/react-is/cjs/react-is.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.production.min.js"
+          },
+          {
+            "path": "node_modules/react-is/cjs/react-is.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/warning.js": {
+        "bytes": 700,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/verifySubselectors.js": {
+        "bytes": 883,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/warning.js",
+            "kind": "require-call",
+            "original": "../utils/warning"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/selectorFactory.js": {
+        "bytes": 3624,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/objectWithoutPropertiesLoose"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/verifySubselectors.js",
+            "kind": "require-call",
+            "original": "./verifySubselectors"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/bindActionCreators.js": {
+        "bytes": 427,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/isPlainObject.js": {
+        "bytes": 537,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/verifyPlainObject.js": {
+        "bytes": 533,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/isPlainObject.js",
+            "kind": "require-call",
+            "original": "./isPlainObject"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/warning.js",
+            "kind": "require-call",
+            "original": "./warning"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/wrapMapToProps.js": {
+        "bytes": 3369,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/verifyPlainObject.js",
+            "kind": "require-call",
+            "original": "../utils/verifyPlainObject"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/invalidArgFactory.js": {
+        "bytes": 328,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/mapDispatchToProps.js": {
+        "bytes": 998,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/bindActionCreators.js",
+            "kind": "require-call",
+            "original": "../utils/bindActionCreators"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/wrapMapToProps.js",
+            "kind": "require-call",
+            "original": "./wrapMapToProps"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
+            "kind": "require-call",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/mapStateToProps.js": {
+        "bytes": 567,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/lib/connect/wrapMapToProps.js",
+            "kind": "require-call",
+            "original": "./wrapMapToProps"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
+            "kind": "require-call",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/connect/mergeProps.js": {
+        "bytes": 1615,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/extends.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/extends"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/verifyPlainObject.js",
+            "kind": "require-call",
+            "original": "../utils/verifyPlainObject"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
+            "kind": "require-call",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/Subscription.js": {
+        "bytes": 3243,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/lib/utils/batch.js",
+            "kind": "require-call",
+            "original": "./batch"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js": {
+        "bytes": 2293,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/utils/shallowEqual.js": {
+        "bytes": 718,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/components/connect.js": {
+        "bytes": 21469,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/extends.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/extends"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/objectWithoutPropertiesLoose"
+          },
+          {
+            "path": "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+            "kind": "require-call",
+            "original": "hoist-non-react-statics"
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-is/index.js",
+            "kind": "require-call",
+            "original": "react-is"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/selectorFactory.js",
+            "kind": "require-call",
+            "original": "../connect/selectorFactory"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/mapDispatchToProps.js",
+            "kind": "require-call",
+            "original": "../connect/mapDispatchToProps"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/mapStateToProps.js",
+            "kind": "require-call",
+            "original": "../connect/mapStateToProps"
+          },
+          {
+            "path": "node_modules/react-redux/lib/connect/mergeProps.js",
+            "kind": "require-call",
+            "original": "../connect/mergeProps"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/Subscription.js",
+            "kind": "require-call",
+            "original": "../utils/Subscription"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js",
+            "kind": "require-call",
+            "original": "../utils/useIsomorphicLayoutEffect"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/shallowEqual.js",
+            "kind": "require-call",
+            "original": "../utils/shallowEqual"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/warning.js",
+            "kind": "require-call",
+            "original": "../utils/warning"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "./Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/useSyncExternalStore.js",
+            "kind": "require-call",
+            "original": "../utils/useSyncExternalStore"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/components/Provider.js": {
+        "bytes": 2737,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "./Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/Subscription.js",
+            "kind": "require-call",
+            "original": "../utils/Subscription"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js",
+            "kind": "require-call",
+            "original": "../utils/useIsomorphicLayoutEffect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/hooks/useStore.js": {
+        "bytes": 1235,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useReduxContext.js",
+            "kind": "require-call",
+            "original": "./useReduxContext"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/hooks/useDispatch.js": {
+        "bytes": 1469,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useStore.js",
+            "kind": "require-call",
+            "original": "./useStore"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/types.js": {
+        "bytes": 13,
+        "imports": []
+      },
+      "node_modules/react-redux/lib/exports.js": {
+        "bytes": 2546,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+            "kind": "require-call",
+            "original": "@babel/runtime/helpers/interopRequireDefault"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Provider.js",
+            "kind": "require-call",
+            "original": "./components/Provider"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/connect.js",
+            "kind": "require-call",
+            "original": "./components/connect"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/Context.js",
+            "kind": "require-call",
+            "original": "./components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useDispatch.js",
+            "kind": "require-call",
+            "original": "./hooks/useDispatch"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useSelector.js",
+            "kind": "require-call",
+            "original": "./hooks/useSelector"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useStore.js",
+            "kind": "require-call",
+            "original": "./hooks/useStore"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/shallowEqual.js",
+            "kind": "require-call",
+            "original": "./utils/shallowEqual"
+          },
+          {
+            "path": "node_modules/react-redux/lib/types.js",
+            "kind": "require-call",
+            "original": "./types"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/lib/index.js": {
+        "bytes": 1535,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/shim/index.js",
+            "kind": "require-call",
+            "original": "use-sync-external-store/shim"
+          },
+          {
+            "path": "node_modules/use-sync-external-store/shim/with-selector.js",
+            "kind": "require-call",
+            "original": "use-sync-external-store/shim/with-selector"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/reactBatchedUpdates.js",
+            "kind": "require-call",
+            "original": "./utils/reactBatchedUpdates"
+          },
+          {
+            "path": "node_modules/react-redux/lib/utils/batch.js",
+            "kind": "require-call",
+            "original": "./utils/batch"
+          },
+          {
+            "path": "node_modules/react-redux/lib/hooks/useSelector.js",
+            "kind": "require-call",
+            "original": "./hooks/useSelector"
+          },
+          {
+            "path": "node_modules/react-redux/lib/components/connect.js",
+            "kind": "require-call",
+            "original": "./components/connect"
+          },
+          {
+            "path": "node_modules/react-redux/lib/exports.js",
+            "kind": "require-call",
+            "original": "./exports"
+          }
+        ],
+        "format": "cjs"
+      },
+      "src/LoginPage/index.tsx": {
+        "bytes": 2987,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-redux/lib/index.js",
+            "kind": "import-statement",
+            "original": "react-redux"
+          },
+          {
+            "path": "src/app.ts",
+            "kind": "import-statement",
+            "original": "../app.js"
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
       "src/app.ts": {
-        "bytes": 2518,
+        "bytes": 3210,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -1226,9 +1993,9 @@
             "original": "@reduxjs/toolkit"
           },
           {
-            "path": "./LoginPage",
+            "path": "src/LoginPage/index.tsx",
             "kind": "import-statement",
-            "external": true
+            "original": "./LoginPage"
           }
         ],
         "format": "esm"
@@ -15850,7 +16617,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 16466,
+        "bytes": 16543,
         "imports": [],
         "format": "esm"
       },
@@ -16117,6 +16884,33 @@
         ],
         "format": "esm"
       },
+      "../testeranto/dist/module/src/SubPackages/react/jsx/index.js": {
+        "bytes": 890,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/src/SubPackages/react/jsx/node.js": {
+        "bytes": 379,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/Node.js",
+            "kind": "import-statement",
+            "original": "../../../Node.js"
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
       "src/LoginPage/test.ts": {
         "bytes": 4759,
         "imports": [
@@ -16128,769 +16922,64 @@
         ],
         "format": "esm"
       },
-      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js": {
-        "bytes": 1967,
+      "src/LoginPage/react/test.tsx": {
+        "bytes": 2992,
         "imports": [
           {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
-        "bytes": 3457,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/use-sync-external-store/shim/index.js": {
-        "bytes": 234,
-        "imports": [
-          {
-            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js",
-            "kind": "require-call",
-            "original": "../cjs/use-sync-external-store-shim.production.js"
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
           },
           {
-            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js",
-            "kind": "require-call",
-            "original": "../cjs/use-sync-external-store-shim.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.js": {
-        "bytes": 2685,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/use-sync-external-store/shim/index.js",
-            "kind": "require-call",
-            "original": "use-sync-external-store/shim"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js": {
-        "bytes": 3526,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/use-sync-external-store/shim/index.js",
-            "kind": "require-call",
-            "original": "use-sync-external-store/shim"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/use-sync-external-store/shim/with-selector.js": {
-        "bytes": 262,
-        "imports": [
-          {
-            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.js",
-            "kind": "require-call",
-            "original": "../cjs/use-sync-external-store-shim/with-selector.production.js"
-          },
-          {
-            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js",
-            "kind": "require-call",
-            "original": "../cjs/use-sync-external-store-shim/with-selector.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/cjs/scheduler.production.min.js": {
-        "bytes": 4235,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/cjs/scheduler.development.js": {
-        "bytes": 17497,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/index.js": {
-        "bytes": 198,
-        "imports": [
-          {
-            "path": "node_modules/scheduler/cjs/scheduler.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler.production.min.js"
-          },
-          {
-            "path": "node_modules/scheduler/cjs/scheduler.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom.production.min.js": {
-        "bytes": 131737,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom.development.js": {
-        "bytes": 1026501,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/index.js": {
-        "bytes": 1363,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/cjs/react-dom.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom.production.min.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/reactBatchedUpdates.js": {
-        "bytes": 235,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/index.js",
-            "kind": "require-call",
-            "original": "react-dom"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/batch.js": {
-        "bytes": 495,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/components/Context.js": {
-        "bytes": 2151,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/hooks/useReduxContext.js": {
-        "bytes": 1517,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "../components/Context"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/useSyncExternalStore.js": {
-        "bytes": 195,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/hooks/useSelector.js": {
-        "bytes": 5473,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useReduxContext.js",
-            "kind": "require-call",
-            "original": "./useReduxContext"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "../components/Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/useSyncExternalStore.js",
-            "kind": "require-call",
-            "original": "../utils/useSyncExternalStore"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@babel/runtime/helpers/interopRequireDefault.js": {
-        "bytes": 214,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@babel/runtime/helpers/extends.js": {
-        "bytes": 504,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js": {
-        "bytes": 343,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js": {
-        "bytes": 2554,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js": {
-        "bytes": 6980,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/hoist-non-react-statics/node_modules/react-is/index.js": {
-        "bytes": 196,
-        "imports": [
-          {
-            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-is.production.min.js"
-          },
-          {
-            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-is.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": {
-        "bytes": 2743,
-        "imports": [
-          {
-            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/index.js",
-            "kind": "require-call",
-            "original": "react-is"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-is/cjs/react-is.production.min.js": {
-        "bytes": 2265,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-is/cjs/react-is.development.js": {
-        "bytes": 7359,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-is/index.js": {
-        "bytes": 196,
-        "imports": [
-          {
-            "path": "node_modules/react-is/cjs/react-is.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-is.production.min.js"
-          },
-          {
-            "path": "node_modules/react-is/cjs/react-is.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-is.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/warning.js": {
-        "bytes": 700,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/verifySubselectors.js": {
-        "bytes": 883,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/warning.js",
-            "kind": "require-call",
-            "original": "../utils/warning"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/selectorFactory.js": {
-        "bytes": 3624,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/objectWithoutPropertiesLoose"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/verifySubselectors.js",
-            "kind": "require-call",
-            "original": "./verifySubselectors"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/bindActionCreators.js": {
-        "bytes": 427,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/isPlainObject.js": {
-        "bytes": 537,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/verifyPlainObject.js": {
-        "bytes": 533,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/isPlainObject.js",
-            "kind": "require-call",
-            "original": "./isPlainObject"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/warning.js",
-            "kind": "require-call",
-            "original": "./warning"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/wrapMapToProps.js": {
-        "bytes": 3369,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/verifyPlainObject.js",
-            "kind": "require-call",
-            "original": "../utils/verifyPlainObject"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/invalidArgFactory.js": {
-        "bytes": 328,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/mapDispatchToProps.js": {
-        "bytes": 998,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/bindActionCreators.js",
-            "kind": "require-call",
-            "original": "../utils/bindActionCreators"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/wrapMapToProps.js",
-            "kind": "require-call",
-            "original": "./wrapMapToProps"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
-            "kind": "require-call",
-            "original": "./invalidArgFactory"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/mapStateToProps.js": {
-        "bytes": 567,
-        "imports": [
-          {
-            "path": "node_modules/react-redux/lib/connect/wrapMapToProps.js",
-            "kind": "require-call",
-            "original": "./wrapMapToProps"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
-            "kind": "require-call",
-            "original": "./invalidArgFactory"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/connect/mergeProps.js": {
-        "bytes": 1615,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/@babel/runtime/helpers/extends.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/extends"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/verifyPlainObject.js",
-            "kind": "require-call",
-            "original": "../utils/verifyPlainObject"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/invalidArgFactory.js",
-            "kind": "require-call",
-            "original": "./invalidArgFactory"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/Subscription.js": {
-        "bytes": 3243,
-        "imports": [
-          {
-            "path": "node_modules/react-redux/lib/utils/batch.js",
-            "kind": "require-call",
-            "original": "./batch"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js": {
-        "bytes": 2293,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/utils/shallowEqual.js": {
-        "bytes": 718,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/components/connect.js": {
-        "bytes": 21469,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/@babel/runtime/helpers/extends.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/extends"
-          },
-          {
-            "path": "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/objectWithoutPropertiesLoose"
-          },
-          {
-            "path": "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
-            "kind": "require-call",
-            "original": "hoist-non-react-statics"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/react-is/index.js",
-            "kind": "require-call",
-            "original": "react-is"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/selectorFactory.js",
-            "kind": "require-call",
-            "original": "../connect/selectorFactory"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/mapDispatchToProps.js",
-            "kind": "require-call",
-            "original": "../connect/mapDispatchToProps"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/mapStateToProps.js",
-            "kind": "require-call",
-            "original": "../connect/mapStateToProps"
-          },
-          {
-            "path": "node_modules/react-redux/lib/connect/mergeProps.js",
-            "kind": "require-call",
-            "original": "../connect/mergeProps"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/Subscription.js",
-            "kind": "require-call",
-            "original": "../utils/Subscription"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js",
-            "kind": "require-call",
-            "original": "../utils/useIsomorphicLayoutEffect"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/shallowEqual.js",
-            "kind": "require-call",
-            "original": "../utils/shallowEqual"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/warning.js",
-            "kind": "require-call",
-            "original": "../utils/warning"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "./Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/useSyncExternalStore.js",
-            "kind": "require-call",
-            "original": "../utils/useSyncExternalStore"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/components/Provider.js": {
-        "bytes": 2737,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "./Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/Subscription.js",
-            "kind": "require-call",
-            "original": "../utils/Subscription"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/useIsomorphicLayoutEffect.js",
-            "kind": "require-call",
-            "original": "../utils/useIsomorphicLayoutEffect"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/hooks/useStore.js": {
-        "bytes": 1235,
-        "imports": [
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "../components/Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useReduxContext.js",
-            "kind": "require-call",
-            "original": "./useReduxContext"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/hooks/useDispatch.js": {
-        "bytes": 1469,
-        "imports": [
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "../components/Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useStore.js",
-            "kind": "require-call",
-            "original": "./useStore"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/types.js": {
-        "bytes": 13,
-        "imports": []
-      },
-      "node_modules/react-redux/lib/exports.js": {
-        "bytes": 2546,
-        "imports": [
-          {
-            "path": "node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-            "kind": "require-call",
-            "original": "@babel/runtime/helpers/interopRequireDefault"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Provider.js",
-            "kind": "require-call",
-            "original": "./components/Provider"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/connect.js",
-            "kind": "require-call",
-            "original": "./components/connect"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/Context.js",
-            "kind": "require-call",
-            "original": "./components/Context"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useDispatch.js",
-            "kind": "require-call",
-            "original": "./hooks/useDispatch"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useSelector.js",
-            "kind": "require-call",
-            "original": "./hooks/useSelector"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useStore.js",
-            "kind": "require-call",
-            "original": "./hooks/useStore"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/shallowEqual.js",
-            "kind": "require-call",
-            "original": "./utils/shallowEqual"
-          },
-          {
-            "path": "node_modules/react-redux/lib/types.js",
-            "kind": "require-call",
-            "original": "./types"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-redux/lib/index.js": {
-        "bytes": 1535,
-        "imports": [
-          {
-            "path": "node_modules/use-sync-external-store/shim/index.js",
-            "kind": "require-call",
-            "original": "use-sync-external-store/shim"
-          },
-          {
-            "path": "node_modules/use-sync-external-store/shim/with-selector.js",
-            "kind": "require-call",
-            "original": "use-sync-external-store/shim/with-selector"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/reactBatchedUpdates.js",
-            "kind": "require-call",
-            "original": "./utils/reactBatchedUpdates"
-          },
-          {
-            "path": "node_modules/react-redux/lib/utils/batch.js",
-            "kind": "require-call",
-            "original": "./utils/batch"
-          },
-          {
-            "path": "node_modules/react-redux/lib/hooks/useSelector.js",
-            "kind": "require-call",
-            "original": "./hooks/useSelector"
-          },
-          {
-            "path": "node_modules/react-redux/lib/components/connect.js",
-            "kind": "require-call",
-            "original": "./components/connect"
-          },
-          {
-            "path": "node_modules/react-redux/lib/exports.js",
-            "kind": "require-call",
-            "original": "./exports"
-          }
-        ],
-        "format": "cjs"
-      },
-      "src/LoginPage/index.tsx": {
-        "bytes": 3215,
-        "imports": [
-          {
-            "path": "react",
+            "path": "testeranto/src/Types",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "node_modules/react-redux/lib/index.js",
-            "kind": "import-statement",
-            "original": "react-redux"
-          },
-          {
-            "path": "src/app.ts",
-            "kind": "import-statement",
-            "original": "../app.js"
-          },
-          {
-            "path": "react/jsx-runtime",
+            "path": "testeranto/src/PM/index.js",
             "kind": "import-statement",
             "external": true
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react/node.test.tsx": {
+        "bytes": 929,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/node.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react/jsx/node"
+          },
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/index.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react/jsx/index"
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/LoginPage/test.ts",
+            "kind": "import-statement",
+            "original": "../test.js"
+          },
+          {
+            "path": "src/LoginPage/react/test.tsx",
+            "kind": "import-statement",
+            "original": "./test.js"
           }
         ],
         "format": "esm"
@@ -17320,7 +17409,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
-        "bytes": 1117,
+        "bytes": 958,
         "imports": [
           {
             "path": "react",
@@ -17352,7 +17441,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/test.specification.ts": {
-        "bytes": 1498,
+        "bytes": 1596,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -17368,8 +17457,13 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-        "bytes": 1668,
+        "bytes": 1484,
         "imports": [
+          {
+            "path": "react-test-renderer",
+            "kind": "import-statement",
+            "external": true
+          },
           {
             "path": "node_modules/chai/index.mjs",
             "kind": "import-statement",
@@ -17381,17 +17475,12 @@
             "external": true
           },
           {
-            "path": "../test.shape",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
             "path": "testeranto/src/PM",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "react-test-renderer",
+            "path": "../test.shape",
             "kind": "import-statement",
             "external": true
           }
@@ -17399,7 +17488,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-        "bytes": 472,
+        "bytes": 359,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js",
@@ -17426,12 +17515,8 @@
       }
     },
     "outputs": {
-      "docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs": {
+      "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
         "imports": [
-          {
-            "path": "docs/node/chunk-6FWMRXFT.mjs",
-            "kind": "import-statement"
-          },
           {
             "path": "docs/node/chunk-I2AXMH3H.mjs",
             "kind": "import-statement"
@@ -17441,7 +17526,164 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-MI7ZHO2E.mjs",
+            "path": "docs/node/chunk-BMW762LB.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/ClassicalComponent/react-dom/server.node.test.tsx",
+        "inputs": {
+          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
+            "bytesInOutput": 59881
+          },
+          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
+            "bytesInOutput": 61645
+          },
+          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
+            "bytesInOutput": 231591
+          },
+          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js": {
+            "bytesInOutput": 230485
+          },
+          "../testeranto/node_modules/react-dom/server.node.js": {
+            "bytesInOutput": 786
+          },
+          "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
+            "bytesInOutput": 59868
+          },
+          "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
+            "bytesInOutput": 61632
+          },
+          "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
+            "bytesInOutput": 231578
+          },
+          "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
+            "bytesInOutput": 230472
+          },
+          "node_modules/react-dom/server.node.js": {
+            "bytesInOutput": 777
+          },
+          "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
+            "bytesInOutput": 1040
+          },
+          "src/ClassicalComponent/react-dom/server.node.test.tsx": {
+            "bytesInOutput": 1487
+          }
+        },
+        "bytes": 1175203
+      },
+      "docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-I2AXMH3H.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-6FWMRXFT.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-BFDDKUUP.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-BMW762LB.mjs",
             "kind": "import-statement"
           },
           {
@@ -17460,22 +17702,45 @@
         "entryPoint": "src/ClassicalComponent/react-test-renderer/node.test.tsx",
         "inputs": {
           "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
-            "bytesInOutput": 1095
+            "bytesInOutput": 964
           },
           "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js": {
             "bytesInOutput": 156
           },
           "src/ClassicalComponent/test.specification.ts": {
-            "bytesInOutput": 1319
+            "bytesInOutput": 1415
           },
           "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-            "bytesInOutput": 991
+            "bytesInOutput": 1070
           },
           "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
             "bytesInOutput": 110
           }
         },
-        "bytes": 4474
+        "bytes": 4518
+      },
+      "docs/node/chunk-I2AXMH3H.mjs": {
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react/jsx-runtime",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "exports": [
+          "ClassicalComponent"
+        ],
+        "inputs": {
+          "src/ClassicalComponent/index.tsx": {
+            "bytesInOutput": 983
+          }
+        },
+        "bytes": 1141
       },
       "docs/node/src/app.reduxToolkit.test.mjs": {
         "imports": [
@@ -17484,11 +17749,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-UGG3XWBA.mjs",
+            "path": "docs/node/chunk-PQHISNBD.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-CLXNHOZW.mjs",
+            "path": "docs/node/chunk-X2TRDJKR.mjs",
             "kind": "import-statement"
           },
           {
@@ -17521,11 +17786,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-UGG3XWBA.mjs",
+            "path": "docs/node/chunk-PQHISNBD.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-CLXNHOZW.mjs",
+            "path": "docs/node/chunk-X2TRDJKR.mjs",
             "kind": "import-statement"
           },
           {
@@ -17566,7 +17831,7 @@
       "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-UGG3XWBA.mjs",
+            "path": "docs/node/chunk-PQHISNBD.mjs",
             "kind": "import-statement"
           },
           {
@@ -17611,7 +17876,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-UGG3XWBA.mjs",
+            "path": "docs/node/chunk-PQHISNBD.mjs",
             "kind": "import-statement"
           },
           {
@@ -17649,7 +17914,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-UGG3XWBA.mjs",
+            "path": "docs/node/chunk-PQHISNBD.mjs",
             "kind": "import-statement"
           },
           {
@@ -21458,7 +21723,7 @@
         },
         "bytes": 5041191
       },
-      "docs/node/chunk-UGG3XWBA.mjs": {
+      "docs/node/chunk-PQHISNBD.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -21479,7 +21744,7 @@
             "bytesInOutput": 459
           },
           "../testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 9407
+            "bytesInOutput": 9453
           },
           "../testeranto/src/lib/basebuilder.ts": {
             "bytesInOutput": 2748
@@ -21500,12 +21765,12 @@
             "bytesInOutput": 887
           }
         },
-        "bytes": 23170
+        "bytes": 23216
       },
       "docs/node/src/ReactStateAndHook.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-IGLX3D7E.mjs",
+            "path": "docs/node/chunk-IQ72X7PC.mjs",
             "kind": "import-statement"
           },
           {
@@ -21513,7 +21778,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-MI7ZHO2E.mjs",
+            "path": "docs/node/chunk-BMW762LB.mjs",
             "kind": "import-statement"
           },
           {
@@ -21550,18 +21815,14 @@
         },
         "bytes": 2584
       },
-      "docs/node/src/LoginPage/react-test-renderer/node.test.mjs": {
+      "docs/node/src/LoginPage/react/node.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-CLXNHOZW.mjs",
+            "path": "docs/node/chunk-6GJCGFL4.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-IGLX3D7E.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-6FWMRXFT.mjs",
+            "path": "docs/node/chunk-X2TRDJKR.mjs",
             "kind": "import-statement"
           },
           {
@@ -21569,7 +21830,63 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-MI7ZHO2E.mjs",
+            "path": "docs/node/chunk-BMW762LB.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react/node.test.tsx",
+        "inputs": {
+          "../testeranto/dist/module/src/SubPackages/react/jsx/index.js": {
+            "bytesInOutput": 785
+          },
+          "../testeranto/dist/module/src/SubPackages/react/jsx/node.js": {
+            "bytesInOutput": 295
+          },
+          "src/LoginPage/react/test.tsx": {
+            "bytesInOutput": 2518
+          },
+          "src/LoginPage/react/node.test.tsx": {
+            "bytesInOutput": 559
+          }
+        },
+        "bytes": 4794
+      },
+      "docs/node/src/LoginPage/react-test-renderer/node.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-IQ72X7PC.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-6FWMRXFT.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-6GJCGFL4.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-X2TRDJKR.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-BFDDKUUP.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-BMW762LB.mjs",
             "kind": "import-statement"
           },
           {
@@ -21585,6 +21902,141 @@
             "path": "react",
             "kind": "require-call",
             "external": true
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react-test-renderer/node.test.tsx",
+        "inputs": {
+          "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
+            "bytesInOutput": 8287
+          },
+          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19200
+          },
+          "node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 341
+          },
+          "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
+            "bytesInOutput": 150810
+          },
+          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565789
+          },
+          "node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 341
+          },
+          "src/LoginPage/react-test-renderer/test.tsx": {
+            "bytesInOutput": 876
+          },
+          "src/LoginPage/react-test-renderer/node.test.tsx": {
+            "bytesInOutput": 2914
+          }
+        },
+        "bytes": 751024
+      },
+      "docs/node/chunk-IQ72X7PC.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-6FWMRXFT.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-BMW762LB.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "exports": [
+          "node_default"
+        ],
+        "inputs": {
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
+            "bytesInOutput": 715
+          },
+          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
+            "bytesInOutput": 203
+          }
+        },
+        "bytes": 1365
+      },
+      "docs/node/chunk-6FWMRXFT.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "exports": [
+          "require_react_test_renderer"
+        ],
+        "inputs": {
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
+            "bytesInOutput": 8301
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19214
+          },
+          "../testeranto/node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 355
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
+            "bytesInOutput": 7026
+          },
+          "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+            "bytesInOutput": 16937
+          },
+          "../testeranto/node_modules/scheduler/index.js": {
+            "bytesInOutput": 315
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
+            "bytesInOutput": 150824
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565801
+          },
+          "../testeranto/node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 355
+          }
+        },
+        "bytes": 771941
+      },
+      "docs/node/chunk-6GJCGFL4.mjs": {
+        "imports": [],
+        "exports": [
+          "LoginPageSpecs"
+        ],
+        "inputs": {
+          "src/LoginPage/test.ts": {
+            "bytesInOutput": 3842
+          }
+        },
+        "bytes": 3985
+      },
+      "docs/node/chunk-X2TRDJKR.mjs": {
+        "imports": [
+          {
+            "path": "docs/node/chunk-M7BKJ4RF.mjs",
+            "kind": "import-statement"
           },
           {
             "path": "react",
@@ -21653,9 +22105,17 @@
           }
         ],
         "exports": [
-          "default"
+          "LoginPage_default",
+          "actions",
+          "app_default",
+          "credErrorId",
+          "credentialFailWarning",
+          "emailwarning",
+          "loginApp",
+          "require_redux",
+          "require_scheduler",
+          "store"
         ],
-        "entryPoint": "src/LoginPage/react-test-renderer/node.test.tsx",
         "inputs": {
           "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js": {
             "bytesInOutput": 2009
@@ -21688,7 +22148,7 @@
             "bytesInOutput": 230192
           },
           "node_modules/react-dom/cjs/react-dom.development.js": {
-            "bytesInOutput": 906498
+            "bytesInOutput": 906525
           },
           "node_modules/react-dom/index.js": {
             "bytesInOutput": 727
@@ -21804,52 +22264,6 @@
           "node_modules/react-redux/lib/index.js": {
             "bytesInOutput": 1325
           },
-          "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-            "bytesInOutput": 8287
-          },
-          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19200
-          },
-          "node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 341
-          },
-          "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-            "bytesInOutput": 150810
-          },
-          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565789
-          },
-          "node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 341
-          },
-          "src/LoginPage/test.ts": {
-            "bytesInOutput": 3842
-          },
-          "src/LoginPage/index.tsx": {
-            "bytesInOutput": 3076
-          },
-          "src/LoginPage/react-test-renderer/test.tsx": {
-            "bytesInOutput": 876
-          },
-          "src/LoginPage/react-test-renderer/node.test.tsx": {
-            "bytesInOutput": 2914
-          }
-        },
-        "bytes": 2020528
-      },
-      "docs/node/chunk-CLXNHOZW.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "app_default",
-          "loginApp",
-          "require_redux"
-        ],
-        "inputs": {
           "node_modules/immer/dist/immer.cjs.production.min.js": {
             "bytesInOutput": 28329
           },
@@ -21875,291 +22289,34 @@
             "bytesInOutput": 1157
           },
           "node_modules/redux/lib/redux.js": {
-            "bytesInOutput": 18419
+            "bytesInOutput": 18423
           },
           "node_modules/reselect/lib/defaultMemoize.js": {
             "bytesInOutput": 3856
           },
           "node_modules/reselect/lib/index.js": {
-            "bytesInOutput": 4974
+            "bytesInOutput": 4978
           },
           "node_modules/redux-thunk/lib/index.js": {
             "bytesInOutput": 829
           },
           "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.production.min.js": {
-            "bytesInOutput": 46533
+            "bytesInOutput": 46535
           },
           "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.development.js": {
-            "bytesInOutput": 90974
+            "bytesInOutput": 90982
           },
           "node_modules/@reduxjs/toolkit/dist/index.js": {
             "bytesInOutput": 325
           },
+          "src/LoginPage/index.tsx": {
+            "bytesInOutput": 2330
+          },
           "src/app.ts": {
-            "bytesInOutput": 1635
+            "bytesInOutput": 2270
           }
         },
-        "bytes": 252740
-      },
-      "docs/node/chunk-IGLX3D7E.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-6FWMRXFT.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MI7ZHO2E.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "node_default"
-        ],
-        "inputs": {
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
-            "bytesInOutput": 715
-          },
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
-            "bytesInOutput": 203
-          }
-        },
-        "bytes": 1365
-      },
-      "docs/node/chunk-6FWMRXFT.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "exports": [
-          "require_react_test_renderer"
-        ],
-        "inputs": {
-          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-            "bytesInOutput": 8301
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19214
-          },
-          "../testeranto/node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 355
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
-            "bytesInOutput": 7026
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
-            "bytesInOutput": 16937
-          },
-          "../testeranto/node_modules/scheduler/index.js": {
-            "bytesInOutput": 315
-          },
-          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-            "bytesInOutput": 150824
-          },
-          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565801
-          },
-          "../testeranto/node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 355
-          }
-        },
-        "bytes": 771941
-      },
-      "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-I2AXMH3H.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-BFDDKUUP.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MI7ZHO2E.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/ClassicalComponent/react-dom/server.node.test.tsx",
-        "inputs": {
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59881
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61645
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231591
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230485
-          },
-          "../testeranto/node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 786
-          },
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59868
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61632
-          },
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231578
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230472
-          },
-          "node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 777
-          },
-          "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
-            "bytesInOutput": 1040
-          },
-          "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-            "bytesInOutput": 1487
-          }
-        },
-        "bytes": 1175203
-      },
-      "docs/node/chunk-I2AXMH3H.mjs": {
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "react/jsx-runtime",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "ClassicalComponent"
-        ],
-        "inputs": {
-          "src/ClassicalComponent/index.tsx": {
-            "bytesInOutput": 983
-          }
-        },
-        "bytes": 1141
+        "bytes": 1518663
       },
       "docs/node/chunk-BFDDKUUP.mjs": {
         "imports": [
@@ -22300,7 +22457,7 @@
         },
         "bytes": 175814
       },
-      "docs/node/chunk-MI7ZHO2E.mjs": {
+      "docs/node/chunk-BMW762LB.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -22321,7 +22478,7 @@
             "bytesInOutput": 473
           },
           "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 8726
+            "bytesInOutput": 8772
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
             "bytesInOutput": 2536
@@ -22342,7 +22499,7 @@
             "bytesInOutput": 819
           }
         },
-        "bytes": 20861
+        "bytes": 20907
       },
       "docs/node/chunk-M7BKJ4RF.mjs": {
         "imports": [],

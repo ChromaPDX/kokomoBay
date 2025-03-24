@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider, useSelector } from "react-redux";
 
-import app from "../app.js";
+import app, { validateEmail } from "../app.js";
 
 const core = app();
 
@@ -22,11 +22,6 @@ export type ILoginPageSelection = {
   email: string;
   error: ILoginPageError;
   disableSubmit: boolean;
-};
-
-export const validateEmail = (email: string): boolean => {
-  // More permissive validation for testing
-  return /^[^\s@]+@[^\s@]+(\.[^\s@]+)?$/.test(email);
 };
 
 export const emailwarning = "Something isn’t right. Please double check your email";
@@ -50,10 +45,7 @@ export function LoginPage(): React.JSX.Element {
         id={emailInputId}
         value={selection.email}
         onChange={(e) => {
-          const email = e.target.value as string;
-          store.dispatch(actions.setEmail(email));
-          const isValid = validateEmail(email);
-          store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+          store.dispatch(actions.setEmail(e.target.value as string));
         }}
       />
 
@@ -75,25 +67,24 @@ export function LoginPage(): React.JSX.Element {
       <br />
 
       <button id={loginInputId} disabled={selection.disableSubmit} onClick={(event?) => {
-
         event && event.preventDefault();
+        store.dispatch(actions.signIn());
 
-        const isValid = validateEmail(selection.email);
+        // const isValid = validateEmail(selection.email);
 
-        store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
+        // store.dispatch(actions.setError(isValid ? noError : 'invalidEmail'));
 
-        if (isValid) {
+        // if (isValid) {
 
-          // Simulate credential check
-          const isCredentialValid = selection.email === 'adam@email.com' && selection.password === 'secret';
-          store.dispatch(actions.setError(isCredentialValid ? noError : 'credentialFail'));
-          store.dispatch(actions.setDisableSubmit(!isCredentialValid));
+        //   // Simulate credential check
+        //   const isCredentialValid = selection.email === 'adam@email.com' && selection.password === 'secret';
+        //   store.dispatch(actions.setError(isCredentialValid ? noError : 'credentialFail'));
+        //   store.dispatch(actions.setDisableSubmit(!isCredentialValid));
 
-          if (isCredentialValid) {
-
-            store.dispatch(actions.signIn());
-          }
-        }
+        //   if (isCredentialValid) {
+        //     store.dispatch(actions.signIn());
+        //   }
+        // }
       }} >Sign In</button>
 
     </form>

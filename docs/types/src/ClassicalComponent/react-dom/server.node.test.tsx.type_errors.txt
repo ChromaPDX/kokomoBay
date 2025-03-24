@@ -1,0 +1,24 @@
+src/ClassicalComponent/react-dom/server.node.test.tsx(82,31): error TS2314: Generic type 'ITestSpecification' requires 1 type argument(s).
+  Type 'IImpl<IClassicalComponentSpec>' is not assignable to type 'Omit<{ suites: { [x: string]: string; }; givens: { [x: string]: (...Ig: any) => any; }; whens: { [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }; thens: { [x: string]: (...It: any) => (ssel: any, utils: PM) => any; }; checks: { ...; }; }, never>'.
+    Types of property 'whens' are incompatible.
+      Type '{ [x: string]: (...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>; }' is not assignable to type '{ [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }'.
+        'string' index signatures are incompatible.
+          Type '(...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>' is not assignable to type '(...Iw: any) => (zel: any, utils: PM) => Promise<any>'.
+            Types of parameters 'Iw' and 'Iw' are incompatible.
+              Type 'any' is not assignable to type 'never'.
+src/ClassicalComponent/react-dom/server.node.test.tsx(123,34): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'ReactNode'.
+  Type 'IImpl<IClassicalComponentSpec>' is not assignable to type 'Omit<{ suites: { [x: string]: string; }; givens: { [x: string]: (...Ig: any) => any; }; whens: { [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }; thens: { [x: string]: (...It: any) => (ssel: any, utils: PM) => any; }; checks: { ...; }; }, never>'.
+    Types of property 'whens' are incompatible.
+      Type '{ [x: string]: (...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>; }' is not assignable to type '{ [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }'.
+        'string' index signatures are incompatible.
+          Type '(...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>' is not assignable to type '(...Iw: any) => (zel: any, utils: PM) => Promise<any>'.
+            Types of parameters 'Iw' and 'Iw' are incompatible.
+              Type 'any' is not assignable to type 'never'.
+src/ClassicalComponent/react-dom/server.node.test.tsx(147,3): error TS2345: Argument of type 'IImpl<IClassicalComponentSpec>' is not assignable to parameter of type 'ITestImplementation<any, object>'.
+  Type 'IImpl<IClassicalComponentSpec>' is not assignable to type 'Omit<{ suites: { [x: string]: string; }; givens: { [x: string]: (...Ig: any) => any; }; whens: { [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }; thens: { [x: string]: (...It: any) => (ssel: any, utils: PM) => any; }; checks: { ...; }; }, never>'.
+    Types of property 'whens' are incompatible.
+      Type '{ [x: string]: (...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>; }' is not assignable to type '{ [x: string]: (...Iw: any) => (zel: any, utils: PM) => Promise<any>; }'.
+        'string' index signatures are incompatible.
+          Type '(...Iw: never) => (zel: unknown, utils: PM) => Promise<unknown>' is not assignable to type '(...Iw: any) => (zel: any, utils: PM) => Promise<any>'.
+            Types of parameters 'Iw' and 'Iw' are incompatible.
+              Type 'any' is not assignable to type 'never'.

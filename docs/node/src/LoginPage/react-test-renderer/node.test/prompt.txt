@@ -1,11 +1,7 @@
 
-/add src/LoginPage/test.ts
-/add src/LoginPage/index.tsx
 /add src/LoginPage/react-test-renderer/test.tsx
 /add src/LoginPage/react-test-renderer/node.test.tsx
   
-/read docs/types/src/LoginPage/test.ts.type_errors.txt
-/read docs/types/src/LoginPage/index.tsx.type_errors.txt
 /read docs/types/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt
 /read docs/types/src/LoginPage/react-test-renderer/node.test.tsx.type_errors.txt
   
@@ -15,4 +11,4 @@
 
 /load docs/node/src/LoginPage/react-test-renderer/node.test/featurePrompt.txt
 
-/code Fix the failing tests described in docs/node/src/LoginPage/react-test-renderer/node.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/test.ts.type_errors.txt, docs/types/src/LoginPage/index.tsx.type_errors.txt, docs/types/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt, docs/types/src/LoginPage/react-test-renderer/node.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/node/src/LoginPage/react-test-renderer/node.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt, docs/types/src/LoginPage/react-test-renderer/node.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."

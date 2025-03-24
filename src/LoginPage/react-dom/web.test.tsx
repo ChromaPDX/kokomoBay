@@ -60,7 +60,7 @@ export default Testeranto<IThenShape>(
       iv,
       utils
     ): Promise<IStore> => {
-      // debugger
+
       return new Promise((resolve, rej) => {
 
         const r = reactElement()

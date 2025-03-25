@@ -6,9 +6,9 @@ export type IRectangleTestShape = {
   istore: Rectangle;
   iselection: Rectangle;
 
-  when: (rectangle: Rectangle) => any;
-  then: unknown;
-  given: (x) => (y) => unknown;
+  when: (rectangle: Rectangle) => Rectangle;
+  then: (s: Rectangle) => Rectangle;
+  given: (x) => (y) => Rectangle;
 
   suites: {
     Default: [string];

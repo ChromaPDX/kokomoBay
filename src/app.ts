@@ -23,6 +23,7 @@ export const loginApp = createSlice<
     setPassword: (s: IStoreState, b) => void;
     setEmail: (s: IStoreState, b) => void;
     signIn: (s: IStoreState) => void;
+    setError: (s: IStoreState, b) => void;
   }
 >({
   name: "my login app!",
@@ -55,9 +56,9 @@ export const loginApp = createSlice<
     setError: (state, action: { payload: ILoginPageError }) => {
       state.error = action.payload;
     },
-    setDisableSubmit: (state, action: { payload: boolean }) => {
-      // This will be handled by the selector
-    },
+    // setDisableSubmit: (state, action: { payload: boolean }) => {
+    //   // This will be handled by the selector
+    // },
     signIn: (state) => {
       const e = checkForErrors(state);
       state.error = e;

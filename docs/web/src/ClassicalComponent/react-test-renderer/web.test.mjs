@@ -1,6 +1,6 @@
 import {
   require_react_test_renderer
-} from "../../../chunk-DGOSQTPO.mjs";
+} from "../../../chunk-QQDK2K7D.mjs";
 import {
   ClassicalComponentSpec
 } from "../../../chunk-5FUX4KAJ.mjs";
@@ -9,7 +9,7 @@ import {
 } from "../../../chunk-W7T5BCPH.mjs";
 import {
   Web_default
-} from "../../../chunk-NSPJHCTP.mjs";
+} from "../../../chunk-UVNHIDRT.mjs";
 import {
   assert
 } from "../../../chunk-GI23F5DQ.mjs";

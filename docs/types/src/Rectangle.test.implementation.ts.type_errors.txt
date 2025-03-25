@@ -1,55 +1,51 @@
-src/Rectangle.test.implementation.ts(13,20): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(13,20): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(14,37): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(14,37): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(15,5): error TS2322: Type '(width: number, height: number) => Rectangle' is not assignable to type '(Ig_0: number, Ig_1: number) => (x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(15,5): error TS2322: Type '(width: number, height: number) => Rectangle' is not assignable to type '(Ig_0: number, Ig_1: number) => (x: any) => (y: any) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(19,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(19,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => Rectangle>'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(23,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(23,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => Rectangle>'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(27,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(27,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => Rectangle>'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(31,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(31,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => Rectangle>'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(13,20): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(38,5): error TS2322: Type '(combined: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: number) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(14,37): error TS2322: Type 'Rectangle' is not assignable to type '(x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(43,5): error TS2322: Type '(expectedWidth: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: number) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(15,5): error TS2322: Type '(width: number, height: number) => Rectangle' is not assignable to type '(Ig_0: number, Ig_1: number) => (x: any) => (y: any) => unknown'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(47,5): error TS2322: Type '(expectedHeight: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: number) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(19,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(51,5): error TS2322: Type '(area: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: number) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(23,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(55,5): error TS2322: Type '(name: string) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: string) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.
 
-src/Rectangle.test.implementation.ts(27,5): error TS2322: Type '(width: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
-
-src/Rectangle.test.implementation.ts(31,5): error TS2322: Type '(height: number) => (rectangle: Rectangle, utils: PM) => Promise<Rectangle>' is not assignable to type '(Iw_0: number) => (zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>'.
-  Call signature return types '(rectangle: Rectangle, utils: PM) => Promise<Rectangle>' and '(zel: Rectangle, utils: PM) => Promise<(rectangle: Rectangle) => any>' are incompatible.
-    Type 'Promise<Rectangle>' is not assignable to type 'Promise<(rectangle: Rectangle) => any>'.
+src/Rectangle.test.implementation.ts(59,5): error TS2322: Type '(circumference: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(It_0: number) => (ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle'.
+  Call signature return types '(rectangle: Rectangle) => Rectangle' and '(ssel: Rectangle, utils: PM) => (s: Rectangle) => Rectangle' are incompatible.
+    Type 'Rectangle' is not assignable to type '(s: Rectangle) => Rectangle'.

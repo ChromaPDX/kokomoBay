@@ -4,7 +4,7 @@ import {
 import {
   PM,
   Web_default
-} from "../../../chunk-APNPZ5M2.mjs";
+} from "../../../chunk-2XLSVSVF.mjs";
 import {
   LoginPageSpecs,
   LoginPage_default,
@@ -15,7 +15,7 @@ import {
   emailwarning,
   loginInputId,
   passwordInputId
-} from "../../../chunk-TH3YV27U.mjs";
+} from "../../../chunk-TKCGHQRQ.mjs";
 import "../../../chunk-5MER2HMA.mjs";
 import {
   assert
@@ -49,7 +49,7 @@ PM.prototype.getText = async function(selector) {
   if (!element) {
     throw new Error(`Element with selector ${selector} not found`);
   }
-  return element.textContent || "";
+  return element.textContent?.trim() || "";
 };
 var loginPageImplreactDom = {
   suites: {
@@ -191,7 +191,7 @@ var web_test_default = Web_default(
       return whenCB(s.r, utils);
     },
     butThen: async function(s, thenCB, tr, utils) {
-      return await thenCB(s.r, utils);
+      return await thenCB(s.mutableRef, utils);
     },
     afterEach: async function(store, ndx, artificer, utils) {
       await utils.customScreenShot({ path: "beforeUnmount.jpg" });

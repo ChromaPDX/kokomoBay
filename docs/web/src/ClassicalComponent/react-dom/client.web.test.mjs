@@ -7,7 +7,7 @@ import {
 import {
   Web_default,
   require_scheduler
-} from "../../../chunk-NSPJHCTP.mjs";
+} from "../../../chunk-UVNHIDRT.mjs";
 import {
   assert
 } from "../../../chunk-GI23F5DQ.mjs";

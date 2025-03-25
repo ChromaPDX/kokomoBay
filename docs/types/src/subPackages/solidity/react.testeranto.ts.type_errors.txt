@@ -1,2 +1,1 @@
 src/subPackages/solidity/react.testeranto.ts(23,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
-src/subPackages/solidity/react.testeranto.ts(23,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).

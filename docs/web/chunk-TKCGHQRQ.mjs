@@ -2752,8 +2752,9 @@ var loginApp = createSlice({
     setError: (state, action) => {
       state.error = action.payload;
     },
-    setDisableSubmit: (state, action) => {
-    },
+    // setDisableSubmit: (state, action: { payload: boolean }) => {
+    //   // This will be handled by the selector
+    // },
     signIn: (state) => {
       const e = checkForErrors(state);
       state.error = e;

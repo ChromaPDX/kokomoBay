@@ -69,7 +69,8 @@ var RectangleTesterantoBaseTestImplementation = {
   },
   thens: {
     AreaPlusCircumference: (combined) => (rectangle) => {
-      assert.equal(rectangle.area() + rectangle.circumference(), combined);
+      const actual = rectangle.area() + rectangle.circumference();
+      assert.equal(actual, combined);
       return rectangle;
     },
     getWidth: (expectedWidth) => (rectangle) => {

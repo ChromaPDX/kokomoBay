@@ -1,6 +1,6 @@
 import {
   Web_default
-} from "../../chunk-APNPZ5M2.mjs";
+} from "../../chunk-2XLSVSVF.mjs";
 import {
   assert
 } from "../../chunk-GI23F5DQ.mjs";
@@ -125,7 +125,8 @@ var RectangleTesterantoBaseTestImplementation = {
   },
   thens: {
     AreaPlusCircumference: (combined) => (rectangle) => {
-      assert.equal(rectangle.area() + rectangle.circumference(), combined);
+      const actual = rectangle.area() + rectangle.circumference();
+      assert.equal(actual, combined);
       return rectangle;
     },
     getWidth: (expectedWidth) => (rectangle) => {
@@ -160,23 +161,29 @@ var RectangleTesterantoBaseTestImplementation = {
 // src/Rectangle.test.ts
 var RectangleTesterantoBasePrototype = Rectangle_default.prototype;
 
+// src/Rectangle.test.interface.ts
+var RectangleTesterantoBaseInterface = {
+  beforeEach: async (subject, initializer, art, tr, initialValues) => {
+    return subject;
+  },
+  andWhen: async function(renderer, actioner) {
+    actioner(renderer);
+    return renderer;
+  },
+  butThen: async (s, t, tr) => {
+    return t(s);
+  }
+};
+
 // src/Rectangle/Rectangle.test.web.ts
 var Rectangle_test_web_default = Web_default(
   RectangleTesterantoBasePrototype,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   {
-    beforeEach: async (rectangleProto, init, tr, i, initialValues, pm) => {
-      pm.writeFileSync("beforeEachLog", "bar");
+    ...RectangleTesterantoBaseInterface,
+    beforeEach: async (rectangleProto, init, art, tr, initialValues, pm) => {
       return rectangleProto;
-    },
-    afterAll: async (store, artificer, utils) => {
-      return new Promise(async (res, rej) => {
-        res(store);
-      });
-    },
-    andWhen: async function(s, whenCB, tr, utils) {
-      return whenCB(s);
     }
   },
   {

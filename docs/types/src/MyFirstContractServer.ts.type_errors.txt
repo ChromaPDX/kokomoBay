@@ -1,3 +1,1 @@
 src/MyFirstContractServer.ts(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
-
-src/MyFirstContractServer.ts(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.

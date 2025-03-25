@@ -69,7 +69,7 @@ var PM_Web = class extends PM {
   existsSync(destFolder) {
     return window["existsSync"](destFolder);
   }
-  mkdirSync() {
+  mkdirSync(x) {
     return window["mkdirSync"](this.testResourceConfiguration.fs + "/");
   }
   write(writeObject, contents) {

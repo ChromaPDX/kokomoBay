@@ -4,7 +4,7 @@
   "metafile": {
     "inputs": {
       "../testeranto/src/PM/index.ts": {
-        "bytes": 1641,
+        "bytes": 1473,
         "imports": [
           {
             "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
@@ -12,17 +12,12 @@
             "external": true
           },
           {
-            "path": "../lib",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "puppeteer-core",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
             "path": "puppeteer-core/lib/esm/puppeteer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
             "kind": "import-statement",
             "external": true
           }
@@ -30,7 +25,7 @@
         "format": "esm"
       },
       "../testeranto/src/PM/web.ts": {
-        "bytes": 7095,
+        "bytes": 7073,
         "imports": [
           {
             "path": "stream",
@@ -936,7 +931,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.implementation.ts": {
-        "bytes": 2302,
+        "bytes": 2331,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -962,7 +957,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.ts": {
-        "bytes": 640,
+        "bytes": 907,
         "imports": [
           {
             "path": "src/Rectangle.ts",
@@ -977,8 +972,24 @@
         ],
         "format": "esm"
       },
+      "src/Rectangle.test.interface.ts": {
+        "bytes": 489,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
       "src/Rectangle/Rectangle.test.web.ts": {
-        "bytes": 1336,
+        "bytes": 1051,
         "imports": [
           {
             "path": "../testeranto/src/Web.ts",
@@ -1014,6 +1025,11 @@
             "path": "src/Rectangle.test.ts",
             "kind": "import-statement",
             "original": "../Rectangle.test"
+          },
+          {
+            "path": "src/Rectangle.test.interface.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.interface"
           }
         ],
         "format": "esm"
@@ -1882,7 +1898,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3210,
+        "bytes": 3262,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -1924,7 +1940,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/test.tsx": {
-        "bytes": 4042,
+        "bytes": 4146,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1960,7 +1976,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/web.test.tsx": {
-        "bytes": 3138,
+        "bytes": 3047,
         "imports": [
           {
             "path": "../testeranto/src/Web.ts",
@@ -2105,7 +2121,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/PM/web.js": {
-        "bytes": 4247,
+        "bytes": 4248,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/PM/index.js",
@@ -2609,7 +2625,7 @@
       "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-APNPZ5M2.mjs",
+            "path": "docs/web/chunk-2XLSVSVF.mjs",
             "kind": "import-statement"
           },
           {
@@ -2636,16 +2652,19 @@
             "bytesInOutput": 479
           },
           "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1804
+            "bytesInOutput": 1833
           },
           "src/Rectangle.test.ts": {
             "bytesInOutput": 68
           },
+          "src/Rectangle.test.interface.ts": {
+            "bytesInOutput": 293
+          },
           "src/Rectangle/Rectangle.test.web.ts": {
-            "bytesInOutput": 581
+            "bytesInOutput": 358
           }
         },
-        "bytes": 5116
+        "bytes": 5251
       },
       "docs/web/src/ClassicalComponent/test.mjs": {
         "imports": [
@@ -2686,11 +2705,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-APNPZ5M2.mjs",
+            "path": "docs/web/chunk-2XLSVSVF.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-TH3YV27U.mjs",
+            "path": "docs/web/chunk-TKCGHQRQ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2716,13 +2735,13 @@
         "entryPoint": "src/LoginPage/react-dom/web.test.tsx",
         "inputs": {
           "src/LoginPage/react-dom/web.test.tsx": {
-            "bytesInOutput": 2433
+            "bytesInOutput": 2442
           },
           "src/LoginPage/react-dom/test.tsx": {
-            "bytesInOutput": 3391
+            "bytesInOutput": 3399
           }
         },
-        "bytes": 6533
+        "bytes": 6550
       },
       "docs/web/chunk-UAOWP2LQ.mjs": {
         "imports": [
@@ -2748,11 +2767,11 @@
       "docs/web/src/LoginPage/react/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-APNPZ5M2.mjs",
+            "path": "docs/web/chunk-2XLSVSVF.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-TH3YV27U.mjs",
+            "path": "docs/web/chunk-TKCGHQRQ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2792,7 +2811,7 @@
         },
         "bytes": 4405
       },
-      "docs/web/chunk-APNPZ5M2.mjs": {
+      "docs/web/chunk-2XLSVSVF.mjs": {
         "imports": [],
         "exports": [
           "PM",
@@ -2803,7 +2822,7 @@
             "bytesInOutput": 20
           },
           "../testeranto/src/PM/web.ts": {
-            "bytesInOutput": 4881
+            "bytesInOutput": 4882
           },
           "../testeranto/src/lib/index.ts": {
             "bytesInOutput": 459
@@ -2824,12 +2843,12 @@
             "bytesInOutput": 1835
           }
         },
-        "bytes": 26064
+        "bytes": 26065
       },
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-TH3YV27U.mjs",
+            "path": "docs/web/chunk-TKCGHQRQ.mjs",
             "kind": "import-statement"
           },
           {
@@ -2837,11 +2856,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-DGOSQTPO.mjs",
+            "path": "docs/web/chunk-QQDK2K7D.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-NSPJHCTP.mjs",
+            "path": "docs/web/chunk-UVNHIDRT.mjs",
             "kind": "import-statement"
           },
           {
@@ -2889,7 +2908,7 @@
         },
         "bytes": 592087
       },
-      "docs/web/chunk-TH3YV27U.mjs": {
+      "docs/web/chunk-TKCGHQRQ.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-5MER2HMA.mjs",
@@ -2999,13 +3018,13 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 2162
+            "bytesInOutput": 2239
           },
           "src/LoginPage/index.tsx": {
             "bytesInOutput": 2568
           }
         },
-        "bytes": 106006
+        "bytes": 106083
       },
       "docs/web/chunk-5MER2HMA.mjs": {
         "imports": [
@@ -3049,7 +3068,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-NSPJHCTP.mjs",
+            "path": "docs/web/chunk-UVNHIDRT.mjs",
             "kind": "import-statement"
           },
           {
@@ -3091,7 +3110,7 @@
       "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-DGOSQTPO.mjs",
+            "path": "docs/web/chunk-QQDK2K7D.mjs",
             "kind": "import-statement"
           },
           {
@@ -3103,7 +3122,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-NSPJHCTP.mjs",
+            "path": "docs/web/chunk-UVNHIDRT.mjs",
             "kind": "import-statement"
           },
           {
@@ -3139,10 +3158,10 @@
         },
         "bytes": 3130
       },
-      "docs/web/chunk-DGOSQTPO.mjs": {
+      "docs/web/chunk-QQDK2K7D.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-NSPJHCTP.mjs",
+            "path": "docs/web/chunk-UVNHIDRT.mjs",
             "kind": "import-statement"
           },
           {
@@ -3206,7 +3225,7 @@
         },
         "bytes": 1400
       },
-      "docs/web/chunk-NSPJHCTP.mjs": {
+      "docs/web/chunk-UVNHIDRT.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-TTFRSOOU.mjs",
@@ -3228,7 +3247,7 @@
             "bytesInOutput": 20
           },
           "../testeranto/dist/module/src/PM/web.js": {
-            "bytesInOutput": 2356
+            "bytesInOutput": 2357
           },
           "../testeranto/dist/module/src/lib/index.js": {
             "bytesInOutput": 473
@@ -3249,7 +3268,7 @@
             "bytesInOutput": 1651
           }
         },
-        "bytes": 38738
+        "bytes": 38739
       },
       "docs/web/chunk-GI23F5DQ.mjs": {
         "imports": [

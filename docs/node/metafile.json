@@ -818,7 +818,7 @@
         "format": "esm"
       },
       "../testeranto/src/PM/index.ts": {
-        "bytes": 1641,
+        "bytes": 1473,
         "imports": [
           {
             "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
@@ -826,17 +826,12 @@
             "external": true
           },
           {
-            "path": "../lib",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "puppeteer-core",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
             "path": "puppeteer-core/lib/esm/puppeteer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
             "kind": "import-statement",
             "external": true
           }
@@ -1995,7 +1990,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3210,
+        "bytes": 3262,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -2114,7 +2109,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.ts": {
-        "bytes": 640,
+        "bytes": 907,
         "imports": [
           {
             "path": "src/Rectangle.ts",
@@ -2130,7 +2125,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.implementation.ts": {
-        "bytes": 2302,
+        "bytes": 2331,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -3136,7 +3131,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NSPTNHIC.mjs",
+            "path": "docs/node/chunk-RIT7KCC4.mjs",
             "kind": "import-statement"
           },
           {
@@ -3173,7 +3168,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NSPTNHIC.mjs",
+            "path": "docs/node/chunk-RIT7KCC4.mjs",
             "kind": "import-statement"
           },
           {
@@ -3238,7 +3233,7 @@
             "bytesInOutput": 68
           },
           "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1804
+            "bytesInOutput": 1833
           },
           "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
             "bytesInOutput": 88
@@ -3250,7 +3245,7 @@
             "bytesInOutput": 531
           }
         },
-        "bytes": 5156
+        "bytes": 5185
       },
       "docs/node/chunk-7B5PSYXK.mjs": {
         "imports": [
@@ -3351,7 +3346,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NSPTNHIC.mjs",
+            "path": "docs/node/chunk-RIT7KCC4.mjs",
             "kind": "import-statement"
           },
           {
@@ -3403,7 +3398,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NSPTNHIC.mjs",
+            "path": "docs/node/chunk-RIT7KCC4.mjs",
             "kind": "import-statement"
           },
           {
@@ -3510,7 +3505,7 @@
         },
         "bytes": 3985
       },
-      "docs/node/chunk-NSPTNHIC.mjs": {
+      "docs/node/chunk-RIT7KCC4.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-DQMVF4HA.mjs",
@@ -3791,10 +3786,10 @@
             "bytesInOutput": 2330
           },
           "src/app.ts": {
-            "bytesInOutput": 2270
+            "bytesInOutput": 2347
           }
         },
-        "bytes": 1518663
+        "bytes": 1518740
       },
       "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
         "imports": [

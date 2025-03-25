@@ -20,13 +20,18 @@ const assert$ = async (sel: string, utils: PM) => {
   }
 }
 
-// Add getText method to PM class
+declare module "../../../../testeranto/src/PM/index.js" {
+  interface PM {
+    getText(selector: string): Promise<string>;
+  }
+}
+
 PM.prototype.getText = async function (selector: string) {
   const element = await this.$(selector);
   if (!element) {
     throw new Error(`Element with selector ${selector} not found`);
   }
-  return element.textContent || '';
+  return element.textContent?.trim() || '';
 }
 
 export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object> = {

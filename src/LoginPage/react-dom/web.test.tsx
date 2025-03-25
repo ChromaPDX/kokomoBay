@@ -95,10 +95,7 @@ export default Testeranto<IThenShape>(
       tr,
       utils
     ): Promise<ISelection> {
-      return await thenCB(s.r, utils)
-      // return new Promise((resolve, rej) => {
-      //   resolve(thenCB(s.r, utils));
-      // });
+      return await thenCB(s.mutableRef, utils);
     },
     afterEach: async function (store: IStore, ndx, artificer, utils) {
       await utils.customScreenShot({ path: "beforeUnmount.jpg" });

@@ -34,7 +34,12 @@ export default Testeranto(
     ): Promise<Rectangle> {
       return whenCB(s);
     },
-    butThen: (s: Rectangle, t, tr: ITTestResourceConfiguration, utils: PM_Web) => {
+    butThen: async (
+      s: Rectangle,
+      t,
+      tr: ITTestResourceConfiguration,
+      utils: PM_Web
+    ) => {
       return t(s);
     },
   },

@@ -1,4 +1,0 @@
-src/MyFirstContract.solidity-react.interface.test.ts(38,31): error TS2339: Property 'browser' does not exist on type 'PM'.
-src/MyFirstContract.solidity-react.interface.test.ts(130,28): error TS2339: Property 'browser' does not exist on type 'PM'.
-src/MyFirstContract.solidity-react.interface.test.ts(181,28): error TS2339: Property 'browser' does not exist on type 'PM'.
-src/MyFirstContract.solidity-react.interface.test.ts(225,28): error TS2339: Property 'browser' does not exist on type 'PM'.

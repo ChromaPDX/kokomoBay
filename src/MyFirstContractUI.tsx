@@ -26,11 +26,11 @@ export function MyFirstContractUI(props: {
   secretKey: string,
   address: string,
 }): React.JSX.Element {
-
   const [provider, setProvider] = useState<ethers.providers.JsonRpcProvider | null>(null);
   const [contract, setContract] = useState<ethers.Contract | null>(null);
   const [counter, setCounter] = useState<number | null>(null);
   const [nonce, setNonce] = useState<number>(-1);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const initializeProvider = async () => {
@@ -76,7 +76,7 @@ export function MyFirstContractUI(props: {
           setNonce(blockNumber)
           const c = (await contract.get({ gasLimit: 150000 })).toString();
           setCounter(c)
-          window["readyForNext"] && window["readyForNext"](c);
+          // window["readyForNext"] && window["readyForNext"](c);
         });
       }
     };
@@ -84,20 +84,42 @@ export function MyFirstContractUI(props: {
     listenToContract();
   }, [provider, contract]);
 
-  if (!contract || !provider) {
-    return <p>loading...</p>
+  useEffect(() => {
+    const loader = async () => {
+      setLoading(!contract || !provider || nonce === -1)
+      // if (provider && contract) {
+      //   // Listen for new blocks, and retrieve all transactions in each block
+      //   provider.on("block", async (blockNumber) => {
+      //     const block = await provider.getBlock(blockNumber);
+      //     setNonce(blockNumber)
+      //     const c = (await contract.get({ gasLimit: 150000 })).toString();
+      //     setCounter(c)
+      //     window["readyForNext"] && window["readyForNext"](c);
+      //   });
+      // }
+    };
+
+    loader();
+  }, [provider, contract, nonce]);
+
+  if (!contract || !provider || loading) {
+    return <div id="loading"><pre>{JSON.stringify(props)}</pre>loading...</div>
   }
 
-  return (<div>
+  return (<div id="ready">
     <h2>My First Contract</h2>
     <h3 id="nonce">{nonce}</h3>
 
     <button id="increment" onClick={async () => {
+      setLoading(true)
       await contract.inc({ gasLimit: 150000 })
+      setLoading(false)
     }} >Increment</button>
 
     <button id="decrement" onClick={async () => {
+      setLoading(true)
       await contract.dec({ gasLimit: 150000 })
+      setLoading(false)
     }} >Decrement</button>
 
     <pre id="counter">{counter}</pre>

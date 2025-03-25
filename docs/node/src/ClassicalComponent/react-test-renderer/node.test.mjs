@@ -1,19 +1,19 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  require_react_test_renderer
+} from "../../../chunk-FBU2S66J.mjs";
+import {
   ClassicalComponent
 } from "../../../chunk-I2AXMH3H.mjs";
 import {
-  require_react_test_renderer
-} from "../../../chunk-6FWMRXFT.mjs";
-import {
   assert
-} from "../../../chunk-BFDDKUUP.mjs";
+} from "../../../chunk-B7U3NHX5.mjs";
 import {
   Node_default
-} from "../../../chunk-BMW762LB.mjs";
+} from "../../../chunk-MQ7EHINC.mjs";
 import {
   __toESM
-} from "../../../chunk-M7BKJ4RF.mjs";
+} from "../../../chunk-DQMVF4HA.mjs";
 
 // ../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js
 var import_react_test_renderer = __toESM(require_react_test_renderer(), 1);
@@ -58,7 +58,7 @@ var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
       "a classical react component",
       {
         test0: Given.AnEmptyState(
-          [`0`],
+          [`I click 4 times and the count is 3`],
           [
             When.IClickTheButton(),
             When.IClickTheButton(),
@@ -72,7 +72,7 @@ var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
           ]
         ),
         test1: Given.AnEmptyState(
-          [`0`],
+          [`Count is 1 by default`],
           [When.IClickTheButton()],
           [
             Then.ThePropsIs({ foo: "bar", children: [] }),

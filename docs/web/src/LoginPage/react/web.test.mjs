@@ -1,6 +1,6 @@
 import {
   Web_default
-} from "../../../chunk-7IK2BH4N.mjs";
+} from "../../../chunk-APNPZ5M2.mjs";
 import {
   LoginPageSpecs,
   LoginPage_default,

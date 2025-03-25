@@ -10,7 +10,7 @@ export const ClassicalComponentSpec: ITestSpecification<
       "a classical react component",
       {
         test0: Given.AnEmptyState(
-          [`0`],
+          [`I click 4 times and the count is 3`],
           [
             When.IClickTheButton(),
             When.IClickTheButton(),
@@ -24,7 +24,7 @@ export const ClassicalComponentSpec: ITestSpecification<
           ]
         ),
         test1: Given.AnEmptyState(
-          [`0`],
+          [`Count is 1 by default`],
           [When.IClickTheButton()],
           [
             Then.ThePropsIs({ foo: "bar", children: [] }),

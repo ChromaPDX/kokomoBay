@@ -6,6 +6,9 @@ import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import { PM } from "../../testeranto/src/PM";
 
 const tInterface: IPartialNodeInterface<any> = {
+  // beforeAll(input, testResource, artificer, pm) {
+
+  // },
   beforeEach: (contract, i, artificer, testResource, iv, pm) => {
     return new Promise((res) => {
       const options = {};
@@ -15,6 +18,7 @@ const tInterface: IPartialNodeInterface<any> = {
 
       // start the ganache chain
       server.listen(port, async (err) => {
+        console.log("ganache listening on port", port);
         if (err) throw err;
 
         const providerFarSide = server.provider;
@@ -35,14 +39,17 @@ const tInterface: IPartialNodeInterface<any> = {
 
         /////////////////////////////////////////////
 
-        const page = await pm.browser.newPage();
+        // const page = await pm.browser.newPage();
+        const page = await pm.newPage();
+        console.log("page1", page);
+        // pm.writeFileSync("page.txt", page);
 
-        await page.setViewport({ width: 0, height: 0 });
-        page.on("console", (msg) => {
-          // console.log("web myfirstcontract > ", msg.args(), msg.text());
-          // for (let i = 0; i < msg._args.length; ++i)
-          //   console.log(`${i}: ${msg._args[i]}`);
-        });
+        // await page.setViewport({ width: 0, height: 0 });
+        // page.on("console", (msg) => {
+        //   // console.log("web myfirstcontract > ", msg.args(), msg.text());
+        //   // for (let i = 0; i < msg._args.length; ++i)
+        //   //   console.log(`${i}: ${msg._args[i]}`);
+        // });
 
         const encoded = Object.entries({
           port,
@@ -53,7 +60,10 @@ const tInterface: IPartialNodeInterface<any> = {
           .map(([k, v]) => `${k}=${encodeURIComponent(v)}`)
           .join("&");
 
-        await page.goto(
+        const recorder = await pm.screencast({ path: "idk.webp" }, page);
+
+        pm.goto(
+          page,
           `file://${process.cwd()}/docs/web/src/MyFirstContractUI.html?${encoded}`
         );
 
@@ -62,7 +72,8 @@ const tInterface: IPartialNodeInterface<any> = {
           accounts,
           server,
           step: 0,
-          // page,
+          page,
+          recorder,
         });
       });
     });
@@ -98,7 +109,7 @@ const tInterface: IPartialNodeInterface<any> = {
     // //     }
     // //   }, 1000);
     // // });
-    // // const x = thenCB(store);
+    // const x = thenCB(store);
     // page.screenshot({
     //   path: "afterEach.jpg",
     // });
@@ -123,47 +134,52 @@ const tInterface: IPartialNodeInterface<any> = {
   },
 
   andWhen: async (props, callback: any, tr, pm) => {
-    props.step = props.step + 1;
+    // props.step = props.step + 1;
 
-    let semaphore = -1;
+    // let semaphore = -1;
 
-    const page = (await pm.browser.pages()).filter((x) => {
-      const parsedUrl = new URL(x.url());
-      parsedUrl.search = "";
-      const strippedUrl = parsedUrl.toString();
+    // const page = (await pm.browser.pages()).filter((x) => {
+    //   const parsedUrl = new URL(x.url());
+    //   parsedUrl.search = "";
+    //   const strippedUrl = parsedUrl.toString();
 
-      return (
-        strippedUrl ===
-        "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
-      );
-      // return true;
-    })[0];
+    //   return (
+    //     strippedUrl ===
+    //     "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
+    //   );
+    //   // return true;
+    // })[0];
 
-    await page.exposeFunction("readyForNext", (blockNumber) => {
-      // console.log("readyForNext", blockNumber);
-      semaphore = Math.trunc(blockNumber);
-    });
+    // await page.exposeFunction("readyForNext", (blockNumber) => {
+    //   // console.log("readyForNext", blockNumber);
+    //   semaphore = Math.trunc(blockNumber);
+    // });
 
-    const p = new Promise((res, rej) => {
-      const interval = setInterval(() => {
-        // console.log("check andWhen", semaphore, props.step);
-        if (semaphore === props.step) {
-          clearInterval(interval);
-          res(true);
-        } else {
-        }
-      }, 1000);
-    });
+    // const p = new Promise((res, rej) => {
+    //   const interval = setInterval(() => {
+    //     // console.log("check andWhen", semaphore, props.step);
+    //     if (semaphore === props.step) {
+    //       clearInterval(interval);
+    //       res(true);
+    //     } else {
+    //     }
+    //   }, 1000);
+    // });
 
-    const x = callback({ ...props, page });
+    await pm.waitForSelector(props.page, "#ready");
+    const x = callback({ ...props, page: props.page });
 
-    await page.screenshot({
-      path: "andWhen.jpg",
-    });
+    await pm.customScreenShot(
+      {
+        path: "andWhen.jpg",
+      },
+      props.page
+    );
+
     // console.log("halt");
-    await p;
-    // console.log("continuing...");
-    await page.removeExposedFunction("readyForNext");
+    // await p;
+    // // console.log("continuing...");
+    // await page.removeExposedFunction("readyForNext");
 
     return {
       ...x,
@@ -178,17 +194,17 @@ const tInterface: IPartialNodeInterface<any> = {
   ) => {
     let semaphore = false;
 
-    const page = (await pm.browser.pages()).filter((x) => {
-      const parsedUrl = new URL(x.url());
-      parsedUrl.search = "";
-      const strippedUrl = parsedUrl.toString();
+    // const page = (await pm.browser.pages()).filter((x) => {
+    //   const parsedUrl = new URL(x.url());
+    //   parsedUrl.search = "";
+    //   const strippedUrl = parsedUrl.toString();
 
-      return (
-        strippedUrl ===
-        "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
-      );
-      // return true;
-    })[0];
+    //   return (
+    //     strippedUrl ===
+    //     "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
+    //   );
+    //   // return true;
+    // })[0];
 
     // await page.exposeFunction("readyForNext", (text) => {
     //   console.log("readyForNext", p);
@@ -205,10 +221,18 @@ const tInterface: IPartialNodeInterface<any> = {
     //     }
     //   }, 1);
     // });
-    const x = thenCB({ ...store, page });
-    await page.screenshot({
-      path: "butThen.jpg",
-    });
+    await pm.waitForSelector(store.page, "#ready");
+    const x = thenCB({ ...store, page: store.page });
+    // await page.screenshot({
+    //   path: "butThen.jpg",
+    // });
+    // await pm.customScreenShot(
+    //   {
+    //     path: "butThen.jpg",
+    //   },
+    //   store.page
+    // );
+
     // console.log("halt");
     // await p;
     // console.log("continuing...");
@@ -222,18 +246,20 @@ const tInterface: IPartialNodeInterface<any> = {
   },
 
   afterAll: async (s, a, pm) => {
-    const page = (await pm.browser.pages()).filter((x) => {
-      const parsedUrl = new URL(x.url());
-      parsedUrl.search = "";
-      const strippedUrl = parsedUrl.toString();
+    pm.screencastStop(s.recorder);
 
-      return (
-        strippedUrl ===
-        "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
-      );
-      // return true;
-    })[0];
-    page.close();
+    // pm.closePage(s.page);
+    // const page = (await pm.browser.pages()).filter((x) => {
+    //   const parsedUrl = new URL(x.url());
+    //   parsedUrl.search = "";
+    //   const strippedUrl = parsedUrl.toString();
+    //   return (
+    //     strippedUrl ===
+    //     "file:///Users/adam/Code/kokomoBay/docs/web/src/MyFirstContractUI.html"
+    //   );
+    //   // return true;
+    // })[0];
+    // page.close();
     // console.log("serve!r", server);
   },
 };

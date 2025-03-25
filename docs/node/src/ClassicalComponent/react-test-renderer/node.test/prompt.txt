@@ -6,6 +6,8 @@
 /read docs/types/src/ClassicalComponent/test.specification.ts.type_errors.txt
 /read docs/types/src/ClassicalComponent/react-test-renderer/test.implementation.ts.type_errors.txt
 /read docs/types/src/ClassicalComponent/react-test-renderer/node.test.tsx.type_errors.txt
+
+
   
 /read docs/node/src/ClassicalComponent/react-test-renderer/node.test/tests.json
 /read docs/node/src/ClassicalComponent/react-test-renderer/node.test/stdout.log

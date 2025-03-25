@@ -1,1 +1,1 @@
-hello I am an internal feature
+hello I am an internal feature for the Rectangle

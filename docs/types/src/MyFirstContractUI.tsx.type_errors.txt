@@ -1,1 +1,2 @@
 src/MyFirstContractUI.tsx(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+src/MyFirstContractUI.tsx(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.

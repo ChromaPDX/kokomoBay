@@ -1,5 +1,6 @@
 {
   "outdir": "docs",
+  "src": "src",
   "tests": [
     [
       "./src/Rectangle/Rectangle.test.web.ts",
@@ -41,22 +42,6 @@
           []
         ]
       ]
-    ],
-    [
-      "./src/MyFirstContract.basic.test.ts",
-      "node",
-      {
-        "ports": 0
-      },
-      []
-    ],
-    [
-      "./src/MyFirstContract.rpc.test.ts",
-      "node",
-      {
-        "ports": 1
-      },
-      []
     ],
     [
       "./src/ReactStateAndHook.test.tsx",

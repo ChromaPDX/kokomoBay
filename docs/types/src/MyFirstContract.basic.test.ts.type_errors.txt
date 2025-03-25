@@ -1,1 +1,2 @@
 src/MyFirstContract.basic.test.ts(8,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+src/MyFirstContract.basic.test.ts(8,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.

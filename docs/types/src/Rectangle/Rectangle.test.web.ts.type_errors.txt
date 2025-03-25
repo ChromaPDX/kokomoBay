@@ -1,7 +1,12 @@
 src/Rectangle/Rectangle.test.web.ts(15,5): error TS2328: Types of parameters 'init' and 'initializer' are incompatible.
   Types of parameters 'utils' and 'utils' are incompatible.
     Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.
-
+src/Rectangle/Rectangle.test.web.ts(31,5): error TS2322: Type '(s: Rectangle, whenCB: (s: Rectangle) => Promise<Rectangle>, tr: ITTestResourceConfiguration, utils: PM_Web) => Promise<...>' is not assignable to type '(store: Rectangle, whenCB: (rectangle: Rectangle) => any, testResource: ITTestResourceConfiguration, utils: PM) => Promise<...>'.
+  Types of parameters 'utils' and 'utils' are incompatible.
+    Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.
+src/Rectangle/Rectangle.test.web.ts(15,5): error TS2328: Types of parameters 'init' and 'initializer' are incompatible.
+  Types of parameters 'utils' and 'utils' are incompatible.
+    Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.
 src/Rectangle/Rectangle.test.web.ts(31,5): error TS2322: Type '(s: Rectangle, whenCB: (s: Rectangle) => Promise<Rectangle>, tr: ITTestResourceConfiguration, utils: PM_Web) => Promise<...>' is not assignable to type '(store: Rectangle, whenCB: (rectangle: Rectangle) => any, testResource: ITTestResourceConfiguration, utils: PM) => Promise<...>'.
   Types of parameters 'utils' and 'utils' are incompatible.
     Property 'customclose' is missing in type 'PM' but required in type 'PM_Web'.

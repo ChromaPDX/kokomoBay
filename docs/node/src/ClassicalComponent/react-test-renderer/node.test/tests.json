@@ -31,7 +31,7 @@
       ],
       "error": null,
       "features": [
-        "0"
+        "I click 4 times and the count is 3"
       ]
     },
     {
@@ -54,7 +54,7 @@
       ],
       "error": null,
       "features": [
-        "0"
+        "Count is 1 by default"
       ]
     },
     {
@@ -125,6 +125,8 @@
   ],
   "fails": [],
   "features": [
+    "I click 4 times and the count is 3",
+    "Count is 1 by default",
     "0"
   ]
 }

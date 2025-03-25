@@ -10,6 +10,8 @@
 /read docs/types/src/Rectangle.test.implementation.ts.type_errors.txt
 /read docs/types/src/Rectangle.test.specification.ts.type_errors.txt
 /read docs/types/src/Rectangle/Rectangle.test.node.ts.type_errors.txt
+
+
   
 /read docs/node/src/Rectangle/Rectangle.test.node/tests.json
 /read docs/node/src/Rectangle/Rectangle.test.node/stdout.log

@@ -1,2 +1,4 @@
 src/LoginPage/react/node.test.tsx(17,13): error TS2349: This expression is not callable.
   Type '{ testRenderer: renderer.ReactTestRenderer; coponent: any; }' has no call signatures.
+src/LoginPage/react/node.test.tsx(17,13): error TS2349: This expression is not callable.
+  Type '{ testRenderer: renderer.ReactTestRenderer; coponent: any; }' has no call signatures.

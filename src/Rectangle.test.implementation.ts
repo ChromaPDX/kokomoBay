@@ -36,7 +36,8 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRec
 
   thens: {
     AreaPlusCircumference: (combined: number) => (rectangle: Rectangle) => {
-      assert.equal(rectangle.area() + rectangle.circumference(), combined);
+      const actual = rectangle.area() + rectangle.circumference();
+      assert.equal(actual, combined);
       return rectangle;
     },
     getWidth: (expectedWidth: number) => (rectangle: Rectangle) => {

@@ -3,16 +3,15 @@ import type { PM } from "testeranto/src/PM";
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape> =
+export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape, Rectangle, PM> =
   {
-    beforeEach: async (subject, initializer, art, tr, initialValues) => {
+    beforeEach: async (subject: Rectangle, initializer, art, tr, initialValues, utils: PM) => {
       return subject;
     },
-    andWhen: async function (renderer, actioner) {
-      actioner(renderer);
-      return renderer;
+    andWhen: async function (renderer: Rectangle, actioner, tr, utils: PM) {
+      return actioner(renderer);
     },
-    butThen: (s, t, tr) => {
+    butThen: (s: Rectangle, t, tr, utils: PM) => {
       return t(s);
     },
   };

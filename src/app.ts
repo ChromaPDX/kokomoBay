@@ -16,17 +16,21 @@ const initialState: IStoreState = {
   disableSubmit: true,
 };
 
+console.log("MARK!");
 export const loginApp = createSlice<
   IStoreState,
   {
     reset: (s: IStoreState) => void | IStoreState; //| WritableDraft<IStoreState>,
-    setPassword: (s: IStoreState, b) => void;
-    setEmail: (s: IStoreState, b) => void;
+    setPassword: (s: IStoreState, b: { payload: string; type: string }) => void;
+    setEmail: (s: IStoreState, b: { payload: string; type: string }) => void;
     signIn: (s: IStoreState) => void;
-    setError: (s: IStoreState, b) => void;
+    setError: (
+      s: IStoreState,
+      b: { payload: ILoginPageError; type: string }
+    ) => void;
   }
 >({
-  name: "my login app!",
+  name: "my login app",
   initialState,
   reducers: {
     reset: (state) => {
@@ -113,6 +117,7 @@ const loginPageSelection = createSelector<
 });
 
 export default () => {
+  console.log("MARK2!");
   const store = createStore(loginApp.reducer);
 
   return {

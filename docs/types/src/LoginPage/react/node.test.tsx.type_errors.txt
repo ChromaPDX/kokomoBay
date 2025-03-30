@@ -1,2 +1,5 @@
-src/LoginPage/react/node.test.tsx(17,13): error TS2349: This expression is not callable.
-  Type '{ testRenderer: renderer.ReactTestRenderer; coponent: any; }' has no call signatures.
+src/LoginPage/react/node.test.tsx(48,3): error TS2345: Argument of type 'ITestInterface<ILoginPageSpecsReact>' is not assignable to parameter of type 'Partial<ITestInterface<ILoginPageSpecs>>'.
+  Types of property 'assertThis' are incompatible.
+    Type '(x: (r: Element) => any) => void' is not assignable to type '(x: unknown) => void'.
+      Types of parameters 'x' and 'x' are incompatible.
+        Type 'unknown' is not assignable to type '(r: Element) => any'.

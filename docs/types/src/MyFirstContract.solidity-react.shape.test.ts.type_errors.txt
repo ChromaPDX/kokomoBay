@@ -1,1 +1,0 @@
-src/MyFirstContract.solidity-react.shape.test.ts(27,5): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).

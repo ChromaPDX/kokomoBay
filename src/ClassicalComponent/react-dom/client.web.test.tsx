@@ -65,7 +65,10 @@ const ClassicalComponentReactDomImplementation = {
 
 const testInterface: IPartialWebInterface<any> = {
   afterEach: async function (store: IStore, ndx, artificer, utils) {
-    utils.writeFileSync("aftereachlog", store.toString());
+
+    const p = await utils.page()
+    await utils.writeFileSync("aftereachlo", p);
+    await utils.customScreenShot({ path: "afterEachfo.png" }, p)
 
     //   const page = (await utils.browser.pages()).filter((x) => {
     //     const parsedUrl = new URL(x.url());

@@ -9,12 +9,50 @@ type IImpl = ITestImplementation<
   ILoginPageSpecs, object
 >
 
+export type ILoginPageSpecsReact = {
+  iinput: () => React.JSX.Element;
+  isubject: () => React.JSX.Element;
+  istore: () => React.JSX.Element;
+  iselection: any;
+
+  when: (x) => () => React.JSX.Element;
+  then: (r: React.JSX.Element) => any;
+  given: (x) => unknown;
+
+  suites: {
+    Default: [string];
+  };
+  givens: {
+    Default: [];
+  };
+  whens: {
+    TheLoginIsSubmitted: [];
+    TheEmailIsSetTo: [string];
+    ThePasswordIsSetTo: [string];
+  };
+  thens: {
+    TheEmailIs: [string];
+    TheEmailIsNot: [string];
+    ThePasswordIs: [string];
+    ThePasswordIsNot: [string];
+    ThereIsAnEmailError: [];
+    ThereIsACredentialError: [];
+    ThereIsNotACredentialError: [];
+    ThereIsNotAnEmailError: [];
+    TheSubmitButtonIsActive: [];
+    TheSubmitButtonIsNotActive: [];
+  };
+  checks: {
+    Default: [];
+  };
+};
+
 const implementations: IImpl = {
   suites: {
     Default: "a default suite",
   },
   givens: {
-    default: () => (i) => {
+    Default: () => (i) => {
       return i;
     },
   },
@@ -24,7 +62,7 @@ const implementations: IImpl = {
       store.dispatch(actions.signIn());
       return reactElem;
     },
-    TheEmailIsSetTo: (email: string) => async (reactElem: any, utils: PM) => {
+    TheEmailIsSetTo: (email) => async (reactElem: any, utils: PM) => {
       store.dispatch(actions.setEmail(email));
       return reactElem;
     },
@@ -80,7 +118,7 @@ const implementations: IImpl = {
   },
 
   checks: {
-    default: () => (i) => {
+    Default: () => (i) => {
       return i;
     },
   },

@@ -1,10 +1,30 @@
 import { assert } from "chai";
 import { ITestImplementation } from "testeranto/src/Types";
 import type { PM } from "testeranto/src/PM";
+
 import Rectangle from "./Rectangle";
 import { IRectangleTestShape } from "./Rectangle.test.shape";
 
-export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRectangleTestShape, Rectangle> = {
+export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
+  IRectangleTestShape,
+  {
+    givens: {
+      [K in keyof IRectangleTestShape["givens"]]: (
+        ...Iw: IRectangleTestShape["givens"][K]
+      ) => Rectangle;
+    };
+    whens: {
+      [K in keyof IRectangleTestShape["whens"]]: (
+        ...Iw: IRectangleTestShape["whens"][K]
+      ) => (rectangle: Rectangle, utils: PM) => Rectangle;
+    };
+    thens: {
+      [K in keyof IRectangleTestShape["thens"]]: (
+        ...Iw: IRectangleTestShape["thens"][K]
+      ) => (rectangle: Rectangle, utils: PM) => Rectangle;
+    };
+  }
+> = {
   suites: {
     Default: "a default suite",
   },
@@ -12,47 +32,47 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<IRec
   givens: {
     Default: () => new Rectangle(2, 2),
     WidthOfOneAndHeightOfOne: () => new Rectangle(1, 1),
-    WidthAndHeightOf: (width: number, height: number) => new Rectangle(width, height),
+    WidthAndHeightOf: (width, height) => new Rectangle(width, height),
   },
 
   whens: {
-    HeightIsPubliclySetTo: (height: number) => async (rectangle: Rectangle, utils: PM) => {
+    HeightIsPubliclySetTo: (height) => (rectangle) => {
       rectangle.setHeight(height);
       return rectangle;
     },
-    WidthIsPubliclySetTo: (width: number) => async (rectangle: Rectangle, utils: PM) => {
+    WidthIsPubliclySetTo: (width) => (rectangle) => {
       rectangle.setWidth(width);
       return rectangle;
     },
-    setWidth: (width: number) => async (rectangle: Rectangle, utils: PM) => {
+    setWidth: (width: number) => (rectangle) => {
       rectangle.setWidth(width);
       return rectangle;
     },
-    setHeight: (height: number) => async (rectangle: Rectangle, utils: PM) => {
+    setHeight: (height: number) => (rectangle) => {
       rectangle.setHeight(height);
       return rectangle;
     },
   },
 
   thens: {
-    AreaPlusCircumference: (combined: number) => (rectangle: Rectangle) => {
+    AreaPlusCircumference: (combined) => (rectangle) => {
       const actual = rectangle.area() + rectangle.circumference();
       assert.equal(actual, combined);
       return rectangle;
     },
-    getWidth: (expectedWidth: number) => (rectangle: Rectangle) => {
+    getWidth: (expectedWidth) => (rectangle) => {
       assert.equal(rectangle.getWidth(), expectedWidth);
       return rectangle;
     },
-    getHeight: (expectedHeight: number) => (rectangle: Rectangle) => {
+    getHeight: (expectedHeight) => (rectangle) => {
       assert.equal(rectangle.getHeight(), expectedHeight);
       return rectangle;
     },
-    area: (area: number) => (rectangle: Rectangle) => {
+    area: (area) => (rectangle) => {
       assert.equal(rectangle.area(), area);
       return rectangle;
     },
-    prototype: (name: string) => (rectangle: Rectangle) => {
+    prototype: () => (rectangle) => {
       assert.equal(Object.getPrototypeOf(rectangle), Rectangle.prototype);
       return rectangle;
     },

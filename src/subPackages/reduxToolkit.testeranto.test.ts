@@ -9,11 +9,15 @@ import {
   ActionCreatorWithNonInferrablePayload,
   ActionCreatorWithoutPayload,
   Reducer,
+  Slice,
 } from "@reduxjs/toolkit";
 
-import { createStore, AnyAction } from "redux";
-import { IStoreState } from "../app";
-import { IAppSpecification } from "../app.test";
+import {
+  createStore,
+  AnyAction,
+  StoreEnhancerStoreCreator,
+  Store,
+} from "redux";
 
 type WhenShape = [
   (
@@ -22,12 +26,14 @@ type WhenShape = [
   ),
   (object | string)?
 ];
-type ThenShape = [
-  (actual: unknown, expected: unknown, message?: string) => void,
-  any,
-  any,
-  string?
-];
+
+// type ThenShape = [
+//   (actual: unknown, expected: unknown, message?: string) => void,
+//   any,
+//   any,
+//   string?
+// ];
+
 type Input<S, T> = {
   reducer: Reducer<any, AnyAction>;
   selector: (state: S) => T;
@@ -36,15 +42,28 @@ type Input<S, T> = {
 export const ReduxToolkitTesteranto = <
   IStoreShape,
   ISelectionShape,
-  ITestShape extends IBaseTest
+  ITestShape extends IBaseTest<
+    unknown,
+    Slice<IStoreShape, any, string>,
+    Store,
+    any,
+    (initValues) => () => StoreEnhancerStoreCreator<any, any>,
+    unknown,
+    (s: IStoreShape) => IStoreShape,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>
+  >
 >(
   testImplementations: ITestImplementation<
     ITestShape,
     {
       givens: {
-        [K in keyof IAppSpecification["givens"]]: () => (
-          ...Iw: IAppSpecification["givens"][K]
-        ) => IStoreState;
+        [K in keyof ITestShape["givens"]]: () => (
+          ...Iw: ITestShape["givens"][K]
+        ) => IStoreShape;
       };
       whens: {
         [K in keyof ITestShape["whens"]]: (
@@ -57,7 +76,7 @@ export const ReduxToolkitTesteranto = <
   testInput: Input<IStoreShape, ISelectionShape>
 ) => {
   const testInterface: IPartialInterface<ITestShape> = {
-    assertThis: (t: IStoreState) => {
+    assertThis: (t) => {
       t[0](t[1], t[2], t[3]);
     },
     beforeEach: (subject, initializer, art, tr, initialValues) => {
@@ -71,7 +90,7 @@ export const ReduxToolkitTesteranto = <
       store.dispatch(a[0](a[1]));
       return store;
     },
-    butThen: async function (store, actioner, tr) {
+    butThen: async function (store, actioner, tr, pm) {
       return actioner(store.getState());
     },
   };

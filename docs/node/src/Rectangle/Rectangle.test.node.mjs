@@ -1,11 +1,8 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  Node_default
-} from "../../chunk-7B5PSYXK.mjs";
-import {
+  Node_default,
   assert
-} from "../../chunk-B7U3NHX5.mjs";
-import "../../chunk-DQMVF4HA.mjs";
+} from "../../chunk-ALLJ2A72.mjs";
 
 // src/Rectangle.ts
 var Rectangle = class {
@@ -50,19 +47,19 @@ var RectangleTesterantoBaseTestImplementation = {
     WidthAndHeightOf: (width, height) => new Rectangle_default(width, height)
   },
   whens: {
-    HeightIsPubliclySetTo: (height) => async (rectangle, utils) => {
+    HeightIsPubliclySetTo: (height) => (rectangle) => {
       rectangle.setHeight(height);
       return rectangle;
     },
-    WidthIsPubliclySetTo: (width) => async (rectangle, utils) => {
+    WidthIsPubliclySetTo: (width) => (rectangle) => {
       rectangle.setWidth(width);
       return rectangle;
     },
-    setWidth: (width) => async (rectangle, utils) => {
+    setWidth: (width) => (rectangle) => {
       rectangle.setWidth(width);
       return rectangle;
     },
-    setHeight: (height) => async (rectangle, utils) => {
+    setHeight: (height) => (rectangle) => {
       rectangle.setHeight(height);
       return rectangle;
     }
@@ -85,7 +82,7 @@ var RectangleTesterantoBaseTestImplementation = {
       assert.equal(rectangle.area(), area);
       return rectangle;
     },
-    prototype: (name) => (rectangle) => {
+    prototype: () => (rectangle) => {
       assert.equal(Object.getPrototypeOf(rectangle), Rectangle_default.prototype);
       return rectangle;
     },
@@ -162,16 +159,31 @@ var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check)
   ];
 };
 
+// src/Rectangle.test.interface.ts
+var RectangleTesterantoBaseInterface = {
+  beforeEach: async (subject, initializer, art, tr, initialValues) => {
+    return subject;
+  },
+  andWhen: async function(renderer, actioner) {
+    actioner(renderer);
+    return renderer;
+  },
+  butThen: async (s, t, tr, pm) => {
+    return t(s, pm);
+  }
+};
+
 // src/Rectangle/Rectangle.test.node.ts
 var testInterface = {
+  ...RectangleTesterantoBaseInterface,
   beforeAll(input, testResource, artificer, utils) {
     return new Promise(async (res, rej) => {
       const x = Object.create(input);
       res(input);
     });
   },
-  andWhen: async function(s, whenCB) {
-    return whenCB(s);
+  andWhen: async function(s, whenCB, tr, utils) {
+    return whenCB(s)(s, utils);
   },
   assertThis: (x) => {
   },

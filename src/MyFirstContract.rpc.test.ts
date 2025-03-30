@@ -1,4 +1,4 @@
-import { ITestImplementation } from "testeranto/src/Types";
+import { ITestImplementation, ITestSpecification } from "testeranto/src/Types";
 
 import { assert } from "chai";
 
@@ -49,32 +49,34 @@ const testImplementation: ITestImplementation<
   },
 };
 
+const specs: ITestSpecification<any> = (Suite, Given, When, Then, Check) => {
+  return [
+    Suite.Default(
+      "Testing a very simple smart contract over RPC",
+      commonGivens(Given, When, Then),
+      [
+        // Check.AnEmptyState(
+        //   "imperative style",
+        //   [`aloha`],
+        //   async ({ TheEmailIsSetTo }, { TheEmailIs }) => {
+        //     await TheEmailIsSetTo("foo");
+        //     await TheEmailIs("foo");
+        //     const reduxPayload = await TheEmailIsSetTo("foobar");
+        //     await TheEmailIs("foobar");
+        //     // assert.deepEqual(reduxPayload, {
+        //     //   type: "login app/setEmail",
+        //     //   payload: "foobar",
+        //     // });
+        //   }
+        // ),
+      ]
+    ),
+  ];
+};
+
 export default Testeranto<IMyFirstContractTest<IMyFirstContractTest<IInput>>>(
   testImplementation,
 
-  (Suite, Given, When, Then, Check) => {
-    return [
-      Suite.Default(
-        "Testing a very simple smart contract over RPC",
-        commonGivens(Given, When, Then),
-        [
-          // Check.AnEmptyState(
-          //   "imperative style",
-          //   [`aloha`],
-          //   async ({ TheEmailIsSetTo }, { TheEmailIs }) => {
-          //     await TheEmailIsSetTo("foo");
-          //     await TheEmailIs("foo");
-          //     const reduxPayload = await TheEmailIsSetTo("foobar");
-          //     await TheEmailIs("foobar");
-          //     // assert.deepEqual(reduxPayload, {
-          //     //   type: "login app/setEmail",
-          //     //   payload: "foobar",
-          //     // });
-          //   }
-          // ),
-        ]
-      ),
-    ];
-  },
+  specs,
   MyFirstContractTestInput
 );

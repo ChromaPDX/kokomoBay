@@ -3,13 +3,15 @@ import { Provider, useSelector } from "react-redux";
 
 import app, { validateEmail } from "../app.js";
 
+console.log("Provider", Provider)
+console.log("app", await app)
 const core = app();
 
 const selector = core.select.loginPageSelection;
 export const actions = {
   ...core.app.actions,
   setError: (error: ILoginPageError) => core.app.actions.setError(error),
-  setDisableSubmit: (disabled: boolean) => core.app.actions.setDisableSubmit(disabled)
+  // setDisableSubmit: (disabled: boolean) => core.app.actions.setDisableSubmit(disabled)
 };
 export const store = core.store;
 
@@ -27,7 +29,7 @@ export type ILoginPageSelection = {
 export const emailwarning = "Something isn’t right. Please double check your email";
 export const credentialFailWarning = "You entered an incorrect email, password, or both.";
 
-export const loginInputId = "login"
+export const loginInputId = "login";
 export const emailInputId = "email"
 export const passwordInputId = "password"
 export const credErrorId = "cred-error"

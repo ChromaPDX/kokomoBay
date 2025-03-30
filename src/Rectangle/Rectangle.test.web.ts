@@ -1,30 +1,23 @@
 import Testeranto from "testeranto/src/Web";
-import { PM_Web } from "testeranto/src/PM/web";
-import { ITTestResourceConfiguration } from "testeranto/src/lib";
+import { IPartialNodeInterface } from "testeranto/src/Types";
 
-import Rectangle from "../Rectangle";
 import { RectangleTesterantoBaseTestSpecification } from "../Rectangle.test.specification";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";
 import { RectangleTesterantoBasePrototype } from "../Rectangle.test";
 import { RectangleTesterantoBaseInterface } from "../Rectangle.test.interface";
+import { IRectangleTestShape } from "../Rectangle.test.shape";
 
-export default Testeranto(
+const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
+  ...RectangleTesterantoBaseInterface,
+  beforeEach: async (rectangleProto, init, art, tr, initialValues, pm) => {
+    return rectangleProto;
+  },
+};
+export default Testeranto<IRectangleTestShape>(
   RectangleTesterantoBasePrototype,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
-  {
-    ...RectangleTesterantoBaseInterface,
-    beforeEach: async (
-      rectangleProto: Rectangle,
-      init: (c?: any) => (x: any) => (y: any) => Rectangle,
-      art,
-      tr: ITTestResourceConfiguration,
-      initialValues: any,
-      pm: PM_Web
-    ): Promise<Rectangle> => {
-      return rectangleProto;
-    },
-  },
+  testInterface,
   {
     ports: 0,
   }

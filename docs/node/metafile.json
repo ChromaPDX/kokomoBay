@@ -818,7 +818,7 @@
         "format": "esm"
       },
       "../testeranto/src/PM/index.ts": {
-        "bytes": 1473,
+        "bytes": 1641,
         "imports": [
           {
             "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
@@ -826,12 +826,17 @@
             "external": true
           },
           {
-            "path": "puppeteer-core/lib/esm/puppeteer",
+            "path": "../lib",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "../lib",
+            "path": "puppeteer-core",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "puppeteer-core/lib/esm/puppeteer",
             "kind": "import-statement",
             "external": true
           }
@@ -971,7 +976,7 @@
         "format": "cjs"
       },
       "src/subPackages/reduxToolkit.testeranto.test.ts": {
-        "bytes": 2041,
+        "bytes": 2315,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -992,22 +997,12 @@
             "path": "node_modules/redux/lib/redux.js",
             "kind": "import-statement",
             "original": "redux"
-          },
-          {
-            "path": "../app",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../app.test",
-            "kind": "import-statement",
-            "external": true
           }
         ],
         "format": "esm"
       },
       "src/app.test.ts": {
-        "bytes": 3396,
+        "bytes": 3434,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1964,7 +1959,7 @@
         "format": "cjs"
       },
       "src/LoginPage/index.tsx": {
-        "bytes": 2987,
+        "bytes": 3055,
         "imports": [
           {
             "path": "react",
@@ -1990,7 +1985,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3262,
+        "bytes": 3440,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -2006,7 +2001,7 @@
         "format": "esm"
       },
       "src/app.reduxToolkit.test.ts": {
-        "bytes": 2348,
+        "bytes": 2374,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2045,232 +2040,76 @@
           }
         ],
         "format": "esm"
-      },
-      "src/subPackages/redux.testeranto.test.ts": {
-        "bytes": 1835,
+      }
+    },
+    "outputs": {
+      "docs/node/src/app.reduxToolkit.test.mjs": {
         "imports": [
           {
-            "path": "@reduxjs/toolkit",
-            "kind": "import-statement",
+            "path": "util",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "node_modules/redux/lib/redux.js",
-            "kind": "import-statement",
-            "original": "redux"
-          },
-          {
-            "path": "../testeranto/src/Node.ts",
-            "kind": "import-statement",
-            "original": "testeranto/src/Node"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/app.redux.test.ts": {
-        "bytes": 1647,
-        "imports": [
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "src/app.ts",
-            "kind": "import-statement",
-            "original": "./app.js"
-          },
-          {
-            "path": "src/app.test.ts",
-            "kind": "import-statement",
-            "original": "./app.test.js"
-          },
-          {
-            "path": "src/subPackages/redux.testeranto.test.ts",
-            "kind": "import-statement",
-            "original": "./subPackages/redux.testeranto.test.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle.ts": {
-        "bytes": 547,
-        "imports": [],
-        "format": "esm"
-      },
-      "src/Rectangle.test.ts": {
-        "bytes": 907,
-        "imports": [
-          {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle.test.implementation.ts": {
-        "bytes": 2331,
-        "imports": [
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
-        "bytes": 60,
-        "imports": []
-      },
-      "src/Rectangle.test.specification.ts": {
-        "bytes": 1882,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md",
-            "kind": "import-statement",
-            "original": "./Rectangle/rectangle.md"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/Rectangle/Rectangle.test.node.ts": {
-        "bytes": 1065,
-        "imports": [
-          {
-            "path": "../testeranto/src/Node.ts",
-            "kind": "import-statement",
-            "original": "testeranto/src/Node"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "../Rectangle",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "src/Rectangle.test.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test"
-          },
-          {
-            "path": "src/Rectangle.test.implementation.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test.implementation"
-          },
-          {
-            "path": "../Rectangle.test.shape",
-            "kind": "import-statement",
+            "path": "react",
+            "kind": "require-call",
             "external": true
           },
           {
-            "path": "src/Rectangle.test.specification.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test.specification"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/index.js": {
-        "bytes": 609,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 11957,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/basebuilder.js": {
-        "bytes": 3421,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/classBuilder.js": {
-        "bytes": 2039,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/lib/basebuilder.js",
-            "kind": "import-statement",
-            "original": "./basebuilder.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/lib/core.js": {
-        "bytes": 4571,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/lib/index.js",
-            "kind": "import-statement",
-            "original": "./index.js"
+            "path": "react",
+            "kind": "require-call",
+            "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/lib/abstractBase.js",
-            "kind": "import-statement",
-            "original": "./abstractBase.js"
+            "path": "react",
+            "kind": "require-call",
+            "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/lib/classBuilder.js",
-            "kind": "import-statement",
-            "original": "./classBuilder.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/PM/index.js": {
-        "bytes": 39,
-        "imports": [],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/PM/node.js": {
-        "bytes": 4598,
-        "imports": [
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
           {
             "path": "fs",
             "kind": "import-statement",
@@ -2282,865 +2121,9 @@
             "external": true
           },
           {
-            "path": "../testeranto/dist/module/src/PM/index.js",
-            "kind": "import-statement",
-            "original": "./index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/Node.js": {
-        "bytes": 1045,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/lib/core.js",
-            "kind": "import-statement",
-            "original": "./lib/core.js"
-          },
-          {
-            "path": "../testeranto/dist/module/src/lib/index.js",
-            "kind": "import-statement",
-            "original": "./lib/index.js"
-          },
-          {
-            "path": "../testeranto/dist/module/src/PM/node.js",
-            "kind": "import-statement",
-            "original": "./PM/node.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-        "bytes": 4786,
-        "imports": [],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-        "bytes": 17457,
-        "imports": [],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/unstable_mock.js": {
-        "bytes": 226,
-        "imports": [
-          {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler-unstable_mock.production.min.js"
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler-unstable_mock.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
-        "bytes": 4235,
-        "imports": [],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
-        "bytes": 17497,
-        "imports": [],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/scheduler/index.js": {
-        "bytes": 198,
-        "imports": [
-          {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler.production.min.js"
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-        "bytes": 87323,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
-            "kind": "require-call",
-            "original": "scheduler/unstable_mock"
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-        "bytes": 645765,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
-            "kind": "require-call",
-            "original": "scheduler/unstable_mock"
-          },
-          {
-            "path": "../testeranto/node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-test-renderer/index.js": {
-        "bytes": 218,
-        "imports": [
-          {
-            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-test-renderer.production.min.js"
-          },
-          {
-            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-test-renderer.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
-        "bytes": 1199,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/node_modules/react-test-renderer/index.js",
-            "kind": "import-statement",
-            "original": "react-test-renderer"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
-        "bytes": 274,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/Node.js",
-            "kind": "import-statement",
-            "original": "../../../Node.js"
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js",
-            "kind": "import-statement",
-            "original": "./index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ReactStateAndHook.tsx": {
-        "bytes": 589,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
             "path": "react/jsx-runtime",
             "kind": "import-statement",
             "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ReactStateAndHook.test.tsx": {
-        "bytes": 2329,
-        "imports": [
-          {
-            "path": "assert",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react-test-renderer/jsx/node.js"
-          },
-          {
-            "path": "src/ReactStateAndHook.tsx",
-            "kind": "import-statement",
-            "original": "./ReactStateAndHook"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/SubPackages/react/jsx/index.js": {
-        "bytes": 890,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/SubPackages/react/jsx/node.js": {
-        "bytes": 379,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/Node.js",
-            "kind": "import-statement",
-            "original": "../../../Node.js"
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/index.js",
-            "kind": "import-statement",
-            "original": "./index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/LoginPage/test.ts": {
-        "bytes": 4759,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/LoginPage/react/test.tsx": {
-        "bytes": 2992,
-        "imports": [
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../test.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/LoginPage/react/node.test.tsx": {
-        "bytes": 929,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react/jsx/node"
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react/jsx/index.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react/jsx/index"
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
-          {
-            "path": "src/LoginPage/test.ts",
-            "kind": "import-statement",
-            "original": "../test.js"
-          },
-          {
-            "path": "src/LoginPage/react/test.tsx",
-            "kind": "import-statement",
-            "original": "./test.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-        "bytes": 4786,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-        "bytes": 17457,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/scheduler/unstable_mock.js": {
-        "bytes": 226,
-        "imports": [
-          {
-            "path": "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler-unstable_mock.production.min.js"
-          },
-          {
-            "path": "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
-            "kind": "require-call",
-            "original": "./cjs/scheduler-unstable_mock.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-        "bytes": 87323,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/scheduler/unstable_mock.js",
-            "kind": "require-call",
-            "original": "scheduler/unstable_mock"
-          },
-          {
-            "path": "node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-        "bytes": 645765,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/scheduler/unstable_mock.js",
-            "kind": "require-call",
-            "original": "scheduler/unstable_mock"
-          },
-          {
-            "path": "node_modules/scheduler/index.js",
-            "kind": "require-call",
-            "original": "scheduler"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-test-renderer/index.js": {
-        "bytes": 218,
-        "imports": [
-          {
-            "path": "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-test-renderer.production.min.js"
-          },
-          {
-            "path": "node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-test-renderer.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "src/LoginPage/react-test-renderer/test.tsx": {
-        "bytes": 1424,
-        "imports": [
-          {
-            "path": "node_modules/react-test-renderer/index.js",
-            "kind": "import-statement",
-            "original": "react-test-renderer"
-          },
-          {
-            "path": "testeranto/src/lib/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../test.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/LoginPage/react-test-renderer/node.test.tsx": {
-        "bytes": 3647,
-        "imports": [
-          {
-            "path": "react-test-renderer",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react-test-renderer/jsx/node.js"
-          },
-          {
-            "path": "src/LoginPage/test.ts",
-            "kind": "import-statement",
-            "original": "../test.js"
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
-          {
-            "path": "src/LoginPage/react-test-renderer/test.tsx",
-            "kind": "import-statement",
-            "original": "./test.js"
-          },
-          {
-            "path": "testeranto/src/PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-        "bytes": 38796,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-        "bytes": 39058,
-        "imports": [
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-        "bytes": 245608,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-        "bytes": 244170,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/node_modules/react-dom/server.node.js": {
-        "bytes": 646,
-        "imports": [
-          {
-            "path": "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.production.min.js"
-          },
-          {
-            "path": "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.production.min.js"
-          },
-          {
-            "path": "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.development.js"
-          },
-          {
-            "path": "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
-        "bytes": 2669,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/node_modules/react-dom/server.node.js",
-            "kind": "import-statement",
-            "original": "react-dom/server"
-          },
-          {
-            "path": "stream",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/dist/module/src/Node.js",
-            "kind": "import-statement",
-            "original": "../../../Node.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/index.tsx": {
-        "bytes": 768,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "react/jsx-runtime",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-        "bytes": 38796,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-        "bytes": 39058,
-        "imports": [
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-        "bytes": 245608,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-        "bytes": 244170,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/server.node.js": {
-        "bytes": 646,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.production.min.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.production.min.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.development.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
-      "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-        "bytes": 3877,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react-dom/component/node"
-          },
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "src/ClassicalComponent/index.tsx",
-            "kind": "import-statement",
-            "original": ".."
-          },
-          {
-            "path": "node_modules/react-dom/server.node.js",
-            "kind": "import-statement",
-            "original": "react-dom/server"
-          },
-          {
-            "path": "../../../../testeranto/src/SubPackages/react-dom/component/node",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/SubPackages/react-test-renderer/component/index",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
-        "bytes": 958,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/node_modules/react-test-renderer/index.js",
-            "kind": "import-statement",
-            "original": "react-test-renderer"
-          }
-        ],
-        "format": "esm"
-      },
-      "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js": {
-        "bytes": 241,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/Node.js",
-            "kind": "import-statement",
-            "original": "../../../Node.js"
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js",
-            "kind": "import-statement",
-            "original": "./interface.js"
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/test.specification.ts": {
-        "bytes": 1649,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-        "bytes": 1484,
-        "imports": [
-          {
-            "path": "react-test-renderer",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "testeranto/src/SubPackages/react-test-renderer/component/index",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/PM",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-        "bytes": 359,
-        "imports": [
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react-test-renderer/component/node"
-          },
-          {
-            "path": "src/ClassicalComponent/index.tsx",
-            "kind": "import-statement",
-            "original": "../index.js"
-          },
-          {
-            "path": "src/ClassicalComponent/test.specification.ts",
-            "kind": "import-statement",
-            "original": "../test.specification.js"
-          },
-          {
-            "path": "src/ClassicalComponent/react-test-renderer/test.implementation.ts",
-            "kind": "import-statement",
-            "original": "./test.implementation.js"
-          }
-        ],
-        "format": "esm"
-      }
-    },
-    "outputs": {
-      "docs/node/src/app.reduxToolkit.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-YGATLTHN.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-7B5PSYXK.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-RIT7KCC4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
           }
         ],
         "exports": [
@@ -3148,448 +2131,168 @@
         ],
         "entryPoint": "src/app.reduxToolkit.test.ts",
         "inputs": {
-          "src/subPackages/reduxToolkit.testeranto.test.ts": {
-            "bytesInOutput": 767
-          },
-          "src/app.reduxToolkit.test.ts": {
-            "bytesInOutput": 1190
-          }
-        },
-        "bytes": 2485
-      },
-      "docs/node/src/app.redux.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-YGATLTHN.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-7B5PSYXK.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-RIT7KCC4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/app.redux.test.ts",
-        "inputs": {
-          "src/subPackages/redux.testeranto.test.ts": {
-            "bytesInOutput": 707
-          },
-          "src/app.redux.test.ts": {
-            "bytesInOutput": 1352
-          }
-        },
-        "bytes": 2551
-      },
-      "docs/node/chunk-YGATLTHN.mjs": {
-        "imports": [],
-        "exports": [
-          "AppSpecification"
-        ],
-        "inputs": {
-          "src/app.test.ts": {
-            "bytesInOutput": 1688
-          }
-        },
-        "bytes": 1827
-      },
-      "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-7B5PSYXK.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/Rectangle/Rectangle.test.node.ts",
-        "inputs": {
-          "src/Rectangle.ts": {
-            "bytesInOutput": 479
-          },
-          "src/Rectangle.test.ts": {
-            "bytesInOutput": 68
-          },
-          "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1833
-          },
-          "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
-            "bytesInOutput": 88
-          },
-          "src/Rectangle.test.specification.ts": {
-            "bytesInOutput": 1655
-          },
-          "src/Rectangle/Rectangle.test.node.ts": {
-            "bytesInOutput": 531
-          }
-        },
-        "bytes": 5185
-      },
-      "docs/node/chunk-7B5PSYXK.mjs": {
-        "imports": [
-          {
-            "path": "fs",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "path",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "Node_default"
-        ],
-        "inputs": {
-          "../testeranto/src/lib/index.ts": {
-            "bytesInOutput": 459
-          },
-          "../testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 10005
-          },
-          "../testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 2748
-          },
-          "../testeranto/src/lib/classBuilder.ts": {
-            "bytesInOutput": 2284
-          },
-          "../testeranto/src/lib/core.ts": {
-            "bytesInOutput": 3511
-          },
-          "../testeranto/src/PM/node.ts": {
-            "bytesInOutput": 4120
-          },
-          "../testeranto/src/PM/index.ts": {
-            "bytesInOutput": 20
-          },
-          "../testeranto/src/Node.ts": {
-            "bytesInOutput": 887
-          }
-        },
-        "bytes": 24473
-      },
-      "docs/node/src/ReactStateAndHook.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-BJJPHGTY.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-FBU2S66J.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "assert",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "react/jsx-runtime",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/ReactStateAndHook.test.tsx",
-        "inputs": {
-          "src/ReactStateAndHook.test.tsx": {
-            "bytesInOutput": 1542
-          },
-          "src/ReactStateAndHook.tsx": {
-            "bytesInOutput": 647
-          }
-        },
-        "bytes": 2584
-      },
-      "docs/node/src/LoginPage/react/node.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-6GJCGFL4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-RIT7KCC4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/LoginPage/react/node.test.tsx",
-        "inputs": {
-          "../testeranto/dist/module/src/SubPackages/react/jsx/index.js": {
-            "bytesInOutput": 785
-          },
-          "../testeranto/dist/module/src/SubPackages/react/jsx/node.js": {
-            "bytesInOutput": 295
-          },
-          "src/LoginPage/react/test.tsx": {
-            "bytesInOutput": 2518
-          },
-          "src/LoginPage/react/node.test.tsx": {
-            "bytesInOutput": 559
-          }
-        },
-        "bytes": 4794
-      },
-      "docs/node/src/LoginPage/react-test-renderer/node.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-BJJPHGTY.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-6GJCGFL4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-RIT7KCC4.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-FBU2S66J.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/LoginPage/react-test-renderer/node.test.tsx",
-        "inputs": {
-          "node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-            "bytesInOutput": 8287
-          },
-          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19200
-          },
-          "node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 341
-          },
-          "node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-            "bytesInOutput": 150810
-          },
-          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565789
-          },
-          "node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 341
-          },
-          "src/LoginPage/react-test-renderer/test.tsx": {
-            "bytesInOutput": 876
-          },
-          "src/LoginPage/react-test-renderer/node.test.tsx": {
-            "bytesInOutput": 2914
-          }
-        },
-        "bytes": 751024
-      },
-      "docs/node/chunk-BJJPHGTY.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-FBU2S66J.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "node_default"
-        ],
-        "inputs": {
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js": {
-            "bytesInOutput": 715
-          },
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js": {
-            "bytesInOutput": 203
-          }
-        },
-        "bytes": 1365
-      },
-      "docs/node/chunk-6GJCGFL4.mjs": {
-        "imports": [],
-        "exports": [
-          "LoginPageSpecs"
-        ],
-        "inputs": {
-          "src/LoginPage/test.ts": {
-            "bytesInOutput": 3842
-          }
-        },
-        "bytes": 3985
-      },
-      "docs/node/chunk-RIT7KCC4.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react/jsx-runtime",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "LoginPage_default",
-          "actions",
-          "app_default",
-          "credErrorId",
-          "credentialFailWarning",
-          "emailwarning",
-          "loginApp",
-          "require_redux",
-          "require_scheduler",
-          "store"
-        ],
-        "inputs": {
+          "node_modules/assertion-error/index.js": {
+            "bytesInOutput": 1660
+          },
+          "node_modules/pathval/index.js": {
+            "bytesInOutput": 3174
+          },
+          "node_modules/chai/lib/chai/utils/flag.js": {
+            "bytesInOutput": 365
+          },
+          "node_modules/chai/lib/chai/utils/test.js": {
+            "bytesInOutput": 282
+          },
+          "node_modules/type-detect/type-detect.js": {
+            "bytesInOutput": 5652
+          },
+          "node_modules/chai/lib/chai/utils/expectTypes.js": {
+            "bytesInOutput": 1130
+          },
+          "node_modules/chai/lib/chai/utils/getActual.js": {
+            "bytesInOutput": 225
+          },
+          "node_modules/get-func-name/index.js": {
+            "bytesInOutput": 904
+          },
+          "node_modules/loupe/loupe.js": {
+            "bytesInOutput": 27984
+          },
+          "node_modules/chai/lib/chai/config.js": {
+            "bytesInOutput": 4311
+          },
+          "node_modules/chai/lib/chai/utils/inspect.js": {
+            "bytesInOutput": 562
+          },
+          "node_modules/chai/lib/chai/utils/objDisplay.js": {
+            "bytesInOutput": 946
+          },
+          "node_modules/chai/lib/chai/utils/getMessage.js": {
+            "bytesInOutput": 859
+          },
+          "node_modules/chai/lib/chai/utils/transferFlags.js": {
+            "bytesInOutput": 672
+          },
+          "node_modules/deep-eql/index.js": {
+            "bytesInOutput": 11303
+          },
+          "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
+            "bytesInOutput": 313
+          },
+          "node_modules/chai/lib/chai/utils/addProperty.js": {
+            "bytesInOutput": 957
+          },
+          "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
+            "bytesInOutput": 848
+          },
+          "node_modules/chai/lib/chai/utils/getProperties.js": {
+            "bytesInOutput": 594
+          },
+          "node_modules/chai/lib/chai/utils/proxify.js": {
+            "bytesInOutput": 2791
+          },
+          "node_modules/chai/lib/chai/utils/addMethod.js": {
+            "bytesInOutput": 852
+          },
+          "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
+            "bytesInOutput": 1271
+          },
+          "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
+            "bytesInOutput": 1263
+          },
+          "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
+            "bytesInOutput": 2760
+          },
+          "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
+            "bytesInOutput": 1186
+          },
+          "node_modules/chai/lib/chai/utils/compareByInspect.js": {
+            "bytesInOutput": 274
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
+            "bytesInOutput": 464
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
+            "bytesInOutput": 380
+          },
+          "node_modules/check-error/index.js": {
+            "bytesInOutput": 1982
+          },
+          "node_modules/chai/lib/chai/utils/isNaN.js": {
+            "bytesInOutput": 216
+          },
+          "node_modules/chai/lib/chai/utils/getOperator.js": {
+            "bytesInOutput": 1052
+          },
+          "node_modules/chai/lib/chai/utils/index.js": {
+            "bytesInOutput": 1570
+          },
+          "node_modules/chai/lib/chai/assertion.js": {
+            "bytesInOutput": 3500
+          },
+          "node_modules/chai/lib/chai/core/assertions.js": {
+            "bytesInOutput": 48026
+          },
+          "node_modules/chai/lib/chai/interface/expect.js": {
+            "bytesInOutput": 638
+          },
+          "node_modules/chai/lib/chai/interface/should.js": {
+            "bytesInOutput": 2350
+          },
+          "node_modules/chai/lib/chai/interface/assert.js": {
+            "bytesInOutput": 25268
+          },
+          "node_modules/chai/lib/chai.js": {
+            "bytesInOutput": 786
+          },
+          "node_modules/chai/index.js": {
+            "bytesInOutput": 128
+          },
+          "node_modules/redux/node_modules/@babel/runtime/helpers/typeof.js": {
+            "bytesInOutput": 705
+          },
+          "node_modules/redux/node_modules/@babel/runtime/helpers/toPrimitive.js": {
+            "bytesInOutput": 695
+          },
+          "node_modules/redux/node_modules/@babel/runtime/helpers/toPropertyKey.js": {
+            "bytesInOutput": 478
+          },
+          "node_modules/redux/node_modules/@babel/runtime/helpers/defineProperty.js": {
+            "bytesInOutput": 549
+          },
+          "node_modules/redux/node_modules/@babel/runtime/helpers/objectSpread2.js": {
+            "bytesInOutput": 1157
+          },
+          "node_modules/redux/lib/redux.js": {
+            "bytesInOutput": 18433
+          },
+          "node_modules/immer/dist/immer.cjs.production.min.js": {
+            "bytesInOutput": 28329
+          },
+          "node_modules/immer/dist/immer.cjs.development.js": {
+            "bytesInOutput": 51992
+          },
+          "node_modules/immer/dist/index.js": {
+            "bytesInOutput": 297
+          },
+          "node_modules/reselect/lib/defaultMemoize.js": {
+            "bytesInOutput": 3856
+          },
+          "node_modules/reselect/lib/index.js": {
+            "bytesInOutput": 4977
+          },
+          "node_modules/redux-thunk/lib/index.js": {
+            "bytesInOutput": 829
+          },
+          "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.production.min.js": {
+            "bytesInOutput": 46533
+          },
+          "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.development.js": {
+            "bytesInOutput": 91048
+          },
+          "node_modules/@reduxjs/toolkit/dist/index.js": {
+            "bytesInOutput": 325
+          },
           "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js": {
             "bytesInOutput": 2009
           },
@@ -3621,7 +2324,7 @@
             "bytesInOutput": 230192
           },
           "node_modules/react-dom/cjs/react-dom.development.js": {
-            "bytesInOutput": 906525
+            "bytesInOutput": 906570
           },
           "node_modules/react-dom/index.js": {
             "bytesInOutput": 727
@@ -3735,532 +2438,52 @@
             "bytesInOutput": 2917
           },
           "node_modules/react-redux/lib/index.js": {
-            "bytesInOutput": 1325
-          },
-          "node_modules/immer/dist/immer.cjs.production.min.js": {
-            "bytesInOutput": 28329
-          },
-          "node_modules/immer/dist/immer.cjs.development.js": {
-            "bytesInOutput": 51885
-          },
-          "node_modules/immer/dist/index.js": {
-            "bytesInOutput": 297
-          },
-          "node_modules/redux/node_modules/@babel/runtime/helpers/typeof.js": {
-            "bytesInOutput": 705
-          },
-          "node_modules/redux/node_modules/@babel/runtime/helpers/toPrimitive.js": {
-            "bytesInOutput": 695
-          },
-          "node_modules/redux/node_modules/@babel/runtime/helpers/toPropertyKey.js": {
-            "bytesInOutput": 478
-          },
-          "node_modules/redux/node_modules/@babel/runtime/helpers/defineProperty.js": {
-            "bytesInOutput": 549
-          },
-          "node_modules/redux/node_modules/@babel/runtime/helpers/objectSpread2.js": {
-            "bytesInOutput": 1157
-          },
-          "node_modules/redux/lib/redux.js": {
-            "bytesInOutput": 18423
-          },
-          "node_modules/reselect/lib/defaultMemoize.js": {
-            "bytesInOutput": 3856
-          },
-          "node_modules/reselect/lib/index.js": {
-            "bytesInOutput": 4978
-          },
-          "node_modules/redux-thunk/lib/index.js": {
-            "bytesInOutput": 829
-          },
-          "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.production.min.js": {
-            "bytesInOutput": 46535
-          },
-          "node_modules/@reduxjs/toolkit/dist/redux-toolkit.cjs.development.js": {
-            "bytesInOutput": 90982
-          },
-          "node_modules/@reduxjs/toolkit/dist/index.js": {
-            "bytesInOutput": 325
-          },
-          "src/LoginPage/index.tsx": {
-            "bytesInOutput": 2330
-          },
-          "src/app.ts": {
-            "bytesInOutput": 2347
-          }
-        },
-        "bytes": 1518740
-      },
-      "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-I2AXMH3H.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/ClassicalComponent/react-dom/server.node.test.tsx",
-        "inputs": {
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59881
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61645
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231591
-          },
-          "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230485
-          },
-          "../testeranto/node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 786
-          },
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59868
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61632
-          },
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231578
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230472
-          },
-          "node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 777
-          },
-          "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
-            "bytesInOutput": 1040
-          },
-          "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-            "bytesInOutput": 1487
-          }
-        },
-        "bytes": 1175203
-      },
-      "docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-FBU2S66J.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-I2AXMH3H.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-B7U3NHX5.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-MQ7EHINC.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/ClassicalComponent/react-test-renderer/node.test.tsx",
-        "inputs": {
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/interface.js": {
-            "bytesInOutput": 964
-          },
-          "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js": {
-            "bytesInOutput": 156
-          },
-          "src/ClassicalComponent/test.specification.ts": {
-            "bytesInOutput": 1468
-          },
-          "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-            "bytesInOutput": 1070
-          },
-          "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-            "bytesInOutput": 110
-          }
-        },
-        "bytes": 4571
-      },
-      "docs/node/chunk-FBU2S66J.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "exports": [
-          "require_react_test_renderer"
-        ],
-        "inputs": {
-          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js": {
-            "bytesInOutput": 8301
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
-            "bytesInOutput": 19214
-          },
-          "../testeranto/node_modules/scheduler/unstable_mock.js": {
-            "bytesInOutput": 355
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js": {
-            "bytesInOutput": 7026
-          },
-          "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
-            "bytesInOutput": 16937
-          },
-          "../testeranto/node_modules/scheduler/index.js": {
-            "bytesInOutput": 315
-          },
-          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js": {
-            "bytesInOutput": 150824
-          },
-          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
-            "bytesInOutput": 565801
-          },
-          "../testeranto/node_modules/react-test-renderer/index.js": {
-            "bytesInOutput": 355
-          }
-        },
-        "bytes": 771941
-      },
-      "docs/node/chunk-I2AXMH3H.mjs": {
-        "imports": [
-          {
-            "path": "react",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "react/jsx-runtime",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "ClassicalComponent"
-        ],
-        "inputs": {
-          "src/ClassicalComponent/index.tsx": {
-            "bytesInOutput": 983
-          }
-        },
-        "bytes": 1141
-      },
-      "docs/node/chunk-B7U3NHX5.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-DQMVF4HA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "exports": [
-          "assert"
-        ],
-        "inputs": {
-          "node_modules/assertion-error/index.js": {
-            "bytesInOutput": 1660
-          },
-          "node_modules/pathval/index.js": {
-            "bytesInOutput": 3166
-          },
-          "node_modules/chai/lib/chai/utils/flag.js": {
-            "bytesInOutput": 365
-          },
-          "node_modules/chai/lib/chai/utils/test.js": {
-            "bytesInOutput": 282
-          },
-          "node_modules/type-detect/type-detect.js": {
-            "bytesInOutput": 5646
-          },
-          "node_modules/chai/lib/chai/utils/expectTypes.js": {
-            "bytesInOutput": 1130
-          },
-          "node_modules/chai/lib/chai/utils/getActual.js": {
-            "bytesInOutput": 225
-          },
-          "node_modules/get-func-name/index.js": {
-            "bytesInOutput": 904
-          },
-          "node_modules/loupe/loupe.js": {
-            "bytesInOutput": 27978
-          },
-          "node_modules/chai/lib/chai/config.js": {
-            "bytesInOutput": 4311
-          },
-          "node_modules/chai/lib/chai/utils/inspect.js": {
-            "bytesInOutput": 562
-          },
-          "node_modules/chai/lib/chai/utils/objDisplay.js": {
-            "bytesInOutput": 946
-          },
-          "node_modules/chai/lib/chai/utils/getMessage.js": {
-            "bytesInOutput": 859
-          },
-          "node_modules/chai/lib/chai/utils/transferFlags.js": {
-            "bytesInOutput": 672
-          },
-          "node_modules/deep-eql/index.js": {
-            "bytesInOutput": 11303
-          },
-          "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
-            "bytesInOutput": 313
-          },
-          "node_modules/chai/lib/chai/utils/addProperty.js": {
-            "bytesInOutput": 957
-          },
-          "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
-            "bytesInOutput": 848
-          },
-          "node_modules/chai/lib/chai/utils/getProperties.js": {
-            "bytesInOutput": 594
-          },
-          "node_modules/chai/lib/chai/utils/proxify.js": {
-            "bytesInOutput": 2791
-          },
-          "node_modules/chai/lib/chai/utils/addMethod.js": {
-            "bytesInOutput": 852
-          },
-          "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
-            "bytesInOutput": 1271
-          },
-          "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
-            "bytesInOutput": 1263
-          },
-          "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
-            "bytesInOutput": 2760
-          },
-          "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
-            "bytesInOutput": 1186
-          },
-          "node_modules/chai/lib/chai/utils/compareByInspect.js": {
-            "bytesInOutput": 274
-          },
-          "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
-            "bytesInOutput": 464
-          },
-          "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
-            "bytesInOutput": 380
-          },
-          "node_modules/check-error/index.js": {
-            "bytesInOutput": 1982
-          },
-          "node_modules/chai/lib/chai/utils/isNaN.js": {
-            "bytesInOutput": 214
-          },
-          "node_modules/chai/lib/chai/utils/getOperator.js": {
-            "bytesInOutput": 1052
-          },
-          "node_modules/chai/lib/chai/utils/index.js": {
-            "bytesInOutput": 1570
-          },
-          "node_modules/chai/lib/chai/assertion.js": {
-            "bytesInOutput": 3500
-          },
-          "node_modules/chai/lib/chai/core/assertions.js": {
-            "bytesInOutput": 48026
-          },
-          "node_modules/chai/lib/chai/interface/expect.js": {
-            "bytesInOutput": 638
-          },
-          "node_modules/chai/lib/chai/interface/should.js": {
-            "bytesInOutput": 2350
-          },
-          "node_modules/chai/lib/chai/interface/assert.js": {
-            "bytesInOutput": 25268
-          },
-          "node_modules/chai/lib/chai.js": {
-            "bytesInOutput": 786
-          },
-          "node_modules/chai/index.js": {
-            "bytesInOutput": 128
+            "bytesInOutput": 1326
           },
           "node_modules/chai/index.mjs": {
             "bytesInOutput": 478
-          }
-        },
-        "bytes": 175814
-      },
-      "docs/node/chunk-MQ7EHINC.mjs": {
-        "imports": [
-          {
-            "path": "fs",
-            "kind": "import-statement",
-            "external": true
           },
-          {
-            "path": "path",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "Node_default"
-        ],
-        "inputs": {
-          "../testeranto/dist/module/src/lib/index.js": {
-            "bytesInOutput": 473
+          "../testeranto/src/lib/index.ts": {
+            "bytesInOutput": 462
           },
-          "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 9025
+          "../testeranto/src/lib/abstractBase.ts": {
+            "bytesInOutput": 10020
           },
-          "../testeranto/dist/module/src/lib/basebuilder.js": {
-            "bytesInOutput": 2536
+          "../testeranto/src/lib/basebuilder.ts": {
+            "bytesInOutput": 2748
           },
-          "../testeranto/dist/module/src/lib/classBuilder.js": {
-            "bytesInOutput": 1856
+          "../testeranto/src/lib/classBuilder.ts": {
+            "bytesInOutput": 2284
           },
-          "../testeranto/dist/module/src/lib/core.js": {
-            "bytesInOutput": 2725
+          "../testeranto/src/lib/core.ts": {
+            "bytesInOutput": 3521
           },
-          "../testeranto/dist/module/src/PM/node.js": {
-            "bytesInOutput": 3834
+          "../testeranto/src/PM/node.ts": {
+            "bytesInOutput": 4127
           },
-          "../testeranto/dist/module/src/PM/index.js": {
+          "../testeranto/src/PM/index.ts": {
             "bytesInOutput": 20
           },
-          "../testeranto/dist/module/src/Node.js": {
-            "bytesInOutput": 819
+          "../testeranto/src/Node.ts": {
+            "bytesInOutput": 887
+          },
+          "src/subPackages/reduxToolkit.testeranto.test.ts": {
+            "bytesInOutput": 776
+          },
+          "src/app.test.ts": {
+            "bytesInOutput": 1689
+          },
+          "src/app.ts": {
+            "bytesInOutput": 2396
+          },
+          "src/LoginPage/index.tsx": {
+            "bytesInOutput": 509
+          },
+          "src/app.reduxToolkit.test.ts": {
+            "bytesInOutput": 1239
           }
         },
-        "bytes": 21835
-      },
-      "docs/node/chunk-DQMVF4HA.mjs": {
-        "imports": [],
-        "exports": [
-          "__commonJS",
-          "__require",
-          "__toESM"
-        ],
-        "inputs": {},
-        "bytes": 1831
+        "bytes": 1722495
       }
     }
   }

@@ -1,3 +1,4 @@
+import { PM } from "testeranto/src/PM";
 import Rectangle from "./Rectangle";
 
 export type IRectangleTestShape = {
@@ -6,9 +7,13 @@ export type IRectangleTestShape = {
   istore: Rectangle;
   iselection: Rectangle;
 
-  when: (rectangle: Rectangle) => Rectangle;
-  then: (s: Rectangle) => Rectangle;
-  given: (x) => (y) => Rectangle;
+  given: Rectangle;
+  when: (...x) => (rectangle: Rectangle, utils: PM) => Rectangle;
+  then: (rectangle: Rectangle, utils: PM) => Rectangle;
+
+  // when: Rectangle;
+  // then: Rectangle;
+  // given: Rectangle;
 
   suites: {
     Default: [string];
@@ -30,7 +35,7 @@ export type IRectangleTestShape = {
     getWidth: [number];
     getHeight: [number];
     area: [number];
-    prototype: [string];
+    prototype: [];
   };
   checks: {
     Default;

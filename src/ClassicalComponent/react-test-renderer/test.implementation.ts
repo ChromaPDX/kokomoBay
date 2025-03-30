@@ -25,7 +25,8 @@ export const testImplementation: BaseIImple<IClassicalComponentSpec> = {
   thens: {
     ThePropsIs: (expectation) => (component) => {
       return assert.deepEqual(
-        (component.toJSON() as { children: object[] }).children[1].children,
+        (component.toJSON() as { children: { children: any[] }[] }).children[1]
+          .children,
         [JSON.stringify(expectation)]
         // {
         //   type: "pre",

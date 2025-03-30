@@ -10,7 +10,7 @@ export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestS
       actioner(renderer);
       return renderer;
     },
-    butThen: async (s, t, tr) => {
-      return t(s);
+    butThen: async (s, t, tr, pm) => {
+      return t(s, pm);
     },
   };

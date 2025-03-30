@@ -1,2 +1,0 @@
-src/LoginPage/test.ts(6,27): error TS2503: Cannot find namespace 'renderer'.
-src/LoginPage/test.ts(9,9): error TS2503: Cannot find namespace 'renderer'.

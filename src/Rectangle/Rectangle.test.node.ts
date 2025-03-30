@@ -6,10 +6,12 @@ import { RectangleTesterantoBasePrototype } from "../Rectangle.test";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";
 import { IRectangleTestShape } from "../Rectangle.test.shape";
 import { RectangleTesterantoBaseTestSpecification } from "../Rectangle.test.specification";
+import { RectangleTesterantoBaseInterface } from "../Rectangle.test.interface";
 
 let guid;
 
 const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
+  ...RectangleTesterantoBaseInterface,
   beforeAll(input, testResource, artificer, utils) {
     return new Promise(async (res, rej) => {
       const x = Object.create(input);
@@ -18,8 +20,8 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
     });
   },
 
-  andWhen: async function (s: Rectangle, whenCB): Promise<Rectangle> {
-    return whenCB(s);
+  andWhen: async function (s, whenCB, tr, utils) {
+    return whenCB(s)(s, utils);
   },
 
   assertThis: (x) => {},

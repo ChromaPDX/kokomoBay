@@ -9,23 +9,52 @@ import {
   ITestSpecification,
 } from "testeranto/src/Types";
 
-import Ganache, { Server, ServerOptions } from "ganache";
+import Ganache, { EthereumProvider, Server, ServerOptions } from "ganache";
 import Web3 from "web3";
 import { ethers } from "ethers";
 import { Contract as ContractEthers } from "ethers";
-import { Contract as ContractWeb3 } from "web3-eth-contract";
-import { ITestInterface } from "../../../testeranto/src/lib/types";
+import Contract, { Contract as ContractWeb3 } from "web3-eth-contract";
 
-type Shape = {
-  contractFarSide: ContractEthers;
-  contractNearSide: ContractWeb3;
-  accounts;
-  server: Server;
-};
+import type { AbiItem } from "web3-utils";
+
+// type Shape = {
+//   contractFarSide: ContractEthers;
+//   contractNearSide: ContractWeb3;
+//   accounts;
+//   server: Server;
+// };
 
 export type IInput = { contractName: string; abi: any };
 
-export default <IT extends IBaseTest>(
+type istore = {
+  contractNearSide: Contract;
+  contractFarSide: ethers.Contract;
+  // provider: EthereumProvider;
+  // contract: Contract;
+  accounts: string[];
+  server: Server<any>;
+};
+
+export default <
+  IT extends IBaseTest<
+    unknown,
+    {
+      abi: AbiItem | AbiItem[];
+      deployedBytecode: { bytes: string };
+      bytecode: { bytes: string };
+    },
+    istore,
+    unknown,
+    unknown,
+    unknown,
+    unknown,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>
+  >
+>(
   testImplementations: ITestImplementation<IT>,
   testSpecifications: ITestSpecification<IT>,
   testInput: IInput
@@ -36,10 +65,10 @@ export default <IT extends IBaseTest>(
     //     (c) => c.contractName === contractName
     //   ),
 
-    beforeEach: (contract, i, artificer, testResource, iv, util) => {
+    beforeEach: async (contract, i, artificer, testResource, iv, util) => {
       const logHandle = util.createWriteStream("ganache.log");
 
-      return new Promise((res) => {
+      return new Promise<istore>((res) => {
         const options: ServerOptions<any> = {
           logging: {
             logger: {
@@ -48,7 +77,7 @@ export default <IT extends IBaseTest>(
               },
             },
           },
-        };
+        } as any;
         const port = testResource.ports[0];
 
         // https://github.com/trufflesuite/ganache#programmatic-use
@@ -89,7 +118,7 @@ export default <IT extends IBaseTest>(
           // create a contract that our test user can access
           const contractFarSide = new ethers.Contract(
             contractNearSide.options.address,
-            contract.abi,
+            contract.abi as ethers.ContractInterface,
             web3FarSideSigner
           );
 

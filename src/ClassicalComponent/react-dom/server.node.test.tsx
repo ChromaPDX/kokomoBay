@@ -1,27 +1,10 @@
-import test, {
-  // Stream,
-  // renderToStaticMarkup,
-  // renderToStaticNodeStream,
-  // ISubject,
-  // IStore,
-  // ISelection,
-  // IThenShape
-} from "testeranto/src/SubPackages/react-dom/component/node";
-// import { ITestSpecification } from "testeranto/src/core";
-
 import { assert } from "chai";
+import { renderToStaticMarkup } from "react-dom/server";
+import { ITestSpecification } from "testeranto/src/Types";
+import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
+import test from "testeranto/src/SubPackages/react-dom/component/node";
 
 import { ClassicalComponent } from "..";
-// import test from "node:test";
-import { renderToStaticMarkup } from "react-dom/server";
-// import { ITestSpecification } from "testeranto/src/lib/core";
-import { ISubject, IStore, ISelection, IThenShape } from "../../../../testeranto/src/SubPackages/react-dom/component/node";
-
-// import { ClassicalComponentSpec } from "../test.specification";
-
-import { ITestSpecification } from "testeranto/src/Types";
-
-import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
 
 const snapshot = `<div style="border:3px solid green"><h1>Hello Marcus</h1><pre id="theProps">{}</pre><p>foo: </p><pre id="theState">{&quot;count&quot;:0}</pre><p>count: 0 times</p><button id="theButton">Click</button></div>`;
 const readableStream = new ReadableStream({
@@ -30,39 +13,22 @@ const readableStream = new ReadableStream({
     function push() {
       controller.enqueue("idk");
       controller.close();
-      // "done" is a Boolean and value a "Uint8Array"
-      // reader.read().then(({ done, value }) => {
-      //   // If there is no more data to read
-      //   if (done) {
-      //     console.log("done", done);
-      //     controller.close();
-      //     return;
-      //   }
-      //   // Get the data and send it to the browser via the controller
-      //   controller.enqueue(value);
-      //   // Check chunks by logging to the console
-      //   console.log(done, value);
-      //   push();
-      // });
+
     }
 
     push();
   },
 });
-// readableStream.on("readable", () => {
-//   console.log("readable")
-// })
-// readableStream.pipe(process.stdout)
-// readableStream.push(snapshot);
-// piping
-// readableStream.pipe(process.stdout)
-
-// // through the data event
-// readableStream.on('data', (chunk) => {
-//   console.log(chunk.toString());
-// });
 
 type IClassicalComponentSpec = {
+  iinput: any;
+  isubject: any;
+  istore: any;
+  iselection: any;
+  given: () => {};
+  when: any;
+  then: Promise<void>;
+
   suites: {
     Default: string;
   };
@@ -80,11 +46,7 @@ type IClassicalComponentSpec = {
 }
 
 const ClassicalComponentSpec: ITestSpecification<
-  IClassicalComponentSpec,
-  ISubject,
-  IStore,
-  ISelection,
-  IThenShape
+  IClassicalComponentSpec
 > =
   (Suite, Given, When, Then, Check) => {
     return [

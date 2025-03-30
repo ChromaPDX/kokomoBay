@@ -34,7 +34,7 @@ PM.prototype.getText = async function (selector: string) {
   return element.textContent?.trim() || '';
 }
 
-export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs, object> = {
+export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs> = {
   suites: {
     Default: "a default suite",
   },

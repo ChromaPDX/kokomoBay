@@ -1,0 +1,98 @@
+src/MyFirstContract.react-solidity.testeranto.tsx(27,18): error TS2339: Property 'contractFarSide' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(27,35): error TS2339: Property 'accounts' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(32,18): error TS2339: Property 'contractFarSide' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(32,35): error TS2339: Property 'accounts' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(39,18): error TS2339: Property 'contractFarSide' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(39,35): error TS2339: Property 'accounts' does not exist on type 'String'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(40,11): error TS2322: Type 'Promise<void>' is not assignable to type 'string'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(51,3): error TS2345: Argument of type 'ITestImplementation<IMyFirstContractTest<IMyFirstContractTest<IInput>>, object>' is not assignable to parameter of type 'ITestImplementation<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>, object>'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.
+
+src/MyFirstContract.react-solidity.testeranto.tsx(57,9): error TS2345: Argument of type 'Record<string, BaseGiven<IMyFirstContractTest<any>>>' is not assignable to parameter of type 'IGivens<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<IInput, ISubject, HTMLElement, HTMLElement, unknown, () => (a: any) => HTMLElement, unknown, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: HTMLElement) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'HTMLElement' is not assignable to type 'string'.

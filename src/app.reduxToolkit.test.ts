@@ -13,6 +13,7 @@ import { AppSpecification, IAppSpecification } from "./app.test";
 import app, { IStoreState, loginApp } from "./app";
 import { ILoginPageSelection } from "./LoginPage";
 
+console.log("core", app);
 const core = app();
 const selector = core.select.loginPageSelection;
 const reducer = core.app.reducer;

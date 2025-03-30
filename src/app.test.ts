@@ -3,6 +3,7 @@ import { ITestImplementation, ITestSpecification } from "testeranto/src/Types";
 import {
   ActionCreatorWithNonInferrablePayload,
   ActionCreatorWithoutPayload,
+  StoreEnhancerStoreCreator,
 } from "@reduxjs/toolkit";
 
 import { IStoreState } from "./app";
@@ -23,8 +24,8 @@ export type IAppSpecification = {
     unknown?
   ];
   then: any;
-  // given: IStoreState,
-  given: IStoreState;
+
+  given: (initValues) => () => StoreEnhancerStoreCreator<any, any>;
 
   suites: {
     Default: [string];
@@ -55,7 +56,7 @@ export type IImplementation = ITestImplementation<
     givens: {
       [K in keyof IAppSpecification["givens"]]: (
         ...Iw: IAppSpecification["givens"][K]
-      ) => (x) => IStoreState;
+      ) => IStoreState;
     };
     // whens: {
     //   [K in keyof IAppSpecification["whens"]]: (
@@ -70,7 +71,7 @@ export type IImplementation = ITestImplementation<
     checks: {
       [K in keyof IAppSpecification["checks"]]: (
         ...Iw: IAppSpecification["checks"][K]
-      ) => (x) => IStoreState;
+      ) => IStoreState;
     };
   }
 >;
@@ -113,7 +114,7 @@ export const AppSpecification: ITestSpecification<IAppSpecification> = (
         test4: Given.AnEmptyState(
           ["Set the email, check the email"],
           [When.TheEmailIsSetTo("hey there")],
-          [Then.TheEmailIs("hey there")]
+          [Then.TheEmailIs("hey there!")]
         ),
       },
       [

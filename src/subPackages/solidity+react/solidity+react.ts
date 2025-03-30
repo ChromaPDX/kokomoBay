@@ -14,7 +14,7 @@ import Web3 from "web3";
 import { ethers } from "ethers";
 import { Contract as ContractEthers } from "ethers";
 import { Contract as ContractWeb3 } from "web3-eth-contract";
-import { ITestInterface } from "../../../testeranto/src/lib/types";
+// import { ITestInterface } from "../../../testeranto/src/lib/types";
 
 type Shape = {
   contractFarSide: ContractEthers;
@@ -25,7 +25,22 @@ type Shape = {
 
 export type IInput = { contractName: string; abi: any };
 
-export default <IT extends IBaseTest>(
+export default <
+  IT extends IBaseTest<
+    IInput,
+    any,
+    any,
+    any,
+    unknown,
+    () => (a: any) => any,
+    unknown,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>
+  >
+>(
   testImplementations: ITestImplementation<IT>,
   testSpecifications: ITestSpecification<IT>,
   testInput: IInput

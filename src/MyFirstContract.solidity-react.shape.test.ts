@@ -1,5 +1,3 @@
-import { IBaseTest } from "testeranto/src/Types";
-
 export type IMyFirstContractTest<Input> = {
   iinput: Input;
   isubject: string;
@@ -24,4 +22,4 @@ export type IMyFirstContractTest<Input> = {
   checks: {
     AnEmptyState: [];
   };
-} & IBaseTest;
+};

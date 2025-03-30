@@ -1,0 +1,14 @@
+src/LoginPage/react-dom/test.tsx(42,5): error TS2322: Type '{ default: () => (i: any) => any; }' is not assignable to type '{ Default: () => (x: any) => unknown; }'.
+  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
+
+src/LoginPage/react-dom/test.tsx(47,32): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
+  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
+
+src/LoginPage/react-dom/test.tsx(50,33): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
+  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
+
+src/LoginPage/react-dom/test.tsx(55,39): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
+  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
+
+src/LoginPage/react-dom/test.tsx(120,5): error TS2322: Type '{ default: () => () => {}; }' is not assignable to type '{ Default: () => (x: any) => unknown; }'.
+  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?

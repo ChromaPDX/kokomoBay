@@ -36,9 +36,6 @@ var Rectangle = class {
 };
 var Rectangle_default = Rectangle;
 
-// src/Rectangle.test.ts
-var RectangleTesterantoBasePrototype = Rectangle_default.prototype;
-
 // src/Rectangle.test.implementation.ts
 var RectangleTesterantoBaseTestImplementation = {
   suites: {
@@ -194,7 +191,7 @@ var testInterface = {
   }
 };
 var Rectangle_test_node_default = Node_default(
-  RectangleTesterantoBasePrototype,
+  Rectangle_default.prototype,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   testInterface

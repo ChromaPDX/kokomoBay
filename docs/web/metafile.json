@@ -956,22 +956,6 @@
         ],
         "format": "esm"
       },
-      "src/Rectangle.test.ts": {
-        "bytes": 907,
-        "imports": [
-          {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
       "src/Rectangle.test.interface.ts": {
         "bytes": 497,
         "imports": [
@@ -989,7 +973,7 @@
         "format": "esm"
       },
       "src/Rectangle/Rectangle.test.web.ts": {
-        "bytes": 953,
+        "bytes": 908,
         "imports": [
           {
             "path": "../testeranto/src/Web.ts",
@@ -1012,11 +996,6 @@
             "original": "../Rectangle.test.implementation"
           },
           {
-            "path": "src/Rectangle.test.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test"
-          },
-          {
             "path": "src/Rectangle.test.interface.ts",
             "kind": "import-statement",
             "original": "../Rectangle.test.interface"
@@ -1025,6 +1004,11 @@
             "path": "../Rectangle.test.shape",
             "kind": "import-statement",
             "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle"
           }
         ],
         "format": "esm"
@@ -1839,7 +1823,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3440,
+        "bytes": 3393,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -2629,17 +2613,14 @@
           "src/Rectangle.test.implementation.ts": {
             "bytesInOutput": 1777
           },
-          "src/Rectangle.test.ts": {
-            "bytesInOutput": 68
-          },
           "src/Rectangle.test.interface.ts": {
             "bytesInOutput": 301
           },
           "src/Rectangle/Rectangle.test.web.ts": {
-            "bytesInOutput": 383
+            "bytesInOutput": 378
           }
         },
-        "bytes": 5193
+        "bytes": 5094
       },
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [
@@ -2648,7 +2629,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-UGLYX2GU.mjs",
+            "path": "docs/web/chunk-ZUBELMDC.mjs",
             "kind": "import-statement"
           },
           {
@@ -2684,7 +2665,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-UGLYX2GU.mjs",
+            "path": "docs/web/chunk-ZUBELMDC.mjs",
             "kind": "import-statement"
           },
           {
@@ -2753,7 +2734,7 @@
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-UGLYX2GU.mjs",
+            "path": "docs/web/chunk-ZUBELMDC.mjs",
             "kind": "import-statement"
           },
           {
@@ -2805,7 +2786,7 @@
         },
         "bytes": 591995
       },
-      "docs/web/chunk-UGLYX2GU.mjs": {
+      "docs/web/chunk-ZUBELMDC.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
@@ -2925,13 +2906,13 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 2285
+            "bytesInOutput": 2238
           },
           "src/LoginPage/index.tsx": {
             "bytesInOutput": 2568
           }
         },
-        "bytes": 1031628
+        "bytes": 1031581
       },
       "docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs": {
         "imports": [

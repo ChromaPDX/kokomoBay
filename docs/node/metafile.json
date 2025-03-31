@@ -251,22 +251,6 @@
         "imports": [],
         "format": "esm"
       },
-      "src/Rectangle.test.ts": {
-        "bytes": 907,
-        "imports": [
-          {
-            "path": "src/Rectangle.ts",
-            "kind": "import-statement",
-            "original": "./Rectangle"
-          },
-          {
-            "path": "./Rectangle.test.shape",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
       "node_modules/assertion-error/index.js": {
         "bytes": 2429,
         "imports": [],
@@ -994,7 +978,7 @@
         "format": "esm"
       },
       "src/Rectangle/Rectangle.test.node.ts": {
-        "bytes": 1174,
+        "bytes": 1079,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -1007,14 +991,9 @@
             "external": true
           },
           {
-            "path": "../Rectangle",
+            "path": "src/Rectangle.ts",
             "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/Rectangle.test.ts",
-            "kind": "import-statement",
-            "original": "../Rectangle.test"
+            "original": "../Rectangle"
           },
           {
             "path": "src/Rectangle.test.implementation.ts",
@@ -2387,7 +2366,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3440,
+        "bytes": 3393,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -2403,7 +2382,7 @@
         "format": "esm"
       },
       "src/app.reduxToolkit.test.ts": {
-        "bytes": 2374,
+        "bytes": 2348,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -21403,9 +21382,6 @@
           "src/Rectangle.ts": {
             "bytesInOutput": 479
           },
-          "src/Rectangle.test.ts": {
-            "bytesInOutput": 68
-          },
           "src/Rectangle.test.implementation.ts": {
             "bytesInOutput": 1777
           },
@@ -21419,10 +21395,10 @@
             "bytesInOutput": 301
           },
           "src/Rectangle/Rectangle.test.node.ts": {
-            "bytesInOutput": 591
+            "bytesInOutput": 586
           }
         },
-        "bytes": 5526
+        "bytes": 5427
       },
       "docs/node/src/ReactStateAndHook.test.mjs": {
         "imports": [
@@ -21483,7 +21459,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-74ZY5RW6.mjs",
+            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21504,10 +21480,10 @@
             "bytesInOutput": 771
           },
           "src/app.reduxToolkit.test.ts": {
-            "bytesInOutput": 1224
+            "bytesInOutput": 1190
           }
         },
-        "bytes": 2523
+        "bytes": 2489
       },
       "docs/node/src/app.redux.test.mjs": {
         "imports": [
@@ -21520,7 +21496,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-74ZY5RW6.mjs",
+            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21609,7 +21585,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-74ZY5RW6.mjs",
+            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21661,7 +21637,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-74ZY5RW6.mjs",
+            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21768,7 +21744,7 @@
         },
         "bytes": 3985
       },
-      "docs/node/chunk-74ZY5RW6.mjs": {
+      "docs/node/chunk-Y2GM6ANZ.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-M7BKJ4RF.mjs",
@@ -22049,10 +22025,10 @@
             "bytesInOutput": 2330
           },
           "src/app.ts": {
-            "bytesInOutput": 2393
+            "bytesInOutput": 2346
           }
         },
-        "bytes": 1518786
+        "bytes": 1518739
       },
       "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
         "imports": [

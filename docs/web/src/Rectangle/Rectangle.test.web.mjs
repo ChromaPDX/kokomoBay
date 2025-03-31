@@ -157,9 +157,6 @@ var RectangleTesterantoBaseTestImplementation = {
   }
 };
 
-// src/Rectangle.test.ts
-var RectangleTesterantoBasePrototype = Rectangle_default.prototype;
-
 // src/Rectangle.test.interface.ts
 var RectangleTesterantoBaseInterface = {
   beforeEach: async (subject, initializer, art, tr, initialValues) => {
@@ -182,7 +179,7 @@ var testInterface = {
   }
 };
 var Rectangle_test_web_default = Web_default(
-  RectangleTesterantoBasePrototype,
+  Rectangle_default.prototype,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   testInterface,

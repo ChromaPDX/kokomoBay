@@ -1,6 +1,8 @@
 src/LoginPage/react-dom/test.tsx(47,32): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
   Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.
+
 src/LoginPage/react-dom/test.tsx(50,33): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
   Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.
+
 src/LoginPage/react-dom/test.tsx(55,39): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
   Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.

@@ -9,7 +9,7 @@ import {
   app_default,
   loginApp,
   require_redux
-} from "../chunk-74ZY5RW6.mjs";
+} from "../chunk-Y2GM6ANZ.mjs";
 import {
   assert
 } from "../chunk-BFDDKUUP.mjs";
@@ -48,7 +48,6 @@ var ReduxToolkitTesteranto = (testImplementations, testSpecifications, testInput
 };
 
 // src/app.reduxToolkit.test.ts
-console.log("core", app_default);
 var core = app_default();
 var selector = core.select.loginPageSelection;
 var reducer = core.app.reducer;

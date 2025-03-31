@@ -1,12 +1,10 @@
 import { ITestSpecification } from "testeranto/src/Types";
-import type renderer from "react-test-renderer";
-
-import readme from "./readme.md";
+import renderer from "react-test-renderer";
 
 export type ILoginPageSpecs = {
   iinput: any;
   isubject: any;
-  istore: () => React.JSX.Element;
+  istore: { testRenderer: renderer.ReactTestRenderer; coponent: any };
   iselection: any;
 
   when: renderer.ReactTestRenderer;
@@ -17,7 +15,7 @@ export type ILoginPageSpecs = {
     Default: [string];
   };
   givens: {
-    Default: [];
+    default: [];
   };
   whens: {
     TheLoginIsSubmitted: [];
@@ -37,7 +35,7 @@ export type ILoginPageSpecs = {
     TheSubmitButtonIsNotActive: [];
   };
   checks: {
-    Default: [];
+    default;
   };
 };
 
@@ -52,26 +50,26 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
     Suite.Default(
       "Testing the LoginPage as react",
       {
-        test0: Given.Default(
+        test0: Given.default(
           ["you can type a bad email and the submit button is still inactive"],
           [When.TheEmailIsSetTo("a")],
           [Then.TheEmailIs("a"), Then.TheSubmitButtonIsNotActive()]
         ),
-        test0_1: Given.Default(
+        test0_1: Given.default(
           [
             "by default, the submit button is not active and the email field is empty",
           ],
           [],
           [Then.TheSubmitButtonIsNotActive(), Then.ThereIsNotAnEmailError()]
         ),
-        test0_2: Given.Default(
+        test0_2: Given.default(
           [
             "Enter a good email. There is no email error, but the submit button is still disabled",
           ],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.ThereIsNotAnEmailError(), Then.TheSubmitButtonIsNotActive()]
         ),
-        test0_3: Given.Default(
+        test0_3: Given.default(
           [
             "Enter an email and a password, and the submit button is active. There is no email error nor a credential error",
           ],
@@ -86,7 +84,7 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
             Then.ThereIsNotACredentialError(),
           ]
         ),
-        test0_3_1: Given.Default(
+        test0_3_1: Given.default(
           [
             "Enter an email and a password, and then click the submit button. There is a credential error",
           ],
@@ -98,7 +96,7 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
           [Then.ThereIsNotAnEmailError(), Then.ThereIsACredentialError()]
         ),
 
-        test0_4: Given.Default(
+        test0_4: Given.default(
           ["Curly cannot login, even if he knows the password"],
           [
             When.TheEmailIsSetTo("curly@email.com"),
@@ -107,8 +105,8 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
           ],
           [Then.TheEmailIs("curly@email.com"), Then.ThereIsACredentialError()]
         ),
-        test0_5: Given.Default(
-          [readme],
+        test0_5: Given.default(
+          ["0"],
           [
             When.TheEmailIsSetTo("BAD EMAIL"),
             When.ThePasswordIsSetTo("secret"),
@@ -116,8 +114,8 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
           ],
           [Then.ThereIsAnEmailError()]
         ),
-        test1: Given.Default(
-          [readme],
+        test1: Given.default(
+          [`0`],
           [
             When.TheEmailIsSetTo("adam@email.com"),
             When.ThePasswordIsSetTo("secret"),
@@ -129,31 +127,31 @@ export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
             Then.ThePasswordIsNot("idk"),
           ]
         ),
-        test2: Given.Default(
-          [readme],
+        test2: Given.default(
+          [`0`],
           [When.TheEmailIsSetTo("adam@email.com")],
           [Then.ThereIsNotAnEmailError()]
         ),
-        test3: Given.Default(
-          [readme],
+        test3: Given.default(
+          [`0`],
           [When.TheEmailIsSetTo("bob"), When.TheLoginIsSubmitted()],
           [Then.TheEmailIs("bob"), Then.ThereIsAnEmailError()]
         ),
-        test3_5: Given.Default(
+        test3_5: Given.default(
           [`if you enter a bad email pattern, there will be an email error`],
           [When.TheEmailIsSetTo("bob")],
           [Then.ThereIsAnEmailError()]
         ),
-        test4: Given.Default(
-          [readme],
+        test4: Given.default(
+          [`0`],
           [
             When.TheEmailIsSetTo("adam@mail.com"),
             When.ThePasswordIsSetTo("foso"),
           ],
           [Then.ThereIsNotAnEmailError()]
         ),
-        test5: Given.Default(
-          [readme],
+        test5: Given.default(
+          [`1`],
           [
             When.TheEmailIsSetTo("adam@mail.com"),
             When.ThePasswordIsSetTo("fosz"),

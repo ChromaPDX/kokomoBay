@@ -1,4 +1,1 @@
 src/subPackages/solidity/react.testeranto.ts(121,25): error TS2345: Argument of type 'MutableRefObject<any>' is not assignable to parameter of type 'ITestShape["istore"] | PromiseLike<ITestShape["istore"]>'.
-
-testeranto.mts(6,3): error TS2322: Type '{ outdir: string; src: string; tests: [string, "node", { ports: number; }, never[]][]; debugger: true; clearScreen: false; devMode: true; minify: false; outbase: string; externals: string[]; ports: string[]; webPlugins: IPlugin[]; nodePlugins: IPlugin[]; featureIngestor: (s: string) => Promise<...>; }' is not assignable to type 'IBaseConfig'.
-  Object literal may only specify known properties, and 'src' does not exist in type 'IBaseConfig'.

@@ -1,0 +1,16 @@
+
+/add src/LoginPage/react-test-renderer/test.tsx
+/add src/LoginPage/react-test-renderer/node.test.tsx
+  
+/read docs/types/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt
+/read docs/types/src/LoginPage/react-test-renderer/node.test.tsx.type_errors.txt
+
+
+  
+/read docs/node/src/LoginPage/react-test-renderer/node.test/tests.json
+/read docs/node/src/LoginPage/react-test-renderer/node.test/stdout.log
+/read docs/node/src/LoginPage/react-test-renderer/node.test/stderr.log
+
+/load docs/node/src/LoginPage/react-test-renderer/node.test/featurePrompt.txt
+
+/code Fix the failing tests described in docs/node/src/LoginPage/react-test-renderer/node.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/react-test-renderer/test.tsx.type_errors.txt, docs/types/src/LoginPage/react-test-renderer/node.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."

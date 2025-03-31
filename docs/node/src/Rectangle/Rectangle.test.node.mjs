@@ -1,8 +1,11 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  Node_default,
+  Node_default
+} from "../../chunk-NGUD7ODA.mjs";
+import {
   assert
-} from "../../chunk-ALLJ2A72.mjs";
+} from "../../chunk-BFDDKUUP.mjs";
+import "../../chunk-M7BKJ4RF.mjs";
 
 // src/Rectangle.ts
 var Rectangle = class {

@@ -1,5 +1,5 @@
 src/ClassicalComponent/react-dom/client.web.test.tsx(70,46): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-  Type 'string' is not assignable to type 'CdpPage'.
+  Type 'string' is not assignable to type 'Promise<string>'.
 
-src/ClassicalComponent/react-dom/client.web.test.tsx(71,63): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'CdpPage | undefined'.
-  Type 'string' is not assignable to type 'CdpPage'.
+src/ClassicalComponent/react-dom/client.web.test.tsx(71,63): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'Promise<string> | undefined'.
+  Type 'string' is not assignable to type 'Promise<string>'.

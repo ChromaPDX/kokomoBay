@@ -1,8 +1,1 @@
-src/LoginPage/react-test-renderer/web.test.tsx(18,7): error TS2322: Type '{ default: () => (i: any) => any; }' is not assignable to type '{ Default: () => (x: any) => unknown; }'.
-  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
-
-src/LoginPage/react-test-renderer/web.test.tsx(31,15): error TS2345: Argument of type '{}' is not assignable to parameter of type 'ReactTestRenderer | PromiseLike<ReactTestRenderer>'.
-  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
-
-src/LoginPage/react-test-renderer/web.test.tsx(95,7): error TS2322: Type '{ default: () => () => {}; }' is not assignable to type '{ Default: () => (x: any) => unknown; }'.
-  Object literal may only specify known properties, but 'default' does not exist in type '{ Default: () => (x: any) => unknown; }'. Did you mean to write 'Default'?
+src/LoginPage/react-test-renderer/web.test.tsx(102,3): error TS2345: Argument of type 'Partial<ITestInterface<ILoginPageSpecs>>' is not assignable to parameter of type '{ butThen: (s: ReactTestRenderer, thenCB: any, tr: any) => Promise<ReactTestRenderer>; beforeEach: (CComponent: any, props: any) => Promise<...>; andWhen: (renderer: ReactTestRenderer, whenCB: (any: any) => any) => Promise<...>; }'.

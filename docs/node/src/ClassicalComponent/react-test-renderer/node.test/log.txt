@@ -1,0 +1,41 @@
+test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-test-renderer/node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/99cdd9ae-b61e-4a3f-955b-0f6c57eb86f7"}
+
+Suite:,0,a classical react component
+
+ test0
+
+ Given: AnEmptyState
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheHeader: undefined
+ Then:,ThePropsIs: [object Object]
+ Then:,TheStatusIs: [object Object]
+
+ test1
+
+ Given: AnEmptyState
+ When:,IClickTheButton: undefined
+ Then:,ThePropsIs: [object Object]
+ Then:,TheStatusIs: [object Object]
+
+ test2
+
+ Given: AnEmptyState
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ Then:,TheStatusIs: [object Object]
+
+ test3
+
+ Given: AnEmptyState
+ When:,IClickTheButton: undefined
+ When:,IClickTheButton: undefined
+ Then:,TheStatusIs: [object Object]

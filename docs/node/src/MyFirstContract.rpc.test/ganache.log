@@ -1,0 +1,42 @@
+eth_accountseth_getBlockByNumbereth_gasPriceeth_sendTransaction
+  Transaction: 0x830e6f63ac70066bd4c0fde5a67016a1aee1fdd360a476aa9d639f13d95b5946
+  Contract created: 0x902dae775c0354374be123e1df1c94595df97caa
+  Gas usage: 113457
+  Block number: 1
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_getCodeeth_chainIdeth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_blockNumbereth_chainIdeth_sendRawTransaction
+  Transaction: 0x2235d3dfb98e6fa3e05279f6ce69fd32801abb4299ab6a9bf51d35a428e07602
+  Gas usage: 43403
+  Block number: 2
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0x6e6abf3ec1be9fb72b50a9f36abe1c5c2f3d3b75fe7ba0692655b3fe4468b130
+  Gas usage: 26303
+  Block number: 3
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0xd5891efc5010f0c518fe1d2365f6281e6b96f1c6405cf37334867e860f64a19c
+  Gas usage: 26303
+  Block number: 4
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0x9eaa60e6c9a25416cde517f844385fc1a3bdcfbfbc3f23f64a617cfe2168b3d9
+  Gas usage: 26303
+  Block number: 5
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0x18e9eadc27f1cdd07584716d9b9e5f1cbfbd4299291c4759683ba7e536de08ae
+  Gas usage: 26344
+  Block number: 6
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0x5b4db1da5513f78e907d55e4aa671c9b23054e282ca0db8b27129965be623190
+  Gas usage: 26344
+  Block number: 7
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_gasPriceeth_getBlockByNumbereth_chainIdeth_getTransactionCounteth_chainIdeth_sendRawTransaction
+  Transaction: 0xf7478044ac52a7dac61c46c9aabfaa67d2416ce46119e84a5492afad57f31647
+  Gas usage: 26344
+  Block number: 8
+  Block time: Mon Mar 31 2025 09:08:11 GMT-0700 (Pacific Daylight Time)
+eth_chainIdeth_call

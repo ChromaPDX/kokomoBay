@@ -1,0 +1,36 @@
+test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.rpc.test.ts","ports":["3001"],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/7f9497a5-fe55-4e5f-bd8b-dd312d1c7fd3"}
+
+Suite:,0,Testing a very simple smart contract over RPC
+
+ test0
+
+ Given: Default
+ Then:,Get: [object Object]
+
+ test1
+
+ Given: Default
+ When:,Increment: 1
+ When:,Increment: 1
+ Then:,Get: [object Object]
+
+ test2
+
+ Given: Default
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ Then:,Get: [object Object]
+
+ test3
+
+ Given: Default
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Increment: 1
+ When:,Decrement: 1
+ When:,Decrement: 1
+ When:,Decrement: 1
+ Then:,Get: [object Object]

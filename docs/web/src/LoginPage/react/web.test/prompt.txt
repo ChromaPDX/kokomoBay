@@ -1,0 +1,16 @@
+
+/add src/LoginPage/react/test.tsx
+/add src/LoginPage/react/web.test.tsx
+  
+/read docs/types/src/LoginPage/react/test.tsx.type_errors.txt
+/read docs/types/src/LoginPage/react/web.test.tsx.type_errors.txt
+
+
+  
+/read docs/web/src/LoginPage/react/web.test/tests.json
+/read docs/web/src/LoginPage/react/web.test/stdout.log
+/read docs/web/src/LoginPage/react/web.test/stderr.log
+
+/load docs/web/src/LoginPage/react/web.test/featurePrompt.txt
+
+/code Fix the failing tests described in docs/web/src/LoginPage/react/web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/react/test.tsx.type_errors.txt, docs/types/src/LoginPage/react/web.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."

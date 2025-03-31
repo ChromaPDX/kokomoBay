@@ -3,9 +3,9 @@ import { IPartialNodeInterface } from "testeranto/src/Types";
 
 import { RectangleTesterantoBaseTestSpecification } from "../Rectangle.test.specification";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";
-import { RectangleTesterantoBasePrototype } from "../Rectangle.test";
 import { RectangleTesterantoBaseInterface } from "../Rectangle.test.interface";
 import { IRectangleTestShape } from "../Rectangle.test.shape";
+import Rectangle from "../Rectangle";
 
 const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
   ...RectangleTesterantoBaseInterface,
@@ -14,7 +14,7 @@ const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
   },
 };
 export default Testeranto<IRectangleTestShape>(
-  RectangleTesterantoBasePrototype,
+  Rectangle.prototype,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,
   testInterface,

@@ -16,7 +16,6 @@ const initialState: IStoreState = {
   disableSubmit: true,
 };
 
-console.log("MARK!");
 export const loginApp = createSlice<
   IStoreState,
   {
@@ -117,7 +116,6 @@ const loginPageSelection = createSelector<
 });
 
 export default () => {
-  console.log("MARK2!");
   const store = createStore(loginApp.reducer);
 
   return {

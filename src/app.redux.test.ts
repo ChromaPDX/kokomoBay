@@ -9,7 +9,7 @@ import {
 
 import { ReduxTesteranto } from "./subPackages/redux.testeranto.test.js";
 
-const implementations: any = {
+const implementations = {
   suites: {
     Default: "some default Suite!",
   },
@@ -17,8 +17,8 @@ const implementations: any = {
     AnEmptyState: () => () => {
       return loginApp.getInitialState();
     },
-    AStateWithEmail: () => (email) => {
-      return { ...loginApp.getInitialState(), email };
+    AStateWithEmail: () => () => {
+      return { ...loginApp.getInitialState(), email: "bob@mail.com" };
     },
   },
   whens: {
@@ -49,6 +49,8 @@ const implementations: any = {
   checks: {
     AnEmptyState: () => () => loginApp.getInitialState(),
   },
+  beforeEach: async () => {},
+  afterEach: async () => {},
 };
 
 export default ReduxTesteranto<IStoreState, IAppSpecification>(

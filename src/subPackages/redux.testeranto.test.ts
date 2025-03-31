@@ -26,17 +26,17 @@ type tt = (
     | ActionCreatorWithoutPayload<string>
 ) => any;
 
-export type WhenShape = [tt, t];
-export type ThenShape = number;
+export type WhenShape = [ActionCreatorWithNonInferrablePayload<string> | ActionCreatorWithoutPayload<string>, any];
+export type ThenShape = (state: any, pm: PM) => void;
 
 export const ReduxTesteranto = <
   IStoreShape,
   ITestShape extends IBaseTest<
     unknown,
     Reducer<IStoreShape, any>,
-    Store,
+    Store<any, AnyAction>,
     unknown,
-    (x) => PreloadedState<IStoreShape>,
+    () => IStoreShape,
     unknown,
     (s: any, pm: PM) => void,
     Record<string, any>,

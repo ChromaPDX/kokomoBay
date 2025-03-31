@@ -2423,7 +2423,7 @@
         "format": "esm"
       },
       "src/subPackages/redux.testeranto.test.ts": {
-        "bytes": 2170,
+        "bytes": 2274,
         "imports": [
           {
             "path": "@reduxjs/toolkit",
@@ -2459,7 +2459,7 @@
         "format": "esm"
       },
       "src/app.redux.test.ts": {
-        "bytes": 1647,
+        "bytes": 1712,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -2512,15 +2512,15 @@
         "format": "esm"
       },
       "src/LoginPage/test.ts": {
-        "bytes": 4803,
+        "bytes": 4900,
         "imports": [
           {
-            "path": "testeranto/src/Types",
+            "path": "testeranto/src/PM",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "react-test-renderer",
+            "path": "testeranto/src/Types",
             "kind": "import-statement",
             "external": true
           }
@@ -2528,7 +2528,7 @@
         "format": "esm"
       },
       "src/LoginPage/react/test.tsx": {
-        "bytes": 2960,
+        "bytes": 3137,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -2542,6 +2542,11 @@
           },
           {
             "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
             "kind": "import-statement",
             "external": true
           },
@@ -2973,7 +2978,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-        "bytes": 2631,
+        "bytes": 2838,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -21522,10 +21527,10 @@
             "bytesInOutput": 707
           },
           "src/app.redux.test.ts": {
-            "bytesInOutput": 1352
+            "bytesInOutput": 1428
           }
         },
-        "bytes": 2551
+        "bytes": 2627
       },
       "docs/node/chunk-YGATLTHN.mjs": {
         "imports": [],
@@ -22180,13 +22185,13 @@
             "bytesInOutput": 791
           },
           "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-            "bytesInOutput": 1486
+            "bytesInOutput": 1780
           },
           "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
             "bytesInOutput": 1041
           }
         },
-        "bytes": 1175261
+        "bytes": 1175555
       },
       "docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs": {
         "imports": [

@@ -11,4 +11,4 @@
 
 /load docs/web/src/ClassicalComponent/react-dom/client.web.test/featurePrompt.txt
 
-/code Fix the failing tests described in docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented. Update "any" types to something more specific."

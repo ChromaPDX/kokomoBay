@@ -1084,15 +1084,15 @@
         "format": "cjs"
       },
       "src/LoginPage/test.ts": {
-        "bytes": 4803,
+        "bytes": 4900,
         "imports": [
           {
-            "path": "testeranto/src/Types",
+            "path": "testeranto/src/PM",
             "kind": "import-statement",
             "external": true
           },
           {
-            "path": "react-test-renderer",
+            "path": "testeranto/src/Types",
             "kind": "import-statement",
             "external": true
           }
@@ -1887,7 +1887,7 @@
         "format": "esm"
       },
       "src/LoginPage/react-dom/test.tsx": {
-        "bytes": 4146,
+        "bytes": 4155,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2006,7 +2006,7 @@
         "format": "esm"
       },
       "src/LoginPage/react/test.tsx": {
-        "bytes": 2960,
+        "bytes": 3137,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -2020,6 +2020,11 @@
           },
           {
             "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
             "kind": "import-statement",
             "external": true
           },
@@ -2459,7 +2464,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-        "bytes": 1986,
+        "bytes": 2011,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js",
@@ -2468,6 +2473,11 @@
           },
           {
             "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
             "kind": "import-statement",
             "external": true
           },

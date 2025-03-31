@@ -1,14 +1,20 @@
+import { PM } from "testeranto/src/PM";
 import { ITestSpecification } from "testeranto/src/Types";
-import renderer from "react-test-renderer";
 
-export type ILoginPageSpecs = {
+export type ILoginPageSpecs<IWhen> = {
   iinput: any;
   isubject: any;
-  istore: { testRenderer: renderer.ReactTestRenderer; coponent: any };
+  istore: {
+    // testRenderer: renderer.ReactTestRenderer;
+    testRenderer: IWhen;
+    component: HTMLElement;
+  };
   iselection: any;
 
-  when: renderer.ReactTestRenderer;
-  then: unknown;
+  // when: renderer.ReactTestRenderer;
+  when: IWhen;
+
+  then: (w: IWhen, p: PM) => void;
   given: (x) => unknown;
 
   suites: {
@@ -39,7 +45,7 @@ export type ILoginPageSpecs = {
   };
 };
 
-export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs> = (
+export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs<unknown>> = (
   Suite,
   Given,
   When,

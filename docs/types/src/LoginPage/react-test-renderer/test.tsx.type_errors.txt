@@ -1,15 +1,1 @@
-src/LoginPage/react-test-renderer/test.tsx(13,3): error TS2322: Type '({ testRenderer, reactComponent }: { testRenderer: ReactTestRenderer; reactComponent: any; }, thenCB: unknown, tr: ITTestResourceConfiguration, pm: PM) => Promise<any>' is not assignable to type '(store: { testRenderer: ReactTestRenderer; coponent: any; }, thenCB: unknown, testResource: ITTestResourceConfiguration, pm: PM) => Promise<...>'.
-  Types of parameters '__0' and 'store' are incompatible.
-    Property 'reactComponent' is missing in type '{ testRenderer: ReactTestRenderer; coponent: any; }' but required in type '{ testRenderer: ReactTestRenderer; reactComponent: any; }'.
-
-src/LoginPage/react-test-renderer/test.tsx(14,18): error TS18046: 'thenCB' is of type 'unknown'.
-  Types of parameters '__0' and 'store' are incompatible.
-    Property 'reactComponent' is missing in type '{ testRenderer: ReactTestRenderer; coponent: any; }' but required in type '{ testRenderer: ReactTestRenderer; reactComponent: any; }'.
-
-src/LoginPage/react-test-renderer/test.tsx(16,3): error TS2322: Type '(CComponent: any, props: (c?: any) => (x: any) => unknown) => Promise<{ reactComponent: any; testRenderer: any; }>' is not assignable to type '(subject: any, initializer: (c?: any) => (x: any) => unknown, artificer: ITestArtificer, testResource: ITTestResourceConfiguration, initialValues: any, pm: PM) => Promise<...>'.
-  Types of parameters '__0' and 'store' are incompatible.
-    Property 'reactComponent' is missing in type '{ testRenderer: ReactTestRenderer; coponent: any; }' but required in type '{ testRenderer: ReactTestRenderer; reactComponent: any; }'.
-
-src/LoginPage/react-test-renderer/test.tsx(26,3): error TS2322: Type '({ testRenderer, reactComponent }: { testRenderer: ReactTestRenderer; reactComponent: any; }, whenCB: (s: ReactTestRenderer, utils: PM) => any, testResource: ITTestResourceConfiguration, pm: PM) => Promise<...>' is not assignable to type '(store: { testRenderer: ReactTestRenderer; coponent: any; }, whenCB: ReactTestRenderer, testResource: ITTestResourceConfiguration, pm: PM) => Promise<...>'.
-  Types of parameters '__0' and 'store' are incompatible.
-    Property 'reactComponent' is missing in type '{ testRenderer: ReactTestRenderer; coponent: any; }' but required in type '{ testRenderer: ReactTestRenderer; reactComponent: any; }'.
+src/LoginPage/react-test-renderer/test.tsx(11,73): error TS2314: Generic type 'ILoginPageSpecs' requires 1 type argument(s).

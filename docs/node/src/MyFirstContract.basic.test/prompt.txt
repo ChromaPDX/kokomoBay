@@ -13,4 +13,4 @@
 
 /load docs/node/src/MyFirstContract.basic.test/featurePrompt.txt
 
-/code Fix the failing tests described in docs/node/src/MyFirstContract.basic.test/tests.json. Correct any type signature errors described in the files [docs/types/src/subPackages/solidity/Contract.testeranto.test.ts.type_errors.txt, docs/types/src/MyFirstContract.basic.test.ts.type_errors.txt]. Implement any method which throws "Function not implemented."
+/code Fix the failing tests described in docs/node/src/MyFirstContract.basic.test/tests.json. Correct any type signature errors described in the files [docs/types/src/subPackages/solidity/Contract.testeranto.test.ts.type_errors.txt, docs/types/src/MyFirstContract.basic.test.ts.type_errors.txt]. Implement any method which throws "Function not implemented. Update "any" types to something more specific."

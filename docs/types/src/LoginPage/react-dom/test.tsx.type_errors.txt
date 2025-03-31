@@ -1,6 +1,32 @@
-src/LoginPage/react-dom/test.tsx(47,32): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
-  Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.
-src/LoginPage/react-dom/test.tsx(50,33): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
-  Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.
-src/LoginPage/react-dom/test.tsx(55,39): error TS2322: Type '(component: HTMLElement, utils: PM) => Promise<void>' is not assignable to type '(zel: any, utils: PM) => Promise<ReactTestRenderer>'.
-  Type 'Promise<void>' is not assignable to type 'Promise<ReactTestRenderer>'.
+src/LoginPage/react-dom/test.tsx(37,83): error TS2344: Type 'object' does not satisfy the constraint 'IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(61,36): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(68,39): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(75,42): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(81,45): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(87,32): error TS2322: Type '(store: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(92,35): error TS2322: Type '(store: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(96,36): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(102,39): error TS2322: Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(108,36): error TS2322: Type '(ssel: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.
+
+src/LoginPage/react-dom/test.tsx(112,39): error TS2322: Type '(ssel: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (w: unknown, p: PM) => void'.
+  Type 'Promise<void>' is not assignable to type '(w: unknown, p: PM) => void'.

@@ -1,3 +1,7 @@
+src/MyFirstContract.rpc.test.ts(15,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+  Types of property 'isubject' are incompatible.
+    Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.
+
 src/MyFirstContract.rpc.test.ts(77,27): error TS2344: Type 'IMyFirstContractTest<IMyFirstContractTest<IInput>>' does not satisfy the constraint 'IBaseTest<unknown, { abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }, istore, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<...>, Record<...>, Record<...>>'.
   Types of property 'isubject' are incompatible.
     Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.

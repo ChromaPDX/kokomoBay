@@ -2,6 +2,10 @@ src/MyFirstContract.basic.test.ts(8,29): error TS2307: Cannot find module './con
   Types of property 'isubject' are incompatible.
     Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.
 
+src/MyFirstContract.basic.test.ts(16,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+  Types of property 'isubject' are incompatible.
+    Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.
+
 src/MyFirstContract.basic.test.ts(59,27): error TS2344: Type 'IMyFirstContractTest<IInput>' does not satisfy the constraint 'IBaseTest<unknown, { abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }, { provider: EthereumProvider; contract: Contract; accounts: string[]; }, ... 8 more ..., Record<...>>'.
   Types of property 'isubject' are incompatible.
     Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.

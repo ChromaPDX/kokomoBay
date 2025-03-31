@@ -8844,7 +8844,7 @@ var require_react_dom_server_legacy_node_development = __commonJS({
           }
           return renderToNodeStreamImpl(children, options);
         }
-        function renderToStaticNodeStream2(children, options) {
+        function renderToStaticNodeStream3(children, options) {
           return renderToNodeStreamImpl(children, options);
         }
         function renderToString(children, options) {
@@ -8855,7 +8855,7 @@ var require_react_dom_server_legacy_node_development = __commonJS({
         }
         exports.renderToNodeStream = renderToNodeStream;
         exports.renderToStaticMarkup = renderToStaticMarkup3;
-        exports.renderToStaticNodeStream = renderToStaticNodeStream2;
+        exports.renderToStaticNodeStream = renderToStaticNodeStream3;
         exports.renderToString = renderToString;
         exports.version = ReactVersion;
       })();
@@ -23099,7 +23099,7 @@ var require_react_dom_server_legacy_node_development2 = __commonJS({
           }
           return renderToNodeStreamImpl(children, options);
         }
-        function renderToStaticNodeStream2(children, options) {
+        function renderToStaticNodeStream3(children, options) {
           return renderToNodeStreamImpl(children, options);
         }
         function renderToString(children, options) {
@@ -23110,7 +23110,7 @@ var require_react_dom_server_legacy_node_development2 = __commonJS({
         }
         exports.renderToNodeStream = renderToNodeStream;
         exports.renderToStaticMarkup = renderToStaticMarkup3;
-        exports.renderToStaticNodeStream = renderToStaticNodeStream2;
+        exports.renderToStaticNodeStream = renderToStaticNodeStream3;
         exports.renderToString = renderToString;
         exports.version = ReactVersion;
       })();
@@ -28611,11 +28611,18 @@ var impl = {
       );
     },
     renderToStaticNodeStream: (expectation) => async (reactNodes) => {
+      const stream = (0, import_server2.renderToStaticNodeStream)(reactNodes);
+      let result = "";
+      for await (const chunk of stream) {
+        result += chunk;
+      }
+      assert.include(result, "Hello Marcus");
+      assert.include(result, "count: 0 times");
     }
   },
   checks: {
     AnEmptyState: () => () => {
-      return {};
+      return { props: { foo: "bar" } };
     }
   }
 };

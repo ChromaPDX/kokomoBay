@@ -52,8 +52,8 @@ var implementations = {
     AnEmptyState: () => () => {
       return loginApp.getInitialState();
     },
-    AStateWithEmail: () => (email) => {
-      return { ...loginApp.getInitialState(), email };
+    AStateWithEmail: () => () => {
+      return { ...loginApp.getInitialState(), email: "bob@mail.com" };
     }
   },
   whens: {
@@ -81,6 +81,10 @@ var implementations = {
   },
   checks: {
     AnEmptyState: () => () => loginApp.getInitialState()
+  },
+  beforeEach: async () => {
+  },
+  afterEach: async () => {
   }
 };
 var app_redux_test_default = ReduxTesteranto(

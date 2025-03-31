@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToStaticMarkup, renderToStaticNodeStream } from "react-dom/server";
 import { ITestSpecification } from "testeranto/src/Types";
 import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
 import test from "testeranto/src/SubPackages/react-dom/component/node";
@@ -7,7 +7,7 @@ import test from "testeranto/src/SubPackages/react-dom/component/node";
 import { ClassicalComponent } from "..";
 
 const snapshot = `<div style="border:3px solid green"><h1>Hello Marcus</h1><pre id="theProps">{}</pre><p>foo: </p><pre id="theState">{&quot;count&quot;:0}</pre><p>count: 0 times</p><button id="theButton">Click</button></div>`;
-const readableStream = new ReadableStream({
+const readableStream: ReadableStream<string> = new ReadableStream({
   start(controller) {
     // The following function handles each data chunk
     function push() {
@@ -21,12 +21,12 @@ const readableStream = new ReadableStream({
 });
 
 type IClassicalComponentSpec = {
-  iinput: any;
-  isubject: any;
-  istore: any;
-  iselection: any;
-  given: () => {};
-  when: any;
+  iinput: never;
+  isubject: React.ReactElement;
+  istore: never;
+  iselection: never;
+  given: () => { props: Record<string, unknown> };
+  when: never;
   then: Promise<void>;
 
   suites: {
@@ -38,7 +38,7 @@ type IClassicalComponentSpec = {
   whens: Record<string, never>;
   thens: {
     renderToStaticMarkup: [string];
-    renderToStaticNodeStream: [NodeJS.ReadableStream];
+    renderToStaticNodeStream: [ReadableStream<string>];
   };
   checks: {
     AnEmptyState;
@@ -90,17 +90,18 @@ const impl: BaseIImple<IClassicalComponentSpec> = {
     renderToStaticNodeStream:
       (expectation) =>
         async (reactNodes) => {
-          // console.log((renderToStaticNodeStream(reactNodes)))
-          // assert.deepEqual(
-          //   (renderToStaticNodeStream(reactNodes).read().toString()),
-          //   expectation.toString()
-          // );
-
+          const stream = renderToStaticNodeStream(reactNodes);
+          let result = '';
+          for await (const chunk of stream) {
+            result += chunk;
+          }
+          assert.include(result, 'Hello Marcus'); // Basic content check
+          assert.include(result, 'count: 0 times');
         }
   },
   checks: {
     AnEmptyState: () => () => {
-      return {};
+      return { props: { foo: "bar" } };
     },
   },
 }

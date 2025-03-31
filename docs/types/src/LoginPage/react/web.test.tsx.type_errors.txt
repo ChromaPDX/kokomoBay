@@ -1,2 +1,2 @@
 src/LoginPage/react/web.test.tsx(15,13): error TS2349: This expression is not callable.
-  Type '{ testRenderer: ReactTestRenderer; coponent: any; }' has no call signatures.
+  Type '{ testRenderer: unknown; component: HTMLElement; }' has no call signatures.

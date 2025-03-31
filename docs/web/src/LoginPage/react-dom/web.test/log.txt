@@ -1,4 +1,4 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/40c3263f-d21d-426c-9cbf-0afc9253370f"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-dom/web.test","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/cc28b6fd-d22c-478f-9c0b-5b53f64df2ce"}
 
 Suite:,0,Testing the LoginPage as react
 

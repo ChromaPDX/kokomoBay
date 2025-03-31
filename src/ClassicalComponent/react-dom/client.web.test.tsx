@@ -1,6 +1,7 @@
 import test from "testeranto/src/SubPackages/react-dom/component/web";
 import { IPartialWebInterface } from "testeranto/src/Types";
 
+import { ReactElement } from "react";
 import ReactDom from "react-dom/client";
 import { assert } from "chai";
 
@@ -9,7 +10,7 @@ import { ClassicalComponentSpec } from "../test.specification";
 
 type IStore = {
   htmlElement: HTMLElement;
-  reactElement: any; //CElement<any, any>,
+  reactElement: ReactElement;
   domRoot: ReactDom.Root;
 };
 

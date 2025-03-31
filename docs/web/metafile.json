@@ -4,7 +4,7 @@
   "metafile": {
     "inputs": {
       "../testeranto/src/PM/index.ts": {
-        "bytes": 1481,
+        "bytes": 1472,
         "imports": [
           {
             "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
@@ -1823,7 +1823,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3393,
+        "bytes": 3394,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
@@ -2459,7 +2459,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-        "bytes": 2509,
+        "bytes": 1986,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js",
@@ -2629,7 +2629,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-ZUBELMDC.mjs",
+            "path": "docs/web/chunk-TW3PN7VY.mjs",
             "kind": "import-statement"
           },
           {
@@ -2665,7 +2665,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-ZUBELMDC.mjs",
+            "path": "docs/web/chunk-TW3PN7VY.mjs",
             "kind": "import-statement"
           },
           {
@@ -2734,7 +2734,7 @@
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-ZUBELMDC.mjs",
+            "path": "docs/web/chunk-TW3PN7VY.mjs",
             "kind": "import-statement"
           },
           {
@@ -2786,7 +2786,7 @@
         },
         "bytes": 591995
       },
-      "docs/web/chunk-ZUBELMDC.mjs": {
+      "docs/web/chunk-TW3PN7VY.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
@@ -2906,13 +2906,13 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 2238
+            "bytesInOutput": 2239
           },
           "src/LoginPage/index.tsx": {
             "bytesInOutput": 2568
           }
         },
-        "bytes": 1031581
+        "bytes": 1031582
       },
       "docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs": {
         "imports": [
@@ -2951,10 +2951,10 @@
             "bytesInOutput": 1867
           },
           "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-            "bytesInOutput": 1412
+            "bytesInOutput": 1407
           }
         },
-        "bytes": 912268
+        "bytes": 912263
       },
       "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
         "imports": [

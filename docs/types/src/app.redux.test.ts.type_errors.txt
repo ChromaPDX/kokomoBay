@@ -1,0 +1,3 @@
+src/app.redux.test.ts(54,45): error TS2344: Type 'IAppSpecification' does not satisfy the constraint 'IBaseTest<unknown, Reducer<IStoreState, any>, Store<any, AnyAction>, unknown, (x: any) => { password: string; email: string; error: ILoginPageError; disableSubmit: boolean; }, ... 6 more ..., Record<...>>'.
+  The types returned by 'given(...)' are incompatible between these types.
+    Type '() => StoreEnhancerStoreCreator<any, any>' is not assignable to type '{ password: string; email: string; error: ILoginPageError; disableSubmit: boolean; }'.

@@ -1,1 +1,0 @@
-src/subPackages/redux.testeranto.test.ts(30,65): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).

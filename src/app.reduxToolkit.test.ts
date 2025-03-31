@@ -5,6 +5,7 @@ import { assert } from "chai";
 import {
   ActionCreatorWithNonInferrablePayload,
   ActionCreatorWithoutPayload,
+  ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
 
 import { ReduxToolkitTesteranto } from "./subPackages/reduxToolkit.testeranto.test";
@@ -27,15 +28,16 @@ const implementations: ITestImplementation<
     };
 
     whens: {
-      [K in keyof IAppSpecification["whens"]]: (
-        ...Iw: IAppSpecification["whens"][K]
-      ) => [
-        (
-          | ActionCreatorWithNonInferrablePayload<string>
-          | ActionCreatorWithoutPayload<string>
-        ),
-        string?
+      TheLoginIsSubmitted: () => [
+        ActionCreatorWithoutPayload<`${string}/signIn`>
       ];
+      TheEmailIsSetTo: (
+        e: string
+      ) => [ActionCreatorWithPayload<string, `${string}/setEmail`>, string];
+
+      ThePasswordIsSetTo: (
+        p: string
+      ) => [ActionCreatorWithPayload<string, `${string}/setPassword`>, string];
     };
 
     checks: {

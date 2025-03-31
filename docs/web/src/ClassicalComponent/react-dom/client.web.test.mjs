@@ -21250,8 +21250,8 @@ var ClassicalComponentReactDomImplementation = {
 var testInterface = {
   afterEach: async function(store, ndx, artificer, utils) {
     const p = await utils.page();
-    await utils.writeFileSync("aftereachlo", p);
-    await utils.customScreenShot({ path: "afterEachfo.png" }, p);
+    await utils.writeFileSync("pageUid.txt", p);
+    await utils.customScreenShot({ path: "result.png" }, p);
   }
 };
 var client_web_test_default = web_default(

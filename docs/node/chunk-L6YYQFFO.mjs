@@ -38075,7 +38075,7 @@ var initialState = {
   disableSubmit: true
 };
 var loginApp = (0, import_toolkit.createSlice)({
-  name: "my login app",
+  name: "my login app!",
   initialState,
   reducers: {
     reset: (state) => {

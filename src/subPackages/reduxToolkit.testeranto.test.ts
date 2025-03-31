@@ -20,10 +20,10 @@ import {
 } from "redux";
 
 type WhenShape = [
-  (
-    | ActionCreatorWithNonInferrablePayload<string>
-    | ActionCreatorWithoutPayload<string>
-  ),
+  // | ActionCreatorWithNonInferrablePayload<string>
+  // | ActionCreatorWithoutPayload<string>
+  // ActionCreatorWithNonInferrablePayload<string>,
+  any,
   (object | string)?
 ];
 
@@ -63,6 +63,11 @@ export const ReduxToolkitTesteranto = <
       givens: {
         [K in keyof ITestShape["givens"]]: () => (
           ...Iw: ITestShape["givens"][K]
+        ) => IStoreShape;
+      };
+      checks: {
+        [K in keyof ITestShape["checks"]]: () => (
+          ...Iw: ITestShape["checks"][K]
         ) => IStoreShape;
       };
       whens: {

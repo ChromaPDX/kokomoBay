@@ -29,7 +29,7 @@ export const loginApp = createSlice<
     ) => void;
   }
 >({
-  name: "my login app",
+  name: "my login app!",
   initialState,
   reducers: {
     reset: (state) => {

@@ -159,7 +159,7 @@
         "format": "esm"
       },
       "../testeranto/src/PM/index.ts": {
-        "bytes": 1481,
+        "bytes": 1472,
         "imports": [
           {
             "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
@@ -1357,7 +1357,7 @@
         "format": "cjs"
       },
       "src/subPackages/reduxToolkit.testeranto.test.ts": {
-        "bytes": 2315,
+        "bytes": 2510,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -2366,7 +2366,7 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3393,
+        "bytes": 3394,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/index.js",
@@ -2382,7 +2382,7 @@
         "format": "esm"
       },
       "src/app.reduxToolkit.test.ts": {
-        "bytes": 2348,
+        "bytes": 2464,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2423,7 +2423,7 @@
         "format": "esm"
       },
       "src/subPackages/redux.testeranto.test.ts": {
-        "bytes": 1835,
+        "bytes": 2170,
         "imports": [
           {
             "path": "@reduxjs/toolkit",
@@ -2439,6 +2439,11 @@
             "path": "../testeranto/src/Node.ts",
             "kind": "import-statement",
             "original": "testeranto/src/Node"
+          },
+          {
+            "path": "testeranto/src/PM",
+            "kind": "import-statement",
+            "external": true
           },
           {
             "path": "testeranto/src/Types",
@@ -21459,7 +21464,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
+            "path": "docs/node/chunk-L6YYQFFO.mjs",
             "kind": "import-statement"
           },
           {
@@ -21496,7 +21501,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
+            "path": "docs/node/chunk-L6YYQFFO.mjs",
             "kind": "import-statement"
           },
           {
@@ -21585,7 +21590,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
+            "path": "docs/node/chunk-L6YYQFFO.mjs",
             "kind": "import-statement"
           },
           {
@@ -21637,7 +21642,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-Y2GM6ANZ.mjs",
+            "path": "docs/node/chunk-L6YYQFFO.mjs",
             "kind": "import-statement"
           },
           {
@@ -21744,7 +21749,7 @@
         },
         "bytes": 3985
       },
-      "docs/node/chunk-Y2GM6ANZ.mjs": {
+      "docs/node/chunk-L6YYQFFO.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-M7BKJ4RF.mjs",
@@ -22025,10 +22030,10 @@
             "bytesInOutput": 2330
           },
           "src/app.ts": {
-            "bytesInOutput": 2346
+            "bytesInOutput": 2347
           }
         },
-        "bytes": 1518739
+        "bytes": 1518740
       },
       "docs/node/src/ClassicalComponent/react-dom/server.node.test.mjs": {
         "imports": [

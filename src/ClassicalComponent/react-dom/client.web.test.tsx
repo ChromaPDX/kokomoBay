@@ -65,28 +65,9 @@ const ClassicalComponentReactDomImplementation = {
 
 const testInterface: IPartialWebInterface<any> = {
   afterEach: async function (store: IStore, ndx, artificer, utils) {
-
-    const p = await utils.page()
-    await utils.writeFileSync("aftereachlo", p);
-    await utils.customScreenShot({ path: "afterEachfo.png" }, p)
-
-    //   const page = (await utils.browser.pages()).filter((x) => {
-    //     const parsedUrl = new URL(x.url());
-    //     parsedUrl.search = "";
-    //     const strippedUrl = parsedUrl.toString();
-
-    //     return (
-    //       strippedUrl ===
-    //       "file:///Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/react-dom/client.web.test.html"
-    //     );
-    //     // return true;
-    //   })[0];
-
-    //   await page.screenshot({
-    //     path: "screenshot.jpg",
-    //   });
-
-    //   return store;
+    const p = await utils.page() as string;
+    await utils.writeFileSync("pageUid.txt", p);
+    await utils.customScreenShot({ path: "result.png" }, p)
   },
 };
 

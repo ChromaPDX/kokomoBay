@@ -3,10 +3,12 @@ import {
   ActionCreatorWithoutPayload,
   PreloadedState,
   Reducer,
+  Store,
 } from "@reduxjs/toolkit";
 import { createStore, AnyAction } from "redux";
 
 import Testeranto from "testeranto/src/Node";
+import { PM } from "testeranto/src/PM";
 import { IPartialInterface } from "testeranto/src/Types";
 import {
   ITestImplementation,
@@ -27,7 +29,23 @@ type tt = (
 export type WhenShape = [tt, t];
 export type ThenShape = number;
 
-export const ReduxTesteranto = <IStoreShape, ITestShape extends IBaseTest>(
+export const ReduxTesteranto = <
+  IStoreShape,
+  ITestShape extends IBaseTest<
+    unknown,
+    Reducer<IStoreShape, any>,
+    Store,
+    unknown,
+    (x) => PreloadedState<IStoreShape>,
+    unknown,
+    (s: any, pm: PM) => void,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>,
+    Record<string, any>
+  >
+>(
   testInput: Reducer<IStoreShape, AnyAction>,
   testSpecifications: ITestSpecification<ITestShape>,
   testImplementations: ITestImplementation<

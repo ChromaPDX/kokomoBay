@@ -5,12 +5,11 @@
 /read docs/types/src/LoginPage/react-dom/web.test.tsx.type_errors.txt
 /read docs/types/src/LoginPage/react-dom/test.tsx.type_errors.txt
 
-
-  
+/read docs/web/src/LoginPage/react-dom/web.test/lint_errors.txt
 /read docs/web/src/LoginPage/react-dom/web.test/tests.json
 /read docs/web/src/LoginPage/react-dom/web.test/stdout.log
 /read docs/web/src/LoginPage/react-dom/web.test/stderr.log
 
 /load docs/web/src/LoginPage/react-dom/web.test/featurePrompt.txt
 
-/code Fix the failing tests described in docs/web/src/LoginPage/react-dom/web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/react-dom/web.test.tsx.type_errors.txt, docs/types/src/LoginPage/react-dom/test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented. Update "any" types to something more specific."
+/code Fix the failing tests described in docs/web/src/LoginPage/react-dom/web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/LoginPage/react-dom/web.test.tsx.type_errors.txt, docs/types/src/LoginPage/react-dom/test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented. Resolve the lint errors described in docs/web/src/LoginPage/react-dom/web.test/lint_errors.txt"

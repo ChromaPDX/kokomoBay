@@ -1,3 +1,0 @@
-src/app.redux.test.ts(56,45): error TS2344: Type 'IAppSpecification' does not satisfy the constraint 'IBaseTest<unknown, Reducer<IStoreState, any>, Store<any, AnyAction>, unknown, () => IStoreState, unknown, (s: any, pm: PM) => void, Record<string, any>, Record<...>, Record<...>, Record<...>, Record<...>>'.
-  Types of property 'given' are incompatible.
-    Type '(initValues: any) => () => StoreEnhancerStoreCreator<any, any>' is not assignable to type '() => IStoreState'.

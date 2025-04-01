@@ -4,7 +4,7 @@ import {
   MyFirstContract_default,
   commonGivens,
   require_lib15 as require_lib
-} from "../chunk-KCAORU4T.mjs";
+} from "../chunk-USNXDI5K.mjs";
 import {
   Node_default
 } from "../chunk-NGUD7ODA.mjs";

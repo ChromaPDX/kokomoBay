@@ -13,7 +13,10 @@ import {
   MyFirstContractTestInput,
 } from "./MyFirstContract.specification.test";
 
-const testImplementation: ITestImplementation<IMyFirstContractTest<IInput>> = {
+const testImplementation: ITestImplementation<
+  IMyFirstContractTest<IInput>,
+  any
+> = {
   suites: {
     Default: "Testing a very simple smart contract",
   },

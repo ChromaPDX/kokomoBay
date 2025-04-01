@@ -1,2 +1,59 @@
-src/Rectangle.test.implementation.ts(10,3): error TS2344: Type '{ givens: { Default: (...Iw: any) => Rectangle; WidthOfOneAndHeightOfOne: (...Iw: any) => Rectangle; WidthAndHeightOf: (Iw_0: number, Iw_1: number) => Rectangle; }; whens: { ...; }; thens: { ...; }; }' does not satisfy the constraint 'IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
-  Type '{ givens: { Default: (...Iw: any) => Rectangle; WidthOfOneAndHeightOfOne: (...Iw: any) => Rectangle; WidthAndHeightOf: (Iw_0: number, Iw_1: number) => Rectangle; }; whens: { ...; }; thens: { ...; }; }' is missing the following properties from type 'IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': iinput, isubject, istore, iselection, and 5 more.
+src/Rectangle.test.implementation.ts(10,3): error TS2344: Type '{ givens: { Default: (...Iw: any) => Rectangle; WidthOfOneAndHeightOfOne: (...Iw: any) => Rectangle; WidthAndHeightOf: (Iw_0: number, Iw_1: number) => Rectangle; }; whens: { ...; }; thens: { ...; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(35,5): error TS2322: Type '(width: unknown, height: unknown) => Rectangle' is not assignable to type '(...Ig: (Iw_0: number, Iw_1: number) => Rectangle) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(35,56): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number | undefined'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(39,40): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(40,27): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(43,38): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(44,26): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(47,5): error TS2322: Type '(width: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...Iw: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(51,5): error TS2322: Type '(height: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...Iw: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(58,42): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(63,34): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(67,36): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(71,21): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(75,22): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle.test.implementation.ts(79,5): error TS2322: Type '(circumference: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...It: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.

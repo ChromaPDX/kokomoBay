@@ -1670,54 +1670,54 @@
         "imports": [],
         "format": "esm"
       },
-      "node_modules/redux/node_modules/@babel/runtime/helpers/esm/typeof.js": {
+      "node_modules/@babel/runtime/helpers/esm/typeof.js": {
         "bytes": 366,
         "imports": [],
         "format": "esm"
       },
-      "node_modules/redux/node_modules/@babel/runtime/helpers/esm/toPrimitive.js": {
+      "node_modules/@babel/runtime/helpers/esm/toPrimitive.js": {
         "bytes": 407,
         "imports": [
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/typeof.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/typeof.js",
             "kind": "import-statement",
             "original": "./typeof.js"
           }
         ],
         "format": "esm"
       },
-      "node_modules/redux/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js": {
+      "node_modules/@babel/runtime/helpers/esm/toPropertyKey.js": {
         "bytes": 227,
         "imports": [
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/typeof.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/typeof.js",
             "kind": "import-statement",
             "original": "./typeof.js"
           },
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/toPrimitive.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/toPrimitive.js",
             "kind": "import-statement",
             "original": "./toPrimitive.js"
           }
         ],
         "format": "esm"
       },
-      "node_modules/redux/node_modules/@babel/runtime/helpers/esm/defineProperty.js": {
+      "node_modules/@babel/runtime/helpers/esm/defineProperty.js": {
         "bytes": 286,
         "imports": [
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/toPropertyKey.js",
             "kind": "import-statement",
             "original": "./toPropertyKey.js"
           }
         ],
         "format": "esm"
       },
-      "node_modules/redux/node_modules/@babel/runtime/helpers/esm/objectSpread2.js": {
+      "node_modules/@babel/runtime/helpers/esm/objectSpread2.js": {
         "bytes": 843,
         "imports": [
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/defineProperty.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/defineProperty.js",
             "kind": "import-statement",
             "original": "./defineProperty.js"
           }
@@ -1728,7 +1728,7 @@
         "bytes": 27277,
         "imports": [
           {
-            "path": "node_modules/redux/node_modules/@babel/runtime/helpers/esm/objectSpread2.js",
+            "path": "node_modules/@babel/runtime/helpers/esm/objectSpread2.js",
             "kind": "import-statement",
             "original": "@babel/runtime/helpers/esm/objectSpread2"
           }
@@ -1823,17 +1823,12 @@
         "format": "esm"
       },
       "src/app.ts": {
-        "bytes": 3394,
+        "bytes": 3617,
         "imports": [
           {
             "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
             "kind": "import-statement",
             "original": "@reduxjs/toolkit"
-          },
-          {
-            "path": "src/LoginPage/index.tsx",
-            "kind": "import-statement",
-            "original": "./LoginPage"
           }
         ],
         "format": "esm"
@@ -1861,7 +1856,7 @@
         "format": "cjs"
       },
       "src/LoginPage/index.tsx": {
-        "bytes": 2987,
+        "bytes": 2945,
         "imports": [
           {
             "path": "react",
@@ -2089,7 +2084,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/abstractBase.js": {
-        "bytes": 11957,
+        "bytes": 11917,
         "imports": [],
         "format": "esm"
       },
@@ -2464,7 +2459,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-        "bytes": 2011,
+        "bytes": 1997,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/web.js",
@@ -2639,7 +2634,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-TW3PN7VY.mjs",
+            "path": "docs/web/chunk-3OL2AX4V.mjs",
             "kind": "import-statement"
           },
           {
@@ -2675,7 +2670,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-TW3PN7VY.mjs",
+            "path": "docs/web/chunk-3OL2AX4V.mjs",
             "kind": "import-statement"
           },
           {
@@ -2744,15 +2739,15 @@
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-TW3PN7VY.mjs",
+            "path": "docs/web/chunk-3OL2AX4V.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-ER5SPQ7J.mjs",
+            "path": "docs/web/chunk-SFGCKOL2.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-S4QJCZYX.mjs",
+            "path": "docs/web/chunk-PJVRMMY3.mjs",
             "kind": "import-statement"
           },
           {
@@ -2796,7 +2791,7 @@
         },
         "bytes": 591995
       },
-      "docs/web/chunk-TW3PN7VY.mjs": {
+      "docs/web/chunk-3OL2AX4V.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
@@ -2916,13 +2911,13 @@
             "bytesInOutput": 2824
           },
           "src/app.ts": {
-            "bytesInOutput": 2239
+            "bytesInOutput": 2261
           },
           "src/LoginPage/index.tsx": {
-            "bytesInOutput": 2568
+            "bytesInOutput": 2542
           }
         },
-        "bytes": 1031582
+        "bytes": 1031578
       },
       "docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs": {
         "imports": [
@@ -2931,7 +2926,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-S4QJCZYX.mjs",
+            "path": "docs/web/chunk-PJVRMMY3.mjs",
             "kind": "import-statement"
           },
           {
@@ -2961,15 +2956,15 @@
             "bytesInOutput": 1867
           },
           "src/ClassicalComponent/react-dom/client.web.test.tsx": {
-            "bytesInOutput": 1407
+            "bytesInOutput": 1393
           }
         },
-        "bytes": 912263
+        "bytes": 912249
       },
       "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-ER5SPQ7J.mjs",
+            "path": "docs/web/chunk-SFGCKOL2.mjs",
             "kind": "import-statement"
           },
           {
@@ -2977,7 +2972,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-S4QJCZYX.mjs",
+            "path": "docs/web/chunk-PJVRMMY3.mjs",
             "kind": "import-statement"
           },
           {
@@ -3009,10 +3004,10 @@
         },
         "bytes": 3038
       },
-      "docs/web/chunk-ER5SPQ7J.mjs": {
+      "docs/web/chunk-SFGCKOL2.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-S4QJCZYX.mjs",
+            "path": "docs/web/chunk-PJVRMMY3.mjs",
             "kind": "import-statement"
           },
           {
@@ -3068,7 +3063,7 @@
         },
         "bytes": 2943
       },
-      "docs/web/chunk-S4QJCZYX.mjs": {
+      "docs/web/chunk-PJVRMMY3.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-SZDDWZIA.mjs",
@@ -3096,7 +3091,7 @@
             "bytesInOutput": 473
           },
           "../testeranto/dist/module/src/lib/abstractBase.js": {
-            "bytesInOutput": 9025
+            "bytesInOutput": 8985
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
             "bytesInOutput": 2536
@@ -3111,7 +3106,7 @@
             "bytesInOutput": 1651
           }
         },
-        "bytes": 38739
+        "bytes": 38699
       },
       "docs/web/chunk-ZZ3ODJ3Z.mjs": {
         "imports": [

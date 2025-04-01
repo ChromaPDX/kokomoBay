@@ -1,0 +1,19 @@
+
+/Users/adam/Code/kokomoBay/src/LoginPage/react/test.tsx
+   4:8   error  'React' is defined but never used         @typescript-eslint/no-unused-vars
+  11:3   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:50  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  33:79  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  39:68  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  43:71  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  47:74  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  51:77  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  55:64  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  59:67  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  63:68  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  69:68  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  73:71  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+  77:71  error  'utils' is defined but never used         @typescript-eslint/no-unused-vars
+
+✖ 14 problems (14 errors, 0 warnings)
+

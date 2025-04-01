@@ -29,7 +29,8 @@
     "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx node_modules/testeranto/dist/prebuild/cli.mjs testeranto.mts",
     "run-tests": "tsx node_modules/testeranto/dist/prebuild/cli2.mjs testeranto.mts",
     "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
-    "test": "yarn build-tests && yarn run-tests"
+    "test": "yarn build-tests && yarn run-tests",
+    "aider": "aider --model deepseek/deepseek-chat"
   },
   "types": "index.d.ts",
   "dependencies": {
@@ -37,6 +38,9 @@
     "@types/express": "^5.0.0",
     "@types/node": "^20.12.2",
     "esbuild": "0.17.11",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "fluent-ffmpeg": "^2.1.2",
     "html": "^1.0.0",
     "http-shutdown": "^1.2.2",
@@ -48,6 +52,7 @@
     "ts-node": "^10.9.2",
     "tsc-module-loader": "^0.0.1",
     "tsx": "^4.19.1",
+    "typescript-eslint": "^8.29.0",
     "url": "^0.11.3"
   },
   "devDependencies": {
@@ -69,8 +74,8 @@
     "@typescript-eslint/parser": "^5.46.0",
     "babel-loader": "^8.2.5",
     "chai": "^4.3.7",
-    "eslint": "^8.29.0",
-    "eslint-plugin-react": "^7.31.11",
+    "eslint": "9.23.0",
+    "eslint-plugin-react": "^7.37.4",
     "ethers": "^5.7.2",
     "ganache": "^7.9.2",
     "ignore-loader": "^0.1.2",
@@ -80,7 +85,7 @@
     "truffle": "^5.7.3",
     "ts-loader": "^9.3.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^4.9.5",
+    "typescript": "4.8.2",
     "web3": "^1.8.1",
     "web3-eth-contract": "^1.8.1"
   }

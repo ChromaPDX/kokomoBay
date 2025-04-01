@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider, useSelector } from "react-redux";
 
-import app, { validateEmail } from "../app.js";
+import app, { noError } from "../app.js";
 
 const core = app();
 
@@ -12,8 +12,6 @@ export const actions = {
   setDisableSubmit: (disabled: boolean) => core.app.actions.setDisableSubmit(disabled)
 };
 export const store = core.store;
-
-export const noError = 'no_error';
 
 export type ILoginPageError = 'invalidEmail' | 'credentialFail' | typeof noError;
 

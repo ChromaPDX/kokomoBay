@@ -1,0 +1,28 @@
+
+/Users/adam/Code/kokomoBay/src/MyFirstContract.basic.test.ts
+  18:3   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:10  error  'asTestUser' is defined but never used    @typescript-eslint/no-unused-vars
+  51:26  error  'accounts' is defined but never used      @typescript-eslint/no-unused-vars
+  65:30  error  'Check' is defined but never used         @typescript-eslint/no-unused-vars
+  91:12  error  'web3' is defined but never used          @typescript-eslint/no-unused-vars
+
+/Users/adam/Code/kokomoBay/src/subPackages/solidity/Contract.testeranto.test.ts
+  17:32  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  17:38  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  18:10  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  34:20  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  35:20  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  36:20  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  37:20  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  38:20  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  45:9   error  'compilation' is assigned a value but never used                                                                     @typescript-eslint/no-unused-vars
+  47:42  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  53:36  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  61:12  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  66:7   error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+  71:13  error  'size' is assigned a value but never used                                                                            @typescript-eslint/no-unused-vars
+  85:23  error  'provider' is defined but never used                                                                                 @typescript-eslint/no-unused-vars
+  85:65  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+
+✖ 21 problems (21 errors, 0 warnings)
+

@@ -5,7 +5,7 @@ import {
 import {
   Web_default,
   require_scheduler
-} from "../../../chunk-S4QJCZYX.mjs";
+} from "../../../chunk-PJVRMMY3.mjs";
 import {
   require_react
 } from "../../../chunk-ZZ3ODJ3Z.mjs";
@@ -21224,7 +21224,7 @@ var ClassicalComponentReactDomImplementation = {
     }
   },
   thens: {
-    ThePropsIs: (expectation) => async ({ htmlElement, reactElement }) => {
+    ThePropsIs: (expectation) => async ({ htmlElement }) => {
       const elem = htmlElement.querySelector("#theProps");
       const found = elem.innerHTML;
       assert.deepEqual(

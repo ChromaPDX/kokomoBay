@@ -1,8 +1,2 @@
 src/subPackages/solidity+react/solidity+react.ts(2,23): error TS2688: Cannot find type definition file for '../index.d.ts'.
-  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
-
 src/subPackages/solidity+react/solidity+react.ts(44,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
-  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.
-
-src/subPackages/solidity+react/solidity+react.ts(97,13): error TS2345: Argument of type '{ contractNearSide: ContractWeb3; contractFarSide: ethers.Contract; accounts: string[]; server: Server<EthereumFlavor>; }' is not assignable to parameter of type 'IT["istore"] | PromiseLike<IT["istore"]>'.
-  Object literal may only specify known properties, and 'contractNearSide' does not exist in type 'PromiseLike<IT["istore"]>'.

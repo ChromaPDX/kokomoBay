@@ -1,82 +1,30 @@
-import { ITestImplementation, ITestSpecification } from "testeranto/src/Types";
+import { ITestSpecification, Ibdd_out } from "testeranto/src/Types";
 
-import {
-  ActionCreatorWithNonInferrablePayload,
-  ActionCreatorWithoutPayload,
-  StoreEnhancerStoreCreator,
-} from "@reduxjs/toolkit";
-
-import { IStoreState } from "./app";
-
-export type IAppSpecification = {
-  iinput: any;
-  isubject: any;
-  istore: any;
-  iselection: IStoreState;
-
-  when: (
-    a: any
-  ) => [
-    (
-      | ActionCreatorWithNonInferrablePayload<string>
-      | ActionCreatorWithoutPayload<string>
-    ),
-    unknown?
-  ];
-  then: any;
-
-  given: (initValues) => () => StoreEnhancerStoreCreator<any, any>;
-
-  suites: {
+export type IAppOut = Ibdd_out<
+  {
     Default: [string];
-  };
-  givens: {
+  },
+  {
     AnEmptyState: [];
     AStateWithEmail: [string];
-  };
-  whens: {
+  },
+  {
     TheLoginIsSubmitted: [];
     TheEmailIsSetTo: [string];
     ThePasswordIsSetTo: [string];
-  };
-  thens: {
+  },
+  {
     TheEmailIs: [string];
     TheEmailIsNot: [string];
     ThePasswordIs: [string];
     ThePasswordIsNot: [string];
-  };
-  checks: {
-    AnEmptyState: [];
-  };
-};
-
-export type IImplementation = ITestImplementation<
-  IAppSpecification,
+  },
   {
-    givens: {
-      [K in keyof IAppSpecification["givens"]]: (
-        ...Iw: IAppSpecification["givens"][K]
-      ) => IStoreState;
-    };
-    // whens: {
-    //   [K in keyof IAppSpecification["whens"]]: (
-    //     ...Iw: IAppSpecification["whens"][K]
-    //   ) => [
-    //       (
-    //         | ActionCreatorWithNonInferrablePayload<string>
-    //         | ActionCreatorWithoutPayload<string>
-    //       )
-    //       , unknown?];
-    // }
-    checks: {
-      [K in keyof IAppSpecification["checks"]]: (
-        ...Iw: IAppSpecification["checks"][K]
-      ) => IStoreState;
-    };
+    AnEmptyState: [];
   }
 >;
 
-export const AppSpecification: ITestSpecification<IAppSpecification> = (
+export const AppSpecification: ITestSpecification<IAppOut> = (
   Suite,
   Given,
   When,
@@ -86,6 +34,7 @@ export const AppSpecification: ITestSpecification<IAppSpecification> = (
   return [
     Suite.Default(
       "Testing the Redux store",
+
       {
         test0: Given.AnEmptyState(
           ["Set the email, check the email"],

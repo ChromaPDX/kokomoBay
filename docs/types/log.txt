@@ -1,0 +1,306 @@
+src/app.reduxToolkit.test.ts(13,28): error TS2724: '"./app.test"' has no exported member named 'IAppSpecification'. Did you mean 'AppSpecification'?
+
+src/app.reduxToolkit.test.ts(23,3): error TS2344: Type '{ givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, thens
+src/app.reduxToolkit.test.ts(62,32): error TS2322: Type 'ActionCreatorWithoutPayload<`${string}/signIn`>[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+  Type 'ActionCreatorWithoutPayload<`${string}/signIn`>[]' provides no match for the signature '(zel: IAppSpecification, utils: PM): Promise<IAppSpecification>'.
+
+src/app.reduxToolkit.test.ts(63,33): error TS2322: Type 'unknown[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+  Type 'unknown[]' provides no match for the signature '(zel: IAppSpecification, utils: PM): Promise<IAppSpecification>'.
+src/app.reduxToolkit.test.ts(64,39): error TS2322: Type 'unknown[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+src/app.reduxToolkit.test.ts(85,3): error TS2345: Argument of type 'ITestImplementation<IAppSpecification, { givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }>' is not assignable to parameter of type 'ITestImplementation<IAppSpecification, { givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; checks: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { [x: string]: (...Iw: IAppSpecification) => WhenShape; }; }>'.
+  Types of property 'whens' are incompatible.
+    Type '{ TheLoginIsSubmitted: (...Iw: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>; TheEmailIsSetTo: (...Iw: (e: string) => [...]) => (zel: IAppSpecification, utils: PM) => Promise<...>; ThePasswordIsSetTo: (...Iw: (p: string) => [...]) => (ze...' is not assignable to type '{ [x: string]: (...Iw: (...Iw: IAppSpecification) => WhenShape) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>; }'.
+      Property 'TheLoginIsSubmitted' is incompatible with index signature.
+        Types of parameters 'Iw' and 'Iw' are incompatible.
+          Type 'WhenShape' is not assignable to type '[ActionCreatorWithoutPayload<`${string}/signIn`>]'.
+            Target allows only 1 element(s) but source may have more.
+
+src/ClassicalComponent/react-dom/client.web.test.tsx(78,3): error TS2345: Argument of type '{ suites: { Default: string; }; givens: { AnEmptyState: { foo: string; }; }; whens: { IClickTheHeader: () => ({ htmlElement }: { htmlElement: any; }) => Promise<void>; IClickTheButton: () => ({ htmlElement }: { htmlElement: any; }) => Promise<...>; }; thens: { ...; }; checks: { ...; }; }' is not assignable to parameter of type 'ITestImplementation<IClassicalComponentSpec, any>'.
+  Types of property 'givens' are incompatible.
+    Type '{ AnEmptyState: { foo: string; }; }' is not assignable to type '{ [x: string]: (...Ig: any) => any; }'.
+      Property 'AnEmptyState' is incompatible with index signature.
+        Type '{ foo: string; }' is not assignable to type '(...Ig: any) => any'.
+          Type '{ foo: string; }' provides no match for the signature '(...Ig: any): any'.
+
+src/ClassicalComponent/react-test-renderer/node.test.tsx(10,3): error TS2345: Argument of type 'ITestSpecification<IClassicalComponentSpec>' is not assignable to parameter of type 'ISpec<any>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Property 'Default' is missing in type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' but required in type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+
+src/ClassicalComponent/react-test-renderer/web.test.tsx(9,3): error TS2345: Argument of type 'ITestSpecification<IClassicalComponentSpec>' is not assignable to parameter of type 'ISpec<any>'.
+
+src/LoginPage/index.tsx(12,61): error TS2339: Property 'setDisableSubmit' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: { payload: string; type: string; }) => void; setEmail: (s: IStoreState, b: { ...; }) => void; signIn: (s: IStoreState) => void; setError: (s: IStoreState, b: { ...; }) => void; }, string>'.
+
+src/LoginPage/react-dom/test.tsx(37,83): error TS2344: Type 'object' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+
+src/LoginPage/react-test-renderer/node.test.tsx(101,3): error TS2345: Argument of type 'ITestSpecification<ILoginPageSpecs<unknown>>' is not assignable to parameter of type 'ITestSpec<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Property 'Default' is missing in type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' but required in type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+
+src/LoginPage/react-test-renderer/test.tsx(11,73): error TS2314: Generic type 'ILoginPageSpecs' requires 1 type argument(s).
+
+src/LoginPage/react-test-renderer/web.test.tsx(100,3): error TS2345: Argument of type 'ITestSpecification<ILoginPageSpecs<unknown>>' is not assignable to parameter of type 'ITestSpec<any>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' is not assignable to type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+
+src/LoginPage/react/node.test.tsx(12,3): error TS2345: Argument of type 'ITestSpecification<ILoginPageSpecs<unknown>>' is not assignable to parameter of type 'ITestSpec<IBaseTest<IInput, number, number, number, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<...>>>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Property 'Default' is missing in type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' but required in type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+
+src/LoginPage/react/node.test.tsx(17,13): error TS2349: This expression is not callable.
+  Type 'Number' has no call signatures.
+
+src/LoginPage/react/test.tsx(39,5): error TS2322: Type '(email: string) => (reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(...It: any) => (ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Call signature return types '(reactElem: ReactElement<any, string | JSXElementConstructor<any>>, utils: PM) => Promise<ReactElement<any, string | JSXElementConstructor<any>>>' and '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void' are incompatible.
+    Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+      Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' provides no match for the signature '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM): void'.
+src/LoginPage/react/test.tsx(43,5): error TS2322: Type '(email: string) => (reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(...It: any) => (ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Call signature return types '(reactElem: ReactElement<any, string | JSXElementConstructor<any>>, utils: PM) => Promise<ReactElement<any, string | JSXElementConstructor<any>>>' and '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void' are incompatible.
+    Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+
+src/LoginPage/react/test.tsx(47,5): error TS2322: Type '(password: string) => (reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(...It: any) => (ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Call signature return types '(reactElem: ReactElement<any, string | JSXElementConstructor<any>>, utils: PM) => Promise<ReactElement<any, string | JSXElementConstructor<any>>>' and '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void' are incompatible.
+    Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+src/LoginPage/react/test.tsx(51,5): error TS2322: Type '(password: string) => (reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(...It: any) => (ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Call signature return types '(reactElem: ReactElement<any, string | JSXElementConstructor<any>>, utils: PM) => Promise<ReactElement<any, string | JSXElementConstructor<any>>>' and '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void' are incompatible.
+    Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+src/LoginPage/react/test.tsx(55,32): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+src/LoginPage/react/test.tsx(59,35): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+
+src/LoginPage/react/test.tsx(63,36): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+
+src/LoginPage/react/test.tsx(69,36): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+src/LoginPage/react/test.tsx(73,39): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+
+src/LoginPage/react/test.tsx(77,39): error TS2322: Type '(reactElem: ReactElement, utils: PM) => Promise<React.ReactElement<any, string | React.JSXElementConstructor<any>>>' is not assignable to type '(ssel: any, utils: PM) => (w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+  Type 'Promise<ReactElement<any, string | JSXElementConstructor<any>>>' is not assignable to type '(w: ReactElement<any, string | JSXElementConstructor<any>>, p: PM) => void'.
+src/LoginPage/react/web.test.tsx(11,3): error TS2345: Argument of type 'ITestSpecification<ILoginPageSpecs<unknown>>' is not assignable to parameter of type 'ITestSpec<any>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Property 'Default' is missing in type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' but required in type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+src/MyFirstContract.basic.test.ts(8,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+src/MyFirstContract.basic.test.ts(29,10): error TS2339: Property 'contract' does not exist on type 'String'.
+src/MyFirstContract.basic.test.ts(29,20): error TS2339: Property 'accounts' does not exist on type 'String'.
+
+src/MyFirstContract.basic.test.ts(39,10): error TS2339: Property 'contract' does not exist on type 'String'.
+src/MyFirstContract.basic.test.ts(39,20): error TS2339: Property 'accounts' does not exist on type 'String'.
+src/MyFirstContract.basic.test.ts(51,16): error TS2339: Property 'contract' does not exist on type 'String'.
+src/MyFirstContract.basic.test.ts(51,26): error TS2339: Property 'accounts' does not exist on type 'String'.
+
+src/MyFirstContract.basic.test.ts(52,9): error TS2322: Type 'Promise<void>' is not assignable to type 'string'.
+src/MyFirstContract.basic.test.ts(62,27): error TS2344: Type 'IMyFirstContractTest<IInput>' does not satisfy the constraint 'IBaseTest<unknown, { abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }, { provider: EthereumProvider; contract: Contract; accounts: string[]; }, ... 8 more ..., Record<...>>'.
+  Types of property 'isubject' are incompatible.
+    Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.
+
+src/MyFirstContract.basic.test.ts(69,9): error TS2345: Argument of type 'Record<string, BaseGiven<IMyFirstContractTest<any>>>' is not assignable to parameter of type 'IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+  'string' index signatures are incompatible.
+    Type 'BaseGiven<IMyFirstContractTest<any>>' is not assignable to type 'BaseGiven<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+      Types of property 'whens' are incompatible.
+        Type 'BaseWhen<IMyFirstContractTest<any>>[]' is not assignable to type 'BaseWhen<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>[]'.
+          Type 'BaseWhen<IMyFirstContractTest<any>>' is not assignable to type 'BaseWhen<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+            Types of property 'whenCB' are incompatible.
+              Type '(x: string) => string' is not assignable to type '(x: unknown) => unknown'.
+                Types of parameters 'x' and 'x' are incompatible.
+                  Type 'unknown' is not assignable to type 'string'.
+src/MyFirstContract.react-solidity.testeranto.tsx(13,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/MyFirstContract.react-solidity.testeranto.tsx(57,9): error TS2345: Argument of type 'Record<string, BaseGiven<IMyFirstContractTest<any>>>' is not assignable to parameter of type 'IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+
+src/MyFirstContract.rpc.test.ts(15,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/MyFirstContract.rpc.test.ts(56,7): error TS2345: Argument of type 'Record<string, BaseGiven<IMyFirstContractTest<any>>>' is not assignable to parameter of type 'IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+src/MyFirstContract.rpc.test.ts(77,27): error TS2344: Type 'IMyFirstContractTest<IMyFirstContractTest<IInput>>' does not satisfy the constraint 'IBaseTest<unknown, { abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }, istore, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<...>, Record<...>, Record<...>>'.
+  Types of property 'isubject' are incompatible.
+    Type 'string' is not assignable to type '{ abi: AbiItem | AbiItem[]; deployedBytecode: { bytes: string; }; bytecode: { bytes: string; }; }'.
+
+src/MyFirstContract.solidity-react.implementation.test.ts(5,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/MyFirstContract.solidity-react.testeranto.ts(14,3): error TS2345: Argument of type '{ contractName: string; abi: any; }' is not assignable to parameter of type 'IMyFirstContractTest<IInput>'.
+  Type '{ contractName: string; abi: any; }' is missing the following properties from type 'IMyFirstContractTest<IInput>': iinput, isubject, istore, iselection, and 8 more.
+src/MyFirstContract.solidity-react.testeranto.ts(20,9): error TS2345: Argument of type 'Record<string, BaseGiven<IMyFirstContractTest<any>>>' is not assignable to parameter of type 'IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+
+src/MyFirstContract.specification.test.ts(3,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+src/MyFirstContractServer.ts(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+src/MyFirstContractUI.tsx(7,29): error TS2307: Cannot find module './contracts/MyFirstContract.sol' or its corresponding type declarations.
+
+src/ReactStateAndHook.test.tsx(72,10): error TS2344: Type '{ givens: { Default: (...Iw: any) => void; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { Default: (...Iw: any) => void; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, whens, thens, checks
+src/ReactStateAndHook.test.tsx(85,5): error TS2322: Type '() => void' is not assignable to type '(...Ig: (...Iw: any) => void) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+src/ReactStateAndHook.test.tsx(113,3): error TS2345: Argument of type 'ITestSpecification<ISpec>' is not assignable to parameter of type 'ITestSpec<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Property 'Default' is missing in type '{ [x: string]: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }' but required in type '{ Default: (name: string, givens: IGivens<IBaseTest<unknown, unknown, unknown, unknown, unknown, unknown, unknown, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>>, checks: BaseCheck<...>[]) => BaseSuite<...>; }'.
+src/Rectangle.test.implementation.ts(10,3): error TS2344: Type '{ givens: { Default: (...Iw: any) => Rectangle; WidthOfOneAndHeightOfOne: (...Iw: any) => Rectangle; WidthAndHeightOf: (Iw_0: number, Iw_1: number) => Rectangle; }; whens: { ...; }; thens: { ...; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { Default: (...Iw: any) => Rectangle; WidthOfOneAndHeightOfOne: (...Iw: any) => Rectangle; WidthAndHeightOf: (Iw_0: number, Iw_1: number) => Rectangle; }; whens: { ...; }; thens: { ...; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, checks
+
+src/Rectangle.test.implementation.ts(35,5): error TS2322: Type '(width: unknown, height: unknown) => Rectangle' is not assignable to type '(...Ig: (Iw_0: number, Iw_1: number) => Rectangle) => Rectangle'.
+  Types of parameters 'width' and 'Ig' are incompatible.
+    Type '(Iw_0: number, Iw_1: number) => Rectangle' is not assignable to type '[width: unknown, height: unknown]'.
+src/Rectangle.test.implementation.ts(35,56): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number | undefined'.
+src/Rectangle.test.implementation.ts(39,40): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Type 'Rectangle' is missing the following properties from type 'Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>': then, catch, finally, [Symbol.toStringTag]
+
+src/Rectangle.test.implementation.ts(40,27): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+src/Rectangle.test.implementation.ts(43,38): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Type 'Rectangle' is not assignable to type 'Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+src/Rectangle.test.implementation.ts(44,26): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+
+src/Rectangle.test.implementation.ts(47,5): error TS2322: Type '(width: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...Iw: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'width' and 'Iw' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[width: number]'.
+src/Rectangle.test.implementation.ts(51,5): error TS2322: Type '(height: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...Iw: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (zel: Rectangle, utils: PM) => Promise<(...x: any[]) => (rectangle: Rectangle, utils: PM) => Rectangle>'.
+  Types of parameters 'height' and 'Iw' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[height: number]'.
+src/Rectangle.test.implementation.ts(58,42): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Type 'Rectangle' is not assignable to type '(rectangle: Rectangle, utils: PM) => Rectangle'.
+    Type 'Rectangle' provides no match for the signature '(rectangle: Rectangle, utils: PM): Rectangle'.
+src/Rectangle.test.implementation.ts(63,34): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Type 'Rectangle' is not assignable to type '(rectangle: Rectangle, utils: PM) => Rectangle'.
+src/Rectangle.test.implementation.ts(67,36): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Type 'Rectangle' is not assignable to type '(rectangle: Rectangle, utils: PM) => Rectangle'.
+
+src/Rectangle.test.implementation.ts(71,21): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Type 'Rectangle' is not assignable to type '(rectangle: Rectangle, utils: PM) => Rectangle'.
+src/Rectangle.test.implementation.ts(75,22): error TS2322: Type '(rectangle: Rectangle) => Rectangle' is not assignable to type '(ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Type 'Rectangle' is not assignable to type '(rectangle: Rectangle, utils: PM) => Rectangle'.
+src/Rectangle.test.implementation.ts(79,5): error TS2322: Type '(circumference: number) => (rectangle: Rectangle) => Rectangle' is not assignable to type '(...It: (Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle) => (ssel: Rectangle, utils: PM) => (rectangle: Rectangle, utils: PM) => Rectangle'.
+  Types of parameters 'circumference' and 'It' are incompatible.
+    Type '(Iw_0: number) => (rectangle: Rectangle, utils: PM) => Rectangle' is not assignable to type '[circumference: number]'.
+
+src/Rectangle/Rectangle.test.puppeteer.ts(1,24): error TS2307: Cannot find module 'testeranto/src/core-puppeteer' or its corresponding type declarations.
+
+src/Rectangle/Rectangle.test.puppeteer.ts(13,8): error TS2306: File '/Users/adam/Code/kokomoBay/src/Rectangle.test.ts' is not a module.
+src/server.http.test.ts(6,32): error TS2307: Cannot find module '../myTests/http.testeranto.test' or its corresponding type declarations.
+src/server.test.ts(1,36): error TS2307: Cannot find module 'testeranto/src/core' or its corresponding type declarations.
+
+src/server.test.ts(2,51): error TS2307: Cannot find module '../myTests/http.testeranto.test' or its corresponding type declarations.
+src/subPackages/reduxToolkit.testeranto.test.ts(62,5): error TS2344: Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, thens
+src/subPackages/solidity+react/solidity+react.ts(2,23): error TS2688: Cannot find type definition file for '../index.d.ts'.
+
+src/subPackages/solidity+react/solidity+react.ts(44,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(2,23): error TS2688: Cannot find type definition file for './index.d.ts'.
+src/subPackages/solidity/Contract-rpc.testeranto.test.ts(58,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+src/subPackages/solidity/Contract.testeranto.test.ts(1,23): error TS2688: Cannot find type definition file for './index.d.ts'.
+
+src/subPackages/solidity/Contract.testeranto.test.ts(41,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/subPackages/solidity/react.testeranto.ts(48,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+src/subPackages/solidity/react.testeranto.ts(121,25): error TS2345: Argument of type 'MutableRefObject<any>' is not assignable to parameter of type 'ITestShape["istore"] | PromiseLike<ITestShape["istore"]>'.
+
+../testeranto/src/lib/abstractBase.ts(42,3): error TS2564: Property 'store' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(44,3): error TS2564: Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(141,30): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+
+../testeranto/src/lib/abstractBase.ts(158,11): error TS2345: Argument of type '(t: ITestShape["then"]) => unknown' is not assignable to parameter of type '(t: Awaited<ITestShape["then"]> | undefined) => boolean'.
+  Type 'unknown' is not assignable to type 'boolean'.
+../testeranto/src/lib/abstractBase.ts(234,3): error TS2564: Property 'error' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(236,3): error TS2564: Property 'store' has no initializer and is not definitely assigned in the constructor.
+
+../testeranto/src/lib/abstractBase.ts(237,3): error TS2564: Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(240,3): error TS2564: Property 'key' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(356,30): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+
+../testeranto/src/lib/abstractBase.ts(397,7): error TS2322: Type 'unknown' is not assignable to type 'Error'.
+../testeranto/src/lib/abstractBase.ts(398,12): error TS2571: Object is of type 'unknown'.
+../testeranto/src/lib/abstractBase.ts(425,32): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+
+../testeranto/src/lib/abstractBase.ts(444,51): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+../testeranto/src/lib/abstractBase.ts(447,3): error TS2564: Property 'error' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/abstractBase.ts(498,28): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+../testeranto/src/lib/abstractBase.ts(595,30): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+../testeranto/src/lib/abstractBase.ts(610,20): error TS2571: Object is of type 'unknown'.
+
+../testeranto/src/lib/abstractBase.ts(701,68): error TS2554: Expected 5 arguments, but got 4.
+../testeranto/src/lib/basebuilder.ts(45,3): error TS2564: Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+
+../testeranto/src/lib/basebuilder.ts(56,3): error TS2564: Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+../testeranto/src/lib/basebuilder.ts(95,13): error TS2345: Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer | PassThrough'.
+../testeranto/src/lib/basebuilder.ts(159,29): error TS2339: Property 'artifacts' does not exist on type '{ test: BaseSuite<ITestShape>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | ... 1 more ... | undefined)[] | null; features: string[]; }[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
+
+../testeranto/src/lib/core.ts(8,25): error TS2305: Module '"./types.js"' has no exported member 'ITestInterface'.
+../testeranto/src/lib/core.ts(44,25): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+../testeranto/src/lib/core.ts(216,15): error TS2416: Property 'checkThat' in type 'Check' is not assignable to the same property in base type 'BaseCheck<ITestShape>'.
+  Type '(subject: any, testResourceConfiguration: any, artifactory: any, pm: any) => Promise<any>' is not assignable to type '(subject: ITestShape["isubject"], testResourceConfiguration: any, artifactory: ITestArtifactory) => Promise<ITestShape["istore"]>'.
+
+../testeranto/src/lib/index.ts(11,10): error TS2305: Module '"./types.js"' has no exported member 'ITestInterface'.
+../testeranto/src/Node.ts(12,10): error TS2305: Module '"./lib/types.js"' has no exported member 'ITestInterface'.
+
+../testeranto/src/Node.ts(12,26): error TS2305: Module '"./lib/types.js"' has no exported member 'INodeTestInterface'.
+../testeranto/src/Node.ts(34,25): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+../testeranto/src/Node.ts(54,56): error TS2345: Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
+  Types of property 'customScreenShot' are incompatible.
+    Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+      Types of parameters 'cdpPage' and 'page' are incompatible.
+        Type 'string | undefined' is not assignable to type 'CdpPage'.
+          Type 'undefined' is not assignable to type 'CdpPage'.
+../testeranto/src/Node.ts(78,23): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/PM/index.ts(10,3): error TS2564: Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+
+../testeranto/src/PM/node.ts(88,3): error TS2416: Property 'customScreenShot' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+    Types of parameters 'cdpPage' and 'page' are incompatible.
+      Type 'string | undefined' is not assignable to type 'CdpPage'.
+        Type 'undefined' is not assignable to type 'CdpPage'.
+../testeranto/src/SubPackages/react-dom/component/node.ts(26,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-dom/component/node.ts(27,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/SubPackages/react-dom/component/web.ts(32,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/component/index.ts(20,38): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/component/index.ts(21,3): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/component/index.ts(22,38): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/component/node.ts(7,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/component/web.ts(7,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx-promised/index.ts(17,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx-promised/index.ts(18,3): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx-promised/index.ts(20,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx/index.ts(18,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx/index.ts(20,3): error TS2344: Type 'object' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{}' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, givens, whens, thens, checks
+
+../testeranto/src/SubPackages/react-test-renderer/jsx/index.ts(23,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react-test-renderer/jsx/web.ts(8,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react/jsx/index.ts(19,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react/jsx/index.ts(20,3): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/SubPackages/react/jsx/index.ts(22,42): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/SubPackages/react/jsx/index.ts(38,18): error TS2349: This expression is not callable.
+  Type 'IStore' has no call signatures.
+
+../testeranto/src/SubPackages/react/jsx/index.ts(40,15): error TS2345: Argument of type 'DetailedReactHTMLElement<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>' is not assignable to parameter of type 'IStore | PromiseLike<IStore>'.
+  Type 'DetailedReactHTMLElement<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>' is not assignable to type 'IStore'.
+    Types of property 'type' are incompatible.
+      Type 'string' is not assignable to type 'ComponentClass<any, any>'.
+        Type 'string' is not assignable to type 'ComponentClass<any, any>'.
+
+../testeranto/src/SubPackages/react/jsx/index.ts(40,35): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'IStore' is not assignable to parameter of type 'string | ComponentClass<any, any> | FunctionComponent<any>'.
+
+../testeranto/src/SubPackages/react/jsx/web.ts(15,36): error TS2314: Generic type 'IBaseTest' requires 12 type argument(s).
+
+../testeranto/src/Web.ts(14,25): error TS2305: Module '"./lib/types"' has no exported member 'ITestInterface'.
+
+../testeranto/src/Web.ts(14,41): error TS2305: Module '"./lib/types"' has no exported member 'IWebTestInterface'.
+../testeranto/src/Web.ts(42,25): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
+
+../testeranto/src/Web.ts(117,23): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).

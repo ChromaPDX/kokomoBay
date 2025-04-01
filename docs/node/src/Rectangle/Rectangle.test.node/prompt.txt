@@ -11,12 +11,11 @@
 /read docs/types/src/Rectangle.test.interface.ts.type_errors.txt
 /read docs/types/src/Rectangle/Rectangle.test.node.ts.type_errors.txt
 
-
-  
+/read docs/node/src/Rectangle/Rectangle.test.node/lint_errors.txt
 /read docs/node/src/Rectangle/Rectangle.test.node/tests.json
 /read docs/node/src/Rectangle/Rectangle.test.node/stdout.log
 /read docs/node/src/Rectangle/Rectangle.test.node/stderr.log
 
 /load docs/node/src/Rectangle/Rectangle.test.node/featurePrompt.txt
 
-/code Fix the failing tests described in docs/node/src/Rectangle/Rectangle.test.node/tests.json. Correct any type signature errors described in the files [docs/types/src/Rectangle.ts.type_errors.txt, docs/types/src/Rectangle.test.implementation.ts.type_errors.txt, docs/types/src/Rectangle.test.specification.ts.type_errors.txt, docs/types/src/Rectangle.test.interface.ts.type_errors.txt, docs/types/src/Rectangle/Rectangle.test.node.ts.type_errors.txt]. Implement any method which throws "Function not implemented. Update "any" types to something more specific."
+/code Fix the failing tests described in docs/node/src/Rectangle/Rectangle.test.node/tests.json. Correct any type signature errors described in the files [docs/types/src/Rectangle.ts.type_errors.txt, docs/types/src/Rectangle.test.implementation.ts.type_errors.txt, docs/types/src/Rectangle.test.specification.ts.type_errors.txt, docs/types/src/Rectangle.test.interface.ts.type_errors.txt, docs/types/src/Rectangle/Rectangle.test.node.ts.type_errors.txt]. Implement any method which throws "Function not implemented. Resolve the lint errors described in docs/node/src/Rectangle/Rectangle.test.node/lint_errors.txt"

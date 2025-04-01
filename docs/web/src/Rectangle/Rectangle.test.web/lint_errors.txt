@@ -1,0 +1,22 @@
+
+/Users/adam/Code/kokomoBay/src/Rectangle.test.implementation.ts
+  86:5  error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+/Users/adam/Code/kokomoBay/src/Rectangle.test.interface.ts
+  6:33  error  'initializer' is defined but never used    @typescript-eslint/no-unused-vars
+  6:46  error  'art' is defined but never used            @typescript-eslint/no-unused-vars
+  6:51  error  'tr' is defined but never used             @typescript-eslint/no-unused-vars
+  6:55  error  'initialValues' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/adam/Code/kokomoBay/src/Rectangle.test.specification.ts
+  8:32  error  'Check' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/adam/Code/kokomoBay/src/Rectangle/Rectangle.test.web.ts
+  12:38  error  'init' is defined but never used           @typescript-eslint/no-unused-vars
+  12:44  error  'art' is defined but never used            @typescript-eslint/no-unused-vars
+  12:49  error  'tr' is defined but never used             @typescript-eslint/no-unused-vars
+  12:53  error  'initialValues' is defined but never used  @typescript-eslint/no-unused-vars
+  12:68  error  'pm' is defined but never used             @typescript-eslint/no-unused-vars
+
+✖ 11 problems (11 errors, 0 warnings)
+

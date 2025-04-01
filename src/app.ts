@@ -1,6 +1,21 @@
 import { createSelector, createSlice, createStore } from "@reduxjs/toolkit";
+// import { noError } from "./LoginPage";
 
-import { ILoginPageError, ILoginPageSelection, noError } from "./LoginPage";
+export const noError = "no_error";
+
+export type ILoginPageError =
+  | "invalidEmail"
+  | "credentialFail"
+  | typeof noError;
+
+export type ILoginPageSelection = {
+  password: string;
+  email: string;
+  error: ILoginPageError;
+  disableSubmit: boolean;
+};
+
+// export const noError = "no_error";
 
 export type IStoreState = {
   password: string;
@@ -12,14 +27,14 @@ export type IStoreState = {
 const initialState: IStoreState = {
   password: "",
   email: "",
-  error: "no_error",
+  error: noError,
   disableSubmit: true,
 };
 
 export const loginApp = createSlice<
   IStoreState,
   {
-    reset: (s: IStoreState) => void | IStoreState; //| WritableDraft<IStoreState>,
+    reset: (s: IStoreState) => void | IStoreState;
     setPassword: (s: IStoreState, b: { payload: string; type: string }) => void;
     setEmail: (s: IStoreState, b: { payload: string; type: string }) => void;
     signIn: (s: IStoreState) => void;
@@ -29,7 +44,7 @@ export const loginApp = createSlice<
     ) => void;
   }
 >({
-  name: "my login app!",
+  name: "my login app",
   initialState,
   reducers: {
     reset: (state) => {

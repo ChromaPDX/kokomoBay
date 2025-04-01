@@ -36,7 +36,7 @@ const ClassicalComponentReactDomImplementation = {
   thens: {
     ThePropsIs:
       (expectation) =>
-        async ({ htmlElement, reactElement }) => {
+        async ({ htmlElement }) => {
           const elem = htmlElement.querySelector("#theProps")
           const found = elem.innerHTML;
           assert.deepEqual(

@@ -1,15 +1,14 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  LoginPageSpecs
-} from "../../../chunk-6GJCGFL4.mjs";
-import {
+  LoginPageSpecs,
   LoginPage_default,
   actions,
   store
-} from "../../../chunk-L6YYQFFO.mjs";
+} from "../../../chunk-OA7MEVMO.mjs";
+import "../../../chunk-LDJY5LQQ.mjs";
 import {
   Node_default
-} from "../../../chunk-MQ7EHINC.mjs";
+} from "../../../chunk-TID3HMIR.mjs";
 import {
   assert
 } from "../../../chunk-BFDDKUUP.mjs";
@@ -45,16 +44,7 @@ var testInterface = {
 
 // ../testeranto/dist/module/src/SubPackages/react/jsx/node.js
 var node_default = (testImplementations, testSpecifications, testInput, testInterface2 = testInterface) => {
-  return Node_default(
-    testInput,
-    testSpecifications,
-    testImplementations,
-    testInterface2
-    // {
-    //   ...baseInterface,
-    //   ...testInterface,
-    // }
-  );
+  return Node_default(testInput, testSpecifications, testImplementations, testInterface2);
 };
 
 // src/LoginPage/react/test.tsx

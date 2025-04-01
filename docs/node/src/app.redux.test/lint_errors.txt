@@ -1,0 +1,32 @@
+
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts
+  25:3   error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  27:33  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  31:24  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  32:9   error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  34:7   error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  36:31  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  41:27  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  41:32  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  41:37  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  41:42  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  41:47  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  55:37  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  72:28  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  72:33  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  72:38  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  72:43  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  72:48  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  75:42  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  79:49  error  'art' is defined but never used            @typescript-eslint/no-unused-vars
+  79:54  error  'tr' is defined but never used             @typescript-eslint/no-unused-vars
+  79:58  error  'initialValues' is defined but never used  @typescript-eslint/no-unused-vars
+  79:73  error  'pm' is defined but never used             @typescript-eslint/no-unused-vars
+  80:39  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  80:44  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  80:49  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  82:45  error  'tr' is defined but never used             @typescript-eslint/no-unused-vars
+  82:49  error  'pm' is defined but never used             @typescript-eslint/no-unused-vars
+
+✖ 27 problems (27 errors, 0 warnings)
+

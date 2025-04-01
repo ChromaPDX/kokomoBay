@@ -8,7 +8,7 @@ import {
 import {
   loginApp,
   require_redux
-} from "../chunk-L6YYQFFO.mjs";
+} from "../chunk-LDJY5LQQ.mjs";
 import {
   assert
 } from "../chunk-BFDDKUUP.mjs";
@@ -21,10 +21,7 @@ var import_redux = __toESM(require_redux(), 1);
 var ReduxTesteranto = (testInput, testSpecifications, testImplementations) => {
   const testInterface = {
     beforeEach: function(subject, initializer, art, tr, initialValues, pm) {
-      return (0, import_redux.createStore)(
-        subject,
-        initializer()(initialValues)
-      );
+      return (0, import_redux.createStore)(subject, initializer);
     },
     andWhen: async function(store, whenCB, tr, pm) {
       const a = whenCB;
@@ -49,12 +46,8 @@ var implementations = {
     Default: "some default Suite!"
   },
   givens: {
-    AnEmptyState: () => () => {
-      return loginApp.getInitialState();
-    },
-    AStateWithEmail: () => () => {
-      return { ...loginApp.getInitialState(), email: "bob@mail.com" };
-    }
+    AnEmptyState: loginApp.getInitialState(),
+    AStateWithEmail: { ...loginApp.getInitialState(), email: "bob@mail.com" }
   },
   whens: {
     TheLoginIsSubmitted: () => [loginApp.actions.signIn],
@@ -80,11 +73,7 @@ var implementations = {
     ThePasswordIsNot: (password) => (selection) => assert.notEqual(selection.password, password)
   },
   checks: {
-    AnEmptyState: () => () => loginApp.getInitialState()
-  },
-  beforeEach: async () => {
-  },
-  afterEach: async () => {
+    AnEmptyState: loginApp.getInitialState()
   }
 };
 var app_redux_test_default = ReduxTesteranto(

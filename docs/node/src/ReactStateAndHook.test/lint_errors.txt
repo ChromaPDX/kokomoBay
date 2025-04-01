@@ -1,0 +1,16 @@
+
+/Users/adam/Code/kokomoBay/src/ReactStateAndHook.test.tsx
+   13:11  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+   14:13  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+   15:11  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+   16:15  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+   18:21  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+   40:30  error  'Check' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+  104:5   error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+/Users/adam/Code/kokomoBay/src/ReactStateAndHook.tsx
+  6:28  error  'IProps' is defined but never used  @typescript-eslint/no-unused-vars
+  6:36  error  'IState' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 9 problems (9 errors, 0 warnings)
+

@@ -7,7 +7,7 @@ function ReactStateAndHook<IProps, IState>(): React.JSX.Element {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log(`You have clicked the first button ${count} times`);
+    console.log(`You have clicked the first button ${count} time`);
   }, [count]);
 
   return (

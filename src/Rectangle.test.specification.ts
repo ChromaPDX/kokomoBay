@@ -16,7 +16,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
           [Then.getWidth(4), Then.getHeight(9)]
         ),
         test1: Given.Default(
-          [`Rectangles have width and height`],
+          [`Rectangles have width and height.`],
           [When.setWidth(4), When.setHeight(5)],
           [
             Then.getWidth(4),

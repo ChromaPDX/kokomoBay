@@ -23533,7 +23533,7 @@
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
-          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/lint_errors.exitCode`)).text();
+          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/lint_errors.txt`)).text();
         }
         setStaticAnalysis(accumulator);
       })();
@@ -23543,7 +23543,7 @@
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
-          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/type_errors.exitCode`)).text();
+          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/type_errors.txt`)).text();
         }
         setTypeErrors(accumulator);
       })();
@@ -23553,7 +23553,7 @@
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
-          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/exitCode`)).text();
+          accumulator[t[0]] = await (await fetch(`/kokomoBay/docs/${t[1]}/${t[0].split(".").slice(0, -1).join(".")}/bdd_errors.txt`)).text();
         }
         setBddErrors(accumulator);
       })();

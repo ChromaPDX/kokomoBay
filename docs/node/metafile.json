@@ -888,7 +888,7 @@
         "imports": []
       },
       "src/Rectangle.test.specification.ts": {
-        "bytes": 1875,
+        "bytes": 1883,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1202,7 +1202,7 @@
         "format": "esm"
       },
       "src/ReactStateAndHook.tsx": {
-        "bytes": 589,
+        "bytes": 588,
         "imports": [
           {
             "path": "react",
@@ -18431,7 +18431,7 @@
             "bytesInOutput": 88
           },
           "src/Rectangle.test.specification.ts": {
-            "bytesInOutput": 1648
+            "bytesInOutput": 1656
           },
           "src/Rectangle.test.interface.ts": {
             "bytesInOutput": 264
@@ -18440,7 +18440,7 @@
             "bytesInOutput": 586
           }
         },
-        "bytes": 5352
+        "bytes": 5360
       },
       "docs/node/src/ReactStateAndHook.test.mjs": {
         "imports": [
@@ -18485,10 +18485,10 @@
             "bytesInOutput": 1542
           },
           "src/ReactStateAndHook.tsx": {
-            "bytesInOutput": 647
+            "bytesInOutput": 646
           }
         },
-        "bytes": 2584
+        "bytes": 2583
       },
       "docs/node/src/app.reduxToolkit.test.mjs": {
         "imports": [

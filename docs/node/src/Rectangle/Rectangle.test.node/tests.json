@@ -62,7 +62,7 @@
       ],
       "error": null,
       "features": [
-        "Rectangles have width and height"
+        "Rectangles have width and height."
       ]
     },
     {
@@ -141,7 +141,7 @@
   "fails": [],
   "features": [
     "https://api.github.com/repos/adamwong246/testeranto/issues/8",
-    "Rectangles have width and height",
+    "Rectangles have width and height.",
     "Rectangles have area",
     "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md"
   ]

@@ -9,7 +9,7 @@ import {
 var rectangle_default = "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md";
 
 // src/Rectangle.test.specification.ts
-var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then) => {
+var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check) => {
   return [
     Suite.Default(
       "Testing the Rectangle class",
@@ -20,7 +20,7 @@ var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then) => {
           [Then.getWidth(4), Then.getHeight(9)]
         ),
         test1: Given.Default(
-          [`Rectangles have width and height`],
+          [`Rectangles have width and height.`],
           [When.setWidth(4), When.setHeight(5)],
           [
             Then.getWidth(4),

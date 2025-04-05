@@ -193,7 +193,7 @@
         "imports": []
       },
       "src/Rectangle.test.specification.ts": {
-        "bytes": 1875,
+        "bytes": 1883,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -2547,7 +2547,7 @@
             "bytesInOutput": 88
           },
           "src/Rectangle.test.specification.ts": {
-            "bytesInOutput": 1648
+            "bytesInOutput": 1656
           },
           "src/Rectangle.ts": {
             "bytesInOutput": 479
@@ -2562,7 +2562,7 @@
             "bytesInOutput": 344
           }
         },
-        "bytes": 4985
+        "bytes": 4993
       },
       "docs/web/src/LoginPage/react-dom/web.test.mjs": {
         "imports": [

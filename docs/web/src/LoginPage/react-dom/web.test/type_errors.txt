@@ -39,9 +39,9 @@
     Type 'Promise<void>' provides no match for the signature '(w: unknown, p: PM): void'.
 /Users/adam/Code/kokomoBay/testeranto.mts (1,29): File '/Users/adam/Code/testeranto/src/lib/types.ts' is not under 'rootDir' '/Users/adam/Code/kokomoBay/src'. 'rootDir' is expected to contain all source files.
   The file is in the program because:
-    Imported via "testeranto/src/lib/types.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/types.ts@0.100.0'
+    Imported via "testeranto/src/lib/types.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/types.ts@0.101.0'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
-    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.100.0'
+    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.101.0'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
@@ -56,8 +56,8 @@
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/LoginPage/test.ts' with packageId 'testeranto/src/Types.ts@0.100.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/LoginPage/react-dom/test.tsx' with packageId 'testeranto/src/Types.ts@0.100.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/LoginPage/test.ts' with packageId 'testeranto/src/Types.ts@0.101.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/LoginPage/react-dom/test.tsx' with packageId 'testeranto/src/Types.ts@0.101.0'
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (42,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (44,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (141,30): A spread argument must either have a tuple type or be passed to a rest parameter.
@@ -97,7 +97,7 @@
     Imported via "../PM/index.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "../PM/index.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "../PM/index" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
-    Imported via "testeranto/src/PM" from file '/Users/adam/Code/kokomoBay/src/LoginPage/test.ts' with packageId 'testeranto/src/PM/index.ts@0.100.0'
+    Imported via "testeranto/src/PM" from file '/Users/adam/Code/kokomoBay/src/LoginPage/test.ts' with packageId 'testeranto/src/PM/index.ts@0.101.0'
     Imported via "../../../../testeranto/src/PM/index.js" from file '/Users/adam/Code/kokomoBay/src/LoginPage/react-dom/test.tsx'
 /Users/adam/Code/testeranto/src/lib/index.ts (11,10): Module '"./types.js"' has no exported member 'ITestInterface'.
 /Users/adam/Code/testeranto/src/lib/types.ts (11,8): File '/Users/adam/Code/testeranto/src/lib/abstractBase.ts' is not under 'rootDir' '/Users/adam/Code/kokomoBay/src'. 'rootDir' is expected to contain all source files.

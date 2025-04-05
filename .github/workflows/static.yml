@@ -41,7 +41,7 @@ jobs:
         name: static-site
         
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: static-site
           path: ./docs/ # Or the path to your built files

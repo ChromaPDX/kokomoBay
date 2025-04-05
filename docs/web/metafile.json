@@ -2,7 +2,3127 @@
   "errors": [],
   "warnings": [],
   "metafile": {
-    "inputs": {},
-    "outputs": {}
+    "inputs": {
+      "../testeranto/src/PM/index.ts": {
+        "bytes": 1481,
+        "imports": [
+          {
+            "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "puppeteer-core/lib/esm/puppeteer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/PM/web.ts": {
+        "bytes": 7082,
+        "imports": [
+          {
+            "path": "stream",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../lib",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/PM/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "puppeteer-core",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "puppeteer-core/lib/esm/puppeteer",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/index.ts": {
+        "bytes": 3959,
+        "imports": [
+          {
+            "path": "../../dist/types/src/Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./abstractBase.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/abstractBase.ts": {
+        "bytes": 15965,
+        "imports": [
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": ".",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../../dist/types/src/Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/basebuilder.ts": {
+        "bytes": 5767,
+        "imports": [
+          {
+            "path": "stream",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": ".",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./abstractBase.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/classBuilder.ts": {
+        "bytes": 3168,
+        "imports": [
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/lib/basebuilder.ts",
+            "kind": "import-statement",
+            "original": "./basebuilder.js"
+          },
+          {
+            "path": "./types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./index.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/lib/core.ts": {
+        "bytes": 6574,
+        "imports": [
+          {
+            "path": "../SubPackages/react/jsx",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../Types.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../PM/index",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/lib/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "../testeranto/src/lib/abstractBase.ts",
+            "kind": "import-statement",
+            "original": "./abstractBase.js"
+          },
+          {
+            "path": "../testeranto/src/lib/classBuilder.ts",
+            "kind": "import-statement",
+            "original": "./classBuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/Web.ts": {
+        "bytes": 3325,
+        "imports": [
+          {
+            "path": "../testeranto/src/PM/web.ts",
+            "kind": "import-statement",
+            "original": "./PM/web"
+          },
+          {
+            "path": "../testeranto/src/lib/core.ts",
+            "kind": "import-statement",
+            "original": "./lib/core.js"
+          },
+          {
+            "path": "../testeranto/src/lib/index.ts",
+            "kind": "import-statement",
+            "original": "./lib/index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
+        "bytes": 60,
+        "imports": []
+      },
+      "src/Rectangle.test.specification.ts": {
+        "bytes": 1883,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md",
+            "kind": "import-statement",
+            "original": "./Rectangle/rectangle.md"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/assertion-error/index.js": {
+        "bytes": 2429,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/pathval/index.js": {
+        "bytes": 7808,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/flag.js": {
+        "bytes": 812,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/test.js": {
+        "bytes": 540,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/type-detect/type-detect.js": {
+        "bytes": 5728,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/expectTypes.js": {
+        "bytes": 1433,
+        "imports": [
+          {
+            "path": "node_modules/assertion-error/index.js",
+            "kind": "require-call",
+            "original": "assertion-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getActual.js": {
+        "bytes": 467,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/get-func-name/index.js": {
+        "bytes": 1506,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/loupe/loupe.js": {
+        "bytes": 28534,
+        "imports": [
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/config.js": {
+        "bytes": 3794,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/inspect.js": {
+        "bytes": 1152,
+        "imports": [
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          },
+          {
+            "path": "node_modules/loupe/loupe.js",
+            "kind": "require-call",
+            "original": "loupe"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/objDisplay.js": {
+        "bytes": 1266,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getMessage.js": {
+        "bytes": 1370,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getActual.js",
+            "kind": "require-call",
+            "original": "./getActual"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
+            "kind": "require-call",
+            "original": "./objDisplay"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/transferFlags.js": {
+        "bytes": 1361,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/deep-eql/index.js": {
+        "bytes": 16380,
+        "imports": [
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
+        "bytes": 579,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addProperty.js": {
+        "bytes": 2452,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
+        "bytes": 2376,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getProperties.js": {
+        "bytes": 789,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/proxify.js": {
+        "bytes": 5224,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "../config"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getProperties.js",
+            "kind": "require-call",
+            "original": "./getProperties"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addMethod.js": {
+        "bytes": 2179,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
+        "bytes": 3281,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
+        "bytes": 3100,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
+        "bytes": 5448,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
+        "bytes": 2150,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "../../chai"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/compareByInspect.js": {
+        "bytes": 808,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
+        "bytes": 819,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
+        "bytes": 785,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerablePropertySymbols"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/check-error/index.js": {
+        "bytes": 4433,
+        "imports": [
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/isNaN.js": {
+        "bytes": 590,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/getOperator.js": {
+        "bytes": 1252,
+        "imports": [
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/utils/index.js": {
+        "bytes": 2540,
+        "imports": [
+          {
+            "path": "node_modules/pathval/index.js",
+            "kind": "require-call",
+            "original": "pathval"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/test.js",
+            "kind": "require-call",
+            "original": "./test"
+          },
+          {
+            "path": "node_modules/type-detect/type-detect.js",
+            "kind": "require-call",
+            "original": "type-detect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/expectTypes.js",
+            "kind": "require-call",
+            "original": "./expectTypes"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getMessage.js",
+            "kind": "require-call",
+            "original": "./getMessage"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getActual.js",
+            "kind": "require-call",
+            "original": "./getActual"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/inspect.js",
+            "kind": "require-call",
+            "original": "./inspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/objDisplay.js",
+            "kind": "require-call",
+            "original": "./objDisplay"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/flag.js",
+            "kind": "require-call",
+            "original": "./flag"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/transferFlags.js",
+            "kind": "require-call",
+            "original": "./transferFlags"
+          },
+          {
+            "path": "node_modules/deep-eql/index.js",
+            "kind": "require-call",
+            "original": "deep-eql"
+          },
+          {
+            "path": "node_modules/get-func-name/index.js",
+            "kind": "require-call",
+            "original": "get-func-name"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addProperty.js",
+            "kind": "require-call",
+            "original": "./addProperty"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addMethod.js",
+            "kind": "require-call",
+            "original": "./addMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteProperty.js",
+            "kind": "require-call",
+            "original": "./overwriteProperty"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteMethod.js",
+            "kind": "require-call",
+            "original": "./overwriteMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addChainableMethod.js",
+            "kind": "require-call",
+            "original": "./addChainableMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js",
+            "kind": "require-call",
+            "original": "./overwriteChainableMethod"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/compareByInspect.js",
+            "kind": "require-call",
+            "original": "./compareByInspect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerablePropertySymbols"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js",
+            "kind": "require-call",
+            "original": "./getOwnEnumerableProperties"
+          },
+          {
+            "path": "node_modules/check-error/index.js",
+            "kind": "require-call",
+            "original": "check-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/proxify.js",
+            "kind": "require-call",
+            "original": "./proxify"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/addLengthGuard.js",
+            "kind": "require-call",
+            "original": "./addLengthGuard"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isProxyEnabled.js",
+            "kind": "require-call",
+            "original": "./isProxyEnabled"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/isNaN.js",
+            "kind": "require-call",
+            "original": "./isNaN"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/getOperator.js",
+            "kind": "require-call",
+            "original": "./getOperator"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/assertion.js": {
+        "bytes": 6118,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "./config"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/core/assertions.js": {
+        "bytes": 134747,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/expect.js": {
+        "bytes": 1142,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/should.js": {
+        "bytes": 6225,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai/interface/assert.js": {
+        "bytes": 93320,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/chai/lib/chai.js": {
+        "bytes": 1258,
+        "imports": [
+          {
+            "path": "node_modules/assertion-error/index.js",
+            "kind": "require-call",
+            "original": "assertion-error"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/utils/index.js",
+            "kind": "require-call",
+            "original": "./chai/utils"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/config.js",
+            "kind": "require-call",
+            "original": "./chai/config"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/assertion.js",
+            "kind": "require-call",
+            "original": "./chai/assertion"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/core/assertions.js",
+            "kind": "require-call",
+            "original": "./chai/core/assertions"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/expect.js",
+            "kind": "require-call",
+            "original": "./chai/interface/expect"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/should.js",
+            "kind": "require-call",
+            "original": "./chai/interface/should"
+          },
+          {
+            "path": "node_modules/chai/lib/chai/interface/assert.js",
+            "kind": "require-call",
+            "original": "./chai/interface/assert"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/index.js": {
+        "bytes": 40,
+        "imports": [
+          {
+            "path": "node_modules/chai/lib/chai.js",
+            "kind": "require-call",
+            "original": "./lib/chai"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/chai/index.mjs": {
+        "bytes": 414,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.ts": {
+        "bytes": 563,
+        "imports": [],
+        "format": "esm"
+      },
+      "src/Rectangle.test.implementation.ts": {
+        "bytes": 2557,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "./Rectangle"
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle.test.interface.ts": {
+        "bytes": 460,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/Rectangle/Rectangle.test.web.ts": {
+        "bytes": 874,
+        "imports": [
+          {
+            "path": "../testeranto/src/Web.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/Web"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.test.specification.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.specification"
+          },
+          {
+            "path": "src/Rectangle.test.implementation.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.implementation"
+          },
+          {
+            "path": "src/Rectangle.test.interface.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle.test.interface"
+          },
+          {
+            "path": "../Rectangle.test.shape",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/Rectangle.ts",
+            "kind": "import-statement",
+            "original": "../Rectangle"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react/cjs/react.development.js": {
+        "bytes": 87574,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react/index.js": {
+        "bytes": 190,
+        "imports": [
+          {
+            "path": "node_modules/react/cjs/react.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/src/SubPackages/react/jsx/index.ts": {
+        "bytes": 1473,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../../../Types",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/src/SubPackages/react/jsx/web.ts": {
+        "bytes": 813,
+        "imports": [
+          {
+            "path": "../../../Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../testeranto/src/Web.ts",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/src/SubPackages/react/jsx/index.ts",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
+        "bytes": 3457,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/shim/index.js": {
+        "bytes": 234,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js": {
+        "bytes": 3526,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/use-sync-external-store/shim/index.js",
+            "kind": "require-call",
+            "original": "use-sync-external-store/shim"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/use-sync-external-store/shim/with-selector.js": {
+        "bytes": 262,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js",
+            "kind": "require-call",
+            "original": "../cjs/use-sync-external-store-shim/with-selector.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/cjs/scheduler.development.js": {
+        "bytes": 17497,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/index.js": {
+        "bytes": 198,
+        "imports": [
+          {
+            "path": "node_modules/scheduler/cjs/scheduler.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom.development.js": {
+        "bytes": 1026501,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/index.js": {
+        "bytes": 1363,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/cjs/react-dom.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/es/utils/reactBatchedUpdates.js": {
+        "bytes": 52,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/index.js",
+            "kind": "import-statement",
+            "original": "react-dom"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/batch.js": {
+        "bytes": 359,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/components/Context.js": {
+        "bytes": 843,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/hooks/useReduxContext.js": {
+        "bytes": 1346,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "../components/Context"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/useSyncExternalStore.js": {
+        "bytes": 84,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/hooks/useSelector.js": {
+        "bytes": 5218,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useReduxContext.js",
+            "kind": "import-statement",
+            "original": "./useReduxContext"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/useSyncExternalStore.js",
+            "kind": "import-statement",
+            "original": "../utils/useSyncExternalStore"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/extends.js": {
+        "bytes": 336,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js": {
+        "bytes": 270,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js": {
+        "bytes": 6980,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/node_modules/react-is/index.js": {
+        "bytes": 196,
+        "imports": [
+          {
+            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": {
+        "bytes": 2743,
+        "imports": [
+          {
+            "path": "node_modules/hoist-non-react-statics/node_modules/react-is/index.js",
+            "kind": "require-call",
+            "original": "react-is"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-is/cjs/react-is.development.js": {
+        "bytes": 7359,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/react-is/index.js": {
+        "bytes": 196,
+        "imports": [
+          {
+            "path": "node_modules/react-is/cjs/react-is.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-is.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-redux/es/utils/warning.js": {
+        "bytes": 645,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/verifySubselectors.js": {
+        "bytes": 688,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/utils/warning.js",
+            "kind": "import-statement",
+            "original": "../utils/warning"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/selectorFactory.js": {
+        "bytes": 3317,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+            "kind": "import-statement",
+            "original": "@babel/runtime/helpers/esm/objectWithoutPropertiesLoose"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/verifySubselectors.js",
+            "kind": "import-statement",
+            "original": "./verifySubselectors"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/bindActionCreators.js": {
+        "bytes": 361,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/isPlainObject.js": {
+        "bytes": 476,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/verifyPlainObject.js": {
+        "bytes": 295,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/utils/isPlainObject.js",
+            "kind": "import-statement",
+            "original": "./isPlainObject"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/warning.js",
+            "kind": "import-statement",
+            "original": "./warning"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/wrapMapToProps.js": {
+        "bytes": 3056,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/utils/verifyPlainObject.js",
+            "kind": "import-statement",
+            "original": "../utils/verifyPlainObject"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/invalidArgFactory.js": {
+        "bytes": 233,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/mapDispatchToProps.js": {
+        "bytes": 714,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/utils/bindActionCreators.js",
+            "kind": "import-statement",
+            "original": "../utils/bindActionCreators"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/wrapMapToProps.js",
+            "kind": "import-statement",
+            "original": "./wrapMapToProps"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/invalidArgFactory.js",
+            "kind": "import-statement",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/mapStateToProps.js": {
+        "bytes": 440,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/connect/wrapMapToProps.js",
+            "kind": "import-statement",
+            "original": "./wrapMapToProps"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/invalidArgFactory.js",
+            "kind": "import-statement",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/connect/mergeProps.js": {
+        "bytes": 1260,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/extends.js",
+            "kind": "import-statement",
+            "original": "@babel/runtime/helpers/esm/extends"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/verifyPlainObject.js",
+            "kind": "import-statement",
+            "original": "../utils/verifyPlainObject"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/invalidArgFactory.js",
+            "kind": "import-statement",
+            "original": "./invalidArgFactory"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/Subscription.js": {
+        "bytes": 3374,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/utils/batch.js",
+            "kind": "import-statement",
+            "original": "./batch"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js": {
+        "bytes": 964,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/utils/shallowEqual.js": {
+        "bytes": 658,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/components/connect.js": {
+        "bytes": 19641,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/extends.js",
+            "kind": "import-statement",
+            "original": "@babel/runtime/helpers/esm/extends"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+            "kind": "import-statement",
+            "original": "@babel/runtime/helpers/esm/objectWithoutPropertiesLoose"
+          },
+          {
+            "path": "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+            "kind": "import-statement",
+            "original": "hoist-non-react-statics"
+          },
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react-is/index.js",
+            "kind": "import-statement",
+            "original": "react-is"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/selectorFactory.js",
+            "kind": "import-statement",
+            "original": "../connect/selectorFactory"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/mapDispatchToProps.js",
+            "kind": "import-statement",
+            "original": "../connect/mapDispatchToProps"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/mapStateToProps.js",
+            "kind": "import-statement",
+            "original": "../connect/mapStateToProps"
+          },
+          {
+            "path": "node_modules/react-redux/es/connect/mergeProps.js",
+            "kind": "import-statement",
+            "original": "../connect/mergeProps"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/Subscription.js",
+            "kind": "import-statement",
+            "original": "../utils/Subscription"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js",
+            "kind": "import-statement",
+            "original": "../utils/useIsomorphicLayoutEffect"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/shallowEqual.js",
+            "kind": "import-statement",
+            "original": "../utils/shallowEqual"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/warning.js",
+            "kind": "import-statement",
+            "original": "../utils/warning"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "./Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/useSyncExternalStore.js",
+            "kind": "import-statement",
+            "original": "../utils/useSyncExternalStore"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/components/Provider.js": {
+        "bytes": 1451,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "./Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/Subscription.js",
+            "kind": "import-statement",
+            "original": "../utils/Subscription"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js",
+            "kind": "import-statement",
+            "original": "../utils/useIsomorphicLayoutEffect"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/hooks/useStore.js": {
+        "bytes": 1115,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useReduxContext.js",
+            "kind": "import-statement",
+            "original": "./useReduxContext"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/hooks/useDispatch.js": {
+        "bytes": 1334,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "../components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useStore.js",
+            "kind": "import-statement",
+            "original": "./useStore"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/types.js": {
+        "bytes": 10,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/exports.js": {
+        "bytes": 581,
+        "imports": [
+          {
+            "path": "node_modules/react-redux/es/components/Provider.js",
+            "kind": "import-statement",
+            "original": "./components/Provider"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/connect.js",
+            "kind": "import-statement",
+            "original": "./components/connect"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/Context.js",
+            "kind": "import-statement",
+            "original": "./components/Context"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useDispatch.js",
+            "kind": "import-statement",
+            "original": "./hooks/useDispatch"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useSelector.js",
+            "kind": "import-statement",
+            "original": "./hooks/useSelector"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useStore.js",
+            "kind": "import-statement",
+            "original": "./hooks/useStore"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/shallowEqual.js",
+            "kind": "import-statement",
+            "original": "./utils/shallowEqual"
+          },
+          {
+            "path": "node_modules/react-redux/es/types.js",
+            "kind": "import-statement",
+            "original": "./types"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react-redux/es/index.js": {
+        "bytes": 908,
+        "imports": [
+          {
+            "path": "node_modules/use-sync-external-store/shim/index.js",
+            "kind": "import-statement",
+            "original": "use-sync-external-store/shim"
+          },
+          {
+            "path": "node_modules/use-sync-external-store/shim/with-selector.js",
+            "kind": "import-statement",
+            "original": "use-sync-external-store/shim/with-selector"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/reactBatchedUpdates.js",
+            "kind": "import-statement",
+            "original": "./utils/reactBatchedUpdates"
+          },
+          {
+            "path": "node_modules/react-redux/es/utils/batch.js",
+            "kind": "import-statement",
+            "original": "./utils/batch"
+          },
+          {
+            "path": "node_modules/react-redux/es/hooks/useSelector.js",
+            "kind": "import-statement",
+            "original": "./hooks/useSelector"
+          },
+          {
+            "path": "node_modules/react-redux/es/components/connect.js",
+            "kind": "import-statement",
+            "original": "./components/connect"
+          },
+          {
+            "path": "node_modules/react-redux/es/exports.js",
+            "kind": "import-statement",
+            "original": "./exports"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/immer/dist/immer.esm.mjs": {
+        "bytes": 18424,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/typeof.js": {
+        "bytes": 366,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/toPrimitive.js": {
+        "bytes": 407,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/typeof.js",
+            "kind": "import-statement",
+            "original": "./typeof.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/toPropertyKey.js": {
+        "bytes": 227,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/typeof.js",
+            "kind": "import-statement",
+            "original": "./typeof.js"
+          },
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/toPrimitive.js",
+            "kind": "import-statement",
+            "original": "./toPrimitive.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/defineProperty.js": {
+        "bytes": 286,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/toPropertyKey.js",
+            "kind": "import-statement",
+            "original": "./toPropertyKey.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/@babel/runtime/helpers/esm/objectSpread2.js": {
+        "bytes": 843,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/defineProperty.js",
+            "kind": "import-statement",
+            "original": "./defineProperty.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/redux/es/redux.js": {
+        "bytes": 27277,
+        "imports": [
+          {
+            "path": "node_modules/@babel/runtime/helpers/esm/objectSpread2.js",
+            "kind": "import-statement",
+            "original": "@babel/runtime/helpers/esm/objectSpread2"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/reselect/es/defaultMemoize.js": {
+        "bytes": 3745,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/reselect/es/index.js": {
+        "bytes": 5317,
+        "imports": [
+          {
+            "path": "node_modules/reselect/es/defaultMemoize.js",
+            "kind": "import-statement",
+            "original": "./defaultMemoize"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/redux-thunk/es/index.js": {
+        "bytes": 1304,
+        "imports": [],
+        "format": "esm"
+      },
+      "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js": {
+        "bytes": 88715,
+        "imports": [
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          },
+          {
+            "path": "node_modules/redux/es/redux.js",
+            "kind": "import-statement",
+            "original": "redux"
+          },
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          },
+          {
+            "path": "node_modules/reselect/es/index.js",
+            "kind": "import-statement",
+            "original": "reselect"
+          },
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          },
+          {
+            "path": "node_modules/reselect/es/index.js",
+            "kind": "import-statement",
+            "original": "reselect"
+          },
+          {
+            "path": "node_modules/redux/es/redux.js",
+            "kind": "import-statement",
+            "original": "redux"
+          },
+          {
+            "path": "node_modules/redux/es/redux.js",
+            "kind": "import-statement",
+            "original": "redux"
+          },
+          {
+            "path": "node_modules/redux-thunk/es/index.js",
+            "kind": "import-statement",
+            "original": "redux-thunk"
+          },
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          },
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          },
+          {
+            "path": "node_modules/immer/dist/immer.esm.mjs",
+            "kind": "import-statement",
+            "original": "immer"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/app.ts": {
+        "bytes": 3617,
+        "imports": [
+          {
+            "path": "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js",
+            "kind": "import-statement",
+            "original": "@reduxjs/toolkit"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/react/cjs/react-jsx-runtime.development.js": {
+        "bytes": 41746,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react/jsx-runtime.js": {
+        "bytes": 214,
+        "imports": [
+          {
+            "path": "node_modules/react/cjs/react-jsx-runtime.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-jsx-runtime.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "src/LoginPage/index.tsx": {
+        "bytes": 2945,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/react-redux/es/index.js",
+            "kind": "import-statement",
+            "original": "react-redux"
+          },
+          {
+            "path": "src/app.ts",
+            "kind": "import-statement",
+            "original": "../app.js"
+          },
+          {
+            "path": "node_modules/react/jsx-runtime.js",
+            "kind": "import-statement",
+            "original": "react/jsx-runtime"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/test.ts": {
+        "bytes": 4900,
+        "imports": [
+          {
+            "path": "testeranto/src/PM",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react/test.tsx": {
+        "bytes": 3137,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react/web.test.tsx": {
+        "bytes": 389,
+        "imports": [
+          {
+            "path": "../testeranto/src/SubPackages/react/jsx/web.ts",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react/jsx/web"
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/LoginPage/test.ts",
+            "kind": "import-statement",
+            "original": "../test.js"
+          },
+          {
+            "path": "src/LoginPage/react/test.tsx",
+            "kind": "import-statement",
+            "original": "./test.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/PM/index.js": {
+        "bytes": 39,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/PM/web.js": {
+        "bytes": 4248,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/PM/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/lib/index.js": {
+        "bytes": 530,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/lib/abstractBase.js": {
+        "bytes": 12156,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/lib/basebuilder.js": {
+        "bytes": 3594,
+        "imports": [],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/lib/classBuilder.js": {
+        "bytes": 2006,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/lib/basebuilder.js",
+            "kind": "import-statement",
+            "original": "./basebuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/lib/core.js": {
+        "bytes": 4979,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/lib/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          },
+          {
+            "path": "../testeranto/dist/module/lib/abstractBase.js",
+            "kind": "import-statement",
+            "original": "./abstractBase.js"
+          },
+          {
+            "path": "../testeranto/dist/module/lib/classBuilder.js",
+            "kind": "import-statement",
+            "original": "./classBuilder.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/Web.js": {
+        "bytes": 2114,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/PM/web.js",
+            "kind": "import-statement",
+            "original": "./PM/web"
+          },
+          {
+            "path": "../testeranto/dist/module/lib/core.js",
+            "kind": "import-statement",
+            "original": "./lib/core.js"
+          },
+          {
+            "path": "../testeranto/dist/module/lib/index.js",
+            "kind": "import-statement",
+            "original": "./lib/index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+        "bytes": 17457,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/unstable_mock.js": {
+        "bytes": 226,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler-unstable_mock.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+        "bytes": 17497,
+        "imports": [],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/scheduler/index.js": {
+        "bytes": 198,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/scheduler/cjs/scheduler.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+        "bytes": 645765,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/unstable_mock.js",
+            "kind": "require-call",
+            "original": "scheduler/unstable_mock"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-test-renderer/index.js": {
+        "bytes": 218,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-test-renderer.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/index.js": {
+        "bytes": 1015,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/web.js": {
+        "bytes": 273,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/Web.js",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/index.js",
+            "kind": "import-statement",
+            "original": "./index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+        "bytes": 17457,
+        "imports": [],
+        "format": "cjs"
+      },
+      "node_modules/scheduler/unstable_mock.js": {
+        "bytes": 226,
+        "imports": [
+          {
+            "path": "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js",
+            "kind": "require-call",
+            "original": "./cjs/scheduler-unstable_mock.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+        "bytes": 645765,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/scheduler/unstable_mock.js",
+            "kind": "require-call",
+            "original": "scheduler/unstable_mock"
+          },
+          {
+            "path": "node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-test-renderer/index.js": {
+        "bytes": 218,
+        "imports": [
+          {
+            "path": "node_modules/react-test-renderer/cjs/react-test-renderer.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-test-renderer.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "src/LoginPage/react-test-renderer/test.tsx": {
+        "bytes": 1424,
+        "imports": [
+          {
+            "path": "node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          },
+          {
+            "path": "testeranto/src/lib/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../test.js",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/LoginPage/react-test-renderer/web.test.tsx": {
+        "bytes": 3642,
+        "imports": [
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/web.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-test-renderer/jsx/web.js"
+          },
+          {
+            "path": "src/LoginPage/test.ts",
+            "kind": "import-statement",
+            "original": "../test.js"
+          },
+          {
+            "path": "src/LoginPage/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/LoginPage/react-test-renderer/test.tsx",
+            "kind": "import-statement",
+            "original": "./test.js"
+          },
+          {
+            "path": "react-test-renderer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "testeranto/src/PM/index.js",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/node_modules/react-dom/cjs/react-dom.development.js": {
+        "bytes": 1026501,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "require-call",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/scheduler/index.js",
+            "kind": "require-call",
+            "original": "scheduler"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-dom/index.js": {
+        "bytes": 1363,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/react-dom/cjs/react-dom.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/node_modules/react-dom/client.js": {
+        "bytes": 619,
+        "imports": [
+          {
+            "path": "../testeranto/node_modules/react-dom/index.js",
+            "kind": "require-call",
+            "original": "react-dom"
+          }
+        ],
+        "format": "cjs"
+      },
+      "../testeranto/dist/module/SubPackages/react-dom/component/web.js": {
+        "bytes": 2433,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/react-dom/client.js",
+            "kind": "import-statement",
+            "original": "react-dom/client"
+          },
+          {
+            "path": "../testeranto/dist/module/Web.js",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/index.tsx": {
+        "bytes": 768,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "node_modules/react/jsx-runtime.js",
+            "kind": "import-statement",
+            "original": "react/jsx-runtime"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/test.specification.ts": {
+        "bytes": 1642,
+        "imports": [
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "./test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/react-dom/client.web.test.tsx": {
+        "bytes": 1997,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/SubPackages/react-dom/component/web.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-dom/component/web"
+          },
+          {
+            "path": "testeranto/src/Types",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "react-dom/client",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "src/ClassicalComponent/index.tsx",
+            "kind": "import-statement",
+            "original": ".."
+          },
+          {
+            "path": "src/ClassicalComponent/test.specification.ts",
+            "kind": "import-statement",
+            "original": "../test.specification"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/SubPackages/react-test-renderer/component/interface.js": {
+        "bytes": 958,
+        "imports": [
+          {
+            "path": "node_modules/react/index.js",
+            "kind": "import-statement",
+            "original": "react"
+          },
+          {
+            "path": "../testeranto/node_modules/react-test-renderer/index.js",
+            "kind": "import-statement",
+            "original": "react-test-renderer"
+          }
+        ],
+        "format": "esm"
+      },
+      "../testeranto/dist/module/SubPackages/react-test-renderer/component/web.js": {
+        "bytes": 237,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/Web.js",
+            "kind": "import-statement",
+            "original": "../../../Web.js"
+          },
+          {
+            "path": "../testeranto/dist/module/SubPackages/react-test-renderer/component/interface.js",
+            "kind": "import-statement",
+            "original": "./interface"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
+        "bytes": 1374,
+        "imports": [
+          {
+            "path": "react-test-renderer",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "node_modules/chai/index.mjs",
+            "kind": "import-statement",
+            "original": "chai"
+          },
+          {
+            "path": "testeranto/src/SubPackages/react-test-renderer/component/index",
+            "kind": "import-statement",
+            "external": true
+          },
+          {
+            "path": "../test.shape",
+            "kind": "import-statement",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+        "bytes": 357,
+        "imports": [
+          {
+            "path": "../testeranto/dist/module/SubPackages/react-test-renderer/component/web.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-test-renderer/component/web"
+          },
+          {
+            "path": "src/ClassicalComponent/index.tsx",
+            "kind": "import-statement",
+            "original": "../index.js"
+          },
+          {
+            "path": "src/ClassicalComponent/test.specification.ts",
+            "kind": "import-statement",
+            "original": "../test.specification.js"
+          },
+          {
+            "path": "src/ClassicalComponent/react-test-renderer/test.implementation.ts",
+            "kind": "import-statement",
+            "original": "./test.implementation.js"
+          }
+        ],
+        "format": "esm"
+      }
+    },
+    "outputs": {
+      "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-UC3E72WP.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/Rectangle/Rectangle.test.web.ts",
+        "inputs": {
+          "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
+            "bytesInOutput": 88
+          },
+          "src/Rectangle.test.specification.ts": {
+            "bytesInOutput": 1656
+          },
+          "src/Rectangle.ts": {
+            "bytesInOutput": 479
+          },
+          "src/Rectangle.test.implementation.ts": {
+            "bytesInOutput": 1746
+          },
+          "src/Rectangle.test.interface.ts": {
+            "bytesInOutput": 264
+          },
+          "src/Rectangle/Rectangle.test.web.ts": {
+            "bytesInOutput": 344
+          }
+        },
+        "bytes": 4993
+      },
+      "docs/web/src/LoginPage/react/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-UC3E72WP.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-MV47XNUW.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react/web.test.tsx",
+        "inputs": {
+          "../testeranto/src/SubPackages/react/jsx/index.ts": {
+            "bytesInOutput": 424
+          },
+          "../testeranto/src/SubPackages/react/jsx/web.ts": {
+            "bytesInOutput": 220
+          },
+          "src/LoginPage/react/test.tsx": {
+            "bytesInOutput": 2511
+          },
+          "src/LoginPage/react/web.test.tsx": {
+            "bytesInOutput": 209
+          }
+        },
+        "bytes": 3876
+      },
+      "docs/web/chunk-UC3E72WP.mjs": {
+        "imports": [],
+        "exports": [
+          "Web_default"
+        ],
+        "inputs": {
+          "../testeranto/src/PM/index.ts": {
+            "bytesInOutput": 20
+          },
+          "../testeranto/src/PM/web.ts": {
+            "bytesInOutput": 4882
+          },
+          "../testeranto/src/lib/index.ts": {
+            "bytesInOutput": 459
+          },
+          "../testeranto/src/lib/abstractBase.ts": {
+            "bytesInOutput": 9975
+          },
+          "../testeranto/src/lib/basebuilder.ts": {
+            "bytesInOutput": 3333
+          },
+          "../testeranto/src/lib/classBuilder.ts": {
+            "bytesInOutput": 2262
+          },
+          "../testeranto/src/lib/core.ts": {
+            "bytesInOutput": 3748
+          },
+          "../testeranto/src/Web.ts": {
+            "bytesInOutput": 1835
+          }
+        },
+        "bytes": 26829
+      },
+      "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-MV47XNUW.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-UJ3YFGCS.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/LoginPage/react-test-renderer/web.test.tsx",
+        "inputs": {
+          "node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19167
+          },
+          "node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 265
+          },
+          "node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565757
+          },
+          "node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 270
+          },
+          "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/index.js": {
+            "bytesInOutput": 681
+          },
+          "../testeranto/dist/module/SubPackages/react-test-renderer/jsx/web.js": {
+            "bytesInOutput": 201
+          },
+          "src/LoginPage/react-test-renderer/test.tsx": {
+            "bytesInOutput": 881
+          },
+          "src/LoginPage/react-test-renderer/web.test.tsx": {
+            "bytesInOutput": 2983
+          }
+        },
+        "bytes": 591872
+      },
+      "docs/web/chunk-MV47XNUW.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "LoginPageSpecs",
+          "LoginPage_default",
+          "actions",
+          "credErrorId",
+          "credentialFailWarning",
+          "emailwarning",
+          "require_scheduler",
+          "store"
+        ],
+        "inputs": {
+          "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
+            "bytesInOutput": 3238
+          },
+          "node_modules/use-sync-external-store/shim/index.js": {
+            "bytesInOutput": 272
+          },
+          "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js": {
+            "bytesInOutput": 3312
+          },
+          "node_modules/use-sync-external-store/shim/with-selector.js": {
+            "bytesInOutput": 274
+          },
+          "node_modules/scheduler/cjs/scheduler.development.js": {
+            "bytesInOutput": 16903
+          },
+          "node_modules/scheduler/index.js": {
+            "bytesInOutput": 239
+          },
+          "node_modules/react-dom/cjs/react-dom.development.js": {
+            "bytesInOutput": 906896
+          },
+          "node_modules/react-dom/index.js": {
+            "bytesInOutput": 257
+          },
+          "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js": {
+            "bytesInOutput": 7556
+          },
+          "node_modules/hoist-non-react-statics/node_modules/react-is/index.js": {
+            "bytesInOutput": 273
+          },
+          "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": {
+            "bytesInOutput": 2936
+          },
+          "node_modules/react-is/cjs/react-is.development.js": {
+            "bytesInOutput": 7765
+          },
+          "node_modules/react-is/index.js": {
+            "bytesInOutput": 238
+          },
+          "node_modules/react-redux/es/index.js": {
+            "bytesInOutput": 287
+          },
+          "node_modules/react-redux/es/utils/reactBatchedUpdates.js": {
+            "bytesInOutput": 53
+          },
+          "node_modules/react-redux/es/utils/batch.js": {
+            "bytesInOutput": 159
+          },
+          "node_modules/react-redux/es/hooks/useSelector.js": {
+            "bytesInOutput": 3843
+          },
+          "node_modules/react-redux/es/hooks/useReduxContext.js": {
+            "bytesInOutput": 461
+          },
+          "node_modules/react-redux/es/components/Context.js": {
+            "bytesInOutput": 794
+          },
+          "node_modules/react-redux/es/utils/useSyncExternalStore.js": {
+            "bytesInOutput": 76
+          },
+          "node_modules/react-redux/es/components/connect.js": {
+            "bytesInOutput": 287
+          },
+          "node_modules/react-redux/es/utils/Subscription.js": {
+            "bytesInOutput": 2983
+          },
+          "node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js": {
+            "bytesInOutput": 275
+          },
+          "node_modules/react-redux/es/components/Provider.js": {
+            "bytesInOutput": 1170
+          },
+          "node_modules/react-redux/es/exports.js": {
+            "bytesInOutput": 0
+          },
+          "node_modules/immer/dist/immer.esm.mjs": {
+            "bytesInOutput": 17807
+          },
+          "node_modules/redux/es/redux.js": {
+            "bytesInOutput": 8398
+          },
+          "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js": {
+            "bytesInOutput": 25663
+          },
+          "node_modules/reselect/es/defaultMemoize.js": {
+            "bytesInOutput": 3011
+          },
+          "node_modules/reselect/es/index.js": {
+            "bytesInOutput": 2824
+          },
+          "src/app.ts": {
+            "bytesInOutput": 2261
+          },
+          "src/LoginPage/index.tsx": {
+            "bytesInOutput": 2542
+          },
+          "src/LoginPage/test.ts": {
+            "bytesInOutput": 3842
+          }
+        },
+        "bytes": 1031506
+      },
+      "docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-G64KNYHW.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/ClassicalComponent/react-dom/client.web.test.tsx",
+        "inputs": {
+          "../testeranto/node_modules/react-dom/cjs/react-dom.development.js": {
+            "bytesInOutput": 906479
+          },
+          "../testeranto/node_modules/react-dom/index.js": {
+            "bytesInOutput": 271
+          },
+          "../testeranto/node_modules/react-dom/client.js": {
+            "bytesInOutput": 792
+          },
+          "../testeranto/dist/module/SubPackages/react-dom/component/web.js": {
+            "bytesInOutput": 1851
+          },
+          "src/ClassicalComponent/react-dom/client.web.test.tsx": {
+            "bytesInOutput": 1393
+          }
+        },
+        "bytes": 912229
+      },
+      "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-UJ3YFGCS.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-G64KNYHW.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "default"
+        ],
+        "entryPoint": "src/ClassicalComponent/react-test-renderer/web.test.tsx",
+        "inputs": {
+          "../testeranto/dist/module/SubPackages/react-test-renderer/component/interface.js": {
+            "bytesInOutput": 1000
+          },
+          "../testeranto/dist/module/SubPackages/react-test-renderer/component/web.js": {
+            "bytesInOutput": 154
+          },
+          "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
+            "bytesInOutput": 1034
+          },
+          "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+            "bytesInOutput": 108
+          }
+        },
+        "bytes": 2994
+      },
+      "docs/web/chunk-UJ3YFGCS.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "require_react_test_renderer"
+        ],
+        "inputs": {
+          "../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js": {
+            "bytesInOutput": 19181
+          },
+          "../testeranto/node_modules/scheduler/unstable_mock.js": {
+            "bytesInOutput": 279
+          },
+          "../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js": {
+            "bytesInOutput": 565765
+          },
+          "../testeranto/node_modules/react-test-renderer/index.js": {
+            "bytesInOutput": 283
+          }
+        },
+        "bytes": 586700
+      },
+      "docs/web/chunk-G64KNYHW.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-ZZ3ODJ3Z.mjs",
+            "kind": "import-statement"
+          },
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "ClassicalComponent",
+          "ClassicalComponentSpec"
+        ],
+        "inputs": {
+          "src/ClassicalComponent/index.tsx": {
+            "bytesInOutput": 1200
+          },
+          "src/ClassicalComponent/test.specification.ts": {
+            "bytesInOutput": 1461
+          }
+        },
+        "bytes": 2936
+      },
+      "docs/web/chunk-YITDVZFE.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "Web_default",
+          "require_scheduler"
+        ],
+        "inputs": {
+          "../testeranto/node_modules/scheduler/cjs/scheduler.development.js": {
+            "bytesInOutput": 16904
+          },
+          "../testeranto/node_modules/scheduler/index.js": {
+            "bytesInOutput": 253
+          },
+          "../testeranto/dist/module/PM/index.js": {
+            "bytesInOutput": 20
+          },
+          "../testeranto/dist/module/PM/web.js": {
+            "bytesInOutput": 2357
+          },
+          "../testeranto/dist/module/lib/index.js": {
+            "bytesInOutput": 473
+          },
+          "../testeranto/dist/module/lib/abstractBase.js": {
+            "bytesInOutput": 8989
+          },
+          "../testeranto/dist/module/lib/basebuilder.js": {
+            "bytesInOutput": 3121
+          },
+          "../testeranto/dist/module/lib/classBuilder.js": {
+            "bytesInOutput": 1780
+          },
+          "../testeranto/dist/module/lib/core.js": {
+            "bytesInOutput": 3236
+          },
+          "../testeranto/dist/module/Web.js": {
+            "bytesInOutput": 1651
+          }
+        },
+        "bytes": 39691
+      },
+      "docs/web/chunk-ZZ3ODJ3Z.mjs": {
+        "imports": [
+          {
+            "path": "docs/web/chunk-SZDDWZIA.mjs",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "require_jsx_runtime",
+          "require_react"
+        ],
+        "inputs": {
+          "node_modules/react/cjs/react.development.js": {
+            "bytesInOutput": 77023
+          },
+          "node_modules/react/index.js": {
+            "bytesInOutput": 227
+          },
+          "node_modules/react/cjs/react-jsx-runtime.development.js": {
+            "bytesInOutput": 35395
+          },
+          "node_modules/react/jsx-runtime.js": {
+            "bytesInOutput": 251
+          }
+        },
+        "bytes": 113809
+      },
+      "docs/web/chunk-SZDDWZIA.mjs": {
+        "imports": [
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "exports": [
+          "__commonJS",
+          "__toESM",
+          "assert"
+        ],
+        "inputs": {
+          "node_modules/assertion-error/index.js": {
+            "bytesInOutput": 1660
+          },
+          "node_modules/pathval/index.js": {
+            "bytesInOutput": 3166
+          },
+          "node_modules/chai/lib/chai/utils/flag.js": {
+            "bytesInOutput": 365
+          },
+          "node_modules/chai/lib/chai/utils/test.js": {
+            "bytesInOutput": 282
+          },
+          "node_modules/type-detect/type-detect.js": {
+            "bytesInOutput": 5646
+          },
+          "node_modules/chai/lib/chai/utils/expectTypes.js": {
+            "bytesInOutput": 1130
+          },
+          "node_modules/chai/lib/chai/utils/getActual.js": {
+            "bytesInOutput": 225
+          },
+          "node_modules/get-func-name/index.js": {
+            "bytesInOutput": 904
+          },
+          "node_modules/loupe/loupe.js": {
+            "bytesInOutput": 27978
+          },
+          "node_modules/chai/lib/chai/config.js": {
+            "bytesInOutput": 4311
+          },
+          "node_modules/chai/lib/chai/utils/inspect.js": {
+            "bytesInOutput": 562
+          },
+          "node_modules/chai/lib/chai/utils/objDisplay.js": {
+            "bytesInOutput": 946
+          },
+          "node_modules/chai/lib/chai/utils/getMessage.js": {
+            "bytesInOutput": 859
+          },
+          "node_modules/chai/lib/chai/utils/transferFlags.js": {
+            "bytesInOutput": 672
+          },
+          "node_modules/deep-eql/index.js": {
+            "bytesInOutput": 11303
+          },
+          "node_modules/chai/lib/chai/utils/isProxyEnabled.js": {
+            "bytesInOutput": 313
+          },
+          "node_modules/chai/lib/chai/utils/addProperty.js": {
+            "bytesInOutput": 957
+          },
+          "node_modules/chai/lib/chai/utils/addLengthGuard.js": {
+            "bytesInOutput": 848
+          },
+          "node_modules/chai/lib/chai/utils/getProperties.js": {
+            "bytesInOutput": 594
+          },
+          "node_modules/chai/lib/chai/utils/proxify.js": {
+            "bytesInOutput": 2791
+          },
+          "node_modules/chai/lib/chai/utils/addMethod.js": {
+            "bytesInOutput": 852
+          },
+          "node_modules/chai/lib/chai/utils/overwriteProperty.js": {
+            "bytesInOutput": 1271
+          },
+          "node_modules/chai/lib/chai/utils/overwriteMethod.js": {
+            "bytesInOutput": 1263
+          },
+          "node_modules/chai/lib/chai/utils/addChainableMethod.js": {
+            "bytesInOutput": 2760
+          },
+          "node_modules/chai/lib/chai/utils/overwriteChainableMethod.js": {
+            "bytesInOutput": 1186
+          },
+          "node_modules/chai/lib/chai/utils/compareByInspect.js": {
+            "bytesInOutput": 274
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js": {
+            "bytesInOutput": 464
+          },
+          "node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js": {
+            "bytesInOutput": 380
+          },
+          "node_modules/check-error/index.js": {
+            "bytesInOutput": 1982
+          },
+          "node_modules/chai/lib/chai/utils/isNaN.js": {
+            "bytesInOutput": 214
+          },
+          "node_modules/chai/lib/chai/utils/getOperator.js": {
+            "bytesInOutput": 1052
+          },
+          "node_modules/chai/lib/chai/utils/index.js": {
+            "bytesInOutput": 1570
+          },
+          "node_modules/chai/lib/chai/assertion.js": {
+            "bytesInOutput": 3500
+          },
+          "node_modules/chai/lib/chai/core/assertions.js": {
+            "bytesInOutput": 48026
+          },
+          "node_modules/chai/lib/chai/interface/expect.js": {
+            "bytesInOutput": 638
+          },
+          "node_modules/chai/lib/chai/interface/should.js": {
+            "bytesInOutput": 2350
+          },
+          "node_modules/chai/lib/chai/interface/assert.js": {
+            "bytesInOutput": 25268
+          },
+          "node_modules/chai/lib/chai.js": {
+            "bytesInOutput": 786
+          },
+          "node_modules/chai/index.js": {
+            "bytesInOutput": 128
+          },
+          "node_modules/chai/index.mjs": {
+            "bytesInOutput": 478
+          }
+        },
+        "bytes": 177369
+      }
+    }
   }
 }

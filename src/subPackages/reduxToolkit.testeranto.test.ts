@@ -84,7 +84,7 @@ export const ReduxToolkitTesteranto = <
     assertThis: (t) => {
       t[0](t[1], t[2], t[3]);
     },
-    beforeEach: (subject, initializer, art, tr, initialValues) => {
+    beforeEach: (subject, initializer, tr, initialValues) => {
       return createStore<IStoreShape, any, any, any>(
         subject.reducer,
         initializer()(initialValues)

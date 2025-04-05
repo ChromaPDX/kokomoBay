@@ -1,0 +1,39 @@
+/Users/adam/Code/kokomoBay/src/ClassicalComponent/react-dom/server.node.test.tsx (49,31): Generic type 'ITestSpecification' requires 2 type argument(s).
+/Users/adam/Code/kokomoBay/src/ClassicalComponent/react-dom/server.node.test.tsx (71,13): Generic type 'IImpl' requires 2 type argument(s).
+/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts (8,10): Module '"testeranto/src/lib/types"' has no exported member 'IPlugin'.
+/Users/adam/Code/kokomoBay/testeranto.mts (1,10): Module '"testeranto/src/lib/types.js"' has no exported member 'IBaseConfig'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (5,27): Cannot find module '../../dist/types/src/Types.js' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (41,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (43,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (158,11): Argument of type '(t: I["then"]) => unknown' is not assignable to parameter of type '(t: Awaited<I["then"]> | undefined) => boolean'.
+  Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (229,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (231,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (232,3): Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (235,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (393,7): Type 'unknown' is not assignable to type 'Error'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (394,12): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (454,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (608,20): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (703,68): Expected 5 arguments, but got 4.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (47,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (58,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (94,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (171,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; features: string[]; }[]; fails: BaseGiven<...>[]; features: string[]; }; runner: (puppetMast...'.
+/Users/adam/Code/testeranto/src/lib/index.ts (1,27): Cannot find module '../../dist/types/src/Types.js' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/lib/index.ts (43,8): 'thenCb' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/index.ts (44,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
+/Users/adam/Code/testeranto/src/Node.ts (58,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
+  Types of property 'customScreenShot' are incompatible.
+    Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+      Types of parameters 'cdpPage' and 'page' are incompatible.
+        Type 'string | undefined' is not assignable to type 'CdpPage'.
+          Type 'undefined' is not assignable to type 'CdpPage'.
+/Users/adam/Code/testeranto/src/PM/index.ts (10,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (88,3): Property 'customScreenShot' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+    Types of parameters 'cdpPage' and 'page' are incompatible.
+      Type 'string | undefined' is not assignable to type 'CdpPage'.
+        Type 'undefined' is not assignable to type 'CdpPage'.

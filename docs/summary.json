@@ -1,20 +1,80 @@
 {
-  "timestamp": 1743869005236,
+  "timestamp": 1743882655807,
   "tests": {
+    "./src/Rectangle/Rectangle.test.web.ts": {
+      "bddErrors": "0",
+      "lintErrors": "1",
+      "typeErrors": "40"
+    },
+    "./src/Rectangle/Rectangle.test.node.ts": {
+      "bddErrors": "0",
+      "lintErrors": "2",
+      "typeErrors": "43"
+    },
     "./src/ReactStateAndHook.test.tsx": {
       "bddErrors": "0",
       "lintErrors": "2",
-      "typeErrors": "48"
+      "typeErrors": "31"
     },
     "./src/app.reduxToolkit.test.ts": {
       "bddErrors": "0",
       "lintErrors": "2",
-      "typeErrors": "47"
+      "typeErrors": "36"
     },
     "./src/app.redux.test.ts": {
       "bddErrors": "0",
       "lintErrors": "1",
-      "typeErrors": "44"
+      "typeErrors": "33"
+    },
+    "./src/LoginPage/react/node.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "1",
+      "typeErrors": "38"
+    },
+    "./src/LoginPage/react/web.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "1",
+      "typeErrors": "36"
+    },
+    "./src/LoginPage/react-test-renderer/node.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "2",
+      "typeErrors": "47"
+    },
+    "./src/LoginPage/react-test-renderer/web.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "2",
+      "typeErrors": "45"
+    },
+    "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "1",
+      "typeErrors": "26"
+    },
+    "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "0",
+      "typeErrors": "27"
+    },
+    "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "0",
+      "typeErrors": "28"
+    },
+    "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+      "bddErrors": "0",
+      "lintErrors": "0",
+      "typeErrors": "26"
+    },
+    "./src/MyFirstContract.basic.test.ts": {
+      "bddErrors": "4",
+      "lintErrors": "2",
+      "typeErrors": "43"
+    },
+    "./src/MyFirstContract.rpc.test.ts": {
+      "bddErrors": "4",
+      "lintErrors": "2",
+      "typeErrors": "37"
     }
   }
 }

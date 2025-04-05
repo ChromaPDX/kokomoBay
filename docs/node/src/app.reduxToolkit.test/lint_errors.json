@@ -447,8 +447,8 @@
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                2056,
-                2059
+                2051,
+                2054
               ],
               "text": "unknown"
             },
@@ -458,8 +458,8 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                2056,
-                2059
+                2051,
+                2054
               ],
               "text": "never"
             },
@@ -482,8 +482,8 @@
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                2061,
-                2064
+                2056,
+                2059
               ],
               "text": "unknown"
             },
@@ -493,8 +493,8 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                2061,
-                2064
+                2056,
+                2059
               ],
               "text": "never"
             },
@@ -517,8 +517,8 @@
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                2066,
-                2069
+                2061,
+                2064
               ],
               "text": "unknown"
             },
@@ -528,8 +528,8 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                2066,
-                2069
+                2061,
+                2064
               ],
               "text": "never"
             },

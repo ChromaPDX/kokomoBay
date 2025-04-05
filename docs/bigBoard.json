@@ -1,6 +1,6 @@
 {
   "./src/Rectangle/Rectangle.test.web.ts": {
-    "status": "waiting",
+    "status": "running",
     "runTimeError": 0
   },
   "./src/Rectangle/Rectangle.test.node.ts": {
@@ -32,7 +32,7 @@
     "runTimeError": 0
   },
   "./src/LoginPage/react-test-renderer/web.test.tsx": {
-    "status": "running",
+    "status": "waiting",
     "runTimeError": 0
   },
   "./src/ClassicalComponent/react-dom/client.web.test.tsx": {

@@ -1,6 +1,6 @@
 import {
   Web_default
-} from "../../chunk-UC3E72WP.mjs";
+} from "../../chunk-SHDX3GXE.mjs";
 import {
   assert
 } from "../../chunk-SZDDWZIA.mjs";

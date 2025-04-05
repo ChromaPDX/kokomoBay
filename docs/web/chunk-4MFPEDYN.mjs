@@ -881,7 +881,7 @@ var BaseBuilder = class {
           const numberOfFailures = Object.keys(suiteDone.givens).filter((k) => {
             return suiteDone.givens[k].error;
           }).length;
-          puppetMaster.writeFileSync(`exitcode`, numberOfFailures.toString());
+          puppetMaster.writeFileSync(`bdd_errors.txt`, numberOfFailures.toString());
           const o = this.toObj();
           puppetMaster.writeFileSync(`littleBoard.html`, `
             <!DOCTYPE html>

@@ -108,7 +108,7 @@
         "format": "esm"
       },
       "../testeranto/src/lib/basebuilder.ts": {
-        "bytes": 5767,
+        "bytes": 5809,
         "imports": [
           {
             "path": "stream",
@@ -1986,7 +1986,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/lib/basebuilder.js": {
-        "bytes": 3594,
+        "bytes": 3600,
         "imports": [],
         "format": "esm"
       },
@@ -2485,7 +2485,7 @@
       "docs/web/src/Rectangle/Rectangle.test.web.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-UC3E72WP.mjs",
+            "path": "docs/web/chunk-SHDX3GXE.mjs",
             "kind": "import-statement"
           },
           {
@@ -2522,7 +2522,7 @@
       "docs/web/src/LoginPage/react/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-UC3E72WP.mjs",
+            "path": "docs/web/chunk-SHDX3GXE.mjs",
             "kind": "import-statement"
           },
           {
@@ -2558,7 +2558,7 @@
         },
         "bytes": 3876
       },
-      "docs/web/chunk-UC3E72WP.mjs": {
+      "docs/web/chunk-SHDX3GXE.mjs": {
         "imports": [],
         "exports": [
           "Web_default"
@@ -2577,7 +2577,7 @@
             "bytesInOutput": 9975
           },
           "../testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 3333
+            "bytesInOutput": 3375
           },
           "../testeranto/src/lib/classBuilder.ts": {
             "bytesInOutput": 2262
@@ -2589,7 +2589,7 @@
             "bytesInOutput": 1835
           }
         },
-        "bytes": 26829
+        "bytes": 26871
       },
       "docs/web/src/LoginPage/react-test-renderer/web.test.mjs": {
         "imports": [
@@ -2598,11 +2598,11 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-UJ3YFGCS.mjs",
+            "path": "docs/web/chunk-BHW7OIRC.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "path": "docs/web/chunk-4MFPEDYN.mjs",
             "kind": "import-statement"
           },
           {
@@ -2777,7 +2777,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "path": "docs/web/chunk-4MFPEDYN.mjs",
             "kind": "import-statement"
           },
           {
@@ -2815,7 +2815,7 @@
       "docs/web/src/ClassicalComponent/react-test-renderer/web.test.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-UJ3YFGCS.mjs",
+            "path": "docs/web/chunk-BHW7OIRC.mjs",
             "kind": "import-statement"
           },
           {
@@ -2823,7 +2823,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "path": "docs/web/chunk-4MFPEDYN.mjs",
             "kind": "import-statement"
           },
           {
@@ -2855,10 +2855,10 @@
         },
         "bytes": 2994
       },
-      "docs/web/chunk-UJ3YFGCS.mjs": {
+      "docs/web/chunk-BHW7OIRC.mjs": {
         "imports": [
           {
-            "path": "docs/web/chunk-YITDVZFE.mjs",
+            "path": "docs/web/chunk-4MFPEDYN.mjs",
             "kind": "import-statement"
           },
           {
@@ -2914,7 +2914,7 @@
         },
         "bytes": 2936
       },
-      "docs/web/chunk-YITDVZFE.mjs": {
+      "docs/web/chunk-4MFPEDYN.mjs": {
         "imports": [
           {
             "path": "docs/web/chunk-SZDDWZIA.mjs",
@@ -2945,7 +2945,7 @@
             "bytesInOutput": 8989
           },
           "../testeranto/dist/module/lib/basebuilder.js": {
-            "bytesInOutput": 3121
+            "bytesInOutput": 3127
           },
           "../testeranto/dist/module/lib/classBuilder.js": {
             "bytesInOutput": 1780
@@ -2957,7 +2957,7 @@
             "bytesInOutput": 1651
           }
         },
-        "bytes": 39691
+        "bytes": 39697
       },
       "docs/web/chunk-ZZ3ODJ3Z.mjs": {
         "imports": [

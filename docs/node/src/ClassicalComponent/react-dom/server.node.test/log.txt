@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-dom/server.node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-dom/server.node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/73672b73-f45c-45ea-bb8d-334f23e6d39e"}
+test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-dom/server.node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-dom/server.node.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/8499b2fa-429d-4518-8d43-02f0f92434e7"}
 
 Suite:,0,Classical Component, react-dom, server.node
 

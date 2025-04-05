@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.rpc.test.ts","ports":["3001"],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/02de8b5a-fd9a-4c4b-9636-cc363933c174"}
+test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.rpc.test.ts","ports":["3001"],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/83a8cf5b-35f4-490b-b76b-7f9ec46b6a09"}
 
 Suite:,0,Testing a very simple smart contract over RPC
 
@@ -6,7 +6,7 @@ Suite:,0,Testing a very simple smart contract over RPC
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743887252030:18402:30)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743888231737:18402:30)
     at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:637:36)
     at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:188:31)
     at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:92:34)
@@ -18,7 +18,7 @@ TypeError: Cannot read properties of undefined (reading 'createWriteStream')
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743887252030:18402:30)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743888231737:18402:30)
     at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:637:36)
     at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:188:31)
     at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:92:34)
@@ -30,7 +30,7 @@ TypeError: Cannot read properties of undefined (reading 'createWriteStream')
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743887252030:18402:30)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743888231737:18402:30)
     at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:637:36)
     at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:188:31)
     at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:92:34)
@@ -42,7 +42,7 @@ TypeError: Cannot read properties of undefined (reading 'createWriteStream')
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743887252030:18402:30)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743888231737:18402:30)
     at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:637:36)
     at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:188:31)
     at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-3QMZU26Z.mjs:92:34)

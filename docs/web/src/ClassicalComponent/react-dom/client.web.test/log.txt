@@ -1,4 +1,4 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/react-dom/client.web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/02de8b5a-fd9a-4c4b-9636-cc363933c174"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/react-dom/client.web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/ClassicalComponent/react-dom/client.web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/83a8cf5b-35f4-490b-b76b-7f9ec46b6a09"}
 
 Suite:,0,a classical react component
 

@@ -27367,7 +27367,7 @@
     const [configs, setConfigs] = (0, import_react32.useState)();
     (0, import_react32.useEffect)(() => {
       (async () => {
-        fetch("/docs/testeranto.json").then((response) => response.json()).then((json) => {
+        fetch("/kokomoBay/docs/testeranto.json").then((response) => response.json()).then((json) => {
           setConfigs(json);
         }).catch((error) => console.error(error));
       })();

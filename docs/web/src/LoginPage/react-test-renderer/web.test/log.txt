@@ -1,4 +1,4 @@
-test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/070fff5f-2e38-4407-8365-8b04fa32759b"}
+test resources: ,{"name":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test.mjs","ports":"","fs":"/Users/adam/Code/kokomoBay/docs/web/src/LoginPage/react-test-renderer/web.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/73672b73-f45c-45ea-bb8d-334f23e6d39e"}
 
 Suite:,0,Testing the LoginPage as react
 
@@ -81,3 +81,23 @@ Suite:,0,Testing the LoginPage as react
  When:,TheLoginIsSubmitted: undefined
  Then:,TheEmailIs: bob
  Then:,ThereIsAnEmailError: undefined
+
+ test3_5
+
+ Given: default
+ When:,TheEmailIsSetTo: bob
+ Then:,ThereIsAnEmailError: undefined
+
+ test4
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@mail.com
+ When:,ThePasswordIsSetTo: foso
+ Then:,ThereIsNotAnEmailError: undefined
+
+ test5
+
+ Given: default
+ When:,TheEmailIsSetTo: adam@mail.com
+ When:,ThePasswordIsSetTo: fosz
+ Then:,ThereIsNotAnEmailError: undefined

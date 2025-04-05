@@ -5,7 +5,7 @@ import {
 import {
   Web_default,
   require_scheduler
-} from "../../../chunk-4MFPEDYN.mjs";
+} from "../../../chunk-ZEEVG7G4.mjs";
 import {
   require_react
 } from "../../../chunk-ZZ3ODJ3Z.mjs";

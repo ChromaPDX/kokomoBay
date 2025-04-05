@@ -894,8 +894,8 @@ var BaseBuilder = class {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
 
-  <link rel="stylesheet" href="/TestReport.css" />
-  <script src="/TestReport.js"><\/script>
+  <link rel="stylesheet" href="/kokomoBay/docsTestReport.css" />
+  <script src="/kokomoBay/docs/TestReport.js"><\/script>
 
 </head>
 

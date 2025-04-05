@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.rpc.test.ts","ports":["3001"],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/b4d0e492-6c71-459f-b7eb-4fe581430f43"}
+test resources: ,{"scheduled":true,"name":"./src/MyFirstContract.rpc.test.ts","ports":["3001"],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/f6bf17fb-8073-4d19-9439-7c52f9d9a0cc"}
 
 Suite:,0,Testing a very simple smart contract over RPC
 
@@ -6,46 +6,46 @@ Suite:,0,Testing a very simple smart contract over RPC
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889456869:18402:30)
-    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:640:36)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:188:31)
-    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:92:34)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:418:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:446:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:900:57)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889599551:18402:30)
+    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:640:36)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:188:31)
+    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:92:34)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:418:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:446:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:900:57)
 
  test1
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889456869:18402:30)
-    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:640:36)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:188:31)
-    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:92:34)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:418:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:446:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:900:57)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889599551:18402:30)
+    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:640:36)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:188:31)
+    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:92:34)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:418:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:446:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:900:57)
 
  test2
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889456869:18402:30)
-    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:640:36)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:188:31)
-    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:92:34)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:418:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:446:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:900:57)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889599551:18402:30)
+    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:640:36)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:188:31)
+    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:92:34)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:418:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:446:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:900:57)
 
  test3
 
  Given: Default
 TypeError: Cannot read properties of undefined (reading 'createWriteStream')
-    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889456869:18402:30)
-    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:640:36)
-    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:188:31)
-    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:92:34)
-    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:418:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:446:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-XDC4ZXZ4.mjs:900:57)
+    at Object.beforeEach (file:///Users/adam/Code/kokomoBay/docs/node/src/MyFirstContract.rpc.test.mjs?cacheBust=1743889599551:18402:30)
+    at Given.givenThat (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:640:36)
+    at Given.give (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:188:31)
+    at Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:92:34)
+    at async file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:418:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:446:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/docs/node/chunk-4HMI34LH.mjs:900:57)

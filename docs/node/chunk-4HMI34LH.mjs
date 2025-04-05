@@ -1,171 +1,4 @@
-// ../testeranto/src/PM/index.ts
-var PM = class {
-};
-
-// ../testeranto/src/PM/web.ts
-var PM_Web = class extends PM {
-  constructor(t) {
-    super();
-    this.server = {};
-    this.testResourceConfiguration = t;
-  }
-  waitForSelector(p, s) {
-    return window["waitForSelector"](p, s);
-  }
-  screencast(opts) {
-    return window["screencast"](
-      {
-        ...opts,
-        path: this.testResourceConfiguration.fs + "/" + opts.path
-      },
-      this.testResourceConfiguration.name
-    );
-  }
-  screencastStop(recorder) {
-    return window["screencastStop"](recorder);
-  }
-  closePage(p) {
-    return window["closePage"](p);
-  }
-  goto(p, url) {
-    return window["goto"](p, url);
-  }
-  newPage() {
-    return window["newPage"]();
-  }
-  $(selector) {
-    return window["$"](selector);
-  }
-  isDisabled(selector) {
-    return window["isDisabled"](selector);
-  }
-  getAttribute(selector, attribute) {
-    return window["getValue"](selector, attribute);
-  }
-  getValue(selector) {
-    return window["getValue"](selector);
-  }
-  focusOn(selector) {
-    return window["focusOn"](selector);
-  }
-  typeInto(value) {
-    return window["typeInto"](value);
-  }
-  page() {
-    return window["page"]();
-  }
-  click(selector) {
-    return window["click"](selector);
-  }
-  customScreenShot(opts) {
-    return window["customScreenShot"](
-      {
-        ...opts,
-        path: this.testResourceConfiguration.fs + "/" + opts.path
-      },
-      this.testResourceConfiguration.name
-    );
-  }
-  existsSync(destFolder) {
-    return window["existsSync"](destFolder);
-  }
-  mkdirSync(x) {
-    return window["mkdirSync"](this.testResourceConfiguration.fs + "/");
-  }
-  write(writeObject, contents) {
-    return window["write"](writeObject.uid, contents);
-  }
-  writeFileSync(filepath, contents) {
-    return window["writeFileSync"](
-      this.testResourceConfiguration.fs + "/" + filepath,
-      contents,
-      this.testResourceConfiguration.name
-    );
-  }
-  createWriteStream(filepath) {
-    return window["createWriteStream"](
-      this.testResourceConfiguration.fs + "/" + filepath,
-      this.testResourceConfiguration.name
-    );
-  }
-  end(writeObject) {
-    return window["end"](writeObject.uid);
-  }
-  customclose() {
-    window["customclose"](
-      this.testResourceConfiguration.fs,
-      this.testResourceConfiguration.name
-    );
-  }
-  testArtiFactoryfileWriter(tLog, callback) {
-    return (fPath, value) => {
-      callback(
-        new Promise((res, rej) => {
-          tLog("testArtiFactory =>", fPath);
-        })
-      );
-    };
-  }
-  // startPuppeteer(options, destFolder: string): Promise<any> {
-  //   const name = this.testResourceConfiguration.name;
-  //   return fetch(`http://localhost:3234/json/version`)
-  //     .then((v) => {
-  //       return v.json();
-  //     })
-  //     .then((json) => {
-  //       console.log(json);
-  //       return puppeteer
-  //         .connect({
-  //           // "ws://localhost:3234/devtools/browser/01cc60a5-dad6-4b65-a848-09d77764a3fa"
-  //           // browserWSEndpoint: json.webSocketDebuggerUrl,
-  //           browserURL: "http://localhost:3234/json/version",
-  //         })
-  //         .then(async (b) => {
-  //           this.browser = b;
-  //           // const t = this.browser.targets()[2];
-  //           // const s = this.browser.defaultBrowserContext().
-  //           console.log(this.browser);
-  //           console.log(this.browser.browserContexts());
-  //           // const handler2 = {
-  //           //   get(target, prop, receiver) {
-  //           //     if (prop === "screenshot") {
-  //           //       return async (x) => {
-  //           //         return await window["custom-screenshot"](
-  //           //           {
-  //           //             ...x,
-  //           //             // path: destFolder + "/" + x.path,
-  //           //             path: x.path,
-  //           //           },
-  //           //           name
-  //           //         );
-  //           //       };
-  //           //     } else if (prop === "mainFrame") {
-  //           //       return () => target[prop](...arguments);
-  //           //     } else {
-  //           //       return Reflect.get(...arguments);
-  //           //     }
-  //           //   },
-  //           // };
-  //           // const handler1 = {
-  //           //   get(target, prop, receiver) {
-  //           //     if (prop === "pages") {
-  //           //       return async () => {
-  //           //         return target.pages().then((pages) => {
-  //           //           return pages.map((p) => {
-  //           //             return new Proxy(p, handler2);
-  //           //           });
-  //           //         });
-  //           //       };
-  //           //     }
-  //           //     return Reflect.get(...arguments);
-  //           //   },
-  //           // };
-  //           // const proxy3 = new Proxy(this.browser, handler1);
-  //           // this.browser = proxy3;
-  //         });
-  //     });
-  // }
-};
+import { createRequire } from 'module';const require = createRequire(import.meta.url);
 
 // ../testeranto/src/lib/index.ts
 var BaseTestInterface = {
@@ -636,8 +469,8 @@ var BaseBuilder = class {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
 
-  <link rel="stylesheet" href="/TestReport.css" />
-  <script src="/TestReport.js"><\/script>
+  <link rel="stylesheet" href="/kokomoBay/docsTestReport.css" />
+  <script src="/kokomoBay/docs/TestReport.js"></script>
 
 </head>
 
@@ -890,13 +723,166 @@ var Testeranto = class extends ClassBuilder {
   }
 };
 
-// ../testeranto/src/Web.ts
-var errorCallback = (e) => {
+// ../testeranto/src/PM/node.ts
+import fs from "fs";
+import path from "path";
+
+// ../testeranto/src/PM/index.ts
+var PM = class {
 };
-var unhandledrejectionCallback = (event) => {
-  console.log("window.addEventListener unhandledrejection", event);
+
+// ../testeranto/src/PM/node.ts
+var fPaths = [];
+var PM_Node = class extends PM {
+  constructor(t) {
+    super();
+    this.server = {};
+    this.testResourceConfiguration = t;
+  }
+  waitForSelector(p, s) {
+    return globalThis["waitForSelector"](p, s);
+  }
+  closePage(p) {
+    return globalThis["closePage"](p);
+  }
+  goto(cdpPage, url) {
+    return globalThis["goto"](cdpPage.mainFrame()._id, url);
+  }
+  newPage() {
+    return globalThis["newPage"]();
+  }
+  $(selector) {
+    throw new Error("Method not implemented.");
+  }
+  isDisabled(selector) {
+    throw new Error("Method not implemented.");
+  }
+  getAttribute(selector, attribute) {
+    throw new Error("Method not implemented.");
+  }
+  getValue(selector) {
+    throw new Error("Method not implemented.");
+  }
+  focusOn(selector) {
+    throw new Error("Method not implemented.");
+  }
+  typeInto(value) {
+    throw new Error("Method not implemented.");
+  }
+  page() {
+    return globalThis["page"]();
+  }
+  click(selector) {
+    return globalThis["click"](selector);
+  }
+  screencast(opts, page) {
+    return globalThis["screencast"](
+      {
+        ...opts,
+        path: this.testResourceConfiguration.fs + "/" + opts.path
+      },
+      page.mainFrame()._id,
+      this.testResourceConfiguration.name
+    );
+  }
+  screencastStop(p) {
+    return globalThis["screencastStop"](p);
+  }
+  customScreenShot(opts, cdpPage) {
+    return globalThis["customScreenShot"](
+      {
+        ...opts,
+        path: this.testResourceConfiguration.fs + "/" + opts.path
+      },
+      cdpPage.mainFrame()._id,
+      this.testResourceConfiguration.name
+    );
+  }
+  existsSync(destFolder) {
+    return globalThis["existsSync"](
+      this.testResourceConfiguration.fs + "/" + destFolder
+    );
+  }
+  mkdirSync() {
+    return globalThis["mkdirSync"](this.testResourceConfiguration.fs + "/");
+  }
+  write(writeObject, contents) {
+    return globalThis["write"](writeObject.uid, contents);
+  }
+  writeFileSync(filepath, contents) {
+    return globalThis["writeFileSync"](
+      this.testResourceConfiguration.fs + "/" + filepath,
+      contents,
+      this.testResourceConfiguration.name
+    );
+  }
+  createWriteStream(filepath) {
+    return globalThis["createWriteStream"](
+      this.testResourceConfiguration.fs + "/" + filepath,
+      this.testResourceConfiguration.name
+    );
+  }
+  end(writeObject) {
+    return globalThis["end"](writeObject.uid);
+  }
+  customclose() {
+    globalThis["customclose"](
+      this.testResourceConfiguration.fs,
+      this.testResourceConfiguration.name
+    );
+  }
+  testArtiFactoryfileWriter(tLog, callback) {
+    return (fPath, value) => {
+      callback(
+        new Promise((res, rej) => {
+          tLog("testArtiFactory =>", fPath);
+          const cleanPath = path.resolve(fPath);
+          fPaths.push(cleanPath.replace(process.cwd(), ``));
+          const targetDir = cleanPath.split("/").slice(0, -1).join("/");
+          fs.mkdir(targetDir, { recursive: true }, async (error) => {
+            if (error) {
+              console.error(`\u2757\uFE0FtestArtiFactory failed`, targetDir, error);
+            }
+            fs.writeFileSync(
+              path.resolve(
+                targetDir.split("/").slice(0, -1).join("/"),
+                "manifest"
+              ),
+              fPaths.join(`
+`),
+              {
+                encoding: "utf-8"
+              }
+            );
+            if (Buffer.isBuffer(value)) {
+              fs.writeFileSync(fPath, value, "binary");
+              res();
+            } else if (`string` === typeof value) {
+              fs.writeFileSync(fPath, value.toString(), {
+                encoding: "utf-8"
+              });
+              res();
+            } else {
+              const pipeStream = value;
+              const myFile = fs.createWriteStream(fPath);
+              pipeStream.pipe(myFile);
+              pipeStream.on("close", () => {
+                myFile.close();
+                res();
+              });
+            }
+          });
+        })
+      );
+    };
+  }
+  // launch(options?: PuppeteerLaunchOptions): Promise<Browser>;
+  startPuppeteer(options) {
+  }
 };
-var WebTesteranto = class extends Testeranto {
+
+// ../testeranto/src/Node.ts
+var NodeTesteranto = class extends Testeranto {
   constructor(input, testSpecification, testImplementation, testResourceRequirement, testInterface) {
     super(
       input,
@@ -904,43 +890,19 @@ var WebTesteranto = class extends Testeranto {
       testImplementation,
       testResourceRequirement,
       testInterface,
-      (cb) => {
-        window.removeEventListener("error", errorCallback);
-        errorCallback = (e) => {
-          console.log("window.addEventListener error", e);
-          cb(e);
-        };
-        window.addEventListener("error", errorCallback);
-        window.removeEventListener(
-          "unhandledrejection",
-          unhandledrejectionCallback
-        );
-        window.removeEventListener(
-          "unhandledrejection",
-          unhandledrejectionCallback
-        );
-        unhandledrejectionCallback = (event) => {
-          console.log("window.addEventListener unhandledrejection", event);
-          cb({ error: event.reason.message });
-        };
-        window.addEventListener(
-          "unhandledrejection",
-          unhandledrejectionCallback
-        );
+      () => {
       }
     );
   }
   async receiveTestResourceConfig(partialTestResource) {
-    const t = partialTestResource;
-    const pm = new PM_Web(t);
+    const t = JSON.parse(partialTestResource);
+    const pm = new PM_Node(t);
     const { failed, artifacts, logPromise, features } = await this.testJobs[0].receiveTestResourceConfig(pm);
-    return new Promise((res, rej) => {
-      res({ features, failed });
-    });
+    return { features, failed };
   }
 };
-var Web_default = async (input, testSpecification, testImplementation, testInterface, testResourceRequirement = defaultTestResourceRequirement) => {
-  return new WebTesteranto(
+var Node_default = async (input, testSpecification, testImplementation, testInterface, testResourceRequirement = defaultTestResourceRequirement) => {
+  return new NodeTesteranto(
     input,
     testSpecification,
     testImplementation,
@@ -950,5 +912,5 @@ var Web_default = async (input, testSpecification, testImplementation, testInter
 };
 
 export {
-  Web_default
+  Node_default
 };

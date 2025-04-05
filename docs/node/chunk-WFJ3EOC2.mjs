@@ -11462,7 +11462,6 @@ var ClassBuilder = class extends BaseBuilder {
       classyChecks,
       testResourceRequirement,
       testSpecification
-      // puppetMaster
     );
   }
 };

@@ -19,6 +19,8 @@
 /Users/adam/Code/kokomoBay/src/LoginPage/index.tsx (12,61): Property 'setDisableSubmit' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: { payload: string; type: string; }) => void; setEmail: (s: IStoreState, b: { ...; }) => void; signIn: (s: IStoreState) => void; setError: (s: IStoreState, b: { ...; }) => void; }, string>'.
 /Users/adam/Code/kokomoBay/src/subPackages/reduxToolkit.testeranto.test.ts (62,5): Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
   Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, thens
+/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts (8,10): Module '"testeranto/src/lib/types"' has no exported member 'IPlugin'.
+/Users/adam/Code/kokomoBay/testeranto.mts (1,10): Module '"testeranto/src/lib/types.js"' has no exported member 'IBaseConfig'.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (42,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (44,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (141,30): A spread argument must either have a tuple type or be passed to a rest parameter.
@@ -44,12 +46,14 @@
   Types of parameters 'value' and 'value' are incompatible.
     Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (175,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<ITestShape>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | ... 1 more ... | undefined)[] | null; features: string[]; }[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
+/Users/adam/Code/testeranto/src/lib/core.ts (8,10): Module '"./types.js"' has no exported member 'IFinalResults'.
 /Users/adam/Code/testeranto/src/lib/core.ts (8,25): Module '"./types.js"' has no exported member 'ITestInterface'.
 /Users/adam/Code/testeranto/src/lib/core.ts (44,25): Generic type 'ITestImplementation' requires 2 type argument(s).
 /Users/adam/Code/testeranto/src/lib/core.ts (216,15): Property 'checkThat' in type 'Check' is not assignable to the same property in base type 'BaseCheck<ITestShape>'.
   Type '(subject: any, testResourceConfiguration: any, artifactory: any, pm: any) => Promise<any>' is not assignable to type '(subject: ITestShape["isubject"], testResourceConfiguration: any, artifactory: ITestArtifactory) => Promise<ITestShape["istore"]>'.
     Target signature provides too few arguments. Expected 4 or more, but got 3.
-/Users/adam/Code/testeranto/src/lib/index.ts (11,10): Module '"./types.js"' has no exported member 'ITestInterface'.
+/Users/adam/Code/testeranto/src/lib/index.ts (65,8): 'thenCb' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/index.ts (66,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
 /Users/adam/Code/testeranto/src/Node.ts (12,10): Module '"./lib/types.js"' has no exported member 'ITestInterface'.
 /Users/adam/Code/testeranto/src/Node.ts (12,26): Module '"./lib/types.js"' has no exported member 'INodeTestInterface'.
 /Users/adam/Code/testeranto/src/Node.ts (34,25): Generic type 'ITestImplementation' requires 2 type argument(s).

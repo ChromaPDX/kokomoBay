@@ -16,9 +16,9 @@
 /Users/adam/Code/kokomoBay/testeranto.mts (1,10): Module '"testeranto/src/lib/types.js"' has no exported member 'IBaseConfig'.
 /Users/adam/Code/kokomoBay/testeranto.mts (1,29): File '/Users/adam/Code/testeranto/src/lib/types.ts' is not under 'rootDir' '/Users/adam/Code/kokomoBay/src'. 'rootDir' is expected to contain all source files.
   The file is in the program because:
-    Imported via "testeranto/src/lib/types.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/types.ts@0.108.0'
+    Imported via "testeranto/src/lib/types.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/types.ts@0.109.0'
     Imported via "./lib/types.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
-    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.108.0'
+    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.109.0'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (5,27): Cannot find module '../../dist/types/src/Types.js' or its corresponding type declarations.
@@ -70,8 +70,8 @@
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./Types.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/Contract.testeranto.test.ts' with packageId 'testeranto/src/Types.ts@0.108.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/MyFirstContract.basic.test.ts' with packageId 'testeranto/src/Types.ts@0.108.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/Contract.testeranto.test.ts' with packageId 'testeranto/src/Types.ts@0.109.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/MyFirstContract.basic.test.ts' with packageId 'testeranto/src/Types.ts@0.109.0'
 /Users/adam/Code/testeranto/src/Node.ts (58,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
   Types of property 'customScreenShot' are incompatible.
     Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.

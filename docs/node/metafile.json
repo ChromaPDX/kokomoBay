@@ -56,7 +56,7 @@
         "format": "esm"
       },
       "../testeranto/src/lib/basebuilder.ts": {
-        "bytes": 5838,
+        "bytes": 5839,
         "imports": [
           {
             "path": "stream",
@@ -1019,7 +1019,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/lib/basebuilder.js": {
-        "bytes": 3629,
+        "bytes": 3630,
         "imports": [],
         "format": "esm"
       },
@@ -17492,7 +17492,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-4HMI34LH.mjs",
+            "path": "docs/node/chunk-QWJZZ3B7.mjs",
             "kind": "import-statement"
           },
           {
@@ -17530,7 +17530,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-4HMI34LH.mjs",
+            "path": "docs/node/chunk-QWJZZ3B7.mjs",
             "kind": "import-statement"
           },
           {
@@ -21342,7 +21342,7 @@
       "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-4HMI34LH.mjs",
+            "path": "docs/node/chunk-QWJZZ3B7.mjs",
             "kind": "import-statement"
           },
           {
@@ -21383,7 +21383,7 @@
       "docs/node/src/ReactStateAndHook.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-DAL4B2PS.mjs",
+            "path": "docs/node/chunk-3RXYMGFH.mjs",
             "kind": "import-statement"
           },
           {
@@ -21391,7 +21391,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -21435,7 +21435,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-4HMI34LH.mjs",
+            "path": "docs/node/chunk-QWJZZ3B7.mjs",
             "kind": "import-statement"
           },
           {
@@ -21472,7 +21472,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-4HMI34LH.mjs",
+            "path": "docs/node/chunk-QWJZZ3B7.mjs",
             "kind": "import-statement"
           },
           {
@@ -21514,7 +21514,7 @@
         },
         "bytes": 1827
       },
-      "docs/node/chunk-4HMI34LH.mjs": {
+      "docs/node/chunk-QWJZZ3B7.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -21538,7 +21538,7 @@
             "bytesInOutput": 9975
           },
           "../testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 3403
+            "bytesInOutput": 3404
           },
           "../testeranto/src/lib/classBuilder.ts": {
             "bytesInOutput": 2262
@@ -21556,7 +21556,7 @@
             "bytesInOutput": 887
           }
         },
-        "bytes": 25313
+        "bytes": 25314
       },
       "docs/node/src/LoginPage/react/node.test.mjs": {
         "imports": [
@@ -21569,7 +21569,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -21609,7 +21609,7 @@
       "docs/node/src/LoginPage/react-test-renderer/node.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-DAL4B2PS.mjs",
+            "path": "docs/node/chunk-3RXYMGFH.mjs",
             "kind": "import-statement"
           },
           {
@@ -21625,7 +21625,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -21679,14 +21679,14 @@
         },
         "bytes": 751016
       },
-      "docs/node/chunk-DAL4B2PS.mjs": {
+      "docs/node/chunk-3RXYMGFH.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-6FWMRXFT.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -22026,7 +22026,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -22183,7 +22183,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-BDBXPVSM.mjs",
+            "path": "docs/node/chunk-O5UFRUWK.mjs",
             "kind": "import-statement"
           },
           {
@@ -22297,7 +22297,7 @@
         },
         "bytes": 1141
       },
-      "docs/node/chunk-BDBXPVSM.mjs": {
+      "docs/node/chunk-O5UFRUWK.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -22321,7 +22321,7 @@
             "bytesInOutput": 8989
           },
           "../testeranto/dist/module/lib/basebuilder.js": {
-            "bytesInOutput": 3155
+            "bytesInOutput": 3156
           },
           "../testeranto/dist/module/lib/classBuilder.js": {
             "bytesInOutput": 1780
@@ -22339,7 +22339,7 @@
             "bytesInOutput": 819
           }
         },
-        "bytes": 22817
+        "bytes": 22818
       },
       "docs/node/chunk-BFDDKUUP.mjs": {
         "imports": [

@@ -1,14 +1,6 @@
 {
-  "./src/Rectangle/Rectangle.test.web.ts": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/Rectangle/Rectangle.test.node.ts": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
   "./src/ReactStateAndHook.test.tsx": {
-    "status": "waiting",
+    "status": "running",
     "runTimeError": 0
   },
   "./src/app.reduxToolkit.test.ts": {
@@ -16,46 +8,6 @@
     "runTimeError": 0
   },
   "./src/app.redux.test.ts": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/LoginPage/react-dom/web.test.tsx": {
-    "status": "running",
-    "runTimeError": 0
-  },
-  "./src/LoginPage/react/node.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/LoginPage/react/web.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/LoginPage/react-test-renderer/node.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/LoginPage/react-test-renderer/web.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
-    "status": "waiting",
-    "runTimeError": 0
-  },
-  "./src/MyFirstContract.basic.test.ts": {
     "status": "waiting",
     "runTimeError": 0
   }

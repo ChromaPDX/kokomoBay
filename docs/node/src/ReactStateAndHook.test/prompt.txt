@@ -1,5 +1,24 @@
 
+/add ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js
+/add ../testeranto/node_modules/scheduler/unstable_mock.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler.development.js
+/add ../testeranto/node_modules/scheduler/index.js
+/add ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js
+/add ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js
+/add ../testeranto/node_modules/react-test-renderer/index.js
 /add src/ReactStateAndHook.test.tsx
+/add ../testeranto/dist/module/src/lib/index.js
+/add ../testeranto/dist/module/src/lib/abstractBase.js
+/add ../testeranto/dist/module/src/lib/basebuilder.js
+/add ../testeranto/dist/module/src/lib/classBuilder.js
+/add ../testeranto/dist/module/src/lib/core.js
+/add ../testeranto/dist/module/src/PM/node.js
+/add ../testeranto/dist/module/src/PM/index.js
+/add ../testeranto/dist/module/src/Node.js
+/add ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/index.js
+/add ../testeranto/dist/module/src/SubPackages/react-test-renderer/jsx/node.js
 /add src/ReactStateAndHook.tsx
 
 /read docs/node/src/ReactStateAndHook.test/lint_errors.json

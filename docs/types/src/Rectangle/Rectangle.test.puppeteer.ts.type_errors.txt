@@ -1,2 +1,0 @@
-src/Rectangle/Rectangle.test.puppeteer.ts(1,24): error TS2307: Cannot find module 'testeranto/src/core-puppeteer' or its corresponding type declarations.
-src/Rectangle/Rectangle.test.puppeteer.ts(13,8): error TS2306: File '/Users/adam/Code/kokomoBay/src/Rectangle.test.ts' is not a module.

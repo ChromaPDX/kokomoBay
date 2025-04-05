@@ -1,11 +1,11 @@
 import {
   ClassicalComponent,
   ClassicalComponentSpec
-} from "../../../chunk-F2IGDQKO.mjs";
+} from "../../../chunk-G64KNYHW.mjs";
 import {
   Web_default,
   require_scheduler
-} from "../../../chunk-PJVRMMY3.mjs";
+} from "../../../chunk-OGOHB2AX.mjs";
 import {
   require_react
 } from "../../../chunk-ZZ3ODJ3Z.mjs";

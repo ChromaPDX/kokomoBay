@@ -8,5 +8,5 @@ import { testImplementation } from "./test.implementation.js";
 export default test(
   testImplementation,
   ClassicalComponentSpec,
-  ClassicalComponent,
+  ClassicalComponent
 );

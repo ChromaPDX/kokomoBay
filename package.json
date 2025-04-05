@@ -26,9 +26,10 @@
   },
   "scripts": {
     "clean": "rm -rf docs && mkdir docs",
-    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx node_modules/testeranto/dist/prebuild/cli.mjs testeranto.mts",
-    "run-tests": "tsx node_modules/testeranto/dist/prebuild/cli2.mjs testeranto.mts",
+    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx node_modules/testeranto/dist/prebuild/build.js testeranto.mts",
+    "run-tests": "tsx node_modules/testeranto/dist/prebuild/run.js testeranto.mts",
     "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
+    "report": "tsx node_modules/testeranto/dist/prebuild/ReportServer.mjs testeranto.mts",
     "test": "yarn build-tests && yarn run-tests",
     "aider": "aider --model deepseek/deepseek-chat"
   },

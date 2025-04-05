@@ -1,6 +1,6 @@
 import {
   Web_default
-} from "../../chunk-QXTRHJWR.mjs";
+} from "../../chunk-QOUJGBFM.mjs";
 import {
   assert
 } from "../../chunk-SZDDWZIA.mjs";
@@ -9,7 +9,7 @@ import {
 var rectangle_default = "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md";
 
 // src/Rectangle.test.specification.ts
-var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check) => {
+var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then) => {
   return [
     Suite.Default(
       "Testing the Rectangle class",
@@ -150,7 +150,6 @@ var RectangleTesterantoBaseTestImplementation = {
     }
   },
   checks: {
-    /* @ts-ignore:next-line */
     AnEmptyState: () => {
       return {};
     }
@@ -159,7 +158,7 @@ var RectangleTesterantoBaseTestImplementation = {
 
 // src/Rectangle.test.interface.ts
 var RectangleTesterantoBaseInterface = {
-  beforeEach: async (subject, initializer, art, tr, initialValues) => {
+  beforeEach: async (subject) => {
     return subject;
   },
   andWhen: async function(renderer, actioner) {
@@ -174,7 +173,7 @@ var RectangleTesterantoBaseInterface = {
 // src/Rectangle/Rectangle.test.web.ts
 var testInterface = {
   ...RectangleTesterantoBaseInterface,
-  beforeEach: async (rectangleProto, init, art, tr, initialValues, pm) => {
+  beforeEach: async (rectangleProto) => {
     return rectangleProto;
   }
 };

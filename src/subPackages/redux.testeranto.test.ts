@@ -27,13 +27,13 @@ export type WhenShape = [
 export type ThenShape = (state: any, pm: PM) => void;
 
 type IReduxIn<IStoreState> = Ibdd_in<
-  Store,
-  Reducer<IStoreState, any>,
-  Store<any, AnyAction>,
+  Store<IStoreState, AnyAction>,
+  Reducer<IStoreState, AnyAction>,
+  Store<IStoreState, AnyAction>,
   IStoreState,
-  (a: any) => PreloadedState<IStoreState>,
+  (a: IStoreState) => PreloadedState<IStoreState>,
   IStoreState,
-  (x: IStoreState, pm: PM) => any
+  (x: IStoreState, pm: PM) => void
 >;
 
 export type BaseImplementation<
@@ -76,16 +76,19 @@ export const ReduxTesteranto = <
   testImplementations: BaseImplementation<IStoreShape, iAppOut>
 ) => {
   const testInterface: IPartialInterface<IReduxIn<IStoreShape>> = {
-    beforeEach: function (subject, initializer, art, tr, initialValues, pm) {
-      return createStore<IStoreShape, any, any, any>(subject, initializer);
+    beforeEach: function (subject, initializer) {
+      return createStore<IStoreShape, AnyAction, unknown, unknown>(
+        subject,
+        initializer
+      );
     },
-    andWhen: async function (store, whenCB, tr, pm) {
-      const a = whenCB;
-      store.dispatch(a[0](a[1]));
+    andWhen: async function (store, whenCB) {
+      const [action, payload] = whenCB;
+      store.dispatch(payload ? action(payload) : action());
       return store;
     },
-    butThen: async function (store, actioner, tr, pm) {
-      return actioner(store.getState(), pm);
+    butThen: async function (store, actioner) {
+      return actioner(store.getState());
     },
   };
 

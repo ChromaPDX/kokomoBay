@@ -4,7 +4,7 @@ import { IClassicalComponentSpec } from "./test.shape";
 
 export const ClassicalComponentSpec: ITestSpecification<
   IClassicalComponentSpec
-> = (Suite, Given, When, Then, Check) => {
+> = (Suite, Given, When, Then) => {
   return [
     Suite.Default(
       "a classical react component",

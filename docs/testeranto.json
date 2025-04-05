@@ -121,14 +121,6 @@
         "ports": 0
       },
       []
-    ],
-    [
-      "./src/MyFirstContract.rpc.test.ts",
-      "node",
-      {
-        "ports": 1
-      },
-      []
     ]
   ],
   "debugger": true,

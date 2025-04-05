@@ -3,55 +3,18 @@
   "warnings": [],
   "metafile": {
     "inputs": {
-      "../testeranto/src/lib/index.ts": {
-        "bytes": 4592,
-        "imports": [
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../Types.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./abstractBase.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "./types.js",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
+      "../testeranto/src/lib/index.js": {
+        "bytes": 606,
+        "imports": [],
         "format": "esm"
       },
-      "../testeranto/src/lib/abstractBase.ts": {
-        "bytes": 16420,
-        "imports": [
-          {
-            "path": "../Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../PM/index.js",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": ".",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
+      "../testeranto/src/lib/abstractBase.js": {
+        "bytes": 12188,
+        "imports": [],
         "format": "esm"
       },
       "../testeranto/src/lib/basebuilder.ts": {
-        "bytes": 5744,
+        "bytes": 6023,
         "imports": [
           {
             "path": "stream",
@@ -136,12 +99,12 @@
             "external": true
           },
           {
-            "path": "../testeranto/src/lib/index.ts",
+            "path": "../testeranto/src/lib/index.js",
             "kind": "import-statement",
             "original": "./index.js"
           },
           {
-            "path": "../testeranto/src/lib/abstractBase.ts",
+            "path": "../testeranto/src/lib/abstractBase.js",
             "kind": "import-statement",
             "original": "./abstractBase.js"
           },
@@ -158,29 +121,13 @@
         ],
         "format": "esm"
       },
-      "../testeranto/src/PM/index.ts": {
-        "bytes": 1472,
-        "imports": [
-          {
-            "path": "puppeteer-core/lib/esm/puppeteer/puppeteer-core-browser",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "puppeteer-core/lib/esm/puppeteer",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../lib",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
+      "../testeranto/src/PM/index.js": {
+        "bytes": 39,
+        "imports": [],
         "format": "esm"
       },
       "../testeranto/src/PM/node.ts": {
-        "bytes": 5174,
+        "bytes": 5183,
         "imports": [
           {
             "path": "fs",
@@ -208,7 +155,7 @@
             "external": true
           },
           {
-            "path": "../testeranto/src/PM/index.ts",
+            "path": "../testeranto/src/PM/index.js",
             "kind": "import-statement",
             "original": "./index.js"
           },
@@ -229,7 +176,7 @@
             "original": "./lib/core.js"
           },
           {
-            "path": "../testeranto/src/lib/index.ts",
+            "path": "../testeranto/src/lib/index.js",
             "kind": "import-statement",
             "original": "./lib/index.js"
           },
@@ -247,7 +194,7 @@
         "format": "esm"
       },
       "src/Rectangle.ts": {
-        "bytes": 547,
+        "bytes": 563,
         "imports": [],
         "format": "esm"
       },
@@ -911,7 +858,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.implementation.ts": {
-        "bytes": 2588,
+        "bytes": 2557,
         "imports": [
           {
             "path": "node_modules/chai/index.mjs",
@@ -941,7 +888,7 @@
         "imports": []
       },
       "src/Rectangle.test.specification.ts": {
-        "bytes": 1882,
+        "bytes": 1875,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -962,7 +909,7 @@
         "format": "esm"
       },
       "src/Rectangle.test.interface.ts": {
-        "bytes": 497,
+        "bytes": 460,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -1029,7 +976,7 @@
         "format": "esm"
       },
       "../testeranto/dist/module/src/lib/basebuilder.js": {
-        "bytes": 3421,
+        "bytes": 3594,
         "imports": [],
         "format": "esm"
       },
@@ -1641,7 +1588,7 @@
         "format": "esm"
       },
       "src/subPackages/redux.testeranto.test.ts": {
-        "bytes": 2436,
+        "bytes": 2515,
         "imports": [
           {
             "path": "../testeranto/src/Node.ts",
@@ -1677,7 +1624,7 @@
         "format": "esm"
       },
       "src/app.redux.test.ts": {
-        "bytes": 2177,
+        "bytes": 1912,
         "imports": [
           {
             "path": "testeranto/src/Types.js",
@@ -2750,96 +2697,6 @@
         ],
         "format": "esm"
       },
-      "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-        "bytes": 38796,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-        "bytes": 39058,
-        "imports": [
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-        "bytes": 245608,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-        "bytes": 244170,
-        "imports": [
-          {
-            "path": "react",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "util",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/react-dom/server.node.js": {
-        "bytes": 646,
-        "imports": [
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.production.min.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server.node.production.min.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.production.min.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server-legacy.node.development.js"
-          },
-          {
-            "path": "node_modules/react-dom/cjs/react-dom-server.node.development.js",
-            "kind": "require-call",
-            "original": "./cjs/react-dom-server.node.development.js"
-          }
-        ],
-        "format": "cjs"
-      },
       "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
         "bytes": 38796,
         "imports": [
@@ -2956,6 +2813,96 @@
         ],
         "format": "esm"
       },
+      "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
+        "bytes": 38796,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
+        "bytes": 39058,
+        "imports": [
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
+        "bytes": 245608,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "stream",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
+        "bytes": 244170,
+        "imports": [
+          {
+            "path": "react",
+            "kind": "require-call",
+            "external": true
+          },
+          {
+            "path": "util",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "cjs"
+      },
+      "node_modules/react-dom/server.node.js": {
+        "bytes": 646,
+        "imports": [
+          {
+            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom-server-legacy.node.production.min.js"
+          },
+          {
+            "path": "node_modules/react-dom/cjs/react-dom-server.node.production.min.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom-server.node.production.min.js"
+          },
+          {
+            "path": "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom-server-legacy.node.development.js"
+          },
+          {
+            "path": "node_modules/react-dom/cjs/react-dom-server.node.development.js",
+            "kind": "require-call",
+            "original": "./cjs/react-dom-server.node.development.js"
+          }
+        ],
+        "format": "cjs"
+      },
       "src/ClassicalComponent/index.tsx": {
         "bytes": 768,
         "imports": [
@@ -2973,8 +2920,13 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-        "bytes": 2838,
+        "bytes": 2667,
         "imports": [
+          {
+            "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js",
+            "kind": "import-statement",
+            "original": "testeranto/src/SubPackages/react-dom/component/node"
+          },
           {
             "path": "node_modules/chai/index.mjs",
             "kind": "import-statement",
@@ -2984,21 +2936,6 @@
             "path": "node_modules/react-dom/server.node.js",
             "kind": "import-statement",
             "original": "react-dom/server"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "testeranto/src/SubPackages/react-test-renderer/component/index",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js",
-            "kind": "import-statement",
-            "original": "testeranto/src/SubPackages/react-dom/component/node"
           },
           {
             "path": "src/ClassicalComponent/index.tsx",
@@ -3041,7 +2978,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/test.specification.ts": {
-        "bytes": 1649,
+        "bytes": 1642,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -3057,7 +2994,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-        "bytes": 1508,
+        "bytes": 1374,
         "imports": [
           {
             "path": "react-test-renderer",
@@ -3075,11 +3012,6 @@
             "external": true
           },
           {
-            "path": "testeranto/src/PM",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
             "path": "../test.shape",
             "kind": "import-statement",
             "external": true
@@ -3088,7 +3020,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-        "bytes": 359,
+        "bytes": 358,
         "imports": [
           {
             "path": "../testeranto/dist/module/src/SubPackages/react-test-renderer/component/node.js",
@@ -15091,2906 +15023,19 @@
           }
         ],
         "format": "esm"
-      },
-      "node_modules/@ethersproject/abstract-provider/lib/_version.js": {
-        "bytes": 184,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/abstract-provider/lib/index.js": {
-        "bytes": 9009,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/abstract-signer/lib/_version.js": {
-        "bytes": 182,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/abstract-signer/lib/index.js": {
-        "bytes": 21794,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-signer/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/contracts/lib/_version.js": {
-        "bytes": 176,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/contracts/lib/index.js": {
-        "bytes": 56680,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abi/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abi"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-signer/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-signer"
-          },
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/contracts/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/basex/lib/index.js": {
-        "bytes": 4920,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/pbkdf2/lib/pbkdf2.js": {
-        "bytes": 529,
-        "imports": [
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/pbkdf2/lib/index.js": {
-        "bytes": 281,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/pbkdf2/lib/pbkdf2.js",
-            "kind": "require-call",
-            "original": "./pbkdf2"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/sha2/lib/types.js": {
-        "bytes": 386,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/sha2/lib/_version.js": {
-        "bytes": 171,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/sha2/lib/sha2.js": {
-        "bytes": 1663,
-        "imports": [
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/hash.js/lib/hash.js",
-            "kind": "require-call",
-            "original": "hash.js"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/types.js",
-            "kind": "require-call",
-            "original": "./types"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/sha2/lib/index.js": {
-        "bytes": 870,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/sha2.js",
-            "kind": "require-call",
-            "original": "./sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/types.js",
-            "kind": "require-call",
-            "original": "./types"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/_version.js": {
-        "bytes": 176,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/wordlist.js": {
-        "bytes": 2001,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/hash/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hash"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-cz.js": {
-        "bytes": 14871,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-en.js": {
-        "bytes": 13042,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-es.js": {
-        "bytes": 14559,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-fr.js": {
-        "bytes": 17302,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-ja.js": {
-        "bytes": 13318,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-ko.js": {
-        "bytes": 14616,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-it.js": {
-        "bytes": 15959,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/lang-zh.js": {
-        "bytes": 11077,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/wordlists.js": {
-        "bytes": 742,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-cz.js",
-            "kind": "require-call",
-            "original": "./lang-cz"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-en.js",
-            "kind": "require-call",
-            "original": "./lang-en"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-es.js",
-            "kind": "require-call",
-            "original": "./lang-es"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-fr.js",
-            "kind": "require-call",
-            "original": "./lang-fr"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-ja.js",
-            "kind": "require-call",
-            "original": "./lang-ja"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-ko.js",
-            "kind": "require-call",
-            "original": "./lang-ko"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-it.js",
-            "kind": "require-call",
-            "original": "./lang-it"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/lang-zh.js",
-            "kind": "require-call",
-            "original": "./lang-zh"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wordlists/lib/index.js": {
-        "bytes": 699,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlist.js",
-            "kind": "require-call",
-            "original": "./wordlist"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/wordlists.js",
-            "kind": "require-call",
-            "original": "./wordlists"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/hdnode/lib/_version.js": {
-        "bytes": 173,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/hdnode/lib/index.js": {
-        "bytes": 14988,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/basex/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/basex"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/pbkdf2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/pbkdf2"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/signing-key/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/signing-key"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/wordlists"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/hdnode/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/random/lib/random.js": {
-        "bytes": 359,
-        "imports": [
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/random/lib/shuffle.js": {
-        "bytes": 431,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/random/lib/index.js": {
-        "bytes": 468,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/random/lib/random.js",
-            "kind": "require-call",
-            "original": "./random"
-          },
-          {
-            "path": "node_modules/@ethersproject/random/lib/shuffle.js",
-            "kind": "require-call",
-            "original": "./shuffle"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/aes-js/index.js": {
-        "bytes": 63430,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/_version.js": {
-        "bytes": 179,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/utils.js": {
-        "bytes": 2352,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/crowdsale.js": {
-        "bytes": 3449,
-        "imports": [
-          {
-            "path": "node_modules/aes-js/index.js",
-            "kind": "require-call",
-            "original": "aes-js"
-          },
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/keccak256/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/keccak256"
-          },
-          {
-            "path": "node_modules/@ethersproject/pbkdf2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/pbkdf2"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/utils.js",
-            "kind": "require-call",
-            "original": "./utils"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/inspect.js": {
-        "bytes": 1560,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/keystore.js": {
-        "bytes": 17548,
-        "imports": [
-          {
-            "path": "node_modules/aes-js/index.js",
-            "kind": "require-call",
-            "original": "aes-js"
-          },
-          {
-            "path": "node_modules/scrypt-js/scrypt.js",
-            "kind": "require-call",
-            "original": "scrypt-js"
-          },
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/hdnode/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hdnode"
-          },
-          {
-            "path": "node_modules/@ethersproject/keccak256/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/keccak256"
-          },
-          {
-            "path": "node_modules/@ethersproject/pbkdf2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/pbkdf2"
-          },
-          {
-            "path": "node_modules/@ethersproject/random/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/random"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/utils.js",
-            "kind": "require-call",
-            "original": "./utils"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/json-wallets/lib/index.js": {
-        "bytes": 2385,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/crowdsale.js",
-            "kind": "require-call",
-            "original": "./crowdsale"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/inspect.js",
-            "kind": "require-call",
-            "original": "./inspect"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/keystore.js",
-            "kind": "require-call",
-            "original": "./keystore"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wallet/lib/_version.js": {
-        "bytes": 173,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/wallet/lib/index.js": {
-        "bytes": 12843,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-signer/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-signer"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/hash/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hash"
-          },
-          {
-            "path": "node_modules/@ethersproject/hdnode/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hdnode"
-          },
-          {
-            "path": "node_modules/@ethersproject/keccak256/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/keccak256"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/random/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/random"
-          },
-          {
-            "path": "node_modules/@ethersproject/signing-key/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/signing-key"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/json-wallets"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/wallet/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/networks/lib/_version.js": {
-        "bytes": 175,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/networks/lib/index.js": {
-        "bytes": 9422,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/networks/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/web/lib/_version.js": {
-        "bytes": 170,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/web/lib/geturl.js": {
-        "bytes": 7084,
-        "imports": [
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "https",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "zlib",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "url",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/web/lib/index.js": {
-        "bytes": 21554,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/base64/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/base64"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/geturl.js",
-            "kind": "require-call",
-            "original": "./geturl"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/bech32/index.js": {
-        "bytes": 4301,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/_version.js": {
-        "bytes": 176,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/formatter.js": {
-        "bytes": 18472,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/constants/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/base-provider.js": {
-        "bytes": 132991,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/base64/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/base64"
-          },
-          {
-            "path": "node_modules/@ethersproject/basex/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/basex"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/constants/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/hash/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hash"
-          },
-          {
-            "path": "node_modules/@ethersproject/networks/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/networks"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/bech32/index.js",
-            "kind": "require-call",
-            "original": "bech32"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/json-rpc-provider.js": {
-        "bytes": 39061,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abstract-signer/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-signer"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/hash/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hash"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/base-provider.js",
-            "kind": "require-call",
-            "original": "./base-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js": {
-        "bytes": 479,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/bufferutil/fallback.js": {
-        "bytes": 899,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/bufferutil/index.js": {
-        "bytes": 136,
-        "imports": [
-          {
-            "path": "node_modules/node-gyp-build/index.js",
-            "kind": "require-call",
-            "original": "node-gyp-build"
-          },
-          {
-            "path": "node_modules/bufferutil/fallback.js",
-            "kind": "require-call",
-            "original": "./fallback"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js": {
-        "bytes": 3056,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          },
-          {
-            "path": "node_modules/bufferutil/index.js",
-            "kind": "require-call",
-            "original": "bufferutil"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/limiter.js": {
-        "bytes": 1034,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js": {
-        "bytes": 14110,
-        "imports": [
-          {
-            "path": "zlib",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js",
-            "kind": "require-call",
-            "original": "./buffer-util"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/limiter.js",
-            "kind": "require-call",
-            "original": "./limiter"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/utf-8-validate/fallback.js": {
-        "bytes": 1629,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/utf-8-validate/index.js": {
-        "bytes": 136,
-        "imports": [
-          {
-            "path": "node_modules/node-gyp-build/index.js",
-            "kind": "require-call",
-            "original": "node-gyp-build"
-          },
-          {
-            "path": "node_modules/utf-8-validate/fallback.js",
-            "kind": "require-call",
-            "original": "./fallback"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js": {
-        "bytes": 3903,
-        "imports": [
-          {
-            "path": "buffer",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          },
-          {
-            "path": "node_modules/utf-8-validate/index.js",
-            "kind": "require-call",
-            "original": "utf-8-validate"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/receiver.js": {
-        "bytes": 16460,
-        "imports": [
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js",
-            "kind": "require-call",
-            "original": "./permessage-deflate"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js",
-            "kind": "require-call",
-            "original": "./buffer-util"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js",
-            "kind": "require-call",
-            "original": "./validation"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/sender.js": {
-        "bytes": 16700,
-        "imports": [
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js",
-            "kind": "require-call",
-            "original": "./permessage-deflate"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js",
-            "kind": "require-call",
-            "original": "./validation"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js",
-            "kind": "require-call",
-            "original": "./buffer-util"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/event-target.js": {
-        "bytes": 7321,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/extension.js": {
-        "bytes": 6183,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js",
-            "kind": "require-call",
-            "original": "./validation"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket.js": {
-        "bytes": 36462,
-        "imports": [
-          {
-            "path": "events",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "https",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "net",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "tls",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "url",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js",
-            "kind": "require-call",
-            "original": "./permessage-deflate"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/receiver.js",
-            "kind": "require-call",
-            "original": "./receiver"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/sender.js",
-            "kind": "require-call",
-            "original": "./sender"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js",
-            "kind": "require-call",
-            "original": "./validation"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/event-target.js",
-            "kind": "require-call",
-            "original": "./event-target"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/extension.js",
-            "kind": "require-call",
-            "original": "./extension"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js",
-            "kind": "require-call",
-            "original": "./buffer-util"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/stream.js": {
-        "bytes": 4083,
-        "imports": [
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/subprotocol.js": {
-        "bytes": 1498,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js",
-            "kind": "require-call",
-            "original": "./validation"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket-server.js": {
-        "bytes": 16254,
-        "imports": [
-          {
-            "path": "events",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/extension.js",
-            "kind": "require-call",
-            "original": "./extension"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js",
-            "kind": "require-call",
-            "original": "./permessage-deflate"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/subprotocol.js",
-            "kind": "require-call",
-            "original": "./subprotocol"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket.js",
-            "kind": "require-call",
-            "original": "./websocket"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js",
-            "kind": "require-call",
-            "original": "./constants"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/node_modules/ws/index.js": {
-        "bytes": 376,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket.js",
-            "kind": "require-call",
-            "original": "./lib/websocket"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/stream.js",
-            "kind": "require-call",
-            "original": "./lib/stream"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket-server.js",
-            "kind": "require-call",
-            "original": "./lib/websocket-server"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/receiver.js",
-            "kind": "require-call",
-            "original": "./lib/receiver"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/lib/sender.js",
-            "kind": "require-call",
-            "original": "./lib/sender"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/ws.js": {
-        "bytes": 351,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/node_modules/ws/index.js",
-            "kind": "require-call",
-            "original": "ws"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/websocket-provider.js": {
-        "bytes": 16871,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/ws.js",
-            "kind": "require-call",
-            "original": "./ws"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js": {
-        "bytes": 8057,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/alchemy-provider.js": {
-        "bytes": 5129,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/websocket-provider.js",
-            "kind": "require-call",
-            "original": "./websocket-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/ankr-provider.js": {
-        "bytes": 3455,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/cloudflare-provider.js": {
-        "bytes": 5310,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/etherscan-provider.js": {
-        "bytes": 26119,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/base-provider.js",
-            "kind": "require-call",
-            "original": "./base-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/fallback-provider.js": {
-        "bytes": 34934,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/random/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/random"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/base-provider.js",
-            "kind": "require-call",
-            "original": "./base-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/ipc-provider.js": {
-        "bytes": 3252,
-        "imports": [
-          {
-            "path": "net",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/infura-provider.js": {
-        "bytes": 6294,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/websocket-provider.js",
-            "kind": "require-call",
-            "original": "./websocket-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/json-rpc-batch-provider.js": {
-        "bytes": 4462,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/nodesmith-provider.js": {
-        "bytes": 2876,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/pocket-provider.js": {
-        "bytes": 4004,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/quicknode-provider.js": {
-        "bytes": 4130,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/web3-provider.js": {
-        "bytes": 5761,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/providers/lib/index.js": {
-        "bytes": 7890,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abstract-provider/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/networks/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/networks"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/base-provider.js",
-            "kind": "require-call",
-            "original": "./base-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/alchemy-provider.js",
-            "kind": "require-call",
-            "original": "./alchemy-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/ankr-provider.js",
-            "kind": "require-call",
-            "original": "./ankr-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/cloudflare-provider.js",
-            "kind": "require-call",
-            "original": "./cloudflare-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/etherscan-provider.js",
-            "kind": "require-call",
-            "original": "./etherscan-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/fallback-provider.js",
-            "kind": "require-call",
-            "original": "./fallback-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/ipc-provider.js",
-            "kind": "require-call",
-            "original": "./ipc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/infura-provider.js",
-            "kind": "require-call",
-            "original": "./infura-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/json-rpc-batch-provider.js",
-            "kind": "require-call",
-            "original": "./json-rpc-batch-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/nodesmith-provider.js",
-            "kind": "require-call",
-            "original": "./nodesmith-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/pocket-provider.js",
-            "kind": "require-call",
-            "original": "./pocket-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/quicknode-provider.js",
-            "kind": "require-call",
-            "original": "./quicknode-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js",
-            "kind": "require-call",
-            "original": "./url-json-rpc-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/web3-provider.js",
-            "kind": "require-call",
-            "original": "./web3-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/websocket-provider.js",
-            "kind": "require-call",
-            "original": "./websocket-provider"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/formatter.js",
-            "kind": "require-call",
-            "original": "./formatter"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/solidity/lib/_version.js": {
-        "bytes": 175,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/solidity/lib/index.js": {
-        "bytes": 3680,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/keccak256/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/keccak256"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/solidity/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/units/lib/_version.js": {
-        "bytes": 172,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/@ethersproject/units/lib/index.js": {
-        "bytes": 2934,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/units/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/ethers/lib/utils.js": {
-        "bytes": 16341,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/abi/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abi"
-          },
-          {
-            "path": "node_modules/@ethersproject/address/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/address"
-          },
-          {
-            "path": "node_modules/@ethersproject/base64/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/base64"
-          },
-          {
-            "path": "node_modules/@ethersproject/basex/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/basex"
-          },
-          {
-            "path": "node_modules/@ethersproject/bytes/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bytes"
-          },
-          {
-            "path": "node_modules/@ethersproject/hash/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hash"
-          },
-          {
-            "path": "node_modules/@ethersproject/hdnode/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/hdnode"
-          },
-          {
-            "path": "node_modules/@ethersproject/json-wallets/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/json-wallets"
-          },
-          {
-            "path": "node_modules/@ethersproject/keccak256/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/keccak256"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/solidity/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/solidity"
-          },
-          {
-            "path": "node_modules/@ethersproject/random/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/random"
-          },
-          {
-            "path": "node_modules/@ethersproject/properties/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/properties"
-          },
-          {
-            "path": "node_modules/@ethersproject/rlp/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/rlp"
-          },
-          {
-            "path": "node_modules/@ethersproject/signing-key/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/signing-key"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          },
-          {
-            "path": "node_modules/@ethersproject/transactions/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/transactions"
-          },
-          {
-            "path": "node_modules/@ethersproject/units/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/units"
-          },
-          {
-            "path": "node_modules/@ethersproject/wallet/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/wallet"
-          },
-          {
-            "path": "node_modules/@ethersproject/web/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/web"
-          },
-          {
-            "path": "node_modules/@ethersproject/sha2/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/sha2"
-          },
-          {
-            "path": "node_modules/@ethersproject/strings/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/strings"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/ethers/lib/_version.js": {
-        "bytes": 173,
-        "imports": [],
-        "format": "cjs"
-      },
-      "node_modules/ethers/lib/ethers.js": {
-        "bytes": 3749,
-        "imports": [
-          {
-            "path": "node_modules/@ethersproject/contracts/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/contracts"
-          },
-          {
-            "path": "node_modules/@ethersproject/bignumber/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/bignumber"
-          },
-          {
-            "path": "node_modules/@ethersproject/abstract-signer/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/abstract-signer"
-          },
-          {
-            "path": "node_modules/@ethersproject/wallet/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/wallet"
-          },
-          {
-            "path": "node_modules/@ethersproject/constants/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/constants"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/providers"
-          },
-          {
-            "path": "node_modules/@ethersproject/providers/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/providers"
-          },
-          {
-            "path": "node_modules/@ethersproject/wordlists/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/wordlists"
-          },
-          {
-            "path": "node_modules/ethers/lib/utils.js",
-            "kind": "require-call",
-            "original": "./utils"
-          },
-          {
-            "path": "node_modules/@ethersproject/logger/lib/index.js",
-            "kind": "require-call",
-            "original": "@ethersproject/logger"
-          },
-          {
-            "path": "node_modules/ethers/lib/_version.js",
-            "kind": "require-call",
-            "original": "./_version"
-          }
-        ],
-        "format": "cjs"
-      },
-      "node_modules/ethers/lib/index.js": {
-        "bytes": 3682,
-        "imports": [
-          {
-            "path": "node_modules/ethers/lib/ethers.js",
-            "kind": "require-call",
-            "original": "./ethers"
-          },
-          {
-            "path": "node_modules/ethers/lib/ethers.js",
-            "kind": "require-call",
-            "original": "./ethers"
-          }
-        ],
-        "format": "cjs"
-      },
-      "src/subPackages/solidity/Contract-rpc.testeranto.test.ts": {
-        "bytes": 4095,
-        "imports": [
-          {
-            "path": "../testeranto/src/Node.ts",
-            "kind": "import-statement",
-            "original": "testeranto/src/Node"
-          },
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "ganache",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "node_modules/web3/lib/index.js",
-            "kind": "import-statement",
-            "original": "web3"
-          },
-          {
-            "path": "node_modules/ethers/lib/index.js",
-            "kind": "import-statement",
-            "original": "ethers"
-          },
-          {
-            "path": "ethers",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "web3-eth-contract",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "format": "esm"
-      },
-      "src/MyFirstContract.rpc.test.ts": {
-        "bytes": 2197,
-        "imports": [
-          {
-            "path": "testeranto/src/Types",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "node_modules/chai/index.mjs",
-            "kind": "import-statement",
-            "original": "chai"
-          },
-          {
-            "path": "src/subPackages/solidity/Contract-rpc.testeranto.test.ts",
-            "kind": "import-statement",
-            "original": "./subPackages/solidity/Contract-rpc.testeranto.test"
-          },
-          {
-            "path": "./MyFirstContract.solidity-react.shape.test",
-            "kind": "import-statement",
-            "external": true
-          },
-          {
-            "path": "src/MyFirstContract.specification.test.ts",
-            "kind": "import-statement",
-            "original": "./MyFirstContract.specification.test"
-          }
-        ],
-        "format": "esm"
       }
     },
     "outputs": {
       "docs/node/src/MyFirstContract.basic.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-USNXDI5K.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-NGUD7ODA.mjs",
+            "path": "docs/node/chunk-HQ3RS3OZ.mjs",
             "kind": "import-statement"
           },
           {
             "path": "docs/node/chunk-BFDDKUUP.mjs",
             "kind": "import-statement"
           },
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "ganache",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/MyFirstContract.basic.test.ts",
-        "inputs": {
-          "src/subPackages/solidity/Contract.testeranto.test.ts": {
-            "bytesInOutput": 1341
-          },
-          "src/MyFirstContract.basic.test.ts": {
-            "bytesInOutput": 1757
-          }
-        },
-        "bytes": 3640
-      },
-      "docs/node/src/MyFirstContract.rpc.test.mjs": {
-        "imports": [
-          {
-            "path": "docs/node/chunk-USNXDI5K.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-NGUD7ODA.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-BFDDKUUP.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "docs/node/chunk-M7BKJ4RF.mjs",
-            "kind": "import-statement"
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "https",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "zlib",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "url",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "zlib",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "buffer",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "events",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "https",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "net",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "tls",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "url",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "events",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "http",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "stream",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "crypto",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "net",
-            "kind": "require-call",
-            "external": true
-          },
-          {
-            "path": "ganache",
-            "kind": "import-statement",
-            "external": true
-          }
-        ],
-        "exports": [
-          "default"
-        ],
-        "entryPoint": "src/MyFirstContract.rpc.test.ts",
-        "inputs": {
-          "node_modules/@ethersproject/abstract-provider/lib/_version.js": {
-            "bytesInOutput": 284
-          },
-          "node_modules/@ethersproject/abstract-provider/lib/index.js": {
-            "bytesInOutput": 9479
-          },
-          "node_modules/@ethersproject/abstract-signer/lib/_version.js": {
-            "bytesInOutput": 281
-          },
-          "node_modules/@ethersproject/abstract-signer/lib/index.js": {
-            "bytesInOutput": 19330
-          },
-          "node_modules/@ethersproject/contracts/lib/_version.js": {
-            "bytesInOutput": 269
-          },
-          "node_modules/@ethersproject/contracts/lib/index.js": {
-            "bytesInOutput": 50666
-          },
-          "node_modules/@ethersproject/basex/lib/index.js": {
-            "bytesInOutput": 3125
-          },
-          "node_modules/@ethersproject/pbkdf2/lib/pbkdf2.js": {
-            "bytesInOutput": 630
-          },
-          "node_modules/@ethersproject/pbkdf2/lib/index.js": {
-            "bytesInOutput": 378
-          },
-          "node_modules/@ethersproject/sha2/lib/types.js": {
-            "bytesInOutput": 483
-          },
-          "node_modules/@ethersproject/sha2/lib/_version.js": {
-            "bytesInOutput": 259
-          },
-          "node_modules/@ethersproject/sha2/lib/sha2.js": {
-            "bytesInOutput": 1752
-          },
-          "node_modules/@ethersproject/sha2/lib/index.js": {
-            "bytesInOutput": 1018
-          },
-          "node_modules/@ethersproject/wordlists/lib/_version.js": {
-            "bytesInOutput": 269
-          },
-          "node_modules/@ethersproject/wordlists/lib/wordlist.js": {
-            "bytesInOutput": 1961
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-cz.js": {
-            "bytesInOutput": 15058
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-en.js": {
-            "bytesInOutput": 13229
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-es.js": {
-            "bytesInOutput": 14699
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-fr.js": {
-            "bytesInOutput": 17439
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-ja.js": {
-            "bytesInOutput": 12990
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-ko.js": {
-            "bytesInOutput": 14819
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-it.js": {
-            "bytesInOutput": 16146
-          },
-          "node_modules/@ethersproject/wordlists/lib/lang-zh.js": {
-            "bytesInOutput": 11275
-          },
-          "node_modules/@ethersproject/wordlists/lib/wordlists.js": {
-            "bytesInOutput": 868
-          },
-          "node_modules/@ethersproject/wordlists/lib/index.js": {
-            "bytesInOutput": 730
-          },
-          "node_modules/@ethersproject/hdnode/lib/_version.js": {
-            "bytesInOutput": 263
-          },
-          "node_modules/@ethersproject/hdnode/lib/index.js": {
-            "bytesInOutput": 13662
-          },
-          "node_modules/@ethersproject/random/lib/random.js": {
-            "bytesInOutput": 450
-          },
-          "node_modules/@ethersproject/random/lib/shuffle.js": {
-            "bytesInOutput": 536
-          },
-          "node_modules/@ethersproject/random/lib/index.js": {
-            "bytesInOutput": 579
-          },
-          "node_modules/aes-js/index.js": {
-            "bytesInOutput": 58094
-          },
-          "node_modules/@ethersproject/json-wallets/lib/_version.js": {
-            "bytesInOutput": 275
-          },
-          "node_modules/@ethersproject/json-wallets/lib/utils.js": {
-            "bytesInOutput": 2111
-          },
-          "node_modules/@ethersproject/json-wallets/lib/crowdsale.js": {
-            "bytesInOutput": 3425
-          },
-          "node_modules/@ethersproject/json-wallets/lib/inspect.js": {
-            "bytesInOutput": 1459
-          },
-          "node_modules/@ethersproject/json-wallets/lib/keystore.js": {
-            "bytesInOutput": 16933
-          },
-          "node_modules/@ethersproject/json-wallets/lib/index.js": {
-            "bytesInOutput": 2608
-          },
-          "node_modules/@ethersproject/wallet/lib/_version.js": {
-            "bytesInOutput": 263
-          },
-          "node_modules/@ethersproject/wallet/lib/index.js": {
-            "bytesInOutput": 13699
-          },
-          "node_modules/@ethersproject/networks/lib/_version.js": {
-            "bytesInOutput": 267
-          },
-          "node_modules/@ethersproject/networks/lib/index.js": {
-            "bytesInOutput": 8613
-          },
-          "node_modules/@ethersproject/web/lib/_version.js": {
-            "bytesInOutput": 258
-          },
-          "node_modules/@ethersproject/web/lib/geturl.js": {
-            "bytesInOutput": 7259
-          },
-          "node_modules/@ethersproject/web/lib/index.js": {
-            "bytesInOutput": 19331
-          },
-          "node_modules/bech32/index.js": {
-            "bytesInOutput": 4903
-          },
-          "node_modules/@ethersproject/providers/lib/_version.js": {
-            "bytesInOutput": 270
-          },
-          "node_modules/@ethersproject/providers/lib/formatter.js": {
-            "bytesInOutput": 17538
-          },
-          "node_modules/@ethersproject/providers/lib/base-provider.js": {
-            "bytesInOutput": 113087
-          },
-          "node_modules/@ethersproject/providers/lib/json-rpc-provider.js": {
-            "bytesInOutput": 36668
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/constants.js": {
-            "bytesInOutput": 684
-          },
-          "node_modules/bufferutil/fallback.js": {
-            "bytesInOutput": 496
-          },
-          "node_modules/bufferutil/index.js": {
-            "bytesInOutput": 257
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/buffer-util.js": {
-            "bytesInOutput": 2429
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/limiter.js": {
-            "bytesInOutput": 1232
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/permessage-deflate.js": {
-            "bytesInOutput": 14313
-          },
-          "node_modules/utf-8-validate/fallback.js": {
-            "bytesInOutput": 1240
-          },
-          "node_modules/utf-8-validate/index.js": {
-            "bytesInOutput": 266
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/validation.js": {
-            "bytesInOutput": 3648
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/receiver.js": {
-            "bytesInOutput": 18450
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/sender.js": {
-            "bytesInOutput": 17472
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/event-target.js": {
-            "bytesInOutput": 7668
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/extension.js": {
-            "bytesInOutput": 5932
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket.js": {
-            "bytesInOutput": 31564
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/stream.js": {
-            "bytesInOutput": 3010
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/subprotocol.js": {
-            "bytesInOutput": 1583
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/lib/websocket-server.js": {
-            "bytesInOutput": 15476
-          },
-          "node_modules/@ethersproject/providers/node_modules/ws/index.js": {
-            "bytesInOutput": 495
-          },
-          "node_modules/@ethersproject/providers/lib/ws.js": {
-            "bytesInOutput": 453
-          },
-          "node_modules/@ethersproject/providers/lib/websocket-provider.js": {
-            "bytesInOutput": 15861
-          },
-          "node_modules/@ethersproject/providers/lib/url-json-rpc-provider.js": {
-            "bytesInOutput": 8205
-          },
-          "node_modules/@ethersproject/providers/lib/alchemy-provider.js": {
-            "bytesInOutput": 5147
-          },
-          "node_modules/@ethersproject/providers/lib/ankr-provider.js": {
-            "bytesInOutput": 3695
-          },
-          "node_modules/@ethersproject/providers/lib/cloudflare-provider.js": {
-            "bytesInOutput": 6362
-          },
-          "node_modules/@ethersproject/providers/lib/etherscan-provider.js": {
-            "bytesInOutput": 24020
-          },
-          "node_modules/@ethersproject/providers/lib/fallback-provider.js": {
-            "bytesInOutput": 30269
-          },
-          "node_modules/@ethersproject/providers/lib/ipc-provider.js": {
-            "bytesInOutput": 2982
-          },
-          "node_modules/@ethersproject/providers/lib/infura-provider.js": {
-            "bytesInOutput": 6545
-          },
-          "node_modules/@ethersproject/providers/lib/json-rpc-batch-provider.js": {
-            "bytesInOutput": 4096
-          },
-          "node_modules/@ethersproject/providers/lib/nodesmith-provider.js": {
-            "bytesInOutput": 3022
-          },
-          "node_modules/@ethersproject/providers/lib/pocket-provider.js": {
-            "bytesInOutput": 4146
-          },
-          "node_modules/@ethersproject/providers/lib/quicknode-provider.js": {
-            "bytesInOutput": 4244
-          },
-          "node_modules/@ethersproject/providers/lib/web3-provider.js": {
-            "bytesInOutput": 5583
-          },
-          "node_modules/@ethersproject/providers/lib/index.js": {
-            "bytesInOutput": 8008
-          },
-          "node_modules/@ethersproject/solidity/lib/_version.js": {
-            "bytesInOutput": 268
-          },
-          "node_modules/@ethersproject/solidity/lib/index.js": {
-            "bytesInOutput": 3673
-          },
-          "node_modules/@ethersproject/units/lib/_version.js": {
-            "bytesInOutput": 262
-          },
-          "node_modules/@ethersproject/units/lib/index.js": {
-            "bytesInOutput": 2867
-          },
-          "node_modules/ethers/lib/utils.js": {
-            "bytesInOutput": 17462
-          },
-          "node_modules/ethers/lib/_version.js": {
-            "bytesInOutput": 249
-          },
-          "node_modules/ethers/lib/ethers.js": {
-            "bytesInOutput": 3904
-          },
-          "node_modules/ethers/lib/index.js": {
-            "bytesInOutput": 4013
-          },
-          "src/subPackages/solidity/Contract-rpc.testeranto.test.ts": {
-            "bytesInOutput": 2424
-          },
-          "src/MyFirstContract.rpc.test.ts": {
-            "bytesInOutput": 1617
-          }
-        },
-        "bytes": 831744
-      },
-      "docs/node/chunk-USNXDI5K.mjs": {
-        "imports": [
           {
             "path": "docs/node/chunk-M7BKJ4RF.mjs",
             "kind": "import-statement"
@@ -19304,31 +16349,17 @@
             "path": "child_process",
             "kind": "require-call",
             "external": true
+          },
+          {
+            "path": "ganache",
+            "kind": "import-statement",
+            "external": true
           }
         ],
         "exports": [
-          "MyFirstContractTestInput",
-          "MyFirstContract_default",
-          "commonGivens",
-          "require_hash",
-          "require_lib",
-          "require_lib10",
-          "require_lib11",
-          "require_lib12",
-          "require_lib13",
-          "require_lib14",
-          "require_lib15",
-          "require_lib2",
-          "require_lib3",
-          "require_lib4",
-          "require_lib5",
-          "require_lib6",
-          "require_lib7",
-          "require_lib8",
-          "require_lib9",
-          "require_node_gyp_build",
-          "require_scrypt"
+          "default"
         ],
+        "entryPoint": "src/MyFirstContract.basic.test.ts",
         "inputs": {
           "node_modules/web3/package.json": {
             "bytesInOutput": 2071
@@ -19337,10 +16368,10 @@
             "bytesInOutput": 5369
           },
           "node_modules/ethjs-unit/node_modules/bn.js/lib/bn.js": {
-            "bytesInOutput": 90288
+            "bytesInOutput": 90352
           },
           "node_modules/number-to-bn/node_modules/bn.js/lib/bn.js": {
-            "bytesInOutput": 90291
+            "bytesInOutput": 90355
           },
           "node_modules/is-hex-prefixed/src/index.js": {
             "bytesInOutput": 392
@@ -19355,13 +16386,13 @@
             "bytesInOutput": 5253
           },
           "node_modules/bn.js/lib/bn.js": {
-            "bytesInOutput": 93636
+            "bytesInOutput": 93701
           },
           "node_modules/utf8/utf8.js": {
             "bytesInOutput": 5288
           },
           "node_modules/@noble/hashes/_assert.js": {
-            "bytesInOutput": 2004
+            "bytesInOutput": 2006
           },
           "node_modules/@noble/hashes/cryptoNode.js": {
             "bytesInOutput": 355
@@ -19742,10 +16773,10 @@
             "bytesInOutput": 1685
           },
           "node_modules/elliptic/node_modules/bn.js/lib/bn.js": {
-            "bytesInOutput": 90981
+            "bytesInOutput": 91045
           },
           "node_modules/minimalistic-assert/index.js": {
-            "bytesInOutput": 407
+            "bytesInOutput": 410
           },
           "node_modules/minimalistic-crypto-utils/lib/utils.js": {
             "bytesInOutput": 1457
@@ -19757,7 +16788,7 @@
             "bytesInOutput": 1640
           },
           "node_modules/elliptic/lib/elliptic/curve/base.js": {
-            "bytesInOutput": 9968
+            "bytesInOutput": 9973
           },
           "node_modules/inherits/inherits_browser.js": {
             "bytesInOutput": 900
@@ -19766,22 +16797,22 @@
             "bytesInOutput": 339
           },
           "node_modules/elliptic/lib/elliptic/curve/short.js": {
-            "bytesInOutput": 22513
+            "bytesInOutput": 22515
           },
           "node_modules/elliptic/lib/elliptic/curve/mont.js": {
             "bytesInOutput": 4347
           },
           "node_modules/elliptic/lib/elliptic/curve/edwards.js": {
-            "bytesInOutput": 10101
+            "bytesInOutput": 10103
           },
           "node_modules/elliptic/lib/elliptic/curve/index.js": {
             "bytesInOutput": 292
           },
           "node_modules/hash.js/lib/hash/utils.js": {
-            "bytesInOutput": 7101
+            "bytesInOutput": 7103
           },
           "node_modules/hash.js/lib/hash/common.js": {
-            "bytesInOutput": 2509
+            "bytesInOutput": 2511
           },
           "node_modules/hash.js/lib/hash/sha/common.js": {
             "bytesInOutput": 1151
@@ -19790,13 +16821,13 @@
             "bytesInOutput": 1929
           },
           "node_modules/hash.js/lib/hash/sha/256.js": {
-            "bytesInOutput": 3648
+            "bytesInOutput": 3650
           },
           "node_modules/hash.js/lib/hash/sha/224.js": {
             "bytesInOutput": 881
           },
           "node_modules/hash.js/lib/hash/sha/512.js": {
-            "bytesInOutput": 10330
+            "bytesInOutput": 10332
           },
           "node_modules/hash.js/lib/hash/sha/384.js": {
             "bytesInOutput": 1044
@@ -19808,7 +16839,7 @@
             "bytesInOutput": 5958
           },
           "node_modules/hash.js/lib/hash/hmac.js": {
-            "bytesInOutput": 1294
+            "bytesInOutput": 1296
           },
           "node_modules/hash.js/lib/hash.js": {
             "bytesInOutput": 500
@@ -19817,28 +16848,28 @@
             "bytesInOutput": 35590
           },
           "node_modules/elliptic/lib/elliptic/curves.js": {
-            "bytesInOutput": 7006
+            "bytesInOutput": 7009
           },
           "node_modules/hmac-drbg/lib/hmac-drbg.js": {
-            "bytesInOutput": 3204
+            "bytesInOutput": 3207
           },
           "node_modules/elliptic/lib/elliptic/ec/key.js": {
-            "bytesInOutput": 3194
+            "bytesInOutput": 3198
           },
           "node_modules/elliptic/lib/elliptic/ec/signature.js": {
-            "bytesInOutput": 3945
+            "bytesInOutput": 3947
           },
           "node_modules/elliptic/lib/elliptic/ec/index.js": {
-            "bytesInOutput": 7203
+            "bytesInOutput": 7211
           },
           "node_modules/elliptic/lib/elliptic/eddsa/key.js": {
-            "bytesInOutput": 2542
+            "bytesInOutput": 2545
           },
           "node_modules/elliptic/lib/elliptic/eddsa/signature.js": {
-            "bytesInOutput": 1742
+            "bytesInOutput": 1745
           },
           "node_modules/elliptic/lib/elliptic/eddsa/index.js": {
-            "bytesInOutput": 3336
+            "bytesInOutput": 3338
           },
           "node_modules/elliptic/lib/elliptic.js": {
             "bytesInOutput": 424
@@ -20231,7 +17262,7 @@
             "bytesInOutput": 5008
           },
           "node_modules/eth-lib/node_modules/bn.js/lib/bn.js": {
-            "bytesInOutput": 90980
+            "bytesInOutput": 91044
           },
           "node_modules/eth-lib/lib/nat.js": {
             "bytesInOutput": 1248
@@ -20306,7 +17337,7 @@
             "bytesInOutput": 1405
           },
           "node_modules/ethereumjs-util/node_modules/secp256k1/lib/index.js": {
-            "bytesInOutput": 11843
+            "bytesInOutput": 11856
           },
           "node_modules/ethereumjs-util/node_modules/secp256k1/bindings.js": {
             "bytesInOutput": 249
@@ -20780,7 +17811,7 @@
             "bytesInOutput": 205
           },
           "node_modules/swarm-js/node_modules/fs-extra/lib/remove/rimraf.js": {
-            "bytesInOutput": 7124
+            "bytesInOutput": 7156
           },
           "node_modules/swarm-js/node_modules/fs-extra/lib/remove/index.js": {
             "bytesInOutput": 319
@@ -20942,7 +17973,7 @@
             "bytesInOutput": 472
           },
           "node_modules/@sindresorhus/is/dist/index.js": {
-            "bytesInOutput": 20348
+            "bytesInOutput": 20350
           },
           "node_modules/p-cancelable/index.js": {
             "bytesInOutput": 2788
@@ -21155,7 +18186,7 @@
             "bytesInOutput": 4017
           },
           "node_modules/minizlib/index.js": {
-            "bytesInOutput": 7874
+            "bytesInOutput": 7878
           },
           "node_modules/tar/lib/types.js": {
             "bytesInOutput": 1298
@@ -21224,10 +18255,10 @@
             "bytesInOutput": 5801
           },
           "node_modules/tar/lib/path-reservations.js": {
-            "bytesInOutput": 3553
+            "bytesInOutput": 3556
           },
           "node_modules/tar/lib/unpack.js": {
-            "bytesInOutput": 21465
+            "bytesInOutput": 21467
           },
           "node_modules/tar/lib/extract.js": {
             "bytesInOutput": 2884
@@ -21272,7 +18303,7 @@
             "bytesInOutput": 3477
           },
           "node_modules/swarm-js/lib/files.js": {
-            "bytesInOutput": 7668
+            "bytesInOutput": 7672
           },
           "node_modules/mime-db/db.json": {
             "bytesInOutput": 212410
@@ -21353,21 +18384,27 @@
             "bytesInOutput": 1380
           },
           "node_modules/web3/lib/index.js": {
-            "bytesInOutput": 1170
+            "bytesInOutput": 1176
+          },
+          "src/subPackages/solidity/Contract.testeranto.test.ts": {
+            "bytesInOutput": 1343
           },
           "solidity:MyFirstContract": {
             "bytesInOutput": 61519
           },
           "src/MyFirstContract.specification.test.ts": {
             "bytesInOutput": 1066
+          },
+          "src/MyFirstContract.basic.test.ts": {
+            "bytesInOutput": 1757
           }
         },
-        "bytes": 5041290
+        "bytes": 5044432
       },
       "docs/node/src/Rectangle/Rectangle.test.node.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-NGUD7ODA.mjs",
+            "path": "docs/node/chunk-HQ3RS3OZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21388,27 +18425,27 @@
             "bytesInOutput": 479
           },
           "src/Rectangle.test.implementation.ts": {
-            "bytesInOutput": 1777
+            "bytesInOutput": 1746
           },
           "feature-markdown:/Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md": {
             "bytesInOutput": 88
           },
           "src/Rectangle.test.specification.ts": {
-            "bytesInOutput": 1655
+            "bytesInOutput": 1648
           },
           "src/Rectangle.test.interface.ts": {
-            "bytesInOutput": 301
+            "bytesInOutput": 264
           },
           "src/Rectangle/Rectangle.test.node.ts": {
             "bytesInOutput": 586
           }
         },
-        "bytes": 5427
+        "bytes": 5352
       },
       "docs/node/src/ReactStateAndHook.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-KRR7Q6NL.mjs",
+            "path": "docs/node/chunk-NZQTHT7X.mjs",
             "kind": "import-statement"
           },
           {
@@ -21416,7 +18453,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -21460,7 +18497,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NGUD7ODA.mjs",
+            "path": "docs/node/chunk-HQ3RS3OZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21497,7 +18534,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-NGUD7ODA.mjs",
+            "path": "docs/node/chunk-HQ3RS3OZ.mjs",
             "kind": "import-statement"
           },
           {
@@ -21519,13 +18556,13 @@
         "entryPoint": "src/app.redux.test.ts",
         "inputs": {
           "src/subPackages/redux.testeranto.test.ts": {
-            "bytesInOutput": 666
+            "bytesInOutput": 684
           },
           "src/app.redux.test.ts": {
-            "bytesInOutput": 1283
+            "bytesInOutput": 1018
           }
         },
-        "bytes": 2441
+        "bytes": 2194
       },
       "docs/node/chunk-YGATLTHN.mjs": {
         "imports": [],
@@ -21539,7 +18576,7 @@
         },
         "bytes": 1827
       },
-      "docs/node/chunk-NGUD7ODA.mjs": {
+      "docs/node/chunk-HQ3RS3OZ.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -21556,14 +18593,14 @@
           "Node_default"
         ],
         "inputs": {
-          "../testeranto/src/lib/index.ts": {
+          "../testeranto/src/lib/index.js": {
             "bytesInOutput": 459
           },
-          "../testeranto/src/lib/abstractBase.ts": {
-            "bytesInOutput": 9965
+          "../testeranto/src/lib/abstractBase.js": {
+            "bytesInOutput": 9013
           },
           "../testeranto/src/lib/basebuilder.ts": {
-            "bytesInOutput": 2748
+            "bytesInOutput": 3368
           },
           "../testeranto/src/lib/classBuilder.ts": {
             "bytesInOutput": 2284
@@ -21574,14 +18611,14 @@
           "../testeranto/src/PM/node.ts": {
             "bytesInOutput": 4120
           },
-          "../testeranto/src/PM/index.ts": {
+          "../testeranto/src/PM/index.js": {
             "bytesInOutput": 20
           },
           "../testeranto/src/Node.ts": {
             "bytesInOutput": 887
           }
         },
-        "bytes": 24433
+        "bytes": 24101
       },
       "docs/node/src/LoginPage/react/node.test.mjs": {
         "imports": [
@@ -21594,7 +18631,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -21634,7 +18671,7 @@
       "docs/node/src/LoginPage/react-test-renderer/node.test.mjs": {
         "imports": [
           {
-            "path": "docs/node/chunk-KRR7Q6NL.mjs",
+            "path": "docs/node/chunk-NZQTHT7X.mjs",
             "kind": "import-statement"
           },
           {
@@ -21650,7 +18687,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -21704,14 +18741,14 @@
         },
         "bytes": 751016
       },
-      "docs/node/chunk-KRR7Q6NL.mjs": {
+      "docs/node/chunk-NZQTHT7X.mjs": {
         "imports": [
           {
             "path": "docs/node/chunk-6FWMRXFT.mjs",
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -22051,7 +19088,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -22158,44 +19195,44 @@
         ],
         "entryPoint": "src/ClassicalComponent/react-dom/server.node.test.tsx",
         "inputs": {
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59867
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61631
-          },
-          "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231577
-          },
-          "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230471
-          },
-          "node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 772
-          },
           "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
-            "bytesInOutput": 59882
+            "bytesInOutput": 59881
           },
           "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
-            "bytesInOutput": 61646
+            "bytesInOutput": 61645
           },
           "../testeranto/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
-            "bytesInOutput": 231592
+            "bytesInOutput": 231591
           },
           "../testeranto/node_modules/react-dom/cjs/react-dom-server.node.development.js": {
-            "bytesInOutput": 230486
+            "bytesInOutput": 230485
           },
           "../testeranto/node_modules/react-dom/server.node.js": {
-            "bytesInOutput": 791
+            "bytesInOutput": 786
           },
-          "src/ClassicalComponent/react-dom/server.node.test.tsx": {
-            "bytesInOutput": 1780
+          "node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js": {
+            "bytesInOutput": 59868
+          },
+          "node_modules/react-dom/cjs/react-dom-server.node.production.min.js": {
+            "bytesInOutput": 61632
+          },
+          "node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js": {
+            "bytesInOutput": 231578
+          },
+          "node_modules/react-dom/cjs/react-dom-server.node.development.js": {
+            "bytesInOutput": 230472
+          },
+          "node_modules/react-dom/server.node.js": {
+            "bytesInOutput": 777
           },
           "../testeranto/dist/module/src/SubPackages/react-dom/component/node.js": {
-            "bytesInOutput": 1041
+            "bytesInOutput": 1040
+          },
+          "src/ClassicalComponent/react-dom/server.node.test.tsx": {
+            "bytesInOutput": 1627
           }
         },
-        "bytes": 1175555
+        "bytes": 1175343
       },
       "docs/node/src/ClassicalComponent/react-test-renderer/node.test.mjs": {
         "imports": [
@@ -22208,7 +19245,7 @@
             "kind": "import-statement"
           },
           {
-            "path": "docs/node/chunk-TID3HMIR.mjs",
+            "path": "docs/node/chunk-5WIVDWJL.mjs",
             "kind": "import-statement"
           },
           {
@@ -22237,16 +19274,16 @@
             "bytesInOutput": 156
           },
           "src/ClassicalComponent/test.specification.ts": {
-            "bytesInOutput": 1468
+            "bytesInOutput": 1461
           },
           "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-            "bytesInOutput": 1070
+            "bytesInOutput": 1034
           },
           "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
             "bytesInOutput": 110
           }
         },
-        "bytes": 4571
+        "bytes": 4528
       },
       "docs/node/chunk-6FWMRXFT.mjs": {
         "imports": [
@@ -22322,7 +19359,7 @@
         },
         "bytes": 1141
       },
-      "docs/node/chunk-TID3HMIR.mjs": {
+      "docs/node/chunk-5WIVDWJL.mjs": {
         "imports": [
           {
             "path": "fs",
@@ -22346,7 +19383,7 @@
             "bytesInOutput": 8985
           },
           "../testeranto/dist/module/src/lib/basebuilder.js": {
-            "bytesInOutput": 2536
+            "bytesInOutput": 3120
           },
           "../testeranto/dist/module/src/lib/classBuilder.js": {
             "bytesInOutput": 1856
@@ -22364,7 +19401,7 @@
             "bytesInOutput": 819
           }
         },
-        "bytes": 21795
+        "bytes": 22379
       },
       "docs/node/chunk-BFDDKUUP.mjs": {
         "imports": [

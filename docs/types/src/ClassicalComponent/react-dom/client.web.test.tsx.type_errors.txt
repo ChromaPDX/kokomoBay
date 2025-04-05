@@ -1,6 +1,0 @@
-src/ClassicalComponent/react-dom/client.web.test.tsx(78,3): error TS2345: Argument of type '{ suites: { Default: string; }; givens: { AnEmptyState: { foo: string; }; }; whens: { IClickTheHeader: () => ({ htmlElement }: { htmlElement: any; }) => Promise<void>; IClickTheButton: () => ({ htmlElement }: { htmlElement: any; }) => Promise<...>; }; thens: { ...; }; checks: { ...; }; }' is not assignable to parameter of type 'ITestImplementation<IClassicalComponentSpec, any>'.
-  Types of property 'givens' are incompatible.
-    Type '{ AnEmptyState: { foo: string; }; }' is not assignable to type '{ [x: string]: (...Ig: any) => any; }'.
-      Property 'AnEmptyState' is incompatible with index signature.
-        Type '{ foo: string; }' is not assignable to type '(...Ig: any) => any'.
-          Type '{ foo: string; }' provides no match for the signature '(...Ig: any): any'.

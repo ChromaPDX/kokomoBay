@@ -1,9 +1,8 @@
-import { ITestImplementation } from "testeranto/src/Types";
+import { Ibdd_out, ITestImplementation } from "testeranto/src/Types";
 import { assert } from "chai";
 
 import { ILoginPageSpecs } from "../test.js";
 import { credentialFailWarning, credErrorId, emailInputId, emailwarning, loginInputId, passwordInputId } from "../index.js";
-import { PM_Web } from "../../../../testeranto/src/PM/web.js";
 import { PM } from "../../../../testeranto/src/PM/index.js";
 
 const emailInput = `#${emailInputId}`;
@@ -15,7 +14,6 @@ const assert$ = async (sel: string, utils: PM) => {
   if (x) {
     assert(true, `'${sel}' evaluated to: ${x}`)
   } else {
-    // console.log("The current html is", await utils.$("xpath//*"))
     assert(x, `Expected ${sel} to evaluate OK, but it evaluated to: ${x}`);
   }
 }
@@ -34,7 +32,11 @@ PM.prototype.getText = async function (selector: string) {
   return element.textContent?.trim() || '';
 }
 
-export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs<unknown>, object> = {
+export const loginPageImplreactDom: ITestImplementation<
+  ILoginPageSpecs<unknown>,
+  Ibdd_out<
+    Record<string, unknown>, Record<string, unknown>, Record<string, unknown>, Record<string, unknown>, Record<string, unknown>>
+> = {
   suites: {
     Default: "a default suite",
   },
@@ -105,11 +107,11 @@ export const loginPageImplreactDom: ITestImplementation<ILoginPageSpecs<unknown>
         resolve();
       });
     },
-    ThereIsACredentialError: () => async (ssel: any, utils: PM) => {
+    ThereIsACredentialError: () => async (ssel, utils) => {
       utils.customScreenShot({ path: 'ThereIsACredentialError.png' })
       assert$(`#${credErrorId} ::-p-text(${credentialFailWarning})`, utils);
     },
-    ThereIsNotACredentialError: () => async (ssel: any, utils: PM) => {
+    ThereIsNotACredentialError: () => async (ssel, utils) => {
       utils.customScreenShot({ path: 'ThereIsNotACredentialError.png' })
       assert$(`#${credErrorId}`, utils);
       assert.isNull(await utils.$(`#error ::-p-text(${credentialFailWarning})`))

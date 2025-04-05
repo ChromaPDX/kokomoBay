@@ -3,7 +3,7 @@ import { IRectangleTestShape } from "./Rectangle.test.shape";
 
 export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape> =
   {
-    beforeEach: async (subject, initializer, art, tr, initialValues) => {
+    beforeEach: async (subject) => {
       return subject;
     },
     andWhen: async function (renderer, actioner) {

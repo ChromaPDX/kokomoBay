@@ -1,3 +1,0 @@
-src/subPackages/solidity/react.testeranto.ts(48,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).
-
-src/subPackages/solidity/react.testeranto.ts(121,25): error TS2345: Argument of type 'MutableRefObject<any>' is not assignable to parameter of type 'ITestShape["istore"] | PromiseLike<ITestShape["istore"]>'.

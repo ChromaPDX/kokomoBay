@@ -1,13 +1,15 @@
 
+/add ../testeranto/node_modules/react-dom/cjs/react-dom.development.js
+/add ../testeranto/node_modules/react-dom/index.js
+/add ../testeranto/node_modules/react-dom/client.js
+/add ../testeranto/dist/module/src/SubPackages/react-dom/component/web.js
 /add src/ClassicalComponent/react-dom/client.web.test.tsx
-  
-/read docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt
 
-/read docs/web/src/ClassicalComponent/react-dom/client.web.test/lint_errors.txt
+/read docs/web/src/ClassicalComponent/react-dom/client.web.test/lint_errors.json
+/read docs/web/src/ClassicalComponent/react-dom/client.web.test/type_errors.txt
 /read docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json
-/read docs/web/src/ClassicalComponent/react-dom/client.web.test/stdout.log
-/read docs/web/src/ClassicalComponent/react-dom/client.web.test/stderr.log
 
 /load docs/web/src/ClassicalComponent/react-dom/client.web.test/featurePrompt.txt
 
-/code Fix the failing tests described in docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files [docs/types/src/ClassicalComponent/react-dom/client.web.test.tsx.type_errors.txt]. Implement any method which throws "Function not implemented. Resolve the lint errors described in docs/web/src/ClassicalComponent/react-dom/client.web.test/lint_errors.txt"
+/code Fix the failing tests described in docs/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files docs/web/src/ClassicalComponent/react-dom/client.web.test/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in docs/web/src/ClassicalComponent/react-dom/client.web.test/lint_errors.json"
+          

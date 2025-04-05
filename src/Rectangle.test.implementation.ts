@@ -83,7 +83,6 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
   },
 
   checks: {
-    /* @ts-ignore:next-line */
     AnEmptyState: () => {
       return {};
     },

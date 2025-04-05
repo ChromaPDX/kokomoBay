@@ -9,7 +9,7 @@ import Rectangle from "../Rectangle";
 
 const testInterface: IPartialNodeInterface<IRectangleTestShape> = {
   ...RectangleTesterantoBaseInterface,
-  beforeEach: async (rectangleProto, init, art, tr, initialValues, pm) => {
+  beforeEach: async (rectangleProto) => {
     return rectangleProto;
   },
 };

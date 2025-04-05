@@ -1,1 +1,0 @@
-src/LoginPage/react-dom/test.tsx(37,83): error TS2344: Type 'object' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.

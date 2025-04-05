@@ -1,0 +1,81 @@
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (13,28): '"./app.test"' has no exported member named 'IAppSpecification'. Did you mean 'AppSpecification'?
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (23,3): Type '{ givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, thens
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (62,32): Type 'ActionCreatorWithoutPayload<`${string}/signIn`>[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+  Type 'ActionCreatorWithoutPayload<`${string}/signIn`>[]' provides no match for the signature '(zel: IAppSpecification, utils: PM): Promise<IAppSpecification>'.
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (63,33): Type 'unknown[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+  Type 'unknown[]' provides no match for the signature '(zel: IAppSpecification, utils: PM): Promise<IAppSpecification>'.
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (64,39): Type 'unknown[]' is not assignable to type '(zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+  Type 'unknown[]' provides no match for the signature '(zel: IAppSpecification, utils: PM): Promise<IAppSpecification>'.
+/Users/adam/Code/kokomoBay/src/app.reduxToolkit.test.ts (85,3): Argument of type 'ITestImplementation<IAppSpecification, { givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { TheLoginIsSubmitted: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]; TheEmailIsSetTo: (e: string) => [...]; ThePasswordIsSetTo: (p: string) => [...]; }; checks: { ...; }; }>' is not assignable to parameter of type 'ITestImplementation<IAppSpecification, { givens: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; checks: { [x: string]: () => (...Iw: IAppSpecification) => IStoreState; }; whens: { [x: string]: (...Iw: IAppSpecification) => WhenShape; }; }>'.
+  Types of property 'whens' are incompatible.
+    Type '{ TheLoginIsSubmitted: (...Iw: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>; TheEmailIsSetTo: (...Iw: (e: string) => [...]) => (zel: IAppSpecification, utils: PM) => Promise<...>; ThePasswordIsSetTo: (...Iw: (p: string) => [...]) => (ze...' is not assignable to type '{ [x: string]: (...Iw: (...Iw: IAppSpecification) => WhenShape) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>; }'.
+      Property 'TheLoginIsSubmitted' is incompatible with index signature.
+        Type '(...Iw: () => [ActionCreatorWithoutPayload<`${string}/signIn`>]) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>' is not assignable to type '(...Iw: (...Iw: IAppSpecification) => WhenShape) => (zel: IAppSpecification, utils: PM) => Promise<IAppSpecification>'.
+          Types of parameters 'Iw' and 'Iw' are incompatible.
+            Type '(...Iw: IAppSpecification) => WhenShape' is not assignable to type '() => [ActionCreatorWithoutPayload<`${string}/signIn`>]'.
+              Type 'WhenShape' is not assignable to type '[ActionCreatorWithoutPayload<`${string}/signIn`>]'.
+                Target allows only 1 element(s) but source may have more.
+/Users/adam/Code/kokomoBay/src/LoginPage/index.tsx (12,61): Property 'setDisableSubmit' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: { payload: string; type: string; }) => void; setEmail: (s: IStoreState, b: { ...; }) => void; signIn: (s: IStoreState) => void; setError: (s: IStoreState, b: { ...; }) => void; }, string>'.
+/Users/adam/Code/kokomoBay/src/subPackages/reduxToolkit.testeranto.test.ts (62,5): Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' does not satisfy the constraint 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>'.
+  Type '{ givens: { [K in keyof ITestShape["givens"]]: () => (...Iw: ITestShape["givens"][K]) => IStoreShape; }; checks: { [K in keyof ITestShape["checks"]]: () => (...Iw: ITestShape["checks"][K]) => IStoreShape; }; whens: { [K in keyof ITestShape["whens"]]: (...Iw: ITestShape["whens"][K]) => WhenShape; }; }' is missing the following properties from type 'Ibdd_out<Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>, Record<string, any>>': suites, thens
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (42,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (44,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (141,30): A spread argument must either have a tuple type or be passed to a rest parameter.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (158,11): Argument of type '(t: ITestShape["then"]) => unknown' is not assignable to parameter of type '(t: Awaited<ITestShape["then"]> | undefined) => boolean'.
+  Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (234,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (236,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (237,3): Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (240,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (356,30): A spread argument must either have a tuple type or be passed to a rest parameter.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (397,7): Type 'unknown' is not assignable to type 'Error'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (398,12): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (425,32): A spread argument must either have a tuple type or be passed to a rest parameter.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (444,51): Generic type 'IBaseTest' requires 12 type argument(s).
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (447,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (498,28): A spread argument must either have a tuple type or be passed to a rest parameter.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (595,30): A spread argument must either have a tuple type or be passed to a rest parameter.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (610,20): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (701,68): Expected 5 arguments, but got 4.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (45,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (56,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (95,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (175,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<ITestShape>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | ... 1 more ... | undefined)[] | null; features: string[]; }[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
+/Users/adam/Code/testeranto/src/lib/core.ts (8,25): Module '"./types.js"' has no exported member 'ITestInterface'.
+/Users/adam/Code/testeranto/src/lib/core.ts (44,25): Generic type 'ITestImplementation' requires 2 type argument(s).
+/Users/adam/Code/testeranto/src/lib/core.ts (216,15): Property 'checkThat' in type 'Check' is not assignable to the same property in base type 'BaseCheck<ITestShape>'.
+  Type '(subject: any, testResourceConfiguration: any, artifactory: any, pm: any) => Promise<any>' is not assignable to type '(subject: ITestShape["isubject"], testResourceConfiguration: any, artifactory: ITestArtifactory) => Promise<ITestShape["istore"]>'.
+    Target signature provides too few arguments. Expected 4 or more, but got 3.
+/Users/adam/Code/testeranto/src/lib/index.ts (11,10): Module '"./types.js"' has no exported member 'ITestInterface'.
+/Users/adam/Code/testeranto/src/Node.ts (12,10): Module '"./lib/types.js"' has no exported member 'ITestInterface'.
+/Users/adam/Code/testeranto/src/Node.ts (12,26): Module '"./lib/types.js"' has no exported member 'INodeTestInterface'.
+/Users/adam/Code/testeranto/src/Node.ts (34,25): Generic type 'ITestImplementation' requires 2 type argument(s).
+/Users/adam/Code/testeranto/src/Node.ts (54,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
+  Types of property 'customScreenShot' are incompatible.
+    Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+      Types of parameters 'cdpPage' and 'page' are incompatible.
+        Type 'string | undefined' is not assignable to type 'CdpPage'.
+          Type 'undefined' is not assignable to type 'CdpPage'.
+/Users/adam/Code/testeranto/src/Node.ts (78,23): Generic type 'ITestImplementation' requires 2 type argument(s).
+/Users/adam/Code/testeranto/src/PM/index.ts (10,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (88,3): Property 'customScreenShot' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+    Types of parameters 'cdpPage' and 'page' are incompatible.
+      Type 'string | undefined' is not assignable to type 'CdpPage'.
+        Type 'undefined' is not assignable to type 'CdpPage'.
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (19,42): Generic type 'IBaseTest' requires 12 type argument(s).
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (20,3): Generic type 'ITestImplementation' requires 2 type argument(s).
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (22,42): Generic type 'IBaseTest' requires 12 type argument(s).
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (38,18): This expression is not callable.
+  Type 'IStore' has no call signatures.
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (40,15): Argument of type 'DetailedReactHTMLElement<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>' is not assignable to parameter of type 'IStore | PromiseLike<IStore>'.
+  Type 'DetailedReactHTMLElement<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>' is not assignable to type 'IStore'.
+    Types of property 'type' are incompatible.
+      Type 'string' is not assignable to type 'ComponentClass<any, any>'.
+        Type 'string' is not assignable to type 'ComponentClass<any, any>'.
+/Users/adam/Code/testeranto/src/SubPackages/react/jsx/index.ts (40,35): No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'IStore' is not assignable to parameter of type 'string | ComponentClass<any, any> | FunctionComponent<any>'.

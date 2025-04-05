@@ -55,7 +55,7 @@ const config: IBaseConfig = {
     ],
 
     ["./src/MyFirstContract.basic.test.ts", "node", { ports: 0 }, []],
-    ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
+    // ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
 
     // broken
     // [

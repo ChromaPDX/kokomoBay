@@ -1,8 +1,9 @@
+import type { ITestSpecification } from "testeranto/src/Types";
+import type { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
+import test from "testeranto/src/SubPackages/react-dom/component/node";
+
 import { assert } from "chai";
 import { renderToStaticMarkup, renderToStaticNodeStream } from "react-dom/server";
-import { ITestSpecification } from "testeranto/src/Types";
-import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
-import test from "testeranto/src/SubPackages/react-dom/component/node";
 
 import { ClassicalComponent } from "..";
 
@@ -11,7 +12,7 @@ const readableStream: ReadableStream<string> = new ReadableStream({
   start(controller) {
     // The following function handles each data chunk
     function push() {
-      controller.enqueue("idk");
+      controller.enqueue("idqk");
       controller.close();
 
     }
@@ -48,7 +49,7 @@ type IClassicalComponentSpec = {
 const ClassicalComponentSpec: ITestSpecification<
   IClassicalComponentSpec
 > =
-  (Suite, Given, When, Then, Check) => {
+  (Suite, Given, When, Then) => {
     return [
       Suite.Default(
         "Classical Component, react-dom, server.node",
@@ -88,22 +89,17 @@ const impl: BaseIImple<IClassicalComponentSpec> = {
         },
 
     renderToStaticNodeStream:
-      (expectation) =>
+      () =>
         async (reactNodes) => {
           const stream = renderToStaticNodeStream(reactNodes);
           let result = '';
           for await (const chunk of stream) {
             result += chunk;
           }
-          assert.include(result, 'Hello Marcus'); // Basic content check
-          assert.include(result, 'count: 0 times');
+          assert.equal(result, snapshot);
         }
   },
-  checks: {
-    AnEmptyState: () => () => {
-      return { props: { foo: "bar" } };
-    },
-  },
+  checks: {},
 }
 
 export default test(

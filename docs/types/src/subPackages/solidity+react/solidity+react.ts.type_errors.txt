@@ -1,2 +1,0 @@
-src/subPackages/solidity+react/solidity+react.ts(2,23): error TS2688: Cannot find type definition file for '../index.d.ts'.
-src/subPackages/solidity+react/solidity+react.ts(44,24): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).

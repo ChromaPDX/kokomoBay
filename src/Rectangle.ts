@@ -7,11 +7,11 @@ class Rectangle {
     this.width = width;
   }
 
-  getHeight() {
+  getHeight(): number {
     return this.height;
   }
 
-  getWidth() {
+  getWidth(): number {
     return this.width;
   }
 

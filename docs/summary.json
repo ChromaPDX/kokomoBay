@@ -1,0 +1,77 @@
+{
+  "./src/Rectangle/Rectangle.test.web.ts": {
+    "bddErrors": "0",
+    "lintErrors": "0",
+    "typeErrors": "52"
+  },
+  "./src/Rectangle/Rectangle.test.node.ts": {
+    "bddErrors": "0",
+    "lintErrors": "1",
+    "typeErrors": "54"
+  },
+  "./src/ReactStateAndHook.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "2",
+    "typeErrors": "48"
+  },
+  "./src/app.reduxToolkit.test.ts": {
+    "bddErrors": "0",
+    "lintErrors": "2",
+    "typeErrors": "47"
+  },
+  "./src/app.redux.test.ts": {
+    "bddErrors": "0",
+    "lintErrors": "1",
+    "typeErrors": "44"
+  },
+  "./src/LoginPage/react-dom/web.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "2",
+    "typeErrors": "57"
+  },
+  "./src/LoginPage/react/node.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "1",
+    "typeErrors": "52"
+  },
+  "./src/LoginPage/react/web.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "1",
+    "typeErrors": "50"
+  },
+  "./src/LoginPage/react-test-renderer/node.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "2",
+    "typeErrors": "48"
+  },
+  "./src/LoginPage/react-test-renderer/web.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "2",
+    "typeErrors": "47"
+  },
+  "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "1",
+    "typeErrors": "39"
+  },
+  "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "0",
+    "typeErrors": "44"
+  },
+  "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "0",
+    "typeErrors": "44"
+  },
+  "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+    "bddErrors": "0",
+    "lintErrors": "0",
+    "typeErrors": "42"
+  },
+  "./src/MyFirstContract.basic.test.ts": {
+    "bddErrors": "0",
+    "lintErrors": "3",
+    "typeErrors": "55"
+  }
+}

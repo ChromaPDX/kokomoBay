@@ -1,1 +1,0 @@
-src/MyFirstContract.solidity-react.implementation.test.ts(5,27): error TS2314: Generic type 'ITestImplementation' requires 2 type argument(s).

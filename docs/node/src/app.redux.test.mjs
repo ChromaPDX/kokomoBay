@@ -4,7 +4,7 @@ import {
 } from "../chunk-YGATLTHN.mjs";
 import {
   Node_default
-} from "../chunk-NGUD7ODA.mjs";
+} from "../chunk-HQ3RS3OZ.mjs";
 import {
   loginApp,
   require_redux
@@ -20,16 +20,19 @@ import {
 var import_redux = __toESM(require_redux(), 1);
 var ReduxTesteranto = (testInput, testSpecifications, testImplementations) => {
   const testInterface = {
-    beforeEach: function(subject, initializer, art, tr, initialValues, pm) {
-      return (0, import_redux.createStore)(subject, initializer);
+    beforeEach: function(subject, initializer) {
+      return (0, import_redux.createStore)(
+        subject,
+        initializer
+      );
     },
-    andWhen: async function(store, whenCB, tr, pm) {
-      const a = whenCB;
-      store.dispatch(a[0](a[1]));
+    andWhen: async function(store, whenCB) {
+      const [action, payload] = whenCB;
+      store.dispatch(payload ? action(payload) : action());
       return store;
     },
-    butThen: async function(store, actioner, tr, pm) {
-      return actioner(store.getState(), pm);
+    butThen: async function(store, actioner) {
+      return actioner(store.getState());
     }
   };
   return Node_default(
@@ -43,7 +46,7 @@ var ReduxTesteranto = (testInput, testSpecifications, testImplementations) => {
 // src/app.redux.test.ts
 var implementations = {
   suites: {
-    Default: "some default Suite!"
+    Default: "Testing the Redux store"
   },
   givens: {
     AnEmptyState: loginApp.getInitialState(),
@@ -56,18 +59,10 @@ var implementations = {
   },
   thens: {
     TheEmailIs: (email) => (storeState) => {
-      if (typeof storeState === "object" && storeState !== null) {
-        assert.equal(storeState.email, email);
-      } else {
-        assert.equal(storeState, email);
-      }
+      assert.equal(storeState.email, email);
     },
     TheEmailIsNot: (email) => (storeState) => {
-      if (typeof storeState === "object" && storeState !== null) {
-        assert.notEqual(storeState.email, email);
-      } else {
-        assert.notEqual(storeState, email);
-      }
+      assert.notEqual(storeState.email, email);
     },
     ThePasswordIs: (password) => (selection) => assert.equal(selection.password, password),
     ThePasswordIsNot: (password) => (selection) => assert.notEqual(selection.password, password)

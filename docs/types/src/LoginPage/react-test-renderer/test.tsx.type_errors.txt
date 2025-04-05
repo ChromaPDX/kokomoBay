@@ -1,1 +1,0 @@
-src/LoginPage/react-test-renderer/test.tsx(11,73): error TS2314: Generic type 'ILoginPageSpecs' requires 1 type argument(s).

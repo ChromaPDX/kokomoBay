@@ -1,7 +1,0 @@
-
-/Users/adam/Code/kokomoBay/src/ClassicalComponent/react-dom/server.node.test.tsx
-  51:30  error  'Check' is defined but never used        @typescript-eslint/no-unused-vars
-  91:8   error  'expectation' is defined but never used  @typescript-eslint/no-unused-vars
-
-✖ 2 problems (2 errors, 0 warnings)
-

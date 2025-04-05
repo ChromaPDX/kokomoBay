@@ -7,7 +7,7 @@ import {
 } from "../../../chunk-I2AXMH3H.mjs";
 import {
   Node_default
-} from "../../../chunk-TID3HMIR.mjs";
+} from "../../../chunk-5WIVDWJL.mjs";
 import {
   assert
 } from "../../../chunk-BFDDKUUP.mjs";
@@ -52,7 +52,7 @@ var testInterface = {
 var node_default = (testImplementations, testSpecifications, testInput) => Node_default(testInput, testSpecifications, testImplementations, testInterface);
 
 // src/ClassicalComponent/test.specification.ts
-var ClassicalComponentSpec = (Suite, Given, When, Then, Check) => {
+var ClassicalComponentSpec = (Suite, Given, When, Then) => {
   return [
     Suite.Default(
       "a classical react component",
@@ -119,29 +119,25 @@ var testImplementation = {
     IClickTheButton: () => async (component) => {
       component.root.findByType("button").props.onClick();
     },
-    IClickTheHeader: () => async (component, utils) => {
+    IClickTheHeader: () => async (component) => {
       component.root.findByType("h1").props.onClick();
     }
   },
   thens: {
     ThePropsIs: (expectation) => (component) => {
+      const propsElement = component.root.findByProps({ id: "theProps" });
       return assert.deepEqual(
-        component.toJSON().children[1].children,
-        [JSON.stringify(expectation)]
-        // {
-        //   type: "pre",
-        //   props: { id: "theProps" },
-        //   children: JSON.stringify(expectation),
-        // }
+        JSON.parse(propsElement.props.children),
+        expectation
       );
     },
     TheStatusIs: (expectation) => (component) => {
+      const statElement = component.root.findByProps({ id: "theStat" });
+      const actual = JSON.parse(statElement.props.children);
       return assert.deepEqual(
-        component.root.findByProps({ id: "theStat" }).props,
-        {
-          id: "theStat",
-          children: JSON.stringify(expectation)
-        }
+        actual,
+        expectation,
+        "the status was not as expected"
       );
     }
   },

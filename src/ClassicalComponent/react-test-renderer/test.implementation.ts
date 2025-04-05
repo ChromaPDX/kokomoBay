@@ -1,7 +1,6 @@
-import renderer, { act, ReactTestRenderer } from "react-test-renderer";
+import { ReactTestRenderer } from "react-test-renderer";
 import { assert } from "chai";
 import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
-import { PM } from "testeranto/src/PM";
 
 import { IClassicalComponentSpec } from "../test.shape";
 
@@ -18,31 +17,26 @@ export const testImplementation: BaseIImple<IClassicalComponentSpec> = {
     IClickTheButton: () => async (component) => {
       component.root.findByType("button").props.onClick();
     },
-    IClickTheHeader: () => async (component: any, utils: PM) => {
+    IClickTheHeader: () => async (component: ReactTestRenderer) => {
       component.root.findByType("h1").props.onClick();
     },
   },
   thens: {
     ThePropsIs: (expectation) => (component) => {
+      const propsElement = component.root.findByProps({ id: "theProps" });
       return assert.deepEqual(
-        (component.toJSON() as { children: { children: any[] }[] }).children[1]
-          .children,
-        [JSON.stringify(expectation)]
-        // {
-        //   type: "pre",
-        //   props: { id: "theProps" },
-        //   children: JSON.stringify(expectation),
-        // }
+        JSON.parse(propsElement.props.children),
+        expectation
       );
     },
 
     TheStatusIs: (expectation) => (component: ReactTestRenderer) => {
+      const statElement = component.root.findByProps({ id: "theStat" });
+      const actual = JSON.parse(statElement.props.children);
       return assert.deepEqual(
-        component.root.findByProps({ id: "theStat" }).props,
-        {
-          id: "theStat",
-          children: JSON.stringify(expectation),
-        }
+        actual,
+        expectation,
+        "the status was not as expected"
       );
     },
   },

@@ -1,7 +1,7 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   Node_default
-} from "../../chunk-NGUD7ODA.mjs";
+} from "../../chunk-HQ3RS3OZ.mjs";
 import {
   assert
 } from "../../chunk-BFDDKUUP.mjs";
@@ -92,7 +92,6 @@ var RectangleTesterantoBaseTestImplementation = {
     }
   },
   checks: {
-    /* @ts-ignore:next-line */
     AnEmptyState: () => {
       return {};
     }
@@ -103,7 +102,7 @@ var RectangleTesterantoBaseTestImplementation = {
 var rectangle_default = "file:///Users/adam/Code/kokomoBay/src/Rectangle/rectangle.md";
 
 // src/Rectangle.test.specification.ts
-var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check) => {
+var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then) => {
   return [
     Suite.Default(
       "Testing the Rectangle class",
@@ -161,7 +160,7 @@ var RectangleTesterantoBaseTestSpecification = (Suite, Given, When, Then, Check)
 
 // src/Rectangle.test.interface.ts
 var RectangleTesterantoBaseInterface = {
-  beforeEach: async (subject, initializer, art, tr, initialValues) => {
+  beforeEach: async (subject) => {
     return subject;
   },
   andWhen: async function(renderer, actioner) {

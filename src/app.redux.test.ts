@@ -33,7 +33,7 @@ export type IImplementation = Modify<
 
 const implementations: IImplementation = {
   suites: {
-    Default: "some default Suite!",
+    Default: "Testing the Redux store",
   },
   givens: {
     AnEmptyState: loginApp.getInitialState(),
@@ -46,18 +46,10 @@ const implementations: IImplementation = {
   },
   thens: {
     TheEmailIs: (email) => (storeState) => {
-      if (typeof storeState === "object" && storeState !== null) {
-        assert.equal(storeState.email, email);
-      } else {
-        assert.equal(storeState, email);
-      }
+      assert.equal(storeState.email, email);
     },
     TheEmailIsNot: (email) => (storeState) => {
-      if (typeof storeState === "object" && storeState !== null) {
-        assert.notEqual(storeState.email, email);
-      } else {
-        assert.notEqual(storeState, email);
-      }
+      assert.notEqual(storeState.email, email);
     },
     ThePasswordIs: (password) => (selection) =>
       assert.equal(selection.password, password),

@@ -2383,9 +2383,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React2 = require_react();
+          var React3 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React2.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3990,7 +3990,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React2.Children.forEach(props.children, function(child) {
+                  React3.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12437,7 +12437,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React2.Component().refs;
+          var emptyRefsObject = new React3.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -23510,26 +23510,32 @@
 
   // src/ReportClient.tsx
   var import_client = __toESM(require_client(), 1);
+  var import_react2 = __toESM(require_react(), 1);
+
+  // src/Footer.tsx
   var import_react = __toESM(require_react(), 1);
+  var Footer = () => /* @__PURE__ */ import_react.default.createElement("footer", null, "made with \u2764\uFE0F and ", /* @__PURE__ */ import_react.default.createElement("a", { href: "https://www.npmjs.com/package/testeranto" }, "testeranto "));
+
+  // src/ReportClient.tsx
   var BigBoard = () => {
-    const [configs, setConfigs] = (0, import_react.useState)();
-    (0, import_react.useEffect)(() => {
+    const [configs, setConfigs] = (0, import_react2.useState)();
+    (0, import_react2.useEffect)(() => {
       (async () => {
         fetch("/kokomoBay/docs/testeranto.json").then((response) => response.json()).then((json) => {
           setConfigs(json);
         }).catch((error) => console.error(error));
       })();
     }, []);
-    const [bigBoard, setBigBoard] = (0, import_react.useState)({});
-    (0, import_react.useEffect)(() => {
+    const [bigBoard, setBigBoard] = (0, import_react2.useState)({});
+    (0, import_react2.useEffect)(() => {
       (async () => {
         fetch("/kokomoBay/docs/bigBoard.json").then((response) => response.json()).then((json) => {
           setBigBoard(json);
         }).catch((error) => console.error(error));
       })();
     }, []);
-    const [staticAnalysis, setStaticAnalysis] = (0, import_react.useState)({});
-    (0, import_react.useEffect)(() => {
+    const [staticAnalysis, setStaticAnalysis] = (0, import_react2.useState)({});
+    (0, import_react2.useEffect)(() => {
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
@@ -23538,8 +23544,8 @@
         setStaticAnalysis(accumulator);
       })();
     }, [configs, bigBoard]);
-    const [typeErrors, setTypeErrors] = (0, import_react.useState)({});
-    (0, import_react.useEffect)(() => {
+    const [typeErrors, setTypeErrors] = (0, import_react2.useState)({});
+    (0, import_react2.useEffect)(() => {
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
@@ -23548,8 +23554,8 @@
         setTypeErrors(accumulator);
       })();
     }, [configs, bigBoard]);
-    const [bddErrors, setBddErrors] = (0, import_react.useState)({});
-    (0, import_react.useEffect)(() => {
+    const [bddErrors, setBddErrors] = (0, import_react2.useState)({});
+    (0, import_react2.useEffect)(() => {
       (async () => {
         let accumulator = {};
         for (const t of (configs || { tests: [] }).tests) {
@@ -23559,7 +23565,7 @@
       })();
     }, [configs, bigBoard]);
     if (!configs || !staticAnalysis || !typeErrors || !bddErrors) {
-      return /* @__PURE__ */ import_react.default.createElement("div", null, "loading...");
+      return /* @__PURE__ */ import_react2.default.createElement("div", null, "loading...");
     }
     const collated = configs.tests.map((c) => {
       return {
@@ -23573,14 +23579,14 @@
         bddErrors: bddErrors[c[0]]
       };
     });
-    return /* @__PURE__ */ import_react.default.createElement("table", null, /* @__PURE__ */ import_react.default.createElement("tr", null, /* @__PURE__ */ import_react.default.createElement("td", null, "name"), /* @__PURE__ */ import_react.default.createElement("td", null, "run time"), /* @__PURE__ */ import_react.default.createElement("td", null, "BDD errors"), /* @__PURE__ */ import_react.default.createElement("td", null, "Lint errors"), /* @__PURE__ */ import_react.default.createElement("td", null, "Type errors"), /* @__PURE__ */ import_react.default.createElement("td", null, "prompt")), ...collated.map((c) => {
-      return /* @__PURE__ */ import_react.default.createElement("tr", null, /* @__PURE__ */ import_react.default.createElement("td", null, c.name), /* @__PURE__ */ import_react.default.createElement("td", null, c.runTime), /* @__PURE__ */ import_react.default.createElement("td", null, /* @__PURE__ */ import_react.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/littleBoard.html` }, c.bddErrors)), /* @__PURE__ */ import_react.default.createElement("td", null, /* @__PURE__ */ import_react.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/lint_errors.json` }, c.staticAnalysis)), /* @__PURE__ */ import_react.default.createElement("td", null, /* @__PURE__ */ import_react.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/type_errors.txt` }, c.typeErrors)), /* @__PURE__ */ import_react.default.createElement("td", null, /* @__PURE__ */ import_react.default.createElement("pre", null, "aider --model deepseek/deepseek-chat --load ", `docs/${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/prompt.txt`)));
-    }));
+    return /* @__PURE__ */ import_react2.default.createElement("div", null, /* @__PURE__ */ import_react2.default.createElement("table", null, /* @__PURE__ */ import_react2.default.createElement("tr", null, /* @__PURE__ */ import_react2.default.createElement("td", null, "name"), /* @__PURE__ */ import_react2.default.createElement("td", null, "run time"), /* @__PURE__ */ import_react2.default.createElement("td", null, "BDD errors"), /* @__PURE__ */ import_react2.default.createElement("td", null, "Lint errors"), /* @__PURE__ */ import_react2.default.createElement("td", null, "Type errors"), /* @__PURE__ */ import_react2.default.createElement("td", null, "prompt")), ...collated.map((c) => {
+      return /* @__PURE__ */ import_react2.default.createElement("tr", null, /* @__PURE__ */ import_react2.default.createElement("td", null, c.name), /* @__PURE__ */ import_react2.default.createElement("td", null, c.runTime), /* @__PURE__ */ import_react2.default.createElement("td", null, /* @__PURE__ */ import_react2.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/littleBoard.html` }, c.bddErrors)), /* @__PURE__ */ import_react2.default.createElement("td", null, /* @__PURE__ */ import_react2.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/lint_errors.json` }, c.staticAnalysis)), /* @__PURE__ */ import_react2.default.createElement("td", null, /* @__PURE__ */ import_react2.default.createElement("a", { href: `${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/type_errors.txt` }, c.typeErrors)), /* @__PURE__ */ import_react2.default.createElement("td", null, /* @__PURE__ */ import_react2.default.createElement("pre", null, "aider --model deepseek/deepseek-chat --load ", `docs/${c.runTime}/${c.name.split(".").slice(0, -1).join(".")}/prompt.txt`)));
+    })), /* @__PURE__ */ import_react2.default.createElement(Footer, null));
   };
   document.addEventListener("DOMContentLoaded", function() {
     const elem = document.getElementById("root");
     if (elem) {
-      import_client.default.createRoot(elem).render(import_react.default.createElement(BigBoard, {}, []));
+      import_client.default.createRoot(elem).render(import_react2.default.createElement(BigBoard, {}, []));
     }
   });
   console.log("hello BigBoard!");

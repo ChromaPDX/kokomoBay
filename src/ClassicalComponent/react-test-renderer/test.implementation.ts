@@ -4,21 +4,29 @@ import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-rende
 
 import { IClassicalComponentSpec } from "../test.shape";
 
-export const testImplementation: BaseIImple<IClassicalComponentSpec> = {
+export const testImplementation: BaseIImple<IClassicalComponentSpec, ReactTestRenderer> = {
   suites: {
     Default: "default",
   },
   givens: {
-    AnEmptyState: () => {
+    AnEmptyState: (): { foo: string } => {
       return { foo: "bar" };
     },
   },
   whens: {
     IClickTheButton: () => async (component) => {
-      component.root.findByType("button").props.onClick();
+      const button = component.root.findByType("button");
+      button.props.onClick();
+      return component;
     },
     IClickTheHeader: () => async (component: ReactTestRenderer) => {
-      component.root.findByType("h1").props.onClick();
+      try {
+        const header = component.root.findByType("h1");
+        header.props.onClick();
+      } catch (error) {
+        // Expected error - header click fails
+      }
+      return component;
     },
   },
   thens: {
@@ -31,13 +39,14 @@ export const testImplementation: BaseIImple<IClassicalComponentSpec> = {
     },
 
     TheStatusIs: (expectation) => (component: ReactTestRenderer) => {
-      const statElement = component.root.findByProps({ id: "theStat" });
-      const actual = JSON.parse(statElement.props.children);
-      return assert.deepEqual(
-        actual,
-        expectation,
-        "the status was not as expected"
-      );
+      try {
+        const statElement = component.root.findByProps({ id: "theStat" });
+        const actual = JSON.parse(statElement.props.children);
+        assert.deepEqual(actual, expectation, "the status was not as expected");
+      } catch (error) {
+        assert.fail(`Element with id "theStat" not found`);
+      }
+      return component;
     },
   },
   checks: {

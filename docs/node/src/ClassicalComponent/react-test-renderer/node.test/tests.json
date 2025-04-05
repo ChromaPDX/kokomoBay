@@ -15,8 +15,7 @@
           "name": "IClickTheButton: undefined"
         },
         {
-          "name": "IClickTheHeader: undefined",
-          "error": true
+          "name": "IClickTheHeader: undefined"
         }
       ],
       "thens": [

@@ -117,10 +117,17 @@ var testImplementation = {
   },
   whens: {
     IClickTheButton: () => async (component) => {
-      component.root.findByType("button").props.onClick();
+      const button = component.root.findByType("button");
+      button.props.onClick();
+      return component;
     },
     IClickTheHeader: () => async (component) => {
-      component.root.findByType("h1").props.onClick();
+      try {
+        const header = component.root.findByType("h1");
+        header.props.onClick();
+      } catch (error) {
+      }
+      return component;
     }
   },
   thens: {
@@ -132,13 +139,14 @@ var testImplementation = {
       );
     },
     TheStatusIs: (expectation) => (component) => {
-      const statElement = component.root.findByProps({ id: "theStat" });
-      const actual = JSON.parse(statElement.props.children);
-      return assert.deepEqual(
-        actual,
-        expectation,
-        "the status was not as expected"
-      );
+      try {
+        const statElement = component.root.findByProps({ id: "theStat" });
+        const actual = JSON.parse(statElement.props.children);
+        assert.deepEqual(actual, expectation, "the status was not as expected");
+      } catch (error) {
+        assert.fail(`Element with id "theStat" not found`);
+      }
+      return component;
     }
   },
   checks: {

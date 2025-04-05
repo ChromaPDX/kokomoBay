@@ -2429,7 +2429,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-        "bytes": 1374,
+        "bytes": 1706,
         "imports": [
           {
             "path": "react-test-renderer",
@@ -2455,12 +2455,17 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
-        "bytes": 357,
+        "bytes": 464,
         "imports": [
           {
             "path": "../testeranto/dist/module/SubPackages/react-test-renderer/component/web.js",
             "kind": "import-statement",
             "original": "testeranto/src/SubPackages/react-test-renderer/component/web"
+          },
+          {
+            "path": "react-test-renderer",
+            "kind": "import-statement",
+            "external": true
           },
           {
             "path": "src/ClassicalComponent/index.tsx",
@@ -2847,13 +2852,13 @@
             "bytesInOutput": 154
           },
           "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-            "bytesInOutput": 1034
+            "bytesInOutput": 1283
           },
           "src/ClassicalComponent/react-test-renderer/web.test.tsx": {
             "bytesInOutput": 108
           }
         },
-        "bytes": 2994
+        "bytes": 3243
       },
       "docs/web/chunk-OVZ5RVTO.mjs": {
         "imports": [

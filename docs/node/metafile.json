@@ -3037,7 +3037,7 @@
         "format": "esm"
       },
       "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-        "bytes": 1374,
+        "bytes": 1706,
         "imports": [
           {
             "path": "react-test-renderer",
@@ -22215,13 +22215,13 @@
             "bytesInOutput": 1461
           },
           "src/ClassicalComponent/react-test-renderer/test.implementation.ts": {
-            "bytesInOutput": 1034
+            "bytesInOutput": 1283
           },
           "src/ClassicalComponent/react-test-renderer/node.test.tsx": {
             "bytesInOutput": 110
           }
         },
-        "bytes": 4520
+        "bytes": 4769
       },
       "docs/node/chunk-6FWMRXFT.mjs": {
         "imports": [

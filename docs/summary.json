@@ -1,80 +1,107 @@
 {
-  "timestamp": 1743890890241,
-  "tests": {
-    "./src/Rectangle/Rectangle.test.web.ts": {
-      "bddErrors": "0",
-      "lintErrors": "1",
-      "typeErrors": "40"
-    },
-    "./src/Rectangle/Rectangle.test.node.ts": {
-      "bddErrors": "0",
-      "lintErrors": "2",
-      "typeErrors": "43"
-    },
-    "./src/ReactStateAndHook.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "2",
-      "typeErrors": "31"
-    },
-    "./src/app.reduxToolkit.test.ts": {
-      "bddErrors": "0",
-      "lintErrors": "2",
-      "typeErrors": "36"
-    },
-    "./src/app.redux.test.ts": {
-      "bddErrors": "0",
-      "lintErrors": "1",
-      "typeErrors": "33"
-    },
-    "./src/LoginPage/react/node.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "1",
-      "typeErrors": "38"
-    },
-    "./src/LoginPage/react/web.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "1",
-      "typeErrors": "36"
-    },
-    "./src/LoginPage/react-test-renderer/node.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "2",
-      "typeErrors": "47"
-    },
-    "./src/LoginPage/react-test-renderer/web.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "2",
-      "typeErrors": "45"
-    },
-    "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "1",
-      "typeErrors": "26"
-    },
-    "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "0",
-      "typeErrors": "27"
-    },
-    "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "0",
-      "typeErrors": "28"
-    },
-    "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
-      "bddErrors": "0",
-      "lintErrors": "0",
-      "typeErrors": "26"
-    },
-    "./src/MyFirstContract.basic.test.ts": {
-      "bddErrors": "4",
-      "lintErrors": "2",
-      "typeErrors": "43"
-    },
-    "./src/MyFirstContract.rpc.test.ts": {
-      "bddErrors": "4",
-      "lintErrors": "2",
-      "typeErrors": "37"
-    }
+  "./src/Rectangle/Rectangle.test.web.ts": {
+    "runTimeError": 0,
+    "typeErrors": 40,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/web/./src/Rectangle/Rectangle.test.web/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/Rectangle/Rectangle.test.node.ts": {
+    "runTimeError": 0,
+    "typeErrors": 43,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/Rectangle/Rectangle.test.node/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/ReactStateAndHook.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 31,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/ReactStateAndHook.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/app.reduxToolkit.test.ts": {
+    "runTimeError": 0,
+    "typeErrors": 36,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/app.reduxToolkit.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/app.redux.test.ts": {
+    "runTimeError": 0,
+    "typeErrors": 33,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/app.redux.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/LoginPage/react/node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 38,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/LoginPage/react/node.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/LoginPage/react/web.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 36,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/web/./src/LoginPage/react/web.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/LoginPage/react-test-renderer/node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 47,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/LoginPage/react-test-renderer/node.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/LoginPage/react-test-renderer/web.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 45,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/web/./src/LoginPage/react-test-renderer/web.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 26,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/web/./src/ClassicalComponent/react-dom/client.web.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 27,
+    "staticErrors": 0,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/ClassicalComponent/react-dom/server.node.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 28,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/ClassicalComponent/react-test-renderer/node.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 27,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/web/./src/ClassicalComponent/react-test-renderer/web.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/MyFirstContract.basic.test.ts": {
+    "runTimeError": 4,
+    "typeErrors": 43,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/MyFirstContract.basic.test/prompt.txt",
+    "status": "waiting"
+  },
+  "./src/MyFirstContract.rpc.test.ts": {
+    "runTimeError": 4,
+    "typeErrors": 37,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/MyFirstContract.rpc.test/prompt.txt",
+    "status": "waiting"
   }
 }

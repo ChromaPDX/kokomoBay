@@ -1,30 +1,31 @@
 import { assert } from "chai";
-import { ITestImplementation } from "testeranto/src/Types";
+import { ITestImplementation, Modify } from "testeranto/src/Types";
 import type { PM } from "testeranto/src/PM";
 
 import Rectangle from "./Rectangle";
-import { IRectangleTestShape } from "./Rectangle.test.shape";
+import { I } from "./Rectangle.test.interface";
+import { O } from "./Rectangle.test.specification";
 
-export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
-  IRectangleTestShape,
+export type II = Modify<
+  ITestImplementation<I, O>,
   {
     givens: {
-      [K in keyof IRectangleTestShape["givens"]]: (
-        ...Iw: IRectangleTestShape["givens"][K]
-      ) => Rectangle;
+      [K in keyof O["givens"]]: (...Iw: O["givens"][K]) => Rectangle;
     };
     whens: {
-      [K in keyof IRectangleTestShape["whens"]]: (
-        ...Iw: IRectangleTestShape["whens"][K]
+      [K in keyof O["whens"]]: (
+        ...Iw: O["whens"][K]
       ) => (rectangle: Rectangle, utils: PM) => Rectangle;
     };
     thens: {
-      [K in keyof IRectangleTestShape["thens"]]: (
-        ...Iw: IRectangleTestShape["thens"][K]
+      [K in keyof O["thens"]]: (
+        ...Iw: O["thens"][K]
       ) => (rectangle: Rectangle, utils: PM) => Rectangle;
     };
   }
-> = {
+>;
+
+export const RectangleTesterantoBaseTestImplementation: II = {
   suites: {
     Default: "a default suite",
   },
@@ -83,8 +84,8 @@ export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
   },
 
   checks: {
-    AnEmptyState: () => {
-      return {};
-    },
+    Default: () => new Rectangle(2, 2),
+    WidthOfOneAndHeightOfOne: () => new Rectangle(1, 1),
+    WidthAndHeightOf: (width, height) => new Rectangle(width, height),
   },
 };

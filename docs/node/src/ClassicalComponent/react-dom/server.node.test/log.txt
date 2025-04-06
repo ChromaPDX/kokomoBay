@@ -1,9 +1,0 @@
-test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-dom/server.node.test.tsx","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/ClassicalComponent/react-dom/server.node.test","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/2c50e55f-63d3-4e62-b06a-3a86b912422b"}
-
-Suite:,0,Classical Component, react-dom, server.node
-
- test0
-
- Given: AnEmptyState
- Then:,renderToStaticMarkup: <div style="border:3px solid green"><h1>Hello Marcus</h1><pre id="theProps">{}</pre><p>foo: </p><pre id="theState">{&quot;count&quot;:0}</pre><p>count: 0 times</p><button id="theButton">Click</button></div>
- Then:,renderToStaticNodeStream: [object ReadableStream]

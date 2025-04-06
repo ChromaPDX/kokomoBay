@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/Rectangle/Rectangle.test.node.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/Rectangle/Rectangle.test.node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/2c50e55f-63d3-4e62-b06a-3a86b912422b"}
+test resources: ,{"scheduled":true,"name":"./src/Rectangle/Rectangle.test.node.ts","ports":[],"fs":"/Users/adam/Code/kokomoBay/docs/node/src/Rectangle/Rectangle.test.node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/f54f2dcd-abcf-407c-9685-a5adf4daac2b"}
 
 Suite:,0,Testing the Rectangle class
 
@@ -6,37 +6,51 @@ Suite:,0,Testing the Rectangle class
 
  Given: Default
  When:,setWidth: 4
- When:,setHeight: 9
- Then:,getWidth: 4
- Then:,getHeight: 9
+ When:,setHeight: 19
+ Then!!!:,getWidth: 4
+ Then!!!:,getHeight: 19
 
  test1
 
  Given: Default
  When:,setWidth: 4
  When:,setHeight: 5
- Then:,getWidth: 4
- Then:,getHeight: 5
- Then:,area: 20
- Then:,AreaPlusCircumference: 38
+ Then!!!:,getWidth: 4
+ Then!!!:,getHeight: 5
+ Then!!!:,area: 20
+ Then!!!:,AreaPlusCircumference: 38
 
  test2
 
  Given: Default
  When:,setHeight: 4
  When:,setWidth: 33
- Then:,area: 132
+ Then!!!:,area: 132
+
+ test2_1
+
+ Given: Default
+ Then!!!:,getWidth: 2
+ Then!!!:,getHeight: 2
 
  test3
 
  Given: Default
  When:,setHeight: 5
  When:,setWidth: 5
- Then:,area: 25
+ Then!!!:,area: 25
 
  test4
 
  Given: Default
  When:,setHeight: 6
  When:,setWidth: 6
- Then:,area: 36
+ Then!!!:,area: 36
+
+ test5
+
+ Given: Default
+ Then!!!:,getWidth: 2
+ Then!!!:,getHeight: 2
+
+ Check: Default

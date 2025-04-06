@@ -1,16 +1,26 @@
-import { IPartialInterface } from "testeranto/src/Types";
-import { IRectangleTestShape } from "./Rectangle.test.shape";
+import { PM } from "testeranto/src/PM";
+import { Ibdd_in, IPartialInterface } from "testeranto/src/Types";
 
-export const RectangleTesterantoBaseInterface: IPartialInterface<IRectangleTestShape> =
-  {
-    beforeEach: async (subject) => {
-      return subject;
-    },
-    andWhen: async function (renderer, actioner) {
-      actioner(renderer);
-      return renderer;
-    },
-    butThen: async (s, t, tr, pm) => {
-      return t(s, pm);
-    },
-  };
+import Rectangle from "./Rectangle";
+
+export type I = Ibdd_in<
+  null,
+  null,
+  Rectangle,
+  Rectangle,
+  Rectangle,
+  (...x) => (rectangle: Rectangle, utils: PM) => Rectangle,
+  (rectangle: Rectangle, utils: PM) => Rectangle
+>;
+
+export const RectangleTesterantoBaseInterface: IPartialInterface<I> = {
+  beforeEach: async (subject, i) => {
+    return i();
+  },
+  andWhen: async function (s, whenCB, tr, utils) {
+    return whenCB(s)(s, utils);
+  },
+  butThen: async (s, t, tr, pm) => {
+    return t(s, pm);
+  },
+};

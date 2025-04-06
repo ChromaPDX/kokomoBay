@@ -1,0 +1,12 @@
+
+/add src/subPackages/reduxToolkit.testeranto.test.ts
+/add src/app.reduxToolkit.test.ts
+
+/read testeranto/reports/smallTest/src/app.reduxToolkit.test/node/lint_errors.json
+/read testeranto/reports/smallTest/src/app.reduxToolkit.test/node/type_errors.txt
+/read testeranto/reports/smallTest/node/src/app.reduxToolkit.test/tests.json
+
+/load testeranto/reports/smallTest/node/src/app.reduxToolkit.test/featurePrompt.txt
+
+/code Fix the failing tests described in testeranto/reports/smallTest/node/src/app.reduxToolkit.test/tests.json. Correct any type signature errors described in the files testeranto/reports/smallTest/src/app.reduxToolkit.test/node/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in testeranto/reports/smallTest/src/app.reduxToolkit.test/node/lint_errors.json"
+          

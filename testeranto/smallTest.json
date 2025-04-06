@@ -1,0 +1,77 @@
+{
+  "debugger": true,
+  "clearScreen": false,
+  "devMode": true,
+  "src": "src",
+  "minify": false,
+  "externals": [
+    "ganache",
+    "stream"
+  ],
+  "ports": [
+    "3001",
+    "3002",
+    "3003",
+    "3004",
+    "3005",
+    "3006",
+    "3007"
+  ],
+  "webPlugins": [
+    null
+  ],
+  "nodePlugins": [
+    null
+  ],
+  "tests": [
+    [
+      "./src/Rectangle/Rectangle.test.node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/ReactStateAndHook.test.tsx",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/app.reduxToolkit.test.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/app.redux.test.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/LoginPage/react-test-renderer/node.test.tsx",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/MyFirstContract.basic.test.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ]
+  ],
+  "buildDir": "/Users/adam/Code/kokomoBay/testeranto/bundles/smallTest"
+}

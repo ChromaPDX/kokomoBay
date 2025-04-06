@@ -1,0 +1,13 @@
+
+/add src/subPackages/solidity/Contract.testeranto.test.ts
+/add src/MyFirstContract.specification.test.ts
+/add src/MyFirstContract.basic.test.ts
+
+/read testeranto/reports/smallTest/src/MyFirstContract.basic.test/node/lint_errors.json
+/read testeranto/reports/smallTest/src/MyFirstContract.basic.test/node/type_errors.txt
+/read testeranto/reports/smallTest/node/src/MyFirstContract.basic.test/tests.json
+
+/load testeranto/reports/smallTest/node/src/MyFirstContract.basic.test/featurePrompt.txt
+
+/code Fix the failing tests described in testeranto/reports/smallTest/node/src/MyFirstContract.basic.test/tests.json. Correct any type signature errors described in the files testeranto/reports/smallTest/src/MyFirstContract.basic.test/node/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in testeranto/reports/smallTest/src/MyFirstContract.basic.test/node/lint_errors.json"
+          

@@ -1,0 +1,29 @@
+test resources: ,{"scheduled":true,"name":"./src/ReactStateAndHook.test.tsx","ports":[],"fs":"testeranto/reports/smallTest/./src/ReactStateAndHook.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/ddc93fc2-a0b5-43dd-8fe5-ad8718280ef0"}
+
+Suite:,0,Testing the ReactStateAndHook element
+
+ test0
+
+ Given: Default
+ Then!!!:,TheCounterIs: 0
+
+ test1
+
+ Given: Default
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 1
+
+ test2
+
+ Given: Default
+ When:,IClick: undefined
+ When:,IClick: undefined
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 3
+
+ test3
+
+ Given: Default
+ When:,IClick: undefined
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 2

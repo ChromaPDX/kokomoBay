@@ -1,4 +1,4 @@
-import { testInterface } from "testeranto/src/SubPackages/react/jsx";
+import { testInterface } from "testeranto/src/SubPackages/react/jsx/index.js";
 import Testeranto from "testeranto/src/Web";
 import Rectangle from "../Rectangle";
 import { RectangleTesterantoBaseTestImplementation } from "../Rectangle.test.implementation";

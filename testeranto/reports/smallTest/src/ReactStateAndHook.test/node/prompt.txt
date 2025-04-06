@@ -1,0 +1,12 @@
+
+/add src/ReactStateAndHook.test.tsx
+/add src/ReactStateAndHook.tsx
+
+/read testeranto/reports/smallTest/src/ReactStateAndHook.test/node/lint_errors.json
+/read testeranto/reports/smallTest/src/ReactStateAndHook.test/node/type_errors.txt
+/read testeranto/reports/smallTest/node/src/ReactStateAndHook.test/tests.json
+
+/load testeranto/reports/smallTest/node/src/ReactStateAndHook.test/featurePrompt.txt
+
+/code Fix the failing tests described in testeranto/reports/smallTest/node/src/ReactStateAndHook.test/tests.json. Correct any type signature errors described in the files testeranto/reports/smallTest/src/ReactStateAndHook.test/node/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in testeranto/reports/smallTest/src/ReactStateAndHook.test/node/lint_errors.json"
+          

@@ -1,0 +1,15 @@
+
+/add ../testeranto/node_modules/react-dom/cjs/react-dom.development.js
+/add ../testeranto/node_modules/react-dom/index.js
+/add ../testeranto/node_modules/react-dom/client.js
+/add ../testeranto/dist/module/SubPackages/react-dom/component/web.js
+/add src/ClassicalComponent/react-dom/client.web.test.tsx
+
+/read testeranto/reports/bigTest/src/ClassicalComponent/react-dom/client.web.test/web/lint_errors.json
+/read testeranto/reports/bigTest/src/ClassicalComponent/react-dom/client.web.test/web/type_errors.txt
+/read testeranto/reports/bigTest/web/src/ClassicalComponent/react-dom/client.web.test/tests.json
+
+/load testeranto/reports/bigTest/web/src/ClassicalComponent/react-dom/client.web.test/featurePrompt.txt
+
+/code Fix the failing tests described in testeranto/reports/bigTest/web/src/ClassicalComponent/react-dom/client.web.test/tests.json. Correct any type signature errors described in the files testeranto/reports/bigTest/src/ClassicalComponent/react-dom/client.web.test/web/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in testeranto/reports/bigTest/src/ClassicalComponent/react-dom/client.web.test/web/lint_errors.json"
+          

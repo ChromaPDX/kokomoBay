@@ -1,0 +1,38 @@
+{
+  "./src/Rectangle/Rectangle.test.node.ts": {
+    "runTimeError": 0,
+    "typeErrors": 30,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/Rectangle/Rectangle.test.node/prompt.txt"
+  },
+  "./src/ReactStateAndHook.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 32,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/ReactStateAndHook.test/prompt.txt"
+  },
+  "./src/app.reduxToolkit.test.ts": {
+    "runTimeError": 5,
+    "typeErrors": 37,
+    "staticErrors": 2,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/app.reduxToolkit.test/prompt.txt"
+  },
+  "./src/app.redux.test.ts": {
+    "runTimeError": 0,
+    "typeErrors": 34,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/app.redux.test/prompt.txt"
+  },
+  "./src/LoginPage/react-test-renderer/node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 48,
+    "staticErrors": 4,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/LoginPage/react-test-renderer/node.test/prompt.txt"
+  },
+  "./src/MyFirstContract.basic.test.ts": {
+    "runTimeError": 4,
+    "typeErrors": 44,
+    "staticErrors": 3,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/MyFirstContract.basic.test/prompt.txt"
+  }
+}

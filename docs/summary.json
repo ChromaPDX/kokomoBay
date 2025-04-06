@@ -1,9 +1,0 @@
-{
-  "./src/Rectangle/Rectangle.test.node.ts": {
-    "runTimeError": 0,
-    "typeErrors": 30,
-    "staticErrors": 2,
-    "prompt": "aider --model deepseek/deepseek-chat --load docs/node/./src/Rectangle/Rectangle.test.node/prompt.txt",
-    "status": "waiting"
-  }
-}

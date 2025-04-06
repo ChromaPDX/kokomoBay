@@ -1,0 +1,56 @@
+test resources: ,{"scheduled":true,"name":"./src/Rectangle/Rectangle.test.node.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/Rectangle/Rectangle.test.node/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/ddc93fc2-a0b5-43dd-8fe5-ad8718280ef0"}
+
+Suite:,0,Testing the Rectangle class
+
+ test0
+
+ Given: Default
+ When:,setWidth: 4
+ When:,setHeight: 19
+ Then!!!:,getWidth: 4
+ Then!!!:,getHeight: 19
+
+ test1
+
+ Given: Default
+ When:,setWidth: 4
+ When:,setHeight: 5
+ Then!!!:,getWidth: 4
+ Then!!!:,getHeight: 5
+ Then!!!:,area: 20
+ Then!!!:,AreaPlusCircumference: 38
+
+ test2
+
+ Given: Default
+ When:,setHeight: 4
+ When:,setWidth: 33
+ Then!!!:,area: 132
+
+ test2_1
+
+ Given: Default
+ Then!!!:,getWidth: 2
+ Then!!!:,getHeight: 2
+
+ test3
+
+ Given: Default
+ When:,setHeight: 5
+ When:,setWidth: 5
+ Then!!!:,area: 25
+
+ test4
+
+ Given: Default
+ When:,setHeight: 6
+ When:,setWidth: 6
+ Then!!!:,area: 36
+
+ test5
+
+ Given: Default
+ Then!!!:,getWidth: 2
+ Then!!!:,getHeight: 2
+
+ Check: Default

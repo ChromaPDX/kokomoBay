@@ -1,0 +1,72 @@
+test resources: ,{"scheduled":true,"name":"./src/app.reduxToolkit.test.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/app.reduxToolkit.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/ddc93fc2-a0b5-43dd-8fe5-ad8718280ef0"}
+
+Suite:,0,Testing the Redux store
+
+ test0
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: adam@email.com
+ Then!!!:,TheEmailIs: adam@email.com
+TypeError: Cannot read properties of undefined (reading '0')
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743964115327:25:8)
+    at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:632:29)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:226:9)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)
+
+ test1
+
+ Given: AStateWithEmail
+ Then!!!:,TheEmailIsNot: adam@email.com
+TypeError: Cannot read properties of undefined (reading '0')
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743964115327:25:8)
+    at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:632:29)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:226:9)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)
+
+ test2
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: hello
+ When:,TheEmailIsSetTo: aloha
+ Then!!!:,TheEmailIs: aloha
+TypeError: Cannot read properties of undefined (reading '0')
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743964115327:25:8)
+    at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:632:29)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:226:9)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)
+
+ test3
+
+ Given: AnEmptyState
+ Then!!!:,TheEmailIs: 
+TypeError: Cannot read properties of undefined (reading '0')
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743964115327:25:8)
+    at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:632:29)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:226:9)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)
+
+ test4
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: hey there
+ Then!!!:,TheEmailIs: hey there
+TypeError: Cannot read properties of undefined (reading '0')
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743964115327:25:8)
+    at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:632:29)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:226:9)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)

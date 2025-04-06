@@ -25,15 +25,17 @@
     ]
   },
   "scripts": {
-    "clean": "rm -rf docs && mkdir docs",
-    "build-tests": "rm -rf docs/node/chunk-*; rm -rf docs/web/chunk-*; rm -rf docs/types/ ; tsx node_modules/testeranto/dist/prebuild/build.mjs testeranto.mts",
-    "run-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs testeranto.mts",
-    "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
-    "report": "tsx node_modules/testeranto/dist/prebuild/ReportServer.mjs testeranto.mts",
     "test": "yarn build-tests && yarn run-tests",
+    "clean": "rm -rf testeranto && mkdir testeranto",
+    "report": "tsx node_modules/testeranto/dist/prebuild/ReportServer.mjs testeranto.mts",
     "aider": "aider --model deepseek/deepseek-chat",
     "bundle": "yarn tsx bundle.ts",
-    "dev-bundle": "yarn tsx dev-bundle.ts"
+    "dev-bundle": "yarn tsx dev-bundle.ts",
+    "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
+    "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts",
+    "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts",
+    "run-big-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts",
+    "run-small-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts"
   },
   "types": "index.d.ts",
   "dependencies": {

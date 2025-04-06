@@ -1,0 +1,32 @@
+{
+  "./src/ClassicalComponent/react-dom/client.web.test.tsx": {
+    "runTimeError": "?",
+    "typeErrors": 27,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/web/./src/ClassicalComponent/react-dom/client.web.test/prompt.txt"
+  },
+  "./src/ClassicalComponent/react-dom/server.node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 28,
+    "staticErrors": 0,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/node/./src/ClassicalComponent/react-dom/server.node.test/prompt.txt"
+  },
+  "./src/ClassicalComponent/react-test-renderer/node.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 29,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/node/./src/ClassicalComponent/react-test-renderer/node.test/prompt.txt"
+  },
+  "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
+    "runTimeError": 0,
+    "typeErrors": 28,
+    "staticErrors": 1,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/web/./src/ClassicalComponent/react-test-renderer/web.test/prompt.txt"
+  },
+  "./src/MyFirstContract.rpc.test.ts": {
+    "runTimeError": 4,
+    "typeErrors": 38,
+    "staticErrors": 3,
+    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/node/./src/MyFirstContract.rpc.test/prompt.txt"
+  }
+}

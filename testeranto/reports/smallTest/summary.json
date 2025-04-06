@@ -1,6 +1,6 @@
 {
   "./src/Rectangle/Rectangle.test.node.ts": {
-    "runTimeError": 0,
+    "runTimeError": 1,
     "typeErrors": 30,
     "staticErrors": 2,
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/Rectangle/Rectangle.test.node/prompt.txt"

@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/Rectangle/Rectangle.test.node.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/Rectangle/Rectangle.test.node/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/ddc93fc2-a0b5-43dd-8fe5-ad8718280ef0"}
+test resources: ,{"scheduled":true,"name":"./src/Rectangle/Rectangle.test.node.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/Rectangle/Rectangle.test.node/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/9ef2b4e9-4436-48e4-b0df-2da1db87d003"}
 
 Suite:,0,Testing the Rectangle class
 
@@ -19,6 +19,17 @@ Suite:,0,Testing the Rectangle class
  Then!!!:,getHeight: 5
  Then!!!:,area: 20
  Then!!!:,AreaPlusCircumference: 38
+AssertionError: expected 218 to equal 38
+    at Then.thenCB (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:70:14)
+    at go (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:323:12)
+    at Object.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:172:12)
+    at Then.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:679:42)
+    at Then.test (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:343:19)
+    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:219:34)
+    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)
+    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19
+    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)
+    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)
 
  test2
 

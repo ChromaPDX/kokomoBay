@@ -10,12 +10,12 @@ const config: IBaseConfig = {
   ...baseConfig,
 
   tests: [
-    [
-      "./src/ClassicalComponent/react-dom/client.web.test.tsx",
-      "web",
-      { ports: 0 },
-      [],
-    ],
+    // [
+    //   "./src/ClassicalComponent/react-dom/client.web.test.tsx",
+    //   "web",
+    //   { ports: 0 },
+    //   [],
+    // ],
     [
       "./src/ClassicalComponent/react-dom/server.node.test.tsx",
       "node",

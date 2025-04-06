@@ -9,7 +9,7 @@
 /Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts (8,10): Module '"testeranto/src/lib/types"' has no exported member 'IPlugin'.
 /Users/adam/Code/kokomoBay/testeranto.mts (1,29): File '/Users/adam/Code/testeranto/src/lib/index.ts' is not under 'rootDir' '/Users/adam/Code/kokomoBay/src'. 'rootDir' is expected to contain all source files.
   The file is in the program because:
-    Imported via "testeranto/src/lib/index.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/index.ts@0.115.0'
+    Imported via "testeranto/src/lib/index.js" from file '/Users/adam/Code/kokomoBay/testeranto.mts' with packageId 'testeranto/src/lib/index.ts@0.116.0'
     Imported via "../lib" from file '/Users/adam/Code/testeranto/src/PM/index.ts'
     Imported via "./lib/index.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
     Imported via "." from file '/Users/adam/Code/testeranto/src/lib/abstractBase.ts'
@@ -60,8 +60,8 @@
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./Types.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/Contract-rpc.testeranto.test.ts' with packageId 'testeranto/src/Types.ts@0.115.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/MyFirstContract.rpc.test.ts' with packageId 'testeranto/src/Types.ts@0.115.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/Contract-rpc.testeranto.test.ts' with packageId 'testeranto/src/Types.ts@0.116.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/kokomoBay/src/MyFirstContract.rpc.test.ts' with packageId 'testeranto/src/Types.ts@0.116.0'
 /Users/adam/Code/testeranto/src/lib/index.ts (43,8): 'thenCb' is of type 'unknown'.
 /Users/adam/Code/testeranto/src/lib/index.ts (44,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
 /Users/adam/Code/testeranto/src/Node.ts (58,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
@@ -88,6 +88,6 @@
 /Users/adam/Code/testeranto/src/Types.ts (11,36): File '/Users/adam/Code/testeranto/src/lib/types.ts' is not under 'rootDir' '/Users/adam/Code/kokomoBay/src'. 'rootDir' is expected to contain all source files.
   The file is in the program because:
     Imported via "./lib/types.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
-    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.115.0'
+    Imported via "testeranto/src/lib/types" from file '/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts' with packageId 'testeranto/src/lib/types.ts@0.116.0'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'

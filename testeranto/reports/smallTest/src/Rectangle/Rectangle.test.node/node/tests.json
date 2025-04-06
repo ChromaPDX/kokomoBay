@@ -57,10 +57,21 @@
         },
         {
           "name": "AreaPlusCircumference: 38",
-          "error": false
+          "error": true
         }
       ],
-      "error": null,
+      "error": [
+        {
+          "name": "AssertionError",
+          "message": "expected 218 to equal 38",
+          "showDiff": true,
+          "actual": 218,
+          "expected": 38,
+          "operator": "strictEqual",
+          "stack": "AssertionError: expected 218 to equal 38\n    at Then.thenCB (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:70:14)\n    at go (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:323:12)\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:172:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:679:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:343:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:219:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)\n    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)"
+        },
+        "AssertionError: expected 218 to equal 38\n    at Then.thenCB (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:70:14)\n    at go (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:323:12)\n    at Object.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/Rectangle/Rectangle.test.node.mjs?cacheBust=1743971343039:172:12)\n    at Then.butThen (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:679:42)\n    at Then.test (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:343:19)\n    at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:219:34)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:94:22)\n    at async file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:428:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:456:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-6XSAROUE.mjs:889:57)"
+      ],
       "features": [
         "Rectangles have width and height."
       ]

@@ -35,7 +35,8 @@
     "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts",
     "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts",
     "run-big-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts",
-    "run-small-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts"
+    "run-small-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts",
+    "doit": "yarn clean && yarn init-docs && tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts once"
   },
   "types": "index.d.ts",
   "dependencies": {

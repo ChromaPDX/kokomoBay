@@ -65,7 +65,7 @@
       []
     ],
     [
-      "./src/MyFirstContract.basic.test.ts",
+      "./src/MyFirstContract/MyFirstContract.basic.test.ts",
       "node",
       {
         "ports": 0

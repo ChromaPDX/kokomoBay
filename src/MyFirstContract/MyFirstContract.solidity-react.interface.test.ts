@@ -1,9 +1,11 @@
 import Web3 from "web3";
 import Ganache from "ganache";
-import { IPartialNodeInterface } from "testeranto/src/Types";
+import { Ibdd_in, IPartialNodeInterface } from "testeranto/src/Types";
 
 import { ITTestResourceConfiguration } from "../../testeranto/src/lib";
 import { PM } from "../../testeranto/src/PM";
+
+export type I = Ibdd_in<any, any, any, any, any, any, any>;
 
 const tInterface: IPartialNodeInterface<any> = {
   // beforeAll(input, testResource, artificer, pm) {

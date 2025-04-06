@@ -2,35 +2,37 @@
 
 import Testeranto from "testeranto/src/Node";
 import {
-  IBaseTest,
+  Ibdd_in,
+  Ibdd_out,
   IPartialInterface,
   ITestImplementation,
   ITestSpecification,
 } from "testeranto/src/Types";
 
-import Ganache, { EthereumProvider, ServerOptions } from "ganache";
+import Ganache, { ServerOptions } from "ganache";
 import Web3 from "web3";
-import type { AbiItem } from "web3-utils";
-import Contract from "web3-eth-contract";
 
 export type IInput = [
   { contractName: string; abi: any | any[] },
   (web3: any) => Promise<never[]>
 ];
 
+export type IContractIn = Ibdd_in<
+  unknown,
+  unknown,
+  {
+    contract: any;
+    accounts: any;
+  },
+  { contract: any; accounts: any },
+  unknown,
+  unknown,
+  unknown
+>;
+
 export default <
-  IT extends IBaseTest<
-    unknown,
-    {
-      abi: AbiItem | AbiItem[];
-      deployedBytecode: { bytes: string };
-      bytecode: { bytes: string };
-    },
-    { provider: EthereumProvider; contract: Contract; accounts: string[] },
-    unknown,
-    unknown,
-    unknown,
-    unknown,
+  I extends IContractIn,
+  O extends Ibdd_out<
     Record<string, any>,
     Record<string, any>,
     Record<string, any>,
@@ -38,8 +40,8 @@ export default <
     Record<string, any>
   >
 >(
-  testImplementations: ITestImplementation<IT>,
-  testSpecifications: ITestSpecification<IT>,
+  testImplementations: ITestImplementation<I, O>,
+  testSpecifications: ITestSpecification<I, O>,
   testInput: IInput
 ) => {
   const compilation = testInput[0];
@@ -47,7 +49,7 @@ export default <
   const testInterface: IPartialInterface<any> = {
     beforeAll: async () => testInput[0],
 
-    beforeEach: async (contract, it, art, tr, iv, util) => {
+    beforeEach: async (contract, it, tr, iv, util) => {
       const logHandle = util.createWriteStream("ganache.log");
 
       const options: ServerOptions<any> = {
@@ -86,7 +88,7 @@ export default <
       callback({ contract, accounts }),
   };
 
-  return Testeranto<IT>(
+  return Testeranto<I, O>(
     testInput,
     testSpecifications,
     testImplementations,

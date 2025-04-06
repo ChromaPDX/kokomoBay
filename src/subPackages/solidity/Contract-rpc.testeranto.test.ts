@@ -3,8 +3,10 @@
 
 import Testeranto from "testeranto/src/Node";
 import {
-  IBaseTest,
+  Ibdd_in,
+  Ibdd_out,
   IPartialInterface,
+  IPartialNodeInterface,
   ITestImplementation,
   ITestSpecification,
 } from "testeranto/src/Types";
@@ -35,19 +37,19 @@ type istore = {
   server: Server<any>;
 };
 
+export type IContract = Ibdd_in<
+  unknown,
+  unknown,
+  unknown,
+  unknown,
+  unknown,
+  unknown,
+  unknown
+>;
+
 export default <
-  IT extends IBaseTest<
-    unknown,
-    {
-      abi: AbiItem | AbiItem[];
-      deployedBytecode: { bytes: string };
-      bytecode: { bytes: string };
-    },
-    istore,
-    unknown,
-    unknown,
-    unknown,
-    unknown,
+  I extends IContract,
+  O extends Ibdd_out<
     Record<string, any>,
     Record<string, any>,
     Record<string, any>,
@@ -55,11 +57,11 @@ export default <
     Record<string, any>
   >
 >(
-  testImplementations: ITestImplementation<IT>,
-  testSpecifications: ITestSpecification<IT>,
+  testImplementations: ITestImplementation<I, O>,
+  testSpecifications: ITestSpecification<I, O>,
   testInput: IInput
 ) => {
-  const testInterface: IPartialInterface<IT> = {
+  const testInterface: IPartialNodeInterface<I> = {
     // beforeAll: async () =>
     //   (await solCompile(contractName)).contracts.find(
     //     (c) => c.contractName === contractName
@@ -145,7 +147,7 @@ export default <
     },
   };
 
-  return Testeranto<IT>(
+  return Testeranto<I, O>(
     testInput,
     testSpecifications,
     testImplementations,

@@ -1,8 +1,8 @@
 
-/add src/Rectangle.ts
-/add src/Rectangle.test.implementation.ts
-/add src/Rectangle.test.specification.ts
-/add src/Rectangle.test.interface.ts
+/add src/Rectangle/Rectangle.ts
+/add src/Rectangle/Rectangle.test.implementation.ts
+/add src/Rectangle/Rectangle.test.specification.ts
+/add src/Rectangle/Rectangle.test.interface.ts
 /add src/Rectangle/Rectangle.test.node.ts
 
 /read testeranto/reports/smallTest/src/Rectangle/Rectangle.test.node/node/lint_errors.json

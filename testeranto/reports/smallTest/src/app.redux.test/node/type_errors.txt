@@ -34,9 +34,10 @@
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (392,12): 'e' is of type 'unknown'.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (452,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (540,3): Property 'go' has no initializer and is not definitely assigned in the constructor.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (616,20): 'e' is of type 'unknown'.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (642,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (647,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (578,22): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (617,20): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (643,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (648,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (47,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (58,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (94,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
@@ -44,9 +45,7 @@
     Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (174,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; features: string[]; }[]; checks: any[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
 /Users/adam/Code/testeranto/src/lib/core.ts (213,62): Expected 5 arguments, but got 6.
-/Users/adam/Code/testeranto/src/lib/index.ts (1,27): Cannot find module '../../dist/types/src/Types.js' or its corresponding type declarations.
-/Users/adam/Code/testeranto/src/lib/index.ts (43,8): 'thenCb' is of type 'unknown'.
-/Users/adam/Code/testeranto/src/lib/index.ts (44,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
+/Users/adam/Code/testeranto/src/lib/index.ts (47,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
 /Users/adam/Code/testeranto/src/Node.ts (58,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.
   Types of property 'customScreenShot' are incompatible.
     Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.

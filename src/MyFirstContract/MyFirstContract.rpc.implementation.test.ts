@@ -10,11 +10,11 @@ import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.tes
 import {
   commonGivens,
   MyFirstContractTestInput,
+  O,
 } from "./MyFirstContract.specification.test";
+import { I } from "./MyFirstContract.solidity-react.interface.test";
 
-const testImplementation: ITestImplementation<
-  IMyFirstContractTest<IMyFirstContractTest<IInput>>
-> = {
+const testImplementation: ITestImplementation<I, O> = {
   suites: {
     Default: "Testing a very simple smart contract",
   },
@@ -49,7 +49,7 @@ const testImplementation: ITestImplementation<
   },
 };
 
-const specs: ITestSpecification<any> = (Suite, Given, When, Then, Check) => {
+const specs: ITestSpecification<I, O> = (Suite, Given, When, Then, Check) => {
   return [
     Suite.Default(
       "Testing a very simple smart contract over RPC",

@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/LoginPage/react-test-renderer/node.test.tsx","ports":[],"fs":"testeranto/reports/smallTest/./src/LoginPage/react-test-renderer/node.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/9ef2b4e9-4436-48e4-b0df-2da1db87d003"}
+test resources: ,{"scheduled":true,"name":"./src/LoginPage/react-test-renderer/node.test.tsx","ports":[],"fs":"testeranto/reports/smallTest/./src/LoginPage/react-test-renderer/node.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/0058661f-5fca-4e9f-a31f-749a439fa51e"}
 
 Suite:,0,Testing the LoginPage as react
 
@@ -100,3 +100,4 @@ Suite:,0,Testing the LoginPage as react
  Given: default
  When:,TheEmailIsSetTo: adam@mail.com
  When:,ThePasswordIsSetTo: fosz
+ Then!!!:,ThereIsNotAnEmailError: undefined

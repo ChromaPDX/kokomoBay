@@ -1,17 +1,47 @@
-import { BaseGiven } from "../../testeranto/src/lib/abstractBase";
+import { Ibdd_in, Ibdd_out } from "testeranto/src/Types";
 
 import MyFirstContract from "./contracts/MyFirstContract.sol";
-import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";
+// import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";
+import { BaseGiven } from "testeranto/src/lib/abstractBase";
 
 export const MyFirstContractTestInput = MyFirstContract.contracts.find(
   (c) => c.contractName === "MyFirstContract"
 ) as { contractName: string; abi: any };
 
-export const commonGivens = (
+export type O = Ibdd_out<
+  {
+    Default: string;
+  },
+  {
+    Default: [string];
+  },
+  {
+    Increment: [number];
+    Decrement: [number];
+  },
+  {
+    Get: [{ asTestUser: number; expectation: number }];
+  },
+  {
+    AnEmptyState: [];
+  }
+>;
+
+export const commonGivens = <
+  I extends Ibdd_in<
+    unknown,
+    unknown,
+    unknown,
+    unknown,
+    unknown,
+    unknown,
+    unknown
+  >
+>(
   Given,
   When,
   Then
-): Record<string, BaseGiven<IMyFirstContractTest<any>>> => {
+): Record<string, BaseGiven<I>> => {
   return {
     test0: Given.Default(
       "my first contract",

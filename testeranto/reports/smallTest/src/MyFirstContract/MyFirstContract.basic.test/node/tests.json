@@ -1,0 +1,120 @@
+{
+  "name": "Testing a very simple smart contract ephemerally",
+  "givens": [
+    {
+      "key": "test0",
+      "name": "Default",
+      "whens": [],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": "my first contract"
+    },
+    {
+      "key": "test1",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "key": "test2",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "key": "test3",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "key": "AnEmptyState",
+      "name": "AnEmptyState",
+      "functionAsString": "() => MyFirstContract_default",
+      "features": [
+        "You can write your tests imperatively"
+      ]
+    }
+  ],
+  "fails": [],
+  "features": [
+    "my first contract",
+    "hello"
+  ]
+}

@@ -1,62 +1,17 @@
 [
   {
-    "filePath": "/Users/adam/Code/kokomoBay/src/Rectangle.test.specification.ts",
+    "filePath": "/Users/adam/Code/kokomoBay/src/Rectangle/Rectangle.test.specification.ts",
     "messages": [
-      {
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 2,
-        "message": "'assert' is defined but never used.",
-        "line": 4,
-        "column": 10,
-        "nodeType": null,
-        "messageId": "unusedVar",
-        "endLine": 4,
-        "endColumn": 16
-      },
-      {
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 2,
-        "message": "'PM' is defined but never used.",
-        "line": 6,
-        "column": 10,
-        "nodeType": null,
-        "messageId": "unusedVar",
-        "endLine": 6,
-        "endColumn": 12
-      },
       {
         "ruleId": "@typescript-eslint/no-unused-vars",
         "severity": 2,
         "message": "'pm' is defined but never used.",
-        "line": 89,
+        "line": 88,
         "column": 67,
         "nodeType": null,
         "messageId": "unusedVar",
-        "endLine": 89,
+        "endLine": 88,
         "endColumn": 69
-      }
-    ],
-    "suppressedMessages": [],
-    "errorCount": 3,
-    "fatalErrorCount": 0,
-    "warningCount": 0,
-    "fixableErrorCount": 0,
-    "fixableWarningCount": 0,
-    "usedDeprecatedRules": []
-  },
-  {
-    "filePath": "/Users/adam/Code/kokomoBay/src/Rectangle/Rectangle.test.node.ts",
-    "messages": [
-      {
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 2,
-        "message": "'Rectangle' is defined but never used.",
-        "line": 8,
-        "column": 8,
-        "nodeType": null,
-        "messageId": "unusedVar",
-        "endLine": 8,
-        "endColumn": 17
       }
     ],
     "suppressedMessages": [],

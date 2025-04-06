@@ -12,15 +12,15 @@
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/node/./src/ClassicalComponent/react-test-renderer/node.test/prompt.txt"
   },
   "./src/ClassicalComponent/react-test-renderer/web.test.tsx": {
-    "runTimeError": 0,
+    "runTimeError": -1,
     "typeErrors": 28,
     "staticErrors": 2,
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/web/./src/ClassicalComponent/react-test-renderer/web.test/prompt.txt"
   },
   "./src/MyFirstContract.rpc.test.ts": {
     "runTimeError": 4,
-    "typeErrors": 38,
-    "staticErrors": 3,
+    "typeErrors": 31,
+    "staticErrors": 1,
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/bigTest/reports/node/./src/MyFirstContract.rpc.test/prompt.txt"
   }
 }

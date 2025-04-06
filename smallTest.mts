@@ -23,7 +23,12 @@ const config: IBaseConfig = {
       { ports: 0 },
       [],
     ],
-    ["./src/MyFirstContract.basic.test.ts", "node", { ports: 0 }, []],
+    [
+      "./src/MyFirstContract/MyFirstContract.basic.test.ts",
+      "node",
+      { ports: 0 },
+      [],
+    ],
   ],
 };
 

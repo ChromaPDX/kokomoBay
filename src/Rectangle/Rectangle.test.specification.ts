@@ -1,9 +1,8 @@
 import { Ibdd_out, ITestSpecification } from "testeranto/src/Types";
 
 import someFeature from "./Rectangle/rectangle.md";
-import { assert } from "chai";
+
 import { I } from "./Rectangle.test.interface";
-import { PM } from "testeranto/src/PM";
 
 export type O = Ibdd_out<
   {

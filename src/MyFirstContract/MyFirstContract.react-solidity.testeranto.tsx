@@ -3,69 +3,58 @@ import { ITestImplementation } from "testeranto/src/Types";
 import { assert } from "chai";
 
 import Testeranto, {
-  IInput,
-} from "./subPackages/solidity/Contract.testeranto.test";
-import MyFirstContract from "./contracts/MyFirstContract.sol";
+} from "./subPackages/solidity/react.testeranto";
 
+import { MyFirstContractUI } from "./MyFirstContractUI";
 import { IMyFirstContractTest } from "./MyFirstContract.solidity-react.shape.test";
-import {
-  commonGivens,
-  MyFirstContractTestInput,
-} from "./MyFirstContract.specification.test";
+import { commonGivens } from "./MyFirstContract.specification.test";
+
+type IInput = { contractName: string; abi: any };
 
 const testImplementation: ITestImplementation<
-  IMyFirstContractTest<IInput>,
-  any
+  IMyFirstContractTest<IMyFirstContractTest<IInput>>
 > = {
   suites: {
     Default: "Testing a very simple smart contract",
   },
   givens: {
-    Default: (x) => x,
+    Default: () => {
+      return "MyFirstContract.sol";
+    },
   },
   whens: {
     Increment:
       (asTestUser) =>
-      ({ contract, accounts }) => {
-        return contract.methods
-          .inc()
-          .send({ from: accounts[asTestUser] })
-          .on("receipt", function (x) {
-            return x;
-          });
-      },
+        async ({ contractFarSide, accounts }) => {
+          return await contractFarSide.inc({ gasLimit: 150000 });
+        },
     Decrement:
       (asTestUser) =>
-      ({ contract, accounts }) => {
-        return contract.methods
-          .dec()
-          .send({ from: accounts[asTestUser] })
-          .on("receipt", function (x) {
-            return x;
-          });
-      },
+        async ({ contractFarSide, accounts }) => {
+          return await contractFarSide.dec({ gasLimit: 150000 });
+        },
   },
   thens: {
     Get:
       ({ asTestUser, expectation }) =>
-      async ({ contract, accounts }) =>
-        assert.equal(
-          expectation,
-          parseInt(await contract.methods.get().call())
-        ),
+        async ({ contractFarSide, accounts }) =>
+          assert.equal(
+            expectation,
+            parseInt(await contractFarSide.get({ gasLimit: 150000 }))
+          ),
   },
   checks: {
-    AnEmptyState: () => MyFirstContract,
+    AnEmptyState: () => "MyFirstContract.sol",
   },
 };
 
-export default Testeranto<IMyFirstContractTest<IInput>>(
+export default Testeranto(
   testImplementation,
 
   (Suite, Given, When, Then, Check) => {
     return [
       Suite.Default(
-        "Testing a very simple smart contract ephemerally",
+        "Test a react app backed by a solidity contract, separated by a RPC channel",
         commonGivens(Given, When, Then),
         [
           // Check.AnEmptyState(
@@ -86,11 +75,11 @@ export default Testeranto<IMyFirstContractTest<IInput>>(
       ),
     ];
   },
-  [
-    MyFirstContractTestInput,
-    async (web3) => {
-      // const accounts = await web3.eth.getAccounts();
-      return [];
-    },
-  ]
+  MyFirstContractUI
+  // {
+  //   // contract: MyFirstContractSol.contracts.find(
+  //   //   (c) => c.contractName === "MyFirstContract"
+  //   // ) as { contractName: string; abi: any },
+  //   MyFirstContractUI
+  // }
 );

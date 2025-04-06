@@ -8,8 +8,6 @@
 /add ../testeranto/src/PM/index.ts
 /add ../testeranto/src/Node.ts
 /add src/subPackages/solidity/Contract-rpc.testeranto.test.ts
-/add src/MyFirstContract.specification.test.ts
-/add src/MyFirstContract.rpc.test.ts
 
 /read testeranto/reports/bigTest/src/MyFirstContract.rpc.test/node/lint_errors.json
 /read testeranto/reports/bigTest/src/MyFirstContract.rpc.test/node/type_errors.txt

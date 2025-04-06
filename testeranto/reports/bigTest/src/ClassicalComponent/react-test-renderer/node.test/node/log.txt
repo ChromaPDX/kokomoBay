@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"testeranto/reports/bigTest/./src/ClassicalComponent/react-test-renderer/node.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/536f3494-ca1e-4299-a6df-89fc43a88e21"}
+test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"testeranto/reports/bigTest/./src/ClassicalComponent/react-test-renderer/node.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/7d9f7439-0087-4738-a9b8-3d1f6f468370"}
 
 Suite:,0,a classical react component
 

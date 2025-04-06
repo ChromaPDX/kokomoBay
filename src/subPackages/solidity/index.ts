@@ -92,7 +92,7 @@ export const solCompile = async (
   };
 };
 
-export const solidityEsBuildConfig: IPlugin = (register): Plugin => {
+export const solidityEsBuildConfig: IPlugin = (register?): Plugin => {
   return {
     name: "solidity",
     setup(build) {
@@ -108,7 +108,7 @@ export const solidityEsBuildConfig: IPlugin = (register): Plugin => {
       });
       build.onLoad({ filter: /.*/, namespace: "solidity" }, async (argz) => {
         const { result, remmapedSources } = await solCompile(argz.path);
-        register(argz.pluginData.importer, remmapedSources);
+        register && register(argz.pluginData.importer, remmapedSources);
 
         return {
           contents: JSON.stringify(result),

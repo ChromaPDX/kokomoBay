@@ -35,7 +35,8 @@ export function MyFirstContractUI(props: {
   useEffect(() => {
     const initializeProvider = async () => {
       const web3FarSideProvider = new ethers.providers.JsonRpcProvider({
-        url: "http://localhost:3001",
+
+        url: `http://${props.address}:${props.port}`,
         allowInsecureAuthentication: true,
         skipFetchSetup: true,
         errorPassThrough: true,

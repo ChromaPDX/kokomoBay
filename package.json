@@ -31,7 +31,9 @@
     "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
     "report": "tsx node_modules/testeranto/dist/prebuild/ReportServer.mjs testeranto.mts",
     "test": "yarn build-tests && yarn run-tests",
-    "aider": "aider --model deepseek/deepseek-chat"
+    "aider": "aider --model deepseek/deepseek-chat",
+    "bundle": "yarn tsx bundle.ts",
+    "dev-bundle": "yarn tsx dev-bundle.ts"
   },
   "types": "index.d.ts",
   "dependencies": {

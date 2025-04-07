@@ -57,8 +57,32 @@
       []
     ],
     [
+      "./src/LoginPage/react/node.test.tsx",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/LoginPage/react/web.test.tsx",
+      "web",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
       "./src/LoginPage/react-test-renderer/node.test.tsx",
       "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/LoginPage/react-test-renderer/web.test.tsx",
+      "web",
       {
         "ports": 0
       },

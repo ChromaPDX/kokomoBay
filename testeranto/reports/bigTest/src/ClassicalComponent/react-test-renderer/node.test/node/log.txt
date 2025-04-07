@@ -1,4 +1,3 @@
-test resources: ,{"scheduled":true,"name":"./src/ClassicalComponent/react-test-renderer/node.test.tsx","ports":[],"fs":"testeranto/reports/bigTest/./src/ClassicalComponent/react-test-renderer/node.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/d11a4193-f983-4fa8-99e1-c0b6ab354200"}
 
 Suite:,0,a classical react component
 

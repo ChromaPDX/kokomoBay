@@ -58,7 +58,7 @@
         },
         {
           "name": "TheSubmitButtonIsNotActive: undefined",
-          "error": false
+          "error": "expected false to be true"
         }
       ],
       "error": null,
@@ -84,7 +84,7 @@
         },
         {
           "name": "TheEmailIs: moe@email.com",
-          "error": false
+          "error": "expected 'adam@email.com' to equal 'moe@email.com'"
         },
         {
           "name": "ThereIsNotAnEmailError: undefined",
@@ -117,11 +117,11 @@
       "thens": [
         {
           "name": "ThereIsNotAnEmailError: undefined",
-          "error": false
+          "error": "expected 1 to equal +0"
         },
         {
           "name": "ThereIsACredentialError: undefined",
-          "error": false
+          "error": "expected '' to equal 'You entered an incorrect email, passw…'"
         }
       ],
       "error": null,
@@ -146,7 +146,7 @@
       "thens": [
         {
           "name": "TheEmailIs: curly@email.com",
-          "error": false
+          "error": "expected 'adam@mail.com' to equal 'curly@email.com'"
         },
         {
           "name": "ThereIsACredentialError: undefined",

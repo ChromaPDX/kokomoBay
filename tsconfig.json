@@ -1,6 +1,6 @@
 {
   "files": [
-    "testeranto.mts",
+    "tests/index.mts",
   ],
   "exclude": [
     "../testeranto/"

@@ -68,7 +68,7 @@
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (94,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
   Types of parameters 'value' and 'value' are incompatible.
     Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
-/Users/adam/Code/testeranto/src/lib/basebuilder.ts (174,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; features: string[]; }[]; checks: any[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (173,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; features: string[]; }[]; checks: any[]; fails: BaseGiven<...>[]; features: string[]; }; runn...'.
 /Users/adam/Code/testeranto/src/lib/core.ts (213,62): Expected 5 arguments, but got 6.
 /Users/adam/Code/testeranto/src/lib/index.ts (47,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
 /Users/adam/Code/testeranto/src/Node.ts (58,56): Argument of type 'PM_Node' is not assignable to parameter of type 'PM'.

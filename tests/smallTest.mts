@@ -1,12 +1,8 @@
 import { IBaseConfig } from "testeranto/src/lib/index.js";
 
-import baseConfig from "./testeranto.mjs";
+import { baseConfig } from "./index.mjs";
 
 const config: IBaseConfig = {
-  debugger: true,
-  clearScreen: false,
-  devMode: true,
-
   ...baseConfig,
 
   tests: [

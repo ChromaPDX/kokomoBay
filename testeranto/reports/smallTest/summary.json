@@ -42,7 +42,7 @@
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/LoginPage/react-test-renderer/node.test/prompt.txt"
   },
   "./src/LoginPage/react-test-renderer/web.test.tsx": {
-    "runTimeError": 0,
+    "runTimeError": -1,
     "typeErrors": 40,
     "staticErrors": 2,
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/web/./src/LoginPage/react-test-renderer/web.test/prompt.txt"

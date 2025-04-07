@@ -1,7 +1,4 @@
 {
-  "debugger": true,
-  "clearScreen": false,
-  "devMode": true,
   "src": "src",
   "minify": false,
   "externals": [

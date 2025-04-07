@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/adam/.nvm/versions/node/v20.4.0/bin/node /opt/local/libexec/yarn/bin/yarn.js add bootrap
+  /Users/adam/.nvm/versions/node/v20.4.0/bin/node /opt/local/libexec/yarn/bin/yarn.js trun /Users/adam/.cargo/bin/cargo
 
 PATH: 
-  /Users/adam/.wasmtime/bin:/Users/adam/Code/google-cloud-sdk/bin:/Users/adam/.yarn/bin:/Users/adam/.config/yarn/global/node_modules/.bin:/Users/adam/.nvm/versions/node/v20.4.0/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Users/adam/.local/bin:/Users/adam/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities:/opt/local/bin:/Users/adam/go/bin:/opt/homebrew/bin/go:/Users/adam/.rvm/bin
+  /Users/adam/.wasmtime/bin:/Users/adam/Code/google-cloud-sdk/bin:/Users/adam/.yarn/bin:/Users/adam/.config/yarn/global/node_modules/.bin:/Users/adam/.nvm/versions/node/v20.4.0/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/adam/.local/bin:/Users/adam/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities:/opt/local/bin:/Users/adam/go/bin:/opt/homebrew/bin/go:/Users/adam/.rvm/bin
 
 Yarn version: 
   1.22.19
@@ -14,17 +14,12 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bootrap: Not found
-      at params.callback [as _callback] (/opt/local/libexec/yarn/lib/cli.js:66145:18)
-      at self.callback (/opt/local/libexec/yarn/lib/cli.js:140890:22)
-      at Request.emit (node:events:512:28)
-      at Request.<anonymous> (/opt/local/libexec/yarn/lib/cli.js:141862:10)
-      at Request.emit (node:events:512:28)
-      at IncomingMessage.<anonymous> (/opt/local/libexec/yarn/lib/cli.js:141784:12)
-      at Object.onceWrapper (node:events:626:28)
-      at IncomingMessage.emit (node:events:524:35)
-      at endReadableNT (node:internal/streams/readable:1378:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  SyntaxError: /Users/adam/Code/kokomoBay/package.json: Expected ',' or '}' after property value in JSON at position 1378
+      at JSON.parse (<anonymous>)
+      at /opt/local/libexec/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/local/libexec/yarn/lib/cli.js:310:30)
+      at /opt/local/libexec/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -60,18 +55,19 @@ npm manifest:
       "aider": "aider --model deepseek/deepseek-chat",
       "bundle": "yarn tsx bundle.ts",
       "dev-bundle": "yarn tsx dev-bundle.ts",
-      "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
-      "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts",
-      "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts",
+      "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs",
+      "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest",
+      "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest",
       "run-big-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts",
       "run-small-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts",
-      "doit": "yarn clean && yarn init-docs && tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts once"
+      "t!run": "echo 'fasd'""doit": "yarn clean && yarn init-docs && tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts once"
     },
     "types": "index.d.ts",
     "dependencies": {
       "@ethersproject/shims": "^5.7.0",
       "@types/express": "^5.0.0",
       "@types/node": "^20.12.2",
+      "bootstrap": "^5.3.5",
       "esbuild": "0.17.11",
       "eslint-plugin-flowtype": "^8.0.3",
       "eslint-plugin-import": "2.31.0",
@@ -3728,6 +3724,11 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
     integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
+  
+  bootstrap@^5.3.5:
+    version "5.3.5"
+    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.5.tgz#be42cfe0d580e97ee1abb7d38ce94f5c393c9bb6"
+    integrity sha512-ct1CHKtiobRimyGzmsSldEtM03E8fcEX4Tb3dGXz1V8faRwM50+vfHwTzOxB3IlKO7m+9vTH3s/3C6T2EAPeTA==
   
   bottleneck@^2.15.3:
     version "2.19.5"

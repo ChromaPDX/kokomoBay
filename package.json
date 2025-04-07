@@ -31,12 +31,14 @@
     "aider": "aider --model deepseek/deepseek-chat",
     "bundle": "yarn tsx bundle.ts",
     "dev-bundle": "yarn tsx dev-bundle.ts",
-    "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs testeranto.mts",
-    "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts",
-    "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts",
+    "init-docs": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs",
+    "build-small-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest",
+    "build-big-tests": "tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest",
     "run-big-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts",
     "run-small-tests": "tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts",
-    "doit": "yarn clean && yarn init-docs && tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest.mts once && tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest.mts once && tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest.mts once"
+    "t-build": "tsx node_modules/testeranto/dist/prebuild/build.mjs",
+    "t-run": "tsx node_modules/testeranto/dist/prebuild/run.mjs",
+    "doit": "yarn clean && yarn init-docs && tsx node_modules/testeranto/dist/prebuild/build.mjs smallTest once && tsx node_modules/testeranto/dist/prebuild/run.mjs smallTest once && tsx node_modules/testeranto/dist/prebuild/build.mjs bigTest once && tsx node_modules/testeranto/dist/prebuild/run.mjs bigTest once"
   },
   "types": "index.d.ts",
   "dependencies": {

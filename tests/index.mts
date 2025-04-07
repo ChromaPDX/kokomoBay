@@ -1,5 +1,5 @@
 import { IBaseConfig } from "testeranto/src/lib/index.js";
-import { solidityEsBuildConfig } from "./src/subPackages/solidity/index.js";
+import { solidityEsBuildConfig } from "../src/subPackages/solidity/index.js";
 
 export const baseConfig: Partial<IBaseConfig> = {
   src: "src",

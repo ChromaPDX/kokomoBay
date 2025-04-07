@@ -29,3 +29,5 @@ export class ClassicalComponent extends React.Component<IProps, IState> {
     );
   }
 }
+
+export default ClassicalComponent;

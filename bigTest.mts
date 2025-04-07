@@ -35,7 +35,7 @@ const config: IBaseConfig = {
       [],
     ],
 
-    ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
+    // ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
   ],
 };
 

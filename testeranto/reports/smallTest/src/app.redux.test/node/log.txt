@@ -1,4 +1,4 @@
-test resources: ,{"scheduled":true,"name":"./src/app.redux.test.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/app.redux.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/0058661f-5fca-4e9f-a31f-749a439fa51e"}
+test resources: ,{"scheduled":true,"name":"./src/app.redux.test.ts","ports":[],"fs":"testeranto/reports/smallTest/./src/app.redux.test/node","browserWSEndpoint":"ws://[::1]:3234/devtools/browser/d0c723ea-5ff2-48f6-ad98-9144f21a29b4"}
 
 Suite:,0,Testing the Redux store
 

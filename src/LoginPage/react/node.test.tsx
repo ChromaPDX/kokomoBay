@@ -1,6 +1,5 @@
 import test from "testeranto/src/SubPackages/react/jsx/node";
 
-// import { testInterface as baseInterface } from "testeranto/src/SubPackages/react/jsx/index.js";
 import { testInterface as baseInterface } from "testeranto/src/SubPackages/react/jsx/index";
 
 import LoginPage, { actions } from "../index.js";

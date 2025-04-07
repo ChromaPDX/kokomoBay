@@ -1,18 +1,36 @@
-import type { ITestSpecification } from "testeranto/src/Types";
-import type { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
+import type { Ibdd_out, ITestImplementation, ITestSpecification } from "testeranto/src/Types";
 import test from "testeranto/src/SubPackages/react-dom/component/node";
 
 import { assert } from "chai";
 import { renderToStaticMarkup, renderToStaticNodeStream } from "react-dom/server";
 
 import { ClassicalComponent } from "..";
+import { I } from "./test";
+
+export type O = Ibdd_out<
+  {
+    Default: string;
+  },
+  {
+    AnEmptyState: [];
+  },
+  Record<string, never>,
+  {
+    renderToStaticMarkup: [string];
+    renderToStaticNodeStream: [ReadableStream<string>];
+  },
+  {
+    AnEmptyState: [];
+  }
+>;
+
 
 const snapshot = `<div style="border:3px solid green"><h1>Hello Marcus</h1><pre id="theProps">{}</pre><p>foo: </p><pre id="theState">{&quot;count&quot;:0}</pre><p>count: 0 times</p><button id="theButton">Click</button></div>`;
 const readableStream: ReadableStream<string> = new ReadableStream({
   start(controller) {
     // The following function handles each data chunk
     function push() {
-      controller.enqueue("idqk");
+      controller.enqueue("idk");
       controller.close();
 
     }
@@ -21,33 +39,8 @@ const readableStream: ReadableStream<string> = new ReadableStream({
   },
 });
 
-type IClassicalComponentSpec = {
-  iinput: never;
-  isubject: React.ReactElement;
-  istore: never;
-  iselection: never;
-  given: () => { props: Record<string, unknown> };
-  when: never;
-  then: Promise<void>;
-
-  suites: {
-    Default: string;
-  };
-  givens: {
-    AnEmptyState: [];
-  };
-  whens: Record<string, never>;
-  thens: {
-    renderToStaticMarkup: [string];
-    renderToStaticNodeStream: [ReadableStream<string>];
-  };
-  checks: {
-    AnEmptyState;
-  };
-}
-
 const ClassicalComponentSpec: ITestSpecification<
-  IClassicalComponentSpec
+  I, O
 > =
   (Suite, Given, When, Then) => {
     return [
@@ -68,7 +61,7 @@ const ClassicalComponentSpec: ITestSpecification<
     ];
   }
 
-const impl: BaseIImple<IClassicalComponentSpec> = {
+const impl: ITestImplementation<I, O> = {
   suites: {
     Default: "some default Suite",
   },
@@ -99,7 +92,11 @@ const impl: BaseIImple<IClassicalComponentSpec> = {
           assert.equal(result, snapshot);
         }
   },
-  checks: {},
+  checks: {
+    AnEmptyState: () => () => {
+      return { props: { foo: "bar" } };
+    },
+  },
 }
 
 export default test(

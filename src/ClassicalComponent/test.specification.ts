@@ -1,9 +1,40 @@
-import { ITestSpecification } from "testeranto/src/Types";
+import { Ibdd_in, Ibdd_out, ITestSpecification } from "testeranto/src/Types";
 
-import { IClassicalComponentSpec } from "./test.shape";
+import { IProps, IState } from ".";
+import { IStore } from "./react-dom/test";
+import { Component } from "react";
+
+export type O = Ibdd_out<
+  {
+    Default: [string];
+  },
+  {
+    AnEmptyState: [];
+  },
+  {
+    IClickTheButton: [];
+    IClickTheHeader: [];
+  },
+  {
+    ThePropsIs: [IProps];
+    TheStatusIs: [IState];
+  },
+  {
+    AnEmptyState;
+  }
+>;
 
 export const ClassicalComponentSpec: ITestSpecification<
-  IClassicalComponentSpec
+  Ibdd_in<
+    typeof Component,
+    IStore<any>,
+    IStore<any>,
+    IStore<any>,
+    (s: IStore<any>) => IStore<any>,
+    (s: IStore<any>) => IStore<any>,
+    (s: IStore<any>) => IStore<any>
+  >,
+  O
 > = (Suite, Given, When, Then) => {
   return [
     Suite.Default(

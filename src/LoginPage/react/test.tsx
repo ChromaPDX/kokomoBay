@@ -3,15 +3,15 @@ import { ITestImplementation } from "testeranto/src/Types";
 import { PM } from "testeranto/src/PM/index.js";
 import React, { ReactElement } from 'react';
 
-import { ILoginPageSpecs } from "../test.js";
+import { I, O } from "../test.js";
 import { actions, store } from "../index.js";
 
-type IImpl = ITestImplementation<
-  ILoginPageSpecs<ReactElement>,
-  any
->
+// type IImpl = ITestImplementation<
+//   ILoginPageSpecs<ReactElement>,
+//   any
+// >
 
-const implementations: IImpl = {
+const implementations: ITestImplementation<I<any>, O> = {
   suites: {
     Default: "a default suite",
   },

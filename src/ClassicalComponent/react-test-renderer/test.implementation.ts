@@ -1,10 +1,21 @@
 import { ReactTestRenderer } from "react-test-renderer";
 import { assert } from "chai";
-import { IImpl as BaseIImple } from "testeranto/src/SubPackages/react-test-renderer/component/index";
 
-import { IClassicalComponentSpec } from "../test.shape";
+import { Ibdd_in, ITestImplementation } from "testeranto/src/Types";
 
-export const testImplementation: BaseIImple<IClassicalComponentSpec, ReactTestRenderer> = {
+import { O } from "../test.specification";
+
+export type I = Ibdd_in<
+  unknown,
+  unknown,
+  unknown,
+  ReactTestRenderer,
+  unknown,
+  unknown,
+  unknown
+>;
+
+export const testImplementation: ITestImplementation<I, O> = {
   suites: {
     Default: "default",
   },

@@ -1,35 +1,25 @@
 /Users/adam/Code/kokomoBay/src/LoginPage/index.tsx (12,61): Property 'setDisableSubmit' does not exist on type 'CaseReducerActions<{ reset: (s: IStoreState) => void | IStoreState; setPassword: (s: IStoreState, b: { payload: string; type: string; }) => void; setEmail: (s: IStoreState, b: { ...; }) => void; signIn: (s: IStoreState) => void; setError: (s: IStoreState, b: { ...; }) => void; }, string>'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (29,76): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (30,17): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (31,76): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (38,35): Type '(component: unknown) => unknown' is not assignable to type '(zel: unknown, utils: PM) => Promise<unknown>'.
-  Type 'unknown' is not assignable to type 'Promise<unknown>'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (39,9): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (45,56): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (54,11): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (59,9): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (63,9): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (67,9): 'component' is of type 'unknown'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (70,34): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (76,37): Type '(component: renderer.ReactTestRenderer) => void' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (80,38): Type '(component: ReactTestRenderer, utils: PM) => Promise<void>' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (83,38): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (86,41): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (89,41): Type '(component: ReactTestRenderer, utils: PM) => void' is not assignable to type '(ssel: unknown, utils: PM) => unknown'.
-  Types of parameters 'component' and 'ssel' are incompatible.
-    Type 'unknown' is not assignable to type 'ReactTestRenderer'.
-/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/test.tsx (11,73): Generic type 'ILoginPageSpecs' requires 1 type argument(s).
-/Users/adam/Code/kokomoBay/src/LoginPage/test.ts (48,30): Generic type 'ITestSpecification' requires 2 type argument(s).
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (32,15): Argument of type '{}' is not assignable to parameter of type '((w: any, p: PM) => void) | PromiseLike<(w: any, p: PM) => void>'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (52,30): Type '(component: any, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'Promise<void>' is not assignable to type '(x: any) => unknown'.
+    Type 'Promise<void>' provides no match for the signature '(x: any): unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (58,48): Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (62,51): Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (66,54): Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (70,34): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (76,37): Type '(component: renderer.ReactTestRenderer) => void' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (80,38): Type '(component: ReactTestRenderer, utils: PM) => Promise<void>' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'Promise<void>' is not assignable to type '(x: any) => unknown'.
+    Type 'Promise<void>' provides no match for the signature '(x: any): unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (83,38): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (86,41): Type '(component: ReactTestRenderer) => void' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/node.test.tsx (89,41): Type '(component: ReactTestRenderer, utils: PM) => void' is not assignable to type '(ssel: any, utils: PM) => (x: any) => unknown'.
+  Type 'void' is not assignable to type '(x: any) => unknown'.
+/Users/adam/Code/kokomoBay/src/LoginPage/react-test-renderer/test.tsx (7,10): '"../test.js"' has no exported member named 'ILoginPageSpecs'. Did you mean 'LoginPageSpecs'?
 /Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts (8,10): Module '"testeranto/src/lib/types"' has no exported member 'IPlugin'.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (39,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (41,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
@@ -41,12 +31,13 @@
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (234,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (391,7): Type 'unknown' is not assignable to type 'Error'.
 /Users/adam/Code/testeranto/src/lib/abstractBase.ts (392,12): 'e' is of type 'unknown'.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (452,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (540,3): Property 'go' has no initializer and is not definitely assigned in the constructor.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (578,22): 'e' is of type 'unknown'.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (617,20): 'e' is of type 'unknown'.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (643,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
-/Users/adam/Code/testeranto/src/lib/abstractBase.ts (648,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (433,22): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (453,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (541,3): Property 'go' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (579,22): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (618,20): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (644,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (649,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (47,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (58,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
 /Users/adam/Code/testeranto/src/lib/basebuilder.ts (94,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.

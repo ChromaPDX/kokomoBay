@@ -1,20 +1,35 @@
 import test from "testeranto/src/SubPackages/react-dom/component/web";
-import { IPartialWebInterface } from "testeranto/src/Types";
+import { IPartialWebInterface, ITestImplementation, Modify } from "testeranto/src/Types";
 
-import { ReactElement } from "react";
-import ReactDom from "react-dom/client";
 import { assert } from "chai";
 
-import { ClassicalComponent } from "..";
-import { ClassicalComponentSpec } from "../test.specification";
+import { ClassicalComponent, IProps } from "..";
+import { ClassicalComponentSpec, O } from "../test.specification";
 
-type IStore = {
-  htmlElement: HTMLElement;
-  reactElement: ReactElement;
-  domRoot: ReactDom.Root;
-};
+import { I, IStore } from "./test";
 
-const ClassicalComponentReactDomImplementation = {
+
+const ClassicalComponentReactDomImplementation: Modify<ITestImplementation<I, O>, {
+  givens: {
+    [K in keyof O["givens"]]: IProps;
+  };
+
+  whens: {
+    [K in keyof O["whens"]]: (
+      ...x
+    ) => (s: IStore<any>) => Promise<void>;
+  };
+
+  thens: {
+    [K in keyof O["thens"]]: (expectation: any) => (s: IStore<any>) => Promise<void>;
+  };
+
+  // checks: {
+  //   [K in keyof bddout["checks"]]: IStoreShape;
+  // };
+
+
+}> = {
   suites: {
     Default: "Classical Component, react-dom, client.web",
   },
@@ -24,12 +39,16 @@ const ClassicalComponentReactDomImplementation = {
   whens: {
     IClickTheHeader: () =>
       async ({ htmlElement }) => {
-        htmlElement.querySelector("#theHeader").click()
+        const e = htmlElement.querySelector("#theHeader") as HTMLButtonElement;
+        assert(e);
+        e.click()
       },
     IClickTheButton:
       () =>
         async ({ htmlElement }) => {
-          htmlElement.querySelector("#theButton").click()
+          const e = htmlElement.querySelector("#theButton") as HTMLButtonElement;
+          assert(e);
+          e.click();
         }
 
   },
@@ -38,6 +57,7 @@ const ClassicalComponentReactDomImplementation = {
       (expectation) =>
         async ({ htmlElement }) => {
           const elem = htmlElement.querySelector("#theProps")
+          assert(elem)
           const found = elem.innerHTML;
           assert.deepEqual(
             JSON.parse(found),
@@ -49,6 +69,7 @@ const ClassicalComponentReactDomImplementation = {
       (expectation) =>
         async ({ htmlElement }) => {
           const elem = htmlElement.querySelector("#theStat")
+          assert(elem)
           const found = elem.innerHTML;
           assert.deepEqual(
             found,
@@ -59,17 +80,18 @@ const ClassicalComponentReactDomImplementation = {
   },
   checks: {
     AnEmptyState: () => () => {
-      return {};
+      return { props: {} };
     },
   },
 };
 
-const testInterface: IPartialWebInterface<any> = {
-  afterEach: async function (store: IStore, ndx, artificer, utils) {
-    const p = await utils.page() as string;
-    await utils.writeFileSync("pageUid.txt", p);
-    await utils.customScreenShot({ path: "result.png" }, p)
-  },
+const testInterface: IPartialWebInterface<I> = {
+  // afterEach: async function (store, ndx, utils) {
+  //   // const p = await utils.page() as string;
+  //   // await utils.writeFileSync("pageUid.txt", p);
+  //   // await utils.customScreenShot({ path: "result.png" }, p)
+  //   return
+  // },
 };
 
 export default test(

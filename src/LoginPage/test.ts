@@ -1,34 +1,19 @@
 import { PM } from "testeranto/src/PM";
-import { ITestSpecification } from "testeranto/src/Types";
+import { Ibdd_in, Ibdd_out, ITestSpecification } from "testeranto/src/Types";
 
-export type ILoginPageSpecs<IWhen> = {
-  iinput: any;
-  isubject: any;
-  istore: {
-    // testRenderer: renderer.ReactTestRenderer;
-    testRenderer: IWhen;
-    component: HTMLElement;
-  };
-  iselection: any;
-
-  // when: renderer.ReactTestRenderer;
-  when: IWhen;
-
-  then: (w: IWhen, p: PM) => void;
-  given: (x) => unknown;
-
-  suites: {
+export type O = Ibdd_out<
+  {
     Default: [string];
-  };
-  givens: {
+  },
+  {
     default: [];
-  };
-  whens: {
+  },
+  {
     TheLoginIsSubmitted: [];
     TheEmailIsSetTo: [string];
     ThePasswordIsSetTo: [string];
-  };
-  thens: {
+  },
+  {
     TheEmailIs: [string];
     TheEmailIsNot: [string];
     ThePasswordIs: [string];
@@ -39,13 +24,27 @@ export type ILoginPageSpecs<IWhen> = {
     ThereIsNotAnEmailError: [];
     TheSubmitButtonIsActive: [];
     TheSubmitButtonIsNotActive: [];
-  };
-  checks: {
+  },
+  {
     default;
-  };
-};
+  }
+>;
 
-export const LoginPageSpecs: ITestSpecification<ILoginPageSpecs<unknown>> = (
+export type I<IWhen> = Ibdd_in<
+  any,
+  any,
+  {
+    // testRenderer: renderer.ReactTestRenderer;
+    testRenderer: IWhen;
+    component: HTMLElement;
+  },
+  any,
+  IWhen,
+  (w: IWhen, p: PM) => void,
+  (x) => unknown
+>;
+
+export const LoginPageSpecs: ITestSpecification<I<any>, O> = (
   Suite,
   Given,
   When,

@@ -302,19 +302,19 @@
         "ruleId": "@typescript-eslint/no-explicit-any",
         "severity": 2,
         "message": "Unexpected any. Specify a different type.",
-        "line": 5,
-        "column": 11,
+        "line": 34,
+        "column": 3,
         "nodeType": "TSAnyKeyword",
         "messageId": "unexpectedAny",
-        "endLine": 5,
-        "endColumn": 14,
+        "endLine": 34,
+        "endColumn": 6,
         "suggestions": [
           {
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                149,
-                152
+                689,
+                692
               ],
               "text": "unknown"
             },
@@ -324,8 +324,8 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                149,
-                152
+                689,
+                692
               ],
               "text": "never"
             },
@@ -337,19 +337,19 @@
         "ruleId": "@typescript-eslint/no-explicit-any",
         "severity": 2,
         "message": "Unexpected any. Specify a different type.",
-        "line": 6,
-        "column": 13,
+        "line": 35,
+        "column": 3,
         "nodeType": "TSAnyKeyword",
         "messageId": "unexpectedAny",
-        "endLine": 6,
-        "endColumn": 16,
+        "endLine": 35,
+        "endColumn": 6,
         "suggestions": [
           {
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                166,
-                169
+                696,
+                699
               ],
               "text": "unknown"
             },
@@ -359,8 +359,8 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                166,
-                169
+                696,
+                699
               ],
               "text": "never"
             },
@@ -372,19 +372,19 @@
         "ruleId": "@typescript-eslint/no-explicit-any",
         "severity": 2,
         "message": "Unexpected any. Specify a different type.",
-        "line": 12,
-        "column": 15,
+        "line": 41,
+        "column": 3,
         "nodeType": "TSAnyKeyword",
         "messageId": "unexpectedAny",
-        "endLine": 12,
-        "endColumn": 18,
+        "endLine": 41,
+        "endColumn": 6,
         "suggestions": [
           {
             "messageId": "suggestUnknown",
             "fix": {
               "range": [
-                304,
-                307
+                814,
+                817
               ],
               "text": "unknown"
             },
@@ -394,8 +394,43 @@
             "messageId": "suggestNever",
             "fix": {
               "range": [
-                304,
-                307
+                814,
+                817
+              ],
+              "text": "never"
+            },
+            "desc": "Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of."
+          }
+        ]
+      },
+      {
+        "ruleId": "@typescript-eslint/no-explicit-any",
+        "severity": 2,
+        "message": "Unexpected any. Specify a different type.",
+        "line": 47,
+        "column": 51,
+        "nodeType": "TSAnyKeyword",
+        "messageId": "unexpectedAny",
+        "endLine": 47,
+        "endColumn": 54,
+        "suggestions": [
+          {
+            "messageId": "suggestUnknown",
+            "fix": {
+              "range": [
+                928,
+                931
+              ],
+              "text": "unknown"
+            },
+            "desc": "Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct."
+          },
+          {
+            "messageId": "suggestNever",
+            "fix": {
+              "range": [
+                928,
+                931
               ],
               "text": "never"
             },
@@ -407,16 +442,16 @@
         "ruleId": "@typescript-eslint/no-unused-vars",
         "severity": 2,
         "message": "'Check' is defined but never used.",
-        "line": 53,
+        "line": 52,
         "column": 3,
         "nodeType": null,
         "messageId": "unusedVar",
-        "endLine": 53,
+        "endLine": 52,
         "endColumn": 8
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 4,
+    "errorCount": 5,
     "fatalErrorCount": 0,
     "warningCount": 0,
     "fixableErrorCount": 0,

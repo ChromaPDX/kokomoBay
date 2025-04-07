@@ -34,7 +34,7 @@ const TesterantoComponent = ({
   return React.createElement("div", { ref: myContainer }, innerComp);
 };
 
-export default Testeranto<IThenShape>(
+export default Testeranto<any, any>(
   LoginPage,
   LoginPageSpecs,
   loginPageImplreactDom,
@@ -45,7 +45,7 @@ export default Testeranto<IThenShape>(
 
         if (htmlElement) {
           const domRoot = ReactDom.createRoot(htmlElement);
-          await utils.customScreenShot({ path: "prerender.jpg" })
+          // await utils.customScreenShot({ path: "prerender.jpg" })
           resolve({ htmlElement, reactElement, domRoot });
 
         }
@@ -55,7 +55,6 @@ export default Testeranto<IThenShape>(
     beforeEach: async (
       { htmlElement, reactElement, domRoot },
       initializer,
-      artificer,
       testResource,
       iv,
       utils
@@ -69,7 +68,7 @@ export default Testeranto<IThenShape>(
           {
             innerComp: r,
             done: async (mutableRef) => {
-              await utils.customScreenShot({ path: "render.jpg" })
+              // await utils.customScreenShot({ path: "render.jpg" })
               resolve({
                 htmlElement,
                 reactElement,
@@ -86,30 +85,31 @@ export default Testeranto<IThenShape>(
 
       });
     },
-    andWhen: function (s: IStore, whenCB, tr, utils): Promise<ISelection> {
+    andWhen: function (s, whenCB, tr, utils) {
       return whenCB(s.r, utils);
     },
     butThen: async function (
-      s: IStore,
+      s,
       thenCB,
       tr,
       utils
-    ): Promise<ISelection> {
+    ) {
       return await thenCB(s.mutableRef, utils);
     },
-    afterEach: async function (store: IStore, ndx, artificer, utils) {
-      await utils.customScreenShot({ path: "beforeUnmount.jpg" });
-      await utils.writeFileSync("dump.html", store.htmlElement.outerHTML)
+    afterEach: async function (store, ndx, utils) {
+      // console.log("store", store.toString())
+      // await utils.customScreenShot({ path: "beforeUnmount.jpg" });
+      // await utils.writeFileSync("dump.html", store.htmlElement.outerHTML)
 
       return new Promise(async (resolve, rej) => {
-        await store.domRoot.unmount()
-        await utils.customScreenShot({ path: "afterUnmount.jpg" })
+        // await store.domRoot.unmount()
+        // await utils.customScreenShot({ path: "afterUnmount.jpg" })
 
-        await store.r.props.store.dispatch(actions.reset())
+        // await store.r.props.store.dispatch(actions.reset())
         resolve({});
       });
     },
-    afterAll: (store: IStore, artificer) => {
+    afterAll: (store,) => {
       return new Promise((resolve, rej) => {
         resolve({});
       });

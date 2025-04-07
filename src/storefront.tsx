@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Storefront({ counter, inc, dec }: {
   counter: number,
   inc: () => void,

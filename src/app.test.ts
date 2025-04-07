@@ -1,4 +1,4 @@
-import { ITestSpecification, Ibdd_out } from "testeranto/src/Types";
+import { ITestSpecification, Ibdd_in, Ibdd_out } from "testeranto/src/Types";
 
 export type IAppOut = Ibdd_out<
   {
@@ -24,7 +24,12 @@ export type IAppOut = Ibdd_out<
   }
 >;
 
-export const AppSpecification: ITestSpecification<IAppOut> = (
+export type IAppSpecification = ITestSpecification<
+  Ibdd_in<unknown, unknown, unknown, unknown, unknown, unknown, unknown>,
+  IAppOut
+>;
+
+export const AppSpecification: IAppSpecification = (
   Suite,
   Given,
   When,

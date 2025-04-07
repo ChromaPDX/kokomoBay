@@ -3,40 +3,44 @@ import assert from "assert";
 import type {
   ITestSpecification,
   ITestImplementation,
+  Ibdd_in,
+  Ibdd_out,
 } from "testeranto/src/Types";
 
 import Testeranto from "testeranto/src/SubPackages/react-test-renderer/jsx/node.js";
 
 import ReactStateAndHook from "./ReactStateAndHook";
 
-type ISpec = {
-  iinput: any,
-  isubject: any,
-  istore: any,
-  iselection: any,
-
-  when: (rectangle: any) => unknown,
-  then: unknown,
-  given: (x) => unknown,
-
-  suites: {
+type I = Ibdd_in<
+  any,
+  any,
+  any,
+  any,
+  any,
+  any,
+  any
+>;
+type O = Ibdd_out<
+  {
     Default: string;
+
   },
-  givens: {
+  {
     Default;
   },
-  whens: {
+  {
     IClick: [];
   },
-  thens: {
+  {
     TheCounterIs: [number];
   },
-  checks: {
+  {
     Default;
   }
-};
 
-const Specification: ITestSpecification<ISpec> =
+>;
+
+const Specification: ITestSpecification<I, O> =
   (Suite, Given, When, Then, Check) => {
     return [
       Suite.Default(
@@ -69,13 +73,7 @@ const Specification: ITestSpecification<ISpec> =
   };
 
 const Implementation: ITestImplementation<
-  ISpec, {
-    givens: {
-      [K in keyof ISpec["givens"]]: (
-        ...Iw: ISpec["givens"][K]
-      ) => void;
-    }
-  }
+  I, O
 > = {
   suites: {
     Default: "a default suite",

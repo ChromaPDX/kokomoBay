@@ -1,6 +1,7 @@
 import React from 'react';
+
 function Storefront({ counter, inc, dec }) {
-    return <div>
+  return <div>
 
     <h2>storefront.tsx</h2>
 

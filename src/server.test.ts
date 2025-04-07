@@ -1,34 +1,61 @@
-import { ITestSpecification } from "testeranto/src/core";
-import { IHttpTesterantoTestImplementation } from "../myTests/http.testeranto.test";
+// import { ITestSpecification } from "testeranto/src/core";
+// import { IHttpTesterantoTestImplementation } from "../myTests/http.testeranto.test";
+
+import {
+  Ibdd_in,
+  Ibdd_out,
+  ITestImplementation,
+  ITestSpecification,
+} from "testeranto/src/Types";
 
 const myFeature = `hello`;
 
-export type IServerTestSpecifications = {
-  suites: {
+// export type IServerTestSpecifications = {
+//   suites: {
+//     Default: string;
+//   };
+//   givens: {
+//     AnEmptyState: [];
+//   };
+//   whens: {
+//     PostToStatus: [string];
+//     PostToAdd: [number];
+//   };
+//   thens: {
+//     TheStatusIs: [string];
+//     TheNumberIs: [number];
+//   };
+//   checks: {
+//     AnEmptyState;
+//   };
+// };
+
+type I = Ibdd_in<any, any, any, any, any, any, any>;
+type O = Ibdd_out<
+  {
     Default: string;
-  };
-  givens: {
+  },
+  {
     AnEmptyState: [];
-  };
-  whens: {
+  },
+  {
     PostToStatus: [string];
     PostToAdd: [number];
-  };
-  thens: {
+  },
+  {
     TheStatusIs: [string];
     TheNumberIs: [number];
-  };
-  checks: {
+  },
+  {
     AnEmptyState;
-  };
-};
+  }
+>;
 
-export const ServerTestImplementation: IHttpTesterantoTestImplementation<IServerTestSpecifications> = {
+export const ServerTestImplementation: ITestImplementation<I, O> = {
   suites: {
-    Default: "some default Suite"
+    Default: "some default Suite",
   },
   givens: {
-    /* @ts-ignore:next-line */
     AnEmptyState: () => {
       return {};
     },
@@ -49,17 +76,23 @@ export const ServerTestImplementation: IHttpTesterantoTestImplementation<IServer
   },
 };
 
-export const ServerTestSpecification: ITestSpecification<IServerTestSpecifications> = (Suite, Given, When, Then, Check) => {
+export const ServerTestSpecification: ITestSpecification<I, O> = (
+  Suite,
+  Given,
+  When,
+  Then,
+  Check
+) => {
   return [
     Suite.Default(
       "Testing the Node server with fetch!",
       {
-        "test0": Given.AnEmptyState(
+        test0: Given.AnEmptyState(
           [myFeature],
           [],
           [Then.TheStatusIs("some great status")]
         ),
-        "test1": Given.AnEmptyState(
+        test1: Given.AnEmptyState(
           [myFeature],
           [
             When.PostToStatus("1"),
@@ -68,10 +101,11 @@ export const ServerTestSpecification: ITestSpecification<IServerTestSpecificatio
             When.PostToStatus("4"),
             When.PostToStatus("5"),
             When.PostToStatus("6"),
-            When.PostToStatus("hello")],
+            When.PostToStatus("hello"),
+          ],
           [Then.TheStatusIs("hello")]
         ),
-        "test2": Given.AnEmptyState(
+        test2: Given.AnEmptyState(
           [myFeature],
           [When.PostToStatus("hello"), When.PostToStatus("aloha")],
           [Then.TheStatusIs("aloha")]
@@ -81,19 +115,13 @@ export const ServerTestSpecification: ITestSpecification<IServerTestSpecificatio
           [When.PostToStatus("hola")],
           [Then.TheStatusIs("hola")]
         ),
-        "test3": Given.AnEmptyState(
-          [myFeature],
-          [],
-          [
-            Then.TheNumberIs(0)
-          ]
-        ),
-        "test5": Given.AnEmptyState(
+        test3: Given.AnEmptyState([myFeature], [], [Then.TheNumberIs(0)]),
+        test5: Given.AnEmptyState(
           [myFeature],
           [When.PostToAdd(1), When.PostToAdd(2)],
           [Then.TheNumberIs(3)]
         ),
-        "test6": Given.AnEmptyState(
+        test6: Given.AnEmptyState(
           [myFeature],
           [
             When.PostToStatus("aloha"),
@@ -102,37 +130,9 @@ export const ServerTestSpecification: ITestSpecification<IServerTestSpecificatio
             When.PostToAdd(3),
           ],
           [Then.TheStatusIs("hello"), Then.TheNumberIs(7)]
-        )
-      }, []
-
-      // [
-      // // Check.AnEmptyState(
-      // //   "HTTP imperative style",
-      // //   async ({ PostToAdd }, { TheNumberIs }) => {
-      // //     await PostToAdd(2);
-      // //     await PostToAdd(3);
-      // //     await TheNumberIs(5);
-      // //     await PostToAdd(2);
-      // //     await TheNumberIs(7);
-      // //     await PostToAdd(3);
-      // //     await TheNumberIs(10);
-      // //   }
-      // // ),
-      // // Check.AnEmptyState(
-      // //   "HTTP imperative style II",
-      // //   async ({ PostToAdd }, { TheNumberIs }) => {
-      // //     const a = await PostToAdd(2);
-      // //     const b = parseInt(await PostToAdd(3));
-      // //     await TheNumberIs(b);
-      // //     await PostToAdd(2);
-      // //     await TheNumberIs(7);
-      // //     await PostToAdd(3);
-      // //     await TheNumberIs(10);
-      // //     assert.equal(await PostToAdd(-15), -5);
-      // //     await TheNumberIs(-5);
-      // //   }
-      // // ),
-      // ]
+        ),
+      },
+      []
     ),
   ];
 };

@@ -7,7 +7,7 @@ Suite:,0,Testing the Redux store
  When:,TheEmailIsSetTo: adam@email.com
  Then!!!:,TheEmailIs: adam@email.com
 TypeError: Cannot read properties of undefined (reading '0')
-    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743989190930:25:8)
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743991143803:25:8)
     at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:637:29)
     at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:230:9)
     at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:98:22)
@@ -20,7 +20,7 @@ TypeError: Cannot read properties of undefined (reading '0')
  Given: AStateWithEmail
  Then!!!:,TheEmailIsNot: adam@email.com
 TypeError: Cannot read properties of undefined (reading '0')
-    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743989190930:25:8)
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743991143803:25:8)
     at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:637:29)
     at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:230:9)
     at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:98:22)
@@ -35,7 +35,7 @@ TypeError: Cannot read properties of undefined (reading '0')
  When:,TheEmailIsSetTo: aloha
  Then!!!:,TheEmailIs: aloha
 TypeError: Cannot read properties of undefined (reading '0')
-    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743989190930:25:8)
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743991143803:25:8)
     at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:637:29)
     at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:230:9)
     at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:98:22)
@@ -48,7 +48,7 @@ TypeError: Cannot read properties of undefined (reading '0')
  Given: AnEmptyState
  Then!!!:,TheEmailIs: 
 TypeError: Cannot read properties of undefined (reading '0')
-    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743989190930:25:8)
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743991143803:25:8)
     at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:637:29)
     at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:230:9)
     at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:98:22)
@@ -62,7 +62,7 @@ TypeError: Cannot read properties of undefined (reading '0')
  When:,TheEmailIsSetTo: hey there
  Then!!!:,TheEmailIs: hey there
 TypeError: Cannot read properties of undefined (reading '0')
-    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743989190930:25:8)
+    at Object.assertThis (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/app.reduxToolkit.test.mjs?cacheBust=1743991143803:25:8)
     at assertThat (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:637:29)
     at Given.give (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:230:9)
     at async Testeranto.constructor.run (file:///Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/chunk-KUFN6MCY.mjs:98:22)

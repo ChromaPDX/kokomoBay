@@ -1,4 +1,3 @@
-/Users/adam/Code/kokomoBay/src/app.test.ts (27,32): Generic type 'ITestSpecification' requires 2 type argument(s).
 /Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (75,23): Generic type 'ITestSpecification' requires 2 type argument(s).
 /Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (79,5): Type '(subject: Reducer<IStoreShape, AnyAction>, initializer: (c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>) => Store<...>' is not assignable to type '(subject: Reducer<IStoreShape, AnyAction>, initializer: (c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>, testResource: ITTestResourceConfiguration, initialValues: any, pm: PM) => Promise<...>'.
   Type 'Store<IStoreShape, AnyAction>' is missing the following properties from type 'Promise<Store<IStoreShape, AnyAction>>': then, catch, finally, [Symbol.toStringTag]

@@ -1,5 +1,4 @@
 import { createSelector, createSlice, createStore } from "@reduxjs/toolkit";
-// import { noError } from "./LoginPage";
 
 export const noError = "no_error";
 
@@ -14,8 +13,6 @@ export type ILoginPageSelection = {
   error: ILoginPageError;
   disableSubmit: boolean;
 };
-
-// export const noError = "no_error";
 
 export type IStoreState = {
   password: string;

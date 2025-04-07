@@ -1,16 +1,15 @@
-import { ITestImplementation } from "testeranto/src/Types";
+import { Ibdd_in, ITestImplementation, Modify } from "testeranto/src/Types";
 
 import { assert } from "chai";
 
 import {
-  ActionCreatorWithNonInferrablePayload,
   ActionCreatorWithoutPayload,
   ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
 
 import { ReduxToolkitTesteranto } from "./subPackages/reduxToolkit.testeranto.test";
 
-import { AppSpecification, IAppSpecification } from "./app.test";
+import { AppSpecification, IAppOut, IAppSpecification } from "./app.test";
 import app, { IStoreState, loginApp } from "./app";
 import { ILoginPageSelection } from "./LoginPage";
 
@@ -18,12 +17,22 @@ const core = app();
 const selector = core.select.loginPageSelection;
 const reducer = core.app.reducer;
 
-const implementations: ITestImplementation<
-  IAppSpecification,
+type I = Ibdd_in<
+  unknown,
+  unknown,
+  unknown,
+  IStoreState,
+  unknown,
+  IStoreState,
+  unknown
+>;
+
+const implementations: Modify<
+  ITestImplementation<I, IAppOut>,
   {
     givens: {
-      [K in keyof IAppSpecification["givens"]]: () => (
-        ...Iw: IAppSpecification["givens"][K]
+      [K in keyof IAppOut["givens"]]: () => (
+        ...Iw: IAppOut["givens"][K]
       ) => IStoreState;
     };
 
@@ -41,8 +50,8 @@ const implementations: ITestImplementation<
     };
 
     checks: {
-      [K in keyof IAppSpecification["checks"]]: () => (
-        ...Iw: IAppSpecification["checks"][K]
+      [K in keyof IAppOut["checks"]]: () => (
+        ...Iw: IAppOut["checks"][K]
       ) => IStoreState;
     };
   }

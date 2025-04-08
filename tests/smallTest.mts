@@ -1,4 +1,4 @@
-import { IBaseConfig } from "testeranto/src/lib/index.js";
+import { IBaseConfig } from "testeranto/lib/index.js";
 
 import { baseConfig } from "./index.mjs";
 
@@ -6,37 +6,50 @@ const config: IBaseConfig = {
   ...baseConfig,
 
   tests: [
-    ["./src/Rectangle/Rectangle.test.node.ts", "node", { ports: 0 }, []],
-    // broken
-    // ["./src/Rectangle/Rectangle.test.web.ts", "web", { ports: 0 }, []],
-
-    ["./src/ReactStateAndHook.test.tsx", "node", { ports: 0 }, []],
-    ["./src/app.reduxToolkit.test.ts", "node", { ports: 0 }, []],
-    ["./src/app.redux.test.ts", "node", { ports: 0 }, []],
-
-    // broken
-    // ["./src/LoginPage/react-dom/web.test.tsx", "web", { ports: 0 }, []],
-    ["./src/LoginPage/react/node.test.tsx", "node", { ports: 0 }, []],
-    ["./src/LoginPage/react/web.test.tsx", "web", { ports: 0 }, []],
     [
-      "./src/LoginPage/react-test-renderer/node.test.tsx",
+      "./src/ReactStateAndHook/react-test-renderer.test/pure.tsx",
+      "pure",
+      { ports: 0 },
+      [],
+    ],
+    [
+      "./src/ReactStateAndHook/react-test-renderer.test/node.tsx",
       "node",
       { ports: 0 },
       [],
     ],
     [
-      "./src/LoginPage/react-test-renderer/web.test.tsx",
+      "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
       "web",
       { ports: 0 },
       [],
     ],
+    // ["./src/app.reduxToolkit.test.ts", "pure", { ports: 0 }, []],
+    // ["./src/app.redux.test.ts", "pure", { ports: 0 }, []],
 
-    [
-      "./src/MyFirstContract/MyFirstContract.basic.test.ts",
-      "node",
-      { ports: 0 },
-      [],
-    ],
+    // // broken
+    // // ["./src/LoginPage/react-dom/web.test.tsx", "web", { ports: 0 }, []],
+    // ["./src/LoginPage/react/pure.test.tsx", "pure", { ports: 0 }, []],
+    // ["./src/LoginPage/react/web.test.tsx", "web", { ports: 0 }, []],
+    // [
+    //   "./src/LoginPage/react-test-renderer/pure.test.tsx",
+    //   "pure",
+    //   { ports: 0 },
+    //   [],
+    // ],
+    // [
+    //   "./src/LoginPage/react-test-renderer/web.test.tsx",
+    //   "web",
+    //   { ports: 0 },
+    //   [],
+    // ],
+
+    // [
+    //   "./src/MyFirstContract/MyFirstContract.basic.test.ts",
+    //   "pure",
+    //   { ports: 0 },
+    //   [],
+    // ],
 
     // Don't use these tests.
     // Testing react components with the react package is not useful

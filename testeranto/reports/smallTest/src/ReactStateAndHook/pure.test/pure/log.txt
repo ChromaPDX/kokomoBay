@@ -1,0 +1,28 @@
+
+Suite:,0,Testing the ReactStateAndHook element
+
+ test0
+
+ Given: Default
+ Then!!!:,TheCounterIs: 0
+
+ test1
+
+ Given: Default
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 1
+
+ test2
+
+ Given: Default
+ When:,IClick: undefined
+ When:,IClick: undefined
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 3
+
+ test3
+
+ Given: Default
+ When:,IClick: undefined
+ When:,IClick: undefined
+ Then!!!:,TheCounterIs: 2

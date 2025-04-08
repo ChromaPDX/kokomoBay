@@ -1,4 +1,4 @@
-import Testeranto from "testeranto/src/Web";
+import Testeranto from "testeranto/src/Pure";
 
 import { RectangleTesterantoBaseTestImplementation } from "./Rectangle.test.implementation";
 import { RectangleTesterantoBaseTestSpecification } from "./Rectangle.test.specification";

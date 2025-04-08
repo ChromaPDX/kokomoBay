@@ -1,6 +1,0 @@
-
-Suite:,0,Classical Component, react-dom, server.node
-
- test0
-
- Given: AnEmptyState

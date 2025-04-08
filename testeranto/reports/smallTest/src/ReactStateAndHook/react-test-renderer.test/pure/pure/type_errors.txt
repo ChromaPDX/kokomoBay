@@ -1,0 +1,80 @@
+/Users/adam/Code/kokomoBay/src/subPackages/solidity/index.ts (8,10): Module '"testeranto/src/lib/types"' has no exported member 'IPlugin'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (39,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (41,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (43,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (160,11): Argument of type '(t: I["then"]) => unknown' is not assignable to parameter of type '(t: Awaited<I["then"]> | undefined) => boolean'.
+  Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (233,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (235,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (236,3): Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (239,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (240,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (375,7): Type 'unknown' is not assignable to type 'Error'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (405,12): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (443,9): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (466,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (554,3): Property 'go' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (592,9): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (632,7): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (658,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (663,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (47,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (58,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (94,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => any' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (128,48): Argument of type 'string' is not assignable to parameter of type '{ uid: number; }'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (135,36): Argument of type 'string' is not assignable to parameter of type '{ uid: number; }'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (181,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; failed: boolean; features: string[]; }[]; checks: any[]; fails: number; failed: boolean; fea...'.
+/Users/adam/Code/testeranto/src/lib/core.ts (213,62): Expected 5 arguments, but got 6.
+/Users/adam/Code/testeranto/src/lib/index.ts (50,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
+/Users/adam/Code/testeranto/src/PM/index.ts (10,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (21,3): Property 'client' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (33,13): 'message' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/PM/node.ts (34,46): 'message' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/PM/node.ts (112,3): Property 'customScreenShot' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+    Types of parameters 'cdpPage' and 'page' are incompatible.
+      Type 'string | undefined' is not assignable to type 'CdpPage'.
+        Type 'undefined' is not assignable to type 'CdpPage'.
+/Users/adam/Code/testeranto/src/PM/node.ts (133,3): Property 'write' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(uid: number, contents: string) => Promise<boolean>' is not assignable to type '(accessObject: { uid: number; }, contents: string) => Promise<boolean>'.
+    Types of parameters 'uid' and 'accessObject' are incompatible.
+      Type '{ uid: number; }' is not assignable to type 'number'.
+/Users/adam/Code/testeranto/src/PM/node.ts (213,3): Property 'end' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(uid: any) => Promise<unknown>' is not assignable to type '(accessObject: { uid: number; }) => boolean'.
+    Type 'Promise<unknown>' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/PM/pure.ts (97,3): Property 'customScreenShot' in type 'PM_Pure' is not assignable to the same property in base type 'PM'.
+  Type '(opts: ScreencastOptions, cdpPage: CdpPage) => any' is not assignable to type '(opts: object, page?: string | undefined) => any'.
+    Types of parameters 'cdpPage' and 'page' are incompatible.
+      Type 'string | undefined' is not assignable to type 'CdpPage'.
+        Type 'undefined' is not assignable to type 'CdpPage'.
+/Users/adam/Code/testeranto/src/PM/pure.ts (118,3): Property 'write' in type 'PM_Pure' is not assignable to the same property in base type 'PM'.
+  Type '(uid: number, contents: string) => any' is not assignable to type '(accessObject: { uid: number; }, contents: string) => Promise<boolean>'.
+    Types of parameters 'uid' and 'accessObject' are incompatible.
+      Type '{ uid: number; }' is not assignable to type 'number'.
+/Users/adam/Code/testeranto/src/PM/pure.ts (137,3): Property 'end' in type 'PM_Pure' is not assignable to the same property in base type 'PM'.
+  Type '(uid: number) => any' is not assignable to type '(accessObject: { uid: number; }) => boolean'.
+    Types of parameters 'uid' and 'accessObject' are incompatible.
+      Type '{ uid: number; }' is not assignable to type 'number'.
+/Users/adam/Code/testeranto/src/SubPackages/react-test-renderer/jsx/index.ts (27,12): This expression is not callable.
+  Type 'void' has no call signatures.
+/Users/adam/Code/testeranto/src/SubPackages/react-test-renderer/jsx/index.ts (46,11): No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'ReactTestRenderer' is not assignable to parameter of type 'string | FunctionComponent<(c?: any) => unknown> | ComponentClass<(c?: any) => unknown, any>'.
+/Users/adam/Code/testeranto/src/SubPackages/react-test-renderer/jsx/index.ts (48,31): No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'ReactTestRenderer' is not assignable to parameter of type 'string | FunctionComponent<(c?: any) => unknown> | ComponentClass<(c?: any) => unknown, any>'.
+/Users/adam/Code/testeranto/src/SubPackages/react-test-renderer/jsx/pure.ts (27,5): Argument of type 'ITestSpecification<II, O>' is not assignable to parameter of type 'ITestSpecification<I, O>'.
+  Types of parameters 'Suite' and 'Suite' are incompatible.
+    Type '{ [K in keyof O["suites"]]: (name: string, givens: IGivens<I>, checks: BaseCheck<I, O>[]) => BaseSuite<I, O>; }' is not assignable to type '{ [K in keyof O["suites"]]: (name: string, givens: IGivens<II>, checks: BaseCheck<II, O>[]) => BaseSuite<II, O>; }'.
+      Type '(name: string, givens: IGivens<I>, checks: BaseCheck<I, O>[]) => BaseSuite<I, O>' is not assignable to type '(name: string, givens: IGivens<II>, checks: BaseCheck<II, O>[]) => BaseSuite<II, O>'.
+        Types of parameters 'givens' and 'givens' are incompatible.
+          Type 'IGivens<II>' is not assignable to type 'IGivens<I>'.
+            'string' index signatures are incompatible.
+              Type 'BaseGiven<II>' is not assignable to type 'BaseGiven<I>'.
+                Types of property 'whens' are incompatible.
+                  Type 'BaseWhen<II>[]' is not assignable to type 'BaseWhen<I>[]'.
+                    Type 'BaseWhen<II>' is not assignable to type 'BaseWhen<I>'.
+                      Type 'I' is not assignable to type 'II'.
+                        'I' is assignable to the constraint of type 'II', but 'II' could be instantiated with a different subtype of constraint 'I'.

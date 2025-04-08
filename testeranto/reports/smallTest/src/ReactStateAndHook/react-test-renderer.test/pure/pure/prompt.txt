@@ -1,0 +1,34 @@
+
+/add ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js
+/add ../testeranto/node_modules/scheduler/unstable_mock.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler.production.min.js
+/add ../testeranto/node_modules/scheduler/cjs/scheduler.development.js
+/add ../testeranto/node_modules/scheduler/index.js
+/add ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.production.min.js
+/add ../testeranto/node_modules/react-test-renderer/cjs/react-test-renderer.development.js
+/add ../testeranto/node_modules/react-test-renderer/index.js
+/add ../testeranto/dist/module/lib/index.js
+/add ../testeranto/dist/module/lib/abstractBase.js
+/add ../testeranto/dist/module/lib/basebuilder.js
+/add ../testeranto/dist/module/lib/classBuilder.js
+/add ../testeranto/dist/module/lib/core.js
+/add ../testeranto/dist/module/PM/pure.js
+/add ../testeranto/dist/module/PM/index.js
+/add ../testeranto/dist/module/Pure.js
+/add ../testeranto/dist/module/SubPackages/react-test-renderer/jsx/index.js
+/add ../testeranto/dist/module/SubPackages/react-test-renderer/jsx/pure.js
+/add src/ReactStateAndHook/index.tsx
+/add src/ReactStateAndHook/react-test-renderer.test/node.react-test-renderer.ts
+/add src/ReactStateAndHook/react-test-renderer.test/index.ts
+/add src/ReactStateAndHook/react-test-renderer.test/specification.tsx
+/add src/ReactStateAndHook/react-test-renderer.test/pure.tsx
+
+/read testeranto/reports/smallTest/src/ReactStateAndHook/react-test-renderer.test/pure/pure/lint_errors.json
+/read testeranto/reports/smallTest/src/ReactStateAndHook/react-test-renderer.test/pure/pure/type_errors.txt
+/read testeranto/reports/smallTest/pure/src/ReactStateAndHook/react-test-renderer.test/pure/tests.json
+
+/load testeranto/reports/smallTest/pure/src/ReactStateAndHook/react-test-renderer.test/pure/featurePrompt.txt
+
+/code Fix the failing tests described in testeranto/reports/smallTest/pure/src/ReactStateAndHook/react-test-renderer.test/pure/tests.json. Correct any type signature errors described in the files testeranto/reports/smallTest/src/ReactStateAndHook/react-test-renderer.test/pure/pure/type_errors.txt. Implement any method which throws "Function not implemented. Resolve the lint errors described in testeranto/reports/smallTest/src/ReactStateAndHook/react-test-renderer.test/pure/pure/lint_errors.json"
+          

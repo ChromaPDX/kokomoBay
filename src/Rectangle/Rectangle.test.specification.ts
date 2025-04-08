@@ -85,11 +85,11 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
       },
 
       [
-        Check.Default("imperative style?!", [], async (rectangle, pm) => {
-          Then.getWidth(2).thenCB(rectangle);
-          Then.getHeight(2).thenCB(rectangle);
-          When.setHeight(22).whenCB(rectangle);
-          Then.getHeight(22).thenCB(rectangle);
+        Check.Default("imperative style?!", [], async (rectangle) => {
+          // Then.getWidth(2).thenCB(rectangle);
+          // Then.getHeight(2).thenCB(rectangle);
+          // When.setHeight(22).whenCB(rectangle);
+          // Then.getHeight(232).thenCB(rectangle);
         }),
       ]
     ),

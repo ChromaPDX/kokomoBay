@@ -1,0 +1,78 @@
+stdout data MESSAGE {
+  path: '/Users/adam/Code/kokomoBay/testeranto/bundles/node/smallTest/src/ReactStateAndHook/node.test/pipe'
+}
+stdout data MESSAGE {"uid":"1","key":"0.22621493741734167"}
+stdout data You have clicked the first button 0 time
+You have clicked the first button 0 time
+You have clicked the first button 1 time
+You have clicked the first button 0 time
+You have clicked the first button 1 time
+MESSAGE {"written":true,"key":"0.6978914315096401"}
+MESSAGE {"written":true,"key":"0.03570443503044696"}
+MESSAGE {"written":true,"key":"0.5095627577830439"}
+You have clicked the first button 2 time
+You have clicked the first button 3 time
+You have clicked the first button 0 time
+You have clicked the first button 1 time
+You have clicked the first button 2 time
+end
+stderr data (node:83877) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+stdout data MESSAGE {"written":true,"key":"0.14234741736798373"}
+Received end: "{\"written\":true,\"key\":\"0.14234741736798373\"}"
+x:  { written: true, key: '0.14234741736798373' }
+MESSAGE {"written":true,"key":"0.2234597947511865"}
+Received end: "{\"written\":true,\"key\":\"0.2234597947511865\"}"
+x:  { written: true, key: '0.2234597947511865' }
+MESSAGE {"written":true,"key":"0.24139703835036053"}
+Received end: "{\"written\":true,\"key\":\"0.24139703835036053\"}"
+x:  { written: true, key: '0.24139703835036053' }
+MESSAGE {"written":true,"key":"0.8975796556321625"}
+Received end: "{\"written\":true,\"key\":\"0.8975796556321625\"}"
+x:  { written: true, key: '0.8975796556321625' }
+MESSAGE {"written":true,"key":"0.7934877346142664"}
+Received end: "{\"written\":true,\"key\":\"0.7934877346142664\"}"
+x:  { written: true, key: '0.7934877346142664' }
+MESSAGE {"written":true,"key":"0.6546743869083673"}
+Received end: "{\"written\":true,\"key\":\"0.6546743869083673\"}"
+x:  { written: true, key: '0.6546743869083673' }
+MESSAGE {"written":true,"key":"0.3407525101229574"}
+Received end: "{\"written\":true,\"key\":\"0.3407525101229574\"}"
+x:  { written: true, key: '0.3407525101229574' }
+MESSAGE {"written":true,"key":"0.16178475031110007"}
+Received end: "{\"written\":true,\"key\":\"0.16178475031110007\"}"
+x:  { written: true, key: '0.16178475031110007' }
+MESSAGE {"written":true,"key":"0.0663654127499329"}
+Received end: "{\"written\":true,\"key\":\"0.0663654127499329\"}"
+x:  { written: true, key: '0.0663654127499329' }
+MESSAGE {"written":true,"key":"0.9548319345197613"}
+Received end: "{\"written\":true,\"key\":\"0.9548319345197613\"}"
+x:  { written: true, key: '0.9548319345197613' }
+MESSAGE {"written":true,"key":"0.9885097861334131"}
+Received end: "{\"written\":true,\"key\":\"0.9885097861334131\"}"
+x:  { written: true, key: '0.9885097861334131' }
+MESSAGE {"written":true,"key":"0.2776542075252715"}
+Received end: "{\"written\":true,\"key\":\"0.2776542075252715\"}"
+x:  { written: true, key: '0.2776542075252715' }
+MESSAGE {"written":true,"key":"0.8530905696076974"}
+Received end: "{\"written\":true,\"key\":\"0.8530905696076974\"}"
+x:  { written: true, key: '0.8530905696076974' }
+MESSAGE {"written":true,"key":"0.5581494660924657"}
+Received end: "{\"written\":true,\"key\":\"0.5581494660924657\"}"
+x:  { written: true, key: '0.5581494660924657' }
+MESSAGE {"written":true,"key":"0.08083882937937403"}
+Received end: "{\"written\":true,\"key\":\"0.08083882937937403\"}"
+x:  { written: true, key: '0.08083882937937403' }
+MESSAGE {"written":true,"key":"0.958767585053915"}
+Received end: "{\"written\":true,\"key\":\"0.958767585053915\"}"
+x:  { written: true, key: '0.958767585053915' }
+MESSAGE {"key":"0.027995496188967683"}
+Received end: "{\"key\":\"0.027995496188967683\"}"
+x:  { key: '0.027995496188967683' }
+stdout data MESSAGE {"key":"0.42838831552212"}
+Received end: "{\"key\":\"0.42838831552212\"}"
+x:  { key: '0.42838831552212' }
+stdout data MESSAGE {"key":"0.9500647306979981"}
+Received end: "{\"key\":\"0.9500647306979981\"}"
+x:  { key: '0.9500647306979981' }
+stderr data goodbye node error 0

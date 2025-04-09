@@ -1,0 +1,49 @@
+{
+  "src": "src",
+  "debugger": false,
+  "minify": false,
+  "clearScreen": false,
+  "externals": [
+    "ganache",
+    "stream"
+  ],
+  "ports": [
+    "3001",
+    "3002",
+    "3003",
+    "3004",
+    "3005",
+    "3006",
+    "3007"
+  ],
+  "tests": [
+    [
+      "./src/Rectangle/Rectangle.test.node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/Rectangle/Rectangle.test.web.ts",
+      "web",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/Rectangle/Rectangle.test.pure.ts",
+      "pure",
+      {
+        "ports": 0
+      },
+      []
+    ]
+  ],
+  "webPlugins": [],
+  "nodePlugins": [],
+  "importPlugins": [],
+  "buildDir": "/Users/adam/Code/kokomoBay/testeranto/bundles/rectangle"
+}

@@ -1,24 +1,28 @@
-import { IBaseConfig } from "testeranto/src/lib/index.js";
-import { solidityEsBuildConfig } from "../src/subPackages/solidity/index.js";
+import { IBaseConfig } from "testeranto/src/Types";
 
-export const baseConfig: Partial<IBaseConfig> = {
+export const baseConfig: Partial<IBaseConfig> & {
+  src: string;
+  clearScreen: boolean;
+  debugger: boolean;
+  externals: string[];
+  minify: boolean;
+  ports: string[];
+  featureIngestor: (s: string) => Promise<string>;
+} = {
   src: "src",
 
-  // debugger: true,
-  // clearScreen: false,
-  // devMode: true,
+  debugger: false,
   minify: false,
-  // outbase: ".",
+  clearScreen: false,
   externals: ["ganache", "stream"],
   ports: ["3001", "3002", "3003", "3004", "3005", "3006", "3007"],
 
-  webPlugins: [solidityEsBuildConfig],
-  nodePlugins: [solidityEsBuildConfig],
-
   featureIngestor: async function (s: string): Promise<string> {
-    return new Promise(async (res, rej) => {
+    // eslint-disable-next-line no-async-promise-executor
+    return new Promise(async (res) => {
       try {
         res((await (await fetch(new URL(s).href)).json()).body);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         res(s);
       }

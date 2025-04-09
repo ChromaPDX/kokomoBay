@@ -1,6 +1,7 @@
-import { IBaseConfig } from "testeranto/src/lib/index.js";
+import { IBaseConfig } from "testeranto/src/Types";
 
 import { baseConfig } from "./index.mjs";
+import { solidityEsBuildConfig } from "../src/subPackages/solidity";
 
 const config: IBaseConfig = {
   ...baseConfig,
@@ -33,6 +34,10 @@ const config: IBaseConfig = {
 
     // ["./src/MyFirstContract.rpc.test.ts", "node", { ports: 1 }, []],
   ],
+
+  webPlugins: [solidityEsBuildConfig],
+  nodePlugins: [solidityEsBuildConfig],
+  importPlugins: [],
 };
 
 export default config;

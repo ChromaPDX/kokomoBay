@@ -1,19 +1,7 @@
 {
-  "./src/ReactStateAndHook/react-test-renderer.test/pure.tsx": {
-    "runTimeError": 0,
-    "typeErrors": 41,
-    "staticErrors": 0,
-    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/pure/./src/ReactStateAndHook/react-test-renderer.test/pure/prompt.txt"
-  },
-  "./src/ReactStateAndHook/react-test-renderer.test/node.tsx": {
-    "runTimeError": 0,
-    "typeErrors": 41,
-    "staticErrors": 0,
-    "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/node/./src/ReactStateAndHook/react-test-renderer.test/node/prompt.txt"
-  },
   "./src/ReactStateAndHook/react-test-renderer.test/web.tsx": {
     "runTimeError": 0,
-    "typeErrors": 41,
+    "typeErrors": 45,
     "staticErrors": 0,
     "prompt": "aider --model deepseek/deepseek-chat --load testeranto/smallTest/reports/web/./src/ReactStateAndHook/react-test-renderer.test/web/prompt.txt"
   }

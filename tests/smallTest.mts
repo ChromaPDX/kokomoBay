@@ -1,23 +1,24 @@
-import { IBaseConfig } from "testeranto/lib/index.js";
+import { IBaseConfig } from "testeranto/src/Types";
 
 import { baseConfig } from "./index.mjs";
+import { solidityEsBuildConfig } from "../src/subPackages/solidity";
 
 const config: IBaseConfig = {
   ...baseConfig,
 
   tests: [
-    [
-      "./src/ReactStateAndHook/react-test-renderer.test/pure.tsx",
-      "pure",
-      { ports: 0 },
-      [],
-    ],
-    [
-      "./src/ReactStateAndHook/react-test-renderer.test/node.tsx",
-      "node",
-      { ports: 0 },
-      [],
-    ],
+    // [
+    //   "./src/ReactStateAndHook/react-test-renderer.test/pure.tsx",
+    //   "pure",
+    //   { ports: 0 },
+    //   [],
+    // ],
+    // [
+    //   "./src/ReactStateAndHook/react-test-renderer.test/node.tsx",
+    //   "node",
+    //   { ports: 0 },
+    //   [],
+    // ],
     [
       "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
       "web",
@@ -58,6 +59,10 @@ const config: IBaseConfig = {
     // ["./src/LoginPage/react/web.test.tsx", "web", { ports: 0 }, []],
     // ["./src/LoginPage/react/node.test.tsx", "node", { ports: 0 }, []],
   ],
+
+  webPlugins: [solidityEsBuildConfig],
+  nodePlugins: [],
+  importPlugins: [],
 };
 
 export default config;

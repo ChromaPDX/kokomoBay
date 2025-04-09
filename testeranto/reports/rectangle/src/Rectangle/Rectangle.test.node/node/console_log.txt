@@ -1,0 +1,5 @@
+stdout data HELLO RECTANGLE
+stdout data Rectangle { height: 2, width: 2 }
+stderr data (node:5471) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+stderr data goodbye node error 0

@@ -1,24 +1,6 @@
-import { IBaseConfig } from "testeranto/lib/index.js";
+import { IBaseConfig } from "testeranto/src/Types";
 
-export const baseConfig: Partial<IBaseConfig> = {
-  src: "src",
-  minify: false,
-  externals: ["stream"],
-  ports: [],
-
-  webPlugins: [],
-  nodePlugins: [],
-
-  featureIngestor: async function (s: string): Promise<string> {
-    return new Promise(async (res, rej) => {
-      try {
-        res((await (await fetch(new URL(s).href)).json()).body);
-      } catch (err) {
-        res(s);
-      }
-    });
-  },
-};
+import baseConfig from "./index.mts";
 
 const config: IBaseConfig = {
   ...baseConfig,
@@ -28,6 +10,10 @@ const config: IBaseConfig = {
     ["./src/Rectangle/Rectangle.test.web.ts", "web", { ports: 0 }, []],
     ["./src/Rectangle/Rectangle.test.pure.ts", "pure", { ports: 0 }, []],
   ],
+
+  webPlugins: [],
+  nodePlugins: [],
+  importPlugins: [],
 };
 
 export default config;

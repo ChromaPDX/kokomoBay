@@ -86,6 +86,7 @@ export const RectangleTesterantoBaseTestSpecification: ITestSpecification<
 
       [
         Check.Default("imperative style?!", [], async (rectangle) => {
+          console.log(rectangle);
           // Then.getWidth(2).thenCB(rectangle);
           // Then.getHeight(2).thenCB(rectangle);
           // When.setHeight(22).whenCB(rectangle);

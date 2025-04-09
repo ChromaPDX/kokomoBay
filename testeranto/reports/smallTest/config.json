@@ -1,6 +1,8 @@
 {
   "src": "src",
+  "debugger": false,
   "minify": false,
+  "clearScreen": false,
   "externals": [
     "ganache",
     "stream"
@@ -14,29 +16,7 @@
     "3006",
     "3007"
   ],
-  "webPlugins": [
-    null
-  ],
-  "nodePlugins": [
-    null
-  ],
   "tests": [
-    [
-      "./src/ReactStateAndHook/react-test-renderer.test/pure.tsx",
-      "pure",
-      {
-        "ports": 0
-      },
-      []
-    ],
-    [
-      "./src/ReactStateAndHook/react-test-renderer.test/node.tsx",
-      "node",
-      {
-        "ports": 0
-      },
-      []
-    ],
     [
       "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
       "web",
@@ -46,5 +26,10 @@
       []
     ]
   ],
+  "webPlugins": [
+    null
+  ],
+  "nodePlugins": [],
+  "importPlugins": [],
   "buildDir": "/Users/adam/Code/kokomoBay/testeranto/bundles/smallTest"
 }

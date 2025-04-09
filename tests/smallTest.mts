@@ -19,14 +19,16 @@ const config: IBaseConfig = {
     //   { ports: 0 },
     //   [],
     // ],
-    [
-      "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
-      "web",
-      { ports: 0 },
-      [],
-    ],
+    // [
+    //   "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
+    //   "web",
+    //   { ports: 0 },
+    //   [],
+    // ],
     // ["./src/app.reduxToolkit.test.ts", "pure", { ports: 0 }, []],
-    // ["./src/app.redux.test.ts", "pure", { ports: 0 }, []],
+    ["./src/app/redux.test/node.ts", "node", { ports: 0 }, []],
+    ["./src/app/redux.test/pure.ts", "pure", { ports: 0 }, []],
+    ["./src/app/redux.test/web.ts", "web", { ports: 0 }, []],
 
     // // broken
     // // ["./src/LoginPage/react-dom/web.test.tsx", "web", { ports: 0 }, []],

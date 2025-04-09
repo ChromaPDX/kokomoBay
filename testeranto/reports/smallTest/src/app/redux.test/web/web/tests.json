@@ -1,0 +1,107 @@
+{
+  "name": "Testing the Redux store",
+  "givens": [
+    {
+      "key": "test0",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: adam@email.com"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: adam@email.com",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "Set the email, check the email"
+      ]
+    },
+    {
+      "key": "test1",
+      "name": "AStateWithEmail",
+      "whens": [],
+      "thens": [
+        {
+          "name": "TheEmailIsNot: adam@email.com",
+          "error": false
+        },
+        {
+          "name": "TheEmailIs: bob@mail.com",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "set the default email and then check"
+      ]
+    },
+    {
+      "key": "test2",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: hello"
+        },
+        {
+          "name": "TheEmailIsSetTo: aloha"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: aloha",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "Set the email, set it again, and then check"
+      ]
+    },
+    {
+      "key": "test3",
+      "name": "AnEmptyState",
+      "whens": [],
+      "thens": [
+        {
+          "name": "TheEmailIs: ",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "the default email is nothing"
+      ]
+    },
+    {
+      "key": "test4",
+      "name": "AnEmptyState",
+      "whens": [
+        {
+          "name": "TheEmailIsSetTo: hey there"
+        }
+      ],
+      "thens": [
+        {
+          "name": "TheEmailIs: hey there",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "Set the email, check the email"
+      ]
+    }
+  ],
+  "checks": [],
+  "fails": 0,
+  "features": [
+    "Set the email, check the email",
+    "set the default email and then check",
+    "Set the email, set it again, and then check",
+    "the default email is nothing"
+  ]
+}

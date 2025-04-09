@@ -1,0 +1,68 @@
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (75,23): Generic type 'ITestSpecification' requires 2 type argument(s).
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (79,5): Type '(subject: Reducer<IStoreShape, AnyAction>, initializer: (c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>) => Store<...>' is not assignable to type '(subject: Reducer<IStoreShape, AnyAction>, initializer: (c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>, testResource: ITTestResourceConfiguration, initialValues: any, pm: PM) => Promise<...>'.
+  Type 'Store<IStoreShape, AnyAction>' is missing the following properties from type 'Promise<Store<IStoreShape, AnyAction>>': then, catch, finally, [Symbol.toStringTag]
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (82,9): No overload matches this call.
+  Overload 1 of 2, '(reducer: Reducer<IStoreShape, AnyAction>, enhancer?: StoreEnhancer<unknown, unknown> | undefined): Store<IStoreShape, AnyAction>', gave the following error.
+    Argument of type '(c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>' is not assignable to parameter of type 'StoreEnhancer<unknown, unknown>'.
+      Type '(a: IStoreShape) => PreloadedState<IStoreShape>' is not assignable to type 'StoreEnhancerStoreCreator<unknown, unknown>'.
+        Types of parameters 'a' and 'reducer' are incompatible.
+          Type 'Reducer<S, A>' is not assignable to type 'IStoreShape'.
+            'IStoreShape' could be instantiated with an arbitrary type which could be unrelated to 'Reducer<S, A>'.
+  Overload 2 of 2, '(reducer: Reducer<IStoreShape, AnyAction>, preloadedState?: PreloadedState<IStoreShape> | undefined, enhancer?: StoreEnhancer<...> | undefined): Store<...>', gave the following error.
+    Argument of type '(c?: any) => (a: IStoreShape) => PreloadedState<IStoreShape>' is not assignable to parameter of type 'PreloadedState<IStoreShape>'.
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (86,13): Type 'IStoreShape' must have a '[Symbol.iterator]()' method that returns an iterator.
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (90,5): Type '(store: Store<IStoreShape, AnyAction>, actioner: (x: IStoreShape, pm: PM) => void) => Promise<void>' is not assignable to type '(store: Store<IStoreShape, AnyAction>, thenCB: (x: IStoreShape, pm: PM) => void, testResource: ITTestResourceConfiguration, pm: PM) => Promise<...>'.
+  Type 'Promise<void>' is not assignable to type 'Promise<IStoreShape>'.
+    Type 'void' is not assignable to type 'IStoreShape'.
+      'IStoreShape' could be instantiated with an arbitrary type which could be unrelated to 'void'.
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (91,14): Expected 2 arguments, but got 1.
+/Users/adam/Code/kokomoBay/src/subPackages/redux.testeranto.test.ts (98,5): Argument of type 'BaseImplementation<IStoreShape, iAppOut>' is not assignable to parameter of type 'ITestImplementation<Ibdd_in<unknown, unknown, unknown, unknown, unknown, unknown, unknown>, iAppOut>'.
+  Types of property 'givens' are incompatible.
+    Type '{ [K in keyof iAppOut["givens"]]: IStoreShape; }' is not assignable to type '{ [K in keyof iAppOut["givens"]]: (...Ig: iAppOut["givens"][K]) => unknown; }'.
+      Type 'IStoreShape' is not assignable to type '(...Ig: iAppOut["givens"][K]) => unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (1,20): Cannot find module '../PM/server.js' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (39,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (41,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (43,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (233,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (235,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (236,3): Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (239,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (240,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (375,7): Type 'unknown' is not assignable to type 'Error'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (405,12): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (443,9): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (466,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (554,3): Property 'go' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (592,9): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (632,7): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (658,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (663,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (51,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (62,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (98,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => void' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (184,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; failed: boolean; features: string[]; }[]; checks: any[]; fails: number; failed: boolean; fea...'.
+/Users/adam/Code/testeranto/src/lib/core.ts (9,20): Cannot find module '../PM/server' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/lib/core.ts (74,11): Type 'void' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/core.ts (213,62): Expected 5 arguments, but got 6.
+/Users/adam/Code/testeranto/src/lib/index.ts (2,20): Cannot find module '../PM/server.js' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/lib/index.ts (58,19): Type 'unknown' is not assignable to type 'Promise<unknown>'.
+/Users/adam/Code/testeranto/src/lib/types.ts (1,20): Cannot find module '../PM/server' or its corresponding type declarations.
+/Users/adam/Code/testeranto/src/PM/index.ts (13,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (17,3): Property 'client' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (27,13): 'message' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/PM/node.ts (28,46): 'message' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/PM/node.ts (59,5): Type 'Promise<unknown>' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more.
+/Users/adam/Code/testeranto/src/PM/node.ts (76,9): Property 'newPage' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '() => Promise<CdpPage>' is not assignable to type '() => CdpPage'.
+    Type 'Promise<CdpPage>' is missing the following properties from type 'CdpPage': #private, _client, isServiceWorkerBypassed, isDragInterceptionEnabled, and 105 more.
+/Users/adam/Code/testeranto/src/PM/node.ts (104,3): Property 'page' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '() => Promise<unknown>' is not assignable to type '() => string | undefined'.
+    Type 'Promise<unknown>' is not assignable to type 'string'.
+/Users/adam/Code/testeranto/src/PM/node.ts (140,3): Property 'existsSync' in type 'PM_Node' is not assignable to the same property in base type 'PM'.
+  Type '(destFolder: string) => Promise<unknown>' is not assignable to type '(fp: string) => Promise<boolean>'.
+    Type 'Promise<unknown>' is not assignable to type 'Promise<boolean>'.
+      Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/Types.ts (10,20): Cannot find module './PM/server.js' or its corresponding type declarations.

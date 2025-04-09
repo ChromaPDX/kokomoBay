@@ -1,31 +1,32 @@
 import { assert } from "chai";
-import { ITestImplementation, Modify } from "testeranto/src/Types";
+import { ITestImplementation } from "testeranto/src/Types";
 import type { PM } from "testeranto/src/PM";
 
 import Rectangle from "./Rectangle";
 import { I } from "./Rectangle.test.interface";
 import { O } from "./Rectangle.test.specification";
 
-export type II = Modify<
-  ITestImplementation<I, O>,
-  {
-    givens: {
-      [K in keyof O["givens"]]: (...Iw: O["givens"][K]) => Rectangle;
-    };
-    whens: {
-      [K in keyof O["whens"]]: (
-        ...Iw: O["whens"][K]
-      ) => (rectangle: Rectangle, utils: PM) => Rectangle;
-    };
-    thens: {
-      [K in keyof O["thens"]]: (
-        ...Iw: O["thens"][K]
-      ) => (rectangle: Rectangle, utils: PM) => Rectangle;
-    };
-  }
->;
+export type M = {
+  givens: {
+    [K in keyof O["givens"]]: (...Iw: O["givens"][K]) => Rectangle;
+  };
+  whens: {
+    [K in keyof O["whens"]]: (
+      ...Iw: O["whens"][K]
+    ) => (rectangle: Rectangle, utils: PM) => Rectangle;
+  };
+  thens: {
+    [K in keyof O["thens"]]: (
+      ...Iw: O["thens"][K]
+    ) => (rectangle: Rectangle, utils: PM) => Rectangle;
+  };
+};
 
-export const RectangleTesterantoBaseTestImplementation: II = {
+export const RectangleTesterantoBaseTestImplementation: ITestImplementation<
+  I,
+  O,
+  M
+> = {
   suites: {
     Default: "a default suite",
   },

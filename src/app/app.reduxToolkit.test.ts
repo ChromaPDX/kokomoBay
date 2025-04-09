@@ -7,11 +7,11 @@ import {
   ActionCreatorWithPayload,
 } from "@reduxjs/toolkit";
 
-import { ReduxToolkitTesteranto } from "./subPackages/reduxToolkit.testeranto.test";
+import { ReduxToolkitTesteranto } from "../subPackages/reduxToolkit.testeranto.test";
 
 import { AppSpecification, IAppOut, IAppSpecification } from "./app.test";
 import app, { IStoreState, loginApp } from "./app";
-import { ILoginPageSelection } from "./LoginPage";
+import { ILoginPageSelection } from "../LoginPage";
 
 const core = app();
 const selector = core.select.loginPageSelection;

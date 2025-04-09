@@ -1,15 +1,14 @@
-import test from "testeranto/src/SubPackages/react-dom/component/web";
-import { IPartialWebInterface, ITestImplementation, Modify } from "testeranto/src/Types";
+import test, { I } from "testeranto/src/SubPackages/react-dom/component/web";
+import { IPartialWebInterface, ITestImplementation } from "testeranto/src/Types";
 
 import { assert } from "chai";
 
 import { ClassicalComponent, IProps } from "..";
-import { ClassicalComponentSpec, O } from "../test.specification";
+import { O } from "../static.spec";
 
-import { I, IStore } from "./test";
+import { IStore } from "testeranto/src/SubPackages/react-dom/component/web";
 
-
-const ClassicalComponentReactDomImplementation: Modify<ITestImplementation<I, O>, {
+type M = {
   givens: {
     [K in keyof O["givens"]]: IProps;
   };
@@ -17,11 +16,11 @@ const ClassicalComponentReactDomImplementation: Modify<ITestImplementation<I, O>
   whens: {
     [K in keyof O["whens"]]: (
       ...x
-    ) => (s: IStore<any>) => Promise<void>;
+    ) => (s: IStore) => Promise<any>;
   };
 
   thens: {
-    [K in keyof O["thens"]]: (expectation: any) => (s: IStore<any>) => Promise<void>;
+    [K in keyof O["thens"]]: (expectation: any) => (s: IStore) => Promise<void>;
   };
 
   // checks: {
@@ -29,7 +28,9 @@ const ClassicalComponentReactDomImplementation: Modify<ITestImplementation<I, O>
   // };
 
 
-}> = {
+}
+
+const ClassicalComponentReactDomImplementation: ITestImplementation<I, O, M> = {
   suites: {
     Default: "Classical Component, react-dom, client.web",
   },
@@ -94,7 +95,7 @@ const testInterface: IPartialWebInterface<I> = {
   // },
 };
 
-export default test(
+export default test<O, M>(
   ClassicalComponent,
   ClassicalComponentSpec,
   ClassicalComponentReactDomImplementation,

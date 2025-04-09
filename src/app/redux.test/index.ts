@@ -1,40 +1,52 @@
-import { ITestSpecification, Ibdd_in, Ibdd_out } from "testeranto/src/Types";
+import { ITestSpecification } from "testeranto/src/Types.js";
 
-export type IAppOut = Ibdd_out<
-  {
-    Default: [string];
-  },
-  {
-    AnEmptyState: [];
-    AStateWithEmail: [string];
-  },
-  {
-    TheLoginIsSubmitted: [];
-    TheEmailIsSetTo: [string];
-    ThePasswordIsSetTo: [string];
-  },
-  {
-    TheEmailIs: [string];
-    TheEmailIsNot: [string];
-    ThePasswordIs: [string];
-    ThePasswordIsNot: [string];
-  },
-  {
-    AnEmptyState: [];
-  }
->;
+import { assert } from "chai";
 
-export type IAppSpecification = ITestSpecification<
-  Ibdd_in<unknown, unknown, unknown, unknown, unknown, unknown, unknown>,
-  IAppOut
->;
+import { IStoreState, loginApp } from "../app.js";
+import { O } from "../app.test.js";
+import { BaseImplementation } from "../../subPackages/redux.testeranto.test.js";
+import { IReduxIn } from "../../subPackages/redux/index.js";
 
-export const AppSpecification: IAppSpecification = (
+export type IImplementation = BaseImplementation<IStoreState, O>;
+
+export const implementations: IImplementation = {
+  suites: {
+    Default: "Testing the Redux store",
+  },
+  givens: {
+    AnEmptyState: loginApp.getInitialState(),
+    AStateWithEmail: { ...loginApp.getInitialState(), email: "bob@mail.com" },
+  },
+  whens: {
+    TheLoginIsSubmitted: () => [loginApp.actions.signIn],
+    TheEmailIsSetTo: (email) => [loginApp.actions.setEmail, email],
+    ThePasswordIsSetTo: (password) => [loginApp.actions.setPassword, password],
+  },
+  thens: {
+    TheEmailIs: (email) => (storeState) => {
+      assert.equal(storeState.email, email);
+    },
+    TheEmailIsNot: (email) => (storeState) => {
+      assert.notEqual(storeState.email, email);
+    },
+    ThePasswordIs: (password) => (selection) =>
+      assert.equal(selection.password, password),
+    ThePasswordIsNot: (password) => (selection) =>
+      assert.notEqual(selection.password, password),
+  },
+  checks: {
+    AnEmptyState: loginApp.getInitialState(),
+  },
+};
+
+export const input = loginApp.reducer;
+
+export const AppSpecification: ITestSpecification<IReduxIn<IStoreState>, O> = (
   Suite,
   Given,
   When,
-  Then,
-  Check
+  Then
+  // Check
 ) => {
   return [
     Suite.Default(

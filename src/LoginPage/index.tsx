@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider, useSelector } from "react-redux";
 
-import app, { noError } from "../app.js";
+import app, { noError } from "../app/app.js";
 
 const core = app();
 

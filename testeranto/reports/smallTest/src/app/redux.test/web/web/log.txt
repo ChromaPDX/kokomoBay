@@ -1,0 +1,32 @@
+
+Suite:,0,Testing the Redux store
+
+ test0
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: adam@email.com
+ Then!!!:,TheEmailIs: adam@email.com
+
+ test1
+
+ Given: AStateWithEmail
+ Then!!!:,TheEmailIsNot: adam@email.com
+ Then!!!:,TheEmailIs: bob@mail.com
+
+ test2
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: hello
+ When:,TheEmailIsSetTo: aloha
+ Then!!!:,TheEmailIs: aloha
+
+ test3
+
+ Given: AnEmptyState
+ Then!!!:,TheEmailIs: 
+
+ test4
+
+ Given: AnEmptyState
+ When:,TheEmailIsSetTo: hey there
+ Then!!!:,TheEmailIs: hey there

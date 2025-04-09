@@ -18,7 +18,23 @@
   ],
   "tests": [
     [
-      "./src/ReactStateAndHook/react-test-renderer.test/web.tsx",
+      "./src/app/redux.test/node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/app/redux.test/pure.ts",
+      "pure",
+      {
+        "ports": 0
+      },
+      []
+    ],
+    [
+      "./src/app/redux.test/web.ts",
       "web",
       {
         "ports": 0

@@ -4,7 +4,9 @@ import {
   Ibdd_in,
   Ibdd_out,
   IPartialInterface,
+  IT,
   Modify,
+  OT,
 } from "testeranto/src/Types";
 import { ITestImplementation, ITestSpecification } from "testeranto/src/Types";
 
@@ -39,8 +41,9 @@ type IReduxIn<IStoreState> = Ibdd_in<
 export type BaseImplementation<
   IStoreShape,
   bddout extends Ibdd_out<any, any, any, any, any>
-> = Modify<
-  ITestImplementation<IReduxIn<IStoreShape>, bddout>,
+> = ITestImplementation<
+  IReduxIn<IStoreShape>,
+  bddout,
   {
     givens: {
       [K in keyof bddout["givens"]]: IStoreShape;
@@ -67,13 +70,10 @@ export type BaseImplementation<
   }
 >;
 
-export const ReduxTesteranto = <
-  IStoreShape,
-  iAppOut extends Ibdd_out<any, any, any, any, any>
->(
+export const ReduxTesteranto = <IStoreShape, I extends IT, O extends OT>(
   testInput: Reducer<IStoreShape, AnyAction>,
-  testSpecifications: ITestSpecification<any>,
-  testImplementations: BaseImplementation<IStoreShape, iAppOut>
+  testSpecifications: ITestSpecification<I, O>,
+  testImplementations: BaseImplementation<IStoreShape, O>
 ) => {
   const testInterface: IPartialInterface<IReduxIn<IStoreShape>> = {
     beforeEach: function (subject, initializer) {

@@ -1,19 +1,10 @@
+import { ITestImplementation } from "testeranto/src/Types";
+import { I } from "testeranto/src/SubPackages/react-test-renderer/component";
+
 import { ReactTestRenderer } from "react-test-renderer";
 import { assert } from "chai";
 
-import { Ibdd_in, ITestImplementation } from "testeranto/src/Types";
-
-import { O } from "../test.specification";
-
-export type I = Ibdd_in<
-  unknown,
-  unknown,
-  unknown,
-  ReactTestRenderer,
-  unknown,
-  unknown,
-  unknown
->;
+import { O } from "../dynamic.spec";
 
 export const testImplementation: ITestImplementation<I, O> = {
   suites: {
@@ -34,6 +25,7 @@ export const testImplementation: ITestImplementation<I, O> = {
       try {
         const header = component.root.findByType("h1");
         header.props.onClick();
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
         // Expected error - header click fails
       }
@@ -54,6 +46,7 @@ export const testImplementation: ITestImplementation<I, O> = {
         const statElement = component.root.findByProps({ id: "theStat" });
         const actual = JSON.parse(statElement.props.children);
         assert.deepEqual(actual, expectation, "the status was not as expected");
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
         assert.fail(`Element with id "theStat" not found`);
       }

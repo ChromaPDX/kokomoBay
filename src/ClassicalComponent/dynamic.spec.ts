@@ -1,8 +1,6 @@
-import { Ibdd_in, Ibdd_out, ITestSpecification } from "testeranto/src/Types";
+import { Ibdd_out, IT, ITestSpecification } from "testeranto/src/Types";
 
-import { IProps, IState } from ".";
-import { IStore } from "./react-dom/test";
-import { Component } from "react";
+import { IProps, IState } from "./index";
 
 export type O = Ibdd_out<
   {
@@ -21,21 +19,18 @@ export type O = Ibdd_out<
   },
   {
     AnEmptyState;
+  },
+  {
+    SomeFreestyle;
   }
 >;
 
-export const ClassicalComponentSpec: ITestSpecification<
-  Ibdd_in<
-    typeof Component,
-    IStore<any>,
-    IStore<any>,
-    IStore<any>,
-    (s: IStore<any>) => IStore<any>,
-    (s: IStore<any>) => IStore<any>,
-    (s: IStore<any>) => IStore<any>
-  >,
-  O
-> = (Suite, Given, When, Then) => {
+export const ClassicalComponentSpec: ITestSpecification<IT, O> = (
+  Suite,
+  Given,
+  When,
+  Then
+) => {
   return [
     Suite.Default(
       "a classical react component",
@@ -83,7 +78,13 @@ export const ClassicalComponentSpec: ITestSpecification<
           [Then.TheStatusIs({ count: 2 })]
         ),
       },
-      []
+      [],
+      [
+        ["A feature as a string"],
+        (x) => {
+          return;
+        },
+      ]
     ),
   ];
 };

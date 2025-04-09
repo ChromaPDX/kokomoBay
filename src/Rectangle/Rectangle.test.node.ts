@@ -1,6 +1,9 @@
 import Testeranto from "testeranto/src/Node";
 
-import { RectangleTesterantoBaseTestImplementation } from "./Rectangle.test.implementation";
+import {
+  M,
+  RectangleTesterantoBaseTestImplementation,
+} from "./Rectangle.test.implementation";
 import {
   O,
   RectangleTesterantoBaseTestSpecification,
@@ -10,7 +13,7 @@ import {
   RectangleTesterantoBaseInterface,
 } from "./Rectangle.test.interface";
 
-export default Testeranto<I, O>(
+export default Testeranto<I, O, M>(
   null,
   RectangleTesterantoBaseTestSpecification,
   RectangleTesterantoBaseTestImplementation,

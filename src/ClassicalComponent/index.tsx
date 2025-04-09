@@ -1,6 +1,6 @@
 import React from "react";
 
-export type IProps = any;
+export type IProps = { foo: string, children: [] };
 export type IState = { count: number };
 
 export class ClassicalComponent extends React.Component<IProps, IState> {
